@@ -29,10 +29,10 @@ const Module6 = () => (
           </tr>
         </thead>
         <tbody>
-          <tr><td class="b">Outreach attempts</td><td><span class="pill lead">Lead</span></td><td>Weekly</td><td>Gerry</td><td class="r">7 / week</td><td>Re-block calendar Monday</td></tr>
-          <tr><td class="b">First conversations</td><td><span class="pill lead">Lead</span></td><td>Weekly</td><td>Gerry</td><td class="r">3 / week</td><td>Review outreach quality</td></tr>
-          <tr><td class="b">Discovery meetings booked</td><td><span class="pill lead">Lead</span></td><td>Weekly</td><td>Gerry</td><td class="r">2 / week</td><td>Conversation→meeting script review</td></tr>
-          <tr><td class="b">Trial jobs offered</td><td><span class="pill lead">Lead</span></td><td>Weekly</td><td>Gerry</td><td class="r">1 / week</td><td>Commercial terms review</td></tr>
+          <tr><td class="b">Outreach attempts</td><td><span class="pill lead">Lead</span></td><td>Weekly</td><td>Gerry</td><td class="r">5 / week</td><td>Re-block calendar Monday</td></tr>
+          <tr><td class="b">First conversations</td><td><span class="pill lead">Lead</span></td><td>Weekly</td><td>Gerry</td><td class="r">2 / week</td><td>Review outreach quality</td></tr>
+          <tr><td class="b">Discovery meetings booked</td><td><span class="pill lead">Lead</span></td><td>Weekly</td><td>Gerry</td><td class="r">1 / week</td><td>Conversation→meeting script review</td></tr>
+          <tr><td class="b">Trial jobs offered</td><td><span class="pill lead">Lead</span></td><td>Weekly</td><td>Gerry</td><td class="r">0.6 / week avg</td><td>Commercial terms review</td></tr>
           <tr><td class="b">Trial jobs completed on spec</td><td><span class="pill lag">Lag</span></td><td>Monthly</td><td>Gerry + Ops</td><td class="r">≥85% on-spec</td><td>Quality intervention — pause new trials</td></tr>
           <tr><td class="b">New active partners signed</td><td><span class="pill lag">Lag</span></td><td>Monthly</td><td>Gerry</td><td class="r">1.5 / month avg</td><td>Funnel diagnosis: which stage broke?</td></tr>
           <tr><td class="b">Active partners (cumulative)</td><td><span class="pill lag">Lag</span></td><td>Monthly</td><td>Carla</td><td class="r">18 by 31 May 2027</td><td>Strategic review with CoSai</td></tr>
@@ -96,10 +96,10 @@ const Module6 = () => (
           </tr>
         </thead>
         <tbody>
-          <tr><td class="b">Fewer than 4 partners signed by 30 Sept 2026 (Q1)</td><td>Within 14 days</td><td>Joint Carla + Gerry + Corrina review. Re-baseline targets or escalate intervention.</td></tr>
+          <tr><td class="b">Fewer than 4 partners signed by 31 Aug 2026 (end of fiscal Q1)</td><td>Within 14 days</td><td>Joint Carla + Gerry + Corrina review. Re-baseline targets or escalate intervention.</td></tr>
           <tr><td class="b">Termite GPM below 33% for two consecutive months</td><td>Within 30 days</td><td>Line-level pricing review — adjust trade-partner mix or input pricing.</td></tr>
           <tr><td class="b">Trial-complete-on-spec drops below 70%</td><td>Immediate</td><td>Pause new trial commitments. Quality remediation before adding partner volume.</td></tr>
-          <tr><td class="b">Gerry weekly outreach &lt;5 for two consecutive weeks</td><td>Within 7 days</td><td>Capacity intervention — either workload re-design or hire decision brought forward.</td></tr>
+          <tr><td class="b">Gerry weekly outreach &lt;3 for two consecutive weeks</td><td>Within 7 days</td><td>Capacity intervention — either workload re-design or hire decision brought forward.</td></tr>
           <tr><td class="b">Blended GPM below 30% at 6-month mark</td><td>Within 30 days</td><td>Full mix and pricing review. CoSai re-engages on advisory basis.</td></tr>
           <tr><td class="b">Cash buffer &lt;6 weeks operating expense</td><td>Immediate</td><td>Liquidity intervention. CoSai re-engages for treasury action.</td></tr>
         </tbody>
@@ -109,7 +109,7 @@ const Module6 = () => (
     <div class="callout">
       <div class="eyebrow">CFO Note</div>
       <h3>Why lead indicators carry more strategic weight than lag indicators</h3>
-      <p>Lag indicators are the scoreboard. Lead indicators are the gameplay. If Gerry runs 7 outreaches, 3 conversations, 2 meetings, 1 trial offer <em>every week</em>, the lag indicators take care of themselves. The role of YDT and Carla is to make sure the <strong>lead activity</strong> never stalls — and to surface the problem in a 7-day window if it does, not a 90-day one.</p>
+      <p>Lag indicators are the scoreboard. Lead indicators are the gameplay. If Gerry runs 5 outreaches, 2 conversations, 1 meeting <em>every week</em> (with a trial offer roughly every fortnight), the lag indicators take care of themselves. The role of YDT and Carla is to make sure the <strong>lead activity</strong> never stalls — and to surface the problem in a 7-day window if it does, not a 90-day one.</p>
     </div>
   </section>
 )
@@ -279,8 +279,9 @@ const Module8 = () => (
           <tr><td class="b">YBMT outstanding balance (settlement)</td><td>YBMT → YDT</td><td class="r">$10,000</td><td>7 days from sign-off</td><td><span class="pill lead">Action on sign</span></td></tr>
           <tr><td class="b">YDT ongoing operating retainer</td><td>YBMT → YDT</td><td class="r">$600 / week</td><td>From sign-off, ongoing</td><td><span class="pill lead">Activates on sign</span></td></tr>
           <tr><td class="b">Annualised YDT retainer (12 months)</td><td>YBMT → YDT</td><td class="r">$31,200 / year</td><td>Year 1 forward</td><td><span class="pill lead">Activates on sign</span></td></tr>
+          <tr><td class="b">LinkedIn ad spend (platform direct, capped)</td><td>YBMT → LinkedIn</td><td class="r">$500 / month ($6,000 / year)</td><td>From sign-off, ongoing</td><td><span class="pill lead">YBMT-direct</span></td></tr>
           <tr><td class="b">CoSai CFO advisory fee (this brief)</td><td>YBMT → CoSai</td><td class="r">Per separate engagement letter</td><td>On sign-off</td><td><span class="pill lag">Closes scope</span></td></tr>
-          <tr class="total"><td>Total Y1 marketing investment</td><td>YBMT total spend</td><td class="r">$41,200</td><td>Y1 ($10K settlement + $31.2K retainer)</td><td>—</td></tr>
+          <tr class="total"><td>Total Y1 marketing investment</td><td>YBMT total spend</td><td class="r">$47,200</td><td>Y1 ($10K settlement + $31.2K retainer + $6K ad spend)</td><td>—</td></tr>
         </tbody>
       </table>
     </div>
@@ -302,7 +303,7 @@ const Module8 = () => (
         </div>
         <div class="tiny">For CoSai CFO Services</div>
         <h4>Carla</h4>
-        <p class="small">Strategic Lead · CFO Advisor</p>
+        <p class="small">Strategic Lead · CoSai CFO Services</p>
         <div class="sig-block">
           <img src="/static/brand/carla-signature.png" alt="Carla — signature" class="sig-image" />
           <div class="sig-line"></div>

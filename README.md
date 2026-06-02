@@ -177,7 +177,7 @@ YDT populates the dashboard from real CRM and finance data monthly, post-sign-of
 | | |
 |---|---|
 | **Brief development** | ✅ Complete — all 8 modules + Video Production Plan + brand asset wiring |
-| **Build verification** | ✅ Clean (124KB worker bundle, 52 modules) |
+| **Build verification** | ✅ Clean (140KB worker bundle, 52 modules) |
 | **Local preview** | ✅ Running on PM2 |
 | **Deployment to Cloudflare Pages** | ⏸ Pending |
 | **Custom domain `cosaiybmtpool.org`** | ⏸ Pending |
@@ -196,7 +196,7 @@ This brief, its strategy, copy, design, financial model, and asset specification
 ## Credits
 
 - **Strategy & financial modelling**: Carla · CoSai CFO Services
-- **Approver**: Gerry McGuire · Director, YBMT
+- **Approver**: Gerry McGuire · CEO, YBMT
 - **Recipient**: Corrina McGowan · CEO, Your Digital Team
 - **Brief construction**: AI-assisted authoring under CFO direction
 

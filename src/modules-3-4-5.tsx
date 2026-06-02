@@ -38,14 +38,14 @@ const Module3 = () => (
 
     <h3>Gerry's weekly scorecard (every Friday by 5pm)</h3>
     <div class="grid cols-3">
-      <div class="stat-block timber"><div class="label">Lead 1 · Prospects contacted</div><div class="value">7</div><div class="delta">14 hrs of BD activity weekly</div></div>
-      <div class="stat-block timber"><div class="label">Lead 2 · Conversations completed</div><div class="value">3</div><div class="delta">~30 min each, phone or video</div></div>
-      <div class="stat-block timber"><div class="label">Lead 3 · Discovery meetings held</div><div class="value">2</div><div class="delta">site visit, coffee, or Teams</div></div>
-      <div class="stat-block timber"><div class="label">Lead 4 · Trial jobs offered</div><div class="value">1</div><div class="delta">avg over a 4-week trailing window</div></div>
-      <div class="stat-block timber"><div class="label">Lead 5 · Trial jobs completed</div><div class="value">0.7</div><div class="delta">avg over a 4-week trailing window</div></div>
-      <div class="stat-block green"><div class="label">Output · New partners signed</div><div class="value">0.5</div><div class="delta">avg over a 4-week trailing window</div></div>
+      <div class="stat-block timber"><div class="label">Lead 1 · Prospects contacted</div><div class="value">5</div><div class="delta">10 hrs of BD activity weekly</div></div>
+      <div class="stat-block timber"><div class="label">Lead 2 · Conversations completed</div><div class="value">2</div><div class="delta">~30 min each, phone or video</div></div>
+      <div class="stat-block timber"><div class="label">Lead 3 · Discovery meetings held</div><div class="value">1</div><div class="delta">site visit, coffee, or Teams</div></div>
+      <div class="stat-block timber"><div class="label">Lead 4 · Trial jobs offered</div><div class="value">0.6</div><div class="delta">avg over a 4-week trailing window</div></div>
+      <div class="stat-block timber"><div class="label">Lead 5 · Trial jobs completed</div><div class="value">0.45</div><div class="delta">avg over a 4-week trailing window</div></div>
+      <div class="stat-block green"><div class="label">Output · New partners signed</div><div class="value">0.3</div><div class="delta">avg over a 4-week trailing window</div></div>
     </div>
-    <p class="small muted"><strong>Read:</strong> 7 outreaches a week × 50 working weeks = 350 outreaches per year. At industry-benchmarked conversion rates this delivers ~18 active partners in Year 1 (Reality 1 model). Stretch to 10 outreaches per week if Q2 lead conversion under-runs target.</p>
+    <p class="small muted"><strong>Read:</strong> 5 outreaches a week × 48 working weeks × 2 years = 480 prospects contacted over 24 months. At industry-benchmarked conversion rates (40% → 50% → 60% → 75% → 70%) this delivers ~18 active partners in Year 1 and ~30 cumulative by end of Year 2. Stretch to 7 outreaches per week if Q2 lead conversion under-runs target.</p>
 
     <h3>Gerry's weekly schedule — what runs Monday to Friday</h3>
     <div class="grid cols-2">
@@ -53,7 +53,7 @@ const Module3 = () => (
         <div class="tiny">Monday · Prospect Generation</div>
         <h4>Find them.</h4>
         <ul class="task-list">
-          <li>08:00–10:00 — Identify 7 new prospects (Termite-weighted 4 / Pool 1 / Unit 2)</li>
+          <li>08:00–10:00 — Identify 5 new prospects (Termite-weighted 3 / Pool 1 / Unit 1)</li>
           <li>10:00–12:00 — First-touch outreach (LinkedIn, intro emails, warm intros)</li>
           <li>14:00–16:00 — Update CRM, score prospects, prep Tuesday calls</li>
         </ul>
@@ -62,7 +62,7 @@ const Module3 = () => (
         <div class="tiny">Tuesday · Conversation Day</div>
         <h4>Talk to them.</h4>
         <ul class="task-list">
-          <li>09:00–12:00 — Block 3 conversation slots (phone or Teams, 30 min each)</li>
+          <li>09:00–12:00 — Block 2 conversation slots (phone or Teams, 30 min each)</li>
           <li>13:00–16:00 — Inbound enquiry follow-up &amp; existing partner check-ins</li>
         </ul>
       </div>
@@ -72,14 +72,14 @@ const Module3 = () => (
         <ul class="task-list">
           <li>Drive routes: pool builder showrooms, pest control offices, PM agencies</li>
           <li>Drop cap statements, walk potential trial-job sites</li>
-          <li>Target: 2 in-person meetings per Wednesday</li>
+          <li>Target: 1–2 in-person meetings per Wednesday</li>
         </ul>
       </div>
       <div class="card info">
         <div class="tiny">Thursday · Conversation Day</div>
         <h4>Talk to them again.</h4>
         <ul class="task-list">
-          <li>09:00–12:00 — Block 3 more conversation slots</li>
+          <li>09:00–12:00 — Block 1–2 more conversation slots</li>
           <li>13:00–16:00 — Quote prep, partner agreement reviews</li>
         </ul>
       </div>
@@ -121,7 +121,7 @@ const Module3 = () => (
           <tr>
             <td class="b">Termite Repair</td>
             <td>Pest control firms, insurance assessors, restoration cos, real estate agents (post-inspection)</td>
-            <td class="r">4</td><td class="r">11</td><td class="r">18</td>
+            <td class="r">3</td><td class="r">11</td><td class="r">18</td>
             <td>QLD Pest Management Council, LMI &amp; Suncorp panels</td>
           </tr>
           <tr>
@@ -133,11 +133,11 @@ const Module3 = () => (
           <tr>
             <td class="b">Unit Renovations</td>
             <td>Property managers, strata managers, RE agencies (rental portfolios)</td>
-            <td class="r">2</td><td class="r">4</td><td class="r">7</td>
+            <td class="r">1</td><td class="r">4</td><td class="r">7</td>
             <td>REIQ members, Strata Community Australia QLD</td>
           </tr>
           <tr class="total">
-            <td>Total weekly</td><td></td><td class="r">7</td><td class="r">18</td><td class="r">30</td><td></td>
+            <td>Total weekly</td><td></td><td class="r">5</td><td class="r">18</td><td class="r">30</td><td></td>
           </tr>
         </tbody>
       </table>
@@ -152,7 +152,7 @@ const Module3 = () => (
             <li>Active partner list (status, jobs YTD, GPM by partner)</li>
             <li>Pipeline coverage (prospects × conversion = forward 90-day revenue)</li>
             <li>Partner kill list — bottom 10% of partners by margin or velocity</li>
-            <li>Margin variance analysis vs 33.8% target</li>
+            <li>Margin variance analysis vs 34% target</li>
             <li>Rolling 90-day forecast vs board commitment</li>
             <li>Capacity health check (Gerry's hours, deal velocity, burnout signals)</li>
           </ul>
@@ -163,7 +163,7 @@ const Module3 = () => (
             <li>Q1 — Foundation: 5 partners signed, $400K booked</li>
             <li>Q2 — First margin assessment: 10 partners, $1.9M booked YTD</li>
             <li>Q3 — Margin discipline review: 14 partners, $3.84M booked YTD</li>
-            <li>Q4 — Year-end target lock: 18 partners, $6.5M booked, $12M exit run-rate</li>
+            <li>Q4 — Year-end target lock: 18 partners, $6.5M booked, $12M+ exit run-rate</li>
             <li>Year 2 plan delivered by Q4 — confirms path to $10M</li>
           </ul>
         </div>
@@ -173,7 +173,7 @@ const Module3 = () => (
     <div class="callout">
       <div class="eyebrow">CFO Warning</div>
       <h3>The single biggest execution risk</h3>
-      <p>Gerry is the entire commercial function while also running operations, finance, compliance and trade crews. His realistic available BD capacity is <em>~14–18 hours per week</em> — not 32. If Gerry exceeds 50-hour weeks for more than 8 consecutive weeks, the CFO board <strong>must escalate</strong> a discussion about (a) hiring an Operations Manager to free him up, or (b) hiring a BD support resource. The dashboard tracks Gerry's weekly hours-on-BD as a leading indicator of execution sustainability.</p>
+      <p>Gerry is the entire commercial function while also running operations, finance, compliance and trade crews. His realistic available BD capacity is <em>~10–12 hours per week</em> — not 32. The 5-outreach weekly target fits inside that envelope. If Gerry exceeds 50-hour weeks for more than 8 consecutive weeks, the CFO board <strong>must escalate</strong> a discussion about (a) hiring an Operations Manager to free him up, or (b) hiring a BD support resource. The dashboard tracks Gerry's weekly hours-on-BD as a leading indicator of execution sustainability.</p>
     </div>
   </section>
 )
@@ -253,7 +253,7 @@ const Module4 = () => (
           <tr><td class="b">Promotion</td><td>"PM Portfolio Service Sheet" leave-behind, rate card, capability statement (Unit Renos × 3 regions — already produced), case studies showing tenant-ready timelines.</td></tr>
           <tr><td class="b">People</td><td>Gerry as relationship owner. Operations Manager (recommended hire Q2) becomes the day-to-day PM/strata contact.</td></tr>
           <tr><td class="b">Process</td><td>1. PM agency principal meeting. 2. Rate card review. 3. Trial job (one unit refresh). 4. Recurring book of work — measured weekly. 5. Quarterly portfolio review.</td></tr>
-          <tr><td class="b">Physical evidence</td><td>3 capability statements (Unit Renos / Sunshine Coast already produced + Brisbane &amp; Gold Coast to be produced via existing template), 10 quick-turn case studies, rate card document, 14-day payment terms.</td></tr>
+          <tr><td class="b">Physical evidence</td><td>1 capability statement produced for Sunshine Coast Unit Renos + Brisbane &amp; Gold Coast to be produced via existing template (3 generic regional cap statements also already in pack), 10 quick-turn case studies, rate card document, 14-day payment terms.</td></tr>
         </tbody>
       </table>
     </div>
@@ -321,8 +321,8 @@ const Module5 = () => (
     <div class="grid cols-2">
       <div class="card success">
         <div class="tiny">Asset 1 of 13</div>
-        <h4>9 Capability Statements (existing)</h4>
-        <p>Already produced and cleared — Brisbane / Gold Coast / Sunshine Coast × Pool Decks / Termite / Unit Renos. These are the bedrock physical evidence. YDT maintains version control.</p>
+        <h4>9 Capability Statements (existing + scaffolded)</h4>
+        <p>Already produced and cleared: 3 generic regional (Brisbane / Gold Coast / Sunshine Coast), 3 Pool Decks-segment (× 3 regions), 3 Termite Damage Repair-segment (× 3 regions). Unit Renos: 1 produced (Sunshine Coast), 2 to be produced from existing template. These are the bedrock physical evidence. YDT maintains version control.</p>
       </div>
       <div class="card success">
         <div class="tiny">Asset 2 of 13</div>

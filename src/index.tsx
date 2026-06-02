@@ -96,7 +96,7 @@ const Module1 = () => (
       </div>
     </div>
 
-    <h3>The five strategic decisions in this brief</h3>
+    <h3>The six strategic decisions in this brief</h3>
     <div class="grid cols-2">
       <div class="card flag">
         <div class="tiny">Decision 1</div>
@@ -116,12 +116,12 @@ const Module1 = () => (
       <div class="card flag">
         <div class="tiny">Decision 4</div>
         <h4>Demand-weighted regional split</h4>
-        <p>Brisbane 44% · Gold Coast 28.5% · Sunshine Coast 27.5%. Equal regional thirds is mathematically suboptimal — Brisbane is where the largest pest, strata and PM markets actually exist.</p>
+        <p>Brisbane 44% · Gold Coast 27.5% · Sunshine Coast 28.5%. Equal regional thirds is mathematically suboptimal — Brisbane is where the largest pest, strata and PM markets actually exist.</p>
       </div>
       <div class="card flag">
         <div class="tiny">Decision 5</div>
         <h4>Honest two-year ramp</h4>
-        <p>$10M is achieved in <em>Year 2</em>, not Year 1, because Gerry McGuire is solo BD without a team. Year 1 lands $6.5M booked with a $10M+ exit run-rate. The brief commits to the honest curve.</p>
+        <p>$10M is achieved in <em>Year 2</em>, not Year 1, because Gerry McGuire is solo BD without a team. Year 1 lands $6.5M booked with a $12M+ exit run-rate. The brief commits to the honest curve.</p>
       </div>
       <div class="card flag">
         <div class="tiny">Decision 6</div>
@@ -201,7 +201,7 @@ const Module2 = () => (
       <div class="eyebrow">Financial Architecture</div>
       <h2>The $10M model — 3 products × 3 regions.</h2>
       <p class="lede">
-        From a standing start of 0 active partners on 1 June 2026, the model engineers $10M of annual booked revenue by 31 May 2028 (Year 2). Year 1 lands $6.5M booked with a $10M+ exit run-rate. The mix is <em>Termite-led at 55%</em>, geographically <em>weighted to Brisbane at 44%</em>, and partner counts are <em>concentrated</em> rather than fragmented.
+        From a standing start of 0 active partners on 1 June 2026, the model engineers $10M of annual booked revenue by 31 May 2028 (Year 2). Year 1 lands $6.5M booked with a $12M+ exit run-rate. The mix is <em>Termite-led at 55%</em>, geographically <em>weighted to Brisbane at 44%</em>, and partner counts are <em>concentrated</em> rather than fragmented.
       </p>
     </div>
 
@@ -249,7 +249,7 @@ const Module2 = () => (
           <tr><td class="b">Termite Damage Repair</td><td class="r">55%</td><td class="r">$5.50M</td><td class="r">38%</td><td class="r">$2.09M</td><td class="r">$25K</td><td class="r">220</td><td class="r">~12</td><td class="r">18</td></tr>
           <tr><td class="b">Pool Decks (B2B sub)</td><td class="r">30%</td><td class="r">$3.00M</td><td class="r">32%</td><td class="r">$0.96M</td><td class="r">$30K</td><td class="r">100</td><td class="r">~20</td><td class="r">5</td></tr>
           <tr><td class="b">Unit Renovations</td><td class="r">15%</td><td class="r">$1.50M</td><td class="r">22%</td><td class="r">$0.33M</td><td class="r">$15K</td><td class="r">100</td><td class="r">~14</td><td class="r">7</td></tr>
-          <tr class="total"><td>Total · Year 2</td><td class="r">100%</td><td class="r">$10.0M</td><td class="r">33.8%</td><td class="r">$3.38M</td><td class="r"></td><td class="r">420</td><td class="r"></td><td class="r">30</td></tr>
+          <tr class="total"><td>Total · Year 2</td><td class="r">100%</td><td class="r">$10.0M</td><td class="r">34.0%</td><td class="r">$3.40M</td><td class="r"></td><td class="r">420</td><td class="r"></td><td class="r">30</td></tr>
         </tbody>
       </table>
     </div>
