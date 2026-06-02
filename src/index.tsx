@@ -19,10 +19,22 @@ const Hero = () => (
       <p class="hero-sub">
         A CFO-engineered marketing-mix design brief from <strong style="color:var(--cream)">CoSai CFO Services</strong> to <strong style="color:var(--cream)">Your Digital Team (YDT)</strong> — front-loading the strategic assets, operating cadence, partner acquisition framework and measurement spine required to transform YBMT (Your Building &amp; Maintenance Team) from $3.5M / 25% GPM / 3% NPM into $10M / 34% GPM / 10% NPM across Pool Decks, Termite Damage Repair and Unit Renovations in Brisbane, Gold Coast and Sunshine Coast.
       </p>
+
+      <div class="hero-brandbar">
+        <img src="/static/brand/ybmt-logo.png" alt="Your Building &amp; Maintenance Team" class="ybmt-mark" />
+        <div class="brandbar-line">The client this brief is built for</div>
+      </div>
+
       <div class="hero-meta">
         <div class="item"><div class="l">Prepared by</div><div class="v">Carla · CoSai CFO Services</div></div>
         <div class="item"><div class="l">Prepared for</div><div class="v">Corrina McGowan · YDT CEO</div></div>
-        <div class="item"><div class="l">Approver</div><div class="v">Gerry McGuire · YBMT CEO</div></div>
+        <div class="item">
+          <div class="l">Approver</div>
+          <div class="v approver-block">
+            <img src="/static/brand/gerry-photo.png" alt="Gerry McGuire" class="gerry-avatar" />
+            <span>Gerry McGuire · YBMT CEO</span>
+          </div>
+        </div>
         <div class="item"><div class="l">Effective</div><div class="v">1 June 2026</div></div>
       </div>
     </div>
@@ -33,10 +45,9 @@ const Nav = () => (
   <header class="site-header">
     <div class="header-inner">
       <div class="brand-lockup">
-        <div class="mark">C</div>
+        <img src="/static/brand/cosai-logo.png" alt="CoSai CFO Services" class="cosai-mark" />
         <div class="text-block">
-          <div class="b1">CoSai CFO Services</div>
-          <div class="b2">YBMT $10M Design Brief</div>
+          <div class="b2">YBMT $10M Design Brief · prepared for YDT</div>
         </div>
       </div>
       <nav class="section-nav">

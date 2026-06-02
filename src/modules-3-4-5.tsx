@@ -386,6 +386,135 @@ const Module5 = () => (
       </div>
     </div>
 
+    {/* ===================================================================
+        Video Production Plan — Module 5 sub-section
+        Shot list YDT can hand Gerry on day one
+        =================================================================== */}
+    <div class="subsection" id="m5-video">
+      <div class="eyebrow">Module 5 · Sub-section</div>
+      <h3>Video Production Plan — what YDT needs Gerry to capture</h3>
+      <p class="lede">
+        One <strong>16:9 landscape</strong> + one <strong>9:16 vertical</strong> case-study video per product line. The pool-deck video already exists (asset #17/#18 from the prior YDT build) and acts as the template. The remaining three — <em>outdoor entertainment</em>, <em>unit renovation</em>, <em>termite repair</em> — are captured by Gerry on a current job site using a phone (4K iPhone is enough) and edited by YDT under the ongoing operating retainer.
+      </p>
+
+      <div class="card info">
+        <div class="tiny">Why this matters</div>
+        <h4>Real footage, headlessly produced. No AI-generated job sites.</h4>
+        <p>B2B partners — pool builders, insurance assessors, strata PMs — can identify stock and AI footage within three seconds. The whole headless premise (Module 4) only works if every video carries <strong>real YBMT crews, real sites, real outcomes</strong>. Gerry captures; YDT edits invisibly under YBMT branding. Cost: ~6–8 hours YDT edit time per video, which fits inside the existing $600/week retainer at a cadence of one finished case-study video per month.</p>
+      </div>
+
+      <h4 style="margin-top:32px">The four-video case-study set</h4>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Video</th>
+              <th>Product line</th>
+              <th>Status</th>
+              <th>Buyer audience</th>
+              <th>Format</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="b">Video 1 — Pool Deck refurbishment</td><td>Pool Decks</td><td><span class="pill lag">Built (template)</span></td><td>Pool builders, PMs</td><td>16:9 + 9:16</td></tr>
+            <tr><td class="b">Video 2 — Outdoor Entertainment build</td><td>Pool Decks (extension scope)</td><td><span class="pill lead">Capture next</span></td><td>Pool builders, homeowners' referrers</td><td>16:9 + 9:16</td></tr>
+            <tr><td class="b">Video 3 — Unit Renovation turnaround</td><td>Unit Renovations</td><td><span class="pill lead">Capture next</span></td><td>Strata managers, PMs, real estate principals</td><td>16:9 + 9:16</td></tr>
+            <tr><td class="b">Video 4 — Termite Damage Repair</td><td>Termite Repair</td><td><span class="pill lead">Capture next</span></td><td>Pest-control firms, insurance assessors</td><td>16:9 + 9:16</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4 style="margin-top:24px">The shot list — universal pattern for every video</h4>
+      <p>Every video follows the same six-shot skeleton. Gerry shoots; YDT edits. Total on-site time: <strong>45 minutes per video</strong>. Total raw footage needed: ~6 minutes per video to cut a clean 60–90 second case study.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th style="width:30px">#</th>
+              <th>Shot</th>
+              <th>Duration</th>
+              <th>What Gerry captures</th>
+              <th>How YDT uses it</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="b">1</td><td class="b">BEFORE — wide</td><td>15–20 sec</td><td>Site as it is on day one. Wide shot showing the problem (damaged deck, termite-eaten frame, tired unit interior). Steady, locked-off — no panning.</td><td>Opening frame · establishes the "before" state for the viewer</td></tr>
+            <tr><td class="b">2</td><td class="b">BEFORE — closeup</td><td>10–15 sec</td><td>2–3 detail shots of the specific damage or work scope (cracked tile, termite frass, peeling render). Phone close to surface, hand for scale if useful.</td><td>Establishes credibility — proves this is a real job, not a glamour shot</td></tr>
+            <tr><td class="b">3</td><td class="b">TEAM ON-SITE</td><td>20–30 sec</td><td>2–3 clips of YBMT crew working — installing decking, repairing frame, painting. YBMT-branded shirts visible. No staged poses; capture them while they're actually working.</td><td>Establishes "real YBMT team" — the headless agency trade-off (Module 4) only works if the team is visibly the brand</td></tr>
+            <tr><td class="b">4</td><td class="b">GERRY TO CAMERA</td><td>60–90 sec</td><td>Gerry, on-site, polo shirt visible, says (paraphrased): <em>"This is a [product type] job in [Brisbane/Gold Coast/Sunshine Coast]. The partner who referred this to us was [partner type]. The scope was [one sentence]. We turned it around in [N days/weeks]. Here's the result."</em> Single take, eye-level, natural light, no script reading — bullet points memorised.</td><td>The core 30 sec of the final cut. This is the human voice that converts B2B buyers.</td></tr>
+            <tr><td class="b">5</td><td class="b">AFTER — wide</td><td>15–20 sec</td><td>Same angle as Shot 1. The finished work. Locked-off, no movement.</td><td>The reveal — before/after pair carries 70% of the emotional impact</td></tr>
+            <tr><td class="b">6</td><td class="b">AFTER — closeup</td><td>10–15 sec</td><td>2–3 detail shots showing the finish quality — joinery, paint line, tile work, structural reinforcement. Pride-of-workmanship shots.</td><td>Closes the loop on Shot 2 — same surfaces, transformed</td></tr>
+            <tr class="total"><td></td><td>Total on-site capture</td><td>~2.5 min raw</td><td>~45 minutes of Gerry's time per video, captured on phone during a real job</td><td>YDT edits to 60–90 sec final cut (~6–8 hours edit work)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4 style="margin-top:32px">Per-video specifics — what makes each one different</h4>
+      <div class="grid cols-2">
+        <div class="card info">
+          <div class="tiny">Video 2 of 4</div>
+          <h4>Outdoor Entertainment build</h4>
+          <p><strong>Hero shot:</strong> wide angle of the finished outdoor entertainment space — pergola, deck, lighting, finished landscape integration. Ideally captured at golden hour for the after-shots.</p>
+          <p><strong>Gerry's to-camera line:</strong> <em>"This is an outdoor entertainment build in [suburb]. The pool builder referred the homeowner to us because the deck-and-pergola spec was outside their core trade. We delivered it in [N] weeks alongside their pool install. Now they refer every deck-and-pergola job in this area to us."</em></p>
+          <p><strong>Buyer audience:</strong> Pool builders (the partner) — message is "we're the trade partner who solves the deck-and-pergola scope outside your core, on your timeline, without competing for your homeowner relationship."</p>
+        </div>
+
+        <div class="card info">
+          <div class="tiny">Video 3 of 4</div>
+          <h4>Unit Renovation turnaround</h4>
+          <p><strong>Hero shot:</strong> empty unit on day-one (tired kitchen, dated bathroom, scuffed walls) → same unit, finished, staged-ready for a new tenant. Side-by-side cut.</p>
+          <p><strong>Gerry's to-camera line:</strong> <em>"This is a unit refresh between tenancies — Coorparoo, two-bedroom. The strata manager called us on a Monday, the unit was on the rental market by the following Tuesday. Kitchen update, bathroom regrout, paint, carpet. Eight working days. That's the turnaround standard for property managers we work with."</em></p>
+          <p><strong>Buyer audience:</strong> Strata managers and property-management principals — message is "you call us, we turn it inside two weeks, vacancy gap minimised, no escalations to the owner."</p>
+        </div>
+
+        <div class="card info">
+          <div class="tiny">Video 4 of 4</div>
+          <h4>Termite Damage Repair</h4>
+          <p><strong>Hero shot:</strong> the structural damage exposed (wall opened up, frame eaten, subfloor compromised) → the structural repair finished, painted over, invisible. This video carries more emotional weight than the others — termite damage is fear-driven.</p>
+          <p><strong>Gerry's to-camera line:</strong> <em>"This was a termite repair we did for [pest-control firm name] in [suburb]. The pest controller found the damage during a routine inspection. They called us the same day. We exposed the frame, replaced the affected studs and bearer, made it good. From discovery to finished repair: nine days. That's the relationship we have with pest controllers across South-East Queensland."</em></p>
+          <p><strong>Buyer audience:</strong> Pest-control firms and insurance assessors — message is "we're the structural-repair partner who keeps your client relationship intact and your turnaround promise credible."</p>
+        </div>
+
+        <div class="card success">
+          <div class="tiny">Already done · template</div>
+          <h4>Video 1 — Pool Deck refurbishment</h4>
+          <p><strong>Status:</strong> Built. Asset #17 (16:9, 1280×720, 8 sec) and Asset #18 (9:16 vertical) already produced and live in the YDT-built infrastructure.</p>
+          <p><strong>Role in the brief:</strong> Acts as the <strong>format template</strong> for the other three. YDT references this when editing Videos 2, 3, 4 — same pacing, same brand treatment, same call-to-action structure.</p>
+          <p><strong>One observation from the existing cut:</strong> the current 8-second length is too short to carry a B2B credibility story. YDT should re-cut to 60–90 seconds using the six-shot pattern above, drawing additional footage from Gerry on his next pool-deck job. Treat as a Q1 refresh, not a rebuild.</p>
+        </div>
+      </div>
+
+      <h4 style="margin-top:32px">Capture sequencing — Gerry's first 90 days</h4>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>When</th>
+              <th>What Gerry does</th>
+              <th>What YDT does</th>
+              <th>Deliverable</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="b">Week 1–2</td><td>Capture footage on the next live <strong>outdoor entertainment</strong> job. Six shots per pattern above. Upload raw to YDT Dropbox.</td><td>YDT confirms shot list and Dropbox folder setup before Gerry starts shooting.</td><td>Raw footage Video 2 ready for edit</td></tr>
+            <tr><td class="b">Week 3–4</td><td>Capture footage on the next live <strong>unit renovation</strong> job (likely a strata PM referral).</td><td>YDT edits Video 2 → delivers 60–90 sec 16:9 + 9:16 cuts for review.</td><td>Video 2 published; Video 3 raw footage ready</td></tr>
+            <tr><td class="b">Week 5–6</td><td>Capture footage on the next live <strong>termite repair</strong> job (next pest-control referral).</td><td>YDT edits Video 3 → delivers cuts for review.</td><td>Video 3 published; Video 4 raw footage ready</td></tr>
+            <tr><td class="b">Week 7–8</td><td>Re-capture supplementary footage on the next <strong>pool-deck refurb</strong> for the Video 1 re-cut.</td><td>YDT edits Video 4 → delivers cuts for review.</td><td>Video 4 published</td></tr>
+            <tr><td class="b">Week 9–12</td><td>—</td><td>YDT re-cuts Video 1 from the original 8-sec asset + new pool-deck supplementary footage.</td><td>All four case-study videos live, 60–90 sec each, 16:9 + 9:16</td></tr>
+            <tr class="total"><td>End of 90 days</td><td>~4 hours total of Gerry's on-site time across 4 capture sessions</td><td>~28–32 hours total YDT edit work (inside $600/wk retainer, sequenced 1/wk)</td><td>4 case-study videos, 8 total cuts (16:9 + 9:16), all real YBMT footage, headlessly produced</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout">
+        <div class="eyebrow">Production note from CoSai</div>
+        <h3>Why this sits in the $600/week scope, not a separate video production budget</h3>
+        <p>A traditional video agency would quote $2,500–$5,000 per finished case-study video. Across four videos that's $10K–$20K — money YBMT does not need to spend. The headless model trades agency-style production polish for <em>headless operational throughput</em>: Gerry's phone captures the footage on real jobs (zero incremental cost), YDT edits invisibly inside the existing retainer, and the output looks like YBMT because it <strong>is</strong> YBMT. The polish that matters in B2B is not cinematic grading — it's <strong>real crews, real sites, real partner names</strong> on screen.</p>
+        <p>If YBMT later wants higher production values (drone work, multi-cam, professional colour grade), that's a tier-escalation conversation — to be governed by the commercial menu in Module 8, not built into the foundation commitment.</p>
+      </div>
+    </div>
+
     <div class="callout">
       <div class="eyebrow">Handoff Specification</div>
       <h3>How CoSai → YDT transfer works</h3>

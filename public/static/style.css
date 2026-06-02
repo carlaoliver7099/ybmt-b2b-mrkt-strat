@@ -428,3 +428,140 @@ ul.check-list li::before { content: '\f00c'; font-family: 'Font Awesome 6 Free';
 /* Card ul styling (Module 8 scope lists) */
 .card ul { padding-left: 1.2em; margin: 8px 0 0; }
 .card ul li { padding: 4px 0; line-height: 1.5; color: var(--charcoal-soft); }
+
+/* ==========================================================================
+   Brand asset wiring — CoSai logo in nav, YBMT logo in hero, Gerry photo
+   ========================================================================== */
+
+/* Nav: replace placeholder C with CoSai wordmark */
+.brand-lockup .cosai-mark {
+  height: 38px;
+  width: auto;
+  display: block;
+}
+.brand-lockup .text-block .b2 {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 13px;
+  color: var(--aqua-light);
+  margin-left: 4px;
+}
+
+/* Hero brand bar — YBMT logo */
+.hero-brandbar {
+  margin: 28px 0 20px;
+  padding: 16px 20px;
+  background: rgba(245, 241, 234, 0.07);
+  border-left: 3px solid var(--aqua);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  max-width: 560px;
+}
+.hero-brandbar .ybmt-mark {
+  height: 56px;
+  width: auto;
+  display: block;
+  border-radius: 4px;
+}
+.hero-brandbar .brandbar-line {
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(245, 241, 234, 0.7);
+  font-weight: 600;
+}
+
+/* Approver block with Gerry photo */
+.approver-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.gerry-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 2px solid var(--aqua);
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   Signoff branding — logo on top of each sign-off card
+   ========================================================================== */
+.signoff .signoff-brand {
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--cream-deep);
+}
+.signoff .signoff-logo {
+  max-height: 44px;
+  max-width: 160px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+.signoff .ydt-placeholder {
+  font-family: var(--sans);
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: 0.04em;
+  color: var(--navy);
+  padding: 6px 14px;
+  background: var(--cream);
+  border-radius: 4px;
+}
+
+/* Sig block — wraps the signature image + line + date */
+.signoff .sig-block {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+}
+.signoff .sig-image {
+  max-width: 220px;
+  max-height: 90px;
+  width: auto;
+  height: auto;
+  margin: 14px 0 -8px -8px;
+  opacity: 0.95;
+  filter: drop-shadow(0 1px 0 rgba(27, 58, 92, 0.05));
+}
+.signoff.signed { border-top-color: var(--timber); }
+.signoff.signed .sig-line { margin-top: 4px; }
+
+/* ==========================================================================
+   Module 5 sub-section — Video Production Plan
+   ========================================================================== */
+.subsection {
+  margin-top: 56px;
+  padding-top: 40px;
+  border-top: 2px solid var(--cream-deep);
+}
+.subsection > .eyebrow {
+  color: var(--timber);
+  margin-bottom: 8px;
+}
+.subsection > h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 2rem;
+  color: var(--navy-deep);
+  margin: 0 0 14px;
+  line-height: 1.2;
+}
+.subsection h4 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: var(--navy-deep);
+  margin-top: 28px;
+  margin-bottom: 12px;
+}

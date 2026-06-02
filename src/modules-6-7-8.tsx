@@ -296,34 +296,50 @@ const Module8 = () => (
     </ul>
 
     <div class="grid cols-3">
-      <div class="signoff">
+      <div class="signoff signed">
+        <div class="signoff-brand">
+          <img src="/static/brand/cosai-logo.png" alt="CoSai CFO Services" class="signoff-logo" />
+        </div>
         <div class="tiny">For CoSai CFO Services</div>
         <h4>Carla</h4>
         <p class="small">Strategic Lead · CFO Advisor</p>
-        <div class="sig-line"></div>
-        <div class="sig-row">
-          <span>Signed</span>
-          <span>Date: _____________</span>
+        <div class="sig-block">
+          <img src="/static/brand/carla-signature.png" alt="Carla — signature" class="sig-image" />
+          <div class="sig-line"></div>
+          <div class="sig-row">
+            <span>Signed · Carla</span>
+            <span>Date: 1 June 2026</span>
+          </div>
         </div>
       </div>
       <div class="signoff">
+        <div class="signoff-brand">
+          <img src="/static/brand/ybmt-logo.png" alt="Your Building &amp; Maintenance Team" class="signoff-logo" />
+        </div>
         <div class="tiny">For YBMT</div>
         <h4>Gerry McGuire</h4>
         <p class="small">CEO · Your Building &amp; Maintenance Team</p>
-        <div class="sig-line"></div>
-        <div class="sig-row">
-          <span>Signed</span>
-          <span>Date: _____________</span>
+        <div class="sig-block">
+          <div class="sig-line"></div>
+          <div class="sig-row">
+            <span>Signed</span>
+            <span>Date: _____________</span>
+          </div>
         </div>
       </div>
       <div class="signoff">
+        <div class="signoff-brand">
+          <div class="ydt-placeholder">YDT</div>
+        </div>
         <div class="tiny">For YDT</div>
         <h4>Corrina McGowan</h4>
         <p class="small">CEO · Your Digital Team</p>
-        <div class="sig-line"></div>
-        <div class="sig-row">
-          <span>Signed</span>
-          <span>Date: _____________</span>
+        <div class="sig-block">
+          <div class="sig-line"></div>
+          <div class="sig-row">
+            <span>Signed</span>
+            <span>Date: _____________</span>
+          </div>
         </div>
       </div>
     </div>
