@@ -219,25 +219,29 @@ const PSDeepDives = () => (
           </div>
         </a>
 
-        <div style="background: rgba(255,255,255,0.5); padding: 1.8rem 1.6rem; border-radius: 10px; border: 2px dashed rgba(27, 58, 92, 0.25); height: 100%; opacity: 0.7;">
-          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.8rem;">
-            <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; color: #B8743D; font-weight: 700;">WORKSTREAM 08</div>
-            <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #888; font-weight: 700;">⏳ IN BUILD</div>
+        <a href="/ymt-geo" style="text-decoration: none; color: inherit;">
+          <div style="background: #fff; padding: 1.8rem 1.6rem; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-top: 5px solid #4DB6C7; transition: transform 0.15s; height: 100%;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.8rem;">
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; color: #B8743D; font-weight: 700;">WORKSTREAM 08</div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #2d7a3e; font-weight: 700;">✓ 16/16</div>
+            </div>
+            <h3 style="font-family: 'Fraunces', serif; font-size: 1.45rem; color: #1B3A5C; margin: 0 0 0.7rem; line-height: 1.2;">GEO / AEO</h3>
+            <p style="font-family: 'Inter', sans-serif; font-size: 0.92rem; color: #444; line-height: 1.6; margin: 0 0 1rem;">Aggarwal Princeton GEO 2024 · iPullRank AEO 2026 · llms.txt draft · 6 JSON-LD schemas · E-E-A-T architecture · 10 pillars × 8 clusters (80 pieces) · 18 programmatic pages · 60 PAA questions · 5 answer engines · 5 authority lanes.</p>
+            <div style="font-family: 'Inter', sans-serif; font-size: 0.82rem; color: #B8743D; font-weight: 600;">~9,900 words · /ymt-geo →</div>
           </div>
-          <h3 style="font-family: 'Fraunces', serif; font-size: 1.45rem; color: #1B3A5C; margin: 0 0 0.7rem; line-height: 1.2;">GEO / AEO</h3>
-          <p style="font-family: 'Inter', sans-serif; font-size: 0.92rem; color: #444; line-height: 1.6; margin: 0 0 1rem;">Aggarwal GEO Princeton 2024 · iPullRank AEO 2026 · llms.txt · 6 JSON-LD schema types · 80-piece content map · 18 programmatic pages · E-E-A-T architecture.</p>
-          <div style="font-family: 'Inter', sans-serif; font-size: 0.82rem; color: #888; font-weight: 600;">Target ~8K words · /ymt-geo</div>
-        </div>
+        </a>
 
-        <div style="background: rgba(255,255,255,0.5); padding: 1.8rem 1.6rem; border-radius: 10px; border: 2px dashed rgba(27, 58, 92, 0.25); height: 100%; opacity: 0.7;">
-          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.8rem;">
-            <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; color: #B8743D; font-weight: 700;">WORKSTREAM 09</div>
-            <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #888; font-weight: 700;">⏳ QUEUED</div>
+        <a href="/ymt-paid" style="text-decoration: none; color: inherit;">
+          <div style="background: #fff; padding: 1.8rem 1.6rem; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-top: 5px solid #1B3A5C; transition: transform 0.15s; height: 100%;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.8rem;">
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; color: #B8743D; font-weight: 700;">WORKSTREAM 09</div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #2d7a3e; font-weight: 700;">✓ 16/16</div>
+            </div>
+            <h3 style="font-family: 'Fraunces', serif; font-size: 1.45rem; color: #1B3A5C; margin: 0 0 0.7rem; line-height: 1.2;">Paid Media</h3>
+            <p style="font-family: 'Inter', sans-serif; font-size: 0.92rem; color: #444; line-height: 1.6; margin: 0 0 1rem;">$432K annual · Binet &amp; Field 60/40 ($262K long / $170K short) · LOB split TDR $224K / POE $138K / UR $69K · Google Ads MCC + 5 campaigns · Meta + Pixel + CAPI · YouTube + CTV + LinkedIn · 120-cell creative matrix · 62 headlines across Schwartz stages · 12 audiences · 4-stage bid tree · 6 handshakes · 8 risks.</p>
+            <div style="font-family: 'Inter', sans-serif; font-size: 0.82rem; color: #B8743D; font-weight: 600;">~6,700 words · /ymt-paid →</div>
           </div>
-          <h3 style="font-family: 'Fraunces', serif; font-size: 1.45rem; color: #1B3A5C; margin: 0 0 0.7rem; line-height: 1.2;">Paid Media</h3>
-          <p style="font-family: 'Inter', sans-serif; font-size: 0.92rem; color: #444; line-height: 1.6; margin: 0 0 1rem;">Binet &amp; Field 60/40 · IPA Effectiveness Code · Google Ads + Meta account structures · 120-cell creative matrix · 20+ headlines per LOB · WordStream · Common Thread Collective.</p>
-          <div style="font-family: 'Inter', sans-serif; font-size: 0.82rem; color: #888; font-weight: 600;">Target ~7K words · /ymt-paid</div>
-        </div>
+        </a>
 
         <div style="background: rgba(255,255,255,0.5); padding: 1.8rem 1.6rem; border-radius: 10px; border: 2px dashed rgba(27, 58, 92, 0.25); height: 100%; opacity: 0.7;">
           <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.8rem;">
@@ -251,7 +255,7 @@ const PSDeepDives = () => (
       </div>
 
       <div style="text-align: center; margin-top: 2rem; padding: 1.2rem; background: rgba(184, 116, 61, 0.1); border-radius: 8px; border-left: 4px solid #B8743D;">
-        <strong style="color: #1B3A5C;">PHASE 3 CHANNEL + DEMAND + LIFECYCLE LAYER:</strong> <span style="color: #B8743D; font-weight: 700;">1 of 4 COMPLETE</span> · WS-06 delivered (12/12 CH-XX · 4,293 words · quality gate passed) · WS-08 GEO/AEO next under same 10/10 doctrine.
+        <strong style="color: #1B3A5C;">PHASE 3 CHANNEL + DEMAND + LIFECYCLE LAYER:</strong> <span style="color: #B8743D; font-weight: 700;">3 of 4 COMPLETE</span> · WS-06 Channel (12/12 · 4,293 words) + WS-08 GEO/AEO (16/16 · 9,858 words) + WS-09 Paid Media (16/16 · 6,733 words) delivered · 20,884 Phase 3 words to date · WS-10 CRM Lifecycle next under same 10/10 doctrine.
       </div>
     </div>
   </section>
