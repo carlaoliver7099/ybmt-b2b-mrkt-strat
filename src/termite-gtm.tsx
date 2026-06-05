@@ -183,7 +183,7 @@ export const renderTermiteGTM = () => (
     <TGPillar09Social />
     <TGPillar10Partnerships />
     <TGPillar11Print />
-    {/* P-12 Instrumentation appended in final tranche */}
+    <TGPillar12Instrumentation />
   </>
 )
 
@@ -3734,3 +3734,321 @@ const TGPillar11Print = () => (
   </section>
 )
 
+
+/* ============================================================================
+ * PILLAR P-12 · INSTRUMENTATION & KPI KIT  (TDR · F1→F2→F3)
+ * 4 sub-sections per CMO-DELIVERY-METHOD-v1 § PILLAR 12
+ * ============================================================================ */
+const TGPillar12Instrumentation = () => (
+  <section className="pillar-block pillar-block-rev" id="p12">
+    <div className="pillar-block-h">
+      <span className="pf-pill">PILLAR P-12 · INSTRUMENTATION &amp; KPI KIT</span>
+      <h3>Instrumentation &amp; KPI Kit — where F1 marketing flows into F2 estimating and F3 finance</h3>
+      <p className="kw-block">
+        Every other pillar is content. <strong>P-12 is the nervous system that proves whether the content worked.</strong>
+        It defines: (a) which events fire from which surfaces; (b) where the data lands; (c) which dashboards aggregate
+        it; (d) which thresholds trigger action; (e) which meetings act on it. Without P-12 the rest of the system runs
+        blind. With P-12, every dollar of spend can be traced to a quote, every quote to a job, every job to a margin,
+        and every margin to a channel-of-origin decision. <em>This is the contract between marketing, sales, and finance.</em>
+        Citations: <strong>[BS-HBG]</strong> mental availability needs measurement loops · <strong>[JR-DBA]</strong> distinctive-asset
+        recognition needs tracked surfaces · <strong>[AGG-GEO]</strong> AI-surface attribution requires server-side capture.
+      </p>
+    </div>
+
+    {/* ---------- 12A · TRACKING INFRASTRUCTURE ---------- */}
+    <div className="kw-block">
+      <h4>12A · Tracking infrastructure — the capture layer</h4>
+      <p>
+        Every customer touchpoint must emit a typed event into a single source of truth. We standardise on
+        <strong> GA4 + Google Tag Manager (server-side container) + CallRail + HubSpot</strong> as the four pillars of
+        the capture stack. iOS17+ link-stripping resilience is achieved via server-side GTM + Conversion APIs (Meta CAPI,
+        Google Enhanced Conversions, LinkedIn CAPI). Below is the canonical event taxonomy — copy/paste into the GA4
+        Admin → Events → Custom Events screen.
+      </p>
+
+      <h5 style={{marginTop:'12px'}}>12A.1 · GA4 event taxonomy (TDR — 18 events locked)</h5>
+      <table className="services-table meta-table">
+        <thead>
+          <tr><th>Event name (snake_case)</th><th>Fires when</th><th>Required parameters</th><th>Conversion?</th><th>Audience use</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>tdr_page_view</code></td><td>Any /termite-* page loads</td><td>page_path, page_referrer, suburb_param, utm_*</td><td>No</td><td>Remarketing seed</td></tr>
+          <tr><td><code>tdr_scroll_50</code></td><td>50% page scroll depth</td><td>page_path, content_type (pillar/landing/blog)</td><td>No</td><td>Engaged-reader audience</td></tr>
+          <tr><td><code>tdr_scroll_90</code></td><td>90% page scroll depth</td><td>page_path, content_type, time_on_page_s</td><td>No</td><td>Hot-reader audience</td></tr>
+          <tr><td><code>tdr_video_play</code></td><td>Hero / proof video play</td><td>video_id, video_position, page_path</td><td>No</td><td>Video-engaged audience (Meta retarget)</td></tr>
+          <tr><td><code>tdr_lead_magnet_view</code></td><td>Lead-magnet form loads on screen</td><td>magnet_id (LM-01..LM-04), page_path</td><td>No</td><td>Form-abandoner retarget pool</td></tr>
+          <tr><td><code>tdr_lead_magnet_submit</code></td><td>Lead magnet form submitted successfully</td><td>magnet_id, email_hashed, suburb, source</td><td><strong>Yes (soft)</strong></td><td>Nurture-sequence trigger</td></tr>
+          <tr><td><code>tdr_quote_form_view</code></td><td>Quote request form loads (above-fold visible)</td><td>page_path, form_variant (A/B)</td><td>No</td><td>High-intent retarget pool</td></tr>
+          <tr><td><code>tdr_quote_form_submit</code></td><td>Quote request form submitted successfully</td><td>email_hashed, phone_hashed, suburb, damage_type, urgency, source, utm_*</td><td><strong>Yes (PRIMARY)</strong></td><td>Lookalike seed (purchasers)</td></tr>
+          <tr><td><code>tdr_call_click</code></td><td>tel: link tapped (mobile)</td><td>page_path, position (header/footer/cta), utm_*</td><td><strong>Yes (PRIMARY)</strong></td><td>Mobile-quoter retarget</td></tr>
+          <tr><td><code>tdr_call_connect</code></td><td>CallRail records a call ≥ 30 sec</td><td>callrail_id, source_number, suburb, talk_time_s</td><td><strong>Yes (PRIMARY)</strong></td><td>Quote-pipeline qualifier</td></tr>
+          <tr><td><code>tdr_partner_referral_click</code></td><td>Partner-portal referral link tapped</td><td>partner_id, partner_category, page_path</td><td>No</td><td>Partner-traffic attribution</td></tr>
+          <tr><td><code>tdr_chat_open</code></td><td>Live-chat widget opened</td><td>page_path, time_to_open_s</td><td>No</td><td>Chat-engaged retarget</td></tr>
+          <tr><td><code>tdr_chat_lead</code></td><td>Chat conversation produces an email + phone</td><td>email_hashed, phone_hashed, intent_class</td><td><strong>Yes</strong></td><td>CRM nurture</td></tr>
+          <tr><td><code>tdr_qr_scan</code></td><td>QR code from print/signage/vehicle scanned</td><td>qr_id (e.g. VL-02-rear), location, source</td><td>No</td><td>Print-attribution proof</td></tr>
+          <tr><td><code>tdr_email_open</code></td><td>Nurture email opened (Server CAPI from ESP)</td><td>sequence_id, step_id, email_hashed</td><td>No</td><td>Engaged-prospect retarget</td></tr>
+          <tr><td><code>tdr_email_click</code></td><td>Nurture email link clicked</td><td>sequence_id, step_id, link_id, email_hashed</td><td>No</td><td>Hot-prospect retarget</td></tr>
+          <tr><td><code>tdr_booking_held</code></td><td>Inspection slot confirmed via CRM webhook</td><td>booking_id, suburb, inspector_id, source</td><td><strong>Yes</strong></td><td>Booked-pool retarget exclude</td></tr>
+          <tr><td><code>tdr_quote_sent</code></td><td>F2 estimator sends quote (webhook from HubSpot)</td><td>quote_id, quote_value_aud, source, suburb</td><td><strong>Yes (PIPELINE)</strong></td><td>Quote-not-yet-won retarget</td></tr>
+        </tbody>
+      </table>
+
+      <h5 style={{marginTop:'18px'}}>12A.2 · UTM parameter taxonomy (locked — no improvisation)</h5>
+      <p>Every paid &amp; tracked link must carry the five-param UTM stamp. The values below are the <strong>only</strong> permitted values. Free-text in UTM fields will be rejected by the GTM validator and the event dropped to a quarantine table for review.</p>
+      <ul className="voice-list">
+        <li><strong><code>utm_source</code></strong> (where): <code>google</code> · <code>meta</code> · <code>linkedin</code> · <code>youtube</code> · <code>tiktok</code> · <code>instagram</code> · <code>email</code> · <code>partner</code> · <code>print</code> · <code>direct_mail</code> · <code>referral</code> · <code>chatgpt</code> · <code>perplexity</code> · <code>gemini</code></li>
+        <li><strong><code>utm_medium</code></strong> (how): <code>cpc</code> · <code>display</code> · <code>video</code> · <code>social_organic</code> · <code>social_paid</code> · <code>email_nurture</code> · <code>email_broadcast</code> · <code>print_qr</code> · <code>vehicle_qr</code> · <code>signage_qr</code> · <code>partner_link</code> · <code>ai_citation</code></li>
+        <li><strong><code>utm_campaign</code></strong> (which campaign): format <code>tdr_[funnel_stage]_[creative_concept]_[YYYY-Q#]</code>. Examples: <code>tdr_awareness_anxiety_2026-q1</code> · <code>tdr_consideration_proof_2026-q1</code> · <code>tdr_intent_quote_2026-q1</code> · <code>tdr_decision_speed_2026-q1</code>.</li>
+        <li><strong><code>utm_content</code></strong> (which creative variant): format <code>[asset_code]_v[N]</code>. Examples: <code>GA-PMAX-01_v2</code> · <code>MA-CONV-03_v1</code> · <code>LM-02_v3</code> · <code>SP-W2-04_v1</code>.</li>
+        <li><strong><code>utm_term</code></strong> (which keyword/audience): SEM keyword (e.g. <code>termite_damage_repair_brisbane</code>) · Meta audience (e.g. <code>aud_homeowner_30plus_qld</code>) · Partner referrer (e.g. <code>partner_PT-02_inspector_jacobs</code>).</li>
+      </ul>
+
+      <h5 style={{marginTop:'18px'}}>12A.3 · Server-side GTM container (sGTM) — required setup</h5>
+      <ul className="voice-list">
+        <li><strong>Why server-side:</strong> iOS17+ strips client-side first-party cookies after 7 days · ITP / browser-shield rejects many third-party pixels · ad-blockers block ~25% of client-side GA hits. Server-side capture lifts measurement integrity from ~72% to ~94% (industry benchmark).</li>
+        <li><strong>Hosting:</strong> Google Cloud Run, region <code>australia-southeast1</code>, custom domain <code>tag.ybmt.com.au</code> (DNS CNAME to <code>gtm-server-*.appspot.com</code>). Cost ~$45/mo at TDR volume.</li>
+        <li><strong>Vendor tags configured server-side:</strong> GA4 · Meta CAPI · Google Ads Enhanced Conversions · Microsoft UET · TikTok Events API · LinkedIn CAPI · HubSpot. <em>Every</em> conversion event fires both client (for audience) and server (for attribution).</li>
+        <li><strong>Consent mode v2:</strong> required by Google as of March 2024 — implement via OneTrust banner with <code>ad_storage</code> / <code>analytics_storage</code> / <code>ad_user_data</code> / <code>ad_personalization</code> signals. Default denied; user-grant updates the consent state in real-time across all tags.</li>
+        <li><strong>Hashing:</strong> All PII (email, phone) hashed SHA-256 lowercase-trimmed before transmission. The sGTM container handles hashing — never send raw PII from client.</li>
+      </ul>
+
+      <h5 style={{marginTop:'18px'}}>12A.4 · CallRail dynamic number insertion (DNI) — config</h5>
+      <ul className="voice-list">
+        <li><strong>Phone pool:</strong> 24 tracking numbers from CallRail Australia (07 area code, Brisbane). Cost: A$25/number/mo × 24 = $600/mo. Each number is assigned to a source-medium-campaign triple via the JavaScript snippet.</li>
+        <li><strong>DNI rules:</strong> google/cpc → pool A · meta/social_paid → pool B · organic_search → pool C · direct → display office number · partner_link → partner-specific number · print_qr → print-attributed pool.</li>
+        <li><strong>Call event push:</strong> Every call ≥30s pushes <code>tdr_call_connect</code> to GA4 via server-side webhook, carrying <code>source</code>, <code>medium</code>, <code>campaign</code> from the call session.</li>
+        <li><strong>Call recording:</strong> All calls recorded (with disclosed consent per Australian Privacy Principle 6) for: (a) coaching the inspector team · (b) BANT-S re-scoring · (c) sentiment trending. Stored 12 months then purged.</li>
+        <li><strong>Spam filter:</strong> CallRail's "SpamCop" plus a custom keyword filter on transcripts (e.g. "SEO", "marketing", "leads for sale") suppresses the ~8% recruiter/vendor inbound that otherwise inflates lead counts.</li>
+      </ul>
+
+      <h5 style={{marginTop:'18px'}}>12A.5 · CRM field requirements (HubSpot Marketing+Sales Hub Pro)</h5>
+      <p>Every lead record must carry the following fields at creation. The lead does <strong>not</strong> hand to F2 Estimating until all <strong>P0</strong> (priority-0) fields are populated. P1 fields are nice-to-have and may be enriched during the inspection visit.</p>
+      <table className="services-table meta-table">
+        <thead>
+          <tr><th>Field</th><th>Type</th><th>Priority</th><th>Source</th><th>Used by</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>first_name · last_name</td><td>String</td><td>P0</td><td>Form / call</td><td>All teams</td></tr>
+          <tr><td>email · phone</td><td>String (hashed for export)</td><td>P0</td><td>Form / call</td><td>F1, F2</td></tr>
+          <tr><td>suburb · postcode</td><td>String</td><td>P0</td><td>Form / call</td><td>F2 (routing), F1 (geo report)</td></tr>
+          <tr><td>damage_type</td><td>Enum {`{`} subfloor, wall, roof, structural, unknown {`}`}</td><td>P0</td><td>Form / call</td><td>F2 (estimator skill match)</td></tr>
+          <tr><td>urgency_level</td><td>Enum {`{`} emergency, 1-2 weeks, 1 month, scoping {`}`}</td><td>P0</td><td>Form / call</td><td>F1 (SLA), F2 (queue)</td></tr>
+          <tr><td>insurance_involved</td><td>Bool</td><td>P0</td><td>Form / call</td><td>F2 (insurance funnel), F3 (margin)</td></tr>
+          <tr><td>insurer_name</td><td>String</td><td>P1</td><td>Inspection</td><td>F2 partner-channel report</td></tr>
+          <tr><td>property_type</td><td>Enum {`{`} owner-occupier, investor, body-corp, builder {`}`}</td><td>P0</td><td>Form / call</td><td>F1 segmentation</td></tr>
+          <tr><td>utm_source · utm_medium · utm_campaign · utm_content · utm_term</td><td>String × 5</td><td>P0</td><td>GTM cookie</td><td>F1 attribution</td></tr>
+          <tr><td>first_touch_source · last_touch_source</td><td>String × 2</td><td>P0</td><td>GTM cookie</td><td>F1 attribution</td></tr>
+          <tr><td>days_to_first_quote · days_to_close</td><td>Integer</td><td>P0 (computed)</td><td>HubSpot stage stamps</td><td>F2 velocity</td></tr>
+          <tr><td>quote_value_aud · won_value_aud</td><td>Currency</td><td>P0 (when quoted/won)</td><td>F2 / F3</td><td>F3 revenue, LTV</td></tr>
+          <tr><td>partner_referrer_id</td><td>String (FK to partner table)</td><td>P0 if partner-sourced</td><td>Form / partner portal</td><td>F1 partner attribution + commission</td></tr>
+          <tr><td>bant_s_score</td><td>Integer 0–20</td><td>P0 (after qualification)</td><td>SDR / inspector</td><td>F1 quality, F2 prioritisation</td></tr>
+          <tr><td>lead_quality_grade</td><td>Enum {`{`} A, B, C, D {`}`}</td><td>P0 (computed from BANT-S)</td><td>HubSpot workflow</td><td>F1 quality KPI</td></tr>
+          <tr><td>cross_sell_flag_poe · cross_sell_flag_ur</td><td>Bool × 2</td><td>P1</td><td>Inspector / SDR</td><td>F1 cross-LOB seed</td></tr>
+        </tbody>
+      </table>
+
+      <h5 style={{marginTop:'18px'}}>12A.6 · Conversion API (CAPI) — Meta · Google · LinkedIn</h5>
+      <ul className="voice-list">
+        <li><strong>Meta CAPI:</strong> Server-side push of <code>tdr_quote_form_submit</code>, <code>tdr_call_connect</code>, <code>tdr_booking_held</code>, <code>tdr_quote_sent</code>. Hashed email + phone + IP + UA. Event-match-quality target: ≥ 8.0 (Meta scale).</li>
+        <li><strong>Google Enhanced Conversions:</strong> Same four events pushed to Google Ads via sGTM. Improves attribution by ~12-18% in iOS-heavy traffic.</li>
+        <li><strong>LinkedIn CAPI:</strong> Only <code>tdr_quote_form_submit</code> + <code>tdr_quote_sent</code> from partner / B2B traffic. Used for the B2B partner-recruitment campaigns.</li>
+        <li><strong>Reconciliation cadence:</strong> Weekly check that GA4 conversion count = CAPI event count within ±5%. Drift &gt; 5% triggers a tag-audit ticket to YDT.</li>
+      </ul>
+    </div>
+
+    {/* ---------- 12B · REPORTING (THE DASHBOARDS) ---------- */}
+    <div className="kw-block">
+      <h4>12B · Reporting — four dashboards, four cadences, four audiences</h4>
+      <p>
+        Data without a dashboard is debt. The TDR reporting stack ships <strong>four Looker Studio dashboards</strong>,
+        each with a named owner, a fixed audience, a fixed cadence, and a fixed action expectation. Below are the widget
+        manifests — paste each into a Looker template and the build is &lt; 1 day per dashboard.
+      </p>
+
+      <h5 style={{marginTop:'12px'}}>12B.1 · Daily Tactical Dashboard (DTD)</h5>
+      <p><em>Owner: YDT account manager · Audience: Carla (CMO) · Cadence: morning 9am · Action: spot fires, escalate same-day.</em></p>
+      <table className="services-table meta-table">
+        <thead><tr><th>#</th><th>Widget</th><th>Definition</th><th>Red threshold</th><th>Amber</th><th>Green</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Yesterday spend (all channels)</td><td>Sum of Google + Meta + LinkedIn spend, yesterday</td><td>&gt; 120% of daily budget</td><td>105-120%</td><td>≤ 105%</td></tr>
+          <tr><td>2</td><td>Yesterday leads</td><td>Distinct quote-form-submit + call-connect ≥30s + chat-lead</td><td>&lt; 60% of daily target</td><td>60-90%</td><td>≥ 90%</td></tr>
+          <tr><td>3</td><td>Yesterday CPL</td><td>Spend ÷ Leads (above)</td><td>&gt; $180</td><td>$120-180</td><td>≤ $120 (target $90)</td></tr>
+          <tr><td>4</td><td>7-day rolling CPL trend</td><td>Spend ÷ Leads, last 7d, % change vs prior 7d</td><td>&gt; +25%</td><td>+10 to +25%</td><td>≤ +10%</td></tr>
+          <tr><td>5</td><td>Lead-quality grade mix</td><td>% A + B grade leads, last 7d</td><td>&lt; 55%</td><td>55-70%</td><td>≥ 70%</td></tr>
+          <tr><td>6</td><td>SLA breach count</td><td>Leads not contacted within 48h SLA, last 7d</td><td>&gt; 3</td><td>1-3</td><td>0</td></tr>
+        </tbody>
+      </table>
+
+      <h5 style={{marginTop:'18px'}}>12B.2 · Weekly Performance Dashboard (WPD)</h5>
+      <p><em>Owner: YDT performance lead · Audience: Carla + Gerry · Cadence: Monday 8am (covering prior Mon-Sun) · Action: shift budget, kill creatives, brief new creatives.</em></p>
+      <table className="services-table meta-table">
+        <thead><tr><th>#</th><th>Widget</th><th>Definition</th><th>Source</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Spend by channel</td><td>$ spend by Google / Meta / LinkedIn / YouTube / TikTok</td><td>Ads platforms (BigQuery export)</td></tr>
+          <tr><td>2</td><td>Leads by channel</td><td>Distinct primary conversions by source</td><td>GA4 + CRM</td></tr>
+          <tr><td>3</td><td>CPL by channel</td><td>Spend ÷ Leads, per channel</td><td>Computed</td></tr>
+          <tr><td>4</td><td>Lead-quality by channel (A+B %)</td><td>BANT-S ≥ 13 grade share, per channel</td><td>CRM</td></tr>
+          <tr><td>5</td><td>Quote-rate by channel</td><td>Leads → Quote-sent %, per channel, with 21-day lag window</td><td>CRM</td></tr>
+          <tr><td>6</td><td>Average quote value by channel</td><td>Mean quote_value_aud, per channel</td><td>CRM</td></tr>
+          <tr><td>7</td><td>Top 10 keywords (Google) by leads</td><td>Search-term report joined to CRM</td><td>Google Ads + CRM</td></tr>
+          <tr><td>8</td><td>Top 10 ad creatives by leads</td><td>Creative-level conversion + CTR + Hook Rate</td><td>Meta + Google</td></tr>
+          <tr><td>9</td><td>Geo heatmap (leads by suburb)</td><td>QLD postcode polygon shaded by lead count</td><td>CRM + GeoJSON</td></tr>
+          <tr><td>10</td><td>SEO impression trend (top 50 queries)</td><td>GSC impressions, 28d vs prior 28d</td><td>Search Console</td></tr>
+          <tr><td>11</td><td>AI-surface citation count</td><td>Mentions detected in ChatGPT/Perplexity/Gemini for tracked queries</td><td>iPullRank / Athena GEO tool</td></tr>
+          <tr><td>12</td><td>Partner-sourced leads + grade</td><td>Distinct leads with partner_referrer_id ≠ null, by partner</td><td>CRM</td></tr>
+        </tbody>
+      </table>
+
+      <h5 style={{marginTop:'18px'}}>12B.3 · Monthly Strategic Dashboard (MSD)</h5>
+      <p><em>Owner: Carla · Audience: Carla + Gerry + Corrina · Cadence: 5th of each month (covering prior month) · Action: campaign-mix decisions, agency briefs, board-pack inputs.</em></p>
+      <ul className="voice-list">
+        <li><strong>Brand health:</strong> Aided-recall + unaided-recall + share-of-voice from a 200-respondent quarterly QLD homeowner panel (commissioned via Pureprofile, $3.5K/quarter). MSD shows trend line.</li>
+        <li><strong>Funnel volumes:</strong> Sessions → Leads → Quotes → Wins, MoM and YoY, with conversion rates at each gate.</li>
+        <li><strong>CAC by channel:</strong> Fully-loaded acquisition cost (spend + platform fees + agency fees + creative production) ÷ closed wins, by channel.</li>
+        <li><strong>LTV by source:</strong> Sum of won_value_aud + estimated cross-LOB seed-value (POE + UR) ÷ closed wins, by source. 24-month LTV window.</li>
+        <li><strong>CAC payback:</strong> CAC ÷ (LTV × GPM%), by source. Target: ≤ 6 months for paid, ≤ 1 month for partner / organic / referral.</li>
+        <li><strong>Cohort retention:</strong> Of customers from month N, % who refer / repeat / cross-purchase by month N+6, N+12, N+18.</li>
+        <li><strong>Pipeline weighted forecast:</strong> Open quotes × historical close-rate-by-stage × expected GPM, by close month. Feeds F3 cash forecast.</li>
+        <li><strong>Insurance-channel deep-dive:</strong> Insurer-by-insurer mix, average days-to-quote, close rate, GPM differential vs cash-pay.</li>
+      </ul>
+
+      <h5 style={{marginTop:'18px'}}>12B.4 · Quarterly Board Dashboard (QBD) — F1 → F2 → F3 view</h5>
+      <p><em>Owner: Carla · Audience: Carla + Gerry + Corrina (whole-business view) · Cadence: 10th of month-after-quarter-end · Action: strategic re-allocation, hiring, capital decisions.</em></p>
+      <ul className="voice-list">
+        <li><strong>F1 Marketing pane:</strong> Spend · CPL · Lead Quality · Brand Health · SOV — by LOB (TDR / POE / UR) · with YoY delta. <em>"Are we generating demand efficiently?"</em></li>
+        <li><strong>F2 Estimating pane:</strong> Quote velocity · Quote-to-Win % · Avg Quote Value · Estimator-team utilisation · Insurance vs Cash mix — by LOB. <em>"Are we converting that demand?"</em></li>
+        <li><strong>F3 Finance pane:</strong> Revenue · GPM % · CAC payback · LTV · Cash conversion — by LOB. <em>"Is the converted demand profitable?"</em></li>
+        <li><strong>Cross-LOB cross-sell pane:</strong> TDR completions → POE seed rate · TDR completions → UR seed rate · POE → UR seed rate. Tracks the doctrine rule #4 (cross-LOB seed at completion).</li>
+        <li><strong>Decision queue:</strong> Top 5 actions for the next quarter, owners, evidence, dollar impact estimate. <em>Always populated — never empty.</em></li>
+      </ul>
+    </div>
+
+    {/* ---------- 12C · F1 → F2 → F3 DATA CONTRACT ---------- */}
+    <div className="kw-block">
+      <h4>12C · The F1 → F2 → F3 data contract — the gates between functions</h4>
+      <p>
+        The data contract is the formal handshake between Marketing (F1), Estimating (F2), and Finance (F3). It defines:
+        <strong> what data crosses the gate · in what schema · within what SLA · against what quality bar · with what return-flow.</strong>
+        Without the contract, F1 over-claims, F2 under-acknowledges, and F3 distrusts both. With the contract, every dollar
+        and every job is reconcilable end-to-end.
+      </p>
+
+      <h5 style={{marginTop:'12px'}}>12C.1 · Gate 1 — F1 (Marketing) → F2 (Estimating)</h5>
+      <ul className="voice-list">
+        <li><strong>Payload:</strong> Every CRM lead record carrying all P0 fields from 12A.5 plus the full UTM stamp (first + last touch).</li>
+        <li><strong>SLA:</strong> Lead lands in HubSpot ≤ 90 seconds from form-submit (real-time webhook). F2 must contact within <strong>4 working hours</strong> for cold leads · <strong>2 working hours</strong> for partner-sourced · <strong>30 minutes</strong> for emergency-urgency leads.</li>
+        <li><strong>Quality bar:</strong> 80% of leads must be Grade A or B (BANT-S ≥ 13) on a 28-day rolling window. Drop below 70% triggers an F1 lead-source audit within 5 working days.</li>
+        <li><strong>Quarantine rules:</strong> Leads missing P0 fields are routed to a "validation queue" not to F2. SDR enrichment must complete within 2 working hours or the lead is escalated to YDT.</li>
+        <li><strong>Reject path:</strong> F2 can mark a lead "junk" with one of five reasons {`{`} duplicate · out-of-area · vendor · job-too-small · non-serious {`}`}. Junk rate &gt; 12% triggers F1 audit.</li>
+      </ul>
+
+      <h5 style={{marginTop:'12px'}}>12C.2 · Gate 2 — F2 (Estimating) → F1 (Marketing) — the return flow</h5>
+      <ul className="voice-list">
+        <li><strong>Payload:</strong> Quote-sent event (with quote_value_aud) · Quote-won event (with won_value_aud) · Quote-lost event (with loss_reason from a 7-option enum).</li>
+        <li><strong>SLA:</strong> Quote-sent webhook to HubSpot at the moment the estimator clicks "Send quote". Win/loss webhook ≤ 24 hours after the outcome is known.</li>
+        <li><strong>What F1 does with it:</strong> Joins the win/loss back to the original UTM source. Updates source-level quote-rate · close-rate · revenue-per-lead. Reallocates next-week budget. <em>This loop runs every Monday morning in WPD widget 5 + 6.</em></li>
+        <li><strong>Loss-reason taxonomy:</strong> {`{`} price · timing · competitor-chosen · insurance-declined · scope-change · no-response · other {`}`}. The "other" rate must stay &lt; 8% — anything higher means the taxonomy needs expansion.</li>
+      </ul>
+
+      <h5 style={{marginTop:'12px'}}>12C.3 · Gate 3 — F2 (Estimating) → F3 (Finance)</h5>
+      <ul className="voice-list">
+        <li><strong>Payload:</strong> Job-booked record carrying expected revenue, expected GPM, expected close month, scheduled job-start date, deposit amount.</li>
+        <li><strong>SLA:</strong> Daily 5pm batch from HubSpot → Xero (via the existing finance integration). Discrepancies flagged in F3 morning reconcile.</li>
+        <li><strong>F3 derives:</strong> Cash-flow forecast (deposit + progress payments + final) · GPM bridge (expected GPM vs actual) · WIP register.</li>
+        <li><strong>Variance rule:</strong> If actual GPM &lt; expected GPM by ≥ 5 percentage points, F3 issues a "margin variance" ticket back to F2 + F1 within 14 days of job close. Used to refine lead-source quality grading.</li>
+      </ul>
+
+      <h5 style={{marginTop:'12px'}}>12C.4 · Gate 4 — F3 (Finance) → F1 + F2 (the closing loop)</h5>
+      <ul className="voice-list">
+        <li><strong>Payload:</strong> Actual revenue · Actual GPM · LTV by source (24-month rolling) · CAC payback by source.</li>
+        <li><strong>SLA:</strong> 5th of every month, prior-month close, into the MSD.</li>
+        <li><strong>What F1 does with it:</strong> Re-grades sources from "lead-volume winners" to "profit-pool winners". A channel that delivers cheap leads but 35% GPM will lose budget to a channel delivering more expensive leads at 50% GPM. <em>This is the only loop that ranks channels on the metric that actually matters.</em></li>
+        <li><strong>What F2 does with it:</strong> Re-tunes BANT-S weightings — if a source consistently produces high BANT-S leads that close at low GPM, BANT-S is overweighting the wrong signals.</li>
+      </ul>
+
+      <h5 style={{marginTop:'12px'}}>12C.5 · Locked KPI tree (TDR) — green/amber/red thresholds</h5>
+      <table className="services-table meta-table">
+        <thead><tr><th>Layer</th><th>KPI</th><th>Definition</th><th>Green</th><th>Amber</th><th>Red</th></tr></thead>
+        <tbody>
+          <tr><td>F1</td><td>Lead volume / week</td><td>Distinct primary conversions</td><td>≥ 45</td><td>30-44</td><td>&lt; 30</td></tr>
+          <tr><td>F1</td><td>CPL (blended)</td><td>Marketing $ ÷ Leads</td><td>≤ $90</td><td>$90-$140</td><td>&gt; $140</td></tr>
+          <tr><td>F1</td><td>Lead quality A+B %</td><td>BANT-S ≥ 13 share</td><td>≥ 75%</td><td>60-74%</td><td>&lt; 60%</td></tr>
+          <tr><td>F1</td><td>Brand-search lift</td><td>"YBMT termite" search vol. YoY</td><td>≥ +25%</td><td>+5 to +24%</td><td>&lt; +5%</td></tr>
+          <tr><td>F2</td><td>Lead → Quote %</td><td>Quote-sent ÷ Leads (21-day lag)</td><td>≥ 65%</td><td>50-64%</td><td>&lt; 50%</td></tr>
+          <tr><td>F2</td><td>Quote → Win %</td><td>Won ÷ Quote-sent (45-day lag)</td><td>≥ 40%</td><td>30-39%</td><td>&lt; 30%</td></tr>
+          <tr><td>F2</td><td>Days to first quote</td><td>Median, from lead-creation to quote-sent</td><td>≤ 5</td><td>5-9</td><td>&gt; 9</td></tr>
+          <tr><td>F2</td><td>Avg quote value</td><td>Mean quote_value_aud</td><td>≥ $18K</td><td>$12-18K</td><td>&lt; $12K</td></tr>
+          <tr><td>F3</td><td>Revenue / month (TDR)</td><td>Sum won_value_aud, recognised</td><td>≥ $480K</td><td>$340-480K</td><td>&lt; $340K</td></tr>
+          <tr><td>F3</td><td>GPM (TDR)</td><td>Per LOB management accounts</td><td>≥ 45%</td><td>40-44%</td><td>&lt; 40%</td></tr>
+          <tr><td>F3</td><td>CAC payback months</td><td>CAC ÷ (avg job × GPM ÷ 12)</td><td>≤ 4</td><td>4-7</td><td>&gt; 7</td></tr>
+          <tr><td>F3</td><td>Cross-LOB seed rate</td><td>TDR jobs producing POE/UR quote ≤ 12mo</td><td>≥ 12%</td><td>6-11%</td><td>&lt; 6%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    {/* ---------- 12D · DECISION RHYTHM ---------- */}
+    <div className="kw-block">
+      <h4>12D · The decision rhythm — four meetings, four agendas, four artefacts</h4>
+      <p>
+        Dashboards without meetings produce data exhaust. Meetings without dashboards produce opinion theatre. The decision
+        rhythm below binds the two — every meeting opens its named dashboard, walks the named agenda, and produces a named
+        artefact with an owner and a deadline. <em>No meeting may run without its dashboard open.</em>
+      </p>
+
+      <h5 style={{marginTop:'12px'}}>12D.1 · Daily 15-minute Standup (DTD-driven)</h5>
+      <ul className="voice-list">
+        <li><strong>Attendees:</strong> YDT account manager · Carla (optional, async OK)</li>
+        <li><strong>Time:</strong> 9:15am AEST · 15 minutes hard stop · Slack huddle</li>
+        <li><strong>Agenda (fixed):</strong> (1) Any Red widget on DTD? (2) Any SLA breach overnight? (3) Any creative needing pause / launch today? (4) One thing learned yesterday.</li>
+        <li><strong>Artefact:</strong> 5-line Slack post in <code>#tdr-ops</code> by 9:30am: Reds · SLA · Actions · Owner · Deadline.</li>
+        <li><strong>Escalation rule:</strong> Any Red widget unresolved 48h → escalates to WPD agenda the following Monday.</li>
+      </ul>
+
+      <h5 style={{marginTop:'12px'}}>12D.2 · Weekly 60-minute Performance Review (WPD-driven)</h5>
+      <ul className="voice-list">
+        <li><strong>Attendees:</strong> Carla · YDT performance lead · YDT account manager · Gerry (optional)</li>
+        <li><strong>Time:</strong> Monday 10:00am AEST · 60 minutes · Zoom</li>
+        <li><strong>Agenda (fixed):</strong> (1) WPD walk-through, 25 min, channel-by-channel. (2) Last-week wins (5 min). (3) Last-week losses + root cause (10 min). (4) This-week budget shifts + creative briefs (15 min). (5) Open decisions queue (5 min).</li>
+        <li><strong>Artefact:</strong> "WPD Decisions" doc — channel-budget table for next 7 days, creative-brief list with owner + deadline, escalations to MSD agenda.</li>
+        <li><strong>Decision authority:</strong> Reallocations ≤ 15% of weekly budget — YDT performance lead. &gt; 15% — Carla.</li>
+      </ul>
+
+      <h5 style={{marginTop:'12px'}}>12D.3 · Monthly 90-minute Strategy Review (MSD-driven)</h5>
+      <ul className="voice-list">
+        <li><strong>Attendees:</strong> Carla · Gerry · Corrina · YDT performance lead · YDT strategy lead</li>
+        <li><strong>Time:</strong> 7th business day of the month · 90 minutes · in-person at YBMT office where possible</li>
+        <li><strong>Agenda (fixed):</strong> (1) MSD walk-through (20 min). (2) Brand-health trend + competitive intel (15 min). (3) Funnel-gate diagnosis — which gate is the bottleneck this month (20 min). (4) Cohort + LTV + CAC payback by source (15 min). (5) Next-month strategic moves (15 min). (6) Open decisions queue + escalations to QBD (5 min).</li>
+        <li><strong>Artefact:</strong> "MSD Decisions" memo — 1-page · 5 named actions · owners · deadlines · dollar-impact estimate · pre-read for next QBD.</li>
+        <li><strong>Decision authority:</strong> Campaign-mix changes &gt; 15% of monthly spend — Carla + Gerry. New channel adds — Carla + Gerry + Corrina.</li>
+      </ul>
+
+      <h5 style={{marginTop:'12px'}}>12D.4 · Quarterly Board Review (QBD-driven)</h5>
+      <ul className="voice-list">
+        <li><strong>Attendees:</strong> Carla · Gerry · Corrina · external advisor (optional)</li>
+        <li><strong>Time:</strong> 10th of month-after-quarter-end · half-day off-site · in-person</li>
+        <li><strong>Agenda (fixed):</strong> (1) QBD F1→F2→F3 walk per LOB (45 min). (2) Cross-LOB seed performance + portfolio mix review (30 min). (3) People &amp; capacity decisions (30 min — F2 estimator headcount, F1 spend ceiling). (4) Capital decisions — new vehicles, new tools, new geo (45 min). (5) Next quarter goals lock + KPI re-baseline (30 min).</li>
+        <li><strong>Artefact:</strong> "Quarter Pack" — 12-page PDF with QBD screenshots, narrative commentary, named decisions, named owners, dollar-impact view. Distributed to Carla + Gerry + Corrina + filed.</li>
+        <li><strong>Decision authority:</strong> Portfolio re-allocation across LOBs · LOB shutdown/expansion · annual budget envelope — all Carla + Gerry + Corrina jointly.</li>
+      </ul>
+
+      <h5 style={{marginTop:'12px'}}>12D.5 · The escalation ladder (locked)</h5>
+      <table className="services-table meta-table">
+        <thead><tr><th>Trigger</th><th>Action</th><th>Owner</th><th>SLA</th></tr></thead>
+        <tbody>
+          <tr><td>Any DTD widget Red 2 consecutive days</td><td>Slack escalation to Carla + WPD agenda inclusion</td><td>YDT account mgr</td><td>Same day</td></tr>
+          <tr><td>WPD CPL Red for a channel</td><td>Pause channel, root-cause review</td><td>YDT performance lead</td><td>Within 24h</td></tr>
+          <tr><td>WPD Lead-quality Red for a source</td><td>Source pause + lead-source audit</td><td>Carla + YDT</td><td>Within 5 working days</td></tr>
+          <tr><td>MSD GPM Red (any LOB)</td><td>F2 + F3 joint margin-bridge analysis · MSD next month</td><td>Carla + Gerry</td><td>Next MSD</td></tr>
+          <tr><td>MSD CAC-payback Red</td><td>Channel-mix re-baseline · creative-fatigue audit</td><td>Carla + YDT strategy</td><td>Next MSD</td></tr>
+          <tr><td>QBD revenue Red 2 quarters running</td><td>Portfolio strategy review — possible LOB resize</td><td>Carla + Gerry + Corrina</td><td>Next QBD</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div className="pillar-foot pillar-foot-rev">
+      <span className="pf-pill">PILLAR P-12 · INSTRUMENTATION &amp; KPI KIT — DEPLOYMENT-READY</span>
+      <span className="pf-pill">18 GA4 events · 5-param UTM taxonomy · sGTM container spec · 16 CRM fields · CAPI on 3 platforms</span>
+      <span className="pf-pill">4 dashboards · 4 cadences · 12 locked KPIs · 4-gate F1→F2→F3 data contract · escalation ladder</span>
+    </div>
+  </section>
+)
