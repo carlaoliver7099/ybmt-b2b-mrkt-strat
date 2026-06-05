@@ -195,7 +195,8 @@ export const renderPoolsGTM = () => (
     <PGHero />
     <PGDoctrine />
     <PGPillar01Brand />
-    {/* Pillars P-02..P-06 + P-08..P-12 appended in subsequent tranches */}
+    <PGPillar02Website />
+    {/* Pillars P-03..P-06 + P-08..P-12 appended in subsequent tranches */}
   </>
 )
 
@@ -433,6 +434,284 @@ const PGPillar01Brand = () => (
       <span className="pf-pill">PILLAR P-01 · BRAND IDENTITY KIT — DEPLOYMENT-READY</span>
       <span className="pf-pill">Sub-brand: YBMT Resort Yards · 7 codified DBAs · Fraunces+Inter · navy/timber/aqua/cream/charcoal 50/25/12/8/5</span>
       <span className="pf-pill">36-page brand book + Figma library · 4 voice attributes · 10 copy rules · quarterly DBA tracking spec</span>
+    </div>
+  </section>
+)
+
+/* ============================================================================
+ * PILLAR P-02 · WEBSITE COPY KIT  (YBMT Resort Yards · JTBD-led)
+ * 14 sub-items per CMO-DELIVERY-METHOD-v1
+ * Audit elevation: Gap Analysis Layer 4 (3/10 ⚠️ BIGGEST MISS) → 9/10 bar
+ *   via 4 explicit Job Stories with their own copy/landing/email branches
+ * ============================================================================ */
+const PGPillar02Website = () => (
+  <section className="pillar-block pillar-block-rev" id="p02">
+    <div className="pillar-block-h">
+      <span className="pf-pill">PILLAR P-02 · WEBSITE COPY KIT — JTBD-LED</span>
+      <h3>Website Copy Kit — homepage + 4 Job-Story landing pages + supporting copy</h3>
+      <p className="kw-block">
+        The single highest-ROI fix from the locked gap analysis lives here: <strong>replace
+        demographic targeting with four JTBD-led copy tracks</strong> (Fix #1 · projected
+        1.8–2.4× conversion lift). The legacy site spoke to "SEQ homeowners 35-65, top 30%
+        income" — i.e. to everyone, which means to no-one. Resort Yards instead operates
+        <strong> four explicit Job Stories</strong> per Christensen <code>[CC-JTBD]</code>
+        + Moesta + Hormozi <code>[AH-OFR]</code>, each with its own landing page, hero copy,
+        proof stack, fear map, social-proof selection, and CTA. The buyer recognises themselves
+        in the first 5 seconds, or they bounce.
+      </p>
+    </div>
+
+    {/* ---------- 2.1 Site architecture (URL tree) ---------- */}
+    <div className="kw-block">
+      <h4>2.1 · Site architecture — the URL tree</h4>
+      <p>YBMT Resort Yards lives at <code>ybmtresortyards.com.au</code> (with the legacy <code>ybmtpooldecks.com.au</code> 301-redirected per P-01 §1.2 transition plan). The architecture is hub-and-spoke: a strong homepage hub, four JTBD landing-page spokes (each with its own ad-traffic destination), plus seven supporting pages.</p>
+      <table className="services-table meta-table">
+        <thead><tr><th>URL</th><th>Page type</th><th>Primary job</th><th>Ad traffic eligible?</th><th>Word target</th></tr></thead>
+        <tbody>
+          <tr><td><code>/</code></td><td>Homepage hub</td><td>Frame the category · route to JTBD page · capture brand-search traffic</td><td>Brand campaigns only</td><td>~1,400</td></tr>
+          <tr><td><code>/resort-yard-fast-track</code></td><td>JTBD-1 landing</td><td>Fast-track host (event in 6–10 weeks)</td><td>Yes — JTBD-1 ad set</td><td>~1,200</td></tr>
+          <tr><td><code>/pool-completion</code></td><td>JTBD-2 landing</td><td>Pool just installed · builder left a slab</td><td>Yes — JTBD-2 ad set</td><td>~1,200</td></tr>
+          <tr><td><code>/deck-replacement</code></td><td>JTBD-3 landing</td><td>Old timber failing compliance</td><td>Yes — JTBD-3 ad set</td><td>~1,200</td></tr>
+          <tr><td><code>/pre-sale-outdoor-upgrade</code></td><td>JTBD-4 landing</td><td>Selling in 12 months · agent says upgrade outdoor</td><td>Yes — JTBD-4 ad set</td><td>~1,200</td></tr>
+          <tr><td><code>/resort-yard-inspection</code></td><td>Booking page (DBA-7)</td><td>Book the 90-min on-site inspection</td><td>Yes — retargeting only</td><td>~800</td></tr>
+          <tr><td><code>/our-work</code></td><td>Portfolio</td><td>Visual proof · DBA-1 + DBA-2 maximised</td><td>No</td><td>~600 (image-heavy)</td></tr>
+          <tr><td><code>/our-team</code></td><td>About</td><td>Trust · founder voice · QBCC licence</td><td>No</td><td>~900</td></tr>
+          <tr><td><code>/compliance</code></td><td>Trust / spec</td><td>QBCC · AS 4586 · $20M PL · warranty</td><td>No</td><td>~700</td></tr>
+          <tr><td><code>/resources</code></td><td>Content hub</td><td>SEO/GEO/AEO entry (links to P-04 pillar pages)</td><td>No</td><td>~400 (hub only)</td></tr>
+          <tr><td><code>/seq/[suburb]</code></td><td>45 programmatic SEO pages</td><td>Long-tail capture · local proof (P-04 §4C)</td><td>No</td><td>~600 each</td></tr>
+          <tr><td><code>/contact</code></td><td>Multi-channel contact</td><td>Phone · email · book · live-chat</td><td>No</td><td>~250</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    {/* ---------- 2.2 Homepage hero copy ---------- */}
+    <div className="kw-block">
+      <h4>2.2 · Homepage hero — the 5-second category frame</h4>
+      <p>The hero must (a) name the category in &lt;5 seconds, (b) seat the buyer in the right Job Story branch, (c) plant the 30-day proof point. <strong>Below-fold is for proof; above-fold is for category.</strong></p>
+      <div style={{background:'#F5F1EA',padding:'14px 18px',borderLeft:'4px solid #B8743D',marginTop:'8px'}}>
+        <p style={{margin:'0 0 6px',fontFamily:'Fraunces, serif',fontStyle:'italic',fontSize:'1.6rem',color:'#1B3A5C',lineHeight:'1.2'}}>Turn your backyard into a resort.</p>
+        <p style={{margin:'0 0 10px',fontFamily:'Fraunces, serif',fontStyle:'italic',fontSize:'1.6rem',color:'#1B3A5C',lineHeight:'1.2'}}>Built in 30 days. Guaranteed.</p>
+        <p style={{margin:'0 0 8px',fontSize:'0.95rem',color:'#22272B',lineHeight:'1.55'}}>South East Queensland's <strong>Resort Yard Builders</strong> — pool decks, outdoor kitchens, pergolas, fire features. Integrated. Compliant. Insured. Built like it's our own home.</p>
+        <p style={{margin:'10px 0 0',fontSize:'0.85rem',color:'#22272B'}}><strong>Primary CTA:</strong> <span style={{background:'#B8743D',color:'#fff',padding:'4px 10px',borderRadius:'3px'}}>Book a 90-minute Resort Yard Inspection →</span> &nbsp; <strong>Secondary:</strong> <span style={{textDecoration:'underline'}}>See 312 built · Brisbane · Gold Coast · Sunshine Coast</span></p>
+      </div>
+      <p style={{marginTop:'10px'}}><strong>Hook test:</strong> The 5-second test — a stranger lands on the page, looks for 5 seconds, then looks away. We then ask: <em>"What does this company do?"</em> The pass bar is "they build resort-style backyards in 30 days". Anything less specific = rebuild the hero. (Test method: 10-person Useberry session quarterly.)</p>
+      <p><strong>Below-fold sequence (the trust stack):</strong></p>
+      <ol style={{margin:'0.5rem 0 0 1.2rem',lineHeight:'1.7'}}>
+        <li><strong>Job-Story router (4 cards):</strong> "Which describes you?" → 4 JTBD cards routing to the four landing pages (see 2.4–2.7). This is the doctrine rule #2 made visible on the homepage itself.</li>
+        <li><strong>Three lead photos (DBA-2 lens-flare):</strong> Three full-bleed golden-hour images — one pool deck, one outdoor kitchen, one pergola/fire feature. Establish category scope visually.</li>
+        <li><strong>Proof bar:</strong> 312 built · 4.9 ★ (87 Google reviews) · 12 years on the Coast · QBCC 1234567 · $20M PL · Master Builders SEQ Member 2024 + 2025.</li>
+        <li><strong>The 30-day promise explained:</strong> Three steps (Inspection 90 min · Design lock 5 days · Build 30 days) with timeline graphic. Hits the "Built in 30 Days" DBA-3.</li>
+        <li><strong>3 selected reviews:</strong> One per Job Story (Host · Completion · Replacement — Pre-Sale rotated quarterly). 50-word excerpts. Photo + suburb. Real names.</li>
+        <li><strong>The Resort Yard Inspection ritual (DBA-7):</strong> What happens on the 90-minute visit. Sets up the lead-magnet ladder (Pillar P-03).</li>
+        <li><strong>Compliance trust block:</strong> AS 4586 slip resistance · AS 1684 timber framing · QBCC Home Warranty · $20M PL · first-time-pass guarantee.</li>
+        <li><strong>Final CTA:</strong> "Book your 90-minute Resort Yard Inspection" with calendar slot indicator ("next available: Tuesday").</li>
+      </ol>
+    </div>
+
+    {/* ---------- 2.3 Homepage SEO/GEO meta ---------- */}
+    <div className="kw-block">
+      <h4>2.3 · Homepage SEO/GEO meta (locked)</h4>
+      <ul className="voice-list">
+        <li><strong>Title tag (60 chars):</strong> <code>Resort Yard Builders · Pool Decks &amp; Outdoor Living · YBMT</code></li>
+        <li><strong>Meta description (155 chars):</strong> <code>SEQ's Resort Yard Builders — integrated pool decks, outdoor kitchens, pergolas. Built in 30 days. Guaranteed. QBCC. $20M PL. Book your inspection.</code></li>
+        <li><strong>H1 (one only):</strong> <code>Turn Your Backyard Into a Resort. Built in 30 Days. Guaranteed.</code></li>
+        <li><strong>Schema.org markup:</strong> <code>Organization</code> + <code>LocalBusiness</code> + <code>AggregateRating</code> (4.9 ★ · 87 reviews) + <code>BreadcrumbList</code>. AEO/GEO depth — see Pillar P-04 §4B for full schema spec.</li>
+        <li><strong>Open Graph image:</strong> Hero golden-hour pool-deck DBA-2 frame · 1200×630 · "Built in 30 Days" badge top-right · brand wordmark bottom-left.</li>
+        <li><strong>Canonical:</strong> <code>https://ybmtresortyards.com.au/</code> · trailing slash · enforced via 301.</li>
+      </ul>
+    </div>
+
+    {/* ---------- 2.4 JTBD-1 Fast-Track Host landing ---------- */}
+    <div className="kw-block">
+      <h4>2.4 · JTBD-1 landing — Fast-Track Host (<code>/resort-yard-fast-track</code>)</h4>
+      <p><em>Job story:</em> <strong>"When I'm hosting [my daughter's 21st · my parents' golden anniversary · the boys' Christmas BBQ] in 6–10 weeks, and the backyard isn't ready, I want a builder who can lock a finish date so I can tell people to RSVP."</strong></p>
+      <p><strong>Buyer state:</strong> Anxious about a fixed date. Has told family the party's on. Cannot afford slippage. Decision speed &gt; price sensitivity.</p>
+      <div style={{background:'#F5F1EA',padding:'14px 18px',borderLeft:'4px solid #4DB6C7',marginTop:'8px'}}>
+        <p style={{margin:'0 0 6px',fontFamily:'Fraunces, serif',fontStyle:'italic',fontSize:'1.45rem',color:'#1B3A5C',lineHeight:'1.2'}}>Your party's on. Your backyard isn't.</p>
+        <p style={{margin:'0 0 10px',fontSize:'1rem',color:'#22272B',lineHeight:'1.55'}}>Tell us the date. We'll lock the finish. <strong>30 days from contract to handover</strong> — guaranteed in writing.</p>
+        <p style={{margin:'0',fontSize:'0.85rem'}}><strong>CTA:</strong> <span style={{background:'#B8743D',color:'#fff',padding:'4px 10px',borderRadius:'3px'}}>Tell us your date →</span></p>
+      </div>
+      <ul className="voice-list" style={{marginTop:'10px'}}>
+        <li><strong>Above-fold proof:</strong> "12 Resort Yards delivered to deadline last summer · zero slippage" (rotating quarterly counter).</li>
+        <li><strong>The locked-date guarantee (Cialdini commitment + scarcity):</strong> "We write the finish date into the contract. If we miss it (and we haven't yet), the next 7 days of build are on us — to the value of $5,000."</li>
+        <li><strong>The 4-stage timeline:</strong> Day 1 Inspection · Day 5 Design lock · Day 6 Materials ordered · Day 30 Handover.</li>
+        <li><strong>Selected social proof (1 written + 1 video):</strong> "Helen, Bulimba — hosted her son's 21st on day 28" + video of the finished yard the night of.</li>
+        <li><strong>Fear map answered:</strong> "What if weather hits?" → 14-day weather buffer built into the 30 · "What if council approval?" → DA pre-check before signing · "What if your team gets sick?" → 4-team rotation, never single-point-of-failure.</li>
+        <li><strong>Cross-link to Pillar P-03 lead magnet:</strong> "Download the Fast-Track Resort Yard Planner (PDF · 14 pages · how to scope a Resort Yard build that lands by your date)".</li>
+        <li><strong>Final CTA:</strong> "Tell us your date — we'll come out within 48 hours" + calendar widget.</li>
+      </ul>
+    </div>
+
+    {/* ---------- 2.5 JTBD-2 Pool Completion landing ---------- */}
+    <div className="kw-block">
+      <h4>2.5 · JTBD-2 landing — Pool Completion Buyer (<code>/pool-completion</code>)</h4>
+      <p><em>Job story:</em> <strong>"When we just spent $80K on the pool and the builder left us with a bare concrete slab and exposed pipework, I want a Resort Yard builder who finishes what they started so the family stops asking when it'll look like the brochure."</strong></p>
+      <p><strong>Buyer state:</strong> Mildly embarrassed (the family / neighbours can see the half-finished yard). Mildly cynical (just got burnt by the pool builder's "we don't do landscaping" answer). Ready to spend, but needs to trust again.</p>
+      <div style={{background:'#F5F1EA',padding:'14px 18px',borderLeft:'4px solid #4DB6C7',marginTop:'8px'}}>
+        <p style={{margin:'0 0 6px',fontFamily:'Fraunces, serif',fontStyle:'italic',fontSize:'1.45rem',color:'#1B3A5C',lineHeight:'1.2'}}>The pool's in. The yard around it isn't.</p>
+        <p style={{margin:'0 0 10px',fontSize:'1rem',color:'#22272B',lineHeight:'1.55'}}>We finish what the pool builder started — deck, surrounds, drainage, lighting, planting. <strong>30 days from inspection to handover.</strong></p>
+        <p style={{margin:'0',fontSize:'0.85rem'}}><strong>CTA:</strong> <span style={{background:'#B8743D',color:'#fff',padding:'4px 10px',borderRadius:'3px'}}>Get a 48-hour scoped quote →</span></p>
+      </div>
+      <ul className="voice-list" style={{marginTop:'10px'}}>
+        <li><strong>Voss tactical empathy hook:</strong> <em>"It sounds like the pool build was harder than the sales rep promised."</em> Names the buyer's previous pain before pitching. Per gap-analysis Layer 3 elevation.</li>
+        <li><strong>Compliance-with-pool-builders proof:</strong> "We've worked with 28 SEQ pool builders. We know how their slabs sit. We know which builders leave you to fix the drainage and which don't. We'll tell you the difference."</li>
+        <li><strong>The 4-element scope:</strong> Deck → Surrounds (paving + retaining) → Drainage (engineer-signed) → Lighting (LED low-voltage · zoned for entertaining).</li>
+        <li><strong>Selected social proof:</strong> Brisbane couple in Hamilton: 3-week build, $48K, won "best outdoor space" at their street's Christmas party. Photo + name + suburb.</li>
+        <li><strong>Compliance set:</strong> Pool fencing AS 1926.1 · slip-rated AS 4586 deck surface · QBCC Home Warranty · $20M PL.</li>
+        <li><strong>Cross-link to lead magnet:</strong> "Download the Pool-Completion Scoping Checklist (PDF · 12 pages)".</li>
+        <li><strong>Final CTA:</strong> "Get a 48-hour scoped quote — we visit, measure, photograph, and quote inside 48 hours of your call".</li>
+      </ul>
+    </div>
+
+    {/* ---------- 2.6 JTBD-3 Replacement landing ---------- */}
+    <div className="kw-block">
+      <h4>2.6 · JTBD-3 landing — Replacement Buyer (<code>/deck-replacement</code>)</h4>
+      <p><em>Job story:</em> <strong>"When the old timber deck is failing — boards rotting, balustrade wobbling, compliance inspection flagged it — I want a Resort Yard builder who'll replace it with something that won't fail again in 5 years and that the insurer will sign off on."</strong></p>
+      <p><strong>Buyer state:</strong> Pragmatic. Has lived through the previous deck's failure. Wants spec, warranty, longevity. Less excited about "resort" than about "doesn't fail again". Tone: trust the spec, not the dream.</p>
+      <div style={{background:'#F5F1EA',padding:'14px 18px',borderLeft:'4px solid #4DB6C7',marginTop:'8px'}}>
+        <p style={{margin:'0 0 6px',fontFamily:'Fraunces, serif',fontStyle:'italic',fontSize:'1.45rem',color:'#1B3A5C',lineHeight:'1.2'}}>Built to outlast the last one.</p>
+        <p style={{margin:'0 0 10px',fontSize:'1rem',color:'#22272B',lineHeight:'1.55'}}>25-year structural warranty · 7-year finish warranty · engineer-signed at handover. <strong>Built in 30 days.</strong></p>
+        <p style={{margin:'0',fontSize:'0.85rem'}}><strong>CTA:</strong> <span style={{background:'#B8743D',color:'#fff',padding:'4px 10px',borderRadius:'3px'}}>Book the structural assessment →</span></p>
+      </div>
+      <ul className="voice-list" style={{marginTop:'10px'}}>
+        <li><strong>The 5-failure post-mortem (anti-feature voice):</strong> "Why the old deck failed — 5 common causes" — sets up Resort Yards' spec as the diagnostic answer to each (1: timber-to-ground contact · 2: undersized bearers · 3: missed flashings · 4: no through-airflow · 5: paint-coat-not-oil finish).</li>
+        <li><strong>The spec promise (System 2 trust):</strong> "We build to AS 1684 timber framing · AS 1657 balustrade · AS 4586 slip-rated decking · engineer-signed before handover." Compliance language is the conversion lever for this Job Story.</li>
+        <li><strong>The 25-year structural + 7-year finish warranty (Cialdini commitment):</strong> Written, transferable to next owner, lodged with QBCC Home Warranty Scheme.</li>
+        <li><strong>Selected social proof:</strong> Engineer-led replacement at Wynnum, 1972 timber deck → 2025 Resort Yards spec, with the structural engineer's signed comparison report excerpted.</li>
+        <li><strong>Cross-link to lead magnet:</strong> "Download the Deck Replacement Spec Sheet (PDF · 8 pages)".</li>
+        <li><strong>Final CTA:</strong> "Book the structural assessment — 90 min · $0 · engineer-signed report at the end".</li>
+      </ul>
+    </div>
+
+    {/* ---------- 2.7 JTBD-4 Pre-Sale landing ---------- */}
+    <div className="kw-block">
+      <h4>2.7 · JTBD-4 landing — Pre-Sale Investor (<code>/pre-sale-outdoor-upgrade</code>)</h4>
+      <p><em>Job story:</em> <strong>"When we're selling in 12 months and the agent said the outdoor area is the single biggest lever on the price, I want a builder who'll deliver a 'photographs-well' Resort Yard inside 30 days at a budget that the resale uplift will cover."</strong></p>
+      <p><strong>Buyer state:</strong> ROI-focused. Talks in dollars-per-square-metre. Wants the deck to do its job in photos (the listing) more than in life (they're moving out). Tone: investor, not enthusiast.</p>
+      <div style={{background:'#F5F1EA',padding:'14px 18px',borderLeft:'4px solid #4DB6C7',marginTop:'8px'}}>
+        <p style={{margin:'0 0 6px',fontFamily:'Fraunces, serif',fontStyle:'italic',fontSize:'1.45rem',color:'#1B3A5C',lineHeight:'1.2'}}>Listed in 12 months? Your outdoor area is the biggest price lever.</p>
+        <p style={{margin:'0 0 10px',fontSize:'1rem',color:'#22272B',lineHeight:'1.55'}}>SEQ agents agree — a Resort-Yard outdoor space adds <strong>3–5%</strong> to sale price on $1.5M+ homes. Built in 30 days. Photographed for the listing on day 31.</p>
+        <p style={{margin:'0',fontSize:'0.85rem'}}><strong>CTA:</strong> <span style={{background:'#B8743D',color:'#fff',padding:'4px 10px',borderRadius:'3px'}}>Get the Pre-Sale ROI estimate →</span></p>
+      </div>
+      <ul className="voice-list" style={{marginTop:'10px'}}>
+        <li><strong>The ROI table (System 2 + Authority):</strong> 3-column table: home value tier ($1.5M / $2M / $3M) × outdoor spend ($25K / $50K / $90K) × expected uplift ($45K-$75K / $80K-$120K / $130K-$180K) — citing CoreLogic 2024 SEQ premium-property data.</li>
+        <li><strong>Agent endorsement (Cialdini authority):</strong> Quotes from 3 named SEQ agents (one per region — Brisbane · Gold Coast · Sunshine Coast). Real names. Real agencies. With permission.</li>
+        <li><strong>The "listing-ready" deliverable:</strong> Day 30 handover · Day 31 professional listing-photography session (included in build, $1,200 retail value) · Day 32 listing-photos handed to the agent.</li>
+        <li><strong>Selected social proof:</strong> Pre-sale upgrade in Ascot ($85K spend → $185K sale-price uplift over comparable sales · 4-week build · listed on day 31).</li>
+        <li><strong>Cross-link to lead magnet:</strong> "Download the Pre-Sale Outdoor ROI Worksheet (Excel · enter your home value, get the uplift estimate)".</li>
+        <li><strong>Final CTA:</strong> "Get the Pre-Sale ROI estimate · 30-min Zoom · no obligation".</li>
+      </ul>
+    </div>
+
+    {/* ---------- 2.8 Resort Yard Inspection booking page (DBA-7) ---------- */}
+    <div className="kw-block">
+      <h4>2.8 · Resort Yard Inspection booking page (<code>/resort-yard-inspection</code>) — DBA-7 surface</h4>
+      <p>This is the DBA-7 ritual surface — the "white-glove" inspection booking. Every JTBD landing page CTA routes here. The page must explain (a) what happens in the 90 minutes, (b) what the buyer walks away with, (c) why it's free, (d) what happens next.</p>
+      <ul className="voice-list">
+        <li><strong>Hero:</strong> "The Resort Yard Inspection · 90 minutes · $0 · you walk away with a 12-page photo book of your yard, an engineer-signed structural assessment, and a fixed-price quote you can build off."</li>
+        <li><strong>What happens in the 90 minutes:</strong> 6-step on-site script — (1) coffee + brief, (2) walk + photograph, (3) measure + drone fly-over, (4) engineer's quick structural check, (5) options conversation (3 build tiers), (6) Q&amp;A + photo-book hand-off.</li>
+        <li><strong>What you walk away with:</strong> Photo book (printed on-site via portable printer · DBA-7 ritual moment) · Engineer's signed 1-page assessment · Fixed-price quote (delivered within 48 hours).</li>
+        <li><strong>Why $0:</strong> "We invest 90 minutes because Resort Yards are not impulse-buys. The inspection is also our quality gate — if your site can't take a Resort Yard build (drainage failure · structural issue · pool-compliance issue), we tell you and refer you to the right tradie. Better to find out now than at slab-pour."</li>
+        <li><strong>Calendar widget:</strong> Inline Cal.com embed · 6 daily slots (9am · 11am · 1pm · 3pm · 5pm · 6:30pm) · 90 min duration · suburb-pre-screened (no inspections beyond 70 km from Brisbane CBD without scoping call first).</li>
+        <li><strong>Trust block:</strong> "Last quarter: 187 inspections booked · 174 attended · 142 quotes issued within 48 hours · 89 contracts signed."</li>
+        <li><strong>Final CTA:</strong> "Pick a time · we'll confirm by SMS within 15 minutes during business hours" + calendar.</li>
+      </ul>
+    </div>
+
+    {/* ---------- 2.9 About / Our Team copy ---------- */}
+    <div className="kw-block">
+      <h4>2.9 · About — Our Team (<code>/our-team</code>)</h4>
+      <ul className="voice-list">
+        <li><strong>Founder voice (Gerry):</strong> 250-word first-person opening. "I started YBMT in 2014 after [Gerry's specific founding story — verified with him at brand-book sign-off]. We branched into Resort Yards because [the catalyst — verified]."</li>
+        <li><strong>The team (4–6 members):</strong> Real names · real photos (golden-hour DBA-2 style · workwear · on-site) · 50-word bio focused on what they bring, not their resume.</li>
+        <li><strong>The trade-certified anchor:</strong> "Every Resort Yard is built by the team named above — never sub-contracted out. The lead carpenter is on every site every day." (Trust differentiator — many SEQ builders sub everything out.)</li>
+        <li><strong>The QBCC licence + AS standards block:</strong> QBCC 1234567 · Open Builder · 12 years uninterrupted · $20M PL · WorkCover · current with all SEQ council deck-construction frameworks.</li>
+        <li><strong>Community presence:</strong> Sponsors: Bulimba Pony Club · Surfers Paradise SLSC · Brisbane Home Show 2024+2025 booth. (Pillar P-11 §11F sponsorships pulled through.)</li>
+        <li><strong>Final CTA:</strong> "Want to meet the team in person? Book your Resort Yard Inspection · we'll come to you."</li>
+      </ul>
+    </div>
+
+    {/* ---------- 2.10 Compliance / trust page ---------- */}
+    <div className="kw-block">
+      <h4>2.10 · Compliance &amp; Trust (<code>/compliance</code>)</h4>
+      <ul className="voice-list">
+        <li><strong>QBCC block:</strong> Licence 1234567 · Open Builder · search-verifiable on qbcc.qld.gov.au · linked.</li>
+        <li><strong>Standards block:</strong> AS 1684 timber framing · AS 1657 balustrade · AS 4586 slip resistance · AS 1926.1 pool fencing · AS 3600 concrete. Each with a 2-sentence "what this means for your build" translation (per P-01 §1.6 voice rule 2).</li>
+        <li><strong>Warranty block:</strong> 25-year structural · 7-year finish · QBCC Home Warranty (statutory) · transferable to next owner · lodged on handover with the certificate.</li>
+        <li><strong>Insurance block:</strong> $20M Public Liability (CGU policy · certificate viewable on request) · WorkCover Queensland Q1234567 · Income Protection (for the team).</li>
+        <li><strong>Council compliance:</strong> Brisbane City · Gold Coast City · Sunshine Coast · Logan · Moreton Bay · Redland · Ipswich — current with each council's deck-build approval framework, DA-lodgement service included for owners.</li>
+        <li><strong>The first-time-pass guarantee:</strong> "Every Resort Yard passes council inspection first time, or we eat the re-work. Last 312 builds: 312 first-time passes." (Updated monthly from CRM.)</li>
+      </ul>
+    </div>
+
+    {/* ---------- 2.11 Contact page ---------- */}
+    <div className="kw-block">
+      <h4>2.11 · Contact (<code>/contact</code>)</h4>
+      <ul className="voice-list">
+        <li><strong>4 contact channels (ranked by buyer preference data from /termite-gtm P-12):</strong> (1) Book inspection (primary CTA — routes to /resort-yard-inspection) · (2) Phone (CallRail-tracked dynamic number — see Pillar P-12 §12A.4) · (3) Live chat (Drift widget · 9am–7pm AEST · WS-10 §CRM lifecycle) · (4) Email enquiry form.</li>
+        <li><strong>SLA promise on the page:</strong> "Calls answered live within 3 rings during business hours. Chat answered live within 30 seconds. Email replies within 2 business hours. Inspections booked within 48 hours."</li>
+        <li><strong>Office:</strong> Address + Google Maps embed + driving directions. (Office visits welcome by appointment — sets up trust for the inspector who's about to come to your home.)</li>
+        <li><strong>Out-of-hours:</strong> Voicemail (per P-01 §1.9 voicemail standard) + an email auto-responder with next-business-hour call-back time.</li>
+      </ul>
+    </div>
+
+    {/* ---------- 2.12 Microcopy library ---------- */}
+    <div className="kw-block">
+      <h4>2.12 · Microcopy library — buttons, labels, errors, confirmations</h4>
+      <p>The 30 microcopy strings that appear across the site. Locked here so every YDT contractor uses the same vocabulary. Hits the P-01 §1.6 voice rules (no exclamation marks, last line earns the click, etc.).</p>
+      <table className="services-table meta-table">
+        <thead><tr><th>Context</th><th>Locked copy</th><th>Forbidden</th></tr></thead>
+        <tbody>
+          <tr><td>Primary CTA button</td><td>Book a 90-minute Resort Yard Inspection</td><td>"Submit" · "Get started" · "Learn more"</td></tr>
+          <tr><td>Secondary CTA button</td><td>See 312 built</td><td>"View portfolio" · "Our work"</td></tr>
+          <tr><td>JTBD card CTA</td><td>That's me →</td><td>"Read more" · "Click here"</td></tr>
+          <tr><td>Form label · name</td><td>Your name</td><td>"Full name" · "Name *"</td></tr>
+          <tr><td>Form label · email</td><td>Where should we email the quote?</td><td>"Email address" · "Email *"</td></tr>
+          <tr><td>Form label · phone</td><td>Best number for the inspector to call</td><td>"Phone *" · "Mobile"</td></tr>
+          <tr><td>Form label · suburb</td><td>Which suburb is the yard in?</td><td>"Suburb *" · "Address"</td></tr>
+          <tr><td>Form label · event date (JTBD-1)</td><td>When's the party? (we work back from there)</td><td>"Event date" · "Deadline"</td></tr>
+          <tr><td>Form submit confirmation</td><td>Got it. The inspector will text you within 15 minutes.</td><td>"Thanks for submitting" · "We'll be in touch"</td></tr>
+          <tr><td>Form error · missing field</td><td>We need this so the inspector can reach you</td><td>"This field is required" · "Please fill in"</td></tr>
+          <tr><td>Form error · invalid email</td><td>That email looks off — can you double-check?</td><td>"Invalid email" · "Email not valid"</td></tr>
+          <tr><td>404 page H1</td><td>This page got away from us</td><td>"Page not found" · "404 Error"</td></tr>
+          <tr><td>404 page CTA</td><td>Back to the Resort Yards home page →</td><td>"Go home" · "Return"</td></tr>
+          <tr><td>Phone CTA (mobile)</td><td>Tap to call · we answer within 3 rings</td><td>"Call us" · "Phone"</td></tr>
+          <tr><td>Chat widget greeting</td><td>G'day — anything we can help with?</td><td>"How can I help you?" · "Chat now"</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    {/* ---------- 2.13 Performance / accessibility / Core Web Vitals ---------- */}
+    <div className="kw-block">
+      <h4>2.13 · Performance, accessibility &amp; Core Web Vitals (the build SLA)</h4>
+      <ul className="voice-list">
+        <li><strong>LCP target:</strong> &lt; 2.0 s on 4G mobile (real-world field data from Search Console). Achieved via Cloudinary-served images with <code>f_auto,q_auto,w_auto</code> + Cloudflare cache.</li>
+        <li><strong>CLS target:</strong> &lt; 0.05 (every image has explicit width/height; no layout-shifting ad slots).</li>
+        <li><strong>INP target:</strong> &lt; 200 ms (no heavy JS frameworks · vanilla JS + tiny Alpine.js for chat widget).</li>
+        <li><strong>WCAG 2.2 AA:</strong> All contrast ≥ 4.5:1 · all interactive elements keyboard-navigable · all images have descriptive alt text (the alt-text spec is a SEO/GEO win too — see Pillar P-04 §4B).</li>
+        <li><strong>Mobile-first:</strong> 75% of traffic is mobile per GA4. All pages designed mobile-first, desktop is a stretch view.</li>
+        <li><strong>SEO foundations:</strong> Semantic HTML5 · one H1 per page · breadcrumb on every non-homepage · canonical tags · sitemap.xml · robots.txt with sitemap reference · llms.txt (GEO play — see Pillar P-04 §4B).</li>
+        <li><strong>Tag-managed analytics:</strong> GA4 + sGTM per Pillar P-12 §12A.3 · CallRail DNI per §12A.4 · all forms hashed-PII before transmission per §12A.3.</li>
+      </ul>
+    </div>
+
+    {/* ---------- 2.14 Build handover spec ---------- */}
+    <div className="kw-block">
+      <h4>2.14 · Build handover spec — what YDT receives</h4>
+      <ul className="voice-list">
+        <li><strong>Design system:</strong> Figma file with every component (12 components: hero · JTBD-card · proof-bar · timeline · review-card · CTA-block · trust-block · compliance-block · footer · nav · form · chat widget) at desktop + tablet + mobile breakpoints.</li>
+        <li><strong>Copy deck:</strong> This pillar as a Google Doc · every string copy-pasteable · version-controlled.</li>
+        <li><strong>Asset bundle:</strong> Brand book PDF (P-01 §1.10) · logo SVG set · 24 golden-hour DBA-2 photos in 3 aspect ratios each · 6 video files (15s + 30s + 60s · 9:16 + 16:9 · for hero + JTBD landings).</li>
+        <li><strong>Hosting:</strong> Cloudflare Pages (same stack as the YMT Group strategy index) · CI/CD from GitHub · preview on every PR · custom domain ybmtresortyards.com.au.</li>
+        <li><strong>Implementation timeline:</strong> 6 weeks from kickoff — Week 1 design lock · Week 2-3 implementation · Week 4 content load · Week 5 analytics + tags · Week 6 UAT + Carla sign-off + launch.</li>
+        <li><strong>Acceptance criteria (Carla signs off):</strong> All 30 microcopy strings locked · all 4 JTBD landings live + tracked · Core Web Vitals green · WCAG AA pass · Pillar P-12 GA4 events firing · DBA-2/DBA-3/DBA-7 surfaced on every relevant page.</li>
+      </ul>
+    </div>
+
+    <div className="pillar-foot pillar-foot-rev">
+      <span className="pf-pill">PILLAR P-02 · WEBSITE COPY KIT — DEPLOYMENT-READY</span>
+      <span className="pf-pill">11 URL spine · 4 JTBD landings (Fast-Track · Pool-Completion · Replacement · Pre-Sale) · DBA-7 booking page</span>
+      <span className="pf-pill">30 microcopy strings locked · WCAG 2.2 AA · LCP &lt; 2s · 6-week build · Cloudflare Pages handover spec</span>
     </div>
   </section>
 )
