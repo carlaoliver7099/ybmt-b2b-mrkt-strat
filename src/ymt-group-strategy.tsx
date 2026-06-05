@@ -243,19 +243,21 @@ const PSDeepDives = () => (
           </div>
         </a>
 
-        <div style="background: rgba(255,255,255,0.5); padding: 1.8rem 1.6rem; border-radius: 10px; border: 2px dashed rgba(27, 58, 92, 0.25); height: 100%; opacity: 0.7;">
-          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.8rem;">
-            <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; color: #B8743D; font-weight: 700;">WORKSTREAM 10</div>
-            <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #888; font-weight: 700;">⏳ QUEUED</div>
+        <a href="/ymt-crm" style="text-decoration: none; color: inherit;">
+          <div style="background: #fff; padding: 1.8rem 1.6rem; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-top: 5px solid #B8743D; transition: transform 0.15s; height: 100%;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.8rem;">
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; color: #B8743D; font-weight: 700;">WORKSTREAM 10</div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #2d7a3e; font-weight: 700;">✓ 12/12 + 9 flows</div>
+            </div>
+            <h3 style="font-family: 'Fraunces', serif; font-size: 1.45rem; color: #1B3A5C; margin: 0 0 0.7rem; line-height: 1.2;">CRM Lifecycle</h3>
+            <p style="font-family: 'Inter', sans-serif; font-size: 0.92rem; color: #444; line-height: 1.6; margin: 0 0 1rem;">Klaviyo Marketing Mix 2025 · Drift Conversational · Balfour Growth Loops · Bond Loyalty · 9 fully-specified Klaviyo flows (Welcome → Browse Abandon → Lead Nurture → Pre-meeting → Post-Consult → Post-Sale Onboarding → Build-in-Progress → Review Request → Win-Back/Cross-LOB) · 4-dimension segment matrix · lead scoring algorithm · Klaviyo↔Estimating↔Xero data contract · 8 lifecycle metrics · 3 templates · SMS policy · 7 suppression rules · deliverability · personalisation · 12 A/B tests · 8 risks.</p>
+            <div style="font-family: 'Inter', sans-serif; font-size: 0.82rem; color: #B8743D; font-weight: 600;">~10,950 words · /ymt-crm →</div>
           </div>
-          <h3 style="font-family: 'Fraunces', serif; font-size: 1.45rem; color: #1B3A5C; margin: 0 0 0.7rem; line-height: 1.2;">CRM Lifecycle</h3>
-          <p style="font-family: 'Inter', sans-serif; font-size: 0.92rem; color: #444; line-height: 1.6; margin: 0 0 1rem;">Klaviyo Marketing Mix · Drift Conversational · Balfour Growth Loops · 9 named flows (Welcome / Browse Abandonment / Lead Nurture / Pre-meeting / Post-Consult / Post-Sale Onboarding / Build-in-Progress / Review Request / Win-Back).</p>
-          <div style="font-family: 'Inter', sans-serif; font-size: 0.82rem; color: #888; font-weight: 600;">Target ~8K words · /ymt-crm</div>
-        </div>
+        </a>
       </div>
 
       <div style="text-align: center; margin-top: 2rem; padding: 1.2rem; background: rgba(184, 116, 61, 0.1); border-radius: 8px; border-left: 4px solid #B8743D;">
-        <strong style="color: #1B3A5C;">PHASE 3 CHANNEL + DEMAND + LIFECYCLE LAYER:</strong> <span style="color: #B8743D; font-weight: 700;">3 of 4 COMPLETE</span> · WS-06 Channel (12/12 · 4,293 words) + WS-08 GEO/AEO (16/16 · 9,858 words) + WS-09 Paid Media (16/16 · 6,733 words) delivered · 20,884 Phase 3 words to date · WS-10 CRM Lifecycle next under same 10/10 doctrine.
+        <strong style="color: #1B3A5C;">PHASE 3 CHANNEL + DEMAND + LIFECYCLE LAYER:</strong> <span style="color: #2d7a3e; font-weight: 700;">✅ PHASE 3 COMPLETE</span> · 4 of 4 operating manuals delivered at 10/10 depth · 56/56 checklist items · <strong>31,832 Phase 3 words</strong> · WS-06 Channel (12/12 · 4,293w) + WS-08 GEO/AEO (16/16 · 9,858w) + WS-09 Paid Media (16/16 · 6,733w) + WS-10 CRM Lifecycle (12/12 + 9 flows · 10,948w) · Combined 145/145 markers across Phases 1+2+3 · Portfolio strategy now deployment-ready for YDT handover.
       </div>
     </div>
   </section>
