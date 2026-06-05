@@ -83,6 +83,7 @@ const PSHero = () => (
 const PSDeepDives = () => (
   <section class="band" style="background: linear-gradient(135deg, #F5F1EA 0%, #fff 100%); padding: 3rem 0;">
     <div class="band-inner">
+      {/* PHASE 1 BLOCK */}
       <div style="text-align: center; margin-bottom: 2rem;">
         <div style="font-family: 'Inter', sans-serif; font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; color: #B8743D; font-weight: 700; margin-bottom: 0.5rem;">PHASE 1 · LAYER 1 · COMPLETE</div>
         <h2 class="display" style="margin-top: 0;">The Three Operating Manuals · <span class="accent">10/10 depth · 51/51 items</span></h2>
@@ -130,7 +131,70 @@ const PSDeepDives = () => (
       </div>
 
       <div style="text-align: center; margin-top: 2rem; padding: 1.2rem; background: rgba(45, 122, 62, 0.08); border-radius: 8px; border-left: 4px solid #2d7a3e;">
-        <strong style="color: #1B3A5C;">PHASE 1 PORTFOLIO STRATEGY LAYER:</strong> <span style="color: #2d7a3e; font-weight: 700;">COMPLETE</span> · 51/51 checklist items · ~24,900 words of strategic operating manual · Quality gate passed · <em>Cleared to begin Phase 2</em>.
+        <strong style="color: #1B3A5C;">PHASE 1 PORTFOLIO STRATEGY LAYER:</strong> <span style="color: #2d7a3e; font-weight: 700;">COMPLETE</span> · 51/51 checklist items · ~24,900 words of strategic operating manual · Quality gate passed.
+      </div>
+
+      {/* PHASE 2 BLOCK */}
+      <div style="text-align: center; margin: 3.5rem 0 2rem;">
+        <div style="font-family: 'Inter', sans-serif; font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; color: #4DB6C7; font-weight: 700; margin-bottom: 0.5rem;">PHASE 2 · LAYER 2 · COMPLETE</div>
+        <h2 class="display" style="margin-top: 0;">Brand, Buyer, Funnel &amp; Assets · <span class="accent">10/10 depth · 59/59 items</span></h2>
+        <p style="font-family: 'Inter', sans-serif; font-size: 1rem; color: #444; max-width: 720px; margin: 1rem auto 0; line-height: 1.65;">
+          The four operating manuals that translate Phase 1 strategy into executable marketing systems. Brand architecture, buyer psychology, bowtie funnel, and distinctive brand assets — built at junior-YDT-executable depth.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.4rem;">
+        <a href="/ymt-brand" style="text-decoration: none; color: inherit;">
+          <div style="background: #fff; padding: 1.8rem 1.6rem; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-top: 5px solid #1B3A5C; transition: transform 0.15s; height: 100%;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.8rem;">
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; color: #B8743D; font-weight: 700;">WORKSTREAM 02</div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #2d7a3e; font-weight: 700;">✓ 15/15</div>
+            </div>
+            <h3 style="font-family: 'Fraunces', serif; font-size: 1.45rem; color: #1B3A5C; margin: 0 0 0.7rem; line-height: 1.2;">Brand Architecture</h3>
+            <p style="font-family: 'Inter', sans-serif; font-size: 0.92rem; color: #444; line-height: 1.6; margin: 0 0 1rem;">Branded-house decision · Voice (4 attributes) · 43-pair lexicon · 7 taglines · 10 copy rules · 20 paired examples · LOB voice variants · Edge cases.</p>
+            <div style="font-family: 'Inter', sans-serif; font-size: 0.82rem; color: #B8743D; font-weight: 600;">~9,100 words · /ymt-brand →</div>
+          </div>
+        </a>
+
+        <a href="/ymt-buyer-psych" style="text-decoration: none; color: inherit;">
+          <div style="background: #fff; padding: 1.8rem 1.6rem; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-top: 5px solid #B8743D; transition: transform 0.15s; height: 100%;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.8rem;">
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; color: #B8743D; font-weight: 700;">WORKSTREAM 03</div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #2d7a3e; font-weight: 700;">✓ 15/15</div>
+            </div>
+            <h3 style="font-family: 'Fraunces', serif; font-size: 1.45rem; color: #1B3A5C; margin: 0 0 0.7rem; line-height: 1.2;">Buyer Psychology</h3>
+            <p style="font-family: 'Inter', sans-serif; font-size: 0.92rem; color: #444; line-height: 1.6; margin: 0 0 1rem;">Cialdini 6 · Kahneman System 1/2 · Anchoring · Voss tactical empathy · Eisenberg modalities · 63-phrase trigger library · 8 anxieties · Cultural layer.</p>
+            <div style="font-family: 'Inter', sans-serif; font-size: 0.82rem; color: #B8743D; font-weight: 600;">~8,400 words · /ymt-buyer-psych →</div>
+          </div>
+        </a>
+
+        <a href="/ymt-bowtie" style="text-decoration: none; color: inherit;">
+          <div style="background: #fff; padding: 1.8rem 1.6rem; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-top: 5px solid #4DB6C7; transition: transform 0.15s; height: 100%;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.8rem;">
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; color: #B8743D; font-weight: 700;">WORKSTREAM 05</div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #2d7a3e; font-weight: 700;">✓ 15/15</div>
+            </div>
+            <h3 style="font-family: 'Fraunces', serif; font-size: 1.45rem; color: #1B3A5C; margin: 0 0 0.7rem; line-height: 1.2;">Bowtie Funnel</h3>
+            <p style="font-family: 'Inter', sans-serif; font-size: 0.92rem; color: #444; line-height: 1.6; margin: 0 0 1rem;">7-stage bowtie · MEDDPICC F1→F2 · 3 expansion loops · Advocacy engine · Cross-LOB triggers · 10-yr LTV model (30× ratio) · 14-row SLA · 12 unstick plays.</p>
+            <div style="font-family: 'Inter', sans-serif; font-size: 0.82rem; color: #B8743D; font-weight: 600;">~6,500 words · /ymt-bowtie →</div>
+          </div>
+        </a>
+
+        <a href="/ymt-dbas" style="text-decoration: none; color: inherit;">
+          <div style="background: #fff; padding: 1.8rem 1.6rem; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-top: 5px solid #B8743D; transition: transform 0.15s; height: 100%;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.8rem;">
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; color: #B8743D; font-weight: 700;">WORKSTREAM 07</div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #2d7a3e; font-weight: 700;">✓ 14/14</div>
+            </div>
+            <h3 style="font-family: 'Fraunces', serif; font-size: 1.45rem; color: #1B3A5C; margin: 0 0 0.7rem; line-height: 1.2;">Distinctive Brand Assets</h3>
+            <p style="font-family: 'Inter', sans-serif; font-size: 0.92rem; color: #444; line-height: 1.6; margin: 0 0 1rem;">Fame × Uniqueness matrix · Q2-2026 audit · Visual/Colour/Type/Composition/Auditory/Linguistic/Character DBAs · 12-pillar consistency · Refresh cadence.</p>
+            <div style="font-family: 'Inter', sans-serif; font-size: 0.82rem; color: #B8743D; font-weight: 600;">~5,400 words · /ymt-dbas →</div>
+          </div>
+        </a>
+      </div>
+
+      <div style="text-align: center; margin-top: 2rem; padding: 1.2rem; background: rgba(77, 182, 199, 0.12); border-radius: 8px; border-left: 4px solid #4DB6C7;">
+        <strong style="color: #1B3A5C;">PHASE 2 BRAND + FUNNEL LAYER:</strong> <span style="color: #2d7a3e; font-weight: 700;">COMPLETE</span> · 59/59 checklist items · ~29,400 words across four operating manuals · Quality gate passed · <em>Cleared to begin Phase 3 (WS-06 Channel · WS-08 GEO/AEO · WS-09 Paid Media · WS-10 CRM)</em>.
       </div>
     </div>
   </section>
