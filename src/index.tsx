@@ -360,6 +360,7 @@ import { renderYMTchannel } from './ymt-channel'
 import { renderYMTgeo } from './ymt-geo'
 import { renderYMTpaid } from './ymt-paid'
 import { renderYMTcrm } from './ymt-crm'
+import { renderTermiteGTM } from './termite-gtm'
 
 // /3-funnels — the 3-Funnel ROI Productivity strategy document
 app.get('/3-funnels', (c) => {
@@ -424,6 +425,11 @@ app.get('/ymt-paid', (c) => {
 // /ymt-crm — DOC 3 · Phase 3 · WS-10 CRM/Lifecycle/RevOps Operating Manual (10/10 depth)
 app.get('/ymt-crm', (c) => {
   return c.render(renderYMTcrm())
+})
+
+// /termite-gtm — DOC 4 · Phase 4 · LOB 1 of 3 · TERMITE DAMAGE REPAIR GTM Operating Paper (12-pillar Definition of Done)
+app.get('/termite-gtm', (c) => {
+  return c.render(renderTermiteGTM())
 })
 
 app.get('/', (c) => {
