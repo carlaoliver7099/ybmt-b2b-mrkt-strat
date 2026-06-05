@@ -351,6 +351,7 @@ import { renderThreeFunnels } from './three-funnels'
 import { renderYMTGroupStrategy } from './ymt-group-strategy'
 import { renderYMTjtbd } from './ymt-jtbd'
 import { renderYMTcategory } from './ymt-category'
+import { renderYMTkpiContract } from './ymt-kpi-contract'
 
 // /3-funnels — the 3-Funnel ROI Productivity strategy document
 app.get('/3-funnels', (c) => {
@@ -370,6 +371,11 @@ app.get('/ymt-jtbd', (c) => {
 // /ymt-category — DOC 3 · Phase 1 · WS-01 Category Design Operating Manual (10/10 depth)
 app.get('/ymt-category', (c) => {
   return c.render(renderYMTcategory())
+})
+
+// /ymt-kpi-contract — DOC 3 · Phase 1 · WS-11 KPI Contract Operating Manual (10/10 depth)
+app.get('/ymt-kpi-contract', (c) => {
+  return c.render(renderYMTkpiContract())
 })
 
 app.get('/', (c) => {
