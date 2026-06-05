@@ -1675,3 +1675,236 @@ ul.check-list li::before { content: '\f00c'; font-family: 'Font Awesome 6 Free';
   border-radius: 3px;
   color: var(--aqua-light, #7CCCD9);
 }
+
+/* ============================================================================
+   WS-04 JTBD Page Additional Styles
+   ============================================================================ */
+
+/* Persona master vs. detailed cards */
+.persona-master {
+  border-left: 5px solid var(--timber);
+  background: linear-gradient(to right, var(--cream) 0%, #fff 100%);
+}
+.persona-detailed {
+  margin: 2rem 0;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+.persona-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.persona-num {
+  display: inline-block;
+  background: var(--navy-deep);
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-family: var(--serif);
+  font-style: italic;
+}
+.persona-header h4 {
+  margin: 0;
+  flex: 1;
+  color: var(--navy-deep);
+  font-family: var(--serif);
+  font-style: italic;
+}
+.persona-pct {
+  font-size: 0.8rem;
+  background: var(--aqua);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+.persona-subtitle {
+  font-style: italic;
+  color: rgba(0,0,0,0.55);
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+.persona-list { padding-left: 1.1rem; }
+.persona-list li { margin: 0.3rem 0; line-height: 1.55; }
+
+.persona-detailed h5 {
+  color: var(--timber);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0.5rem 0;
+}
+
+/* Day-in-the-life narrative */
+.day-narrative {
+  background: rgba(184, 116, 61, 0.04);
+  border-left: 3px solid var(--timber);
+  padding: 1.25rem 1.5rem;
+  border-radius: 0 6px 6px 0;
+  margin: 0.75rem 0;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.02rem;
+  line-height: 1.65;
+  color: rgba(0,0,0,0.78);
+}
+.day-narrative p { margin: 0.65rem 0; }
+
+/* JTBD mini-summary block */
+.jtbd-mini {
+  background: rgba(77, 182, 199, 0.05);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  margin: 0.5rem 0;
+}
+.jtbd-mini p { margin: 0.4rem 0; }
+
+/* Big Job / Little Job hierarchy */
+.big-little {
+  margin: 1.5rem 0;
+}
+.big-job {
+  background: var(--navy-deep);
+  color: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+}
+.big-job h4 {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  color: #fff;
+}
+.big-job .bl-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--aqua-light, #7CCCD9);
+  margin-bottom: 0.5rem;
+}
+.big-job p {
+  color: rgba(255,255,255,0.85);
+}
+
+/* Jobs decomposition layout */
+.jobs-decomposition {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+.job-category {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.25rem;
+  border-top: 4px solid;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.job-category:nth-child(1) { border-top-color: var(--timber); }
+.job-category:nth-child(2) { border-top-color: var(--aqua); }
+.job-category:nth-child(3) { border-top-color: var(--navy-deep); }
+.job-category h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--navy-deep);
+  font-size: 1rem;
+}
+.job-list {
+  padding-left: 1.4rem;
+  margin: 0.5rem 0;
+}
+.job-list li {
+  margin: 0.5rem 0;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+@media (max-width: 900px) {
+  .jobs-decomposition { grid-template-columns: 1fr; }
+}
+
+/* Journey table — wider with horizontal scroll fallback */
+.journey-table-wrap {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+.journey-table {
+  min-width: 900px;
+  font-size: 0.88rem;
+}
+.journey-table th {
+  font-size: 0.78rem;
+}
+
+/* VOC blocks */
+.voc-block {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem 1.75rem;
+  margin: 1.25rem 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+.voc-block h4 {
+  color: var(--timber);
+  margin: 1rem 0 0.5rem 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.voc-block h4:first-child { margin-top: 0; }
+.voc-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.5rem 0;
+}
+.voc-list li {
+  position: relative;
+  padding: 0.4rem 0 0.4rem 1.4rem;
+  border-bottom: 1px dashed rgba(0,0,0,0.08);
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.97rem;
+  line-height: 1.5;
+  color: rgba(0,0,0,0.78);
+}
+.voc-list li:last-child { border-bottom: none; }
+.voc-list li::before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  font-size: 1.8rem;
+  color: var(--aqua);
+  font-family: var(--serif);
+  line-height: 1;
+}
+
+/* Anti-persona cards */
+.anti-card {
+  background: rgba(255,255,255,0.06);
+  border-left: 4px solid #c44;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 0.5rem 0;
+}
+.band-navy .anti-card {
+  background: rgba(255,255,255,0.06);
+}
+.anti-card h4 {
+  margin: 0 0 0.75rem 0;
+  color: #ff7a7a;
+  font-size: 1.05rem;
+}
+.band-navy .anti-card p,
+.band-navy .anti-card p.small { color: rgba(255,255,255,0.88); }

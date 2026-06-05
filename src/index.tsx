@@ -349,15 +349,21 @@ import { renderModules345 } from './modules-3-4-5'
 import { renderModules678 } from './modules-6-7-8'
 import { renderThreeFunnels } from './three-funnels'
 import { renderYMTGroupStrategy } from './ymt-group-strategy'
+import { renderYMTjtbd } from './ymt-jtbd'
 
 // /3-funnels — the 3-Funnel ROI Productivity strategy document
 app.get('/3-funnels', (c) => {
   return c.render(renderThreeFunnels())
 })
 
-// /ymt-group-strategy — DOC 3 · Phase 1 Portfolio Strategy Frame
+// /ymt-group-strategy — DOC 3 · Phase 1 Portfolio Strategy Index
 app.get('/ymt-group-strategy', (c) => {
   return c.render(renderYMTGroupStrategy())
+})
+
+// /ymt-jtbd — DOC 3 · Phase 1 · WS-04 JTBD Operating Manual (10/10 depth)
+app.get('/ymt-jtbd', (c) => {
+  return c.render(renderYMTjtbd())
 })
 
 app.get('/', (c) => {
