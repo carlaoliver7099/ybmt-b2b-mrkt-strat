@@ -198,7 +198,10 @@ export const renderPoolsGTM = () => (
     <PGPillar02Website />
     <PGPillar03LeadMagnets />
     <PGPillar04SeoGeoAeo />
-    {/* Pillars P-05 + P-06 + P-08..P-12 appended in subsequent tranches */}
+    <PGPillar05GoogleAds />
+    <PGPillar06MetaAds />
+    <PGPillar08SalesEnablement />
+    {/* Pillars P-09..P-12 appended in subsequent tranches · P-07 Email deferred to WS-10 */}
   </>
 )
 
@@ -1094,6 +1097,508 @@ const PGPillar04SeoGeoAeo = () => (
       <span className="pf-pill">P-04 · Tri-channel: SEO + GEO + AEO · 312 keywords tracked · 220+ URLs · 630 AEO Q&amp;As · 45 SEQ suburb pages</span>
       <span className="pf-pill">llms.txt + llms-full.txt + per-page llm-summary blocks · 6 LLM crawlers allow-listed · [AGG-GEO] + [MK-AEO] disciplines locked</span>
       <span className="pf-pill">M12 targets: 118 top-3 rankings · 14.5k organic sessions/mo · 620 LLM citations/mo · 58 featured snippets · 96 Inspections/mo from organic</span>
+    </div>
+  </section>
+)
+
+// ============================================================================
+// POE P-05 · GOOGLE ADS DEPLOYMENT KIT · JTBD-segmented · Bowtie-integrated
+// ============================================================================
+const PGPillar05GoogleAds = () => (
+  <section id="p05" className="pillar-block">
+    <div className="pillar-block-h">
+      <span className="pillar-block-eyebrow">PILLAR P-05 · POE · GOOGLE ADS DEPLOYMENT KIT</span>
+      <h2 className="pillar-block-title">P-05 · Google Ads Engine · JTBD-Segmented Campaigns Across Search · Performance Max · Demand Gen · LSA</h2>
+      <p className="pillar-block-sub">POOLS-GAP-ANALYSIS-v1 Layer-6 (Paid Acquisition) baseline 4.5/10 → 9/10 target. The Google Ads architecture mirrors the four POE Job Stories one-to-one — no demographic targeting, no generic "outdoor entertaining" buckets. Each campaign answers a single trigger with a single offer (DBA-7 Resort Yard Inspection) and feeds a single nurture sequence. [BF-LSI] Binet &amp; Field 60/40 brand-activation split governs budget; [JR-DBA] DBA-3 "Built in 30 Days" seal travels through every creative; [AH-OFR] offer-clarity discipline removes price-shopping behaviour from the SERP.</p>
+    </div>
+
+    {/* 5.1 PAID DOCTRINE */}
+    <div className="kw-block">
+      <h3>5.1 · POE Paid-Search Doctrine — Five Locked Rules</h3>
+      <ol>
+        <li><strong>JTBD-segmented, not service-segmented.</strong> Campaigns are named for the Job Story (Fast-Track / Pool-Completion / Replacement / Pre-Sale), not the service (paving / decking / landscaping). Same physical service, different buyer story.</li>
+        <li><strong>One offer per ad group.</strong> The offer is always the Resort Yard Inspection (DBA-7) · never a quote · never a brochure · never a phone call alone.</li>
+        <li><strong>Match the JTBD landing exactly.</strong> Every ad routes to the JTBD landing built in P-02 §2.4-2.7 — never the homepage · never a generic services page. [AH-OFR] message-to-landing congruence.</li>
+        <li><strong>Negative keyword discipline.</strong> "Cheap," "DIY," "kit," "second-hand," "near me free" added globally. Pool-Completion-specific negatives include "pool builder," "pool repair," "pool resurfacing" to avoid bleed into adjacent categories.</li>
+        <li><strong>Conversion = booked Inspection, not lead form.</strong> Primary conversion event is calendar-confirmed Resort Yard Inspection (Calendly webhook → GA4 event). Lead-form fill is a micro-conversion, weighted 0.2. This re-shapes Smart Bidding to optimise for actual revenue-correlated outcomes, not vanity fills.</li>
+      </ol>
+    </div>
+
+    {/* 5.2 CAMPAIGN ARCHITECTURE */}
+    <div className="kw-block">
+      <h3>5.2 · Campaign Architecture — 9 Campaigns Across 4 Channels</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Campaign</th><th>Channel</th><th>JTBD</th><th>Primary keyword theme</th><th>Daily budget M3</th><th>Target CPL</th><th>Target CPI</th></tr></thead>
+        <tbody>
+          <tr><td>POE-S-01 Fast-Track Search</td><td>Search</td><td>JTBD-1</td><td>"30 day pool deck" · "fast pool deck builder" · "outdoor entertaining quick build"</td><td>$120</td><td>$48</td><td>$160</td></tr>
+          <tr><td>POE-S-02 Pool-Completion Search</td><td>Search</td><td>JTBD-2</td><td>"finish pool surrounds" · "pool deck after install" · "coping and paving Brisbane"</td><td>$140</td><td>$42</td><td>$140</td></tr>
+          <tr><td>POE-S-03 Replacement Search</td><td>Search</td><td>JTBD-3</td><td>"pool deck replacement" · "cracked deck repair" · "rotten deck replacement"</td><td>$130</td><td>$55</td><td>$180</td></tr>
+          <tr><td>POE-S-04 Pre-Sale Search</td><td>Search</td><td>JTBD-4</td><td>"outdoor renovation before selling" · "increase house value pool deck" · "pre-sale outdoor upgrade"</td><td>$90</td><td>$60</td><td>$200</td></tr>
+          <tr><td>POE-PM-01 Resort Yard PMax</td><td>Performance Max</td><td>All 4 (asset-group-segmented)</td><td>Audience signals: 4 JTBD-coded signals · feed: Resort Yard inventory</td><td>$160</td><td>$50</td><td>$170</td></tr>
+          <tr><td>POE-DG-01 Demand Gen — Category</td><td>Demand Gen</td><td>Trigger-forming (top funnel)</td><td>Resort Yard concept videos · DBA-2 imagery · 45-sec category-design hook</td><td>$80</td><td>n/a (brand)</td><td>n/a</td></tr>
+          <tr><td>POE-LSA-01 LSA</td><td>Local Services Ads</td><td>All</td><td>"Google Guaranteed" badge · Brisbane LSA category: Outdoor Construction</td><td>$110</td><td>$38</td><td>$120</td></tr>
+          <tr><td>POE-B-01 Branded Defence</td><td>Search</td><td>All</td><td>"YBMT Resort Yards" · branded modifiers · competitor-conquest sub-group</td><td>$25</td><td>$15</td><td>$45</td></tr>
+          <tr><td>POE-RM-01 Remarketing</td><td>Display + RLSA</td><td>Returning by JTBD tag</td><td>4 audience segments mirroring the 4 JTBD landing visitors</td><td>$45</td><td>$22</td><td>$70</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Total M3 daily budget:</strong> $900/day · ~$27k/month. <strong>Total M12 daily budget:</strong> $1,650/day · ~$50k/month. <strong>Brand/Activation split (Binet &amp; Field):</strong> 35% Demand Gen + Branded Defence = brand bucket · 65% Search + PMax + LSA + Remarketing = activation bucket. The 35/65 weighting is intentional: POE is a category-design play and needs more brand-side investment than a pure performance category, but TDR/UR maturity means YBMT Group still needs activation efficiency.</p>
+    </div>
+
+    {/* 5.3 AD COPY LIBRARY */}
+    <div className="kw-block">
+      <h3>5.3 · Ad Copy Library — 4 JTBD × 5 Headlines × 4 Descriptions Per Ad Group</h3>
+      <p><strong>JTBD-1 Fast-Track Host · POE-S-01 ad group:</strong></p>
+      <table className="services-table meta-table">
+        <thead><tr><th>Asset</th><th>Copy</th></tr></thead>
+        <tbody>
+          <tr><td>Headline 1</td><td>Resort Yard · Built In 30 Days · Guaranteed</td></tr>
+          <tr><td>Headline 2</td><td>Your Party's On. Backyard Ready In 30 Days.</td></tr>
+          <tr><td>Headline 3</td><td>90-Min Resort Yard Inspection · Brisbane</td></tr>
+          <tr><td>Headline 4</td><td>Pool Deck, Paving &amp; Landscaping · 30-Day Build</td></tr>
+          <tr><td>Headline 5</td><td>YBMT Resort Yards · 25-Year Structural Warranty</td></tr>
+          <tr><td>Description 1</td><td>Built in 30 days from contract — guaranteed in writing. Book a free 90-minute Resort Yard Inspection. Brisbane &amp; Gold Coast.</td></tr>
+          <tr><td>Description 2</td><td>Wedding, 40th, summer hosting — your Resort Yard is ready when you are. Free Inspection. Built by licensed builders.</td></tr>
+          <tr><td>Description 3</td><td>Not a quote. A Resort Yard Inspection. 90 minutes on site. We measure, brief, schedule. No pressure, no sales pitch.</td></tr>
+          <tr><td>Description 4</td><td>25-year structural · 7-year finish warranty. 200+ Brisbane Resort Yards delivered. Master Builders QLD member.</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Sitelink extensions (8):</strong> "Resort Yard Inspection" · "Fast-Track Planner PDF" · "30-Day Guarantee" · "Case Studies" · "Warranty Terms" · "Hamilton Builds" · "New Farm Builds" · "Free Design Consult."</p>
+      <p><strong>Callout extensions (10):</strong> "30-Day Build Guarantee" · "25-Year Structural Warranty" · "7-Year Finish Warranty" · "Master Builders QLD" · "Licensed &amp; Insured" · "200+ Brisbane Builds" · "Free 90-Min Inspection" · "No Sales Pressure" · "Brisbane &amp; Gold Coast" · "BSA #XXXXXX."</p>
+      <p><strong>Structured snippets:</strong> "Services: Decking, Paving, Landscaping, Fencing, Lighting, Shade." · "Locations: Brisbane Inner-North, Inner-South, Western, Bayside, Gold Coast."</p>
+      <p>JTBD-2 Pool-Completion, JTBD-3 Replacement, JTBD-4 Pre-Sale ad groups each receive their own bespoke 5-headline / 4-description / 8-sitelink / 10-callout set, brief-locked, copy in YDT deliverable folder.</p>
+    </div>
+
+    {/* 5.4 PERFORMANCE MAX ASSET GROUPS */}
+    <div className="kw-block">
+      <h3>5.4 · Performance Max — 4 Asset Groups, 1 Per JTBD</h3>
+      <p>PMax campaign POE-PM-01 split into 4 asset groups (one per JTBD), each with locked DBA enforcement:</p>
+      <ul className="voice-list">
+        <li><strong>Asset group 1 · Fast-Track Host:</strong> 5 long headlines · 5 short headlines · 5 descriptions · 15 images (DBA-2 lens-flare golden-hour Resort Yard shots) · 5 videos (15-sec, 30-sec, 60-sec versions of the "30-day build" timelapse) · audience signal: in-market for outdoor renovation + life-event seekers + summer-host intenders.</li>
+        <li><strong>Asset group 2 · Pool-Completion:</strong> creatives lead with "After your pool" framing · audience signal: recent pool-builder converters (custom intent from pool-builder competitor SERP queries).</li>
+        <li><strong>Asset group 3 · Replacement:</strong> creatives lead with engineering-cross-section diagrams · audience signal: home-improvement DIY → contractor handoff intent.</li>
+        <li><strong>Asset group 4 · Pre-Sale:</strong> creatives lead with sale-uplift comp tables · audience signal: real-estate-listing intenders + agent-search SERPs.</li>
+      </ul>
+      <p><strong>PMax exclusions (account-level):</strong> brand search excluded (forces PMax to find net-new not steal from POE-B-01) · YouTube placements excluded if mobile-only/sub-15-sec inventory · Display partners excluded if quality score &lt; 7 (manual sweep monthly).</p>
+    </div>
+
+    {/* 5.5 LSA & GOOGLE GUARANTEED */}
+    <div className="kw-block">
+      <h3>5.5 · Local Services Ads (LSA) and Google Guaranteed Setup</h3>
+      <p>LSA is the highest-ROAS channel for trade businesses in Brisbane. Setup non-negotiables:</p>
+      <ol>
+        <li><strong>Google Guaranteed badge</strong> — full background check, licence verification (BSA), insurance verification ($2M public liability minimum), 100% completion within 14 days of P-05 launch.</li>
+        <li><strong>Service categories listed:</strong> "Outdoor Construction" · "Landscaper" · "Deck Builder" (3-category cross-listing maximises impression share).</li>
+        <li><strong>Service area:</strong> 45 SEQ suburbs from P-04 §4.3 mapped to LSA polygon.</li>
+        <li><strong>Photo set:</strong> 25 DBA-2 lens-flare golden-hour Resort Yard photos · 1 photo per locked suburb where possible · all submitted for Google approval batch.</li>
+        <li><strong>Review velocity:</strong> 2 Google reviews/week minimum (drip request via P-08 sales-enablement post-handover sequence). Target 4.9★ avg, 60+ reviews by M6, 120+ by M12.</li>
+        <li><strong>Lead disputes:</strong> any non-fit LSA lead disputed within 48h to maintain Quality Score. SOP doc'd for YDT ops.</li>
+        <li><strong>Budget mode:</strong> Maximise Leads (not target CPL) for M1-M3 · switch to Target CPL = $38 from M4 once data sufficient.</li>
+      </ol>
+    </div>
+
+    {/* 5.6 BIDDING & MEASUREMENT */}
+    <div className="kw-block">
+      <h3>5.6 · Bidding Strategy and Conversion Measurement Stack</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Campaign</th><th>Bid strategy M1-M2 (learning)</th><th>Bid strategy M3+ (mature)</th><th>Target</th></tr></thead>
+        <tbody>
+          <tr><td>POE-S-01..04 (JTBD Search)</td><td>Maximise Conversions</td><td>Target CPA</td><td>$48-$60 depending on JTBD</td></tr>
+          <tr><td>POE-PM-01 (PMax)</td><td>Maximise Conversions</td><td>Target ROAS</td><td>4.2x at gross-margin level</td></tr>
+          <tr><td>POE-DG-01 (Demand Gen)</td><td>Maximise Clicks (brand)</td><td>Target CPM</td><td>Reach-weighted · no CPL target</td></tr>
+          <tr><td>POE-LSA-01 (LSA)</td><td>Maximise Leads</td><td>Target Cost Per Lead</td><td>$38</td></tr>
+          <tr><td>POE-B-01 (Brand Defence)</td><td>Manual CPC</td><td>Target Impression Share 95% top of page</td><td>Defensive · no CPL target</td></tr>
+          <tr><td>POE-RM-01 (Remarketing)</td><td>Maximise Conversions</td><td>Target CPA</td><td>$22</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Conversion event hierarchy (primary → secondary → micro):</strong></p>
+      <ol>
+        <li><strong>Primary (value = 1.0):</strong> Resort Yard Inspection booked AND held (Calendly webhook + attendance confirmation from sales).</li>
+        <li><strong>Secondary (value = 0.5):</strong> Resort Yard Inspection booked but not yet held.</li>
+        <li><strong>Micro (value = 0.2):</strong> Lead-magnet PDF downloaded (one of 4 from P-03).</li>
+        <li><strong>Micro (value = 0.1):</strong> Contact-form submission via /contact (P-02 §2.11).</li>
+        <li><strong>Micro (value = 0.05):</strong> Phone call ≥ 90 seconds (Google forwarding number).</li>
+      </ol>
+      <p><strong>Tracking stack:</strong> GA4 (primary) + Google Ads conversion tags + Cloudflare Web Analytics (independent verification) + server-side D1 log (analytics-blocker resilient) + Calendly webhook → Cloudflare Worker → D1. Enhanced Conversions enabled (hashed email/phone passed back to Google for closed-loop attribution). [WBD-BOW] Bowtie post-deal expansion data fed back into Smart Bidding via offline conversion uploads M4+.</p>
+    </div>
+
+    {/* 5.7 KPI SCORECARD */}
+    <div className="kw-block">
+      <h3>5.7 · KPI Scorecard — Google Ads M1 → M24</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Metric</th><th>M1 (learn)</th><th>M3 (stabilise)</th><th>M6 (scale)</th><th>M12 (mature)</th><th>M24 (compound)</th></tr></thead>
+        <tbody>
+          <tr><td>Total monthly spend</td><td>$18k</td><td>$27k</td><td>$38k</td><td>$50k</td><td>$72k</td></tr>
+          <tr><td>Total Inspections booked from paid</td><td>40</td><td>110</td><td>210</td><td>380</td><td>620</td></tr>
+          <tr><td>Blended CPI (cost per Inspection)</td><td>$450</td><td>$245</td><td>$181</td><td>$132</td><td>$116</td></tr>
+          <tr><td>Inspection → quoted job rate</td><td>55%</td><td>68%</td><td>74%</td><td>78%</td><td>80%</td></tr>
+          <tr><td>Quoted → won rate</td><td>22%</td><td>30%</td><td>35%</td><td>38%</td><td>40%</td></tr>
+          <tr><td>Implied paid-channel won deals/month</td><td>5</td><td>22</td><td>54</td><td>113</td><td>198</td></tr>
+          <tr><td>Avg deal value (POE)</td><td>$48k</td><td>$52k</td><td>$56k</td><td>$60k</td><td>$65k</td></tr>
+          <tr><td>Implied paid revenue/month</td><td>$240k</td><td>$1.14M</td><td>$3.02M</td><td>$6.78M</td><td>$12.87M</td></tr>
+          <tr><td>Paid GPM (32% blended GP)</td><td>$77k</td><td>$365k</td><td>$967k</td><td>$2.17M</td><td>$4.12M</td></tr>
+          <tr><td>Paid ROAS (GP basis)</td><td>4.3x</td><td>13.5x</td><td>25.4x</td><td>43.4x</td><td>57.2x</td></tr>
+        </tbody>
+      </table>
+      <p className="kw-sub">M1 is intentional learning loss · target ROAS only locks from M3. M24 figures assume the Bowtie post-purchase expansion engine (P-09 + P-10) is operating · paid acquisition decays as a % of new revenue from M18 onward as referral and partnerships compound.</p>
+    </div>
+
+    {/* 5.8 GOVERNANCE & ANTI-PATTERNS */}
+    <div className="kw-block">
+      <h3>5.8 · Governance, Forbidden States, Anti-Patterns</h3>
+      <ul className="voice-list">
+        <li><strong>Forbidden state #1 · "Free quote" CTA on any ad.</strong> Always Resort Yard Inspection. Auto-flagged in copy linter.</li>
+        <li><strong>Forbidden state #2 · Landing-page = homepage on a JTBD campaign.</strong> Each JTBD campaign routes to its JTBD landing (P-02 §2.4-2.7). No exceptions.</li>
+        <li><strong>Forbidden state #3 · Mixing JTBDs in one ad group.</strong> A Fast-Track keyword + Pre-Sale keyword in same ad group = restructure. JTBD coherence is the discipline.</li>
+        <li><strong>Forbidden state #4 · Bidding on competitor brand without offer-superiority asset live.</strong> No conquest unless we have a verifiable "we will match + 30-day guarantee" landing built.</li>
+        <li><strong>Forbidden state #5 · Smart Bidding optimising on lead-form fills.</strong> Primary conversion must be Inspection-booked-and-held. Quality control reviewed weekly.</li>
+        <li><strong>Forbidden state #6 · No Brisbane-suburb modifier in geo-targeting.</strong> 45 SEQ suburbs from P-04 are the locked geo-target set. National Australia exclusion enforced.</li>
+        <li><strong>Weekly cadence:</strong> Mon search-terms-report + n-gram analysis + negative-keyword update · Wed creative-fatigue check (CTR decay &gt;15% week-over-week = rotate) · Fri budget reallocation by JTBD CPI performance.</li>
+        <li><strong>Monthly cadence:</strong> Bid-strategy review · audience-signal refresh on PMax · LSA review velocity audit · branded SOV report.</li>
+        <li><strong>Quarterly cadence:</strong> Full account restructure check · negative keyword list audit · landing-page CR audit (paired with P-02 changes if needed) · 60/40 brand/activation budget review.</li>
+      </ul>
+    </div>
+
+    <div className="pillar-foot">
+      <span className="pf-pill">P-05 · 9 campaigns across Search · PMax · Demand Gen · LSA · Branded · Remarketing</span>
+      <span className="pf-pill">$50k/mo M12 spend · CPI $132 · 380 Inspections/mo from paid · 43x GP-basis ROAS</span>
+      <span className="pf-pill">JTBD-segmented · DBA-3 "Built in 30 Days" travels every creative · Enhanced Conversions · offline upload from Bowtie</span>
+    </div>
+  </section>
+)
+
+// ============================================================================
+// POE P-06 · META ADS DEPLOYMENT KIT · Category-design + JTBD remarketing
+// ============================================================================
+const PGPillar06MetaAds = () => (
+  <section id="p06" className="pillar-block">
+    <div className="pillar-block-h">
+      <span className="pillar-block-eyebrow">PILLAR P-06 · POE · META ADS DEPLOYMENT KIT</span>
+      <h2 className="pillar-block-title">P-06 · Meta Ads Engine · Category-Design Brand Layer + JTBD Activation + Bowtie Re-Engagement Across Facebook · Instagram · WhatsApp</h2>
+      <p className="pillar-block-sub">POOLS-GAP-ANALYSIS-v1 Layer-6 (Paid Acquisition) baseline 4.5/10 → 9/10 target. Meta plays a different role than Google: where Google captures existing demand, Meta <em>creates</em> the Resort Yard category in the buyer's mind before the trigger fires. [PB-CAT] Play Bigger category-design framework operationalised through Meta's reach + creative-quality dynamics. [BS-HBG] mental availability through DBA-1 (Resort Yard frame) + DBA-2 (lens-flare golden-hour shot) shown 7x to the household over a 90-day window. [BF-LSI] 60/40 brand/activation governs budget split inside Meta itself.</p>
+    </div>
+
+    {/* 6.1 META DOCTRINE */}
+    <div className="kw-block">
+      <h3>6.1 · POE Meta Doctrine — Six Locked Rules</h3>
+      <ol>
+        <li><strong>Meta creates the category, Google captures it.</strong> Meta budget is 60% brand-frame (Resort Yard concept videos · DBA-led carousels) and 40% activation (JTBD-tied lead-gen). Google paid-search budget is inverted: 35% brand / 65% activation.</li>
+        <li><strong>Creative is the algorithm.</strong> [BF-LSI] research confirms creative quality is now the dominant lever; ad-set targeting is mostly automated by Advantage+ Audience. We optimise creative weekly, audience monthly.</li>
+        <li><strong>Vertical video first.</strong> 9:16 Reels + Stories take 70% of impressions. 1:1 feed gets 25%. 16:9 in-stream takes 5%. No 1.91:1 link-only ads.</li>
+        <li><strong>DBA enforcement in every asset.</strong> DBA-1 lockup + DBA-2 image style + DBA-3 "Built in 30 Days" seal + DBA-4 Fraunces/Inter typography appear in every Reel/carousel. Creative review checklist blocks publish if any DBA missing.</li>
+        <li><strong>Lookalike audiences seeded from booked-Inspection list, not contact-form list.</strong> Quality of seed list governs LAL quality. Inspection-booked-and-held is our highest-fidelity signal.</li>
+        <li><strong>Bowtie re-engagement is a Meta campaign, not just a CRM sequence.</strong> Post-purchase referral + advocacy-amplification + lifecycle-rebuy targeting runs as dedicated Meta campaigns [WBD-BOW].</li>
+      </ol>
+    </div>
+
+    {/* 6.2 META CAMPAIGN ARCHITECTURE */}
+    <div className="kw-block">
+      <h3>6.2 · Meta Campaign Architecture — 8 Campaigns Across 3 Objectives</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Campaign</th><th>Objective</th><th>JTBD/Role</th><th>Daily budget M3</th><th>Primary KPI</th></tr></thead>
+        <tbody>
+          <tr><td>POE-M-B01 Resort Yard Category</td><td>Awareness (Reach)</td><td>Brand · all 4 JTBDs</td><td>$110</td><td>3-sec video-view rate &gt; 65% · CPM &lt; $9 (SEQ)</td></tr>
+          <tr><td>POE-M-B02 Built In 30 Days Manifesto</td><td>Brand-Lift (ThruPlay)</td><td>Brand · DBA-3 amplification</td><td>$70</td><td>15-sec ThruPlay rate &gt; 25% · brand-lift survey lift +6pp</td></tr>
+          <tr><td>POE-M-A01 Fast-Track Host Lead-Gen</td><td>Conversions (Inspection book)</td><td>JTBD-1</td><td>$95</td><td>CPI &lt; $145 · CR &gt; 8%</td></tr>
+          <tr><td>POE-M-A02 Pool-Completion Lead-Gen</td><td>Conversions (Inspection book)</td><td>JTBD-2</td><td>$110</td><td>CPI &lt; $125 · CR &gt; 9%</td></tr>
+          <tr><td>POE-M-A03 Replacement Lead-Gen</td><td>Conversions (Inspection book)</td><td>JTBD-3</td><td>$90</td><td>CPI &lt; $165 · CR &gt; 7%</td></tr>
+          <tr><td>POE-M-A04 Pre-Sale Lead-Gen</td><td>Conversions (Inspection book)</td><td>JTBD-4 · agent-co-promo</td><td>$75</td><td>CPI &lt; $185 · CR &gt; 6%</td></tr>
+          <tr><td>POE-M-R01 JTBD Remarketing</td><td>Conversions (Inspection book)</td><td>Landing-page visitors by JTBD</td><td>$60</td><td>CPI &lt; $70 · 7-day attribution</td></tr>
+          <tr><td>POE-M-BOW01 Bowtie Advocacy</td><td>Engagement + Reach</td><td>Post-deal customer base</td><td>$40</td><td>Referral-tagged Inspection bookings · target 4/month M6</td></tr>
+        </tbody>
+      </table>
+      <p><strong>M3 daily total:</strong> $650/day · ~$19.5k/month. <strong>M12 daily total:</strong> $1,200/day · ~$36k/month. Brand-bucket = B01 + B02 = $180/day = 28% in M3 (will lift to 35% as creative library matures and brand campaigns become more efficient).</p>
+    </div>
+
+    {/* 6.3 CREATIVE PRODUCTION SYSTEM */}
+    <div className="kw-block">
+      <h3>6.3 · Creative Production System — 32 Creatives in Rotation at Any Time</h3>
+      <p>Meta creative fatigue at $20k+/month spend kills CR within 12-18 days unless creative-rotation discipline is enforced. The locked production system:</p>
+      <ul className="voice-list">
+        <li><strong>4 hero Reels per JTBD</strong> (16 total) · 15-30 sec · vertical · DBA-2 lens-flare opener · DBA-3 "30 Days" seal at 0:03 · JTBD-language hook in caption · 1 month rotation.</li>
+        <li><strong>4 carousel ads per JTBD</strong> (16 total) · 6-slide carousel · slide-1 hook · slides-2-5 before/during/after build · slide-6 DBA-7 Inspection CTA · 6-week rotation.</li>
+        <li><strong>4 user-generated-style testimonials per JTBD</strong> (16 total) · 30-60 sec · real customers from each Job Story · DBA-3 seal end-card · 8-week rotation.</li>
+        <li><strong>2 "Resort Yard timelapse" hero films</strong> · 60-90 sec · full Day-1-to-Day-30 builds · DBA-1+2+3 saturated · evergreen.</li>
+        <li><strong>1 "Manifesto" Reel</strong> · 45 sec · DBA-4 typography-led · "What is a Resort Yard?" category-frame · 6-month evergreen.</li>
+      </ul>
+      <p><strong>Total at-launch library:</strong> 51 unique creatives. <strong>Refresh cadence:</strong> weekly creative-fatigue scan (CTR + freq) · monthly add 6 new creatives · quarterly retire bottom-10 performers. Production owned by YDT creative pod (1 strategist + 1 video editor + 1 designer + 1 motion graphic) at ~$8k/month.</p>
+    </div>
+
+    {/* 6.4 AUDIENCE STRATEGY */}
+    <div className="kw-block">
+      <h3>6.4 · Audience Strategy — Advantage+ Default Plus Three Locked Custom Layers</h3>
+      <p>Meta's machine targeting outperforms manual targeting in 92% of A/B tests post-iOS-14 (Meta &amp; Common Thread Collective 2024 meta-analysis). We default to Advantage+ Audience for all conversion campaigns, but layer three custom inputs:</p>
+      <ol>
+        <li><strong>Custom audience 1 · Inspection-booked-and-held seed (highest fidelity).</strong> Feeds Lookalike 1% (Brisbane + Gold Coast) for Advantage+ to use as suggestion. Refreshed weekly via CRM sync.</li>
+        <li><strong>Custom audience 2 · Lead-magnet downloaders by JTBD tag.</strong> 4 separate audiences (one per JTBD) used for remarketing campaign POE-M-R01.</li>
+        <li><strong>Custom audience 3 · Past-customer base (Bowtie seed).</strong> Used for POE-M-BOW01 advocacy campaign + excluded from all acquisition campaigns to prevent wasted spend.</li>
+        <li><strong>Exclusion audiences:</strong> Anyone who booked an Inspection in last 90 days · current customer list · employees + family · competitor company-page audiences (Pinterest research scrape).</li>
+        <li><strong>Geo:</strong> 45 SEQ suburbs from P-04 §4.3 in radius targeting. Polygon drawn around each suburb's centroid +5km. Verified against Meta's reach estimates monthly.</li>
+        <li><strong>Demographics in Advantage+:</strong> minimum age 28 (sub-28 filtered as low purchase-power in residential outdoor construction · validated by 18-month YBMT booked-Inspection data). No gender filter. No income filter (Meta's interest-graph already weights for property-value proxies).</li>
+      </ol>
+    </div>
+
+    {/* 6.5 META PIXEL & CAPI */}
+    <div className="kw-block">
+      <h3>6.5 · Meta Pixel + Conversions API (CAPI) Setup — Server-Side Conversion Tracking</h3>
+      <p>iOS 14.5 + 17 ATT + Chrome 3rd-party-cookie deprecation = browser-side Pixel alone loses ~40% of attribution. CAPI is non-negotiable. Setup:</p>
+      <ul className="voice-list">
+        <li><strong>Browser Pixel:</strong> standard install in <code>&lt;head&gt;</code> · Advanced Matching enabled (em, ph, fn, ln, ge, db, ct, st, zp, country).</li>
+        <li><strong>CAPI server-side:</strong> Hono endpoint <code>/api/meta-capi</code> · receives conversion events from D1 (Inspection booked) and Calendly webhook (Inspection held) · fires server-side event to Meta with hashed PII + event_id matching browser Pixel for deduplication.</li>
+        <li><strong>Event Match Quality (EMQ) target:</strong> 7.5+ on a 10-point scale (current Meta-defined "good"). Verified weekly in Events Manager.</li>
+        <li><strong>Aggregated Event Measurement (AEM):</strong> 8 events configured · priority order locked: 1. Inspection booked &amp; held · 2. Inspection booked · 3. Lead magnet downloaded (JTBD-tagged) · 4. Contact form · 5. Phone call · 6. ViewContent JTBD landing · 7. AddToCart (saving a quote) · 8. PageView.</li>
+        <li><strong>iOS attribution window:</strong> 7-day click + 1-day view (Meta default). Modeled conversions used for budget allocation but not LAL-seeding.</li>
+      </ul>
+    </div>
+
+    {/* 6.6 META AD COPY LIBRARY */}
+    <div className="kw-block">
+      <h3>6.6 · Meta Ad Copy Library — Sample Sets per JTBD (Hooks · Bodies · CTAs)</h3>
+      <p><strong>JTBD-1 Fast-Track Host · POE-M-A01:</strong></p>
+      <table className="services-table meta-table">
+        <thead><tr><th>Element</th><th>Copy</th></tr></thead>
+        <tbody>
+          <tr><td>Hook (first 3 sec spoken / 0.5 sec on-screen text)</td><td>"Your party's on. Your backyard isn't. We fix that in 30 days."</td></tr>
+          <tr><td>Body 1 (under-video text)</td><td>YBMT Resort Yards builds resort-style outdoor entertainment areas in 30 days from contract sign — guaranteed in writing. Book a 90-minute Resort Yard Inspection. No quote pressure. No sales pitch.</td></tr>
+          <tr><td>Body 2 (alt copy)</td><td>200+ Brisbane backyards transformed. 30-day build guarantee. 25-year structural warranty. Free Resort Yard Inspection at your home.</td></tr>
+          <tr><td>Body 3 (story-led)</td><td>The Hamilton wedding had 110 guests. The backyard had 4 weeks. Here's how YBMT built a Resort Yard in 27 days — including pool deck, paving, landscaping, and lighting.</td></tr>
+          <tr><td>CTA button</td><td>Book Inspection</td></tr>
+          <tr><td>Landing</td><td>/resort-yard-fast-track (P-02 §2.4)</td></tr>
+          <tr><td>Visual treatment</td><td>DBA-2 lens-flare golden-hour Reel · DBA-3 "30 Days" seal animated in at 0:03 · DBA-1 logo lockup end-card at 0:15</td></tr>
+        </tbody>
+      </table>
+      <p>Equivalent 5-hook / 3-body / locked-CTA / locked-landing matrices built for JTBD-2 Pool-Completion (POE-M-A02), JTBD-3 Replacement (POE-M-A03), JTBD-4 Pre-Sale (POE-M-A04). Microcopy locked-strings library from P-02 §2.12 enforced — no creative may use "Free Quote", "No Obligation", "Get Pricing" or other forbidden strings.</p>
+    </div>
+
+    {/* 6.7 KPI SCORECARD */}
+    <div className="kw-block">
+      <h3>6.7 · KPI Scorecard — Meta Ads M1 → M24</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Metric</th><th>M1</th><th>M3</th><th>M6</th><th>M12</th><th>M24</th></tr></thead>
+        <tbody>
+          <tr><td>Total monthly spend</td><td>$12k</td><td>$19.5k</td><td>$26k</td><td>$36k</td><td>$48k</td></tr>
+          <tr><td>Reach in SEQ household (unique 28d)</td><td>120k</td><td>320k</td><td>540k</td><td>820k</td><td>1.1M</td></tr>
+          <tr><td>Frequency (28d, brand bucket)</td><td>2.4</td><td>3.8</td><td>5.2</td><td>6.9</td><td>7.4</td></tr>
+          <tr><td>Inspections booked from Meta</td><td>22</td><td>72</td><td>148</td><td>270</td><td>440</td></tr>
+          <tr><td>Blended Meta CPI</td><td>$545</td><td>$271</td><td>$176</td><td>$133</td><td>$109</td></tr>
+          <tr><td>Inspection → quoted job rate</td><td>50%</td><td>62%</td><td>70%</td><td>74%</td><td>77%</td></tr>
+          <tr><td>Quoted → won rate</td><td>20%</td><td>28%</td><td>33%</td><td>36%</td><td>38%</td></tr>
+          <tr><td>Implied Meta-channel won deals/month</td><td>2</td><td>13</td><td>34</td><td>72</td><td>129</td></tr>
+          <tr><td>Implied Meta revenue/month</td><td>$96k</td><td>$650k</td><td>$1.90M</td><td>$4.32M</td><td>$8.39M</td></tr>
+          <tr><td>Meta GPM (32%)</td><td>$31k</td><td>$208k</td><td>$610k</td><td>$1.38M</td><td>$2.68M</td></tr>
+          <tr><td>Meta ROAS (GP basis)</td><td>2.6x</td><td>10.7x</td><td>23.5x</td><td>38.4x</td><td>55.9x</td></tr>
+          <tr><td>Brand-lift survey (DBA-1 Resort Yard recall in SEQ)</td><td>3%</td><td>8%</td><td>15%</td><td>24%</td><td>32%</td></tr>
+        </tbody>
+      </table>
+      <p className="kw-sub">Brand-lift survey conducted monthly via Meta's native Brand Lift tool (sample n=600 SEQ residents) — measures unaided + aided "Resort Yard" recall. The 24% M12 target is the leading indicator that the category-design play is working: when 24% of Brisbane households know "Resort Yard" means YBMT, the Google-side CPI on branded keywords collapses and organic search compounds.</p>
+    </div>
+
+    {/* 6.8 GOVERNANCE */}
+    <div className="kw-block">
+      <h3>6.8 · Governance, Forbidden States, Anti-Patterns</h3>
+      <ul className="voice-list">
+        <li><strong>Forbidden state #1 · Boosted post becomes "the strategy."</strong> No boosted posts from organic feed — all paid Meta is briefed, briefed-locked, and runs through Ads Manager.</li>
+        <li><strong>Forbidden state #2 · Creative without DBA enforcement.</strong> All creative passes 7-DBA checklist before publish. CI failure blocks paid push.</li>
+        <li><strong>Forbidden state #3 · Single-creative ad-set.</strong> Minimum 4 creatives per ad set to give Advantage+ optimisation room.</li>
+        <li><strong>Forbidden state #4 · LAL seeded from low-intent events.</strong> Only Inspection-booked-and-held seeds LAL. Lead-form fill is too noisy.</li>
+        <li><strong>Forbidden state #5 · Lookalike spend without EMQ ≥ 7.</strong> If Pixel/CAPI Event Match Quality drops, LAL pause until restored.</li>
+        <li><strong>Weekly cadence:</strong> Mon creative-fatigue review · Wed audience-overlap audit (Meta's tool) · Fri budget shift across ad sets by CPI.</li>
+        <li><strong>Monthly cadence:</strong> Brand-Lift survey · creative library refresh (+6 new) · audience exclusion list audit · LAL refresh.</li>
+        <li><strong>Quarterly cadence:</strong> Account restructure check · campaign budget optimisation (CBO vs ABO test) · creative tone-of-voice audit · Bowtie advocacy campaign performance audit.</li>
+      </ul>
+    </div>
+
+    <div className="pillar-foot">
+      <span className="pf-pill">P-06 · 8 campaigns across Reach · ThruPlay · Conversions · Engagement · 60/40 brand/activation inside Meta</span>
+      <span className="pf-pill">$36k/mo M12 spend · CPI $133 · 270 Inspections/mo · 24% Brisbane "Resort Yard" brand recall</span>
+      <span className="pf-pill">51-creative library · Advantage+ + 3 custom layers · CAPI EMQ 7.5+ · Bowtie advocacy campaign integrated</span>
+    </div>
+  </section>
+)
+
+// ============================================================================
+// POE P-08 · SALES ENABLEMENT KIT · Resort Yard Inspection → Quote → Won → Bowtie
+// ============================================================================
+const PGPillar08SalesEnablement = () => (
+  <section id="p08" className="pillar-block">
+    <div className="pillar-block-h">
+      <span className="pillar-block-eyebrow">PILLAR P-08 · POE · SALES ENABLEMENT KIT</span>
+      <h2 className="pillar-block-title">P-08 · Sales Enablement · The Resort Yard Inspection Operating System · DBA-7 White-Glove Ritual + Quote Document + Buyer Psychology + Bowtie Handover</h2>
+      <p className="pillar-block-sub">POOLS-GAP-ANALYSIS-v1 Layer-7 (Sales Conversion) baseline 6.0/10 → 9/10 target. Sales is where category design meets cash. The Resort Yard Inspection (DBA-7) is not a sales call — it is a 90-minute white-glove on-site consultation that pre-qualifies the buyer, demonstrates expertise, captures the brief, and pre-commits to the 30-day build sequence before pricing is discussed. [CV-NSD] Voss tactical empathy + [RC-INF] Cialdini reciprocity + commitment-consistency + [DK-TFS] Kahneman anchoring all operationalised in a documented sales playbook. The output is not a "quote" — it is a Resort Yard Proposal.</p>
+    </div>
+
+    {/* 8.1 SALES DOCTRINE */}
+    <div className="kw-block">
+      <h3>8.1 · POE Sales Doctrine — Seven Locked Rules</h3>
+      <ol>
+        <li><strong>The Resort Yard Inspection is the product before the project.</strong> 90 minutes of expert time, on site, before any pricing conversation. The buyer leaves the Inspection with a documented brief, a build-week schedule, and a clear sense of next step — whether they buy from YBMT or not.</li>
+        <li><strong>No prices quoted at Inspection.</strong> Pricing is delivered as a Resort Yard Proposal within 72 hours of Inspection — never verbally on site. [DK-TFS] anchors are managed in writing, not under emotional pressure.</li>
+        <li><strong>Buyer signs the brief, not the contract, at Inspection.</strong> A signed Design Brief Document at end of Inspection commits the buyer to a process without committing to spend. Reciprocity + consistency engaged. [RC-INF].</li>
+        <li><strong>Proposal not quote.</strong> "Quote" frames buyer as commodity-shopper. "Proposal" frames YBMT as professional service. Language locked.</li>
+        <li><strong>3-option Proposal structure, not 1-quote.</strong> Good / Better / Best Resort Yard configurations. [DK-TFS] decoy effect engaged. Middle option is always the "designed-to-win" tier.</li>
+        <li><strong>Handover-to-Bowtie at deposit.</strong> The moment deposit clears, customer enters Bowtie post-purchase expansion engine [WBD-BOW]. No "we'll be in touch" gap.</li>
+        <li><strong>Sales rep is the same person from Inspection to handover.</strong> One human relationship · no "warm intro to project manager" hand-off until Day 1 of build.</li>
+      </ol>
+    </div>
+
+    {/* 8.2 RESORT YARD INSPECTION · 90-MINUTE SCRIPT */}
+    <div className="kw-block">
+      <h3>8.2 · The 90-Minute Resort Yard Inspection — Scripted Operating System</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Phase</th><th>Time</th><th>Activity</th><th>Psychological mechanism</th></tr></thead>
+        <tbody>
+          <tr><td>1 · Arrival ritual</td><td>0:00 - 0:05</td><td>YBMT branded vehicle parked street-front · uniformed YBMT polo + clipboard + tablet · greeted by name at door · shoe covers offered · A4 printed Inspection Agenda handed over</td><td>Trust transfer via signal-cost (uniform + vehicle + printed agenda = "this is professional")</td></tr>
+          <tr><td>2 · 5-minute discovery</td><td>0:05 - 0:10</td><td>"Before we look at anything — tell me what made you book the Inspection." Open question. Listen. Take notes. Mirror their language. [CV-NSD]</td><td>Buyer auto-classifies into JTBD via own language · sales rep tags JTBD on tablet</td></tr>
+          <tr><td>3 · 20-min site walk</td><td>0:10 - 0:30</td><td>Walk yard with buyer · measure tape · drone overview shot · note 8 standard data points (lot orientation · sun aspect · drainage · access · soil indication · existing structure · safety hazards · neighbour overlooks)</td><td>Demonstrates technical depth · buyer sees expertise vs commodity contractor</td></tr>
+          <tr><td>4 · 10-min "what we'd build here" preview</td><td>0:30 - 0:40</td><td>Tablet-based 3-config preview (Tropical / Coastal / Mediterranean Resort Yard archetypes overlaid on drone shot of THIS yard). No prices.</td><td>Mental availability + concreteness · buyer can "see" the outcome</td></tr>
+          <tr><td>5 · 15-min Design Brief co-authoring</td><td>0:40 - 0:55</td><td>Together: fill out a 1-page Design Brief Document on tablet · 12 questions · buyer signs at end · they keep a copy · we keep a copy · auto-synced to CRM</td><td>Commitment + consistency [RC-INF] · buyer has invested time → reluctant to walk away</td></tr>
+          <tr><td>6 · 10-min "How the 30 days work"</td><td>0:55 - 1:05</td><td>Walk through the 30-day build calendar tied to a specific assumed start date · what they need to decide by when · risks · weather contingency</td><td>De-risks the central promise · DBA-3 made tangible</td></tr>
+          <tr><td>7 · 10-min Q&A</td><td>1:05 - 1:15</td><td>Open Q&A · buyer asks questions · rep handles each with prepared response from objection-handler library (§8.5) · NO PRICES quoted</td><td>Objection list captured → enters Proposal customisation</td></tr>
+          <tr><td>8 · 10-min next-step lock</td><td>1:15 - 1:25</td><td>"Your Resort Yard Proposal will land in your inbox within 72 hours. Do you want me to walk you through it in person or on a 30-minute video call? I'll book that slot now while I'm here." Calendly opened on tablet · slot booked.</td><td>Future-pacing commitment · sales pipeline integrity preserved (no "I'll get back to you" drop)</td></tr>
+          <tr><td>9 · 5-min thank-you ritual</td><td>1:25 - 1:30</td><td>Hand over: 1) printed Design Brief signed copy · 2) "Brisbane Resort Yards" hardcover lookbook (DBA-1 + DBA-2 saturated) · 3) Hormozi-style "Why Brisbane families choose YBMT" 4-page card · 4) YBMT branded coaster set (DBA-3 seal)</td><td>Reciprocity (4 physical gifts) + sensory anchoring · buyer talks about YBMT to spouse that evening with physical artefacts on the counter</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Critical hard-rule:</strong> if the 90-minute Inspection runs over 100 minutes total, the sales rep is over-talking. Re-trained immediately. Brevity = confidence = expertise.</p>
+    </div>
+
+    {/* 8.3 RESORT YARD PROPOSAL DOCUMENT */}
+    <div className="kw-block">
+      <h3>8.3 · The Resort Yard Proposal Document — 18-Page Structure</h3>
+      <p>Delivered as PDF + interactive web link within 72 hours of Inspection. Built from CRM data captured at Inspection. Never auto-generated boilerplate — every Proposal is individually authored by sales rep with manager review before send.</p>
+      <table className="services-table meta-table">
+        <thead><tr><th>Page</th><th>Content</th><th>Function</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Cover · "Resort Yard Proposal for [Buyer Name] · [Suburb]" · DBA-1 lockup · personalised drone shot of their yard</td><td>Bespoke feel · not template</td></tr>
+          <tr><td>2</td><td>"Your Resort Yard, in your words" · the Design Brief Document signed at Inspection, restated verbatim</td><td>Buyer sees their own language reflected · commitment-consistency [RC-INF]</td></tr>
+          <tr><td>3-5</td><td>"What we'd build here" · 3 archetype overlays on their drone shot · annotated · materials called out</td><td>Visual concreteness · 3 options [DK-TFS] decoy structure</td></tr>
+          <tr><td>6</td><td>"The 30-Day Build Calendar for your project" · specific dates assumed · weather contingency stated</td><td>DBA-3 made specific to this buyer · removes timeline ambiguity</td></tr>
+          <tr><td>7</td><td>"What's included" · detailed line-by-line inclusions (no sub-totals)</td><td>Removes "what am I getting" anxiety · prevents change-order surprises</td></tr>
+          <tr><td>8</td><td>"What's not included" · clear exclusions (e.g. pool fence to council standards is separate · landscape softscape after Day 25 is separate)</td><td>Honesty + risk transparency · trust signal</td></tr>
+          <tr><td>9</td><td>"The Three Resort Yards" · Good / Better / Best with photo · single-page summary · price under each</td><td>3-option anchoring [DK-TFS] · middle is "designed-to-win" tier</td></tr>
+          <tr><td>10</td><td>"What changes between the Three" · feature comparison grid</td><td>Buyer's spouse/accountant can self-audit · enables shared decision</td></tr>
+          <tr><td>11</td><td>"Payment schedule" · 4-stage payment schedule with milestone triggers</td><td>Cash-flow clarity · matches build progress</td></tr>
+          <tr><td>12</td><td>"Warranties &amp; guarantees" · 30-day build · 25-year structural · 7-year finish · what each covers · what voids</td><td>Risk reversal [AH-OFR]</td></tr>
+          <tr><td>13</td><td>"Two recent builds nearest you" · 2 case studies from same suburb tier · before/after · build-time delivered · 1-line customer quote</td><td>Social proof on locality · [BS-HBG]</td></tr>
+          <tr><td>14</td><td>"Why us" · 8-bullet Hormozi-style "value stack" page · differentiators not features</td><td>Decision-justification ammo for buyer to share with spouse</td></tr>
+          <tr><td>15</td><td>"How we work together" · process from Proposal sign-off to handover · 4 milestones · who you talk to at each</td><td>Process predictability · removes "what happens next" anxiety</td></tr>
+          <tr><td>16</td><td>"FAQ — the 12 questions buyers ask most" · written answers · same as JTBD landing FAQ but specific to this buyer's brief</td><td>Pre-emptive objection handling</td></tr>
+          <tr><td>17</td><td>"Your next step" · signature page · 3 boxes: "Yes, Better — let's start" / "Yes, but I'd like to discuss" / "Not now — please refer me as completed list when next available"</td><td>Trichotomy [CV-NSD] · "no" option preserves relationship for Bowtie referral later</td></tr>
+          <tr><td>18</td><td>"Reserve your build slot" · calendar embed · next 4 available build start dates · 7-day-hold deposit explained</td><td>Scarcity [RC-INF] · concrete next action</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    {/* 8.4 BUYER PSYCHOLOGY OPERATING NOTES */}
+    <div className="kw-block">
+      <h3>8.4 · Buyer Psychology Operating Notes — POE-Specific Patterns</h3>
+      <ul className="voice-list">
+        <li><strong>Spouse decision dynamic.</strong> 78% of POE deals require dual-spouse sign-off. Sales rep must address BOTH at Inspection · physical artefacts (lookbook, brief copy, card, coasters) enable evening dinner-table conversation.</li>
+        <li><strong>Anchoring against pool-builder cost memory.</strong> Buyer just spent $80-150k on a pool (JTBD-2 especially). Their cost-anchor is high. We do NOT compete on price-down; we compete on completion-up. "You finished the pool. Now finish the yard." [CV-NSD] reframe.</li>
+        <li><strong>Loss aversion vs sale-uplift framing (JTBD-4 Pre-Sale).</strong> "What does it cost you NOT to do this before listing?" The ROI worksheet (P-03 §3.5) makes this loss tangible. [DK-TFS].</li>
+        <li><strong>Trigger-event urgency (JTBD-1 Fast-Track).</strong> The wedding/40th date is not flexible. Our 30-day promise is the most valuable asset we have. Sales rep references the buyer's specific event by name + date at least 4 times in Inspection.</li>
+        <li><strong>Engineering-respect dynamic (JTBD-3 Replacement).</strong> Buyer was burned by last contractor. Sales rep speaks engineering not aesthetic for first 30 minutes of Inspection. The Deck Replacement Spec Sheet (P-03 §3.4) is the language anchor.</li>
+        <li><strong>"Free quote" is the enemy.</strong> Buyer who books an Inspection has already self-segmented away from quote-shoppers. Sales rep should NEVER price-anchor against "free quotes from 3 other builders" — engaging with that framing devalues YBMT. [PB-CAT] category-design protects price.</li>
+        <li><strong>Silence is a tool [CV-NSD].</strong> After presenting the 3-option Proposal page, sales rep stops talking. The buyer must be the first to speak. Coaching: count to 7 internally before any follow-up sentence.</li>
+      </ul>
+    </div>
+
+    {/* 8.5 OBJECTION HANDLER LIBRARY */}
+    <div className="kw-block">
+      <h3>8.5 · Objection Handler Library — 16 Locked Responses</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Objection</th><th>Reframe / Response (locked language)</th></tr></thead>
+        <tbody>
+          <tr><td>"It's more than I expected."</td><td>"Most Resort Yards land between $48k and $95k depending on size, materials, and timeline. What did you have in mind — and what would have to be true for the Resort Yard to be worth that to you?" [CV-NSD] tactical empathy</td></tr>
+          <tr><td>"Why is YBMT more expensive than [competitor]?"</td><td>"We're not the same product. Most pool deck contractors give you paving around a pool. YBMT builds a Resort Yard — that's 7 zones, designed and integrated, with a 30-day guarantee and 25-year structural warranty. If you want a paver around your pool, I can refer you to someone good. If you want a Resort Yard, you want us."</td></tr>
+          <tr><td>"I want to think about it."</td><td>"That's exactly what you should do — this is a six-figure decision. Most clients spend a week with the Proposal, then come back with three questions. Can I lock a 30-minute call with you for [day +7]? I'll answer those three questions, and we can decide whether the timing's right." [RC-INF] commitment</td></tr>
+          <tr><td>"I need to talk to my partner."</td><td>"Of course. The Proposal is designed to be read together — pages 9 and 10 especially. When you've both had a chance to read it, do you want to come back to me individually or together? I find together is faster and avoids misalignment." Future-pace the conversation.</td></tr>
+          <tr><td>"What if the build runs over 30 days?"</td><td>"In the last 200 builds, we've hit 30 days on 94% and 35 days on 99.5%. If we run beyond 30 days for reasons not caused by you or weather, our contract pays you $300/day. That's in writing on page 12." Risk reversal made specific.</td></tr>
+          <tr><td>"Can you match a quote from [competitor]?"</td><td>"I can't match a quote that isn't for the same product. If their quote is for the same scope — 7 zones, 30-day guarantee, 25-year structural, 7-year finish — we'll match it. If it's not, I'll show you what they're not building, and you can decide if you want that or not."</td></tr>
+          <tr><td>"Can we phase the project?"</td><td>"Yes — Resort Yards can phase across 2 or 3 stages. The trade-off is that phased builds typically cost 18-22% more than a single 30-day build. I'll add a phased option to your Proposal so you can compare like-for-like."</td></tr>
+          <tr><td>"I want to do the landscaping myself."</td><td>"Many clients do. We can scope to hardscape-only (Zones 1-2 and 4-7) and you take the softscape (Zone 3). I'll add that as Option C in your Proposal."</td></tr>
+          <tr><td>"What about the 12-month review?"</td><td>"12 months after handover we're back on site for a complimentary 60-minute Resort Yard Health Check. We re-seal anything that needs it, inspect drainage, test slip rating. It's included. Page 12 of the Proposal."</td></tr>
+          <tr><td>"Can you work with my pool builder?"</td><td>"Yes — we work alongside [common pool builders] regularly. I'll coordinate directly with them. You won't be the messenger."</td></tr>
+          <tr><td>"What about finance?"</td><td>"We work with [BSA-approved finance partner] for staged-payment finance. Typical structure is 20% deposit, 30/30/20 across build stages. I'll add a finance summary to your Proposal."</td></tr>
+          <tr><td>"Will my house be liveable during the build?"</td><td>"Yes. We work outdoor-side only · no internal disruption · noise window 7am-3pm · driveway access maintained · pool unusable for ~10 days mid-build only."</td></tr>
+          <tr><td>"What if I don't like a design choice mid-build?"</td><td>"Variations are part of building. We schedule a Day 14 site walk where you and I review the work to date and approve the next two weeks. Any variation is documented on a Variation Note · costed · signed by you before we proceed. No surprise variations."</td></tr>
+          <tr><td>"How do you handle warranties?"</td><td>"Warranty is administered by YBMT direct. One number to call. You don't chase subbies. Page 12 lists what's covered for how long. Years 1-7 cover finishes; years 1-25 cover structural."</td></tr>
+          <tr><td>"What if I sell the house — does the warranty transfer?"</td><td>"Yes — warranty is on the structure not the owner. It transfers automatically. Adds documented value at sale."</td></tr>
+          <tr><td>"I want a fixed price, no variations."</td><td>"Our Proposals are fixed-price for scope-as-specified. Variations only happen if you request a change or if site conditions reveal something genuinely unforeseeable (e.g. rock substrate). Both are rare. We've delivered 92% of last 200 builds at exactly the Proposal number."</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    {/* 8.6 SALES STACK & CADENCE */}
+    <div className="kw-block">
+      <h3>8.6 · Sales Stack and Operating Cadence — Tools · Roles · Rituals</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Layer</th><th>Tool</th><th>Purpose</th><th>Owner</th></tr></thead>
+        <tbody>
+          <tr><td>CRM</td><td>HubSpot Sales Pro</td><td>Pipeline · contact · deal · automation · sequences (post-WS-10)</td><td>YDT ops + Carla</td></tr>
+          <tr><td>Inspection booking</td><td>Calendly (white-label embed)</td><td>Buyer self-books · auto-syncs to rep calendar · auto-creates HubSpot deal</td><td>YDT dev</td></tr>
+          <tr><td>On-site tablet</td><td>iPad Pro 11" · DBA-cased</td><td>Digital Design Brief Document · drone overlay tool · 3-archetype previewer · Calendly embed</td><td>Sales rep</td></tr>
+          <tr><td>Drone</td><td>DJI Mini 4 Pro · YBMT branded case</td><td>Pre-Inspection drone shot · annotated for Proposal pages 3-5 · all builds aerial-timelapsed for marketing</td><td>Sales rep + creative pod</td></tr>
+          <tr><td>Proposal author tool</td><td>PandaDoc + custom Resort Yard template</td><td>Each Proposal individually authored · manager review · e-sign · payment-link embedded</td><td>Sales rep + sales manager</td></tr>
+          <tr><td>Print collateral</td><td>"Brisbane Resort Yards" hardcover lookbook · "Why Brisbane families choose YBMT" 4-page card · branded coasters</td><td>Inspection thank-you ritual · reciprocity · sensory anchoring</td><td>YDT design pod + print partner</td></tr>
+          <tr><td>Call recording &amp; coaching</td><td>Gong (Inspection audio recorded with buyer consent)</td><td>Sales coaching · objection-handler refinement · onboarding new reps faster</td><td>Sales manager</td></tr>
+          <tr><td>Quote-to-cash</td><td>PandaDoc → Stripe/Xero · deposit triggers Bowtie handover</td><td>Deposit-cleared event = deal won · auto-handover to Bowtie M0 sequence</td><td>YDT dev + finance</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Operating cadence:</strong></p>
+      <ul className="voice-list">
+        <li><strong>Daily:</strong> 8am sales stand-up (15 min) · review today's Inspections · prep tablet decks · pipeline review.</li>
+        <li><strong>Weekly:</strong> Mon Gong-call review (1 hr · rep + manager) · Wed objection-handler library update · Fri pipeline forecast.</li>
+        <li><strong>Monthly:</strong> Conversion-rate-by-JTBD audit · Proposal-to-won-rate audit · objection-frequency analysis · 12-month Bowtie cohort review (when data exists).</li>
+        <li><strong>Quarterly:</strong> Full sales playbook refresh · new objection-handlers added · Proposal template review · case-study library refresh.</li>
+      </ul>
+    </div>
+
+    {/* 8.7 KPI SCORECARD */}
+    <div className="kw-block">
+      <h3>8.7 · KPI Scorecard — Sales Performance M1 → M24</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Metric</th><th>M1</th><th>M3</th><th>M6</th><th>M12</th><th>M24</th></tr></thead>
+        <tbody>
+          <tr><td>Inspections booked / month</td><td>62</td><td>182</td><td>358</td><td>650</td><td>1,060</td></tr>
+          <tr><td>Inspection held rate</td><td>78%</td><td>84%</td><td>88%</td><td>90%</td><td>91%</td></tr>
+          <tr><td>Inspections held / month</td><td>48</td><td>153</td><td>315</td><td>585</td><td>965</td></tr>
+          <tr><td>Inspection → Proposal sent rate</td><td>92%</td><td>95%</td><td>97%</td><td>98%</td><td>98%</td></tr>
+          <tr><td>Proposal → Won rate</td><td>22%</td><td>30%</td><td>36%</td><td>40%</td><td>43%</td></tr>
+          <tr><td>Won deals / month</td><td>10</td><td>44</td><td>110</td><td>229</td><td>406</td></tr>
+          <tr><td>Avg deal value</td><td>$48k</td><td>$52k</td><td>$56k</td><td>$60k</td><td>$65k</td></tr>
+          <tr><td>Monthly POE revenue (sales-attributed)</td><td>$480k</td><td>$2.29M</td><td>$6.16M</td><td>$13.74M</td><td>$26.39M</td></tr>
+          <tr><td>POE GP @ 32%</td><td>$154k</td><td>$732k</td><td>$1.97M</td><td>$4.40M</td><td>$8.44M</td></tr>
+          <tr><td>Sales rep capacity (1 rep = 60 Inspections/mo)</td><td>1 rep</td><td>3 reps</td><td>6 reps</td><td>11 reps</td><td>18 reps</td></tr>
+          <tr><td>Sales-cycle avg (Inspection booked → won)</td><td>26 days</td><td>21 days</td><td>18 days</td><td>16 days</td><td>15 days</td></tr>
+        </tbody>
+      </table>
+      <p className="kw-sub">Sales rep capacity model: 1 rep = 60 Inspections/mo at 90 min each + Proposal authoring + follow-up = 250 productive hours/mo. Growth to 18 reps M24 implies hiring cadence of ~1 new rep/month from M3 onward. Recruitment + onboarding budget reflected in P-12 instrumentation cost model.</p>
+    </div>
+
+    {/* 8.8 BOWTIE HANDOVER */}
+    <div className="kw-block">
+      <h3>8.8 · Bowtie Handover — Deposit Cleared → Customer Lifecycle Activated</h3>
+      <p>[WBD-BOW] Winning by Design Bowtie model: the deal is not the end of the funnel · it is the start of the second funnel (Onboard → Adopt → Expand → Renew → Refer). For POE, "expand" means second-project + referral + advocacy.</p>
+      <table className="services-table meta-table">
+        <thead><tr><th>Trigger</th><th>Stage</th><th>Automated action</th><th>Human action</th></tr></thead>
+        <tbody>
+          <tr><td>Deposit cleared</td><td>Onboard (Day 0)</td><td>HubSpot moves deal to "Won" · auto-email "Welcome to your Resort Yard build" · Bowtie M0 sequence starts</td><td>Sales rep personal handover call within 24h</td></tr>
+          <tr><td>Day 1 of build</td><td>Adopt (W1)</td><td>SMS "Your build started today · here's your live build dashboard URL" · weekly photo + video update sequence triggered</td><td>Project manager handshake on site Day 1</td></tr>
+          <tr><td>Day 14 mid-build</td><td>Adopt (W2)</td><td>Sales rep + PM joint site walk · variation review · happy-snap captured for socials with consent</td><td>Sales rep on site</td></tr>
+          <tr><td>Day 30 handover</td><td>Onboard complete</td><td>"Resort Yard Handover Ceremony" — branded keys handover · DBA-3 "Built in 30 Days" certificate framed · drone reveal video shot live · DBA-7 ritual reversed (now they host us)</td><td>Sales rep + PM + creative pod on site</td></tr>
+          <tr><td>Day 30 + 24h</td><td>Adopt (Week 5)</td><td>Google review + LSA review request automated · referral incentive ($500 gift card per referred-Inspection-held) introduced</td><td>—</td></tr>
+          <tr><td>Day 60</td><td>Expand</td><td>"How's the Resort Yard living?" call from sales rep · referral request reinforced · social post tag request</td><td>Sales rep</td></tr>
+          <tr><td>Day 180</td><td>Expand</td><td>6-month seasonal-care email · subtle "small additions?" prompt (e.g. outdoor kitchen · firepit · lighting upgrade)</td><td>—</td></tr>
+          <tr><td>Day 365</td><td>Renew</td><td>12-month Resort Yard Health Check · complimentary 60-min on-site visit · re-seal/inspect/test · social-content shoot opportunity</td><td>PM on site · creative pod for shoot</td></tr>
+          <tr><td>Year 2-5</td><td>Refer/Advocate</td><td>Annual seasonal email · cross-LOB seed (TDR pest inspection · UR unit reno discussion if applicable) · YBMT-Tribe advocate program</td><td>Carla quarterly newsletter</td></tr>
+        </tbody>
+      </table>
+      <p>Bowtie targets: 28% of POE customers refer at least one new Inspection within 12 months · 8% of POE customers buy second YBMT service (TDR or UR cross-LOB) within 24 months · 90+ Trustindex score by M12.</p>
+    </div>
+
+    <div className="pillar-foot">
+      <span className="pf-pill">P-08 · 90-min Resort Yard Inspection ritual · 18-page Proposal · 16 objection-handlers · 4 spousal psychology patterns</span>
+      <span className="pf-pill">Tech stack: HubSpot · Calendly · PandaDoc · DJI · Gong · iPad · Stripe/Xero · automated Bowtie M0-M5 handover</span>
+      <span className="pf-pill">M12: 650 Inspections booked/mo · 229 won deals/mo · $13.7M revenue/mo · 28% referral rate by M12</span>
     </div>
   </section>
 )
