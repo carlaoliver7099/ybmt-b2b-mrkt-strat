@@ -41,6 +41,26 @@ const Hero = () => (
   </section>
 )
 
+const DocHubBar = () => (
+  <div class="dochub-bar">
+    <div class="dochub-inner">
+      <div class="dochub-label">
+        <strong>CoSai Strategic Document Hub</strong> · 2 documents live
+      </div>
+      <div class="dochub-links">
+        <a href="/" class="dochub-link active">
+          <span class="dochub-badge">DOC 1</span>
+          CFO Design Brief
+        </a>
+        <a href="/3-funnels" class="dochub-link">
+          <span class="dochub-badge new">DOC 2 · NEW</span>
+          3-Funnel ROI Strategy
+        </a>
+      </div>
+    </div>
+  </div>
+)
+
 const Nav = () => (
   <header class="site-header">
     <div class="header-inner">
@@ -59,6 +79,7 @@ const Nav = () => (
         <a href="#m6">6. KPIs</a>
         <a href="#m7">7. Dashboard</a>
         <a href="#m8">8. Commercial</a>
+        <a href="/3-funnels" class="nav-cta">→ 3-Funnel ROI Strategy</a>
       </nav>
     </div>
   </header>
@@ -326,10 +347,23 @@ export default app
 // Mount remaining sections from separate file
 import { renderModules345 } from './modules-3-4-5'
 import { renderModules678 } from './modules-6-7-8'
+import { renderThreeFunnels } from './three-funnels'
+import { renderYMTGroupStrategy } from './ymt-group-strategy'
+
+// /3-funnels — the 3-Funnel ROI Productivity strategy document
+app.get('/3-funnels', (c) => {
+  return c.render(renderThreeFunnels())
+})
+
+// /ymt-group-strategy — DOC 3 · Phase 1 Portfolio Strategy Frame
+app.get('/ymt-group-strategy', (c) => {
+  return c.render(renderYMTGroupStrategy())
+})
 
 app.get('/', (c) => {
   return c.render(
     <div>
+      <DocHubBar />
       <Nav />
       <Hero />
       <main>
