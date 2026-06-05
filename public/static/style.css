@@ -7191,3 +7191,146 @@ ul.check-list li::before { content: '\f00c'; font-family: 'Font Awesome 6 Free';
 /* --- Reuse existing PM-16 risk grid (already styled as ch-risk-grid) --- */
 
 /* End WS-09 paid media CSS */
+
+/* ============================================================ */
+/* WS-10 CRM / LIFECYCLE / REVOPS — /ymt-crm                    */
+/* Phase 3 · DOC 3 · 12 CR-XX items + 9 sub-flows               */
+/* Append: ~640 dense single-line CSS covering 9 flow specs,    */
+/* segment matrix, score table, contract table, metric grid,    */
+/* templates, SMS policy, suppression rules, deliverability,    */
+/* personalisation table, test backlog                          */
+/* ============================================================ */
+
+/* --- Shared CR flow spec wrapper -------------------------- */
+.flow-spec{margin:24px 0;padding:24px;background:#fff;border:1px solid rgba(27,58,92,0.15);border-radius:8px;box-shadow:0 2px 12px rgba(27,58,92,0.04)}
+.flow-section-h{font-family:'Inter',sans-serif;font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#B8743D;margin:18px 0 12px;padding-bottom:6px;border-bottom:1px solid rgba(184,116,61,0.25)}
+
+/* --- Flow meta grid (4 cells: trigger/segment/duration/goal) --- */
+.flow-meta-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-bottom:16px}
+@media (max-width:680px){.flow-meta-grid{grid-template-columns:1fr}}
+.flow-meta-cell{padding:12px 14px;background:#F5F1EA;border-left:3px solid #4DB6C7;border-radius:3px}
+.flow-meta-cell:nth-child(2){border-left-color:#B8743D}
+.flow-meta-cell:nth-child(3){border-left-color:#1B3A5C}
+.flow-meta-cell:nth-child(4){border-left-color:#B8743D}
+.fm-lbl{font-family:'Inter',sans-serif;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#1B3A5C;margin-bottom:4px}
+.fm-val{font-size:12.5px;line-height:1.5;color:rgba(27,58,92,0.88)}
+
+/* --- Email list within flow ------------------------------- */
+.flow-email-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:14px}
+.flow-email{display:flex;gap:14px;padding:14px 16px;background:#F5F1EA;border-radius:5px;border-left:4px solid #B8743D;align-items:flex-start}
+.flow-email:nth-child(2n){border-left-color:#4DB6C7}
+.flow-email:nth-child(3n){border-left-color:#1B3A5C}
+.fe-num{flex-shrink:0;width:42px;height:42px;border-radius:50%;background:#1B3A5C;color:#F5F1EA;font-family:'Fraunces',serif;font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center}
+.fe-body{flex:1;min-width:0}
+.fe-when{font-family:'Inter',sans-serif;font-size:10.5px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;color:#B8743D;margin-bottom:4px}
+.fe-subj{font-size:13px;color:#1B3A5C;margin-bottom:4px;line-height:1.45}
+.fe-subj strong{font-weight:700}
+.fe-pre{font-size:11.5px;font-style:italic;color:rgba(27,58,92,0.65);margin-bottom:6px;line-height:1.4}
+.fe-summary{font-size:12.5px;line-height:1.6;color:rgba(27,58,92,0.88)}
+.fe-summary em{color:#B8743D;font-style:italic}
+
+/* --- SMS list + exit conditions list within flow ---------- */
+.flow-sms-list,.flow-exit-list{list-style:none;padding:0;margin:0 0 16px;display:flex;flex-direction:column;gap:6px}
+.flow-sms-list li,.flow-exit-list li{padding:8px 12px;background:rgba(77,182,199,0.06);border-left:3px solid #4DB6C7;font-size:12.5px;line-height:1.55;color:rgba(27,58,92,0.88);border-radius:0 3px 3px 0}
+.flow-exit-list li{background:rgba(184,116,61,0.06);border-left-color:#B8743D}
+.flow-sms-list li strong,.flow-exit-list li strong{color:#1B3A5C}
+.flow-sms-list em,.flow-exit-list em{color:rgba(27,58,92,0.75);font-style:italic}
+
+/* --- Benchmark callout ----------------------------------- */
+.flow-bench{margin-top:16px;padding:14px 18px;background:#1B3A5C;color:#F5F1EA;border-radius:4px;font-size:12.5px;line-height:1.6}
+.flow-bench strong{color:#4DB6C7;font-weight:700}
+
+/* --- CR-02 segmentation matrix ---------------------------- */
+.segment-matrix-wrap{margin:24px 0}
+.segment-matrix{width:100%;border-collapse:collapse;font-size:12.5px;line-height:1.45;margin-bottom:18px;background:#fff;border:1px solid rgba(27,58,92,0.15);border-radius:6px;overflow:hidden}
+.segment-matrix thead th{background:#1B3A5C;color:#F5F1EA;font-family:'Inter',sans-serif;font-weight:600;text-align:left;padding:10px 14px;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;border-bottom:2px solid #B8743D}
+.segment-matrix tbody td{padding:9px 14px;border-bottom:1px solid rgba(27,58,92,0.08);vertical-align:top;color:rgba(27,58,92,0.88)}
+.segment-matrix tbody tr:nth-child(even) td{background:rgba(245,241,234,0.4)}
+.segment-matrix tbody tr:hover td{background:rgba(77,182,199,0.06)}
+.segment-matrix tbody td strong{color:#1B3A5C;font-weight:700}
+.dim-list{list-style:none;padding:0;margin:0 0 18px;display:flex;flex-direction:column;gap:6px}
+.dim-list li{padding:8px 14px;background:#F5F1EA;border-left:3px solid #4DB6C7;font-size:12.5px;line-height:1.55;color:rgba(27,58,92,0.88);border-radius:0 3px 3px 0}
+.dim-list li strong{color:#1B3A5C;font-weight:700}
+
+/* --- CR-03 score table ----------------------------------- */
+.score-spec{margin:24px 0}
+.score-table{width:100%;border-collapse:collapse;font-size:12.5px;line-height:1.45;margin-bottom:18px;background:#fff;border:1px solid rgba(27,58,92,0.15);border-radius:6px;overflow:hidden}
+.score-table thead th{background:#1B3A5C;color:#F5F1EA;font-family:'Inter',sans-serif;font-weight:600;text-align:left;padding:9px 14px;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;border-bottom:2px solid #B8743D}
+.score-table tbody td{padding:8px 14px;border-bottom:1px solid rgba(27,58,92,0.08);color:rgba(27,58,92,0.88)}
+.score-table tbody td:nth-child(2){font-variant-numeric:tabular-nums;font-weight:600;color:#B8743D;text-align:right;width:90px}
+.score-table tbody td:nth-child(3){color:rgba(27,58,92,0.65);font-size:11.5px;width:140px}
+.score-table tbody tr:nth-child(even) td{background:rgba(245,241,234,0.4)}
+
+/* --- CR-04 data contract table --------------------------- */
+.contract-spec{margin:24px 0}
+.contract-table{width:100%;border-collapse:collapse;font-size:11.5px;line-height:1.4;background:#fff;border:1px solid rgba(27,58,92,0.15);border-radius:6px;overflow:hidden}
+.contract-table thead th{background:#1B3A5C;color:#F5F1EA;font-family:'Inter',sans-serif;font-weight:600;text-align:left;padding:9px 10px;font-size:10.5px;text-transform:uppercase;letter-spacing:0.04em;border-bottom:2px solid #B8743D}
+.contract-table tbody td{padding:7px 10px;border-bottom:1px solid rgba(27,58,92,0.06);border-right:1px solid rgba(27,58,92,0.04);color:rgba(27,58,92,0.88);vertical-align:top}
+.contract-table tbody td:first-child{font-weight:600;color:#1B3A5C;width:140px}
+.contract-table tbody td code{background:rgba(184,116,61,0.08);color:#B8743D;padding:1px 5px;border-radius:2px;font-family:'JetBrains Mono','Courier New',monospace;font-size:10.5px}
+.contract-table tbody tr:nth-child(even) td{background:rgba(245,241,234,0.35)}
+.contract-table tbody tr:hover td{background:rgba(77,182,199,0.05)}
+
+/* --- CR-05 metrics grid ---------------------------------- */
+.metric-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:24px 0}
+@media (max-width:880px){.metric-grid{grid-template-columns:1fr}}
+.metric-card{padding:16px 18px;background:#fff;border:1px solid rgba(27,58,92,0.15);border-top:4px solid #4DB6C7;border-radius:5px;display:flex;flex-direction:column;gap:6px}
+.metric-card:nth-child(2n){border-top-color:#B8743D}
+.metric-card:nth-child(3n){border-top-color:#1B3A5C}
+.metric-name{font-family:'Fraunces',serif;font-size:16px;font-weight:600;color:#1B3A5C;line-height:1.25}
+.metric-formula{font-size:12px;line-height:1.5;color:rgba(27,58,92,0.8);font-style:italic;padding:6px 10px;background:rgba(245,241,234,0.6);border-radius:3px}
+.metric-target{font-size:12.5px;line-height:1.5;color:rgba(27,58,92,0.88);font-weight:500}
+.metric-cadence{font-family:'Inter',sans-serif;font-size:10.5px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;color:#B8743D;margin-top:auto}
+
+/* --- CR-06 template grid --------------------------------- */
+.tpl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:24px 0}
+@media (max-width:980px){.tpl-grid{grid-template-columns:1fr}}
+.tpl-card{padding:20px 22px;background:#fff;border:1px solid rgba(27,58,92,0.15);border-top:5px solid #B8743D;border-radius:6px;display:flex;flex-direction:column;gap:10px}
+.tpl-card:nth-child(2){border-top-color:#4DB6C7}
+.tpl-card:nth-child(3){border-top-color:#1B3A5C}
+.tpl-tag{font-family:'Inter',sans-serif;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.09em;color:#B8743D}
+.tpl-card:nth-child(2) .tpl-tag{color:#4DB6C7}
+.tpl-card:nth-child(3) .tpl-tag{color:#1B3A5C}
+.tpl-card h3{font-family:'Fraunces',serif;font-size:20px;font-weight:600;color:#1B3A5C;margin:0;line-height:1.2}
+.tpl-card p{font-size:12.5px;line-height:1.55;color:rgba(27,58,92,0.88);margin:0}
+.tpl-card ul{margin:6px 0 0;padding-left:18px;font-size:12px;line-height:1.55;color:rgba(27,58,92,0.85)}
+.tpl-card ul li{margin-bottom:5px}
+.tpl-card ul li strong{color:#1B3A5C;font-weight:600}
+
+/* --- CR-07 SMS policy block ------------------------------ */
+.sms-policy{margin:24px 0;padding:24px;background:linear-gradient(180deg,#F5F1EA 0%,#fff 100%);border:1px solid rgba(27,58,92,0.15);border-radius:6px}
+
+/* --- CR-08 suppression rules ----------------------------- */
+.sup-rules{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:24px 0}
+@media (max-width:780px){.sup-rules{grid-template-columns:1fr}}
+.sup-rule{display:flex;gap:14px;padding:14px 16px;background:#fff;border:1px solid rgba(27,58,92,0.15);border-left:5px solid #B8743D;border-radius:4px;align-items:flex-start}
+.sup-rule:nth-child(2n){border-left-color:#4DB6C7}
+.sup-rule:nth-child(3n){border-left-color:#1B3A5C}
+.sup-num{flex-shrink:0;width:32px;height:32px;border-radius:50%;background:#1B3A5C;color:#F5F1EA;font-family:'Fraunces',serif;font-size:13px;font-weight:600;display:flex;align-items:center;justify-content:center}
+.sup-body{flex:1;min-width:0}
+.sup-body h4{font-family:'Fraunces',serif;font-size:15px;font-weight:600;color:#1B3A5C;margin:0 0 4px;line-height:1.25}
+.sup-body p{font-size:12px;line-height:1.55;color:rgba(27,58,92,0.85);margin:0}
+
+/* --- CR-09 deliverability block -------------------------- */
+.deliv-block{margin:24px 0;padding:24px;background:#fff;border:1px solid rgba(27,58,92,0.15);border-radius:6px;border-top:4px solid #4DB6C7}
+.deliv-block code{background:rgba(27,58,92,0.06);color:#1B3A5C;padding:1px 5px;border-radius:2px;font-family:'JetBrains Mono','Courier New',monospace;font-size:11px}
+
+/* --- CR-10 personalisation table ------------------------- */
+.pers-table-wrap{margin:24px 0}
+.pers-table{width:100%;border-collapse:collapse;font-size:12px;line-height:1.45;background:#fff;border:1px solid rgba(27,58,92,0.15);border-radius:6px;overflow:hidden}
+.pers-table thead th{background:#1B3A5C;color:#F5F1EA;font-family:'Inter',sans-serif;font-weight:600;text-align:left;padding:9px 12px;font-size:11px;text-transform:uppercase;letter-spacing:0.05em;border-bottom:2px solid #B8743D}
+.pers-table tbody td{padding:9px 12px;border-bottom:1px solid rgba(27,58,92,0.08);color:rgba(27,58,92,0.88);vertical-align:top}
+.pers-table tbody td code{background:rgba(184,116,61,0.1);color:#B8743D;padding:1px 6px;border-radius:2px;font-family:'JetBrains Mono','Courier New',monospace;font-size:11px;font-weight:600}
+.pers-table tbody tr:nth-child(even) td{background:rgba(245,241,234,0.4)}
+
+/* --- CR-11 test backlog ---------------------------------- */
+.test-list{display:flex;flex-direction:column;gap:10px;margin:24px 0}
+.test-item{display:flex;gap:16px;padding:14px 18px;background:#fff;border:1px solid rgba(27,58,92,0.15);border-left:4px solid #4DB6C7;border-radius:4px;align-items:flex-start}
+.test-item:nth-child(2n){border-left-color:#B8743D}
+.test-item:nth-child(3n){border-left-color:#1B3A5C}
+.test-rank{flex-shrink:0;font-family:'Fraunces',serif;font-size:24px;font-weight:600;color:#B8743D;width:48px;line-height:1;padding-top:2px;font-variant-numeric:tabular-nums}
+.test-body{flex:1;min-width:0}
+.test-body h4{font-family:'Fraunces',serif;font-size:15px;font-weight:600;color:#1B3A5C;margin:0 0 4px;line-height:1.25}
+.test-body p{font-size:12px;line-height:1.55;color:rgba(27,58,92,0.85);margin:0}
+
+/* End WS-10 CRM/lifecycle CSS */

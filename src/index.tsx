@@ -359,6 +359,7 @@ import { renderYMTdbas } from './ymt-dbas'
 import { renderYMTchannel } from './ymt-channel'
 import { renderYMTgeo } from './ymt-geo'
 import { renderYMTpaid } from './ymt-paid'
+import { renderYMTcrm } from './ymt-crm'
 
 // /3-funnels — the 3-Funnel ROI Productivity strategy document
 app.get('/3-funnels', (c) => {
@@ -418,6 +419,11 @@ app.get('/ymt-geo', (c) => {
 // /ymt-paid — DOC 3 · Phase 3 · WS-09 Paid Media Operating Manual (10/10 depth)
 app.get('/ymt-paid', (c) => {
   return c.render(renderYMTpaid())
+})
+
+// /ymt-crm — DOC 3 · Phase 3 · WS-10 CRM/Lifecycle/RevOps Operating Manual (10/10 depth)
+app.get('/ymt-crm', (c) => {
+  return c.render(renderYMTcrm())
 })
 
 app.get('/', (c) => {
