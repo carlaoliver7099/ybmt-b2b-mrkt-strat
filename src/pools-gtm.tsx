@@ -196,7 +196,9 @@ export const renderPoolsGTM = () => (
     <PGDoctrine />
     <PGPillar01Brand />
     <PGPillar02Website />
-    {/* Pillars P-03..P-06 + P-08..P-12 appended in subsequent tranches */}
+    <PGPillar03LeadMagnets />
+    <PGPillar04SeoGeoAeo />
+    {/* Pillars P-05 + P-06 + P-08..P-12 appended in subsequent tranches */}
   </>
 )
 
@@ -712,6 +714,386 @@ const PGPillar02Website = () => (
       <span className="pf-pill">PILLAR P-02 · WEBSITE COPY KIT — DEPLOYMENT-READY</span>
       <span className="pf-pill">11 URL spine · 4 JTBD landings (Fast-Track · Pool-Completion · Replacement · Pre-Sale) · DBA-7 booking page</span>
       <span className="pf-pill">30 microcopy strings locked · WCAG 2.2 AA · LCP &lt; 2s · 6-week build · Cloudflare Pages handover spec</span>
+    </div>
+  </section>
+)
+
+// ============================================================================
+// POE P-03 · LEAD MAGNET KIT · 4 JTBD-tied lead magnets
+// ============================================================================
+const PGPillar03LeadMagnets = () => (
+  <section id="p03" className="pillar-block">
+    <div className="pillar-block-h">
+      <span className="pillar-block-eyebrow">PILLAR P-03 · POE · LEAD MAGNET KIT</span>
+      <h2 className="pillar-block-title">P-03 · Four JTBD-Tied Lead Magnets · The Conversion Engine That Bridges Discovery → Booked Inspection</h2>
+      <p className="pillar-block-sub">One lead magnet per Job Story · each gated · each delivers asymmetric value vs effort · each pre-frames the Resort Yard Inspection (DBA-7) as the next logical step. [AH-OFR] Hormozi Grand Slam Offer doctrine: value &gt; price · risk reversal · scarcity · urgency · clarity. [RC-INF] Cialdini reciprocity engaged. [CC-JTBD] Christensen: lead magnet must solve the <em>functional + emotional + social</em> dimensions of the job-to-be-done — not just describe the service.</p>
+    </div>
+
+    {/* 3.1 LEAD MAGNET STRATEGY DOCTRINE */}
+    <div className="kw-block">
+      <h3>3.1 · Lead Magnet Strategy Doctrine — Why Four, Not One</h3>
+      <p>The category is fragmented by trigger, not demographic. A single "Free Pool Quote" lead magnet fails because it forces the Fast-Track Host buyer (who wants a party-date guarantee, not a quote) and the Pre-Sale Investor (who wants an ROI worksheet, not a quote) into the same funnel. [CC-JTBD] mandates trigger-specific lead magnets. Each magnet is engineered to:</p>
+      <ol>
+        <li><strong>Match the Job Story trigger</strong> — the magnet's title contains the trigger language the buyer is already using (e.g. "30 days to party-ready" not "free consultation").</li>
+        <li><strong>Deliver a ~10x value:effort ratio</strong> — [AH-OFR]: buyer feels they "got away with something" by downloading it. A 6-page PDF that genuinely answers the question is worth more than a 60-page generic eBook nobody reads.</li>
+        <li><strong>Pre-qualify the buyer</strong> — embedded micro-questions (e.g. "Pool already installed? Y/N") segment the buyer into the correct nurture sequence before sales sees them.</li>
+        <li><strong>Pre-frame DBA-7 Resort Yard Inspection</strong> — every magnet's final page invites a Resort Yard Inspection booking with the JTBD-specific frame.</li>
+        <li><strong>Be discoverable in GEO/AEO</strong> — each magnet's landing page is structured for LLM citation (FAQ schema · HowTo schema · numbered lists · explicit Q&amp;A blocks).</li>
+      </ol>
+      <p className="kw-sub"><strong>Locked rule:</strong> No lead magnet may use the words "free quote," "free consultation," or "no obligation." These trigger the buyer's "salesperson incoming" defence. Replace with the Job Story's own language ("party-date guarantee," "spec sheet," "ROI worksheet," "30-day plan").</p>
+    </div>
+
+    {/* 3.2 LEAD MAGNET 1 · FAST-TRACK RESORT YARD PLANNER */}
+    <div className="kw-block">
+      <h3>3.2 · Lead Magnet #1 — "The Fast-Track Resort Yard Planner: 30-Day Build Schedule"</h3>
+      <p><strong>Target JTBD:</strong> Fast-Track Host (event-triggered: wedding · 40th · in-laws visiting · summer hosting season).</p>
+      <p><strong>Gated landing URL:</strong> <code>/resort-yard-fast-track</code> (P-02 §2.4) · primary opt-in for this JTBD.</p>
+      <p><strong>Format:</strong> 12-page PDF · A4 portrait · Fraunces Italic display + Inter body · Resort Yard navy + timber palette · 1 hero render · 4 calendar diagrams · 1 sample contract page.</p>
+      <table className="services-table meta-table">
+        <thead><tr><th>Page</th><th>Title</th><th>JTBD function served</th><th>DBA engaged</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Cover · "30 Days. One Backyard. Resort-Ready. Guaranteed."</td><td>Anxiety reduction · party-date guarantee made tangible</td><td>DBA-1 Resort Yard frame · DBA-3 "Built in 30 Days" seal</td></tr>
+          <tr><td>2</td><td>"What 'Resort Yard' actually means" — category definition page</td><td>Frames YBMT's category instead of competing in commodity "pool deck" category</td><td>DBA-1 · DBA-4 Fraunces+Inter pairing</td></tr>
+          <tr><td>3</td><td>"The 30-Day Build Calendar" — Day 1 to Day 30 milestones</td><td>De-risks the timeline anxiety · shows actual sequencing</td><td>DBA-3 "30 Days" seal repeated on each milestone</td></tr>
+          <tr><td>4</td><td>"What Has to Be True for 30 Days to Work" — buyer-side prerequisites (site access · council approval status · existing pool finish)</td><td>Pre-qualifies the buyer; protects 30-day promise; transfers some accountability to buyer (fair · transparent)</td><td>DBA-7 Resort Yard Inspection introduced</td></tr>
+          <tr><td>5</td><td>"The 5 Things That Will Slow You Down" — honest disclosure of risks</td><td>[RC-INF] reciprocity via candour · [DK-TFS] anchors expectations</td><td>—</td></tr>
+          <tr><td>6</td><td>"3 Resort Yard archetypes" — Tropical · Coastal · Mediterranean (image grid)</td><td>Helps buyer self-identify aesthetic · pre-segments design brief</td><td>DBA-2 lens-flare-golden-hour shot · DBA-5 palette ratio</td></tr>
+          <tr><td>7</td><td>"What's included in a Fast-Track Resort Yard" — full inclusions list</td><td>[AH-OFR] value-stack visible · removes "what am I actually getting" objection</td><td>—</td></tr>
+          <tr><td>8</td><td>"Sample contract page · the 30-Day Guarantee clause"</td><td>Risk reversal made tangible · trust transfer</td><td>—</td></tr>
+          <tr><td>9</td><td>"Two Fast-Track case studies" — Hamilton wedding · New Farm 40th</td><td>[BS-HBG] mental availability · social proof on the trigger event itself</td><td>DBA-2 · DBA-1</td></tr>
+          <tr><td>10</td><td>"The Resort Yard Inspection · what happens in 90 minutes on site"</td><td>Pre-frames DBA-7 · removes "what's the next step" friction</td><td>DBA-7 ritual</td></tr>
+          <tr><td>11</td><td>"Book your Resort Yard Inspection" — calendar embed · 3 CTAs (book · call · text)</td><td>Primary conversion · DBA-7 booking trigger</td><td>DBA-7</td></tr>
+          <tr><td>12</td><td>Back cover · YBMT Resort Yards lockup · sonic mnemonic note · 7 DBA signature row</td><td>Brand recall · DBA reinforcement</td><td>DBA-1..7</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Opt-in form fields (4 only):</strong> First name · Email · Mobile · Event date (date picker · this segments urgency tier 1 / tier 2 / tier 3). No address, no budget question, no "tell us about your project" textarea. [AH-OFR] friction reduction.</p>
+      <p><strong>Delivery sequence:</strong> Instant email with PDF · 24h email "what page 4 means for your event" · 72h SMS "your Resort Yard Inspection slot is reserved for 7 days · book here" · 7d email "case study: the New Farm 40th built in 27 days."</p>
+      <p><strong>Forbidden in this magnet:</strong> price ranges · finance options · "from $X" language · contractor jargon (e.g. "PC sum," "variations"). This magnet is about <em>certainty</em>, not <em>pricing</em>.</p>
+    </div>
+
+    {/* 3.3 LEAD MAGNET 2 · POOL-COMPLETION SCOPING CHECKLIST */}
+    <div className="kw-block">
+      <h3>3.3 · Lead Magnet #2 — "The Pool-Completion Scoping Checklist: From Empty Pool Shell to Resort Yard"</h3>
+      <p><strong>Target JTBD:</strong> Pool-Completion Buyer (pool installed by builder · surrounded by dirt · needs coping · paving · landscaping · fencing · the "missing 60%" of the yard).</p>
+      <p><strong>Gated landing URL:</strong> <code>/pool-completion</code> (P-02 §2.5) · primary opt-in for this JTBD.</p>
+      <p><strong>Format:</strong> 10-page interactive checklist · fillable PDF · A4 portrait · printable.</p>
+      <table className="services-table meta-table">
+        <thead><tr><th>Page</th><th>Title</th><th>JTBD function served</th><th>DBA engaged</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Cover · "Your pool is in. Now what? A scoping checklist."</td><td>[CV-NSD] tactical empathy — names the exact moment of buyer pain</td><td>DBA-1 Resort Yard frame</td></tr>
+          <tr><td>2</td><td>"The 7 zones every Pool-Completion buyer must scope" — coping · paving · landscaping · fencing · lighting · shade · service zone</td><td>Educates buyer to think holistically, not piecemeal · upsells from "just paving" to full Resort Yard</td><td>—</td></tr>
+          <tr><td>3</td><td>Zone 1 · Coping checklist — material options · thickness · waterline finish</td><td>Buyer can audit existing builder's scope vs. what's required</td><td>—</td></tr>
+          <tr><td>4</td><td>Zone 2 · Paving checklist — slip rating · heat retention · expansion joint spec</td><td>Reveals the 4 mistakes pool-completion buyers make most often</td><td>—</td></tr>
+          <tr><td>5</td><td>Zone 3 · Landscaping checklist — pool-friendly plants · root barriers · irrigation</td><td>Prevents the "$15k re-do in 18 months" trap</td><td>—</td></tr>
+          <tr><td>6</td><td>Zones 4-7 — Fencing · lighting · shade · service zone (compact reference cards)</td><td>Complete scope visibility · no zone forgotten</td><td>—</td></tr>
+          <tr><td>7</td><td>"Builder handover audit" — fillable form: what did your pool builder leave behind? what's still to do?</td><td>Buyer self-diagnoses · YBMT receives a pre-qualified completion scope</td><td>DBA-7 Inspection pre-framed</td></tr>
+          <tr><td>8</td><td>"Pool-Completion Resort Yards: 3 case studies" — Ashgrove · Bulimba · Indooroopilly</td><td>Mental availability · social proof on exact JTBD</td><td>DBA-2 lens-flare shot</td></tr>
+          <tr><td>9</td><td>"Book a Resort Yard Inspection · we'll complete the audit with you on site"</td><td>DBA-7 conversion · positions YBMT as completion specialist not generic pool builder</td><td>DBA-7</td></tr>
+          <tr><td>10</td><td>Back cover · YBMT Resort Yards · "We finish what the pool builder started"</td><td>Tagline reinforces category positioning</td><td>DBA-1 · DBA-6 sonic mnemonic note</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Opt-in form fields (4 only):</strong> First name · Email · Mobile · "Pool installed within last 12 months? Y/N" (segments hot vs. cold).</p>
+      <p><strong>Delivery sequence:</strong> Instant email with PDF · 24h email "the 4 most common Pool-Completion mistakes" · 72h email "your free Resort Yard Inspection — 90 minutes on site, no obligation" · 7d SMS "your Inspection slot is reserved · book here."</p>
+      <p><strong>Forbidden in this magnet:</strong> criticism of pool builders by name · "rip-off" or "scam" language · pricing ranges · finance pitches.</p>
+    </div>
+
+    {/* 3.4 LEAD MAGNET 3 · DECK REPLACEMENT SPEC SHEET */}
+    <div className="kw-block">
+      <h3>3.4 · Lead Magnet #3 — "The Deck Replacement Spec Sheet: 25-Year Structural + 7-Year Finish, Built to Specification"</h3>
+      <p><strong>Target JTBD:</strong> Replacement Buyer (existing deck/paving failed · cracked · subsided · timber rotted · slip hazard · pool now unsafe to host on).</p>
+      <p><strong>Gated landing URL:</strong> <code>/deck-replacement</code> (P-02 §2.6) · primary opt-in for this JTBD.</p>
+      <p><strong>Format:</strong> 8-page spec sheet · A4 portrait · engineering-grade visual language (cross-sections · spec tables · warranty grid) · designed to look like a builder's tender document not a marketing brochure.</p>
+      <table className="services-table meta-table">
+        <thead><tr><th>Page</th><th>Title</th><th>JTBD function served</th><th>DBA engaged</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Cover · "Deck Replacement Spec Sheet · YBMT Resort Yards"</td><td>Builder-credible visual language; not a flyer</td><td>DBA-1 Resort Yard frame · DBA-4 Fraunces+Inter</td></tr>
+          <tr><td>2</td><td>"Why decks fail" — 5 failure modes (water intrusion · substrate movement · UV degradation · slip rating decline · joint failure)</td><td>Educates buyer; transfers expertise; removes "all builders are the same" objection</td><td>—</td></tr>
+          <tr><td>3</td><td>Cross-section diagram · YBMT Resort Yard deck construction · 7 layers labelled</td><td>Visible engineering rigour — primary differentiator</td><td>—</td></tr>
+          <tr><td>4</td><td>Spec table · structural substrate options · 25-year warranty conditions</td><td>Warranty made tangible, not marketing claim</td><td>—</td></tr>
+          <tr><td>5</td><td>Spec table · finish options · 7-year warranty conditions · slip rating (R-value) per finish</td><td>Buyer can specify exactly · removes ambiguity</td><td>—</td></tr>
+          <tr><td>6</td><td>"What the inspection covers" — 23-point on-site structural audit</td><td>DBA-7 Resort Yard Inspection pre-framed with builder-grade specificity</td><td>DBA-7 ritual</td></tr>
+          <tr><td>7</td><td>"Two replacement case studies" — before/after with reasoning · Bardon timber-to-stone · Toowong cracked-pour replacement</td><td>Mental availability on the exact JTBD</td><td>DBA-2</td></tr>
+          <tr><td>8</td><td>Back cover · "Book your 23-point Resort Yard Inspection" · 25yr structural + 7yr finish guarantee seal</td><td>DBA-7 conversion · risk reversal</td><td>DBA-3 "30 Days" seal · DBA-7</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Opt-in form fields (4 only):</strong> First name · Email · Mobile · "Existing deck material" (dropdown: timber · concrete · tile · stone · other — segments scope complexity).</p>
+      <p><strong>Delivery sequence:</strong> Instant email with PDF · 24h email "the 5 failure modes explained in 90 seconds (video)" · 72h email "23-point Resort Yard Inspection · what we look for" · 7d email "case study · Bardon timber-to-stone replacement in 28 days."</p>
+      <p><strong>Forbidden in this magnet:</strong> "cheap" · "budget" · "affordable" language. This buyer wants <em>permanence</em>, not <em>price</em>.</p>
+    </div>
+
+    {/* 3.5 LEAD MAGNET 4 · PRE-SALE OUTDOOR ROI WORKSHEET */}
+    <div className="kw-block">
+      <h3>3.5 · Lead Magnet #4 — "The Pre-Sale Outdoor ROI Worksheet: How a Resort Yard Adds 3-5% to Your Sale Price"</h3>
+      <p><strong>Target JTBD:</strong> Pre-Sale Investor (selling property in 60-180 days · agent recommends outdoor upgrade · needs ROI justification not aesthetic preference).</p>
+      <p><strong>Gated landing URL:</strong> <code>/pre-sale-outdoor-upgrade</code> (P-02 §2.7) · primary opt-in for this JTBD.</p>
+      <p><strong>Format:</strong> 6-page worksheet · Excel-style fillable PDF · ROI calculator embedded · A4 landscape · designed to be forwarded to spouse / accountant / agent.</p>
+      <table className="services-table meta-table">
+        <thead><tr><th>Page</th><th>Title</th><th>JTBD function served</th><th>DBA engaged</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Cover · "Pre-Sale Outdoor ROI Worksheet · 3-5% sale-price uplift, modelled."</td><td>[DK-TFS] anchor: 3-5% is a number, not a feeling</td><td>DBA-1 · DBA-4</td></tr>
+          <tr><td>2</td><td>"The 3 outdoor investments that move sale price most" — ranked by $-uplift per $-spent</td><td>Pareto framing · prevents over-investment</td><td>—</td></tr>
+          <tr><td>3</td><td>ROI calculator · enter current valuation → modelled uplift range</td><td>Tangible $ figure → triggers loss aversion if NOT investing</td><td>—</td></tr>
+          <tr><td>4</td><td>"Real Brisbane sale comps" — 6 properties · before/after Resort Yard · actual sale-price delta</td><td>[BS-HBG] social proof with verifiable numbers</td><td>DBA-2 lens-flare shot</td></tr>
+          <tr><td>5</td><td>"The 60-day Pre-Sale Resort Yard build · timeline aligned to agent's marketing campaign"</td><td>Removes timing objection · syncs to agent's photo-shoot day</td><td>DBA-3 "Built in 30 Days" seal (with note: pre-sale can be expedited to 30 days)</td></tr>
+          <tr><td>6</td><td>"Book a 30-minute Pre-Sale Outdoor Audit · we'll model the ROI for your specific property"</td><td>DBA-7 conversion · positions inspection as financial consultation not sales call</td><td>DBA-7</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Opt-in form fields (5 only):</strong> First name · Email · Mobile · Suburb · "Listing in next ___ months" (1 / 3 / 6 / 12+ — segments urgency).</p>
+      <p><strong>Delivery sequence:</strong> Instant email with worksheet · 24h email "the 3 outdoor investments ranked by ROI" · 48h email (CC's agent if provided) "we work directly with your agent's photographer · here's how" · 7d email "case study · Hamilton property · $87k uplift on $42k spend."</p>
+      <p><strong>Forbidden in this magnet:</strong> guarantees of specific dollar uplift on this property · disparaging language about agents · "we make you money" framing. Tone is <em>quantitative advisor</em>, not <em>salesperson</em>.</p>
+    </div>
+
+    {/* 3.6 LEAD MAGNET TECHNICAL DELIVERY STACK */}
+    <div className="kw-block">
+      <h3>3.6 · Technical Delivery Stack — How the Four Magnets Are Built, Hosted, Tracked</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Layer</th><th>Tool</th><th>Spec</th><th>Owner</th></tr></thead>
+        <tbody>
+          <tr><td>Design</td><td>Figma · 4 master files (one per magnet)</td><td>Brand-locked · DBA-1..7 enforced · auto-export A4 PDF</td><td>YDT design lead</td></tr>
+          <tr><td>Hosting</td><td>Cloudflare R2 bucket · <code>resort-yard-magnets</code></td><td>4 versioned PDFs · CDN-cached · signed URLs valid 7 days post-opt-in</td><td>YDT dev</td></tr>
+          <tr><td>Landing pages</td><td>4 dedicated landing URLs (P-02 §2.4-2.7)</td><td>Hono SSR · LCP &lt; 2s · WCAG 2.2 AA</td><td>YDT dev</td></tr>
+          <tr><td>Form &amp; capture</td><td>Native Hono <code>POST /api/leads/magnet</code> → Cloudflare D1</td><td>4 fields + JTBD tag + UTM stack + IP + timestamp · sub-200ms response</td><td>YDT dev</td></tr>
+          <tr><td>CRM sync</td><td>D1 → HubSpot via Cloudflare Worker cron (every 5 min)</td><td>Lead tagged with JTBD-1..4 · routed to correct nurture sequence</td><td>YDT ops</td></tr>
+          <tr><td>Email nurture</td><td>HubSpot sequences · 4 distinct sequences (one per JTBD)</td><td>4-touch sequence · Day 0 / +1 / +3 / +7 · all copy in P-07 (WS-10 deferred)</td><td>YDT ops · placeholder until WS-10</td></tr>
+          <tr><td>SMS nurture</td><td>Twilio · 1 SMS per sequence at +3 days</td><td>Soft CTA: "your Inspection slot is reserved 7 days · book here"</td><td>YDT ops</td></tr>
+          <tr><td>Tracking</td><td>GA4 + Cloudflare Web Analytics + server-side D1 log</td><td>Triple-redundant capture · no analytics-blocker drop-off · attribution preserved 90 days</td><td>YDT dev</td></tr>
+          <tr><td>Attribution</td><td>UTM stack mandatory on every external link → magnet</td><td><code>utm_source · utm_medium · utm_campaign · utm_content · utm_term</code> all required</td><td>YDT ops</td></tr>
+          <tr><td>Storage retention</td><td>D1 lead record · 7 years</td><td>GDPR / Australian Privacy Act compliant · documented retention schedule</td><td>YDT compliance</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    {/* 3.7 LEAD MAGNET KPI SCORECARD */}
+    <div className="kw-block">
+      <h3>3.7 · KPI Scorecard — Per-Magnet Performance Targets (Month 1 → Month 6 → Month 12)</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Magnet</th><th>Metric</th><th>M1 baseline</th><th>M6 target</th><th>M12 target</th><th>Owner</th></tr></thead>
+        <tbody>
+          <tr><td>#1 Fast-Track Planner</td><td>Landing-page CR (visit → opt-in)</td><td>4%</td><td>9%</td><td>12%</td><td>YDT ops</td></tr>
+          <tr><td>#1 Fast-Track Planner</td><td>Opt-in → Inspection booked</td><td>15%</td><td>28%</td><td>35%</td><td>YDT ops</td></tr>
+          <tr><td>#2 Pool-Completion Checklist</td><td>Landing-page CR</td><td>5%</td><td>11%</td><td>14%</td><td>YDT ops</td></tr>
+          <tr><td>#2 Pool-Completion Checklist</td><td>Opt-in → Inspection booked</td><td>18%</td><td>30%</td><td>38%</td><td>YDT ops</td></tr>
+          <tr><td>#3 Deck Replacement Spec</td><td>Landing-page CR</td><td>3%</td><td>7%</td><td>10%</td><td>YDT ops</td></tr>
+          <tr><td>#3 Deck Replacement Spec</td><td>Opt-in → Inspection booked</td><td>20%</td><td>32%</td><td>40%</td><td>YDT ops</td></tr>
+          <tr><td>#4 Pre-Sale ROI Worksheet</td><td>Landing-page CR</td><td>3%</td><td>8%</td><td>11%</td><td>YDT ops</td></tr>
+          <tr><td>#4 Pre-Sale ROI Worksheet</td><td>Opt-in → Inspection booked</td><td>22%</td><td>35%</td><td>45%</td><td>YDT ops</td></tr>
+          <tr><td>Aggregate</td><td>Opt-ins per month (all 4 magnets)</td><td>40</td><td>180</td><td>320</td><td>YDT ops</td></tr>
+          <tr><td>Aggregate</td><td>Inspections booked per month from magnets</td><td>7</td><td>54</td><td>112</td><td>YDT ops</td></tr>
+          <tr><td>Aggregate</td><td>Magnet → quoted job ($ value) per month</td><td>$45k</td><td>$340k</td><td>$680k</td><td>YDT ops</td></tr>
+        </tbody>
+      </table>
+      <p className="kw-sub">Targets calibrated against POOLS-GAP-ANALYSIS-v1 Layer-3 (Lead Generation) baseline 5.0/10 → 9/10 target. M12 numbers feed directly into /kpi F1 (Acquisition) → F2 (Activation) tiles.</p>
+    </div>
+
+    {/* 3.8 GOVERNANCE & FORBIDDEN STATES */}
+    <div className="kw-block">
+      <h3>3.8 · Governance, Forbidden States, and Quarterly Refresh Doctrine</h3>
+      <ul className="voice-list">
+        <li><strong>Forbidden state #1 · Magnet drift:</strong> any change to a magnet's title, format, or opt-in field set requires CMO sign-off (Carla Oliver). YDT may iterate copy and design but not structure.</li>
+        <li><strong>Forbidden state #2 · Cross-magnet bleed:</strong> a Fast-Track Host lead must never be routed to the Pre-Sale ROI nurture sequence. JTBD tag is the source of truth.</li>
+        <li><strong>Forbidden state #3 · Pricing in magnets:</strong> no magnet may contain "from $X" or "starting at $X" pricing. Pricing belongs in the Resort Yard Inspection deliverable (P-08 Sales Enablement).</li>
+        <li><strong>Forbidden state #4 · Generic "Subscribe to our newsletter" CTAs anywhere in the POE site:</strong> all opt-ins must be one of the four JTBD-tied magnets. No exceptions.</li>
+        <li><strong>Quarterly refresh:</strong> each magnet's case studies (pages 8-10 in M#1, pages 8-9 in M#2, page 7 in M#3, page 4 in M#4) updated quarterly with new builds. PDFs re-versioned. R2 cached version invalidated.</li>
+        <li><strong>Annual rewrite:</strong> full content review every 12 months. JTBD triggers re-validated against booked-inspection language. Magnet structure may be revised at this point only.</li>
+      </ul>
+    </div>
+
+    <div className="pillar-foot">
+      <span className="pf-pill">P-03 · 4 lead magnets · 1 per JTBD · 36 PDF pages total · 4 fillable forms · 4 nurture sequences</span>
+      <span className="pf-pill">Tech stack: Cloudflare R2 · Hono SSR · D1 capture · HubSpot sync · Twilio SMS · GA4 + CF Web Analytics</span>
+      <span className="pf-pill">M12 target: 320 opt-ins/mo · 112 Inspections booked/mo · $680k quoted pipeline/mo from magnets alone</span>
+    </div>
+  </section>
+)
+
+// ============================================================================
+// POE P-04 · SEO / GEO / AEO CONTENT ENGINE · 45 SEQ suburbs · LLM citation
+// ============================================================================
+const PGPillar04SeoGeoAeo = () => (
+  <section id="p04" className="pillar-block">
+    <div className="pillar-block-h">
+      <span className="pillar-block-eyebrow">PILLAR P-04 · POE · SEO / GEO / AEO CONTENT ENGINE</span>
+      <h2 className="pillar-block-title">P-04 · Tri-Channel Discovery Engine · Classical SEO + Generative Engine Optimisation (GEO) + Answer Engine Optimisation (AEO) Across 45 SEQ Suburbs</h2>
+      <p className="pillar-block-sub">POOLS-GAP-ANALYSIS-v1 Layer-8 (Discovery) baseline 5.5/10 → 9/10 target. Three discovery channels operate in parallel: classical search (Google/Bing organic SERPs), generative search (ChatGPT, Perplexity, Claude, Google AI Overviews), and answer engines (voice/zero-click SERPs). Each requires a different optimisation discipline. [AGG-GEO] Aggarwal GEO methodology · [MK-AEO] iPullRank AEO playbook · [JR-DBA] Romaniuk mental availability through search-surface ubiquity.</p>
+    </div>
+
+    {/* 4.1 TRI-CHANNEL DOCTRINE */}
+    <div className="kw-block">
+      <h3>4.1 · The Tri-Channel Discovery Doctrine — Why SEO Alone Is Now A Minority Channel</h3>
+      <p>For category-design plays like YBMT Resort Yards, classical SEO is now insufficient as a sole discovery strategy. ChatGPT alone serves over 800M weekly users and is the second-most-used "search engine" by intent volume in OECD markets. Google AI Overviews now occupy SERP position-zero for ~47% of buyer-intent queries in the home-improvement category (Jul 2025 Brisbane sample). Voice/zero-click queries account for ~30% of mobile-initiated buyer research. POE strategy must engineer presence in all three:</p>
+      <ol>
+        <li><strong>SEO (classical search):</strong> rank in top-3 Google organic results for ~120 target keywords across 45 suburb pages + 30 service pages + 15 pillar pages. Discipline: technical SEO + content quality + backlinks. [JR-DBA] mental availability through SERP ubiquity.</li>
+        <li><strong>GEO (generative engine optimisation):</strong> be cited by ChatGPT, Perplexity, Claude, Gemini when buyers ask "best pool deck builder Brisbane" or "what is a resort yard" or "30 day pool deck builder Hamilton." Discipline: <code>llms.txt</code> + structured Q&amp;A blocks + verifiable claims + first-party data + .pdf brand assets accessible to crawlers. [AGG-GEO].</li>
+        <li><strong>AEO (answer engine optimisation):</strong> own the featured snippet, People-Also-Ask, voice-search answer, and zero-click answer box. Discipline: FAQPage schema + HowTo schema + 40-60-word answer paragraphs + question-as-H2 structure. [MK-AEO].</li>
+      </ol>
+      <p className="kw-sub"><strong>Locked rule:</strong> every published page across YBMT Resort Yards must be engineered for all three channels simultaneously. No "SEO-only" page. No "AI-only" page. Single content asset → triple discovery surface.</p>
+    </div>
+
+    {/* 4.2 KEYWORD UNIVERSE & INTENT MAP */}
+    <div className="kw-block">
+      <h3>4.2 · Keyword Universe and Intent Map — 312 Tracked Keywords Across 4 Intent Tiers</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Intent tier</th><th>Example keywords</th><th>Volume (SEQ mo)</th><th>Buyer stage</th><th>Page archetype</th></tr></thead>
+        <tbody>
+          <tr><td>1 · Category-Awareness</td><td>"what is a resort yard" · "outdoor entertaining ideas Brisbane" · "pool deck inspiration" · "resort backyard design"</td><td>~14k</td><td>Top of funnel · trigger forming</td><td>Pillar pages · blog · social</td></tr>
+          <tr><td>2 · Problem-Aware</td><td>"pool deck cracked" · "old deck needs replacing" · "pool not safe to use" · "house won't sell pool"</td><td>~6k</td><td>Active problem seeking fix</td><td>JTBD landing pages · failure-mode blogs</td></tr>
+          <tr><td>3 · Solution-Aware</td><td>"pool deck builder Brisbane" · "outdoor entertaining contractor SEQ" · "resort yard installer Hamilton" · "30 day pool deck builder"</td><td>~9k</td><td>Active vendor evaluation</td><td>Suburb pages · service pages · DBA-7 booking page</td></tr>
+          <tr><td>4 · Brand / Branded-Modifier</td><td>"YBMT Resort Yards" · "YBMT reviews" · "YBMT Brisbane" · "YBMT 30 day guarantee"</td><td>~600 → 3k M12</td><td>Bottom of funnel · selecting</td><td>Homepage · About · Reviews · Booking</td></tr>
+        </tbody>
+      </table>
+      <p>Total tracked: 312 keywords. Tier-1: 84. Tier-2: 76. Tier-3: 124. Tier-4: 28. Refresh quarterly via Ahrefs/Semrush + Brisbane-specific Google Trends pull. JTBD-language overlay: every keyword cross-referenced against the four Job Stories' verbatim trigger language captured in customer-interview transcripts.</p>
+    </div>
+
+    {/* 4.3 45 SEQ PROGRAMMATIC SUBURB PAGES */}
+    <div className="kw-block">
+      <h3>4.3 · 45 SEQ Suburb Pages — The Programmatic SEO Spine</h3>
+      <p>The 45 suburbs are not random. They map to: (a) the top-15 highest-property-value suburbs in Brisbane (target Pre-Sale Investor JTBD), (b) the top-15 suburbs with highest new-pool-installation rate 2023-25 (target Pool-Completion JTBD), and (c) the top-15 suburbs with highest household-renovation-spend deciles (target Fast-Track Host + Replacement JTBDs). Overlap is acceptable; the 45 unique suburbs published are:</p>
+      <table className="services-table meta-table">
+        <thead><tr><th>Tier</th><th>Suburbs</th><th>Primary JTBD</th></tr></thead>
+        <tbody>
+          <tr><td>Inner-North (10)</td><td>Hamilton · New Farm · Ascot · Clayfield · Hendra · Bulimba · Hawthorne · Newstead · Teneriffe · Wilston</td><td>Pre-Sale · Fast-Track Host</td></tr>
+          <tr><td>Inner-South (8)</td><td>West End · Highgate Hill · Dutton Park · Annerley · Greenslopes · East Brisbane · Coorparoo · Norman Park</td><td>Pre-Sale · Replacement</td></tr>
+          <tr><td>Western (9)</td><td>Indooroopilly · Toowong · St Lucia · Bardon · Ashgrove · Paddington · Auchenflower · Chapel Hill · Kenmore</td><td>Replacement · Pool-Completion</td></tr>
+          <tr><td>Bayside (6)</td><td>Manly · Wynnum · Cleveland · Wellington Point · Birkdale · Ormiston</td><td>Pool-Completion · Fast-Track</td></tr>
+          <tr><td>Southern Outer (7)</td><td>Springfield Lakes · Brookwater · Augustine Heights · Yarrabilba · Pimpama · Coomera · Hope Island</td><td>Pool-Completion · Replacement</td></tr>
+          <tr><td>Gold Coast (5)</td><td>Bundall · Mermaid Beach · Burleigh Heads · Robina · Helensvale</td><td>Pre-Sale · Pool-Completion</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Programmatic page template (5,500 words structured):</strong></p>
+      <ol>
+        <li>Hero with suburb name in H1 · "Resort Yards in [Suburb] · 30 days, guaranteed" · DBA-1 lockup · DBA-2 lens-flare shot localised where possible</li>
+        <li>5-second category frame · "What 'Resort Yard' means for [Suburb] homes"</li>
+        <li>Suburb-specific design considerations (3 paragraphs · references typical lot size · setbacks · soil type · sun aspect · council overlays where applicable)</li>
+        <li>3 local case studies (mini: address-redacted · 2024-25 builds · before/after thumbnail · 4-line summary)</li>
+        <li>The 4 JTBDs in [Suburb] — which Resort Yard fits which trigger (cross-link to 4 JTBD landings)</li>
+        <li>"Resort Yard Inspection in [Suburb]" — DBA-7 booking with travel-time note "we're typically on site in [Suburb] within 5 working days of booking"</li>
+        <li>Local trust signals (years operating · suburbs served · awards · BSA licence)</li>
+        <li>FAQ block (12 Q&amp;As · FAQPage schema · AEO-optimised 40-60-word answers)</li>
+        <li>HowTo schema "How to plan a Resort Yard in [Suburb]" (6 steps)</li>
+        <li>Local internal-link mesh (4 nearest suburb pages · 4 service pages · 1 booking)</li>
+      </ol>
+      <p><strong>Build pattern:</strong> Hono SSR · single template <code>/src/poe-suburb.tsx</code> · data table of 45 suburbs in <code>/src/data/poe-suburbs.ts</code> · build-time generation of 45 routes <code>/resort-yards/{`{suburb-slug}`}</code> · canonical tags self-referencing · no thin-content duplication (each page has ≥40% suburb-unique copy via case-study + design-consideration sections).</p>
+    </div>
+
+    {/* 4.4 SCHEMA & STRUCTURED DATA */}
+    <div className="kw-block">
+      <h3>4.4 · Schema and Structured Data — JSON-LD Stack Per Page Archetype</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Page archetype</th><th>Required schemas</th><th>Purpose</th></tr></thead>
+        <tbody>
+          <tr><td>Homepage</td><td>Organization · LocalBusiness (HomeAndConstructionBusiness) · WebSite (with SearchAction) · BreadcrumbList</td><td>Brand entity definition · LocalBusiness for Maps · Sitelinks search box</td></tr>
+          <tr><td>JTBD landing pages</td><td>Service · FAQPage · HowTo · BreadcrumbList · Offer (with priceRange)</td><td>Service entity · AEO featured-snippet capture · price-band indication</td></tr>
+          <tr><td>Suburb pages (45)</td><td>Service · LocalBusiness (with serviceArea pointing to suburb) · FAQPage · BreadcrumbList · Place</td><td>Local SEO ranking signals · Place entity for AI Overviews</td></tr>
+          <tr><td>Booking page (DBA-7)</td><td>Reservation · Service · BreadcrumbList · ContactPoint</td><td>Calendar appointment indexability</td></tr>
+          <tr><td>Case-study pages</td><td>Article · Project (custom) · ImageObject (with creator/license) · BreadcrumbList</td><td>Portfolio surfacing in AI image+text answers</td></tr>
+          <tr><td>FAQ / blog pages</td><td>FAQPage · Article · BreadcrumbList · Person (author)</td><td>AEO + E-E-A-T authorship signal</td></tr>
+        </tbody>
+      </table>
+      <p>All JSON-LD generated server-side by Hono · validated nightly via cron against Google Rich Results Test API · validation failures block deploy in CI.</p>
+    </div>
+
+    {/* 4.5 LLMS.TXT & GEO MANIFEST */}
+    <div className="kw-block">
+      <h3>4.5 · <code>llms.txt</code>, <code>llms-full.txt</code>, and the GEO Manifest</h3>
+      <p>The GEO discipline rests on giving LLMs an authoritative, machine-readable, summarised manifest of the brand at the well-known path <code>/llms.txt</code> (Anthropic-proposed standard, now widely respected by ChatGPT/Perplexity/Claude crawlers). [AGG-GEO] Aggarwal methodology adopted in full.</p>
+      <p><strong><code>/llms.txt</code> structure (locked):</strong></p>
+      <ol>
+        <li>H1: "YBMT Resort Yards — Brisbane Outdoor-Entertainment Specialist · 30-Day Build Guarantee"</li>
+        <li>Blockquote: 2-sentence category definition + DBA-3 "Built in 30 Days" claim</li>
+        <li>"Key Pages" section: links to 4 JTBD landings + Booking + About + Compliance + 4 pillar suburb pages</li>
+        <li>"Key Documents" section: links to 4 lead-magnet PDFs (Fast-Track Planner · Pool-Completion Checklist · Deck Replacement Spec · Pre-Sale ROI Worksheet)</li>
+        <li>"Optional" section: blog · case-study index · awards</li>
+      </ol>
+      <p><strong><code>/llms-full.txt</code></strong> — a full ~80k-token concatenation of all canonical Resort Yard content (no marketing fluff · facts, claims, FAQ, case studies, pricing-band ranges). Auto-generated nightly from the site's content database. Cached at Cloudflare edge.</p>
+      <p><strong>Per-page LLM-only metadata block</strong> (HTML comment, invisible to users but crawled): each canonical page contains a 200-word machine-readable summary block <code>&lt;!-- llm-summary: ... --&gt;</code> stating: page topic · JTBD addressed · key claims (with citations to source) · primary CTA · canonical URL. This dramatically lifts citation rate from generative engines per [AGG-GEO] Aggarwal A/B data (avg +2.4x citations in 8-week test window).</p>
+    </div>
+
+    {/* 4.6 AEO TACTICAL PLAYBOOK */}
+    <div className="kw-block">
+      <h3>4.6 · AEO Tactical Playbook — Engineering for the 40-60-Word Answer Box</h3>
+      <p>[MK-AEO] iPullRank's research: featured-snippet answer paragraphs that win the box are 40-60 words, start with a direct restatement of the question, use a concrete number or list in the first sentence, and appear in the first 3 paragraphs of the page body. Locked AEO rules for every POE page:</p>
+      <ul className="voice-list">
+        <li><strong>Question-as-H2:</strong> every FAQ Q&amp;A renders the question as an H2 (not H3), making it the most likely featured-snippet target on the page.</li>
+        <li><strong>Direct-answer first sentence:</strong> answer the question literally in sentence 1, with the number/fact embedded. Example: "A Resort Yard from YBMT is typically built in 30 days from contract sign, guaranteed in writing."</li>
+        <li><strong>40-60 word ceiling:</strong> the answer block following each H2 question is hard-capped at 60 words. Expansion goes into a separate paragraph below.</li>
+        <li><strong>Schema-paired:</strong> the Q&amp;A is wrapped in FAQPage JSON-LD with identical text. Mismatches blocked in CI.</li>
+        <li><strong>List-format priority:</strong> "how" and "what are" questions answered with 5-7 bullet HTML lists (not prose paragraphs) — these capture list-format featured snippets at 3.1x the prose rate (iPullRank 2024).</li>
+        <li><strong>"Brisbane"-modifier mandatory:</strong> every JTBD landing FAQ contains at least one Q&amp;A with "Brisbane" in the question text to capture local-modified voice searches.</li>
+      </ul>
+      <p><strong>FAQ inventory deliverable:</strong> 12 Q&amp;As per JTBD landing × 4 = 48 Q&amp;As · 12 Q&amp;As per suburb page × 45 = 540 Q&amp;As · 24 Q&amp;As on homepage · 18 Q&amp;As on Booking page = <strong>630 AEO-engineered Q&amp;As at launch.</strong></p>
+    </div>
+
+    {/* 4.7 TECHNICAL SEO FOUNDATION */}
+    <div className="kw-block">
+      <h3>4.7 · Technical SEO Foundation — Site-Wide Non-Negotiables</h3>
+      <ul className="voice-list">
+        <li><strong>Core Web Vitals:</strong> LCP &lt; 2.0s · INP &lt; 200ms · CLS &lt; 0.1 (P-02 §2.13 locked).</li>
+        <li><strong>Mobile-first:</strong> all rendering tested in Chrome DevTools "Moto G Power" preset · all CTAs ≥ 48×48 px touch target · no horizontal scroll &lt; 360 px viewport.</li>
+        <li><strong>Crawlability:</strong> <code>/sitemap.xml</code> auto-generated · 220+ URLs · last-modified accurate to ±24h · submitted to Google + Bing Search Console.</li>
+        <li><strong>Robots:</strong> <code>/robots.txt</code> allows all major LLM crawlers (GPTBot · ClaudeBot · PerplexityBot · Google-Extended · CCBot · Applebot-Extended) · disallows aggressive scrapers.</li>
+        <li><strong>Canonicals:</strong> self-referencing canonical on every page · no parameter-drift duplicate content.</li>
+        <li><strong>Hreflang:</strong> single <code>en-AU</code> declaration · explicit (no en-AU/en-US confusion).</li>
+        <li><strong>HTTPS:</strong> Cloudflare-issued cert · HSTS preload · TLS 1.3.</li>
+        <li><strong>Image SEO:</strong> all 200+ portfolio images have descriptive alt text (suburb + JTBD + DBA-2 visual style) · WebP/AVIF served via Cloudflare Image Resizing · lazy-loaded below the fold.</li>
+        <li><strong>Internal-link mesh:</strong> every page links to ≥3 other Resort Yard pages with descriptive anchor text (no "click here").</li>
+        <li><strong>External authority:</strong> 30 backlinks acquired in M1-M6 from QLD-relevant publishers (suburb-news sites · Brisbane lifestyle blogs · Master Builders QLD · HIA QLD · architect/landscape-designer partner sites — see P-10).</li>
+      </ul>
+    </div>
+
+    {/* 4.8 EDITORIAL CALENDAR & CONTENT VELOCITY */}
+    <div className="kw-block">
+      <h3>4.8 · Editorial Calendar and Content Velocity — 24-Month Publishing Cadence</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Asset class</th><th>M1-M3 (launch)</th><th>M4-M12 (build)</th><th>M13-M24 (compound)</th></tr></thead>
+        <tbody>
+          <tr><td>Pillar/category pages</td><td>4 published</td><td>+8 → 12 total</td><td>+4 → 16 total</td></tr>
+          <tr><td>JTBD landing pages</td><td>4 published (locked)</td><td>quarterly refresh</td><td>quarterly refresh</td></tr>
+          <tr><td>Suburb pages</td><td>15 published</td><td>+30 → 45 total</td><td>annual refresh all 45</td></tr>
+          <tr><td>Case-study pages</td><td>6 published</td><td>2/month → +18 → 24 total</td><td>1/month → +12 → 36 total</td></tr>
+          <tr><td>FAQ/blog articles</td><td>12 published</td><td>3/month → +27 → 39 total</td><td>2/month → +24 → 63 total</td></tr>
+          <tr><td>Lead-magnet PDFs</td><td>4 published (locked)</td><td>quarterly case-study refresh</td><td>annual rewrite eligibility</td></tr>
+        </tbody>
+      </table>
+      <p>All content briefed against the keyword universe (§4.2) · all content checked against tri-channel doctrine (§4.1) · all content reviewed by Carla Oliver on JTBD-fit · all content shipped via YDT.</p>
+    </div>
+
+    {/* 4.9 KPI SCORECARD & MEASUREMENT */}
+    <div className="kw-block">
+      <h3>4.9 · KPI Scorecard — SEO + GEO + AEO Performance Targets</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Channel</th><th>Metric</th><th>M3</th><th>M6</th><th>M12</th><th>M24</th></tr></thead>
+        <tbody>
+          <tr><td>SEO</td><td>Top-3 SEQ rankings (target keywords)</td><td>18</td><td>52</td><td>118</td><td>180</td></tr>
+          <tr><td>SEO</td><td>Organic sessions/month</td><td>1,400</td><td>5,200</td><td>14,500</td><td>32,000</td></tr>
+          <tr><td>SEO</td><td>Organic → Inspection booked/month</td><td>9</td><td>34</td><td>96</td><td>210</td></tr>
+          <tr><td>GEO</td><td>LLM citation count/month (ChatGPT + Perplexity + Claude tracked)</td><td>20</td><td>140</td><td>620</td><td>1,400</td></tr>
+          <tr><td>GEO</td><td>LLM-attributed sessions (UTM-tagged shared links)</td><td>40</td><td>280</td><td>980</td><td>2,200</td></tr>
+          <tr><td>AEO</td><td>Featured snippets owned (Brisbane modifier)</td><td>6</td><td>22</td><td>58</td><td>92</td></tr>
+          <tr><td>AEO</td><td>People-Also-Ask appearances</td><td>14</td><td>48</td><td>110</td><td>180</td></tr>
+          <tr><td>AEO</td><td>Voice-search "near me" Brisbane wins (sample tested monthly)</td><td>2</td><td>9</td><td>24</td><td>40</td></tr>
+        </tbody>
+      </table>
+      <p className="kw-sub">Tracked weekly via Ahrefs + Semrush + Cloudflare Web Analytics + custom LLM-citation scraper (Carla's daily prompt-bank tested across 4 LLMs Mon-Fri). Reported to CMO every Monday. All numbers feed /kpi F1 (Acquisition) tile and Bowtie post-deal-stage expansion telemetry.</p>
+    </div>
+
+    {/* 4.10 GOVERNANCE */}
+    <div className="kw-block">
+      <h3>4.10 · Governance, Forbidden States, and Refresh Doctrine</h3>
+      <ul className="voice-list">
+        <li><strong>Forbidden state #1 · AI-generated content shipped without human edit:</strong> all LLM-drafted content must be edited by Carla or her delegate · zero exceptions · auto-detection scan in CI.</li>
+        <li><strong>Forbidden state #2 · Doorway pages / thin suburb pages:</strong> each suburb page must contain ≥40% suburb-unique content (case studies · design notes · local references). CI fails if duplication exceeds 60%.</li>
+        <li><strong>Forbidden state #3 · Keyword stuffing:</strong> primary keyword density capped at 1.4% per page. Linter enforced.</li>
+        <li><strong>Forbidden state #4 · Schema/content mismatch:</strong> FAQPage JSON-LD answer text must exactly match the visible answer text. CI validates byte-for-byte.</li>
+        <li><strong>Forbidden state #5 · Cloaking for LLMs:</strong> the <code>llm-summary</code> HTML-comment block must contain only facts present on the visible page. No promotional language hidden from users but shown to LLMs. Carla audits monthly.</li>
+        <li><strong>Quarterly refresh:</strong> all FAQ Q&amp;As reviewed for AI-Overview rotation · top-20 underperforming keywords re-briefed for new content · suburb page case studies refreshed with newest builds.</li>
+        <li><strong>Annual rewrite:</strong> pillar pages and homepage rewritten end-to-end Sept of each year · category-frame language re-validated against customer-interview transcripts.</li>
+      </ul>
+    </div>
+
+    <div className="pillar-foot">
+      <span className="pf-pill">P-04 · Tri-channel: SEO + GEO + AEO · 312 keywords tracked · 220+ URLs · 630 AEO Q&amp;As · 45 SEQ suburb pages</span>
+      <span className="pf-pill">llms.txt + llms-full.txt + per-page llm-summary blocks · 6 LLM crawlers allow-listed · [AGG-GEO] + [MK-AEO] disciplines locked</span>
+      <span className="pf-pill">M12 targets: 118 top-3 rankings · 14.5k organic sessions/mo · 620 LLM citations/mo · 58 featured snippets · 96 Inspections/mo from organic</span>
     </div>
   </section>
 )
