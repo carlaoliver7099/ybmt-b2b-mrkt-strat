@@ -196,6 +196,63 @@ const PSDeepDives = () => (
       <div style="text-align: center; margin-top: 2rem; padding: 1.2rem; background: rgba(77, 182, 199, 0.12); border-radius: 8px; border-left: 4px solid #4DB6C7;">
         <strong style="color: #1B3A5C;">PHASE 2 BRAND + FUNNEL LAYER:</strong> <span style="color: #2d7a3e; font-weight: 700;">COMPLETE</span> · 59/59 checklist items · ~29,400 words across four operating manuals · Quality gate passed · <em>Cleared to begin Phase 3 (WS-06 Channel · WS-08 GEO/AEO · WS-09 Paid Media · WS-10 CRM)</em>.
       </div>
+
+      {/* PHASE 3 BLOCK — IN PROGRESS */}
+      <div style="text-align: center; margin: 3.5rem 0 2rem;">
+        <div style="font-family: 'Inter', sans-serif; font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; color: #B8743D; font-weight: 700; margin-bottom: 0.5rem;">PHASE 3 · LAYER 3 · IN PROGRESS</div>
+        <h2 class="display" style="margin-top: 0;">Channel, Demand &amp; Lifecycle · <span class="accent">10/10 depth · workstreams in build</span></h2>
+        <p style="font-family: 'Inter', sans-serif; font-size: 1rem; color: #444; max-width: 720px; margin: 1rem auto 0; line-height: 1.65;">
+          The four operating manuals that translate Phase 2 brand + funnel into media spend, search/AEO presence, paid acquisition systems, and lifecycle automation. Channel Architecture is live. GEO/AEO, Paid Media, and CRM follow in sequence under the same quality gate.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.4rem;">
+        <a href="/ymt-channel" style="text-decoration: none; color: inherit;">
+          <div style="background: #fff; padding: 1.8rem 1.6rem; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-top: 5px solid #B8743D; transition: transform 0.15s; height: 100%;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.8rem;">
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; color: #B8743D; font-weight: 700;">WORKSTREAM 06</div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #2d7a3e; font-weight: 700;">✓ 12/12</div>
+            </div>
+            <h3 style="font-family: 'Fraunces', serif; font-size: 1.45rem; color: #1B3A5C; margin: 0 0 0.7rem; line-height: 1.2;">Channel Architecture</h3>
+            <p style="font-family: 'Inter', sans-serif; font-size: 0.92rem; color: #444; line-height: 1.6; margin: 0 0 1rem;">12 channels × 7 stages mix matrix · $720K budget · 60/40 long/short · Hero/Hub/Hygiene · 14-touchpoint journey · SparkToro attention map · Time-decay attribution · O/E/P per LOB · 6 sunset rules · 5-stage test protocol · 6 orchestration handshakes · 5-tier reporting · 8 risks.</p>
+            <div style="font-family: 'Inter', sans-serif; font-size: 0.82rem; color: #B8743D; font-weight: 600;">~4,300 words · /ymt-channel →</div>
+          </div>
+        </a>
+
+        <div style="background: rgba(255,255,255,0.5); padding: 1.8rem 1.6rem; border-radius: 10px; border: 2px dashed rgba(27, 58, 92, 0.25); height: 100%; opacity: 0.7;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.8rem;">
+            <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; color: #B8743D; font-weight: 700;">WORKSTREAM 08</div>
+            <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #888; font-weight: 700;">⏳ IN BUILD</div>
+          </div>
+          <h3 style="font-family: 'Fraunces', serif; font-size: 1.45rem; color: #1B3A5C; margin: 0 0 0.7rem; line-height: 1.2;">GEO / AEO</h3>
+          <p style="font-family: 'Inter', sans-serif; font-size: 0.92rem; color: #444; line-height: 1.6; margin: 0 0 1rem;">Aggarwal GEO Princeton 2024 · iPullRank AEO 2026 · llms.txt · 6 JSON-LD schema types · 80-piece content map · 18 programmatic pages · E-E-A-T architecture.</p>
+          <div style="font-family: 'Inter', sans-serif; font-size: 0.82rem; color: #888; font-weight: 600;">Target ~8K words · /ymt-geo</div>
+        </div>
+
+        <div style="background: rgba(255,255,255,0.5); padding: 1.8rem 1.6rem; border-radius: 10px; border: 2px dashed rgba(27, 58, 92, 0.25); height: 100%; opacity: 0.7;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.8rem;">
+            <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; color: #B8743D; font-weight: 700;">WORKSTREAM 09</div>
+            <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #888; font-weight: 700;">⏳ QUEUED</div>
+          </div>
+          <h3 style="font-family: 'Fraunces', serif; font-size: 1.45rem; color: #1B3A5C; margin: 0 0 0.7rem; line-height: 1.2;">Paid Media</h3>
+          <p style="font-family: 'Inter', sans-serif; font-size: 0.92rem; color: #444; line-height: 1.6; margin: 0 0 1rem;">Binet &amp; Field 60/40 · IPA Effectiveness Code · Google Ads + Meta account structures · 120-cell creative matrix · 20+ headlines per LOB · WordStream · Common Thread Collective.</p>
+          <div style="font-family: 'Inter', sans-serif; font-size: 0.82rem; color: #888; font-weight: 600;">Target ~7K words · /ymt-paid</div>
+        </div>
+
+        <div style="background: rgba(255,255,255,0.5); padding: 1.8rem 1.6rem; border-radius: 10px; border: 2px dashed rgba(27, 58, 92, 0.25); height: 100%; opacity: 0.7;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.8rem;">
+            <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; color: #B8743D; font-weight: 700;">WORKSTREAM 10</div>
+            <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #888; font-weight: 700;">⏳ QUEUED</div>
+          </div>
+          <h3 style="font-family: 'Fraunces', serif; font-size: 1.45rem; color: #1B3A5C; margin: 0 0 0.7rem; line-height: 1.2;">CRM Lifecycle</h3>
+          <p style="font-family: 'Inter', sans-serif; font-size: 0.92rem; color: #444; line-height: 1.6; margin: 0 0 1rem;">Klaviyo Marketing Mix · Drift Conversational · Balfour Growth Loops · 9 named flows (Welcome / Browse Abandonment / Lead Nurture / Pre-meeting / Post-Consult / Post-Sale Onboarding / Build-in-Progress / Review Request / Win-Back).</p>
+          <div style="font-family: 'Inter', sans-serif; font-size: 0.82rem; color: #888; font-weight: 600;">Target ~8K words · /ymt-crm</div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 2rem; padding: 1.2rem; background: rgba(184, 116, 61, 0.1); border-radius: 8px; border-left: 4px solid #B8743D;">
+        <strong style="color: #1B3A5C;">PHASE 3 CHANNEL + DEMAND + LIFECYCLE LAYER:</strong> <span style="color: #B8743D; font-weight: 700;">1 of 4 COMPLETE</span> · WS-06 delivered (12/12 CH-XX · 4,293 words · quality gate passed) · WS-08 GEO/AEO next under same 10/10 doctrine.
+      </div>
     </div>
   </section>
 )
