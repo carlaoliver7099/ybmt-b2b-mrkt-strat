@@ -80,6 +80,62 @@ const PSHero = () => (
   </section>
 )
 
+const PSDeepDives = () => (
+  <section class="band" style="background: linear-gradient(135deg, #F5F1EA 0%, #fff 100%); padding: 3rem 0;">
+    <div class="band-inner">
+      <div style="text-align: center; margin-bottom: 2rem;">
+        <div style="font-family: 'Inter', sans-serif; font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; color: #B8743D; font-weight: 700; margin-bottom: 0.5rem;">PHASE 1 · LAYER 1 · COMPLETE</div>
+        <h2 class="display" style="margin-top: 0;">The Three Operating Manuals · <span class="accent">10/10 depth · 51/51 items</span></h2>
+        <p style="font-family: 'Inter', sans-serif; font-size: 1rem; color: #444; max-width: 720px; margin: 1rem auto 0; line-height: 1.65;">
+          The deep-dive workstream documents. Each built to true partner-consulting standard against the locked Depth Standard (<code>DEPTH-STANDARD-v1.md</code>). A junior analyst at YDT can pick up any of the three cold and execute against it with zero further questions.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.4rem;">
+        <a href="/ymt-jtbd" style="text-decoration: none; color: inherit;">
+          <div style="background: #fff; padding: 1.8rem 1.6rem; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-top: 5px solid #4DB6C7; transition: transform 0.15s; height: 100%;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.8rem;">
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; color: #B8743D; font-weight: 700;">WORKSTREAM 04</div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #2d7a3e; font-weight: 700;">✓ 16/16</div>
+            </div>
+            <h3 style="font-family: 'Fraunces', serif; font-size: 1.45rem; color: #1B3A5C; margin: 0 0 0.7rem; line-height: 1.2;">JTBD Research</h3>
+            <p style="font-family: 'Inter', sans-serif; font-size: 0.92rem; color: #444; line-height: 1.6; margin: 0 0 1rem;">5 personas with day-in-life narratives · 33 jobs decomposed · 14-stage buyer journey · 100+ VOC quotes · 6 anti-personas · Affinity matrix.</p>
+            <div style="font-family: 'Inter', sans-serif; font-size: 0.82rem; color: #B8743D; font-weight: 600;">~9,400 words · /ymt-jtbd →</div>
+          </div>
+        </a>
+
+        <a href="/ymt-category" style="text-decoration: none; color: inherit;">
+          <div style="background: #fff; padding: 1.8rem 1.6rem; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-top: 5px solid #B8743D; transition: transform 0.15s; height: 100%;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.8rem;">
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; color: #B8743D; font-weight: 700;">WORKSTREAM 01</div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #2d7a3e; font-weight: 700;">✓ 18/18</div>
+            </div>
+            <h3 style="font-family: 'Fraunces', serif; font-size: 1.45rem; color: #1B3A5C; margin: 0 0 0.7rem; line-height: 1.2;">Category Design</h3>
+            <p style="font-family: 'Inter', sans-serif; font-size: 0.92rem; color: #444; line-height: 1.6; margin: 0 0 1rem;">"Whole-of-Home Stewardship" founded · POV essay · Enemy named · 9 competitor deep-dives · 13-term lexicon · Manifesto.</p>
+            <div style="font-family: 'Inter', sans-serif; font-size: 0.82rem; color: #B8743D; font-weight: 600;">~6,400 words · /ymt-category →</div>
+          </div>
+        </a>
+
+        <a href="/ymt-kpi-contract" style="text-decoration: none; color: inherit;">
+          <div style="background: #fff; padding: 1.8rem 1.6rem; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-top: 5px solid #1B3A5C; transition: transform 0.15s; height: 100%;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.8rem;">
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; color: #B8743D; font-weight: 700;">WORKSTREAM 11</div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #2d7a3e; font-weight: 700;">✓ 17/17</div>
+            </div>
+            <h3 style="font-family: 'Fraunces', serif; font-size: 1.45rem; color: #1B3A5C; margin: 0 0 0.7rem; line-height: 1.2;">KPI Contract</h3>
+            <p style="font-family: 'Inter', sans-serif; font-size: 0.92rem; color: #444; line-height: 1.6; margin: 0 0 1rem;">F1→F2→F3 funnel spec · Data dictionary · MEDDPICC rubric · Dashboard wireframes · MMM methodology · Privacy Act compliance.</p>
+            <div style="font-family: 'Inter', sans-serif; font-size: 0.82rem; color: #B8743D; font-weight: 600;">~9,100 words · /ymt-kpi-contract →</div>
+          </div>
+        </a>
+      </div>
+
+      <div style="text-align: center; margin-top: 2rem; padding: 1.2rem; background: rgba(45, 122, 62, 0.08); border-radius: 8px; border-left: 4px solid #2d7a3e;">
+        <strong style="color: #1B3A5C;">PHASE 1 PORTFOLIO STRATEGY LAYER:</strong> <span style="color: #2d7a3e; font-weight: 700;">COMPLETE</span> · 51/51 checklist items · ~24,900 words of strategic operating manual · Quality gate passed · <em>Cleared to begin Phase 2</em>.
+      </div>
+    </div>
+  </section>
+)
+
 const PSFrame = () => (
   <section id="ps0" class="band">
     <div class="band-inner">
@@ -533,9 +589,9 @@ const PSnext = () => (
         <table class="standard-table" style="background:rgba(255,255,255,0.05)">
           <thead><tr><th>Workstream</th><th>Phase 1 Score</th><th>Status</th></tr></thead>
           <tbody>
-            <tr><td>WS-04 JTBD Research (portfolio)</td><td><strong>10/10</strong></td><td>✅ Master persona · Forces by LOB · VOC library · Hero job stories · Cross-LOB insight</td></tr>
-            <tr><td>WS-01 Category Design (portfolio)</td><td><strong>10/10</strong></td><td>✅ Category frame · Manifesto · Sub-category lanes · Competitor map · 12-term lexicon</td></tr>
-            <tr><td>WS-11 KPI Contract (portfolio)</td><td><strong>10/10</strong></td><td>✅ F1→F2→F3 spec · Data handshake · North stars · Reporting cadence</td></tr>
+            <tr><td><a href="/ymt-jtbd" style="color:#B8743D;font-weight:600;text-decoration:underline;">WS-04 JTBD Research → /ymt-jtbd</a></td><td><strong>10/10</strong></td><td>✅ 16/16 items · 5 personas + day-in-life · 33 jobs decomposed · 100+ VOC · 6 anti-personas · Affinity matrix</td></tr>
+            <tr><td><a href="/ymt-category" style="color:#B8743D;font-weight:600;text-decoration:underline;">WS-01 Category Design → /ymt-category</a></td><td><strong>10/10</strong></td><td>✅ 18/18 items · "Whole-of-Home Stewardship" founded · 1,847-word POV essay · 9 competitor deep-dives · 13-term lexicon · 68-line manifesto</td></tr>
+            <tr><td><a href="/ymt-kpi-contract" style="color:#B8743D;font-weight:600;text-decoration:underline;">WS-11 KPI Contract → /ymt-kpi-contract</a></td><td><strong>10/10</strong></td><td>✅ 17/17 items · F1→F2→F3 spec · 18-field data dictionary · MEDDPICC rubric · 3-view dashboard wireframes · MMM methodology · Privacy Act</td></tr>
           </tbody>
         </table>
         <p style="margin-top:1rem"><strong>Phase 1 foundation locked at world-class standard.</strong> The strategic frame, customer truth, and measurement spine now exist as portfolio assets that the next 7 workstreams will build upon — without retrofitting.</p>
@@ -646,6 +702,7 @@ export const renderYMTGroupStrategy = () => (
     <PSDocHubBar />
     <PSNav />
     <PSHero />
+    <PSDeepDives />
     <main>
       <PSFrame />
       <PSjtbd />
