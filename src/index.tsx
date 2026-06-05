@@ -350,6 +350,7 @@ import { renderModules678 } from './modules-6-7-8'
 import { renderThreeFunnels } from './three-funnels'
 import { renderYMTGroupStrategy } from './ymt-group-strategy'
 import { renderYMTjtbd } from './ymt-jtbd'
+import { renderYMTcategory } from './ymt-category'
 
 // /3-funnels — the 3-Funnel ROI Productivity strategy document
 app.get('/3-funnels', (c) => {
@@ -364,6 +365,11 @@ app.get('/ymt-group-strategy', (c) => {
 // /ymt-jtbd — DOC 3 · Phase 1 · WS-04 JTBD Operating Manual (10/10 depth)
 app.get('/ymt-jtbd', (c) => {
   return c.render(renderYMTjtbd())
+})
+
+// /ymt-category — DOC 3 · Phase 1 · WS-01 Category Design Operating Manual (10/10 depth)
+app.get('/ymt-category', (c) => {
+  return c.render(renderYMTcategory())
 })
 
 app.get('/', (c) => {
