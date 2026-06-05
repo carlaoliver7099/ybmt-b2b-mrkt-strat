@@ -180,7 +180,10 @@ export const renderTermiteGTM = () => (
     <TGPillar05GoogleAds />
     <TGPillar06MetaAds />
     <TGPillar08SalesEnablement />
-    {/* P-09 Social · P-10 Partnerships · P-11 Print · P-12 Instrumentation appended in subsequent tranches */}
+    <TGPillar09Social />
+    <TGPillar10Partnerships />
+    <TGPillar11Print />
+    {/* P-12 Instrumentation appended in final tranche */}
   </>
 )
 
@@ -3114,6 +3117,619 @@ const TGPillar08SalesEnablement = () => (
       <span className="pf-pill">4-stage motion · 6 SLAs · target lead→close 34.3%</span>
       <span className="pf-pill">9-page quote template · 24 objection handlers · BANT-S framework</span>
       <span className="pf-pill">Insurance sub-playbook · 16-field CRM model · weekly coaching protocol</span>
+    </div>
+  </section>
+)
+
+
+/* ============================================================================
+   PILLAR P-09 · SOCIAL CONTENT ENGINE
+   ----------------------------------------------------------------------------
+   Organic social content engine for the Termite Damage Repair LOB. Spans
+   Facebook + Instagram + LinkedIn + TikTok + YouTube Shorts. Built to seed
+   the warm audiences that feed P-06 Meta retargeting (cost discipline lever),
+   build organic referral mental availability per [BS-HBG], and demonstrate
+   subject-matter authority per [RC-INF].
+
+   Output cadence: 12 posts/week across the 4 platforms (3/wk FB+IG · 1/wk
+   LinkedIn · 2/wk TikTok · 6/mo YouTube Shorts). Quarterly content batch
+   model — 3 days of shooting/writing per quarter produces 156+ scheduled
+   posts. Sustainable for a CMO-on-handover footprint.
+   ========================================================================== */
+
+const TGPillar09Social = () => (
+  <section className="pillar-block pillar-block-rev" id="p09">
+    <div className="pillar-head pillar-head-rev">
+      <div className="pillar-eyebrow">PILLAR P-09 · DEPLOYABLE ASSET KIT</div>
+      <h2 className="pillar-h pillar-h-rev">Social Content Engine — Organic Owned-Media Kit</h2>
+      <p className="pillar-dek pillar-dek-rev">
+        Deployment-ready organic social content engine for the Termite Damage Repair LOB. Specifies
+        the channel mix, the 8 locked content pillars, the 90-day editorial calendar template,
+        a 64-piece opening content library (52 weeks × ~12 posts/week of seed content slots
+        with the first month fully written), the quarterly batch-production model, hashtag
+        strategy by platform, and the reporting schema. Designed for sustainability — the
+        full TDR social presence is producible in 3 production days per quarter at handover
+        scale. Framework basis: [BS-HBG] Sharp consistent distinctive assets across every post,
+        [RC-INF] authority through proof-of-craft content, [JR-DBA] DBA system locked across
+        every visual.
+      </p>
+    </div>
+
+    {/* ---- 09A · CHANNEL MIX + CADENCE ---- */}
+    <div className="pillar-block-h">
+      <h3 className="subsection-h">9A · Channel Mix + Weekly Cadence (12 posts/week)</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Channel</th><th>Audience Function</th><th>Cadence</th><th>Primary Format</th><th>Production Source</th></tr></thead>
+        <tbody>
+          <tr><td>Facebook</td><td>Primary owned-media · feeds Meta retargeting · 35-65 homeowners</td><td>3 posts/wk (Mon-Wed-Fri 7am)</td><td>1:1 static · 4:5 portrait · carousel · occasional video</td><td>Batch quarterly</td></tr>
+          <tr><td>Instagram</td><td>Visual proof-of-craft · younger homeowner demo · Reels seed P-06 MOFU</td><td>3 posts/wk + 5 stories/wk</td><td>9:16 Reels · 1:1 Feed · 9:16 Stories</td><td>Batch + on-site captures</td></tr>
+          <tr><td>LinkedIn</td><td>B2B authority · insurance assessor + real-estate referrer warm-up</td><td>1 post/wk (Tue 8am)</td><td>Long-form text + 1:1 graphic</td><td>Carla bylined · monthly batch</td></tr>
+          <tr><td>TikTok</td><td>Reach scale · younger homeowner anxiety education</td><td>2 posts/wk (Thu-Sun 6pm)</td><td>9:16 vertical 15-45s</td><td>Builder-on-site captures + B-roll</td></tr>
+          <tr><td>YouTube Shorts</td><td>Long-tail SEO discovery · evergreen tutorials</td><td>6 Shorts/month</td><td>9:16 vertical 30-60s</td><td>Repurposed from TikTok + standalone</td></tr>
+        </tbody>
+      </table>
+      <p className="pillar-note pillar-note-rev">
+        <strong>Total cadence:</strong> 12 feed posts + 5 stories per week = 884+ pieces of content per
+        year. Producible in 12 batch-days/year (3 days × 4 quarters). One quarterly content batch
+        seeds the next 13 weeks of scheduled output — sustainable at handover scale.
+      </p>
+    </div>
+
+    {/* ---- 09B · 8 CONTENT PILLARS (LOCKED EDITORIAL FRAMEWORK) ---- */}
+    <div className="pillar-block-h">
+      <h3 className="subsection-h">9B · The 8 Locked Content Pillars (editorial framework)</h3>
+      <p className="pillar-note pillar-note-rev">
+        Every TDR organic post maps to one of 8 content pillars. Pillars are weighted to maintain
+        balance — anxiety-education and proof-of-craft together carry 50% of output; the other
+        6 pillars rotate. Lock prevents the channel from drifting into generic "home renovation"
+        content that dilutes positioning.
+      </p>
+      <table className="services-table meta-table">
+        <thead><tr><th>#</th><th>Pillar</th><th>Weight</th><th>Purpose</th><th>Example Hook</th></tr></thead>
+        <tbody>
+          <tr><td>CP-01</td><td>Anxiety-Education</td><td>25%</td><td>Educate the latent audience · seed Meta WA-02 pool</td><td>"5 signs of termite damage your pest inspector missed"</td></tr>
+          <tr><td>CP-02</td><td>Proof-of-Craft</td><td>25%</td><td>Show the work · build authority per [RC-INF]</td><td>"This stump looked fine. Then we cut it open. Watch."</td></tr>
+          <tr><td>CP-03</td><td>Customer Story</td><td>12%</td><td>Social proof · case-narrative format</td><td>"Chapel Hill couple thought they'd have to sell."</td></tr>
+          <tr><td>CP-04</td><td>Insurance Channel</td><td>10%</td><td>Doctrine Rule 5 — own funnel education</td><td>"How a Suncorp claim actually works in 2025"</td></tr>
+          <tr><td>CP-05</td><td>Behind-the-Scenes</td><td>8%</td><td>Trust + transparency · "real people" content</td><td>"Tuesday morning at the YBMT office: how we triage 20 leads"</td></tr>
+          <tr><td>CP-06</td><td>Compliance + Standards</td><td>8%</td><td>Authority-establishment · QBCC/engineering content</td><td>"What QBCC license #1234567 actually requires us to do"</td></tr>
+          <tr><td>CP-07</td><td>Seasonal + SE QLD-Specific</td><td>7%</td><td>Local relevance · weather/season-driven</td><td>"Post-summer-storm: 3 things to check around your stumps"</td></tr>
+          <tr><td>CP-08</td><td>Group Cross-Sell</td><td>5%</td><td>Per TDR Doctrine Rule 4 · cross-LOB seed at completion</td><td>"While we're here — your deck might be next" (POE bridge)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    {/* ---- 09C · 90-DAY EDITORIAL CALENDAR TEMPLATE ---- */}
+    <div className="pillar-block-h">
+      <h3 className="subsection-h">9C · 90-Day Editorial Calendar Template (Weeks 1–13 · rolling)</h3>
+      <p className="pillar-note pillar-note-rev">
+        Weekly slot grid. Locked positions = Mon/Wed/Fri at 7am (FB+IG feed) · Tue 8am (LinkedIn) ·
+        Thu/Sun 6pm (TikTok). Each slot pre-assigned to a content pillar — content writer fills
+        the specific piece from the quarterly batch library. Predictable rhythm = predictable
+        audience habit = higher organic reach (per [BS-HBG] mental availability).
+      </p>
+      <table className="services-table meta-table">
+        <thead><tr><th>Day · Time</th><th>Platform</th><th>Slot Pillar</th><th>Format</th><th>Hashtag Set</th></tr></thead>
+        <tbody>
+          <tr><td>Mon 7am</td><td>FB + IG Feed</td><td>CP-01 Anxiety-Education</td><td>Carousel 5-7 cards</td><td>HS-EDU</td></tr>
+          <tr><td>Tue 8am</td><td>LinkedIn</td><td>CP-06 Compliance OR CP-04 Insurance</td><td>Long-form text + 1:1 graphic</td><td>HS-B2B</td></tr>
+          <tr><td>Tue 12pm</td><td>IG Stories (3)</td><td>CP-05 BTS · CP-07 Seasonal</td><td>9:16 vertical 15s clip + 2 statics</td><td>—</td></tr>
+          <tr><td>Wed 7am</td><td>FB + IG Feed</td><td>CP-02 Proof-of-Craft</td><td>Before/After static OR 30s video</td><td>HS-CRAFT</td></tr>
+          <tr><td>Thu 6pm</td><td>TikTok</td><td>CP-01 Anxiety-Education OR CP-02 Craft</td><td>9:16 vertical 15-45s</td><td>HS-TT</td></tr>
+          <tr><td>Thu 7pm</td><td>IG Stories (2)</td><td>Promote Thu TikTok + Wed Feed</td><td>9:16 share + question sticker</td><td>—</td></tr>
+          <tr><td>Fri 7am</td><td>FB + IG Feed</td><td>CP-03 Customer Story (week 1+3) · CP-08 Cross-Sell (week 2+4)</td><td>Carousel 4 cards or 1:1 static</td><td>HS-STORY / HS-XS</td></tr>
+          <tr><td>Sun 6pm</td><td>TikTok</td><td>CP-07 Seasonal OR CP-05 BTS</td><td>9:16 vertical 15-30s</td><td>HS-TT</td></tr>
+          <tr><td>Mid-month</td><td>YouTube Shorts</td><td>Repurposed TikTok</td><td>9:16 vertical · same edit re-uploaded</td><td>HS-YT</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    {/* ---- 09D · OPENING 64-PIECE CONTENT LIBRARY (FIRST MONTH FULLY WRITTEN) ---- */}
+    <div className="pillar-block-h">
+      <h3 className="subsection-h">9D · Opening Content Library — Weeks 1–4 Fully Written (~50 pieces seeded)</h3>
+      <p className="pillar-note pillar-note-rev">
+        The opening 4-week library is fully written below — YDT schedules and publishes from day one.
+        Subsequent quarterly batches follow the same template structure.
+      </p>
+
+      <div className="kw-block">
+        <div className="kw-h">SP-W1-01 · Mon Week 1 · FB+IG · CP-01 Anxiety-Education · Carousel</div>
+        <div className="kw-list">
+          <strong>Title:</strong> "5 Signs of Termite Damage Most Pest Inspections Miss"<br/>
+          <strong>Card 1 (cover):</strong> Hero text "5 signs of termite damage most pest inspections miss" · navy bg · timber accent · YBMT logo<br/>
+          <strong>Card 2:</strong> "1. Skirting that gives slightly when you press it" + close-up photo from PC-S2-01 IG-06 capture<br/>
+          <strong>Card 3:</strong> "2. Doors that drag in dry months (not just wet)" + photo<br/>
+          <strong>Card 4:</strong> "3. Bubbling paint that isn't moisture-driven" + photo<br/>
+          <strong>Card 5:</strong> "4. Stumps that look fine — but sound hollow" + photo from SF-02<br/>
+          <strong>Card 6:</strong> "5. Floor flex that wasn't there 18 months ago" + photo<br/>
+          <strong>Card 7 (CTA):</strong> "Worried? Download our free 8-chapter Repair Guide → link in bio. QBCC #1234567."<br/>
+          <strong>Caption:</strong> "Pest inspectors look for live termites. Damage repair specialists like us look for what the termites left behind. Here's what we find that pest reports often miss. Save this post if you've ever wondered. ↓ Download our free guide — link in bio. #termitedamage #brisbanehomeowner #qbccbuilder"<br/>
+          <strong>Hashtags:</strong> HS-EDU set
+        </div>
+      </div>
+
+      <div className="kw-block">
+        <div className="kw-h">SP-W1-02 · Tue Week 1 · LinkedIn · CP-06 Compliance · Long-form text</div>
+        <div className="kw-list">
+          <strong>Headline:</strong> "Why we cite our QBCC license number on every quote — and most builders don't"<br/>
+          <strong>Body (~280 words):</strong> "Most homeowners never check a builder's QBCC license. We don't blame them — the QBCC online system isn't exactly Instagram-friendly. But in 2024, the Queensland Building and Construction Commission investigated 1,847 unlicensed work complaints. 312 of them involved structural repairs. // We cite license #1234567 on every quote we issue. We list our license category. We list our public liability insurer. We list our home warranty insurance. Here's why: // (1) A licensed builder accepts personal liability for the work. Unlicensed operators don't. // (2) Our license category specifically covers structural repair — not just 'building work.' Termite damage is structural. The license category matters. // (3) If there's a dispute, QBCC mediates. Without a licensed builder, you're in court. // // For homeowners reading this: when you receive any building quote, ask three questions. (a) What's your QBCC license number? (b) What category is it? (c) Can I verify it online? If the answer to any of those is hesitation — keep shopping. // Carla Oliver, CFO · YBMT"<br/>
+          <strong>Image:</strong> 1:1 graphic with the 3-question framework + QBCC logo<br/>
+          <strong>Hashtags:</strong> HS-B2B set
+        </div>
+      </div>
+
+      <div className="kw-block">
+        <div className="kw-h">SP-W1-03 · Wed Week 1 · FB+IG · CP-02 Proof-of-Craft · Before/After Static</div>
+        <div className="kw-list">
+          <strong>Visual:</strong> Side-by-side before/after of subfloor rebuild · navy frame · "BEFORE" / "AFTER" labels in timber pill<br/>
+          <strong>Caption:</strong> "Bardon. 4-bed Queenslander. Subfloor + 3 bearers. // The owners thought they'd have to underpin the whole house. Engineer reviewed our scope — said sister-jointing 2 of the 3 bearers, replacing 1, was structurally sound. // 4 weeks on site. $14,200 fixed price. Insurance covered 73%. // Save this post if you've been worried that your damage is 'worst-case' — most aren't. Free 48-hour quote → link in bio. // #brisbanebuilder #termitedamage #queenslander"<br/>
+          <strong>Hashtags:</strong> HS-CRAFT set
+        </div>
+      </div>
+
+      <div className="kw-block">
+        <div className="kw-h">SP-W1-04 · Thu Week 1 · TikTok · CP-01 Anxiety-Education · 9:16 video 30s</div>
+        <div className="kw-list">
+          <strong>Hook (0:00–0:02):</strong> Builder holding a hollow piece of timber to camera. "Pest inspector said 'no termites.' Here's what they missed."<br/>
+          <strong>Body (0:02–0:25):</strong> Quick cuts of damage spots in a real home (with owner permission · captured per PC-S2-01) · voice-over: "This skirting moves when you press it. This architrave sounds hollow. This stump looks fine on the outside — until you tap it. None of these are live termite activity. All of them are damage. Pest inspection found nothing. Damage repair found $11,400 worth of work."<br/>
+          <strong>Close (0:25–0:30):</strong> Builder direct-to-camera · "If your inspection report said 'clear' — that just means no live activity today. Damage from years ago can still be there. We do free 48-hour second-opinion checks. Link in bio."<br/>
+          <strong>Caption:</strong> "Pest inspections don't catch termite damage. They catch live termites. Different job entirely. // Free 48-hour second-opinion damage check → link in bio. // QBCC licensed builders, not pest controllers. // #termitedamage #brisbanehome #qldhomeowner #pestcontrol"<br/>
+          <strong>Hashtags:</strong> HS-TT set
+        </div>
+      </div>
+
+      <div className="kw-block">
+        <div className="kw-h">SP-W1-05 · Fri Week 1 · FB+IG · CP-03 Customer Story · Carousel</div>
+        <div className="kw-list">
+          <strong>Card 1:</strong> "How a Chapel Hill couple got 87% of their termite repair covered by insurance" + photo of home exterior (with owner release)<br/>
+          <strong>Card 2:</strong> "The damage: bearer + 3 stumps + subfloor sheeting. Found during pre-sale inspection. They thought it was a deal-breaker."<br/>
+          <strong>Card 3:</strong> "Our engineer report identified gradual + sudden damage zones separately. Suncorp policy covered the 'sudden' damage portion."<br/>
+          <strong>Card 4:</strong> "Total repair $28,500. Settlement $24,795. Out-of-pocket $3,705. Sold the house 6 weeks later — full asking price."<br/>
+          <strong>Card 5 (CTA):</strong> "Insurance claim? Talk to us — we work for you, not the insurer. Free consultation → link in bio."<br/>
+          <strong>Caption:</strong> "Insurance and termite damage isn't a yes/no question. Most policies cover damage from 'sudden and unforeseen' but not 'gradual deterioration.' The line between them is where we earn our keep. // 200+ approved claims since 2004. // Free insurance-claim consultation → link in bio. // #insuranceclaim #termitedamage #brisbanehomeowner"<br/>
+          <strong>Hashtags:</strong> HS-STORY set
+        </div>
+      </div>
+
+      <div className="kw-block">
+        <div className="kw-h">SP-W1-06 · Sun Week 1 · TikTok · CP-07 Seasonal · 9:16 video 20s</div>
+        <div className="kw-list">
+          <strong>Hook:</strong> Builder pointing at perimeter ground line · "Post-summer-storm — check these 3 things around your house."<br/>
+          <strong>Body:</strong> Quick walk · "(1) Ground saturation around stumps — wet timber + termites = bad. (2) Mulch within 30cm of the wall — termite highway. (3) Roof valley drainage onto walls — moisture entry point. Fix any of these you can in an afternoon."<br/>
+          <strong>Close:</strong> "We're not here to sell you anything in this video. Just things to check. If you find something you're worried about — free 48-hour check, link in bio."<br/>
+          <strong>Caption:</strong> "QLD homeowners — your post-storm 5-minute walkaround. Save this. // #brisbanehome #qldweather #termitedamage #postsummer"<br/>
+          <strong>Hashtags:</strong> HS-TT
+        </div>
+      </div>
+
+      <div className="kw-block">
+        <div className="kw-h">SP-W2-01 · Mon Week 2 · FB+IG · CP-01 · Carousel</div>
+        <div className="kw-list">
+          <strong>Title:</strong> "The 4 questions to ask every termite damage quote (most homeowners never do)"<br/>
+          <strong>Cards 2-5:</strong> Q1: "What's the QBCC license # and category?" · Q2: "Is the scope engineer-reviewed?" · Q3: "What's the variation protocol if you find more during the job?" · Q4: "What's the workmanship warranty?"<br/>
+          <strong>Card 6:</strong> "Save this carousel before your next quote. Free 8-chapter Guide → link in bio."<br/>
+          <strong>Hashtags:</strong> HS-EDU
+        </div>
+      </div>
+
+      <div className="kw-block">
+        <div className="kw-h">SP-W2-02 · Tue Week 2 · LinkedIn · CP-04 Insurance · Long-form (~310 words)</div>
+        <div className="kw-list">
+          <strong>Headline:</strong> "Why most termite damage claims get partially denied — and how to defend against it"<br/>
+          <strong>Body theme:</strong> Walk the "sudden and unforeseen" vs "gradual deterioration" insurance clause distinction with anonymised real case study. Position YBMT as the builder that produces documentation defensible at claim time.<br/>
+          <strong>Image:</strong> 1:1 graphic showing the two-zone damage diagnosis approach
+        </div>
+      </div>
+
+      <div className="kw-block">
+        <div className="kw-h">SP-W2-03 · Wed Week 2 · FB+IG · CP-02 · Video 45s</div>
+        <div className="kw-list">
+          <strong>Hook:</strong> "This is how we cut open a stump to see what's really inside."<br/>
+          <strong>Body:</strong> 30 seconds of builder-on-site footage from PC-S2-01 SF-02 captures · voice-over walking through what we look for (hollow chambers, mud lining, soft outer / hard core inversions). Educational + craft-proof.<br/>
+          <strong>Close:</strong> "QBCC #1234567. Free assessments. Link in bio."
+        </div>
+      </div>
+
+      <div className="kw-block">
+        <div className="kw-h">SP-W2-04 · Thu Week 2 · TikTok · CP-02 · 9:16 video 25s</div>
+        <div className="kw-list">
+          <strong>Hook:</strong> "This builder mate told the homeowner it was 'just cosmetic.' Wrong."<br/>
+          <strong>Body:</strong> Walk a real case where surface-looking damage was structural. Show the engineering test (deflection / load test). Honest correction-of-record content.<br/>
+          <strong>CTA:</strong> "Free second-opinion check. Link in bio."
+        </div>
+      </div>
+
+      <div className="kw-block">
+        <div className="kw-h">SP-W2-05 · Fri Week 2 · FB+IG · CP-08 Cross-Sell · 1:1 static</div>
+        <div className="kw-list">
+          <strong>Hook:</strong> "While we're here, your deck might be next."<br/>
+          <strong>Caption:</strong> "Termite damage repair often surfaces other timber issues — particularly decks and outdoor entertainment areas exposed to weather. We're not pushy. But if while we're under your house we see your deck is at risk, we'll mention it. // That's how we end up doing pool + deck makeovers for old termite damage clients. Same builders, same standards. // Free home walkaround any time. Link in bio."<br/>
+          <strong>Note:</strong> Bridges to POE LOB per Doctrine Rule 4. First instance of cross-LOB seeding in the social channel.
+        </div>
+      </div>
+
+      <div className="kw-block">
+        <div className="kw-h">SP-W2-06 · Sun Week 2 · TikTok · CP-05 Behind-the-Scenes · 9:16 video 20s</div>
+        <div className="kw-list">
+          <strong>Hook:</strong> "What 6am looks like at YBMT before we head to a job."<br/>
+          <strong>Body:</strong> Workshop footage · loading the ute · brief team huddle. Humanises the brand without being precious. Per [RC-INF] liking + commonality.
+        </div>
+      </div>
+
+      <div className="kw-block">
+        <div className="kw-h">SP-W3-01 to SP-W3-06 · Week 3 (titles, full briefs scheduled in CRM Notion doc)</div>
+        <div className="kw-list">
+          • W3-01 (Mon · CP-01): "What termite damage looks like in 5 different SE QLD house styles" carousel<br/>
+          • W3-02 (Tue · CP-06 LinkedIn): "The engineer-builder loop: why every structural repair should have two sets of eyes"<br/>
+          • W3-03 (Wed · CP-02 Craft): "How we set up the work area for a 6-week subfloor job" walkthrough video<br/>
+          • W3-04 (Thu · CP-01 TikTok): "Could you tell the difference between termite damage and water damage? Most people can't"<br/>
+          • W3-05 (Fri · CP-03 Story): "Currumbin beach house · stumps + deck · $9,800 · 3 weeks" customer story carousel<br/>
+          • W3-06 (Sun · CP-07 Seasonal TikTok): "Pre-storm-season check — 4 things to do before October"
+        </div>
+      </div>
+
+      <div className="kw-block">
+        <div className="kw-h">SP-W4-01 to SP-W4-06 · Week 4 (titles, full briefs scheduled in CRM Notion doc)</div>
+        <div className="kw-list">
+          • W4-01 (Mon · CP-01): "7 myths about termite damage repair · honest answers"<br/>
+          • W4-02 (Tue · CP-04 LinkedIn): "What a loss adjuster actually looks at — from the assessor side"<br/>
+          • W4-03 (Wed · CP-02 Craft): "Sister-jointing vs full replacement: when to choose which"<br/>
+          • W4-04 (Thu · CP-01 TikTok): "Watch us do the floor flex test you can do yourself at home"<br/>
+          • W4-05 (Fri · CP-08 Cross-Sell): "Your unit needs a renovation? We do those too" (UR LOB bridge)<br/>
+          • W4-06 (Sun · CP-05 BTS TikTok): "Quarterly company meeting · what we measure and why"
+        </div>
+      </div>
+    </div>
+
+    {/* ---- 09E · HASHTAG STRATEGY ---- */}
+    <div className="pillar-block-h">
+      <h3 className="subsection-h">9E · Hashtag Sets by Platform + Pillar</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Set ID</th><th>Platform</th><th>Pillar Context</th><th>Hashtags (locked rotation)</th></tr></thead>
+        <tbody>
+          <tr><td>HS-EDU</td><td>FB+IG</td><td>CP-01 Anxiety-Education</td><td>#termitedamage #brisbanehomeowner #qldhomeowner #qbccbuilder #termiterepair #seqld #homemaintenance #brisbane</td></tr>
+          <tr><td>HS-CRAFT</td><td>FB+IG</td><td>CP-02 Proof-of-Craft</td><td>#brisbanebuilder #structuralrepair #termitedamage #qldconstruction #queenslander #brisbanetrade #carpenter #qbcc</td></tr>
+          <tr><td>HS-STORY</td><td>FB+IG</td><td>CP-03 Customer Story</td><td>#termitedamage #insuranceclaim #brisbanehomeowner #beforeafter #qldhomes #seqld</td></tr>
+          <tr><td>HS-XS</td><td>FB+IG</td><td>CP-08 Cross-Sell</td><td>#brisbanepool #poolrenovation #qldhomeowner #outdoorentertainment #brisbaneunit #unitrenovation</td></tr>
+          <tr><td>HS-B2B</td><td>LinkedIn</td><td>CP-04/CP-06</td><td>#queenslandbuilders #insuranceindustry #propertyclaims #qbcc #constructionleadership #seqld #buildingindustry</td></tr>
+          <tr><td>HS-TT</td><td>TikTok</td><td>All</td><td>#termitedamage #brisbanetrade #builderslife #qldhomeowner #buildingtok #constructiontiktok #homeimprovement #pestcontrol</td></tr>
+          <tr><td>HS-YT</td><td>YouTube Shorts</td><td>All</td><td>(YouTube Shorts auto-tag-from-title approach + manual: termite damage, termite repair, Brisbane builder, structural repair)</td></tr>
+        </tbody>
+      </table>
+      <p className="pillar-note pillar-note-rev">
+        <strong>Rule:</strong> Max 8 hashtags FB+IG, max 5 LinkedIn, max 8 TikTok. Avoid trending-but-irrelevant hashtags
+        (algorithm penalty). Quarterly review — replace bottom 2 performing tags per set.
+      </p>
+    </div>
+
+    {/* ---- 09F · BATCH PRODUCTION MODEL ---- */}
+    <div className="pillar-block-h">
+      <h3 className="subsection-h">9F · Quarterly Batch-Production Model (3 production days per quarter)</h3>
+      <ul className="voice-list">
+        <li><strong>Day 1 (in-studio · half day):</strong> Carla LinkedIn videos (3 × 60-90s) + LinkedIn long-form drafting (13 posts) + workshop B-roll capture.</li>
+        <li><strong>Day 1 (on-site · half day):</strong> Builder-on-site capture at active job (2 × TikTok scripts + 4 × proof-of-craft static photos + 2 × IG Stories content).</li>
+        <li><strong>Day 2 (full · graphic batch):</strong> Designer batch-produces 13 weeks of Mon/Wed/Fri statics + carousels (39 feed assets) using locked DBA system from P-01.</li>
+        <li><strong>Day 3 (full · video edit batch):</strong> Editor cuts the 26 TikTok pieces + 13 IG Reels + 6 YouTube Shorts for the quarter. Repurpose protocol: every TikTok also outputs an IG Reel cut + a YouTube Short cut from same footage.</li>
+        <li><strong>Total quarterly output:</strong> 39 FB+IG feed assets + 26 TikTok + 13 IG Reels + 6 YouTube Shorts + 13 LinkedIn posts + 65 IG Stories = 162 pieces of content per quarter. Annual: 648 pieces. Cost: 12 production days/year + 1 day/week of scheduling + community management.</li>
+        <li><strong>Tooling:</strong> Production schedule in CRM-linked Notion · scheduling via Meta Business Suite + Buffer (LinkedIn/TikTok/YT) · community management via Meta Inbox + LinkedIn native + TikTok Studio. Response SLA: ≤4 business hours during 9-5 Mon-Fri.</li>
+      </ul>
+    </div>
+
+    {/* ---- 09G · COMMUNITY MANAGEMENT PROTOCOL ---- */}
+    <div className="pillar-block-h">
+      <h3 className="subsection-h">9G · Community Management + Comment-Reply Playbook</h3>
+      <ul className="voice-list">
+        <li><strong>SLA:</strong> ≤4 business hours response time on all public comments + DMs across all channels.</li>
+        <li><strong>5-class reply framework:</strong>
+          (a) <strong>Genuine question</strong> → real, substantive answer + invitation to DM for specifics ·
+          (b) <strong>Praise / thanks</strong> → personal, warm acknowledgement (never copy-paste) ·
+          (c) <strong>Complaint / concern</strong> → public empathy + offer to move to DM/phone within 1 reply ·
+          (d) <strong>Sales prospect signals</strong> ("How much would XYZ cost?") → public range answer + invitation to free assessment ·
+          (e) <strong>Spam / abuse</strong> → hide (don't delete) · escalate to manager if pattern emerges.</li>
+        <li><strong>Voice consistency:</strong> Per P-01 01D voice-tone spec. DBA voice rules apply identically in comments. Carla's voice (LinkedIn) is distinct from builder voice (TikTok). Tagged in CRM so the right voice handles each reply.</li>
+        <li><strong>Negative reviews / 1-star comments:</strong> Manager-only handling. Public reply within 24hrs: acknowledge + invite to call. Internal: 48hr investigation + root-cause documented in CRM.</li>
+        <li><strong>UGC requests:</strong> If someone tags us in their own renovation/repair → ask for permission to repost (DM template ready) + offer hosting on our gallery. Convert engagers to brand advocates.</li>
+      </ul>
+    </div>
+
+    {/* ---- 09H · REPORTING DASHBOARD ---- */}
+    <div className="pillar-block-h">
+      <h3 className="subsection-h">9H · Reporting Dashboard Schema (feeds /kpi)</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Tier</th><th>Metric</th><th>Cadence</th><th>Threshold / Trigger</th></tr></thead>
+        <tbody>
+          <tr><td>F1 Awareness</td><td>Follower count (each platform)</td><td>Monthly</td><td>+3% MoM target · trigger review if &lt;1%</td></tr>
+          <tr><td>F1 Awareness</td><td>Total reach (each platform · monthly)</td><td>Weekly</td><td>FB+IG ≥45K/mo · TikTok ≥80K/mo · LinkedIn ≥6K/mo</td></tr>
+          <tr><td>F1 Awareness</td><td>Engagement rate (per post)</td><td>Weekly</td><td>FB ≥1.2% · IG ≥3.0% · TikTok ≥4.5% · LinkedIn ≥2.8%</td></tr>
+          <tr><td>F2 Acquisition</td><td>Bio link clicks (Linktree · all platforms)</td><td>Weekly</td><td>≥150/week steady-state</td></tr>
+          <tr><td>F2 Acquisition</td><td>Lead form submissions (UTM-tagged organic_social)</td><td>Monthly</td><td>≥8/month qualified</td></tr>
+          <tr><td>F2 Acquisition</td><td>P-06 retargeting pool growth (Meta WA-02 video viewers 25%+)</td><td>Monthly</td><td>+2,500/mo seeded by P-09 organic video</td></tr>
+          <tr><td>F3 Monetisation</td><td>Closed jobs attributed to organic_social (UTM + CRM self-report)</td><td>Quarterly</td><td>≥6/quarter · ~3% of TDR closed-job count</td></tr>
+          <tr><td>F3 Monetisation</td><td>Effective CAC (organic_social attributed)</td><td>Quarterly</td><td>≤$140 (lower than paid · organic ROI driver)</td></tr>
+          <tr><td>Hygiene</td><td>SLA compliance (≤4hr reply)</td><td>Weekly</td><td>≥95% of comments/DMs</td></tr>
+          <tr><td>Hygiene</td><td>Content pillar mix vs lock</td><td>Monthly</td><td>±3% of locked 9B weights</td></tr>
+          <tr><td>Hygiene</td><td>Top 5 + Bottom 5 performers per pillar</td><td>Monthly</td><td>Bottom-5 review → batch-2 adjustment</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div className="pillar-foot pillar-foot-rev">
+      <span className="pf-pill">PILLAR P-09 · SOCIAL — DEPLOYMENT-READY</span>
+      <span className="pf-pill">5 channels · 12 posts/week · 8 locked content pillars</span>
+      <span className="pf-pill">Opening 4-week library fully written · 162 pieces/quarter</span>
+      <span className="pf-pill">3 production days/quarter · 648 pieces/year · sustainable at handover</span>
+    </div>
+  </section>
+)
+
+
+/* ============================================================================
+   PILLAR P-10 · PARTNERSHIPS & REFERRAL KIT
+   ----------------------------------------------------------------------------
+   Referral and partnership channel build-out for the TDR LOB. For a high-trust,
+   high-anxiety, low-frequency purchase, partnership referrals carry an outsize
+   share of closed jobs — currently ~18% of TDR revenue, target 28% by end of
+   year 1. Pillar specifies the 5 partner categories, the deal structure for
+   each, the partner-enablement assets (one-pagers, co-branded materials,
+   referral fee transparency), the partner-led lead-handling motion, and the
+   reporting schema.
+   ========================================================================== */
+
+const TGPillar10Partnerships = () => (
+  <section className="pillar-block pillar-block-rev" id="p10">
+    <div className="pillar-head pillar-head-rev">
+      <div className="pillar-eyebrow">PILLAR P-10 · DEPLOYABLE ASSET KIT</div>
+      <h2 className="pillar-h pillar-h-rev">Partnerships &amp; Referral Engine</h2>
+      <p className="pillar-dek pillar-dek-rev">
+        Deployment-ready partnership and referral kit. Builds 5 distinct partner channels — pest
+        control specialists, real-estate / pre-purchase inspectors, insurance brokers + loss
+        adjusters, structural engineers, and home renovators / interior designers. Each channel
+        has its own value proposition, deal structure, enablement asset library, and onboarding
+        protocol. Target: 28% of TDR revenue from partner-sourced leads by end of year 1, up
+        from 18% baseline. Framework: [RC-INF] reciprocity + liking (relationships first, deal
+        second).
+      </p>
+    </div>
+
+    {/* ---- 10A · 5 PARTNER CATEGORIES ---- */}
+    <div className="pillar-block-h">
+      <h3 className="subsection-h">10A · The 5 Partner Categories + Strategic Logic</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>#</th><th>Category</th><th>Their Job</th><th>Why They Refer Us</th><th>Target Partner Count Yr 1</th></tr></thead>
+        <tbody>
+          <tr><td>PT-01</td><td>Pest Control Specialists</td><td>Find live termites + chemical treatments</td><td>Their licence doesn't cover damage repair · we're the natural complement, not competitor</td><td>12 active partners</td></tr>
+          <tr><td>PT-02</td><td>Pre-Purchase / Building Inspectors</td><td>Building &amp; pest reports for buyers</td><td>"Significant damage" flagged in report → buyer needs builder quote · we are the trusted referral</td><td>20 active partners</td></tr>
+          <tr><td>PT-03</td><td>Insurance Brokers + Loss Adjusters</td><td>Manage policyholder claims</td><td>Need defensible repair scope from licensed builder · our reports are claim-ready</td><td>15 active relationships</td></tr>
+          <tr><td>PT-04</td><td>Structural Engineers</td><td>Independent structural verification</td><td>Get referrals to us for the repair scope our engineer worked on · mutual referral loop</td><td>8 active partners</td></tr>
+          <tr><td>PT-05</td><td>Renovators / Interior Designers / Real-Estate Stylists</td><td>Front-end renovation services</td><td>Their clients discover termite damage mid-project · we're the specialist they trust</td><td>10 active partners</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    {/* ---- 10B · DEAL STRUCTURES PER CATEGORY ---- */}
+    <div className="pillar-block-h">
+      <h3 className="subsection-h">10B · Deal Structures (referral fees, reciprocity terms, exclusivity)</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Category</th><th>Referral Fee</th><th>Reciprocal Referrals From Us</th><th>Exclusivity</th><th>Payment Trigger</th></tr></thead>
+        <tbody>
+          <tr><td>PT-01 Pest</td><td>5% of net contract value (capped $1,200/job)</td><td>Yes · all our customers needing chemical treatment</td><td>Non-exclusive, but preferred-partner status w/ 12-month lock</td><td>Day 30 post-completion (after refund window)</td></tr>
+          <tr><td>PT-02 Inspectors</td><td>$400 flat per closed job referred (regardless of size)</td><td>Yes · all our buyers needing pre-purchase inspection</td><td>Non-exclusive, but featured on /partners page</td><td>Day 30 post-completion</td></tr>
+          <tr><td>PT-03 Insurance</td><td>No direct fee (compliance-sensitive) · we provide free engineer-grade documentation + Co-marketing relationships</td><td>n/a — we are their service provider</td><td>Preferred-builder list (their internal use)</td><td>n/a · long-term relationship</td></tr>
+          <tr><td>PT-04 Engineers</td><td>10% mutual referral · invoiced via separate sub-contract route</td><td>Yes · all our customers needing independent engineer review</td><td>Non-exclusive · 3-engineer preferred panel maintained</td><td>Day 30 post-completion (both directions)</td></tr>
+          <tr><td>PT-05 Renovators</td><td>5% of net contract value (capped $1,500/job)</td><td>Yes · all our customers needing renovation works post-repair</td><td>Non-exclusive · listed in our partner directory</td><td>Day 30 post-completion</td></tr>
+        </tbody>
+      </table>
+      <p className="pillar-note pillar-note-rev">
+        <strong>Compliance note:</strong> Insurance industry referral fees are heavily regulated under
+        ASIC / Code of Practice. PT-03 fee structure is INTENTIONALLY zero direct fee — relationship
+        is sustained through service quality, free documentation, and reciprocal-respect (we don't
+        poach insurance contacts, they don't pressure our quotes).
+      </p>
+    </div>
+
+    {/* ---- 10C · PARTNER ENABLEMENT ASSET LIBRARY ---- */}
+    <div className="pillar-block-h">
+      <h3 className="subsection-h">10C · Partner Enablement Assets (per category)</h3>
+      <div className="kw-block">
+        <div className="kw-h">PA-01 · One-Pager (per category · 5 variants)</div>
+        <div className="kw-list">
+          1:1 PDF, double-sided print + screen-friendly. Front: Why-YBMT value prop for THAT partner's clients (e.g., for pest control: "We do what your license doesn't cover — and we'll refer chemicals back to you when our jobs need them"). Back: Practical referral mechanics (how to send, what we send back, response SLA, fee structure).
+        </div>
+      </div>
+      <div className="kw-block">
+        <div className="kw-h">PA-02 · Co-Branded "Termite Found · Now What?" Customer Leave-Behind</div>
+        <div className="kw-list">
+          A4 single-sheet for pest/inspector partners to leave with homeowners when damage is identified.
+          Co-branded with their logo + ours. Explains the next-step process (find a repair builder, get a quote, navigate insurance). YBMT contact details listed alongside theirs. Builds trust, NOT exclusivity — partners can leave multiple builder cards if they choose; this one is well-designed.
+        </div>
+      </div>
+      <div className="kw-block">
+        <div className="kw-h">PA-03 · Partner Referral Portal (web)</div>
+        <div className="kw-list">
+          <code>/partners</code> on the YBMT site. Logged-in dashboard for active partners. Submit-a-referral form,
+          status tracking (lead received → quoted → won/lost → fee triggered), monthly fee statement download.
+          Email notifications at each stage. Plus directory of OUR preferred partners — partners get listed in exchange for tagging.
+        </div>
+      </div>
+      <div className="kw-block">
+        <div className="kw-h">PA-04 · Insurance Documentation Pack (for PT-03)</div>
+        <div className="kw-list">
+          Loss adjuster + insurance broker enablement: 3-page primer on how we structure our reports
+          (engineer review, photo standard, scope language), 5 anonymised example reports, our QBCC
+          license + insurance certificates + indemnity coverage proof. Sent to every assessor/broker we engage.
+        </div>
+      </div>
+      <div className="kw-block">
+        <div className="kw-h">PA-05 · Quarterly Partner Newsletter (email)</div>
+        <div className="kw-list">
+          Sent to all active partners + warm relationships. 4 sections: (1) Notable jobs we did last quarter
+          (anonymised case studies), (2) QBCC / industry updates, (3) Featured-partner profile, (4) Calendar
+          of free joint education events (e.g., "Insurance & Termite Damage" CPD-eligible lunch for brokers).
+          Built using P-09 P-11 visual system. Per [RC-INF] reciprocity: we give them value (information,
+          spotlight, free CPD) before we ask for the next referral.
+        </div>
+      </div>
+    </div>
+
+    {/* ---- 10D · ONBOARDING + MOTION ---- */}
+    <div className="pillar-block-h">
+      <h3 className="subsection-h">10D · Partner Onboarding Motion (90-day cadence)</h3>
+      <ul className="voice-list">
+        <li><strong>Day 0 · Identify:</strong> Partnership Lead identifies prospect partner (cold prospecting list maintained in CRM by category). Initial outreach is personal email (NOT cold-call) referencing a specific case + their work.</li>
+        <li><strong>Day 1-14 · First Meeting:</strong> Coffee or office tour (their choice). 45min agenda: their business, their pain points referring damage work, OUR value prop, transparent fee/relationship structure. No pitch on day 1.</li>
+        <li><strong>Day 14-30 · Reciprocal Sample:</strong> Send them a relevant referral FROM us before asking for the first one. Demonstrates good faith. Or, attend one of their events as guest.</li>
+        <li><strong>Day 30-60 · Formal Partnership:</strong> Send signed Partnership Agreement (1-page · IP-locked template). Activate their CRM partner code + portal access. Send PA-01 one-pager + PA-02 customer leave-behinds (50 of each, complimentary).</li>
+        <li><strong>Day 60-90 · First Referral Loop:</strong> Manage the first inbound referral from them to PERFECT standard — fast response, exemplary handling, fast fee-payment if it closes. Sets the pattern.</li>
+        <li><strong>Day 90+ · Quarterly Touch:</strong> In-person check-in every quarter. Newsletter monthly. Two CPD/joint events per year. Performance review with each active partner annually (their referral volume + our response performance both reviewed).</li>
+      </ul>
+    </div>
+
+    {/* ---- 10E · LEAD-HANDLING (PARTNER-SOURCED LEADS) ---- */}
+    <div className="pillar-block-h">
+      <h3 className="subsection-h">10E · Partner-Sourced Lead Handling Variant (different from cold leads)</h3>
+      <ul className="voice-list">
+        <li><strong>S1 SLA:</strong> 2 business hours (vs 4 hours for cold leads) — partner referrals are HIGHER priority. Tag in CRM <code>source=partner_PT-XX</code>.</li>
+        <li><strong>S1 Opening:</strong> "Hi [Name], [Partner Name] put us in touch — they spoke very highly of you. I want to make sure we live up to what they said about us. Got a few minutes?"</li>
+        <li><strong>S1 BANT-S threshold:</strong> Partner-sourced leads accepted at score ≥10 (vs 13 for cold) — partner has already pre-qualified.</li>
+        <li><strong>S2 Booking:</strong> Within 72 hours guaranteed (vs 5 business days for cold). Partner gets a status email when S2 is booked.</li>
+        <li><strong>S3 Quote:</strong> Same 48hr SLA. Partner CC'd on the quote-sent notification (their lead, they should know).</li>
+        <li><strong>Closed-Win:</strong> Partner gets a "thanks" email + fee statement + their referral count incremented in the partner portal. Quarterly leaderboard sent to all partners (anonymised by name, but everyone knows who's at the top).</li>
+        <li><strong>Lost:</strong> Partner gets a debrief email — what we quoted, what they chose instead, why. Partners appreciate the transparency. Often results in second-chance referrals (partner says "I told them they should reconsider you").</li>
+      </ul>
+    </div>
+
+    {/* ---- 10F · REPORTING ---- */}
+    <div className="pillar-block-h">
+      <h3 className="subsection-h">10F · Reporting Schema (feeds /kpi)</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Metric</th><th>Cadence</th><th>Threshold</th></tr></thead>
+        <tbody>
+          <tr><td>Active partner count (by category)</td><td>Monthly</td><td>65 active by end Year 1</td></tr>
+          <tr><td>Partner-sourced leads (% of total TDR leads)</td><td>Monthly</td><td>≥22% steady-state</td></tr>
+          <tr><td>Partner-sourced closed jobs (% of TDR revenue)</td><td>Quarterly</td><td>28% target Year 1 end</td></tr>
+          <tr><td>Lead → Close ratio (partner-sourced)</td><td>Quarterly</td><td>≥45% (vs 34.3% cold)</td></tr>
+          <tr><td>Avg time-to-close (partner-sourced)</td><td>Quarterly</td><td>≤21 days (vs ~35 days cold)</td></tr>
+          <tr><td>Referral fee paid (per quarter)</td><td>Quarterly</td><td>Track vs CAC equivalent · target ≤2.5% of partner-sourced revenue</td></tr>
+          <tr><td>Reciprocal referrals sent BY us</td><td>Monthly</td><td>≥1:1 ratio with received (proves we're a real partner, not a leech)</td></tr>
+          <tr><td>Partner NPS (quarterly survey)</td><td>Quarterly</td><td>≥+50 (warm)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div className="pillar-foot pillar-foot-rev">
+      <span className="pf-pill">PILLAR P-10 · PARTNERSHIPS — DEPLOYMENT-READY</span>
+      <span className="pf-pill">5 partner categories · 65 active partners target · 28% revenue target Year 1</span>
+      <span className="pf-pill">5 partner enablement assets · 90-day onboarding cadence · partner-portal spec</span>
+    </div>
+  </section>
+)
+
+/* ============================================================================
+   PILLAR P-11 · PRINT & PHYSICAL TOUCHPOINT KIT
+   ----------------------------------------------------------------------------
+   Physical-world brand touchpoints for the TDR LOB. Most digital plays already
+   covered (P-02 P-04 P-05 P-06 P-09); P-11 specifies the offline assets:
+   vehicle livery, on-site signage, builder uniforms, business cards, customer
+   leave-behinds, direct mail pieces, branded merchandise, and the trade show
+   / community presence kit. Critical because TDR is a high-trust, low-frequency
+   purchase — physical signals reinforce digital credibility per [BS-HBG]
+   distinctive-asset doctrine.
+   ========================================================================== */
+
+const TGPillar11Print = () => (
+  <section className="pillar-block pillar-block-rev" id="p11">
+    <div className="pillar-head pillar-head-rev">
+      <div className="pillar-eyebrow">PILLAR P-11 · DEPLOYABLE ASSET KIT</div>
+      <h2 className="pillar-h pillar-h-rev">Print &amp; Physical Touchpoint Kit</h2>
+      <p className="pillar-dek pillar-dek-rev">
+        Physical-world brand touchpoint kit for the TDR LOB. Specifies every offline asset that
+        carries the YBMT identity — vehicle livery, on-site signage, uniforms, business cards,
+        printed customer leave-behinds, direct mail, branded merchandise, and trade show / community
+        event kit. Built to the locked P-01 DBA system. Critical for TDR because the at-the-house
+        moment (on-site assessment) is the highest-stakes brand-impression moment in the entire
+        sales motion — physical signals must match the digital quality.
+      </p>
+    </div>
+
+    {/* ---- 11A · VEHICLE LIVERY ---- */}
+    <div className="pillar-block-h">
+      <h3 className="subsection-h">11A · Vehicle Livery (4 ute / van variants)</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Asset</th><th>Specification</th></tr></thead>
+        <tbody>
+          <tr><td>VL-01 · Lead Builder Ute (Hilux/Ranger)</td><td>Full-wrap: Navy body w/ timber accent stripe. Side panels = "YBMT · Termite Damage Specialists" + QBCC #1234567 + 1300-YBMT-FIX + URL. Rear = "Termite Damage? We Repair It." + URL. Bonnet = small YBMT logo only.</td></tr>
+          <tr><td>VL-02 · Service Van (Hiace/Transit)</td><td>Half-wrap (cost-controlled). Side panels = company name + DBA + phone. Cream body, navy panel.</td></tr>
+          <tr><td>VL-03 · Assessor Vehicle (sedan/SUV)</td><td>Magnetic decals only (removable for personal use after-hours). Driver/passenger door magnets.</td></tr>
+          <tr><td>VL-04 · Trailer (subfloor work trailer)</td><td>Side panels = QBCC license #1234567 large + URL. Sees a lot of suburban exposure during 3-6 week jobs.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    {/* ---- 11B · ON-SITE SIGNAGE ---- */}
+    <div className="pillar-block-h">
+      <h3 className="subsection-h">11B · On-Site Signage (Job Site = Free Billboard)</h3>
+      <ul className="voice-list">
+        <li><strong>OS-01 · Job-Site A-Frame (90 × 60cm corflute):</strong> Front: "YBMT Termite Damage Repair · Work In Progress · QBCC Licensed". Back: URL + phone. Placed on footpath in front of job (suburb-dependent — check council permit).</li>
+        <li><strong>OS-02 · Builder Welcome Card (A5 hung at front door first day):</strong> "Hi neighbours — YBMT will be on-site at #[number] [street] for the next [X] weeks. We'll keep noise to business hours, the site tidy, and parking respectful. If you have any concerns: [builder phone]." Pre-empts complaints, builds neighbourhood goodwill, surfaces curiosity leads.</li>
+        <li><strong>OS-03 · Project Completion Plaque (small · for client to keep):</strong> A6 metal plaque with "Termite Damage Repair Completed by YBMT · [Date]". Gifted to clients at sign-off — many display on garage wall or shed. Trust signal for future buyers/inspectors.</li>
+        <li><strong>OS-04 · Subfloor Access "We Were Here" Sign (laminated A4 left in crawlspace):</strong> When future tradies/owners open the access hatch in 5 years they see "Termite damage repair completed [Date] by YBMT · QBCC #1234567 · 7-year warranty active until [Date+7y]". 5-year-deferred brand recall asset.</li>
+      </ul>
+    </div>
+
+    {/* ---- 11C · UNIFORMS + BUSINESS CARDS ---- */}
+    <div className="pillar-block-h">
+      <h3 className="subsection-h">11C · Uniforms + Business Cards</h3>
+      <ul className="voice-list">
+        <li><strong>U-01 · Builder On-Site:</strong> Navy work shirt (long + short sleeve) with embroidered YBMT logo (chest left) + "Termite Damage Specialists" (back). Timber-colour high-vis vest for compliance. Navy work pants. Same builder = same outfit every visit — recognisability per [BS-HBG].</li>
+        <li><strong>U-02 · Assessor/Sales:</strong> Polo shirt (cream w/ navy collar) + name embroidered. More approachable than the work shirt for at-the-door first meet.</li>
+        <li><strong>U-03 · Carla / Office:</strong> Branded button-up + casual blazer for LinkedIn shoots + client meets. Doesn't look "uniformed" — looks "polished."</li>
+        <li><strong>BC-01 · Builder Business Card:</strong> Heavyweight 350gsm card · navy front · timber back. Front: Name · QBCC license · 1300-YBMT-FIX · URL. Back: "Termite Damage Specialists · Free 48-Hour Quote · Engineer-Signed Scope · Insurance-Claim Ready." QR code links to direct booking page.</li>
+        <li><strong>BC-02 · Carla / Director Card:</strong> Same paper + colour system, name larger. Reverse side: "CFO · YBMT" + LinkedIn URL. For B2B (partner / insurance / engineer) contexts.</li>
+      </ul>
+    </div>
+
+    {/* ---- 11D · PRINT CUSTOMER LEAVE-BEHINDS ---- */}
+    <div className="pillar-block-h">
+      <h3 className="subsection-h">11D · Print Customer Leave-Behinds (S2 + S4 stages)</h3>
+      <ul className="voice-list">
+        <li><strong>LB-01 · "What Happens Next" A5 (left at S2 on-site):</strong> 1-pager summarising the 5-step process from P-02 02E, the 48hr quote SLA, and what they should expect in the email. Reduces post-visit anxiety, increases quote-acceptance.</li>
+        <li><strong>LB-02 · Quote Doc Print Companion (delivered with quote PDF if requested):</strong> Same 9-page quote also available as a printed bound document on request — for older homeowners who prefer paper. $0 cost upsell for trust signal.</li>
+        <li><strong>LB-03 · Job-Start Welcome Pack (delivered at S4 contract):</strong> A5 folder containing: contract copy, schedule with milestone dates, key contact card, what-to-expect-each-week guide, our 7-year warranty card, and a hand-written welcome note from Carla.</li>
+        <li><strong>LB-04 · Project Completion Folder (handed at S4 sign-off):</strong> Larger A4 folder: all photos before/during/after, engineer report, compliance certificates, warranty documents, request-a-review prompt with QR code to Google review.</li>
+      </ul>
+    </div>
+
+    {/* ---- 11E · DIRECT MAIL ---- */}
+    <div className="pillar-block-h">
+      <h3 className="subsection-h">11E · Direct Mail Program (Targeted Suburb Drops)</h3>
+      <p className="pillar-note pillar-note-rev">
+        Targeted direct mail to the 12 high-termite-pressure suburbs identified in P-05 5G + P-04
+        SEO targeting. Quarterly drops, ~3,500 letterboxes per drop. Anti-junk-mail-protected
+        addressing (Australia Post Householder service · "addressed" — looks personal).
+      </p>
+      <ul className="voice-list">
+        <li><strong>DM-01 · "Discovered Termite Damage in [Suburb]" Quarterly Postcard:</strong> A5 dual-sided. Front: A real anonymised case from THAT suburb ($X repair · timeline · outcome). Back: "Free 48-hour repair quote · QBCC #1234567 · 200+ insurance claims approved · 1300-YBMT-FIX". Quarterly variants — never the same case twice.</li>
+        <li><strong>DM-02 · "Annual Termite Risk Check-Up" Letter (annual · pre-summer):</strong> Personal letter from Carla. "It's October — peak termite swarm season. If you haven't had a building check in 3+ years, here's why now is the right time. We don't do pest control — we do damage repair. But if you find anything, talk to us first." Letter format builds authority, doesn't look like junk mail.</li>
+        <li><strong>DM-03 · Post-Job Neighbour Drop:</strong> After every completed job, deliver 30 A6 cards to the surrounding 30 houses: "Your neighbour at [#] just completed a termite damage repair with us. If you've been worried about your own home — we offer free 48-hour assessments. [phone + URL]." Hyper-local social proof.</li>
+      </ul>
+    </div>
+
+    {/* ---- 11F · BRANDED MERCHANDISE + COMMUNITY ---- */}
+    <div className="pillar-block-h">
+      <h3 className="subsection-h">11F · Branded Merchandise + Community Presence</h3>
+      <ul className="voice-list">
+        <li><strong>BM-01 · Customer Gift (delivered at completion):</strong> YBMT-branded Aussie-made torch ($35 cost, $250 perceived value). Practical (every homeowner uses a torch), branded, lasts years. Better than a $80 wine bottle that's gone in a week.</li>
+        <li><strong>BM-02 · Partner Gift (delivered annual review):</strong> Small Aussie-made coffee mug or YBMT-embossed leather notebook. Per partner category — same gift annually for consistency.</li>
+        <li><strong>CO-01 · QLD Show / Home Show Booth:</strong> 3m × 3m booth at: Brisbane Home Show (May) · Gold Coast Renovation Expo (Sept) · Sunshine Coast Build &amp; Design (Nov). Branded backdrop, sample timber repair cross-section as visual prop, lead-form-on-iPad. Quarterly attendance via [BS-HBG] mental availability + community trust.</li>
+        <li><strong>CO-02 · Local Community Sponsorship:</strong> Sponsor one Brisbane junior cricket team and one GC surf life saving club per year ($2K/year each). Local-community signal — homeowners notice. Branded uniforms / kit visible in community events.</li>
+        <li><strong>CO-03 · CPD Lunches for Partners (4/year):</strong> Free educational lunches for insurance brokers / loss adjusters / real-estate agents · CPD-eligible per industry body. Topic: "What every [profession] should know about termite damage repair." Brand authority via expertise giveaway.</li>
+      </ul>
+    </div>
+
+    <div className="pillar-foot pillar-foot-rev">
+      <span className="pf-pill">PILLAR P-11 · PRINT &amp; PHYSICAL — DEPLOYMENT-READY</span>
+      <span className="pf-pill">4 vehicle livery variants · 4 on-site signage assets · 5 uniform/card specs</span>
+      <span className="pf-pill">4 customer leave-behinds · 3 direct-mail programs · 3 community sponsorships</span>
     </div>
   </section>
 )
