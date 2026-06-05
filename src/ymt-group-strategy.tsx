@@ -259,6 +259,63 @@ const PSDeepDives = () => (
       <div style="text-align: center; margin-top: 2rem; padding: 1.2rem; background: rgba(184, 116, 61, 0.1); border-radius: 8px; border-left: 4px solid #B8743D;">
         <strong style="color: #1B3A5C;">PHASE 3 CHANNEL + DEMAND + LIFECYCLE LAYER:</strong> <span style="color: #2d7a3e; font-weight: 700;">✅ PHASE 3 COMPLETE</span> · 4 of 4 operating manuals delivered at 10/10 depth · 56/56 checklist items · <strong>31,832 Phase 3 words</strong> · WS-06 Channel (12/12 · 4,293w) + WS-08 GEO/AEO (16/16 · 9,858w) + WS-09 Paid Media (16/16 · 6,733w) + WS-10 CRM Lifecycle (12/12 + 9 flows · 10,948w) · Combined 145/145 markers across Phases 1+2+3 · Portfolio strategy now deployment-ready for YDT handover.
       </div>
+
+      {/* PHASE 4 BLOCK · LOB GTM PAPERS (TDR · POE · UR) + UNIFIED KPI DASHBOARD */}
+      <div style="text-align: center; margin: 3.5rem 0 2rem;">
+        <div style="font-family: 'Inter', sans-serif; font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; color: #1B3A5C; font-weight: 700; margin-bottom: 0.5rem;">PHASE 4 · LAYER 4 · IN PROGRESS</div>
+        <h2 class="display" style="margin-top: 0;">LOB Go-to-Market Papers + Unified KPI Dashboard · <span class="accent">12-pillar depth · 1 of 4 COMPLETE</span></h2>
+        <p style="font-family: 'Inter', sans-serif; font-size: 1rem; color: #444; max-width: 740px; margin: 1rem auto 0; line-height: 1.65;">
+          Three LOB-specific GTM papers, each built to the locked <code>CMO-DELIVERY-METHOD-v1</code> 12-pillar Definition of Done (P-07 Email deferred to WS-10), plus a unified F1→F2→F3 KPI dashboard. Sequenced per <code>SEQUENCING-DECISION-v1.md</code> — Termite first (revenue engine), then Pools (brand prestige), then Units (velocity engine), then the cross-LOB instrument panel.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.4rem;">
+        <a href="/termite-gtm" style="text-decoration: none; color: inherit;">
+          <div style="background: #fff; padding: 1.8rem 1.6rem; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-top: 5px solid #1B3A5C; transition: transform 0.15s; height: 100%;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.8rem;">
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; color: #B8743D; font-weight: 700;">DOC 4 · LOB 1 OF 3</div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #2d7a3e; font-weight: 700;">✓ 11/11 PILLARS</div>
+            </div>
+            <h3 style="font-family: 'Fraunces', serif; font-size: 1.45rem; color: #1B3A5C; margin: 0 0 0.7rem; line-height: 1.2;">Termite GTM Paper</h3>
+            <p style="font-family: 'Inter', sans-serif; font-size: 0.92rem; color: #444; line-height: 1.6; margin: 0 0 1rem;">TDR sub-brand · 55% sales mix · 45% GPM · 5-rule doctrine (anxiety-first · credentialled authority · 48-hr quote · cross-LOB seed · insurance-channel separate funnel) · P-01 Brand + P-02 Website + P-03 Lead Magnets + P-04 SEO/GEO/AEO + P-05 Google Ads + P-06 Meta Ads + P-08 Sales Enablement + P-09 Social (12 fully-written content pieces) + P-10 Partnerships (5 categories) + P-11 Print (17 assets) + P-12 Instrumentation (18 GA4 events · 4 dashboards · 12-KPI tree).</p>
+            <div style="font-family: 'Inter', sans-serif; font-size: 0.82rem; color: #B8743D; font-weight: 600;">~32,000 words · /termite-gtm →</div>
+          </div>
+        </a>
+
+        <div style="background: rgba(184, 116, 61, 0.05); padding: 1.8rem 1.6rem; border-radius: 10px; border: 2px dashed rgba(184, 116, 61, 0.45); height: 100%;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.8rem;">
+            <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; color: #B8743D; font-weight: 700;">DOC 5 · LOB 2 OF 3</div>
+            <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #B8743D; font-weight: 700;">QUEUED</div>
+          </div>
+          <h3 style="font-family: 'Fraunces', serif; font-size: 1.45rem; color: #1B3A5C; margin: 0 0 0.7rem; line-height: 1.2;">Pools/Outdoor GTM Paper</h3>
+          <p style="font-family: 'Inter', sans-serif; font-size: 0.92rem; color: #444; line-height: 1.6; margin: 0 0 1rem;">POE sub-brand · 30% sales mix · 32% GPM · Aspiration + lifestyle transformation positioning · 11-pillar deployable kit per <code>CMO-DELIVERY-METHOD-v1</code> · Build order locked per <code>SEQUENCING-DECISION-v1.md</code> after Termite GTM lock.</p>
+          <div style="font-family: 'Inter', sans-serif; font-size: 0.82rem; color: #B8743D; font-weight: 600;">~25-32K words target · /pools-gtm (pending)</div>
+        </div>
+
+        <div style="background: rgba(184, 116, 61, 0.05); padding: 1.8rem 1.6rem; border-radius: 10px; border: 2px dashed rgba(184, 116, 61, 0.45); height: 100%;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.8rem;">
+            <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; color: #B8743D; font-weight: 700;">DOC 6 · LOB 3 OF 3</div>
+            <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #B8743D; font-weight: 700;">QUEUED</div>
+          </div>
+          <h3 style="font-family: 'Fraunces', serif; font-size: 1.45rem; color: #1B3A5C; margin: 0 0 0.7rem; line-height: 1.2;">Unit Renovations GTM Paper</h3>
+          <p style="font-family: 'Inter', sans-serif; font-size: 0.92rem; color: #444; line-height: 1.6; margin: 0 0 1rem;">UR sub-brand · 15% sales mix · 35% GPM · Investor-ROI + minimal-disruption positioning · 11-pillar deployable kit per <code>CMO-DELIVERY-METHOD-v1</code> · Builds in sequence after POE.</p>
+          <div style="font-family: 'Inter', sans-serif; font-size: 0.82rem; color: #B8743D; font-weight: 600;">~25-32K words target · /units-gtm (pending)</div>
+        </div>
+
+        <div style="background: rgba(77, 182, 199, 0.06); padding: 1.8rem 1.6rem; border-radius: 10px; border: 2px dashed rgba(77, 182, 199, 0.55); height: 100%;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.8rem;">
+            <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; color: #4DB6C7; font-weight: 700;">DOC 7 · UNIFIED PANEL</div>
+            <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #4DB6C7; font-weight: 700;">QUEUED</div>
+          </div>
+          <h3 style="font-family: 'Fraunces', serif; font-size: 1.45rem; color: #1B3A5C; margin: 0 0 0.7rem; line-height: 1.2;">Unified F1→F2→F3 Dashboard</h3>
+          <p style="font-family: 'Inter', sans-serif; font-size: 0.92rem; color: #444; line-height: 1.6; margin: 0 0 1rem;">Cross-LOB instrument panel rolling up Termite + Pools + Units P-12 instrumentation into a single decision-grade view for Carla + Gerry + Corrina. Daily / weekly / monthly / quarterly cadence layers. Builds last — depends on all three LOB P-12 schemas.</p>
+          <div style="font-family: 'Inter', sans-serif; font-size: 0.82rem; color: #4DB6C7; font-weight: 600;">/kpi (pending)</div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 2rem; padding: 1.2rem; background: rgba(27, 58, 92, 0.08); border-radius: 8px; border-left: 4px solid #1B3A5C;">
+        <strong style="color: #1B3A5C;">PHASE 4 LOB GTM + UNIFIED KPI LAYER:</strong> <span style="color: #1B3A5C; font-weight: 700;">1 of 4 COMPLETE</span> · TDR Termite GTM live at <code>/termite-gtm</code> · 11 of 11 LOB pillars deployed (P-07 Email deferred to WS-10) · 18 GA4 events + 4 dashboards + 12-KPI tree + 4-gate F1→F2→F3 data contract · ~32K words of deployment-ready content · Quality gate ✓ Build 1,641.54 kB · HTTP 200 · 299,875 byte render · Next: POE Pools/Outdoor GTM paper.
+      </div>
     </div>
   </section>
 )
