@@ -355,6 +355,7 @@ import { renderYMTkpiContract } from './ymt-kpi-contract'
 import { renderYMTbrand } from './ymt-brand'
 import { renderYMTbuyerPsych } from './ymt-buyer-psych'
 import { renderYMTbowtie } from './ymt-bowtie'
+import { renderYMTdbas } from './ymt-dbas'
 
 // /3-funnels — the 3-Funnel ROI Productivity strategy document
 app.get('/3-funnels', (c) => {
@@ -394,6 +395,11 @@ app.get('/ymt-buyer-psych', (c) => {
 // /ymt-bowtie — DOC 3 · Phase 2 · WS-05 Bowtie Funnel Operating Manual (10/10 depth)
 app.get('/ymt-bowtie', (c) => {
   return c.render(renderYMTbowtie())
+})
+
+// /ymt-dbas — DOC 3 · Phase 2 · WS-07 Distinctive Brand Assets Operating Manual (10/10 depth)
+app.get('/ymt-dbas', (c) => {
+  return c.render(renderYMTdbas())
 })
 
 app.get('/', (c) => {
