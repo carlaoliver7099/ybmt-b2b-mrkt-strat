@@ -365,6 +365,7 @@ import { renderPoolsGTM } from './pools-gtm'
 import { renderUnitsGTM } from './units-gtm'
 import { renderYMTHandover } from './ymt-handover'
 import { renderPhase5Manifest } from './phase5-manifest'
+import { renderCoverEmail } from './cover-email'
 
 // /3-funnels — the 3-Funnel ROI Productivity strategy document
 app.get('/3-funnels', (c) => {
@@ -454,6 +455,11 @@ app.get('/handover', (c) => {
 // /phase-5-manifest — Phase 5 · Boarding Manifest · AL-01..AL-08 work breakdown (pre-GO Quality Gate)
 app.get('/phase-5-manifest', (c) => {
   return c.render(renderPhase5Manifest())
+})
+
+// /cover-email — Cover Email · Carla → Gerry + Corrina · railway metaphor briefing + URL navigation
+app.get('/cover-email', (c) => {
+  return c.render(renderCoverEmail())
 })
 
 app.get('/', (c) => {
