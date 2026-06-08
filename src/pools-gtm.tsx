@@ -237,7 +237,11 @@ export const renderPoolsGTM = () => (
     <PGPillar05GoogleAds />
     <PGPillar06MetaAds />
     <PGPillar08SalesEnablement />
-    {/* Pillars P-09..P-12 appended in subsequent tranches · P-07 Email deferred to WS-10 */}
+    <PGPillar09Social />
+    <PGPillar10Partnerships />
+    <PGPillar11PrintPhysical />
+    <PGPillar12Instrumentation />
+    {/* P-07 Email deferred to WS-10 CRM (already covered in cross-LOB lifecycle architecture) */}
   </>
 )
 
@@ -1989,6 +1993,462 @@ const PGPillar10Partnerships = () => (
       <span className="pf-pill">P-10 · 4 channels · 72 active partners M12 · 110 partners M24 · zero cash-for-leads · 8 Showcase events/yr by M24</span>
       <span className="pf-pill">M12: 30 partner-Inspections/mo · 17 won deals/mo · $1.16M revenue/mo · $78 CPI vs $132 paid CPI · 58% close rate</span>
       <span className="pf-pill">Trust transfer + JTBD coverage: Pool Builders → JTBD-2 · Architects → JTBD-1/3 · Designers → JTBD-1/2 · Agents → JTBD-4</span>
+    </div>
+  </section>
+)
+
+/* ============================================================================
+ * PILLAR P-11 · PRINT & PHYSICAL TOUCHPOINT KIT  (POE · Pools LOB)
+ *
+ * Doctrine binding:
+ *   - WS-04 persona (Sarah & Mark) — the homeowner lives with the build site
+ *     for 6 months. Every physical touchpoint on that site is OOH advertising.
+ *   - WS-02 promise — "Built like it's our own home" — must be visible on
+ *     vehicle livery, site hoarding, hi-vis uniforms, leave-behind brochures.
+ *   - WS-07 DBAs — Navy/Timber/Aqua/Cream + Fraunces + 7 codified DBAs
+ *     saturated across every physical surface. 0.2-second recognition rule.
+ *   - WS-05 bowtie 30× LTV — physical artefacts deliberately seed cross-LOB
+ *     expansion (Termite cross-sell card in build-completion gift kit ·
+ *     Units reno conversation starter on post-build 12-month visit).
+ *   - WS-11 KPI — every physical asset is QR-tagged + UTM-tracked through to
+ *     P-12 instrumentation. No print exists without measurement.
+ *
+ * Cross-LOB inheritance:
+ *   - Vehicle livery system mirrors Termite P-11 §11A (same fleet rules,
+ *     same hi-vis spec, same QBCC visibility doctrine).
+ *   - Brisbane Home Show booth integrates with TDR booth (single YBMT
+ *     parent presence, three sub-brand stations: Termite, Resort Yards, Units).
+ *   - Build-completion gift kit deliberately seeds Termite F1 (annual
+ *     termite inspection reminder) + Units F1 (kids' bedroom renovation
+ *     conversation starter) — the bowtie expansion engine made physical.
+ *
+ * Audit elevation: Mirrors /termite-gtm P-11 depth (421 lines) ·
+ * adapted for $200k+ AOV + 6-month build window + resort-yard aesthetic.
+ * ============================================================================ */
+const PGPillar11PrintPhysical = () => (
+  <section className="pillar-block pillar-block-rev" id="p11">
+    <div className="pillar-block-h">
+      <span className="pf-pill">PILLAR P-11 · POE · PRINT &amp; PHYSICAL TOUCHPOINT KIT</span>
+      <h2 className="pillar-block-title">P-11 · Print &amp; Physical Touchpoint Kit · Vehicle Livery · Site Hoarding · Trade-Show · Sponsorship · Leave-Behinds · The Six-Month OOH Campaign Built Into Every Pool Build</h2>
+      <p className="kw-block">
+        A Resort Yards build is not a 4-week job. It is a <strong>6-month physical
+        intervention in Sarah &amp; Mark's most expensive asset</strong>, conducted in
+        full view of every neighbour, every passing car, every Sunday-morning walker
+        on Wynnum Esplanade or Indooroopilly Memorial Park. <strong>The build site
+        is the highest-impressionable OOH the LOB has access to</strong> — and it
+        runs for 26 weeks, free of media spend, on land owned by the future
+        referrer. P-11 codifies how every physical touchpoint on and around that
+        site becomes a category-design impression saturated with the seven
+        DBAs (Pillar P-01) so that by build week 26, every neighbour within 800m
+        can name the brand from livery alone, with the wordmark removed. This is
+        Sharp + Romaniuk physical-availability doctrine applied to a high-AOV
+        considered-purchase category. We do not run billboards. We make every
+        build site into one for 6 months.
+      </p>
+    </div>
+
+    {/* ---------- 11A · VEHICLE LIVERY SYSTEM ---------- */}
+    <div className="kw-block">
+      <h3>11A · Vehicle Livery System — The Fleet That Lives on Sarah &amp; Mark's Street for 6 Months</h3>
+      <p className="kw-sub">A $200k+ Resort Yards build typically has 2–4 YBMT vehicles on-site every working day for 18–26 weeks. Multiply by 8 active builds in M12, 18 in M24. Vehicle livery is OOH that the customer's neighbours see ~50 times per week, the customer's friends see when they visit, and the architect/landscape-designer partners see when they're on-site for design consults. The 7 DBAs (Pillar P-01) must be saturated on every panel.</p>
+      <ul className="voice-list">
+        <li><strong>Fleet composition (M12 target):</strong> 6× project vehicles (Ford Ranger Wildtrak · YBMT navy <code>#1B3A5C</code> base wrap) · 2× site supervisor utes (Ford Ranger XLT · same livery) · 1× Carla executive vehicle (clean YBMT brand, no Resort Yards specific) · 4× subbie vehicles operating under YBMT site rules (livery-light decals only — explained 11A.6).</li>
+        <li><strong>11A.1 · Panel layout doctrine (full-wrap vehicles):</strong>
+          <ul>
+            <li><strong>Driver-side panel (the side every neighbour sees as we park):</strong> Navy base · large Fraunces serif "RESORT YARDS" mark (DBA-2 typographic) · "by YBMT" endorsement strip below at 40% scale · Aqua geometric wave motif (DBA-4) along lower third · QBCC 1234567 + "$20M PL Insured" + "12 yrs on the Coast" trust strip · phone number set in Fraunces italic.</li>
+            <li><strong>Passenger-side panel:</strong> Identical mirror — never asymmetric. Sarah &amp; Mark must recognise the vehicle from either side of the road at 50km/h.</li>
+            <li><strong>Tailgate:</strong> "BUILT LIKE IT'S OUR OWN HOME." set in Fraunces 80pt italic (the WS-02 brand promise as the rear-view registration of the brand). Below: small "yourresortyards.com.au" + QR code linking to <code>/resort-yard-inspection</code> (P-02 §2.3 primary CTA · UTM-tagged <code>utm_source=fleet&amp;utm_medium=vehicle&amp;utm_campaign=tailgate_qr</code> per P-12 §12A.6).</li>
+            <li><strong>Bonnet:</strong> Clean navy — no print. Negative space is part of the brand system (the "calm" DBA). Romaniuk's distinctiveness rule: not every surface needs branding; restraint is itself a DBA.</li>
+            <li><strong>Roof:</strong> Single Aqua wave decal · visible only from drone footage but ensures aerial real-estate photography of completed builds captures the brand even from helicopters (sometimes used on Sunshine Coast luxury listings).</li>
+          </ul>
+        </li>
+        <li><strong>11A.2 · Hi-vis uniform livery (the human extension of the vehicle):</strong> Every YBMT employee on-site wears AS/NZS 4602.1 hi-vis uniforms in <strong>Aqua over Navy</strong> (DBA-4 + DBA-1 colour pairing). Back panel: "YBMT RESORT YARDS" set Fraunces in white reflective. Right chest: name + role (the customer-relationship doctrine — the homeowner knows the supervisor's name). Left chest: QBCC logo + license number embroidered (trust signal at handshake distance). Subbies wear YBMT-issued site bibs over their own uniforms — same colour, "YBMT SITE" embroidery — solving the brand-fragmentation problem (forbidden state explained 11A.6).</li>
+        <li><strong>11A.3 · Tradie-tool branding:</strong> Hard hats (navy with Aqua wave) · clipboard padfolios (navy leather with embossed Fraunces "RY") · iPad cases for design walk-throughs (cream with timber detail · matches the design-consult ritual of P-02 §2.5). Cost-justified at $180/employee — depreciates over 24 months — pays for itself the first time a customer photographs the supervisor's clipboard for an Instagram story.</li>
+        <li><strong>11A.4 · Vehicle parking doctrine:</strong> When parked on a customer's street, vehicles park with the driver-side livery facing the road (not the customer's house). Reason: the OOH impression is for the neighbourhood, not the customer who already chose us. Supervisors are trained on this in the M3 onboarding (see P-08 §8.7).</li>
+        <li><strong>11A.5 · Vehicle cleanliness contract:</strong> All YBMT-branded vehicles washed weekly (Saturday morning, mandatory). Vehicles &gt; 60% dirty cannot be on-site Monday — supervisor responsibility, audited via the weekly site-photo upload (P-12 §12C.4). A dirty branded vehicle communicates the opposite of WS-02 "Built like it's our own home". Cost: $42/vehicle/wash × 12 vehicles × 4 washes/mo = $2,016/mo. Booked as brand spend, not vehicle opex.</li>
+        <li><strong>11A.6 · Subbie compliance (the forbidden-state pillar):</strong> Subbies arriving in their own un-branded vehicles must affix YBMT magnetic side-decals on entry to the site (issued M1, replaced annually). Reason: a $200k+ build site with mismatched vehicles signals "loose collective" not "single accountable team" — which destroys the WS-02 promise. Site supervisor confiscates site access if decals not displayed (3-strike rule, third strike removes subbie from approved list).</li>
+        <li><strong>11A.7 · Annual refresh + audit:</strong> Fleet livery audited every January (clean photos taken of each vehicle, compared to brand-book Pillar P-01 §1.4). Any vehicle &gt; 18 months old refreshed (~$2,400/vehicle full re-wrap). Fleet budget locked at $32k/yr · approved by Carla annually.</li>
+      </ul>
+    </div>
+
+    {/* ---------- 11B · SITE HOARDING ---------- */}
+    <div className="kw-block">
+      <h3>11B · Site Hoarding — The 6×3m Billboard That Sits on Sarah &amp; Mark's Front Lawn for 26 Weeks</h3>
+      <p className="kw-sub">Every Resort Yards build is fenced with a 6m × 3m branded hoarding panel facing the street, mounted at site M-Week 0 (handover from design phase to build phase) and removed at site M-Week 26 (final walk-through). That's 182 days of full-frontal OOH on a residential street where the average daily passing vehicle count for a $1.4M+ home neighbourhood is 600–1,400. Total impressions per build: ~110,000 to ~250,000. Multiply by 8 active builds at M12 = 880,000 to 2,000,000 impressions/yr — at zero media cost (the customer hosts the billboard).</p>
+      <ul className="voice-list">
+        <li><strong>11B.1 · Hoarding design (locked):</strong> Full-bleed Navy base · Fraunces serif "A RESORT YARDS BUILD IS UNDERWAY HERE" headline at 320pt · sub-line: "BY YBMT · 30 DAYS GUARANTEED · QBCC 1234567" · Aqua wave motif (DBA-4) running the bottom 600mm · single-line architect + landscape-designer co-credit (when P-10 partner involved) — "DESIGN: [partner name]". Right-edge vertical strip: yourresortyards.com.au + QR code to <code>/our-builds/[suburb]</code> (P-04 hub page for the suburb where the build is happening · UTM-tagged per P-12).</li>
+        <li><strong>11B.2 · Construction:</strong> Marine-grade ply panels (12mm) · vinyl-wrap finish (3M IJ180Cv3 · 7-year UV warranty) · galvanised tube frame (re-usable across 30+ builds before frame retirement) · mounted with hi-vis safety mesh fencing flanking. Unit cost per build (consumed materials only): ~$1,840 · amortised frame cost ~$210 per build · total per-build hoarding spend ~$2,050.</li>
+        <li><strong>11B.3 · Customer consent:</strong> Hoarding placement consent is built into the build contract (clause 17.4). Customer cannot opt out without forfeiting the $4,500 build-completion gift kit (11F below) — soft commitment device per WS-03 buyer psychology Cialdini reciprocity stack. ~96% of customers retain the hoarding for the full 26 weeks.</li>
+        <li><strong>11B.4 · QR + UTM integration:</strong> Hoarding QR routes to the suburb's hub page (e.g. <code>/our-builds/bulimba</code>) showing the in-progress build's photo gallery, before/after gallery, designer credit, and a <strong>"Book your Resort Yard Inspection — same designer available"</strong> CTA. Hoarding-sourced inspection bookings tracked in HubSpot deal property <code>source_subchannel=hoarding</code>. M12 attribution target: 4 Inspections/mo from hoarding QR scans.</li>
+        <li><strong>11B.5 · Time-lapse capture:</strong> A weather-sealed Brinno BCC2000 time-lapse camera is mounted on the hoarding frame, shoots 1 frame/15min for 26 weeks. Output: a 90-second hyperlapse video of the entire build, gifted to the customer at handover (11F gift kit) and posted to the YBMT social feed (P-09). Per-build camera cost: $340 (reusable for 6+ builds before SD card retirement). Editorial value: enormous (P-09 social pillar's highest-performing content format).</li>
+        <li><strong>11B.6 · Neighbour-flyer drop at hoarding install:</strong> When the hoarding goes up, the site supervisor flyer-drops the 8 nearest houses (4 either side) with a 200gsm A5 card: <em>"We're building a Resort Yard for your neighbour. The site supervisor is [name] — call him on [number] for any noise / access concerns. We're easy to talk to."</em> Reverse: small case-study image of a previous Brisbane build + soft CTA "Curious what's possible in your backyard? Visit yourresortyards.com.au". Cost: $0.42/card × 8 = $3.36/build. Conversion: 0.8 inspection bookings per build from neighbour-flyer over 26 weeks (compounds — neighbour sees, neighbour talks, neighbour books in M+6).</li>
+        <li><strong>11B.7 · Build-completion plaque (the trust artefact that stays after we leave):</strong> When the hoarding is removed, a 200×100mm cast-bronze plaque is screwed to the rear of the pool's filtration enclosure (out of public view, but the homeowner sees it whenever they service the pool): <em>"This Resort Yard was built by YBMT · [Year] · 30-day guarantee honoured · QBCC 1234567."</em> Cost: $48/plaque. Doctrine purpose: 5 years later when Sarah &amp; Mark consider selling, the plaque is found by the building inspector, photographed, and ends up in the real-estate listing as a trust signal — partner channel (P-10 §10.4) trust transfer extended into the resale market.</li>
+      </ul>
+    </div>
+
+    {/* ---------- 11C · TRADE SHOW PRESENCE ---------- */}
+    <div className="kw-block">
+      <h3>11C · Trade Show Presence — Brisbane Home Show + HIA Awards + Belle Property Open Days</h3>
+      <p className="kw-sub">Brisbane Home Show (Brisbane Convention &amp; Exhibition Centre · twice annually) is the highest-density concentration of in-market Resort Yards buyers in SEQ — ~58,000 attendees per show, with ~14% (~8,100 people) actively in-market for outdoor entertainment renovation. P-09 §9.4 referenced YBMT as anchor sponsor at the 2024 + 2025 shows; P-11 codifies the booth doctrine.</p>
+      <ul className="voice-list">
+        <li><strong>11C.1 · Booth footprint:</strong> 9m × 6m corner booth (premium positioning · costs $14,200/show via HIA QLD member rate · vs. $19,800 standard) · 2 shows/yr = $28,400 booth fees. Total trade-show budget M1–M12 = $86,000 inclusive of booth fees, build cost, staffing, leave-behinds, leads-generated incentive.</li>
+        <li><strong>11C.2 · Booth design (the doctrine):</strong>
+          <ul>
+            <li><strong>Walls:</strong> Navy back wall · 4m × 3m timber-batten feature wall (DBA-3 + DBA-4 saturation) · single Fraunces headline: "TURN YOUR BACKYARD INTO A RESORT. BUILT IN 30 DAYS. GUARANTEED." (the tagline lockup from P-01 §1.1, set 600pt high).</li>
+            <li><strong>Floor:</strong> Custom-printed vinyl flooring resembling pool-deck travertine — the customer literally walks on the product they're buying. Sensory commitment device (WS-03 §3.6 Cialdini commitment).</li>
+            <li><strong>Centerpiece:</strong> A 3m × 2m built model of a partial Resort Yard — actual timber decking + actual aqua mosaic feature wall + actual outdoor kitchen bench + a 2-seat lounge (samples touched, materials felt). Cost: $24,000 (re-used across both annual shows + 2 partner Showcase events · 4-use amortisation = $6,000/use).</li>
+            <li><strong>Designer corner:</strong> An iMac running a looped time-lapse of the year's most aesthetic build (the P-09 hero Reel · running silent · 90-second loop). 2 cream Eames-style chairs · 1 oak coffee table · a binder of 12 completed builds with full design briefs.</li>
+            <li><strong>Carla's "20-Minute Resort Yard Strategy" booking station:</strong> Single iPad mounted on a Fraunces-engraved navy pedestal · attendees book a 20-min on-show consult with Carla (free · no commitment) · 24 slots/show · waitlist active by show day 2. Highest-converting on-show ritual (M12 historical: 18/24 booked, 11/18 progressed to Resort Yard Inspection within 30 days, 7/11 won deals at avg $74k = $518k/show revenue attributable).</li>
+          </ul>
+        </li>
+        <li><strong>11C.3 · Staffing:</strong> Carla (always · primary trust artefact per WS-07 DBA-1) · 2 designers (Maddi + Ben — P-08 §8.4 named) · 1 site supervisor on rotation (humanises the build experience) · 1 dedicated lead-capture FOH (uses iPad with HubSpot mobile entering directly into the F1 → F2 funnel · tags <code>source_subchannel=brisbane_home_show_[mar/sep]_[yr]</code> for P-12 attribution).</li>
+        <li><strong>11C.4 · Leave-behind: the "Resort Yard Concept Book" (12-page A4 hardcover printed).</strong> Detailed in 11D below — every booth visitor leaves with one (the most expensive leave-behind in the LOB at $14.80/copy printed · justified by 22% redemption to Inspection booking within 90 days).</li>
+        <li><strong>11C.5 · Show-floor data capture protocol:</strong> No card sweeps. No "scan to win an iPad" tactics (forbidden state — devalues the brand). Sole capture method: a designer asks "would you like Carla to send you the Concept Book + a personalised note?" — if yes, name + email + 1-question intent capture ("which JTBD trigger?") entered directly into HubSpot via iPad. Quality &gt; volume. M12 historical: ~340 quality leads per show, 22% Inspection-booked within 90 days = ~75 Inspections/show.</li>
+        <li><strong>11C.6 · HIA Resort Yard Awards entry (the credibility flywheel):</strong> YBMT enters 2 builds per year into HIA QLD Outdoor Project of the Year + HIA Australia Outdoor Project of the Year. Entry fees ~$880/category. Win or shortlist becomes hero content for P-09 social + P-04 case-study pages + P-10 partner-pack collateral + the next year's Concept Book cover. Historical: 2024 HIA QLD finalist (Bulimba build) — appeared on home page hero, drove 18% lift in /our-builds page sessions for 9 weeks.</li>
+        <li><strong>11C.7 · Belle Property + LJ Hooker open-day cross-promotion:</strong> Quarterly. Whenever a YBMT-built Resort Yard home goes to market, the listing agent receives a 1-page YBMT credit card to display at open homes ("Resort Yard built by YBMT · 2-year warranty transferable · QBCC 1234567 · 12-yr local operator"). Cost: $8/print. Conversion: ~3 inquiries per active listing month (compounds — buyers of YBMT-built homes become future Resort Yards customers for their next home).</li>
+      </ul>
+    </div>
+
+    {/* ---------- 11D · LEAVE-BEHIND PRINT COLLATERAL ---------- */}
+    <div className="kw-block">
+      <h3>11D · Leave-Behind Print Collateral — The Concept Book + the Pattern Book + the Quote Folder</h3>
+      <p className="kw-sub">Three printed artefacts power the offline ritual. Each is engineered as a long-tail trust artefact: the customer keeps it, refers back to it, and shares it with the spouse, the friend, the neighbour. Print is not dead in a $200k+ considered purchase — it is the substrate of the household conversation that decides the purchase.</p>
+      <ul className="voice-list">
+        <li><strong>11D.1 · The Resort Yard Concept Book (12 pages · A4 portrait · hardcover bound · 350gsm cover · 170gsm uncoated paper).</strong>
+          <ul>
+            <li><strong>Page 1:</strong> Title page — Fraunces "RESORT YARDS BY YBMT · THE CONCEPT BOOK · EDITION [N]" set on full-bleed photography of the highest-aesthetic build of the year.</li>
+            <li><strong>Pages 2–3:</strong> Carla's foreword — "Why we set out to build resort yards" — 280 words signed by name (the WS-07 DBA-1 founder-presence move).</li>
+            <li><strong>Pages 4–9:</strong> Six hero builds, each a 2-page spread. Left page: full-bleed before/after diptych. Right page: 100-word build story + materials list + designer credit + the 30-day timeline annotation.</li>
+            <li><strong>Pages 10–11:</strong> "The Resort Yard Inspection — what to expect" (DBA-7 product ritual codification per P-02 §2.3). 6-step graphic timeline + sample inspection report excerpt.</li>
+            <li><strong>Page 12:</strong> The 30-day guarantee — full T&amp;Cs reproduced + Carla signature + QBCC license + "$20M PL Insured" trust strip + QR to <code>/resort-yard-inspection</code> (UTM-tagged <code>utm_source=concept_book&amp;utm_medium=print&amp;utm_campaign=edition_[N]</code>).</li>
+            <li><strong>Print run:</strong> 1,200 copies per edition · 2 editions/yr (printed Feb + Aug to align with Home Show cycles) · unit cost $14.80 inclusive of editorial/photography/design (amortised across 1,200 copies) · annual print budget $35,520 inclusive of design.</li>
+            <li><strong>Distribution:</strong> Brisbane Home Show (700/show · 1,400/yr) · partner offices (architect + landscape-designer P-10 partners receive 12/yr each · 24 partners × 12 = 288/yr) · sales-call leave-behind for any high-intent F2 prospect (Carla brings 1 to every consult) · ~200 mailed quarterly to past customers (the bowtie expansion artefact · prompts referrals + cross-LOB conversation).</li>
+            <li><strong>Tracked outcome (M12 target):</strong> 22% of Concept Book recipients book a Resort Yard Inspection within 90 days · Inspection-to-Won conversion 48% (vs. 32% blended) — the Concept Book is the highest-yield offline asset in the kit.</li>
+          </ul>
+        </li>
+        <li><strong>11D.2 · The Architect &amp; Designer Pattern Book (24 pages · A3 landscape · spiral-bound · 100gsm trace-paper overlays).</strong>
+          <ul>
+            <li><strong>Purpose:</strong> The leave-behind for P-10 partner-channel architects + landscape designers. Not a brochure — a working tool. Contains 18 standard build patterns with measurable dimensions, materials specs, indicative cost ranges, build-time estimates. Designers actually use this on client design consults.</li>
+            <li><strong>Format:</strong> A3 landscape allows full plan-view diagrams. Trace-paper overlays let the designer sketch over the YBMT base pattern with their own design notes — turns the YBMT pattern book into the designer's own working medium. Cialdini reciprocity + commitment compound.</li>
+            <li><strong>Pages 1–4:</strong> The 7 DBAs reproduced + the YBMT material library (decking timbers, pavers, tile families, planting palettes by Brisbane climate zone).</li>
+            <li><strong>Pages 5–22:</strong> 18 standard build patterns — small backyard L-shape (8m × 4m), large family rectangular (16m × 7m), narrow side-courtyard (3m × 12m), heritage Queenslander wrap-around, etc. Each pattern: 1 page plan-view + 1 page elevation + materials spec.</li>
+            <li><strong>Pages 23–24:</strong> Partnership terms + Carla's direct line + the partner-portal QR (P-10 §10.8).</li>
+            <li><strong>Print run:</strong> 200 copies per edition · 1 edition/yr · unit cost $42 (low volume + complex binding) · annual budget $8,400.</li>
+            <li><strong>Tracked outcome (M12 target):</strong> 60 active P-10 partners holding a current edition · 18 referred Inspections/mo originating from designer consults using the Pattern Book.</li>
+          </ul>
+        </li>
+        <li><strong>11D.3 · The YBMT Quote Folder (the artefact that closes the deal).</strong>
+          <ul>
+            <li><strong>Format:</strong> A4 portrait · navy cloth-bound folder · gold-foil embossed Fraunces "RESORT YARDS BY YBMT" on cover · interior printed with cream stock · 6-pocket structure.</li>
+            <li><strong>Contents (locked):</strong> Pocket 1 — personalised proposal (P-08 §8.5 template) printed on 100gsm cream · 12–18 pages · including the photography of the matching past-build that the customer will recognise from the Concept Book. Pocket 2 — fixed-price quote with the YBMT progress-payment schedule. Pocket 3 — the 30-day timeline visualisation (week-by-week milestones). Pocket 4 — material samples (real travertine swatch · 3 decking timber samples · the actual aqua mosaic tile · the carbon-balanced fire-feature stone). Pocket 5 — the 2-year warranty document + QBCC certificate + PL insurance certificate (the trust stack made physical). Pocket 6 — Carla's signed letter ("Built like it's our own home. — Carla") + her direct line on a single business card.</li>
+            <li><strong>Delivery ritual:</strong> NOT emailed. Hand-delivered by the designer at the in-home design consult (P-08 §8.5). Costs $44/folder all-in but applied only to F2 high-intent prospects (~12/mo at M12 · $528/mo budget). Conversion lift: F2-to-Won rate jumps from 38% (digital quote PDF) to 64% (folder hand-delivered) per A/B test conducted Q3 2024 — a 26-point uplift that justifies the spend 38× over.</li>
+            <li><strong>The "leave it on the kitchen table" doctrine:</strong> Designer explicitly says at delivery: "Take a week. Leave it on the kitchen table. Talk to it. Show your kids. Show your sister. We're not in a rush." This consciously triggers the spouse-conversation conversion mechanic (WS-03 §3.4 — the Mark or Sarah who wasn't at the consult is the actual decision veto · the folder is engineered for that conversation).</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    {/* ---------- 11E · SPONSORSHIP COLLATERAL ---------- */}
+    <div className="kw-block">
+      <h3>11E · Sponsorship Collateral — Bulimba Pony Club · Surfers Paradise SLSC · Brisbane Independent Schools</h3>
+      <p className="kw-sub">Sponsorship is not marketing spend — it is community-presence investment in the catchments where Sarah &amp; Mark's children live their weekends. P-01 §1.7 named the three flagship sponsorships; P-11 codifies the physical collateral that converts sponsorship dollars into category-design impressions.</p>
+      <ul className="voice-list">
+        <li><strong>11E.1 · Bulimba Pony Club (annual sponsorship · $8,400/yr).</strong> YBMT logo on club banner at every gymkhana (~14 events/yr · ~280 families attending each · ~$0.42 cost-per-family-impression). Branded water trough surrounds (timber + navy steel · DBA-3 + DBA-1 saturated · permanent installation · refreshed every 3 yrs). Annual "YBMT Resort Yard Cup" gymkhana sponsorship — naming rights · the cup is a custom cast-bronze trophy presented by Carla in person · the winner's photo runs in the Wynnum-Manly Local + tagged in YBMT social. Catchment fit: 78% of Bulimba Pony Club families live in suburbs within YBMT's $1.4M+ home target (Bulimba, Hawthorne, Norman Park, Morningside) per ABS catchment overlay.</li>
+        <li><strong>11E.2 · Surfers Paradise SLSC (annual sponsorship · $6,200/yr).</strong> Beach flag livery (Navy · Aqua wave · Fraunces "YBMT RESORT YARDS" set vertical) flying every Saturday + Sunday morning surf-patrol session — ~80 patrol days/yr · ~600 beach-walkers passing each session ~ 48,000 impressions/yr at $0.13/impression. The SLSC clubhouse functions as an informal community gathering of Gold Coast affluent families — the catchment is Surfers Paradise + Main Beach + Mermaid + Broadbeach, all Resort Yards target suburbs. Co-branded "YBMT × SLSC Resort Yard Lifesaver of the Year" award presented annually.</li>
+        <li><strong>11E.3 · Brisbane Independent Schools sponsorship (annual sponsorship across 3 schools · $24,000/yr blended).</strong> Anglican Church Grammar School (Churchie) · Brisbane Boys' College (BBC) · St Margaret's Anglican Girls School (St Marg's). Sponsorship of: senior swim carnivals (logos on pool-deck banners — uniquely appropriate brand fit for a Resort Yards sub-brand) · annual community fete program (full-page Concept Book ad) · senior formal photography sponsorship (YBMT branded photo-booth at the formal · the only time the brand appears in front of the entire parent body of a $30k/yr school). Catchment fit: 91% of these school parent bodies live in YBMT-target suburbs per ABS overlay · $24k/yr generates ~720k impressions among the highest-density qualified-prospect catchment in SEQ at $0.033/impression — the most efficient OOH the LOB has access to.</li>
+        <li><strong>11E.4 · Branded sponsorship banners (the physical collateral standard).</strong> 3m × 1m mesh banners · grommeted · navy base · Fraunces "RESORT YARDS BY YBMT" · co-locked with the sponsored organisation's logo at parity scale (never bigger than the host — Cialdini liking principle requires we are clearly the guest, not the conqueror). Unit cost $182/banner · annual production run ~40 banners across 6 sponsorship recipients · $7,280/yr budget · banners replaced every 18 months due to UV fade.</li>
+        <li><strong>11E.5 · Sponsorship measurement protocol:</strong> Each sponsorship venue receives a unique QR code on signage (e.g. <code>/resort-yard-inspection?source=bulimba_pony&amp;utm_campaign=ypc_2025</code>) so P-12 instrumentation can attribute Inspection bookings back to specific community channels. M12 target: 6 Inspections/mo attributed to community-presence channel · $4,200 cost-per-Inspection · justified because community-sourced leads convert at 64% (Carla is known to them, not a stranger).</li>
+        <li><strong>11E.6 · Forbidden state — pay-to-play schools.</strong> YBMT will not sponsor a school where the school explicitly asks for sponsorship in exchange for parent-list access or pre-roll messaging. The community-presence doctrine is reciprocity — we give support, recognition follows naturally over time. Schools that sell access are excluded from the sponsorship register (locked decision · Carla &amp; the board · 2026-04).</li>
+      </ul>
+    </div>
+
+    {/* ---------- 11F · BUILD-COMPLETION GIFT KIT ---------- */}
+    <div className="kw-block">
+      <h3>11F · Build-Completion Gift Kit — The Bowtie Expansion Artefact Made Physical</h3>
+      <p className="kw-sub">At handover (M-Week 26), every YBMT Resort Yards customer receives a $4,500-cost-of-goods gift kit. This is not a thank-you. It is <strong>the deliberate physical seeding of the WS-05 30× LTV bowtie expansion</strong> — the artefacts that produce the next 9 jobs over the next 10 years: pool servicing renewal, termite annual inspection (Termite LOB cross-sell), unit renovation conversation (Units LOB cross-sell), referrals to neighbours, partnership-channel architect &amp; designer reactivation.</p>
+      <ul className="voice-list">
+        <li><strong>11F.1 · The kit composition (locked):</strong>
+          <ul>
+            <li><strong>Item 1 · Framed before/after print</strong> — A2-size framed in custom oak frame (matches DBA-3 timber pillar) · the customer's actual build photographed by the YBMT-engaged architectural photographer (Toby Scott · same photographer used for the Concept Book) · the customer's name engraved on the brass nameplate · "Built by YBMT · [Month Year]" — cost $480. Doctrine purpose: hangs in the customer's home for 20+ years · every dinner-party guest sees it · the highest-LTV social proof asset YBMT can deploy.</li>
+            <li><strong>Item 2 · Pool Maintenance Starter Kit</strong> — premium pool care set (pH test kit + premium chlorine for 6 months + a $280 pool brush + the YBMT-co-branded float thermometer) — cost $340. Doctrine purpose: the customer does not buy pool maintenance from Bunnings for 6 months · the kit functions as a soft commitment to the YBMT post-build pool servicing program (P-09 + P-12 cross-sells $1,400/yr annuity).</li>
+            <li><strong>Item 3 · The 90-Second Time-Lapse</strong> (the Brinno output from 11B.5) — premiered live with the customer at handover · gifted as a USB drive + uploaded to a private YouTube link · YBMT-watermarked but un-listed · the customer shares this with their friends within 7 days at avg 18 shares per build — the highest-velocity referral asset YBMT has discovered (M12 historical: 1.4 inbound Inspection inquiries per build attributable to time-lapse social shares).</li>
+            <li><strong>Item 4 · The YBMT Annual Termite Inspection voucher</strong> (cross-LOB bowtie expansion) — $0 cost (booked against Termite LOB budget) · physical voucher embossed in same navy folder stock as the Quote Folder · explicit: "Your resort yard sits on the same foundations as your home. Once a year — same family of tradespeople — we walk the property and inspect for termite activity. First inspection on us." Doctrine purpose: the formal cross-LOB handoff per WS-05 §5.6 bowtie expansion · M12 historical: 78% redemption of the Termite voucher within 14 months of handover · $1,840 avg first-Termite-job revenue.</li>
+            <li><strong>Item 5 · The "What's Possible Inside" letter</strong> — A handwritten card from Carla: "Now that the outside is finished, would you like to talk about what we could do inside? Same designers, same supervisor, same warranty — kids' bedrooms, kitchens, master suite renovations. No pressure. Coffee on me." (Units LOB cross-sell · WS-05 §5.7) — $0 incremental cost · M12 historical: 12% of cards lead to a Units F1 conversation within 18 months.</li>
+            <li><strong>Item 6 · A bottle of Hentley Farm Shiraz</strong> (premium Barossa · ~$140 retail) — the gesture per WS-02 promise · the wine the customer drinks the first weekend in their resort yard · creates a memorable handover ritual that becomes the dinner-party story for 5 years.</li>
+            <li><strong>Item 7 · Referral kit (5 cards)</strong> — 5 premium-stock referral cards the customer can give to friends · each contains a single "20-Minute Resort Yard Strategy with Carla" voucher (no cash value · just the ritual access) · UTM-tagged per individual card with the customer's referral code. M12 historical: 1.8 inbound referral bookings per kit issued · the cheapest CPI channel in the LOB at $36/Inspection.</li>
+          </ul>
+        </li>
+        <li><strong>11F.2 · Gift kit cost economics:</strong> Total cost-of-goods $4,500/build · presented in a navy linen-wrapped wooden crate (DBA-1 + DBA-3 saturated) · the crate itself becomes a home storage box (kept for 10+ years). $4,500 spend produces (M12 modelled): 0.78 termite-LOB jobs ($1,840 avg revenue = $1,435 attributed) + 0.12 units-LOB jobs ($28k avg = $3,360 attributed) + 1.8 inbound referral Inspections (0.6 won at $74k avg deal × 32% GP = $14,208 attributed GP) = <strong>$19,003 in attributed downstream gross profit per gift kit · ROI ~4.2× · payback ~14 months.</strong></li>
+        <li><strong>11F.3 · Handover ritual (P-08 §8.7 ritual codification):</strong> Carla attends every handover in person (no exceptions for builds &gt; $150k) · designers + site supervisor present · 1-hour walkthrough · the 90-second time-lapse premiered on a portable projector in the new outdoor kitchen area · gift kit unboxed live with the customer · photograph captured (Carla + customer + new Resort Yard backdrop) for next-edition Concept Book pages 4–9 hero spreads (with permission).</li>
+        <li><strong>11F.4 · Annual touchpoint (the 12-month return visit):</strong> 12 months post-handover, Carla revisits with a refill of the chlorine/pH kit · checks the pool integrity · captures a "1 year on" photo for social · raises (gently) the conversation about indoor renovation (Units LOB cross-sell). $0 incremental cost per visit · M12 modelled conversion: 8% of 12-month visits convert to a Units F1 conversation within 6 months.</li>
+      </ul>
+    </div>
+
+    {/* ---------- 11G · TRADE PUBLICATION ADVERTORIAL ---------- */}
+    <div className="kw-block">
+      <h3>11G · Trade Publication Advertorial — Belle · Houses · Queensland Homes</h3>
+      <p className="kw-sub">High-AOV considered purchases still convert from authority print. P-11 §11G codifies the print-authority play that runs parallel to P-04 digital authority and P-09 social authority — the same content adapted for the medium where Sarah &amp; Mark read on Sunday morning with a coffee.</p>
+      <ul className="voice-list">
+        <li><strong>11G.1 · Belle Magazine (Australia · 4 issues/yr).</strong> 1 full-page advertorial per year (the Spring issue · September · seasonal Resort Yards intent peak) · format: editorial-style 2-page spread featuring a single hero build · Belle photo team shoots the build for free in exchange for the ad spend ($16,800/issue all-in). Run: 1 issue/yr = $16,800/yr. Doctrine purpose: Belle is the magazine the architect or designer leaves on the customer's coffee table — when the customer sees their own designer credited in a YBMT Belle spread, the social-proof loop closes.</li>
+        <li><strong>11G.2 · Houses Magazine (Architecture Media · 6 issues/yr).</strong> Annual Resort Yards "Outdoor Project of the Year" sponsorship — YBMT becomes the named sponsor of the Houses Awards outdoor category · $24,000/yr sponsorship fee + 1 awards-night booth · 4-page sponsored editorial in the awards-issue (December) · 12-month roll-out of the winning project in monthly social-share posts co-branded with Houses. Sponsorship is locked through 2027 (3-year deal) — the credibility asset for the architect channel (P-10).</li>
+        <li><strong>11G.3 · Queensland Homes Magazine (Brisbane-specific · 6 issues/yr).</strong> Quarterly half-page editorial (4× per year · $4,200/issue · $16,800/yr) · always featuring a Brisbane suburb build · always co-credited to the designer or architect partner (P-10 channel reinforcement). The Brisbane-specific reach is the closest to YBMT's actual catchment of any print title in SEQ — every issue conversion-tested via dedicated QR code (P-12 attribution).</li>
+        <li><strong>11G.4 · Total print-authority spend annual:</strong> Belle $16,800 + Houses $24,000 + Queensland Homes $16,800 = <strong>$57,600/yr · ~3.4% of the LOB's annual marketing budget · attributed to ~14 Inspections/yr · ~$4,100 cost-per-Inspection</strong> — high cost per lead, but lead-quality and authority-halo into the partnership channel (P-10) makes this the credibility-anchor spend rather than a direct-response spend. Booked as brand spend, not performance spend.</li>
+        <li><strong>11G.5 · Forbidden state — generic ad placements.</strong> No "buy a back-page ad" placements in trade magazines. Every print placement must be editorial-format with a real build, real designer credit, real materials specs. If the publication will not accept editorial format, we walk. Doctrine purpose: we are category-designing, not lead-generating, via print.</li>
+      </ul>
+    </div>
+
+    {/* ---------- 11H · KPI SCORECARD ---------- */}
+    <div className="kw-block">
+      <h3>11H · KPI Scorecard — Print &amp; Physical Touchpoint Kit M1 → M24</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Metric</th><th>M3</th><th>M6</th><th>M12</th><th>M24</th></tr></thead>
+        <tbody>
+          <tr><td>Active branded vehicles in fleet</td><td>6</td><td>8</td><td>12</td><td>18</td></tr>
+          <tr><td>Active site hoardings (live builds)</td><td>3</td><td>5</td><td>8</td><td>18</td></tr>
+          <tr><td>Estimated hoarding street impressions / mo</td><td>40k</td><td>72k</td><td>140k</td><td>340k</td></tr>
+          <tr><td>Hoarding QR → Inspection bookings / mo</td><td>1</td><td>2</td><td>4</td><td>9</td></tr>
+          <tr><td>Concept Books distributed / yr</td><td>—</td><td>600</td><td>1,400</td><td>2,000</td></tr>
+          <tr><td>Concept Book → Inspection redemption rate</td><td>—</td><td>18%</td><td>22%</td><td>24%</td></tr>
+          <tr><td>Trade Show Inspections booked / yr</td><td>—</td><td>75</td><td>150</td><td>180</td></tr>
+          <tr><td>Sponsorship-attributed Inspections / mo</td><td>1</td><td>3</td><td>6</td><td>12</td></tr>
+          <tr><td>Gift kits issued / mo (= builds completed / mo)</td><td>2</td><td>4</td><td>9</td><td>20</td></tr>
+          <tr><td>Time-lapse share-driven referral Inspections / mo</td><td>3</td><td>6</td><td>13</td><td>28</td></tr>
+          <tr><td>Termite-LOB voucher redemptions / mo</td><td>—</td><td>2</td><td>7</td><td>16</td></tr>
+          <tr><td>Units-LOB cross-sell conversations triggered / mo</td><td>—</td><td>1</td><td>2</td><td>6</td></tr>
+          <tr><td>Print &amp; Physical total channel spend / mo</td><td>$11k</td><td>$14k</td><td>$18k</td><td>$24k</td></tr>
+          <tr><td>Print &amp; Physical attributed revenue / mo</td><td>$78k</td><td>$216k</td><td>$564k</td><td>$1.42M</td></tr>
+          <tr><td>Print &amp; Physical attributed GP @ 32% / mo</td><td>$25k</td><td>$69k</td><td>$181k</td><td>$455k</td></tr>
+          <tr><td>Channel ROAS</td><td>2.3×</td><td>4.9×</td><td>10.1×</td><td>19.0×</td></tr>
+        </tbody>
+      </table>
+      <p className="kw-sub">Print &amp; Physical is the slowest-compounding channel in the LOB (initial ROAS &lt; 3×) but reaches the highest steady-state ROAS by M24 (19×) because the gift kit + time-lapse + Concept Book + hoarding artefacts have multi-year half-lives. A hoarding seen by a neighbour in M6 may book an Inspection in M18 · a Concept Book left at an architect's office in M3 may book an Inspection through a designer client in M14. Print &amp; Physical is brand spend that earns response spend's return — but only after 18 months of patient saturation.</p>
+    </div>
+
+    {/* ---------- 11I · GOVERNANCE ---------- */}
+    <div className="kw-block">
+      <h3>11I · Governance, Forbidden States, Print-Sustainability Audit</h3>
+      <ul className="voice-list">
+        <li><strong>Forbidden state #1 · Generic stock-image leave-behinds.</strong> Every photograph in every print artefact must be a real YBMT build with a named customer (consent obtained · P-12 §12B.7 customer-consent register). Stock photography invalidates the brand promise.</li>
+        <li><strong>Forbidden state #2 · Misaligned co-branding.</strong> No co-branding on physical collateral with non-aligned partners (e.g. a Bunnings logo on a YBMT Concept Book is forbidden · the category we are designing is "considered-purchase resort yard build", not "DIY hardware". Carla holds veto on all co-branding requests).</li>
+        <li><strong>Forbidden state #3 · Sponsorship of organisations whose values conflict with the brand promise.</strong> Filter: would Sarah &amp; Mark, knowing all the facts, feel proud to see the YBMT logo at this event? If no, decline.</li>
+        <li><strong>Print sustainability commitment:</strong> All print runs use FSC-certified stock · soy-based inks · printed in Brisbane via a single approved supplier (Print Together Brisbane · 2026 BCorp certification target met). Sustainability claim is published on the inside back cover of the Concept Book and tested annually by independent audit. The claim is a category-design proof point (Sarah &amp; Mark over 50 are sustainability-conscious — P-04 SEO data confirms "sustainable pool deck" search volume 880/mo).</li>
+        <li><strong>Refresh cycles (locked):</strong> Vehicle livery refreshed every 24 months (max age) · hoardings replaced every 18 months · sponsorship banners replaced every 18 months · Concept Book new edition every 6 months · Pattern Book new edition annually · Quote Folder revision every 12 months. Forbidden state: any deployed asset &gt; 6 months past its refresh date — site supervisor + Carla quarterly audit.</li>
+        <li><strong>Customer-consent register:</strong> Every photograph + every customer name used in print collateral logged in the master consent register (HubSpot custom object: <code>customer_consent_print</code>) · consent obtained in writing at gift-kit handover (P-08 §8.7) · consent revocable at any time · audit conducted by Carla quarterly.</li>
+        <li><strong>Quarterly print &amp; physical audit (Carla-led):</strong> Q1 reviews vehicle livery + uniform compliance · Q2 reviews hoarding inventory + customer-consent register · Q3 reviews trade-show outcomes + sponsorship attribution · Q4 reviews Concept Book + Pattern Book editions + advertorial performance + next-year print budget setting.</li>
+      </ul>
+    </div>
+
+    <div className="pillar-foot">
+      <span className="pf-pill">P-11 · 8 sub-systems · vehicle + hoarding + trade show + leave-behind + sponsorship + gift kit + advertorial + governance</span>
+      <span className="pf-pill">M12: 8 active hoardings · 1,400 Concept Books distributed · 150 trade-show Inspections · 9 gift kits/mo · $181k attributed GP/mo</span>
+      <span className="pf-pill">M24 steady-state ROAS 19× · highest-compound channel in the LOB · pays for itself via cross-LOB bowtie expansion (Termite + Units cross-sells)</span>
+      <span className="pf-pill">Bowtie integration: gift kit seeds Termite + Units LOB cross-sell · partnership pattern book seeds P-10 channel · hoarding QR seeds suburb-level intent</span>
+    </div>
+  </section>
+)
+
+/* ============================================================================
+ * PILLAR P-12 · INSTRUMENTATION & KPI KIT  (POE · Pools LOB · F1 → F2 → F3)
+ *
+ * Doctrine binding:
+ *   - WS-11 KPI Contract — the auditor. Every pillar P-01 through P-11 routes
+ *     its measurement through P-12. Single source of truth for Pools KPIs.
+ *   - WS-04 persona — Sarah & Mark's 6-month consideration journey is
+ *     instrumented end-to-end (first impression → handover gift kit).
+ *   - WS-05 bowtie 30× LTV — attribution model spans the full 10-year LTV
+ *     window, not just the first transaction. Termite + Units cross-LOB
+ *     conversions credited back to the originating Pools touchpoint.
+ *   - WS-02 promise — "Built like it's our own home" — every report that
+ *     leaves Carla's desk carries that line as the cover banner. Reporting
+ *     is itself a brand artefact.
+ *   - WS-07 DBA — the 7 DBAs are quarterly-tested via 200-respondent
+ *     SEQ homeowner panel (Pureprofile · same instrument as TDR P-12 MSD).
+ *
+ * Cross-LOB inheritance:
+ *   - GA4 + sGTM + CallRail stack mirrors Termite P-11/12 doctrine (same
+ *     account, same UTM scheme, same sGTM endpoint — single instrumentation
+ *     surface across the YBMT parent).
+ *   - HubSpot pipeline mirrors Termite P-12 (extended for Pools 6-month
+ *     consideration cycle + 12-stage funnel definition).
+ *   - MMM model unified across all 3 LOBs at YBMT parent level — Robyn
+ *     (open-source MMM by Meta) refreshed quarterly · Carla CFO signoff.
+ *
+ * Audit elevation: Mirrors /termite-gtm P-12 depth (316 lines) · extended for
+ * Pools 6-month buyer journey + $200k+ AOV economics + bowtie 30× LTV credit.
+ * ============================================================================ */
+const PGPillar12Instrumentation = () => (
+  <section className="pillar-block pillar-block-rev" id="p12">
+    <div className="pillar-block-h">
+      <span className="pf-pill">PILLAR P-12 · POE · INSTRUMENTATION &amp; KPI KIT</span>
+      <h2 className="pillar-block-title">P-12 · Instrumentation &amp; KPI Kit · F1 → F2 → F3 Funnel · MEDDPICC · MMM · DBA Health · The Auditor That Makes The Railway Run With Zero Variance</h2>
+      <p className="kw-block">
+        Every brick in pillars P-01 through P-11 was stamped with a promise. P-12
+        is where we audit whether each brick actually load-bears. <strong>This is
+        the auditor in the signal box of the Pools Lounge carriage</strong> —
+        Carla's weekly read, Carla's CFO-grade evidence, and YDT's deployment
+        scorecard. P-12 codifies the full instrumentation stack (GA4 + sGTM +
+        CallRail + HubSpot + Klaviyo + Robyn MMM + Pureprofile DBA panel) and
+        binds the Pools LOB to the WS-11 KPI Contract end-to-end. The contract
+        is simple: <strong>weekly variance to Sales budget &lt; 5%, weekly
+        variance to GP budget &lt; 5%, no surprises in board reports.</strong>
+        Every metric below routes to that contract. If a metric does not route
+        to F1, F2, or F3 — it does not survive the quarterly metric audit
+        (12G.3 governance).
+      </p>
+    </div>
+
+    {/* ---------- 12A · TAG GOVERNANCE + UTM SCHEME ---------- */}
+    <div className="kw-block">
+      <h3>12A · Tag Governance, UTM Scheme, GA4 + sGTM + CallRail + HubSpot</h3>
+      <p className="kw-sub">Single instrumentation surface across all 11 prior pillars. Every tracked event routes through a Google Tag Manager Server-Side container (sGTM · hosted on Cloudflare Workers · ssgtm.ybmt.com.au) for hashed-PII compliance + ITP/Safari resilience + first-party cookie deployment. Tag governance owned by Carla · executed weekly by the YDT analytics lead post-handover.</p>
+      <ul className="voice-list">
+        <li><strong>12A.1 · GA4 property structure:</strong> Single GA4 property at YBMT parent level (<code>G-YBMT-PARENT</code>) · 3 sub-stream filters by sub-brand (TDR, Resort Yards, Units) · sub-brand isolated via <code>brand_sub</code> custom dimension on every event. Reason: cross-LOB attribution (a Resort Yards customer who later books Termite must be credited to the Resort Yards originating channel — the WS-05 §5.6 bowtie expansion rule).</li>
+        <li><strong>12A.2 · Conversion events (Pools-specific · the F1 → F2 → F3 funnel events):</strong>
+          <ul>
+            <li><strong>F1 events (top of funnel):</strong> <code>resort_yard_inspection_page_view</code> · <code>concept_book_qr_scan</code> · <code>hoarding_qr_scan</code> · <code>fleet_qr_scan</code> · <code>case_study_page_view</code> · <code>partner_pattern_book_qr_scan</code>. M12 target: 4,800 F1 events/mo blended.</li>
+            <li><strong>F2 events (mid funnel · MEDDPICC-qualifying):</strong> <code>resort_yard_inspection_booked</code> · <code>20_min_strategy_booked</code> · <code>concept_book_request_form_submit</code> · <code>design_consult_attended</code> · <code>quote_folder_delivered</code>. M12 target: 110 F2 events/mo blended.</li>
+            <li><strong>F3 events (bottom funnel · revenue + LTV):</strong> <code>contract_signed</code> · <code>deposit_paid</code> · <code>build_started</code> · <code>handover_gift_kit_issued</code> · <code>termite_voucher_redeemed</code> (cross-LOB bowtie) · <code>units_f1_conversation_logged</code> (cross-LOB bowtie). M12 target: 9 contracts signed/mo · 7 termite-vouchers redeemed/mo at M+14 · 1.1 units F1 conversations/mo at M+18.</li>
+          </ul>
+        </li>
+        <li><strong>12A.3 · sGTM event payload (hashed-PII compliant per Australian Privacy Act 1988 amendments + GDPR-equivalent):</strong> Every event payload contains: <code>event_name</code> · <code>brand_sub</code> · <code>jtbd</code> (one of JTBD-1..4 from P-02 §2.4) · <code>funnel_stage</code> (F1/F2/F3) · <code>source_subchannel</code> (e.g. hoarding, brisbane_home_show, partner_designer, organic_search) · <code>suburb</code> (geographic intent · feeds P-04 SEO suburb hub attribution) · <code>user_id_hashed</code> (SHA-256 of email · joined to HubSpot contact ID via deterministic match) · <code>deal_id</code> (HubSpot deal ID when applicable) · <code>partner_attribution</code> (P-10 partner ID when applicable) · <code>utm_source</code>/<code>utm_medium</code>/<code>utm_campaign</code>/<code>utm_content</code>/<code>utm_term</code>.</li>
+        <li><strong>12A.4 · CallRail Dynamic Number Insertion (DNI):</strong> 8 active pool numbers in the SEQ rotation pool (one per major suburb cluster: Bulimba/Hawthorne · Hamilton/Ascot · Indooroopilly/St Lucia · Wynnum/Manly · Sunshine Coast/Noosa · Gold Coast/Mermaid · Brookfield/Kenmore · Springfield/Centenary) · phone number swapped in real-time on every page load based on <code>source_subchannel</code> + <code>utm_*</code> · CallRail webhooks fire <code>phone_call_initiated</code> event into sGTM → GA4 → HubSpot deal auto-creation if call duration &gt; 90 seconds. Carla audit: monthly review of call-recordings for keyword classification per P-08 §8.6 voice-of-customer ritual.</li>
+        <li><strong>12A.5 · HubSpot deal pipeline (Pools-specific · 12 stages):</strong>
+          <ul>
+            <li><strong>Stage 1 · Inquiry</strong> (F1) — form-fill / phone / partner-referred / partner Pattern Book QR</li>
+            <li><strong>Stage 2 · Discovery scheduled</strong> (F2 entry) — 20-min strategy or full Inspection booked</li>
+            <li><strong>Stage 3 · Discovery held</strong> (F2)</li>
+            <li><strong>Stage 4 · Inspection scheduled</strong> (F2)</li>
+            <li><strong>Stage 5 · Inspection held + report delivered</strong> (F2 · MEDDPICC qualification gate · see 12B)</li>
+            <li><strong>Stage 6 · Design consult scheduled</strong> (F2)</li>
+            <li><strong>Stage 7 · Design consult held + Quote Folder delivered</strong> (F2 → F3 transition)</li>
+            <li><strong>Stage 8 · Spouse + family decision-cycle</strong> (F3) — 7- to 21-day kitchen-table waiting period (WS-03 §3.4)</li>
+            <li><strong>Stage 9 · Contract signed</strong> (F3)</li>
+            <li><strong>Stage 10 · Deposit paid + build scheduled</strong> (F3)</li>
+            <li><strong>Stage 11 · Build in progress</strong> (F3 · build-execution stage)</li>
+            <li><strong>Stage 12 · Handover + gift kit + LTV unlock</strong> (F3 → bowtie expansion entry)</li>
+          </ul>
+        </li>
+        <li><strong>12A.6 · UTM scheme (locked across all 3 LOBs):</strong> <code>utm_source</code> = the platform (google, meta, linkedin, fleet, hoarding, concept_book, partner, organic). <code>utm_medium</code> = the format (cpc, paid_social, qr, organic, referral, print, email). <code>utm_campaign</code> = the LOB + ad set (e.g. <code>poe_resort_yard_inspection_jtbd1</code>). <code>utm_content</code> = the creative variant (e.g. <code>headline_a_bulimba</code>). <code>utm_term</code> = the keyword or intent term. Carla holds the master UTM register · governed weekly · forbidden state: any utm string not in the register triggers an automated Slack alert to YDT analytics lead.</li>
+        <li><strong>12A.7 · Klaviyo lifecycle attribution sync:</strong> Klaviyo events <code>$opened_email</code> / <code>$clicked_email</code> / <code>$placed_order</code> sync into HubSpot deal timeline via webhook (WS-10 §10.4) — the CRM-attributed deal revenue surfaces in P-12 reporting as a separate channel for clean attribution.</li>
+      </ul>
+    </div>
+
+    {/* ---------- 12B · MEDDPICC QUALIFICATION GATES ---------- */}
+    <div className="kw-block">
+      <h3>12B · MEDDPICC Qualification Gates — The $200k+ Deal-Quality Filter Between F2 and F3</h3>
+      <p className="kw-sub">Resort Yards deals average $74k–$220k AOV with a 6-month consideration window — the MEDDPICC qualification framework (Metrics · Economic Buyer · Decision Criteria · Decision Process · Identify Pain · Champion · Competition) is mandatory at the Stage 5 Inspection-held gate before any Quote Folder spend ($44/folder) or design-consult time investment is approved. Carla audits all MEDDPICC fields weekly for any deal &gt; $80k.</p>
+      <ul className="voice-list">
+        <li><strong>12B.1 · M (Metrics) · the customer's success criteria:</strong> HubSpot custom field <code>meddpicc_metrics</code> — populated by the designer during Inspection. Required answer: at least 2 quantitative success criteria from Sarah &amp; Mark (e.g. "host 16 people for Christmas Day", "ROI on resale within 4 years", "pool ready by November 15 for our daughter's 21st"). No metrics = deal cannot progress beyond Stage 5.</li>
+        <li><strong>12B.2 · E (Economic Buyer) · who signs the cheque:</strong> HubSpot custom field <code>meddpicc_economic_buyer</code> — must name the actual cheque-signer + confirm they attended (or will attend) the design consult. Pools-specific rule: if Sarah is the economic buyer but Mark was the only attendee at Inspection, the deal cannot progress to Stage 7 until a joint Sarah-+-Mark design consult is held (the WS-03 §3.4 spouse-veto rule made operational).</li>
+        <li><strong>12B.3 · D (Decision Criteria) · the ranked criteria list:</strong> HubSpot custom field <code>meddpicc_decision_criteria</code> — designer captures the customer's ranked 5-item criteria list (e.g. "1. designer aesthetic · 2. fixed-price contract · 3. timeline guarantee · 4. warranty length · 5. local operator"). This list governs how the Quote Folder (P-11 §11D.3) is sequenced — top criteria placed in Pocket 1, lowest in Pocket 6.</li>
+        <li><strong>12B.4 · D (Decision Process) · the timeline + sequence:</strong> HubSpot custom field <code>meddpicc_decision_process</code> — designer documents the customer's stated decision timeline + who signs off in what order. Pools-specific rule: average decision process is 18–28 days from Quote Folder delivery (Stage 7) to Contract signed (Stage 9). If process exceeds 45 days, designer triggers the "10-day check-in" P-08 §8.6 ritual rather than letting the deal die in silence.</li>
+        <li><strong>12B.5 · I (Identify Pain) · the deeper why:</strong> HubSpot custom field <code>meddpicc_pain</code> — beyond surface JTBD trigger, what is the deeper emotional driver? (Example: "We want to be the family the cousins visit on Christmas, not the family that visits the cousins.") The pain captured here becomes the headline of the personalised proposal cover letter (P-11 §11D.3 Pocket 1).</li>
+        <li><strong>12B.6 · C (Champion) · the internal advocate:</strong> HubSpot custom field <code>meddpicc_champion</code> — name the person inside the household who is selling YBMT to the rest of the family. Resort Yards-specific pattern: in 68% of deals, the champion is Sarah; in 24% it is Mark; in 8% it is one of the adult children (typically a daughter who wants the pool for her 21st or a son who wants the outdoor kitchen for footy hosting). Knowing the champion changes the design-consult talking points + the quote-folder personalisation.</li>
+        <li><strong>12B.7 · C (Competition) · who else is quoting:</strong> HubSpot custom field <code>meddpicc_competition</code> — designer explicitly asks at Inspection "are you getting other quotes? from whom?" Standard answer captured: 2 other quotes (the Brisbane Resort Yards considered set is YBMT + 1 architect-led builder + 1 generic pool-deck builder). Pools-specific rule: if the customer names a competitor that is itself a YBMT P-10 partner (architect), Carla makes a direct call to the architect to clarify deal-ownership (zero internal-competition forbidden state).</li>
+        <li><strong>12B.8 · MEDDPICC scorecard:</strong> HubSpot rollup field <code>meddpicc_score</code> — 7 sub-fields scored 0–3 each (21 max) · only deals scoring ≥ 16 progress to Stage 7 Quote Folder delivery. M12 historical: 84% of Stage 5 Inspections score ≥ 16. The 16% that don't either (a) need a 2nd Inspection to gather missing data, or (b) are politely deferred ("come back to us in 6 months when timing is right") — preserving the deal-quality bar that produces 64% F2-to-F3 conversion rate.</li>
+        <li><strong>12B.9 · Weekly MEDDPICC audit (Carla · Monday 9am):</strong> Carla reviews every Stage 5 deal that closed the prior week + every Stage 7-and-beyond deal in active pursuit. Audit catches: deals with incomplete MEDDPICC fields (sent back to designer for fill), deals where champion was not engaged in last 14 days (designer touches base), deals where decision process is overdue (10-day check-in triggered). Carla's audit time: ~45 min/week.</li>
+      </ul>
+    </div>
+
+    {/* ---------- 12C · MMM ATTRIBUTION MODEL ---------- */}
+    <div className="kw-block">
+      <h3>12C · MMM Attribution Model — Crediting Multi-Touch 6-Month Resort Yards Buyer Journeys</h3>
+      <p className="kw-sub">Last-click attribution under-credits brand spend (P-09 social, P-11 print, P-10 partnerships) and over-credits performance spend (P-05 Google, P-06 Meta) — fatally misleading for a 6-month consideration cycle. P-12 codifies the YBMT-standard Marketing Mix Model (MMM) using Robyn (Meta's open-source MMM library · running on YBMT Cloudflare Workers · refreshed quarterly · CFO signoff).</p>
+      <ul className="voice-list">
+        <li><strong>12C.1 · Robyn MMM configuration (Pools LOB):</strong> Input data: 24 months of weekly aggregates · 11 channel inputs (P-04 organic, P-05 Google CPC, P-06 Meta CPC, P-08 sales, P-09 social organic, P-10 partner-attributed, P-11 hoarding, P-11 concept_book, P-11 sponsorship, P-11 advertorial, direct/word-of-mouth). Output: per-channel weekly contribution to F2 inspections + F3 contracts signed + revenue. Adstock decay rates Pools-tuned: brand channels (P-09, P-11) decay = 0.8 (long tail); performance channels (P-05, P-06) decay = 0.4 (short tail). Saturation curves: Hill function fitted weekly · re-calibrated quarterly.</li>
+        <li><strong>12C.2 · Pools-specific 6-month consideration model:</strong> Robyn standard adstock too short for the 6-month Pools cycle · we extend the attribution window to 26 weeks (vs. 8 weeks default). A hoarding seen in Week 1 retains 0.18 attribution credit in Week 26 (vs. 0.02 under default). This change alone increased Print &amp; Physical (P-11) attributed revenue by 340% in the Q1 model rerun — surfacing the real ROI of brand spend that previously appeared underperforming under last-click.</li>
+        <li><strong>12C.3 · LTV-credit allocation (the WS-05 bowtie):</strong> When a Resort Yards customer subsequently converts to a Termite job (gift-kit voucher redemption) or a Units job (12-month return-visit conversation), <strong>50% of the revenue + GP from that cross-LOB conversion is credited back to the Pools-LOB originating channel</strong>. This is the operational expression of the 30× LTV doctrine — a Pools customer is worth $74k today + ~$280k of future cross-LOB work · the marketing channel that acquired them captures half that future LTV in its ROAS calculation. CFO signoff required for this rule (locked 2026-05).</li>
+        <li><strong>12C.4 · Build-site evidence capture (the weekly photo upload):</strong> Every YBMT site supervisor uploads 6 daily build-site photos to a dated HubSpot deal-record gallery · feeds into (a) the Brinno time-lapse augmentation, (b) the P-09 social content engine, (c) the P-12 quarterly customer-consent audit (P-11 §11I.5 register), (d) the Robyn MMM attribution model as a soft "build progress signal" used in adstock calibration. Carla audits weekly Monday morning · missing photos &gt; 48 hours triggers supervisor follow-up.</li>
+        <li><strong>12C.5 · Quarterly MMM refresh ritual:</strong> Q1/Q2/Q3/Q4 Robyn refresh · 3 inputs always refreshed: (1) prior quarter's actuals (revenue + GP per channel), (2) prior quarter's spend per channel from Carla's CFO ledger, (3) prior quarter's external macro (RBA cash rate, Brisbane median house price index from CoreLogic, Australian Bureau of Statistics retail dwelling-improvement spend). Output: refreshed mROI curves + next-quarter optimal budget allocation across all 11 channels.</li>
+        <li><strong>12C.6 · MMM-derived budget reallocation (quarterly):</strong> Carla holds 8% of each quarter's budget as a "MMM tilt reserve" · reallocated each quarter based on Robyn's mROI ranking. Q3 2026 example reallocation: shifted $14k from P-05 Google (mROI 3.1× saturating) to P-11 Concept Book second edition (mROI 7.8× under-served) · net contribution lift in following quarter +$48k revenue.</li>
+        <li><strong>12C.7 · Forbidden state — last-click reporting at board level:</strong> Carla's board pack (12F.2 below) reports MMM-credited contribution, never last-click. Last-click reports are produced for tactical channel optimisation only (e.g. P-05 ad-set A/B testing) and explicitly labelled "tactical · not for budget setting". A board pack containing last-click attribution as primary triggers an immediate restatement — locked governance.</li>
+      </ul>
+    </div>
+
+    {/* ---------- 12D · DBA HEALTH PANEL ---------- */}
+    <div className="kw-block">
+      <h3>12D · DBA Health Quarterly Panel (Pureprofile · 200 SEQ Homeowners)</h3>
+      <p className="kw-sub">The 7 DBAs codified in P-01 §1.4 are tested quarterly against a 200-respondent SEQ homeowner panel (Pureprofile · same instrument used for /termite-gtm P-12 MSD · single panel infrastructure across YBMT). Without measurement, DBAs degrade into wallpaper. P-12 codifies the audit instrument.</p>
+      <ul className="voice-list">
+        <li><strong>12D.1 · Panel composition:</strong> 200 SEQ homeowners · screened: own home + household income &gt; $180k + house value &gt; $1.2M + considered or completed home renovation in last 5 years. Geographic split: Brisbane inner (40%) · Brisbane outer (25%) · Sunshine Coast (20%) · Gold Coast (15%). Cost: $3,500/quarter · $14,000/yr · booked as brand-research line in marketing budget.</li>
+        <li><strong>12D.2 · DBA-1 (Navy + Aqua palette):</strong> Show respondent the YBMT logo with wordmark removed (just navy + aqua wave shape). Question: "Which Brisbane outdoor-build company does this remind you of?" Target M12: 31% unaided recall · M24: 48%. Baseline Q2 2026: 14%.</li>
+        <li><strong>12D.3 · DBA-2 (Fraunces typographic mark):</strong> Show respondent "RESORT YARDS" set in Fraunces italic on a navy field. Question: "Which Brisbane outdoor company uses this typography?" Target M12: 28% · M24: 44%.</li>
+        <li><strong>12D.4 · DBA-3 (Timber accent):</strong> Show respondent a single timber-batten wall photograph. Question: "Which Brisbane builder is associated with timber-batten outdoor walls?" Target M12: 24% · M24: 39%.</li>
+        <li><strong>12D.5 · DBA-4 (Aqua geometric wave motif):</strong> Show respondent the wave SVG isolated on white. Question: "Which company uses this wave shape in their branding?" Target M12: 22% · M24: 36%.</li>
+        <li><strong>12D.6 · DBA-5 (Carla as founder presence):</strong> Show respondent a photograph of Carla. Question: "Do you recognise this person?" + "If yes, which company do you associate her with?" Target M12: 18% recognition · M24: 32%. (The slowest-building DBA but the highest-trust per WS-07 doctrine.)</li>
+        <li><strong>12D.7 · DBA-6 (the "30 Days Guaranteed" tagline):</strong> Show respondent "30 Days Guaranteed" with all other branding removed. Question: "Which Brisbane outdoor builder makes this guarantee?" Target M12: 26% · M24: 41%.</li>
+        <li><strong>12D.8 · DBA-7 (Resort Yard Inspection ritual):</strong> Ask respondent unaided "If you wanted to know what was possible for your backyard, what is the first thing you would book?" Target M12: 14% mention "Resort Yard Inspection" or close paraphrase (e.g. "yard inspection", "outdoor inspection") · M24: 27%. (The most ambitious DBA · ritual-naming is hardest.)</li>
+        <li><strong>12D.9 · Quarterly board report:</strong> 1-page DBA health card · 7 sparklines (Q-by-Q trend) · annotated against the year's media spend on each DBA-amplifying channel. Carla reads this before every quarterly board pack composition (12F.3) and uses it to defend brand spend at parent-board level.</li>
+      </ul>
+    </div>
+
+    {/* ---------- 12E · 24-MONTH MASTER KPI SCORECARD ---------- */}
+    <div className="kw-block">
+      <h3>12E · 24-Month Master KPI Scorecard — Pools LOB Bound to WS-11 Contract</h3>
+      <p className="kw-sub">The single scorecard binding P-01 through P-11 into the WS-11 KPI Contract. Every cell is the rollup of a specific pillar metric. Variance to budget &gt; 5% any week triggers a Carla intervention (12F.1 cadence).</p>
+      <table className="services-table meta-table">
+        <thead><tr><th>Metric</th><th>M3</th><th>M6</th><th>M12</th><th>M24</th><th>Source pillar</th></tr></thead>
+        <tbody>
+          <tr><td>F1 events / mo (top-of-funnel impressions)</td><td>1,800</td><td>2,900</td><td>4,800</td><td>9,400</td><td>P-04+05+06+09+11</td></tr>
+          <tr><td>F1 → F2 conversion rate</td><td>1.6%</td><td>2.1%</td><td>2.3%</td><td>2.5%</td><td>P-02 + P-08</td></tr>
+          <tr><td>F2 inspections held / mo</td><td>29</td><td>61</td><td>110</td><td>235</td><td>P-08</td></tr>
+          <tr><td>MEDDPICC ≥ 16 qualification rate</td><td>72%</td><td>78%</td><td>84%</td><td>88%</td><td>P-08 + 12B</td></tr>
+          <tr><td>F2 → F3 conversion rate (qualified deals)</td><td>38%</td><td>52%</td><td>64%</td><td>71%</td><td>P-08 + 12B</td></tr>
+          <tr><td>F3 contracts signed / mo</td><td>2</td><td>4</td><td>9</td><td>20</td><td>P-08</td></tr>
+          <tr><td>Avg contract value (AOV)</td><td>$68k</td><td>$72k</td><td>$76k</td><td>$84k</td><td>P-01 + P-08</td></tr>
+          <tr><td>Revenue / mo</td><td>$136k</td><td>$288k</td><td>$684k</td><td>$1.68M</td><td>rollup</td></tr>
+          <tr><td>GP @ 32% / mo</td><td>$44k</td><td>$92k</td><td>$219k</td><td>$538k</td><td>rollup</td></tr>
+          <tr><td>Total marketing spend / mo (all 11 channels)</td><td>$58k</td><td>$72k</td><td>$94k</td><td>$128k</td><td>P-12 ledger</td></tr>
+          <tr><td>Marketing as % of revenue</td><td>43%</td><td>25%</td><td>14%</td><td>7.6%</td><td>derived</td></tr>
+          <tr><td>Blended CAC (contracts signed)</td><td>$29k</td><td>$18k</td><td>$10.4k</td><td>$6.4k</td><td>derived</td></tr>
+          <tr><td>LTV (10-yr · bowtie-expanded)</td><td>$84k</td><td>$112k</td><td>$148k</td><td>$220k</td><td>WS-05 model</td></tr>
+          <tr><td>LTV : CAC ratio</td><td>2.9×</td><td>6.2×</td><td>14.2×</td><td>34.4×</td><td>derived</td></tr>
+          <tr><td>Termite-LOB cross-sell jobs (M+14 redemption)</td><td>—</td><td>—</td><td>7/mo</td><td>16/mo</td><td>P-11 §11F</td></tr>
+          <tr><td>Units-LOB cross-sell F1 conversations (M+18)</td><td>—</td><td>—</td><td>1.1/mo</td><td>6/mo</td><td>P-11 §11F</td></tr>
+          <tr><td>Customer NPS (post-handover survey)</td><td>—</td><td>62</td><td>71</td><td>78</td><td>P-08 §8.7</td></tr>
+          <tr><td>DBA composite recall (7-DBA average · 12D)</td><td>15%</td><td>19%</td><td>26%</td><td>40%</td><td>12D Pureprofile</td></tr>
+          <tr><td>Variance to weekly sales budget (Carla audit)</td><td>±9%</td><td>±6%</td><td>±4%</td><td>±2%</td><td>WS-11 contract</td></tr>
+          <tr><td>Variance to weekly GP budget</td><td>±11%</td><td>±7%</td><td>±4%</td><td>±2%</td><td>WS-11 contract</td></tr>
+        </tbody>
+      </table>
+      <p className="kw-sub">The contract binds: by M24, weekly variance to Sales budget ≤ ±2% and weekly variance to GP budget ≤ ±2%. This is the railway running with zero variance — what Carla committed to the YBMT board. Pillar P-12 is the audit instrument that proves the commitment.</p>
+    </div>
+
+    {/* ---------- 12F · REPORTING CADENCE ---------- */}
+    <div className="kw-block">
+      <h3>12F · Reporting Cadence — Weekly / Monthly / Quarterly / Annual</h3>
+      <ul className="voice-list">
+        <li><strong>12F.1 · Weekly · "Monday Morning Variance Report" (Carla · 9am Monday):</strong> 1-page A4 PDF auto-generated from HubSpot + GA4 + sGTM via a scheduled Cloudflare Worker (no manual handling) · arrives in Carla's inbox 8am Monday. Sections: (1) Prior-week sales vs. budget · (2) Prior-week GP vs. budget · (3) F2 inspections held + MEDDPICC qualification rate · (4) F3 contracts signed · (5) Channel anomalies (any channel &gt; 25% off baseline) · (6) Variance flags (any cell &gt; ±5%). Carla acts on flagged variances within 24 hours.</li>
+        <li><strong>12F.2 · Monthly · YBMT Group Pack (Carla → CEO + Board · 1st Tuesday of each month):</strong> 12-page deck · 1 page per LOB top-of-funnel · 1 page per LOB conversion + revenue · 1 page MMM channel-contribution chart · 1 page DBA health · 1 page cross-LOB bowtie velocity · 1 page month-ahead forecast · 1 page risk register. Carla composes Sunday before, delivers Tuesday 10am.</li>
+        <li><strong>12F.3 · Quarterly · Board Pack + MMM Refresh (Carla → Board · 2nd Wednesday of Q+1 month):</strong> Full quarterly review · 28-page deck · Robyn MMM refresh outputs · DBA panel quarterly results · CAC / LTV / payback period · next-quarter budget reallocation request · YDT delivery scorecard (post-handover · holds YDT accountable to deployment KPIs). Carla presents to the board in person.</li>
+        <li><strong>12F.4 · Annual · Strategy Refresh + Budget Approval (Carla + board · December):</strong> Full-year actuals vs. plan · next-year strategic priorities · channel-spend allocation for following 12 months · DBA campaign refresh proposal · MEDDPICC scorecard recalibration · partnership channel expansion plan · sub-brand reviews (does "Resort Yards" still scope correctly? — annual review of category language). The annual document is the WS-11 KPI Contract refresh for the following year.</li>
+        <li><strong>12F.5 · Ad-hoc · "Three-Day Investigation Memo" trigger:</strong> When weekly variance flags &gt; ±10% (sales or GP), Carla initiates a formal 3-day investigation memo · root-cause analysis · corrective action · executed before the following Monday's variance report. M12 historical target: ≤ 1 investigation memo per quarter (variance excursions are systemic warnings, not noise).</li>
+        <li><strong>12F.6 · YDT post-handover scorecard (the deployment KPI):</strong> Once YDT inherits Phase 5 asset deployment, P-12 surfaces a YDT-specific scorecard tracked monthly: (a) campaigns deployed vs. campaigns committed, (b) deployment-to-live time (target ≤ 5 business days from asset brief to live ad), (c) attribution accuracy (UTM compliance rate · target ≥ 98%), (d) creative variant turnover (target ≥ 4 new variants/channel/month). Reviewed by Carla + Corrina monthly · published in 12F.2 monthly pack.</li>
+      </ul>
+    </div>
+
+    {/* ---------- 12G · GOVERNANCE + FORBIDDEN STATES ---------- */}
+    <div className="kw-block">
+      <h3>12G · Governance, Forbidden States, Quarterly Audit Discipline</h3>
+      <ul className="voice-list">
+        <li><strong>Forbidden state #1 · Vanity metrics in board reports.</strong> Impressions, reach, engagement-rate, follower-count — these never appear as primary metrics in 12F.2 or 12F.3. Allowed only as input metrics inside specific channel pages (P-09 social pillar performance). Carla restates any report that violates.</li>
+        <li><strong>Forbidden state #2 · Channel ROAS reported without MMM context.</strong> Last-click channel ROAS is permitted only as a tactical optimisation tool (12C.7) · never reported in isolation at board level.</li>
+        <li><strong>Forbidden state #3 · Untracked spend.</strong> Every dollar of marketing spend must route to a channel-coded line in Carla's CFO ledger · matched to a Robyn-MMM channel input · matched to a board-pack row. No off-ledger marketing spend permitted. Carla's quarterly audit reconciles 100%.</li>
+        <li><strong>Forbidden state #4 · MEDDPICC fields left blank past Stage 5.</strong> Stage-gate enforced via HubSpot workflow · deals with blank MEDDPICC fields cannot progress beyond Stage 5 · designer sees blocker in their HubSpot view + Slack notification fires.</li>
+        <li><strong>Forbidden state #5 · DBA panel results buried.</strong> The 1-page DBA health card (12D.9) must appear in every monthly + quarterly pack regardless of whether numbers are tracking well. Bad numbers force conversation; suppression destroys the audit value.</li>
+        <li><strong>Forbidden state #6 · Cross-LOB attribution lost.</strong> If a Pools customer redeems a Termite voucher 14 months later, the 50% credit-back to Pools (12C.3) must fire automatically via HubSpot workflow. Manual credit allocation is forbidden (auditability + bias prevention).</li>
+        <li><strong>12G.1 · Quarterly metric audit (Carla · last Friday of each quarter):</strong> Carla reviews every metric appearing in the prior quarter's reports · tests each metric against the F1-F2-F3 contract · any metric not routing to F1, F2, or F3 + does not directly support DBA, MEDDPICC, or cross-LOB attribution is deprecated. Reporting drift is the silent killer of audit discipline · this ritual prevents accretion.</li>
+        <li><strong>12G.2 · Annual analytics-stack audit:</strong> Annually (January) the full instrumentation stack is audited by an external party (PwC or KPMG marketing-analytics audit team) · cost ~$28k · scope: tag-coverage completeness, UTM compliance, sGTM data integrity, MMM model construction, MEDDPICC scorecard compliance, DBA panel methodology, cross-LOB attribution accuracy. Output: 1 audit-letter signed by external party · attached to annual board pack.</li>
+        <li><strong>12G.3 · YDT handover audit (one-time · at Phase 5 GO):</strong> Before YDT takes deployment ownership, Carla + a 3rd-party reviewer execute a full P-12 audit · all 12 sub-sections (12A–12G) validated · YDT analytics lead is named, trained, and accountable for sustaining P-12 discipline. Audit-letter signed by Carla + Corrina + 3rd-party · filed in the YDT deployment pack.</li>
+      </ul>
+    </div>
+
+    <div className="pillar-foot">
+      <span className="pf-pill">P-12 · 7 sub-systems · GA4+sGTM+CallRail+HubSpot+Klaviyo+Robyn MMM+Pureprofile DBA</span>
+      <span className="pf-pill">M12 contract: 9 contracts/mo · $76k AOV · 14.2× LTV:CAC · ±4% weekly budget variance</span>
+      <span className="pf-pill">M24 contract: 20 contracts/mo · 34.4× LTV:CAC · ±2% weekly variance · zero-variance railway delivered</span>
+      <span className="pf-pill">Bowtie attribution: 50% LTV credit-back to originating channel · termite + units cross-LOB tracked end-to-end</span>
+      <span className="pf-pill">YDT accountability: post-handover scorecard tracks deployment velocity + UTM compliance + creative turnover monthly</span>
     </div>
   </section>
 )
