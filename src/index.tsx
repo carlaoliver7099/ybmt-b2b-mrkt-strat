@@ -45,7 +45,7 @@ const DocHubBar = () => (
   <div class="dochub-bar">
     <div class="dochub-inner">
       <div class="dochub-label">
-        <strong>CoSai Strategic Document Hub</strong> · 2 documents live
+        <strong>CoSai Strategic Document Hub</strong> · 19 documents live · 3 LOBs
       </div>
       <div class="dochub-links">
         <a href="/" class="dochub-link active">
@@ -71,18 +71,65 @@ const Nav = () => (
         </div>
       </div>
       <nav class="section-nav">
-        <a href="#m1">1. Summary</a>
-        <a href="#m2">2. Architecture</a>
-        <a href="#m3">3. Gerry's Cadence</a>
-        <a href="#m4">4. Mix</a>
-        <a href="#m5">5. Assets</a>
-        <a href="#m6">6. KPIs</a>
-        <a href="#m7">7. Dashboard</a>
-        <a href="#m8">8. Commercial</a>
-        <a href="/3-funnels" class="nav-cta">→ 3-Funnel ROI Strategy</a>
+        <a href="/units-gtm" style="font-weight:600;">Units</a>
+        <a href="/pools-gtm" style="font-weight:600;">Pools</a>
+        <a href="/termite-gtm" style="font-weight:600;">Termite</a>
+        <a href="/ymt-group-strategy">Strategy Index</a>
+        <a href="/phase-5-manifest">Phase 5</a>
+        <a href="/handover">Handover</a>
+        <a href="/cover-email" class="nav-cta">✉ Cover Email</a>
       </nav>
     </div>
   </header>
+)
+
+/* ============================================================================
+   LOB Nav · The three carriages prominently surfaced on the hub
+   Added in response to Carla: "when I go to the domain I need to navigate
+   to Units, Pools, Termites"
+   ============================================================================ */
+const LOBNav = () => (
+  <section style="background:linear-gradient(135deg, #1B3A5C 0%, #2a4f78 100%); color:#F5F1EA; padding:3.5rem 2rem;">
+    <div style="max-width:1200px; margin:0 auto;">
+      <div style="text-align:center; margin-bottom:2.5rem;">
+        <p style="font-family:'Inter',sans-serif; font-size:0.85rem; letter-spacing:0.3em; text-transform:uppercase; opacity:0.75; margin:0 0 0.6rem;">Three Lines of Business · The Carriages</p>
+        <h2 style="font-family:'Fraunces',serif; font-size:2.4rem; margin:0 0 0.6rem;">Choose Your Carriage</h2>
+        <p style="font-family:'Fraunces',serif; font-style:italic; font-size:1.15rem; opacity:0.85; margin:0;">Each line of business has its own complete go-to-market operating paper · 11 strategic pillars deep.</p>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:1.5rem;">
+        <a href="/units-gtm" style="background:#F5F1EA; color:#1B3A5C; padding:2rem 1.8rem; border-radius:10px; text-decoration:none; display:block; box-shadow:0 4px 16px rgba(0,0,0,0.15); border-top:6px solid #B8743D;">
+          <div style="font-family:'Inter',sans-serif; font-size:0.8rem; letter-spacing:0.2em; text-transform:uppercase; color:#B8743D; margin-bottom:0.6rem;">LOB · Units</div>
+          <h3 style="font-family:'Fraunces',serif; font-size:1.6rem; margin:0 0 0.7rem;">Unit Renovations</h3>
+          <p style="font-family:'Fraunces',serif; font-style:italic; font-size:1.05rem; color:#1B3A5C; margin:0 0 0.8rem;">Refresh · Renew · Reset</p>
+          <p style="font-family:'Inter',sans-serif; font-size:0.92rem; line-height:1.6; color:#444; margin:0 0 1rem;">Three productised tiers · BCM-approved · 34-firm partnership lane · MEDDPICC dual-buyer scorecard · 30,937 words of operating depth.</p>
+          <div style="font-family:'Inter',sans-serif; font-size:0.85rem; color:#B8743D; font-weight:600;">Enter the Units carriage →</div>
+        </a>
+        <a href="/pools-gtm" style="background:#F5F1EA; color:#1B3A5C; padding:2rem 1.8rem; border-radius:10px; text-decoration:none; display:block; box-shadow:0 4px 16px rgba(0,0,0,0.15); border-top:6px solid #4DB6C7;">
+          <div style="font-family:'Inter',sans-serif; font-size:0.8rem; letter-spacing:0.2em; text-transform:uppercase; color:#4DB6C7; margin-bottom:0.6rem;">LOB · Pools</div>
+          <h3 style="font-family:'Fraunces',serif; font-size:1.6rem; margin:0 0 0.7rem;">Pools &amp; Outdoor Entertainment</h3>
+          <p style="font-family:'Fraunces',serif; font-style:italic; font-size:1.05rem; color:#1B3A5C; margin:0 0 0.8rem;">Your Backyard As Our Resort</p>
+          <p style="font-family:'Inter',sans-serif; font-size:0.92rem; line-height:1.6; color:#444; margin:0 0 1rem;">Outdoor entertainment as integrated experience · 4-week MMM adstock · drone-aerial photography · realtor partnership lane · 33,000 words of operating depth.</p>
+          <div style="font-family:'Inter',sans-serif; font-size:0.85rem; color:#4DB6C7; font-weight:600;">Enter the Pools carriage →</div>
+        </a>
+        <a href="/termite-gtm" style="background:#F5F1EA; color:#1B3A5C; padding:2rem 1.8rem; border-radius:10px; text-decoration:none; display:block; box-shadow:0 4px 16px rgba(0,0,0,0.15); border-top:6px solid #1B3A5C;">
+          <div style="font-family:'Inter',sans-serif; font-size:0.8rem; letter-spacing:0.2em; text-transform:uppercase; color:#1B3A5C; margin-bottom:0.6rem;">LOB · Termite</div>
+          <h3 style="font-family:'Fraunces',serif; font-size:1.6rem; margin:0 0 0.7rem;">Termite Damage Repair</h3>
+          <p style="font-family:'Fraunces',serif; font-style:italic; font-size:1.05rem; color:#1B3A5C; margin:0 0 0.8rem;">Termite Anxiety Resolved</p>
+          <p style="font-family:'Inter',sans-serif; font-size:0.92rem; line-height:1.6; color:#444; margin:0 0 1rem;">Whole-of-home protection · not job-by-job · 8-week MMM adstock · post-treatment authority lane · 33,067 words of operating depth.</p>
+          <div style="font-family:'Inter',sans-serif; font-size:0.85rem; color:#1B3A5C; font-weight:600;">Enter the Termite carriage →</div>
+        </a>
+      </div>
+      <div style="text-align:center; margin-top:2.5rem; padding-top:2rem; border-top:1px solid rgba(245,241,234,0.2);">
+        <p style="font-family:'Inter',sans-serif; font-size:0.95rem; opacity:0.85; margin:0 0 0.8rem;">Or explore the full strategy infrastructure:</p>
+        <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:0.8rem; font-family:'Inter',sans-serif; font-size:0.9rem;">
+          <a href="/ymt-group-strategy" style="background:rgba(245,241,234,0.15); color:#F5F1EA; padding:0.6rem 1.1rem; border-radius:5px; text-decoration:none;">📋 Strategy Index</a>
+          <a href="/phase-5-manifest" style="background:rgba(184,116,61,0.85); color:#F5F1EA; padding:0.6rem 1.1rem; border-radius:5px; text-decoration:none; font-weight:600;">🎫 Phase 5 Manifest</a>
+          <a href="/handover" style="background:rgba(245,241,234,0.15); color:#F5F1EA; padding:0.6rem 1.1rem; border-radius:5px; text-decoration:none;">🤝 YDT Handover</a>
+          <a href="/cover-email" style="background:rgba(245,241,234,0.15); color:#F5F1EA; padding:0.6rem 1.1rem; border-radius:5px; text-decoration:none;">✉ Cover Email</a>
+        </div>
+      </div>
+    </div>
+  </section>
 )
 
 /* ============================================================================
@@ -468,6 +515,7 @@ app.get('/', (c) => {
       <DocHubBar />
       <Nav />
       <Hero />
+      <LOBNav />
       <main>
         <Module1 />
         <Module2 />
