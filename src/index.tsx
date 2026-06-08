@@ -363,6 +363,7 @@ import { renderYMTcrm } from './ymt-crm'
 import { renderTermiteGTM } from './termite-gtm'
 import { renderPoolsGTM } from './pools-gtm'
 import { renderUnitsGTM } from './units-gtm'
+import { renderYMTHandover } from './ymt-handover'
 
 // /3-funnels — the 3-Funnel ROI Productivity strategy document
 app.get('/3-funnels', (c) => {
@@ -442,6 +443,11 @@ app.get('/pools-gtm', (c) => {
 // /units-gtm — DOC 6 · Phase 4 · LOB 3 of 3 · UNITS RENOVATIONS GTM Operating Paper (12-pillar Definition of Done)
 app.get('/units-gtm', (c) => {
   return c.render(renderUnitsGTM())
+})
+
+// /handover — A6 · YDT Handover Document · visual-hierarchy railway · ~8k words
+app.get('/handover', (c) => {
+  return c.render(renderYMTHandover())
 })
 
 app.get('/', (c) => {

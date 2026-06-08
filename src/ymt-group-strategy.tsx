@@ -263,7 +263,7 @@ const PSDeepDives = () => (
       {/* PHASE 4 BLOCK · LOB GTM PAPERS (TDR · POE · UR) + UNIFIED KPI DASHBOARD */}
       <div style="text-align: center; margin: 3.5rem 0 2rem;">
         <div style="font-family: 'Inter', sans-serif; font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; color: #1B3A5C; font-weight: 700; margin-bottom: 0.5rem;">PHASE 4 · LAYER 4 · IN PROGRESS</div>
-        <h2 class="display" style="margin-top: 0;">LOB Go-to-Market Papers + Unified KPI Dashboard · <span class="accent">12-pillar depth · 1 of 4 COMPLETE</span></h2>
+        <h2 class="display" style="margin-top: 0;">LOB Go-to-Market Papers + Unified KPI Dashboard · <span class="accent">12-pillar depth · 3 of 4 COMPLETE</span></h2>
         <p style="font-family: 'Inter', sans-serif; font-size: 1rem; color: #444; max-width: 740px; margin: 1rem auto 0; line-height: 1.65;">
           Three LOB-specific GTM papers, each built to the locked <code>CMO-DELIVERY-METHOD-v1</code> 12-pillar Definition of Done (P-07 Email deferred to WS-10), plus a unified F1→F2→F3 KPI dashboard. Sequenced per <code>SEQUENCING-DECISION-v1.md</code> — Termite first (revenue engine), then Pools (brand prestige), then Units (velocity engine), then the cross-LOB instrument panel.
         </p>
@@ -282,25 +282,29 @@ const PSDeepDives = () => (
           </div>
         </a>
 
-        <div style="background: rgba(184, 116, 61, 0.05); padding: 1.8rem 1.6rem; border-radius: 10px; border: 2px dashed rgba(184, 116, 61, 0.45); height: 100%;">
-          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.8rem;">
-            <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; color: #B8743D; font-weight: 700;">DOC 5 · LOB 2 OF 3</div>
-            <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #B8743D; font-weight: 700;">QUEUED</div>
+        <a href="/pools-gtm" style="text-decoration: none; color: inherit;">
+          <div style="background: #fff; padding: 1.8rem 1.6rem; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-top: 5px solid #4DB6C7; transition: transform 0.15s; height: 100%;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.8rem;">
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; color: #B8743D; font-weight: 700;">DOC 5 · LOB 2 OF 3</div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #2d7a3e; font-weight: 700;">✓ 11/11 PILLARS</div>
+            </div>
+            <h3 style="font-family: 'Fraunces', serif; font-size: 1.45rem; color: #1B3A5C; margin: 0 0 0.7rem; line-height: 1.2;">Pools/Outdoor GTM Paper</h3>
+            <p style="font-family: 'Inter', sans-serif; font-size: 0.92rem; color: #444; line-height: 1.6; margin: 0 0 1rem;">POE sub-brand · 30% sales mix · 32% GPM · Aspiration + lifestyle transformation positioning · all 11 P-pillars (P-01 Brand → P-12 Instrumentation · P-07 Email deferred to WS-10) · 14-keyword paid taxonomy · 4-layer Meta campaign architecture · 12-stage sales pipeline · backyard transformation visual system · ~26K words deployed.</p>
+            <div style="font-family: 'Inter', sans-serif; font-size: 0.82rem; color: #B8743D; font-weight: 600;">~26,000 words · /pools-gtm →</div>
           </div>
-          <h3 style="font-family: 'Fraunces', serif; font-size: 1.45rem; color: #1B3A5C; margin: 0 0 0.7rem; line-height: 1.2;">Pools/Outdoor GTM Paper</h3>
-          <p style="font-family: 'Inter', sans-serif; font-size: 0.92rem; color: #444; line-height: 1.6; margin: 0 0 1rem;">POE sub-brand · 30% sales mix · 32% GPM · Aspiration + lifestyle transformation positioning · 11-pillar deployable kit per <code>CMO-DELIVERY-METHOD-v1</code> · Build order locked per <code>SEQUENCING-DECISION-v1.md</code> after Termite GTM lock.</p>
-          <div style="font-family: 'Inter', sans-serif; font-size: 0.82rem; color: #B8743D; font-weight: 600;">~25-32K words target · /pools-gtm (pending)</div>
-        </div>
+        </a>
 
-        <div style="background: rgba(184, 116, 61, 0.05); padding: 1.8rem 1.6rem; border-radius: 10px; border: 2px dashed rgba(184, 116, 61, 0.45); height: 100%;">
-          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.8rem;">
-            <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; color: #B8743D; font-weight: 700;">DOC 6 · LOB 3 OF 3</div>
-            <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #B8743D; font-weight: 700;">QUEUED</div>
+        <a href="/units-gtm" style="text-decoration: none; color: inherit;">
+          <div style="background: #fff; padding: 1.8rem 1.6rem; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-top: 5px solid #B8743D; transition: transform 0.15s; height: 100%;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.8rem;">
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; color: #B8743D; font-weight: 700;">DOC 6 · LOB 3 OF 3</div>
+              <div style="font-family: 'Inter', sans-serif; font-size: 0.75rem; color: #2d7a3e; font-weight: 700;">✓ 11/11 PILLARS</div>
+            </div>
+            <h3 style="font-family: 'Fraunces', serif; font-size: 1.45rem; color: #1B3A5C; margin: 0 0 0.7rem; line-height: 1.2;">Unit Renovations GTM Paper</h3>
+            <p style="font-family: 'Inter', sans-serif; font-size: 0.92rem; color: #444; line-height: 1.6; margin: 0 0 1rem;">UR sub-brand · 15% sales mix · 35% GPM · BCM-approval-sprint positioning (14d vs 180d industry) · all 11 P-pillars · 3 productised tiers (Refresh/Renew/Reset · $28k-$120k) · 45 SEQ × 12 intent × 540 URL matrix · dual-buyer MEDDPICC (lot-owner + BCM both ≥12/21) · 34 BCM firms + 26 realtors + SCA QLD authority · Robyn MMM 26-week adstock · ~32K words deployed.</p>
+            <div style="font-family: 'Inter', sans-serif; font-size: 0.82rem; color: #B8743D; font-weight: 600;">~32,000 words · /units-gtm →</div>
           </div>
-          <h3 style="font-family: 'Fraunces', serif; font-size: 1.45rem; color: #1B3A5C; margin: 0 0 0.7rem; line-height: 1.2;">Unit Renovations GTM Paper</h3>
-          <p style="font-family: 'Inter', sans-serif; font-size: 0.92rem; color: #444; line-height: 1.6; margin: 0 0 1rem;">UR sub-brand · 15% sales mix · 35% GPM · Investor-ROI + minimal-disruption positioning · 11-pillar deployable kit per <code>CMO-DELIVERY-METHOD-v1</code> · Builds in sequence after POE.</p>
-          <div style="font-family: 'Inter', sans-serif; font-size: 0.82rem; color: #B8743D; font-weight: 600;">~25-32K words target · /units-gtm (pending)</div>
-        </div>
+        </a>
 
         <div style="background: rgba(77, 182, 199, 0.06); padding: 1.8rem 1.6rem; border-radius: 10px; border: 2px dashed rgba(77, 182, 199, 0.55); height: 100%;">
           <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.8rem;">
@@ -314,7 +318,7 @@ const PSDeepDives = () => (
       </div>
 
       <div style="text-align: center; margin-top: 2rem; padding: 1.2rem; background: rgba(27, 58, 92, 0.08); border-radius: 8px; border-left: 4px solid #1B3A5C;">
-        <strong style="color: #1B3A5C;">PHASE 4 LOB GTM + UNIFIED KPI LAYER:</strong> <span style="color: #1B3A5C; font-weight: 700;">1 of 4 COMPLETE</span> · TDR Termite GTM live at <code>/termite-gtm</code> · 11 of 11 LOB pillars deployed (P-07 Email deferred to WS-10) · 18 GA4 events + 4 dashboards + 12-KPI tree + 4-gate F1→F2→F3 data contract · ~32K words of deployment-ready content · Quality gate ✓ Build 1,641.54 kB · HTTP 200 · 299,875 byte render · Next: POE Pools/Outdoor GTM paper.
+        <strong style="color: #1B3A5C;">PHASE 4 LOB GTM + UNIFIED KPI LAYER:</strong> <span style="color: #1B3A5C; font-weight: 700;">3 of 4 COMPLETE</span> · All 3 LOB GTM papers live · TDR Termite <code>/termite-gtm</code> · POE Pools <code>/pools-gtm</code> · UR Units <code>/units-gtm</code> · 33 of 33 LOB pillars deployed (3 LOBs × 11 P-pillars · P-07 Email deferred to WS-10) · 5 Congruency Doctrine v1.0 anchors propagated (Persona Sarah&amp;Mark · Category Whole-of-Home Stewardship · Promise Built-like-our-own · Economics 30× LTV · KPI F1→F2→F3 + MEDDPICC + MMM) · ~90K words of deployment-ready content · Quality gate ✓ Build 2,262.77 kB · 69 modules · Next: A6 YDT Handover Document at <code>/handover</code> · then DOC 7 unified KPI dashboard.
       </div>
     </div>
   </section>
