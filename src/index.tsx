@@ -364,6 +364,7 @@ import { renderTermiteGTM } from './termite-gtm'
 import { renderPoolsGTM } from './pools-gtm'
 import { renderUnitsGTM } from './units-gtm'
 import { renderYMTHandover } from './ymt-handover'
+import { renderPhase5Manifest } from './phase5-manifest'
 
 // /3-funnels — the 3-Funnel ROI Productivity strategy document
 app.get('/3-funnels', (c) => {
@@ -448,6 +449,11 @@ app.get('/units-gtm', (c) => {
 // /handover — A6 · YDT Handover Document · visual-hierarchy railway · ~8k words
 app.get('/handover', (c) => {
   return c.render(renderYMTHandover())
+})
+
+// /phase-5-manifest — Phase 5 · Boarding Manifest · AL-01..AL-08 work breakdown (pre-GO Quality Gate)
+app.get('/phase-5-manifest', (c) => {
+  return c.render(renderPhase5Manifest())
 })
 
 app.get('/', (c) => {
