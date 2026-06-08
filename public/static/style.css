@@ -7718,3 +7718,331 @@ ul.check-list li::before { content: '\f00c'; font-family: 'Font Awesome 6 Free';
   text-transform: uppercase;
 }
 .ua-card a:hover { color: #F5F1EA; }
+
+/* ============================================================================
+   LOB Hub Navigation · v2 · Mobile-responsive, AAA contrast
+   Added 2026-06-08 in response to Carla:
+   "front colours are hard to read · need mobile responsive · beautiful visual
+   architecture"
+   ============================================================================ */
+
+/* --- LOB Nav · outer band ------------------------------------------------- */
+.lob-nav {
+  position: relative;
+  background:
+    radial-gradient(ellipse at top left, rgba(77, 182, 199, 0.18) 0%, transparent 55%),
+    radial-gradient(ellipse at bottom right, rgba(184, 116, 61, 0.15) 0%, transparent 55%),
+    linear-gradient(135deg, #122740 0%, #1B3A5C 45%, #2A4D75 100%);
+  color: #F5F1EA;
+  padding: clamp(48px, 7vw, 96px) var(--pad-x);
+  border-top: 1px solid rgba(77, 182, 199, 0.3);
+  border-bottom: 1px solid rgba(184, 116, 61, 0.25);
+  overflow: hidden;
+}
+.lob-nav::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 48px 48px;
+  pointer-events: none;
+  opacity: 0.6;
+}
+.lob-nav-inner {
+  position: relative;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/* --- LOB Nav · header block ---------------------------------------------- */
+.lob-nav-header {
+  text-align: center;
+  margin-bottom: clamp(32px, 4vw, 56px);
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.lob-nav-eyebrow {
+  font-family: var(--sans);
+  font-size: clamp(10px, 1.2vw, 12px);
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #7FCDD9;
+  margin: 0 0 14px;
+}
+.lob-nav-title {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 400;
+  color: #FFFFFF;
+  margin: 0 0 14px;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+}
+.lob-nav-sub {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  color: rgba(245, 241, 234, 0.92);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* --- LOB Nav · card grid ------------------------------------------------- */
+.lob-nav-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+@media (min-width: 720px) {
+  .lob-nav-grid { grid-template-columns: repeat(2, 1fr); gap: 22px; }
+}
+@media (min-width: 1020px) {
+  .lob-nav-grid { grid-template-columns: repeat(3, 1fr); gap: 26px; }
+}
+
+/* --- LOB Card · base ----------------------------------------------------- */
+.lob-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  color: #1B3A5C;
+  border-radius: 14px;
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow:
+    0 4px 14px rgba(0, 0, 0, 0.18),
+    0 16px 40px -12px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  isolation: isolate;
+}
+.lob-card:hover,
+.lob-card:focus-visible {
+  transform: translateY(-4px);
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.22),
+    0 24px 60px -16px rgba(0, 0, 0, 0.45);
+  text-decoration: none;
+  outline: none;
+}
+.lob-card:focus-visible {
+  box-shadow:
+    0 0 0 3px #7FCDD9,
+    0 24px 60px -16px rgba(0, 0, 0, 0.45);
+}
+
+/* coloured top stripe — uses solid 8px accent, no transparency */
+.lob-card-stripe {
+  display: block;
+  height: 8px;
+  width: 100%;
+  flex-shrink: 0;
+}
+.lob-card--units    .lob-card-stripe { background: #B8743D; }
+.lob-card--pools    .lob-card-stripe { background: #4DB6C7; }
+.lob-card--termite  .lob-card-stripe { background: #1B3A5C; }
+
+.lob-card-body {
+  padding: clamp(22px, 3vw, 32px) clamp(22px, 3vw, 30px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1 1 auto;
+}
+
+/* tag · LOB label */
+.lob-card-tag {
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+.lob-card--units   .lob-card-tag { color: #8A5429; }    /* darker timber for contrast */
+.lob-card--pools   .lob-card-tag { color: #1F7888; }    /* darker aqua for AA contrast */
+.lob-card--termite .lob-card-tag { color: #1B3A5C; }
+
+/* title */
+.lob-card-title {
+  font-family: var(--serif);
+  font-size: clamp(1.4rem, 2.2vw, 1.7rem);
+  font-weight: 500;
+  color: #122740;
+  margin: 0 0 4px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+/* tagline */
+.lob-card-tagline {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(1rem, 1.4vw, 1.1rem);
+  color: #1B3A5C;
+  margin: 0 0 10px;
+  font-weight: 500;
+}
+
+/* description — AAA contrast on white */
+.lob-card-desc {
+  font-family: var(--sans);
+  font-size: 14.5px;
+  line-height: 1.62;
+  color: #2B2B2B;
+  margin: 0 0 14px;
+  flex: 1 1 auto;
+}
+
+/* meta pills */
+.lob-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 16px;
+}
+.lob-card-pill {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: #F5F1EA;
+  color: #1B3A5C;
+  border: 1px solid #EBE4D6;
+}
+
+/* CTA row */
+.lob-card-cta {
+  font-family: var(--sans);
+  font-size: 13.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 14px;
+  border-top: 1px solid #EBE4D6;
+}
+.lob-card--units   .lob-card-cta { color: #8A5429; }
+.lob-card--pools   .lob-card-cta { color: #1F7888; }
+.lob-card--termite .lob-card-cta { color: #1B3A5C; }
+.lob-card-cta .arrow {
+  display: inline-block;
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+.lob-card:hover .lob-card-cta .arrow { transform: translateX(4px); }
+
+/* --- LOB Nav · sub-row chips --------------------------------------------- */
+.lob-nav-sub-row {
+  text-align: center;
+  margin-top: clamp(36px, 5vw, 60px);
+  padding-top: 28px;
+  border-top: 1px solid rgba(245, 241, 234, 0.18);
+}
+.lob-nav-sub-label {
+  font-family: var(--sans);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(245, 241, 234, 0.7);
+  margin: 0 0 16px;
+}
+.lob-nav-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.lob-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--sans);
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(245, 241, 234, 0.1);
+  color: #F5F1EA;
+  text-decoration: none;
+  border: 1px solid rgba(245, 241, 234, 0.22);
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+}
+.lob-chip:hover,
+.lob-chip:focus-visible {
+  background: rgba(245, 241, 234, 0.2);
+  border-color: rgba(245, 241, 234, 0.5);
+  color: #FFFFFF;
+  text-decoration: none;
+  outline: none;
+  transform: translateY(-1px);
+}
+.lob-chip--primary {
+  background: #B8743D;
+  border-color: #B8743D;
+  color: #FFFFFF;
+}
+.lob-chip--primary:hover,
+.lob-chip--primary:focus-visible {
+  background: #D49562;
+  border-color: #D49562;
+  color: #122740;
+}
+
+/* --- Mobile refinements -------------------------------------------------- */
+@media (max-width: 640px) {
+  .lob-nav { padding: 56px 18px; }
+  .lob-card-body { padding: 22px 20px; }
+  .lob-card-title { font-size: 1.35rem; }
+  .lob-nav-chips { gap: 8px; }
+  .lob-chip { font-size: 12.5px; padding: 9px 14px; }
+}
+
+/* ============================================================================
+   Top Section-Nav · mobile responsive fix
+   ============================================================================ */
+@media (max-width: 720px) {
+  header.site-header { padding: 12px 18px; }
+  .header-inner { gap: 10px; }
+  nav.section-nav {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 2px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 4px;
+  }
+  nav.section-nav::-webkit-scrollbar { display: none; }
+  nav.section-nav a {
+    font-size: 13px;
+    padding: 8px 12px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    color: #F5F1EA;
+  }
+  nav.section-nav a.nav-cta {
+    background: #B8743D;
+    color: #FFFFFF;
+  }
+}
+
+/* ============================================================================
+   DocHubBar · mobile + readability polish
+   ============================================================================ */
+.dochub-bar .dochub-label { color: #F5F1EA; font-weight: 500; }
+@media (max-width: 640px) {
+  .dochub-bar { padding: 10px 16px; }
+  .dochub-bar .dochub-inner { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .dochub-bar .dochub-label { font-size: 12px; }
+  .dochub-links { flex-wrap: wrap; gap: 6px; }
+}

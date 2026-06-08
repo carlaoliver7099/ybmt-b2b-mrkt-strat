@@ -87,45 +87,71 @@ const Nav = () => (
    LOB Nav · The three carriages prominently surfaced on the hub
    Added in response to Carla: "when I go to the domain I need to navigate
    to Units, Pools, Termites"
+   v2 — proper CSS classes, AAA contrast, mobile-responsive (≤640 / 641-960 / ≥961)
    ============================================================================ */
 const LOBNav = () => (
-  <section style="background:linear-gradient(135deg, #1B3A5C 0%, #2a4f78 100%); color:#F5F1EA; padding:3.5rem 2rem;">
-    <div style="max-width:1200px; margin:0 auto;">
-      <div style="text-align:center; margin-bottom:2.5rem;">
-        <p style="font-family:'Inter',sans-serif; font-size:0.85rem; letter-spacing:0.3em; text-transform:uppercase; opacity:0.75; margin:0 0 0.6rem;">Three Lines of Business · The Carriages</p>
-        <h2 style="font-family:'Fraunces',serif; font-size:2.4rem; margin:0 0 0.6rem;">Choose Your Carriage</h2>
-        <p style="font-family:'Fraunces',serif; font-style:italic; font-size:1.15rem; opacity:0.85; margin:0;">Each line of business has its own complete go-to-market operating paper · 11 strategic pillars deep.</p>
+  <section class="lob-nav">
+    <div class="lob-nav-inner">
+      <div class="lob-nav-header">
+        <p class="lob-nav-eyebrow">Three Lines of Business · The Carriages</p>
+        <h2 class="lob-nav-title">Choose Your Carriage</h2>
+        <p class="lob-nav-sub">Each line of business has its own complete go-to-market operating paper — 11 strategic pillars deep.</p>
       </div>
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:1.5rem;">
-        <a href="/units-gtm" style="background:#F5F1EA; color:#1B3A5C; padding:2rem 1.8rem; border-radius:10px; text-decoration:none; display:block; box-shadow:0 4px 16px rgba(0,0,0,0.15); border-top:6px solid #B8743D;">
-          <div style="font-family:'Inter',sans-serif; font-size:0.8rem; letter-spacing:0.2em; text-transform:uppercase; color:#B8743D; margin-bottom:0.6rem;">LOB · Units</div>
-          <h3 style="font-family:'Fraunces',serif; font-size:1.6rem; margin:0 0 0.7rem;">Unit Renovations</h3>
-          <p style="font-family:'Fraunces',serif; font-style:italic; font-size:1.05rem; color:#1B3A5C; margin:0 0 0.8rem;">Refresh · Renew · Reset</p>
-          <p style="font-family:'Inter',sans-serif; font-size:0.92rem; line-height:1.6; color:#444; margin:0 0 1rem;">Three productised tiers · BCM-approved · 34-firm partnership lane · MEDDPICC dual-buyer scorecard · 30,937 words of operating depth.</p>
-          <div style="font-family:'Inter',sans-serif; font-size:0.85rem; color:#B8743D; font-weight:600;">Enter the Units carriage →</div>
+
+      <div class="lob-nav-grid">
+        <a href="/units-gtm" class="lob-card lob-card--units" aria-label="Open Unit Renovations operating paper">
+          <span class="lob-card-stripe"></span>
+          <div class="lob-card-body">
+            <div class="lob-card-tag">LOB · Units</div>
+            <h3 class="lob-card-title">Unit Renovations</h3>
+            <p class="lob-card-tagline">Refresh · Renew · Reset</p>
+            <p class="lob-card-desc">Three productised tiers · BCM-approved · 34-firm partnership lane · MEDDPICC dual-buyer scorecard.</p>
+            <div class="lob-card-meta">
+              <span class="lob-card-pill">30,937 words</span>
+              <span class="lob-card-pill">11 pillars</span>
+            </div>
+            <div class="lob-card-cta">Enter the Units carriage<span class="arrow">→</span></div>
+          </div>
         </a>
-        <a href="/pools-gtm" style="background:#F5F1EA; color:#1B3A5C; padding:2rem 1.8rem; border-radius:10px; text-decoration:none; display:block; box-shadow:0 4px 16px rgba(0,0,0,0.15); border-top:6px solid #4DB6C7;">
-          <div style="font-family:'Inter',sans-serif; font-size:0.8rem; letter-spacing:0.2em; text-transform:uppercase; color:#4DB6C7; margin-bottom:0.6rem;">LOB · Pools</div>
-          <h3 style="font-family:'Fraunces',serif; font-size:1.6rem; margin:0 0 0.7rem;">Pools &amp; Outdoor Entertainment</h3>
-          <p style="font-family:'Fraunces',serif; font-style:italic; font-size:1.05rem; color:#1B3A5C; margin:0 0 0.8rem;">Your Backyard As Our Resort</p>
-          <p style="font-family:'Inter',sans-serif; font-size:0.92rem; line-height:1.6; color:#444; margin:0 0 1rem;">Outdoor entertainment as integrated experience · 4-week MMM adstock · drone-aerial photography · realtor partnership lane · 33,000 words of operating depth.</p>
-          <div style="font-family:'Inter',sans-serif; font-size:0.85rem; color:#4DB6C7; font-weight:600;">Enter the Pools carriage →</div>
+
+        <a href="/pools-gtm" class="lob-card lob-card--pools" aria-label="Open Pools and Outdoor Entertainment operating paper">
+          <span class="lob-card-stripe"></span>
+          <div class="lob-card-body">
+            <div class="lob-card-tag">LOB · Pools</div>
+            <h3 class="lob-card-title">Pools &amp; Outdoor Entertainment</h3>
+            <p class="lob-card-tagline">Your Backyard As Our Resort</p>
+            <p class="lob-card-desc">Outdoor entertainment as integrated experience · 4-week MMM adstock · drone-aerial photography · realtor partnership lane.</p>
+            <div class="lob-card-meta">
+              <span class="lob-card-pill">33,000 words</span>
+              <span class="lob-card-pill">11 pillars</span>
+            </div>
+            <div class="lob-card-cta">Enter the Pools carriage<span class="arrow">→</span></div>
+          </div>
         </a>
-        <a href="/termite-gtm" style="background:#F5F1EA; color:#1B3A5C; padding:2rem 1.8rem; border-radius:10px; text-decoration:none; display:block; box-shadow:0 4px 16px rgba(0,0,0,0.15); border-top:6px solid #1B3A5C;">
-          <div style="font-family:'Inter',sans-serif; font-size:0.8rem; letter-spacing:0.2em; text-transform:uppercase; color:#1B3A5C; margin-bottom:0.6rem;">LOB · Termite</div>
-          <h3 style="font-family:'Fraunces',serif; font-size:1.6rem; margin:0 0 0.7rem;">Termite Damage Repair</h3>
-          <p style="font-family:'Fraunces',serif; font-style:italic; font-size:1.05rem; color:#1B3A5C; margin:0 0 0.8rem;">Termite Anxiety Resolved</p>
-          <p style="font-family:'Inter',sans-serif; font-size:0.92rem; line-height:1.6; color:#444; margin:0 0 1rem;">Whole-of-home protection · not job-by-job · 8-week MMM adstock · post-treatment authority lane · 33,067 words of operating depth.</p>
-          <div style="font-family:'Inter',sans-serif; font-size:0.85rem; color:#1B3A5C; font-weight:600;">Enter the Termite carriage →</div>
+
+        <a href="/termite-gtm" class="lob-card lob-card--termite" aria-label="Open Termite Damage Repair operating paper">
+          <span class="lob-card-stripe"></span>
+          <div class="lob-card-body">
+            <div class="lob-card-tag">LOB · Termite</div>
+            <h3 class="lob-card-title">Termite Damage Repair</h3>
+            <p class="lob-card-tagline">Termite Anxiety Resolved</p>
+            <p class="lob-card-desc">Whole-of-home protection — not job-by-job · 8-week MMM adstock · post-treatment authority lane.</p>
+            <div class="lob-card-meta">
+              <span class="lob-card-pill">33,067 words</span>
+              <span class="lob-card-pill">11 pillars</span>
+            </div>
+            <div class="lob-card-cta">Enter the Termite carriage<span class="arrow">→</span></div>
+          </div>
         </a>
       </div>
-      <div style="text-align:center; margin-top:2.5rem; padding-top:2rem; border-top:1px solid rgba(245,241,234,0.2);">
-        <p style="font-family:'Inter',sans-serif; font-size:0.95rem; opacity:0.85; margin:0 0 0.8rem;">Or explore the full strategy infrastructure:</p>
-        <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:0.8rem; font-family:'Inter',sans-serif; font-size:0.9rem;">
-          <a href="/ymt-group-strategy" style="background:rgba(245,241,234,0.15); color:#F5F1EA; padding:0.6rem 1.1rem; border-radius:5px; text-decoration:none;">📋 Strategy Index</a>
-          <a href="/phase-5-manifest" style="background:rgba(184,116,61,0.85); color:#F5F1EA; padding:0.6rem 1.1rem; border-radius:5px; text-decoration:none; font-weight:600;">🎫 Phase 5 Manifest</a>
-          <a href="/handover" style="background:rgba(245,241,234,0.15); color:#F5F1EA; padding:0.6rem 1.1rem; border-radius:5px; text-decoration:none;">🤝 YDT Handover</a>
-          <a href="/cover-email" style="background:rgba(245,241,234,0.15); color:#F5F1EA; padding:0.6rem 1.1rem; border-radius:5px; text-decoration:none;">✉ Cover Email</a>
+
+      <div class="lob-nav-sub-row">
+        <p class="lob-nav-sub-label">Or explore the full strategy infrastructure</p>
+        <div class="lob-nav-chips">
+          <a href="/ymt-group-strategy" class="lob-chip">📋 Strategy Index</a>
+          <a href="/phase-5-manifest" class="lob-chip lob-chip--primary">🎫 Phase 5 Manifest</a>
+          <a href="/handover" class="lob-chip">🤝 YDT Handover</a>
+          <a href="/cover-email" class="lob-chip">✉ Cover Email</a>
         </div>
       </div>
     </div>
