@@ -213,7 +213,11 @@ export const renderUnitsGTM = () => (
     <UGPillar05GoogleAds />
     <UGPillar06MetaAds />
     <UGPillar08SalesEnablement />
-    {/* Pillars P-09..P-12 appended in Cycle 4 · P-07 Email deferred to WS-10 */}
+    <UGPillar09Social />
+    <UGPillar10Partnerships />
+    <UGPillar11PrintPhysical />
+    <UGPillar12Instrumentation />
+    {/* DOC 6 · Units · 11 of 12 pillars mounted · P-07 Email deferred to WS-10 CRM workstream */}
   </>
 )
 
@@ -1473,6 +1477,619 @@ const UGPillar08SalesEnablement = () => (
       <span className="pf-pill">M12: 118 Consults/mo · 50 contracts signed · $3.10M contracted revenue · 68% bowtie-consent</span>
       <span className="pf-pill">Sales rep comp aligned to lifetime value · 60% F3 + 40% F3+ + 25% bowtie expansion uplift</span>
       <span className="pf-pill">Day 30 Bowtie Consent Conversation seeds 38% cross-LOB expansion within 36 months · WS-05 economics in motion</span>
+    </div>
+  </section>
+)
+
+// ============================================================================
+// UNITS P-09 · SOCIAL CONTENT ENGINE · BCM-credibility + Sarah/Mark recognition + bowtie surfacing
+// ============================================================================
+const UGPillar09Social = () => (
+  <section id="p09" className="pillar-block">
+    <div className="pillar-block-h">
+      <span className="pillar-block-eyebrow">PILLAR P-09 · UNITS · SOCIAL CONTENT ENGINE</span>
+      <h2 className="pillar-block-title">P-09 · Social Content Engine · Instagram + LinkedIn + Facebook + YouTube · BCM-Credibility Built Weekly · Sarah &amp; Mark Recognition Across 180 Posts/Quarter</h2>
+      <p className="pillar-block-sub">Social for Units is structurally different from social for Pools. Pools social is aspirational (Resort Yards as life-stage trophies). Termite social is reassuring (catastrophe averted, building saved). Units social is <em>credibility-building</em>: every post is a small unit of trust the BCM coordinator, the lot-owner, and the strata committee can encounter independently and absorb into their mental model of "BCM-friendly renovation as a discrete category." The cadence runs 180 posts/quarter (60/month · 15/week) across 4 channels with a content-mix locked at 40% BCM authority · 30% Sarah &amp; Mark recognition · 18% process transparency · 12% bowtie cross-LOB · all governed by the WS-04 persona-care doctrine (never spam-marketing, always educational/recognising) and the WS-02 Promise enforcement (the Promise is visible in behaviour shown, never repeated as text). [JR-DBA] DBA-2 "quiet site" lens enforced on every visual · [BF-LSI] 75/25 brand-activation split (social leans further brand than paid Meta because organic is the deepest category-design surface) · [AH-OFR] no post has a hard CTA other than "read more" or "save for later" — Units social is the long game.</p>
+    </div>
+
+    {/* 9.1 SOCIAL DOCTRINE */}
+    <div className="kw-block">
+      <h3>9.1 · Units Social Doctrine — Seven Locked Rules</h3>
+      <ol>
+        <li><strong>BCM credibility before contractor self-promotion.</strong> A minimum 40% of posts feature BCM voices, BCM-firm context, BCM by-law education, or strata-environment storytelling — not contractor work. The contractor is a supporting character in the strata story, not the protagonist. This breaks the universal trade-social pattern (look-at-our-work) and trains the algorithm + the audience that YBMT Units is the category authority, not just another renovator.</li>
+        <li><strong>Sarah &amp; Mark are addressable by name in 30% of posts.</strong> Composite-Sarah and composite-Mark narratives (with anonymisation) are recurring characters · they appear in the morning-routine post · the BCM-AGM post · the pre-sale-decision post · the bowtie Pools-question post. Sarah &amp; Mark recognising themselves in the YBMT social feed is the WS-04 persona-care doctrine on the organic surface.</li>
+        <li><strong>The Promise is shown · never written.</strong> "Built like it's our own home" cannot appear as caption text on a social post. It can only appear as behaviour-shown: shoes off, neighbour's mat straightened, BCM coordinator addressed by name, acoustic meter visible, drop-cloth before tool. The discipline trains the audience to read behaviour, not slogans. This is the deepest WS-02 enforcement layer.</li>
+        <li><strong>One content channel · one purpose.</strong> Instagram = Sarah &amp; Mark recognition + visual category-design. LinkedIn = BCM authority + strata-firm partnership + investor narrative. Facebook = building-community testimonials + BCM-coordinator stories. YouTube = long-form methodology + BCM-AGM training videos. No cross-posting without channel-native re-framing — algorithm-trained channel-coherence over reach efficiency.</li>
+        <li><strong>15-second hook discipline (Instagram + YouTube Shorts).</strong> Every video creative must cue Sarah &amp; Mark recognition OR a BCM-tension moment in the first 1.8 seconds — never longer. The 2-second threshold from P-06 paid governs organic too. Aesthetic-only renovation reveals without strata context are forbidden organic content categories.</li>
+        <li><strong>Quarterly creator partnership · 1 BCM voice + 1 lot-owner voice.</strong> Each quarter, YBMT Units commissions 1 paid content collaboration with a real BCM coordinator (with consent + payment) and 1 with a real lot-owner customer (with consent + payment). This is content authority bought transparently, not faked engagement.</li>
+        <li><strong>Forbidden state · "look at us" posts without WS-04 service to the audience.</strong> Every post must do one of: educate (BCM authority) · recognise (Sarah &amp; Mark) · explain (process transparency) · or surface (bowtie option). No "we won an award" post unless it visibly serves the audience. Trade-self-praise = lowest engagement category in test data.</li>
+      </ol>
+    </div>
+
+    {/* 9.2 CONTENT MIX */}
+    <div className="kw-block">
+      <h3>9.2 · Content Mix · 60 Posts/Month Across 4 Channels and 4 Content Buckets</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Bucket</th><th>% mix</th><th>Posts/month</th><th>Lead channel</th><th>Format mix</th><th>Primary KPI</th></tr></thead>
+        <tbody>
+          <tr><td>BCM Authority</td><td>40%</td><td>24</td><td>LinkedIn + Facebook</td><td>8 carousels · 6 reels · 6 long-form text · 4 articles</td><td>BCM-firm saves + LinkedIn impressions to BCM-staff audience</td></tr>
+          <tr><td>Sarah &amp; Mark Recognition</td><td>30%</td><td>18</td><td>Instagram + Facebook</td><td>6 reels · 6 carousels · 4 statics · 2 IG stories</td><td>Save rate &gt; 8.4% · DM enquiry rate</td></tr>
+          <tr><td>Process Transparency</td><td>18%</td><td>11</td><td>Instagram + YouTube</td><td>4 reels · 3 long-form YouTube · 2 carousels · 2 statics</td><td>Time-watched + comment-sentiment + Pack-download click-through</td></tr>
+          <tr><td>Bowtie Cross-LOB Surfacing</td><td>12%</td><td>7</td><td>All 4 channels</td><td>3 cross-LOB testimonials · 2 BCM-coordinator referrer reels · 2 LinkedIn articles</td><td>Bowtie-tagged DM + bowtie-consent flag conversion (Day 30 surrogate)</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Channel-specific mix (60 posts/month total):</strong></p>
+      <ul className="voice-list">
+        <li><strong>Instagram (24 posts/mo · 40%):</strong> 12 reels + 6 carousels + 4 statics + 2 stories per week-equivalent · primary algorithm: Reels first, then carousels.</li>
+        <li><strong>LinkedIn (18 posts/mo · 30%):</strong> 6 carousels + 6 long-form text posts + 4 articles + 2 native videos · primary audience: BCM-staff + strata-management firms + investor-finance professionals.</li>
+        <li><strong>Facebook (12 posts/mo · 20%):</strong> 5 reels + 4 carousels + 3 community-page posts · primary audience: building-resident community groups + BCM-firm Facebook groups + Brisbane apartment-owner community pages.</li>
+        <li><strong>YouTube (6 posts/mo · 10%):</strong> 4 Shorts + 2 long-form (5-15 min) per month · long-form features methodology deep-dives, BCM-AGM training, building-manager interviews.</li>
+      </ul>
+    </div>
+
+    {/* 9.3 CONTENT LIBRARY · 90-DAY EDITORIAL CALENDAR */}
+    <div className="kw-block">
+      <h3>9.3 · Quarterly Editorial Calendar — 180 Posts Across 12 Weeks (Sample Week 1 + Theme Map)</h3>
+      <p><strong>Annual editorial themes (4 quarters · 1 dominant theme per quarter · 25% of content reinforces theme):</strong></p>
+      <ul className="voice-list">
+        <li><strong>Q1 · "The Quiet Renovation":</strong> 7am-3pm doctrine · acoustic monitoring · BCM-coordinator working relationship. Aligned with new-year-renovation-intent Brisbane seasonal pattern.</li>
+        <li><strong>Q2 · "The BCM Approval Pathway":</strong> 28-day BCM approval pathway · 12 cornerstone BCM-resources hub deep-dives · BCM-firm partnership profiles. Aligned with autumn renovation-planning cycle.</li>
+        <li><strong>Q3 · "Pre-Sale Strata Renovation":</strong> Pre-Sale ROI Calculator stories · realtor partnerships · investor-cohort narratives. Aligned with spring listing market.</li>
+        <li><strong>Q4 · "The Year We Renovated 200 Brisbane Units":</strong> Customer year-in-review · BCM-coordinator testimonials · bowtie cross-LOB success stories. Aligned with summer holiday + Christmas reflection mode + January planning.</li>
+      </ul>
+      <p><strong>Sample Week 1 of Q1 (15 posts across 4 channels · published Mon-Sun):</strong></p>
+      <table className="services-table meta-table">
+        <thead><tr><th>Day</th><th>Channel</th><th>Bucket</th><th>Format</th><th>Post hook + content</th></tr></thead>
+        <tbody>
+          <tr><td>Mon</td><td>Instagram</td><td>S&amp;M Recognition</td><td>Reel · 22 sec</td><td>"7:02am · Hamilton apartment · trade vehicle slides into bay · no door slam · BCM coordinator already there with the lift-padding key" — composite-Sarah POV · day 1 of her reno.</td></tr>
+          <tr><td>Mon</td><td>LinkedIn</td><td>BCM Authority</td><td>Long-form text</td><td>"What 14 Brisbane BCMs told us they wished trades knew" — 320-word listicle · permission-quoted real BCM coordinators.</td></tr>
+          <tr><td>Tue</td><td>Instagram</td><td>Process Transparency</td><td>Carousel · 8 slides</td><td>"What is in our Pre-Reno BCM Approval Pack" — slide-by-slide preview of the 6-section Pack · CTA: link in bio.</td></tr>
+          <tr><td>Tue</td><td>Facebook</td><td>BCM Authority</td><td>Community post</td><td>Share to 3 BCM-firm Facebook groups · "Brisbane BCM-friendly renovation: free pre-AGM info session next month" — invite framed as service to BCM committees.</td></tr>
+          <tr><td>Wed</td><td>YouTube</td><td>Process Transparency</td><td>Short · 50 sec</td><td>"The lift-padding install in 50 seconds" — single-take methodology demo · BCM coordinator on camera.</td></tr>
+          <tr><td>Wed</td><td>LinkedIn</td><td>BCM Authority</td><td>Native video</td><td>Re-cut of YouTube short with LinkedIn-native captions + BCM-firm tag.</td></tr>
+          <tr><td>Wed</td><td>Instagram</td><td>S&amp;M Recognition</td><td>Reel · 30 sec</td><td>"When the BCM coordinator becomes your friend" — composite-Mark interview · post-handover relationship.</td></tr>
+          <tr><td>Thu</td><td>Instagram</td><td>BCM Authority</td><td>Static</td><td>"By-law clause § 84.3 in plain English" — single-image educational explainer · BCM coordinator quoted.</td></tr>
+          <tr><td>Thu</td><td>LinkedIn</td><td>BCM Authority</td><td>Article (520 words)</td><td>"The 8 most-cited BCM by-law clauses in Brisbane unit renovations" — links to /bcm-resources cornerstone.</td></tr>
+          <tr><td>Fri</td><td>Instagram</td><td>S&amp;M Recognition</td><td>Reel · 18 sec</td><td>"Friday 2:58pm · tools down · neighbour's kettle still working" — 7am-3pm doctrine moment · captioned silence.</td></tr>
+          <tr><td>Fri</td><td>Facebook</td><td>Bowtie Cross-LOB</td><td>Carousel</td><td>"Sarah finished her Resort Yard in 2024. Now her investment apartment is having a Refresh in 2026." — composite-Sarah cross-LOB story · zero-pressure framing.</td></tr>
+          <tr><td>Sat</td><td>Instagram</td><td>Process Transparency</td><td>Carousel · 6 slides</td><td>"Before / during / after · Hamilton Refresh" — anonymised lot-owner permission · BCM coordinator credit.</td></tr>
+          <tr><td>Sat</td><td>YouTube</td><td>Long-form (Q1 anchor)</td><td>Long video · 8:42</td><td>"The 7am-3pm Doctrine: a day in the life of a YBMT Units site" — methodology hero · primary Q1 retention asset.</td></tr>
+          <tr><td>Sun</td><td>Instagram</td><td>BCM Authority</td><td>Story (10 frames)</td><td>"BCM Sunday · this week's by-law deep dive" — recurring Sunday format · saves the cornerstone-page article into IG saves.</td></tr>
+          <tr><td>Sun</td><td>LinkedIn</td><td>S&amp;M Recognition</td><td>Carousel</td><td>"What Sarah said about her BCM coordinator at handover" — testimonial format · BCM-firm tag included.</td></tr>
+        </tbody>
+      </table>
+      <p className="kw-sub">12 sample weeks × 15 posts = 180 posts per quarter · all locked in YDT editorial calendar /units/p09/editorial-q1-v1 through /units/p09/editorial-q4-v1 · production cadence: 15 posts/week briefed 2 weeks ahead · 1 paid-creator collaboration per quarter delivered Week 6.</p>
+    </div>
+
+    {/* 9.4 PRODUCTION & WORKFLOW */}
+    <div className="kw-block">
+      <h3>9.4 · Production Workflow · 15 Posts/Week Sustainable Cadence</h3>
+      <p><strong>YDT-side production team (Units P-09 specific):</strong></p>
+      <ul className="voice-list">
+        <li><strong>1 × Content Lead (shared 0.5 FTE across YBMT Group LOBs):</strong> editorial calendar ownership · brief writing · creator partnership management · weekly publishing check-in.</li>
+        <li><strong>1 × Strata Content Producer (0.7 FTE Units):</strong> on-site visits to capture BCM-coordinator-permission content + lot-owner Sarah/Mark composite narratives + raw footage capture · embedded in site visits 2 days/week.</li>
+        <li><strong>1 × Editor + Motion Designer (0.4 FTE Units):</strong> Instagram Reel cuts · YouTube edits · LinkedIn carousel design · brand-system enforced (Navy #1B3A5C / Timber #B8743D / Aqua #4DB6C7 / Cream #F5F1EA + Fraunces + Inter).</li>
+        <li><strong>1 × Community Manager (0.3 FTE Units):</strong> DM response within 4h business-hours · comment moderation · BCM-firm Facebook group engagement · LinkedIn BCM-staff inbound nurture.</li>
+      </ul>
+      <p><strong>Weekly cadence:</strong></p>
+      <ol>
+        <li><strong>Monday 9am:</strong> Week's 15 posts approved by Sales Lead (MEDDPICC-language alignment check) + Carla (Promise + WS-04 persona-care veto power).</li>
+        <li><strong>Monday 11am:</strong> Posts loaded into Buffer scheduled publishing for the week.</li>
+        <li><strong>Tuesday-Thursday:</strong> Strata Content Producer captures next week's raw footage on 2 site visits + 1 BCM-firm office visit.</li>
+        <li><strong>Wednesday 2pm:</strong> Comment + DM review (Community Manager → Sales Lead handoff if MEDDPICC qualifying-question opportunity).</li>
+        <li><strong>Friday 10am:</strong> Week's engagement scorecard reviewed · 3 best-performing posts identified for paid amplification consideration in P-06 paid Meta.</li>
+        <li><strong>Friday 2pm:</strong> Editor produces 12 new posts + 3 refreshes for Monday approval.</li>
+      </ol>
+      <p><strong>Quality gates (CI-equivalent · auto-flagged before publish):</strong></p>
+      <ul className="voice-list">
+        <li>Aesthetic-only renovation reveal without strata-context cue in first 1.8 sec? → REJECT.</li>
+        <li>"Built like it's our own home" appears in caption text? → REJECT (Promise is shown not written).</li>
+        <li>Lot-owner or BCM coordinator featured without signed permission form? → REJECT.</li>
+        <li>Post lacks WS-04 service-to-audience function (educate/recognise/explain/surface)? → REJECT.</li>
+        <li>Bowtie cross-LOB post without anonymised composite (real customer named) without separate Day-30+ consent? → REJECT.</li>
+        <li>Brand-system colour violation (using off-system colours)? → REJECT.</li>
+      </ul>
+    </div>
+
+    {/* 9.5 KPI SCORECARD */}
+    <div className="kw-block">
+      <h3>9.5 · KPI Scorecard — Social M1 → M24 · Units LOB</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Metric</th><th>M1 (learn)</th><th>M3 (stabilise)</th><th>M6 (scale)</th><th>M12 (mature)</th><th>M24 (compound)</th></tr></thead>
+        <tbody>
+          <tr><td>Total posts published / month</td><td>52</td><td>60</td><td>60</td><td>60</td><td>60</td></tr>
+          <tr><td>Instagram followers (Units handle)</td><td>1,200</td><td>3,800</td><td>8,400</td><td>22,000</td><td>62,000</td></tr>
+          <tr><td>LinkedIn followers (BCM-staff weighted)</td><td>180</td><td>820</td><td>2,200</td><td>5,800</td><td>16,400</td></tr>
+          <tr><td>Facebook page reach / month</td><td>22k</td><td>68k</td><td>140k</td><td>280k</td><td>520k</td></tr>
+          <tr><td>YouTube subscribers</td><td>120</td><td>420</td><td>1,100</td><td>3,400</td><td>11,200</td></tr>
+          <tr><td>Save rate (Instagram · category benchmark 3.2%)</td><td>4.8%</td><td>6.2%</td><td>7.4%</td><td>8.6%</td><td>10.2%</td></tr>
+          <tr><td>BCM-staff DM enquiries / month</td><td>2</td><td>8</td><td>22</td><td>54</td><td>118</td></tr>
+          <tr><td>Pack-download click-throughs from organic / month</td><td>22</td><td>78</td><td>180</td><td>420</td><td>820</td></tr>
+          <tr><td>Bowtie-tagged DM / month (organic surfacing)</td><td>—</td><td>4</td><td>14</td><td>38</td><td>78</td></tr>
+          <tr><td>Branded search lift from social (Google Trends Brisbane proxy)</td><td>—</td><td>+8%</td><td>+22%</td><td>+58%</td><td>+162%</td></tr>
+          <tr><td>Organic-attributed contracts / month (lagging F3)</td><td>—</td><td>—</td><td>2</td><td>8</td><td>22</td></tr>
+          <tr><td>Organic-attributed revenue / month</td><td>—</td><td>—</td><td>$116k</td><td>$496k</td><td>$1.45M</td></tr>
+          <tr><td>P-09 production cost / month</td><td>$14k</td><td>$15k</td><td>$16k</td><td>$18k</td><td>$22k</td></tr>
+          <tr><td>P-09 ROAS (margin basis · post-bowtie credit)</td><td>—</td><td>—</td><td>2.0×</td><td>7.7×</td><td>18.5×</td></tr>
+        </tbody>
+      </table>
+      <p className="kw-sub">P-09 organic looks "uneconomic" in M1-M6 (no attributable revenue until M6 · ROAS below threshold until M12) — this is the structural reality of category-design social content. The compounding effect is invisible until it dominates: by M24, organic social drives +162% branded search lift which then reshapes Google Ads CPC and Meta paid CPM by lifting Quality Scores and audience-affinity signals. Every dollar invested in P-09 at M0 returns ~9× by M36 through paid-channel CPC reduction alone (off-table calculation · WS-09 §7.3 Robyn MMM Units-tuned). The 18.5× M24 ROAS post-bowtie credit understates the strategic value by ~40% — Carla &amp; YDT should defend the P-09 budget aggressively against short-term reallocation pressure in M3-M9.</p>
+    </div>
+
+    {/* 9.6 GOVERNANCE & ANTI-PATTERNS */}
+    <div className="kw-block">
+      <h3>9.6 · Governance, Forbidden States, Quality Gates</h3>
+      <ul className="voice-list">
+        <li><strong>Forbidden state #1 · Aesthetic-only renovation reveal.</strong> Every post must visibly cue strata context · pure-aesthetic content lives nowhere in YBMT Units organic.</li>
+        <li><strong>Forbidden state #2 · The Promise written, not shown.</strong> "Built like it's our own home" cannot appear as caption text · only as behaviour shown.</li>
+        <li><strong>Forbidden state #3 · Customer or BCM coordinator featured without signed permission.</strong> Permission form locked at /units/p09/permission-template-v1 · standard 12-month consent · refreshable.</li>
+        <li><strong>Forbidden state #4 · Engagement-bait posts.</strong> "Comment YES if you want our renovation guide" pattern explicitly forbidden · WS-04 persona-care + algorithm penalty risk.</li>
+        <li><strong>Forbidden state #5 · Cross-LOB content without anonymisation or Day-30+ separate consent.</strong> Bowtie cross-LOB surfacing uses composite-Sarah/composite-Mark unless explicit named-customer consent has been obtained post-handover.</li>
+        <li><strong>Forbidden state #6 · Award-self-praise without audience service.</strong> "We won X award" content must include a section that serves the audience (e.g., the methodology behind the award + how readers can apply it).</li>
+        <li><strong>Forbidden state #7 · Trend-jacking without WS-04 fit.</strong> Trending audio/format use only if it serves the BCM-credibility · Sarah &amp; Mark recognition · process-transparency · or bowtie purpose. No trending-for-trending's-sake.</li>
+        <li><strong>Forbidden state #8 · Same content recycled across Pools + Termite + Units.</strong> Each LOB has channel-native voice · Units cross-posting from Pools/Termite without strata re-framing is forbidden.</li>
+        <li><strong>Weekly cadence:</strong> Mon publishing approval · Wed comment/DM review · Fri engagement scorecard + amplification candidates · ongoing community-management within 4h.</li>
+        <li><strong>Monthly cadence:</strong> Editorial-calendar Q-ahead refresh · creator-partnership review · save-rate audit · BCM-staff LinkedIn-impression audit · brand-system colour-compliance sweep.</li>
+        <li><strong>Quarterly cadence:</strong> Q-theme rotation · Pureprofile SEQ-panel content-recall audit · paid-creator partnership commissions · YouTube long-form retention analysis · Robyn MMM organic-channel re-tune.</li>
+      </ul>
+    </div>
+
+    <div className="pillar-foot">
+      <span className="pf-pill">P-09 · 180 posts/qtr across IG/LinkedIn/FB/YouTube · 4 buckets: BCM Authority 40% · S&amp;M Recognition 30% · Process 18% · Bowtie 12%</span>
+      <span className="pf-pill">M12: 22k IG followers · 5.8k LinkedIn · 8.6% save rate · 54 BCM-staff DMs/mo · 420 Pack-downloads/mo</span>
+      <span className="pf-pill">M24 ROAS 18.5× post-bowtie · +162% branded search lift · category-design engine · Promise shown not written</span>
+      <span className="pf-pill">15-post weekly cadence · 1 BCM + 1 lot-owner creator partnership per quarter · WS-04 persona-care non-negotiable</span>
+    </div>
+  </section>
+)
+
+// ============================================================================
+// UNITS P-10 · PARTNERSHIPS & REFERRAL · 34 BCM firms + realtor channel + builder cross-LOB
+// ============================================================================
+const UGPillar10Partnerships = () => (
+  <section id="p10" className="pillar-block">
+    <div className="pillar-block-h">
+      <span className="pillar-block-eyebrow">PILLAR P-10 · UNITS · PARTNERSHIPS &amp; REFERRAL ENGINE</span>
+      <h2 className="pillar-block-title">P-10 · Partnerships &amp; Referral Engine · 34 BCM Firms + Realtor Channel + Cross-LOB Builder Referrals + SCA QLD Authority Layer</h2>
+      <p className="pillar-block-sub">Partnerships are the largest single F1 channel in the Units LOB — projected to deliver 52% of all qualified leads at M24 vs 28% for paid search + paid Meta combined. The reason: Units sales is a two-buyer process (lot-owner + BCM coordinator) and a BCM coordinator's warm introduction collapses the BCM MEDDPICC qualification from 6 weeks of cold pursuit to 14 days of accelerated relationship-building. The architecture runs four partnership lanes: (1) <strong>BCM Firm Lane</strong> — 34 Brisbane priority BCM firms with formal partnership agreements · (2) <strong>Realtor Lane</strong> — 26 strata-specialist Brisbane realtors for the Pre-Sale-Investor JTBD · (3) <strong>Cross-LOB Builder Lane</strong> — Pools + Termite handover bowtie + 3 partner builders for projects we won't take · (4) <strong>SCA QLD Authority Lane</strong> — Strata Community Association membership + thought-leadership + 3 paid speaking slots/year at SCA QLD events. Every lane is governed by the WS-04 persona-care doctrine (the partner is a steward of Sarah &amp; Mark's trust, not a referral fee transaction) and the WS-02 Promise (the partner sees us building like it's our own home, before they refer). [JR-DBA] DBA-5 "BCM-firm partnership badge" is a category-design proof point displayed on every channel · [BF-LSI] partnerships count as 60% brand investment + 40% activation in budget bucketing.</p>
+    </div>
+
+    {/* 10.1 PARTNERSHIPS DOCTRINE */}
+    <div className="kw-block">
+      <h3>10.1 · Units Partnerships Doctrine — Eight Locked Rules</h3>
+      <ol>
+        <li><strong>Partnership before referral fee.</strong> No partnership conversation begins with a referral commission. Conversation begins with: "What is one thing the trades in your buildings consistently get wrong that costs you time?" The partner's pain is the partnership foundation. Referral economics arrive at meeting 3 or later, never meeting 1.</li>
+        <li><strong>BCM firm partnership = relationship not transaction.</strong> Standard agreement (locked at /units/p10/bcm-partnership-template-v1) includes: free pre-AGM info sessions for the BCM's strata committees · BCM-coordinator training credits (3/year) · quarterly relationship-review meetings · transparent monthly referral-volume + revenue reporting back to the BCM firm · zero-cost cancellation. The agreement is built around the BCM firm's value, not just ours.</li>
+        <li><strong>Two-way value flow audit · quarterly.</strong> Every quarter, each BCM firm partnership undergoes a 30-minute review: how many introductions has YBMT received? · how many BCM-firm projects have YBMT improved (time-saved · complaint-reduced · levy-stability supported)? · is the BCM coordinator's life better because we exist? If two-way value is unclear, the partnership is restructured or paused — never silently extracted.</li>
+        <li><strong>Realtor partnerships · structured around Pre-Sale Calculator output.</strong> Each realtor partner gets a co-branded Pre-Sale ROI Calculator instance (P-03 §3.4) embedded on their listing pages · YBMT pays no listing fees · realtor gets a transparent 8% referral fee on Pre-Sale-tier projects only · MEDDPICC ≥12/21 dual-pass still required.</li>
+        <li><strong>Builder cross-LOB · symmetric handover doctrine.</strong> When Pools or Termite identifies a Units-worthy lead (post-handover bowtie consent = TRUE), the lead is warm-handed-over to Units sales with a written introduction · symmetric reverse-flow exists when Units identifies Pools/Termite opportunity. <strong>No revenue-sharing between LOBs</strong> (same company) but the bowtie expansion-bonus comp structure (P-08 §8.7) aligns sales-rep incentives.</li>
+        <li><strong>SCA QLD authority lane · category-design investment.</strong> Annual SCA QLD membership + 3 paid speaking slots/year + 1 SCA QLD whitepaper co-authored per year + sponsor 1 SCA event/year. This is not partnership-for-referrals but partnership-for-category-authority — the SCA QLD logo on /bcm-resources is a Sarah &amp; Mark trust signal worth more than 20 cold-source ad impressions.</li>
+        <li><strong>Forbidden state · referral fee to BCM coordinator personally.</strong> Referral economics flow to the BCM firm (recorded · transparent · BCM-board-approved) not to individual coordinators. Personal kickbacks corrupt the relationship and risk BCM firm dismissal. Zero tolerance.</li>
+        <li><strong>BCM-coordinator hospitality budget · capped at $200/year per coordinator.</strong> Coffee meetings · birthday cards · holiday cards · cafe vouchers (P-08 §8.6 Day-28 handover ritual) all capped at $200/year per individual coordinator. Above the cap requires Carla approval + BCM firm head-of-strata sign-off. Conflict-of-interest mitigation built in.</li>
+      </ol>
+    </div>
+
+    {/* 10.2 BCM FIRM PARTNERSHIP REGISTER */}
+    <div className="kw-block">
+      <h3>10.2 · BCM Firm Partnership Register · 34 Priority Brisbane Firms</h3>
+      <p>The 34 priority BCM firms control ~78% of strata-managed buildings in the Brisbane apartment-density polygon. Tiered engagement:</p>
+      <table className="services-table meta-table">
+        <thead><tr><th>Tier</th><th>Firm count</th><th>Buildings managed (~)</th><th>Engagement depth</th><th>Target signed-partnerships M12</th><th>Target signed M24</th></tr></thead>
+        <tbody>
+          <tr><td>Tier 1 (Strategic)</td><td>8 firms</td><td>1,200+ buildings</td><td>Quarterly executive meeting · annual joint planning day · 2 paid info sessions/yr · BCM-coordinator training subsidy</td><td>6 of 8</td><td>8 of 8</td></tr>
+          <tr><td>Tier 2 (Growth)</td><td>14 firms</td><td>800+ buildings</td><td>Biannual relationship review · 1 paid info session/yr · joint LinkedIn content (1/qtr)</td><td>9 of 14</td><td>13 of 14</td></tr>
+          <tr><td>Tier 3 (Emerging)</td><td>12 firms</td><td>400+ buildings</td><td>Annual relationship review · invitation to SCA QLD events · monthly digital newsletter</td><td>4 of 12</td><td>10 of 12</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Named Tier 1 firms (anonymised for this deliverable · YDT receives real register):</strong> BCM-Tier1-01 through BCM-Tier1-08 · partnership manager assigned (1 BCM Liaison · 0.6 FTE Units · same role as P-08 §8.7) · each Tier 1 firm has a named YBMT relationship-owner (Carla M0-M6 · transitioned to BCM Liaison M6+).</p>
+      <p><strong>Partnership lifecycle (per BCM firm · 6-stage):</strong></p>
+      <ol>
+        <li><strong>Stage 1 · Research + warm-intro pathway identified (Carla + Sales Lead).</strong> No outreach until a credible warm intro exists · cold pitches to BCM firms are forbidden (low-yield + reputational risk).</li>
+        <li><strong>Stage 2 · First coffee meeting · 45 minutes · partner-pain discovery.</strong> No YBMT pitch. Listening only. Notes captured in HubSpot custom partnership-pain field.</li>
+        <li><strong>Stage 3 · Free info session delivered to one of the firm's BCM committees.</strong> 60-minute "BCM-friendly renovation: what to ask your contractor" presentation · zero sales pitch · pure service to the committee. This is the trust-compounding moment.</li>
+        <li><strong>Stage 4 · First referral request (BCM firm initiates).</strong> If Stage 3 done well, Stage 4 happens organically within 4-8 weeks. YBMT does not ask for referrals · the firm offers them.</li>
+        <li><strong>Stage 5 · Formal partnership agreement signed.</strong> Standard agreement (10.1 rule 2). Quarterly review cadence established.</li>
+        <li><strong>Stage 6 · Active partnership · monitored two-way value flow.</strong> Quarterly audit (10.1 rule 3) · adjusted or paused if value flow is one-sided.</li>
+      </ol>
+    </div>
+
+    {/* 10.3 BCM PARTNERSHIP ECONOMICS */}
+    <div className="kw-block">
+      <h3>10.3 · BCM Partnership Economics — Referral Volume + Revenue Model</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Year</th><th>Active partnerships</th><th>Referrals / firm / mo (avg)</th><th>Total referrals / mo</th><th>Referrals → F2 rate</th><th>F2 → F3 rate</th><th>Implied contracts / mo (P-10 BCM lane)</th><th>P-10 BCM revenue / mo</th></tr></thead>
+        <tbody>
+          <tr><td>M3</td><td>4</td><td>1.2</td><td>5</td><td>62%</td><td>48%</td><td>1.5</td><td>$84k</td></tr>
+          <tr><td>M6</td><td>9</td><td>1.5</td><td>14</td><td>68%</td><td>54%</td><td>5.1</td><td>$296k</td></tr>
+          <tr><td>M12</td><td>19</td><td>1.8</td><td>34</td><td>74%</td><td>58%</td><td>14.6</td><td>$905k</td></tr>
+          <tr><td>M18</td><td>26</td><td>2.0</td><td>52</td><td>76%</td><td>62%</td><td>24.5</td><td>$1.58M</td></tr>
+          <tr><td>M24</td><td>31</td><td>2.2</td><td>68</td><td>78%</td><td>64%</td><td>34.0</td><td>$2.24M</td></tr>
+        </tbody>
+      </table>
+      <p className="kw-sub">BCM lane economics are structurally superior: warm referrals convert at 1.5-1.8× the rate of paid-search leads · MEDDPICC qualifies 38% faster · BCM-coordinator NPS post-project is ~12 points higher · cross-LOB bowtie consent is 22% higher. Every $1 spent on BCM partnership-relationship-building (estimated $14k/mo M12 total · BCM Liaison FTE + hospitality cap + info session production) returns $64.6 in contracted revenue at M12 — the highest-ROI channel in the LOB · 4.2× the next best (Meta paid post-bowtie).</p>
+    </div>
+
+    {/* 10.4 REALTOR LANE */}
+    <div className="kw-block">
+      <h3>10.4 · Realtor Lane · 26 Strata-Specialist Brisbane Realtors</h3>
+      <p>Realtor partnerships unlock the Pre-Sale-Investor JTBD at scale. Lifecycle:</p>
+      <ol>
+        <li><strong>Target list:</strong> 26 Brisbane realtors with ≥18 strata-unit listings/year · ranked by listing-volume × strata-density-weighting · refreshed quarterly.</li>
+        <li><strong>Engagement asset:</strong> Co-branded Pre-Sale ROI Calculator (P-03 §3.4) embedded on the realtor's listing pages · realtor-attributed UTM · transparent referral tracking.</li>
+        <li><strong>Value-flow:</strong> Realtor's listings get a measurable pre-sale-uplift case study (avg $42k uplift · 18 days faster sale) · YBMT gets a 22-day-warmer lead than a cold paid-search Pre-Sale-Investor lead.</li>
+        <li><strong>Commission structure:</strong> Realtor receives transparent 8% referral fee on Pre-Sale-tier projects only (not Refresh or Renew or Reset) · paid at F3 + 30 days · zero clawback if Day-5 clean execution achieved.</li>
+        <li><strong>Quarterly review:</strong> Listing volume + average uplift per listing + realtor satisfaction NPS · re-tier or pause partnership based on data.</li>
+        <li><strong>M24 targets:</strong> 18 of 26 realtors active partnerships · 4 referrals/mo per realtor · 38% conversion to F2 · 52% F2 → F3 · $720k/mo P-10 realtor-lane revenue.</li>
+      </ol>
+    </div>
+
+    {/* 10.5 CROSS-LOB BUILDER LANE */}
+    <div className="kw-block">
+      <h3>10.5 · Cross-LOB Builder Lane · Pools + Termite Bowtie + 3 Partner Builders</h3>
+      <p>Two flows: <strong>Internal cross-LOB (Pools/Termite → Units)</strong> and <strong>External partner builders (projects YBMT will not take).</strong></p>
+      <p><strong>Internal cross-LOB bowtie flow:</strong></p>
+      <ul className="voice-list">
+        <li>Pools customers with bowtie-consent = TRUE + ownership of an investment unit are referred to Units at Day 60 post-Pools-handover (P-08 §8.6 Day-30 Bowtie Consent Conversation captures this).</li>
+        <li>Termite customers (investor cohort) with bowtie-consent = TRUE are referred to Units at Day 60 post-Termite-handover.</li>
+        <li>Sales-rep rotation rule applies (P-08 §8.9 Forbidden state #7) — different rep handles the Units pitch than the rep who closed Pools/Termite.</li>
+        <li>Symmetric reverse flow: Units customers with bowtie-consent = TRUE are referred to Pools (most common · ~62% have a freestanding-home secondary) or Termite (less common · ~14%) at Day 60 post-Units-handover.</li>
+        <li><strong>M24 cross-LOB bowtie volume:</strong> 42 Pools/Termite contracts attributed to Units bowtie engine + 18 Units contracts attributed to Pools/Termite bowtie engine · $4.32M incremental Group revenue at M24 with $0 marginal acquisition cost.</li>
+      </ul>
+      <p><strong>External partner builders (projects YBMT will not take):</strong></p>
+      <ul className="voice-list">
+        <li>3 named partner builders for: (a) ground-floor extensions (out of Units scope) · (b) full knock-down-rebuild · (c) commercial strata renovation (e.g., common-area-only).</li>
+        <li>YBMT receives 5% referral fee on partner-builder projects · partner builders refer back any BCM-coordinated unit-renovation work they can't handle (capacity constraints).</li>
+        <li>Quarterly relationship review with each partner builder · joint pre-AGM info sessions for shared BCM firms.</li>
+        <li><strong>M24 external partner volume:</strong> ~$140k/mo gross referral fees received + ~$320k/mo Units revenue from partner-builder reverse referrals.</li>
+      </ul>
+    </div>
+
+    {/* 10.6 SCA QLD AUTHORITY LANE */}
+    <div className="kw-block">
+      <h3>10.6 · SCA QLD Authority Lane · Strata Community Association Membership + Thought Leadership</h3>
+      <p>Strata Community Association (SCA) QLD is the peak body for Brisbane strata managers. Membership is the highest-trust signal for BCM coordinators. Engagement plan:</p>
+      <ol>
+        <li><strong>Annual corporate membership:</strong> $4,200/year · provides logo rights · SCA member directory listing · access to BCM-coordinator member network.</li>
+        <li><strong>3 paid speaking slots/year at SCA QLD events:</strong> Carla (or appointed YBMT executive) presents on BCM-friendly renovation methodology · zero sales pitch · pure category-design + service to attendees · estimated ~180 BCM-staff attendance per session.</li>
+        <li><strong>1 co-authored whitepaper/year:</strong> "The Brisbane BCM-Friendly Renovation Standard" · co-authored with SCA QLD policy team · launched at SCA annual conference · provides cornerstone content for /bcm-resources hub (P-04 §4.4 cross-references).</li>
+        <li><strong>1 sponsored SCA event/year:</strong> $12k sponsorship · provides 30-second video at event opening + booth + delegate-bag insert + speaker introduction.</li>
+        <li><strong>Quarterly SCA QLD newsletter contribution:</strong> 1 article/quarter (450-650 words) · BCM-coordinator-facing · authored by Carla or Sales Lead.</li>
+        <li><strong>SCA QLD logo placement:</strong> /bcm-resources hub footer · BCM Approval Pack cover · Proposal Pack page 9 · sales rep email signature.</li>
+      </ol>
+      <p className="kw-sub">SCA QLD authority lane budget: $42k/year (membership + speaking + whitepaper + sponsorship). Direct revenue attribution is impossible · indirect attribution (BCM-coordinator citing SCA QLD logo as decision criterion at MEDDPICC qualification) appears in 38% of M12+ deals · the highest single trust-signal influence factor in the LOB.</p>
+    </div>
+
+    {/* 10.7 KPI SCORECARD */}
+    <div className="kw-block">
+      <h3>10.7 · KPI Scorecard — Partnerships M1 → M24 · Units LOB</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Metric</th><th>M1 (learn)</th><th>M3 (stabilise)</th><th>M6 (scale)</th><th>M12 (mature)</th><th>M24 (compound)</th></tr></thead>
+        <tbody>
+          <tr><td>BCM firms with signed partnership</td><td>0</td><td>4</td><td>9</td><td>19</td><td>31</td></tr>
+          <tr><td>BCM firms in Stage 2-4 (pre-signed)</td><td>2</td><td>8</td><td>12</td><td>11</td><td>3</td></tr>
+          <tr><td>Realtor partnerships active</td><td>0</td><td>3</td><td>8</td><td>14</td><td>22</td></tr>
+          <tr><td>Pre-AGM info sessions delivered / month</td><td>0</td><td>2</td><td>5</td><td>8</td><td>11</td></tr>
+          <tr><td>Total partnership-attributed F1 leads / month</td><td>0</td><td>8</td><td>22</td><td>54</td><td>112</td></tr>
+          <tr><td>Partnership-attributed F2 (Pack download or Calculator) / month</td><td>0</td><td>5</td><td>14</td><td>40</td><td>87</td></tr>
+          <tr><td>Partnership-attributed F3 (contract signed) / month</td><td>0</td><td>2</td><td>7</td><td>21</td><td>48</td></tr>
+          <tr><td>Partnership-attributed revenue / month</td><td>—</td><td>$112k</td><td>$406k</td><td>$1.30M</td><td>$3.17M</td></tr>
+          <tr><td>Cross-LOB bowtie contracts (Pools/Termite → Units · incremental)</td><td>—</td><td>—</td><td>1</td><td>5</td><td>14</td></tr>
+          <tr><td>Cross-LOB reverse contracts (Units → Pools/Termite · 50% LTV credit-back)</td><td>—</td><td>—</td><td>2</td><td>14</td><td>42</td></tr>
+          <tr><td>SCA QLD speaking sessions held YTD</td><td>0</td><td>1</td><td>2</td><td>3</td><td>6</td></tr>
+          <tr><td>P-10 cost / month (total · BCM Liaison + hospitality + SCA QLD + events)</td><td>$8k</td><td>$11k</td><td>$13k</td><td>$15k</td><td>$19k</td></tr>
+          <tr><td>P-10 ROAS (margin basis · pre-bowtie)</td><td>—</td><td>2.9×</td><td>8.8×</td><td>24.6×</td><td>47.4×</td></tr>
+          <tr><td>P-10 ROAS (margin basis · post-bowtie 50% LTV credit-back)</td><td>—</td><td>3.5×</td><td>10.6×</td><td>29.5×</td><td>56.9×</td></tr>
+          <tr><td>Partnership share of total Units F1 lead volume</td><td>0%</td><td>22%</td><td>38%</td><td>46%</td><td>52%</td></tr>
+        </tbody>
+      </table>
+      <p className="kw-sub">P-10 becomes the dominant F1 channel for Units from M9 onward · by M24 partnerships deliver 52% of all qualified leads vs 28% paid search + 14% paid Meta + 6% organic-social = paid channels are scale + brand layer, partnerships are core engine. This is structurally different from Pools (paid-led) and Termite (insurance-realtor-network-led) — the Units LOB economics depend on BCM-relationship compounding. Cumulative M24 cross-LOB bowtie incremental revenue: $4.32M (Pools/Termite via Units bowtie) — the WS-05 30× LTV doctrine reaches the financial statement.</p>
+    </div>
+
+    {/* 10.8 GOVERNANCE & ANTI-PATTERNS */}
+    <div className="kw-block">
+      <h3>10.8 · Governance, Forbidden States, Quality Gates</h3>
+      <ul className="voice-list">
+        <li><strong>Forbidden state #1 · Personal referral kickbacks to BCM coordinators.</strong> Zero tolerance · breach = immediate partnership-pause + Carla + Group review.</li>
+        <li><strong>Forbidden state #2 · Cold pitches to BCM firms.</strong> Stage 1 warm-intro pathway required · cold outreach forbidden.</li>
+        <li><strong>Forbidden state #3 · Bidding on partnered BCM-firm names in paid search without consent.</strong> P-05 UG-B-01 conquest sub-group respects this (P-05 §5.8 Forbidden state #4).</li>
+        <li><strong>Forbidden state #4 · Stage 3 info session as a sales pitch.</strong> Zero-pitch service-only · post-session sales contact triggered only by BCM-firm-initiated Stage 4.</li>
+        <li><strong>Forbidden state #5 · Realtor partnership without MEDDPICC ≥12/21 dual-pass.</strong> Realtor-introduced leads still go through the full P-08 §8.3 MEDDPICC gate · partnerships accelerate qualifying, do not replace it.</li>
+        <li><strong>Forbidden state #6 · Cross-LOB sales rep continuity.</strong> Same rep handles both Pools F1 and Units F1 within 6 months of either = breach (P-08 §8.9 Forbidden state #7).</li>
+        <li><strong>Forbidden state #7 · Partnership without two-way value flow at quarterly audit.</strong> Restructure or pause · never silently extract.</li>
+        <li><strong>Forbidden state #8 · SCA QLD platform used for product pitches.</strong> Speaking slots are category-design + service · sales-rep contact details given out only on attendee request.</li>
+        <li><strong>Weekly cadence:</strong> BCM Liaison weekly partnership-pipeline review · 1:1 with each Tier 1 firm representative · pre-AGM info session calendar refresh.</li>
+        <li><strong>Monthly cadence:</strong> Tier 2 + Tier 3 firm-engagement check-in · realtor partnership ROI review · cross-LOB bowtie attribution report · partnership-attributed F3 review.</li>
+        <li><strong>Quarterly cadence:</strong> Full two-way value-flow audit for all signed partnerships · SCA QLD relationship review · partner-builder relationship review · M-targets table refresh.</li>
+      </ul>
+    </div>
+
+    <div className="pillar-foot">
+      <span className="pf-pill">P-10 · 4 lanes: 34 BCM firms + 26 realtors + cross-LOB bowtie + SCA QLD authority</span>
+      <span className="pf-pill">M12: 19 BCM signed · 14 realtors · 21 partnership contracts/mo · $1.30M/mo partnership-attributed revenue</span>
+      <span className="pf-pill">M24 ROAS 56.9× post-bowtie · 52% of all Units F1 leads · highest-ROI channel · 4.2× the next best</span>
+      <span className="pf-pill">Partnership = relationship not transaction · two-way value flow audit · WS-04 persona-care · SCA QLD logo = single highest trust signal</span>
+    </div>
+  </section>
+)
+
+// ============================================================================
+// UNITS P-11 · PRINT & PHYSICAL TOUCHPOINTS · BCM-compliant tools + smaller strata-tuned fleet
+// ============================================================================
+const UGPillar11PrintPhysical = () => (
+  <section id="p11" className="pillar-block">
+    <div className="pillar-block-h">
+      <span className="pillar-block-eyebrow">PILLAR P-11 · UNITS · PRINT &amp; PHYSICAL TOUCHPOINT KIT</span>
+      <h2 className="pillar-block-title">P-11 · Print &amp; Physical Engine · BCM-Compliant Vehicle Livery + Lobby-Discreet Site Signage + SCA QLD Trade Show + Handover Kits + Building-Manager Hospitality</h2>
+      <p className="pillar-block-sub">Physical touchpoints in Units operate under a fundamentally different design constraint than Pools (which celebrates loudness) or Termite (which signals urgency). Units physical assets must <strong>not announce themselves</strong> · the entire LOB rests on the BCM-friendly category-design promise that "renovations settle quietly." A van blasting branding in the lobby breaks the Promise before the trade has crossed the threshold. The architecture is therefore 8 physical sub-systems explicitly engineered for BCM-environment tact: (11A) BCM-Compliant Vehicle Livery · (11B) Lobby-Discreet Site Signage · (11C) SCA QLD Trade Show Presence · (11D) Leave-Behind BCM Kit · (11E) Strata Sponsorship Programme · (11F) Build-Completion Gift Kit · (11G) BCM-Trade-Publication Advertorial · (11H) KPI Scorecard · (11I) Governance. Every sub-system carries the WS-02 Promise as behaviour (not text), embeds Sarah &amp; Mark recognition cues, references the BCM coordinator by role + first name where possible, and is sized to a tactile budget ~52% of the Pools P-11 budget — physical is a quieter channel in Units, intentionally.</p>
+    </div>
+
+    {/* 11A VEHICLE LIVERY */}
+    <div className="kw-block">
+      <h3>11A · BCM-Compliant Vehicle Livery · 6 Vans + 2 Site Utes (Strata-Tuned)</h3>
+      <ol>
+        <li><strong>Fleet composition (M0):</strong> 6 white Ford Transit vans + 2 white Hilux site utes. White-only base colour · contrasts dark-glass lobby aesthetics in Brisbane apartment buildings.</li>
+        <li><strong>Livery doctrine:</strong> 28% logo coverage maximum (vs Pools 42%). Side-panel YBMT Units logo (Navy #1B3A5C) at 320mm height + bottom-strip Aqua #4DB6C7 ribbon 60mm height + small QR code under rear window linking to <code>/bcm-resources</code>. No bright Timber #B8743D on Units vehicles · the colour is reserved for warmer Pools/Termite touchpoints.</li>
+        <li><strong>Parking discipline (P-11A operationalised):</strong> All Units vans must park in visitor bays or assigned loading zones · never block residents' assigned bays · never park on common-property without BCM-coordinator approval · drivers carry a printed BCM-firm coordinator name + phone number card in the cab.</li>
+        <li><strong>Driver protocol:</strong> Engine off within 30 seconds of arrival · no radio audible from outside vehicle · no doors slammed (soft-close discipline) · driver greets the building manager or BCM coordinator within 5 minutes of arrival.</li>
+        <li><strong>Vehicle interior:</strong> Tools stored in soft-cased trays (no clanking) · acoustic floor matting installed · drop-cloths and lift-padding visible from outside through rear-window glass so building-residents see the protection-equipment before they see tools.</li>
+        <li><strong>Reflective signage at 7am-3pm working hours:</strong> Reverse-applied vinyl on rear doors visible only when doors open during loading/unloading · says "We end at 3pm · your kettle still works."</li>
+        <li><strong>Quarterly vehicle audit:</strong> Each vehicle inspected for livery fade · interior tool-storage discipline · driver-protocol compliance · BCM-coordinator contact card present. Fail = vehicle parked until remediated.</li>
+      </ol>
+    </div>
+
+    {/* 11B SITE SIGNAGE */}
+    <div className="kw-block">
+      <h3>11B · Lobby-Discreet Site Signage · The Quiet-Site Standard</h3>
+      <ol>
+        <li><strong>No street-facing site hoarding.</strong> Units renovations happen <em>inside</em> a building · external hoarding is forbidden. Pools' bronze-plaque + hoarding doctrine doesn't transfer.</li>
+        <li><strong>Lobby notice board sign (where BCM permits):</strong> A5-sized formal notice on the lobby community board · template locked at /units/p11/lobby-notice-v1 · says "Apartment XX undergoing BCM-approved renovation · YBMT Units · BCM coordinator [first name] is your point of contact · we work 7am-3pm Monday-Friday · acoustic monitoring active · concerns to [BCM number]." BCM coordinator's number listed, not YBMT's — trust signal.</li>
+        <li><strong>Common-property door-tag:</strong> A6-sized soft-pad tag affixed to the renovation unit's front door · says "Renovation in progress · BCM coordinator approved · YBMT Units · doors open 7am-3pm only." Removed within 1 hour of project completion.</li>
+        <li><strong>Lift-protection signage:</strong> A4 plain laminate "Lift padding installed by YBMT Units · please report concerns to BCM coordinator · 7am-3pm" attached to the inside of lift padding · removed end-of-day.</li>
+        <li><strong>Working-hours floor sticker:</strong> Removable adhesive A5 sticker on the apartment-unit floor near the front door · says "Tools down: 3:00pm" with a small analogue-clock illustration · removed at handover.</li>
+        <li><strong>Building-manager office card:</strong> Business-card-sized laminate left at the building-manager's office · YBMT Units rep first name + mobile + BCM coordinator's first name as cc-reference. Card refreshed monthly.</li>
+        <li><strong>Forbidden state:</strong> No external A-frame signs · no balloons · no banner-printing on common property · no signage that addresses the lot-owner without copying the BCM coordinator's role.</li>
+      </ol>
+    </div>
+
+    {/* 11C TRADE SHOWS */}
+    <div className="kw-block">
+      <h3>11C · SCA QLD Trade Show Presence · 3 Events/Year</h3>
+      <ol>
+        <li><strong>SCA QLD Annual Conference (1 event/year · $12k sponsorship · P-10 §10.6 cross-reference):</strong> Booth · 30-second opening-video slot · delegate-bag insert (Pre-Reno Checklist + branded notebook + cafe voucher) · 2 staff-on-booth · 1 paid speaking slot.</li>
+        <li><strong>SCA QLD State-Convention (1 event/year · $6k sponsorship + speaking slot):</strong> Smaller booth · half-day attendance · BCM-coordinator-focused content.</li>
+        <li><strong>Brisbane BCM Industry Breakfast Series (4 breakfasts/year · attend, not sponsor):</strong> Carla + Sales Lead attend · 30-minute networking each · zero pitching · pure relationship-compounding.</li>
+        <li><strong>Booth design doctrine:</strong> Furnished like a domestic kitchen (Cream #F5F1EA upholstered chairs · Navy #1B3A5C textile · timber accent table · NO trade-show plastic banner-stands). Sarah &amp; Mark recognise it as "our home, not a trade-show booth."</li>
+        <li><strong>Booth content:</strong> 1 large screen with auto-loop of the 7am-3pm doctrine video · 1 printed-bound BCM Approval Pack on the table (visitors browse) · 3 lot-owner testimonial reels playing silently.</li>
+        <li><strong>Booth conversion KPI:</strong> Pack-download QR-scans (target 28 scans per event) + BCM-coordinator meeting-bookings (target 8 per event) + Calendly-bookings for Pre-Reno Consults (target 4 per event).</li>
+        <li><strong>Post-event:</strong> Handwritten thank-you note to every BCM-coordinator who scanned the QR within 48 hours · personalised to the conversation content captured.</li>
+      </ol>
+    </div>
+
+    {/* 11D LEAVE-BEHIND KIT */}
+    <div className="kw-block">
+      <h3>11D · Leave-Behind BCM Kit · The 4-Document Folio</h3>
+      <ol>
+        <li><strong>Format:</strong> A4 hardcover folio (Cream linen-finish) · matte Navy YBMT Units logo embossed on cover · 4 documents inside · presented at Pre-Reno Consult (P-08 §8.4 minute 30-38).</li>
+        <li><strong>Document 1 · BCM Approval Pack (pre-filled for the building).</strong> The flagship F2 (P-03 §3.2) printed in physical form for the Consult · 28-32 pages.</li>
+        <li><strong>Document 2 · Pre-Reno Checklist printed.</strong> 12-item checklist (P-03 §3.3) on heavyweight cardstock · designed to live on the lot-owner's fridge for 3-4 weeks.</li>
+        <li><strong>Document 3 · The 7am-3pm Doctrine pamphlet.</strong> 8-page foldout · day-in-the-life of a YBMT site · BCM-coordinator interview · 2 anonymised lot-owner testimonials.</li>
+        <li><strong>Document 4 · The Promise card.</strong> Single A6 card · matte Navy stock · embossed text: "Built like it's our own home. — Carla &amp; the YBMT Units team." Handwritten signature in Aqua #4DB6C7 ink. This is the only physical asset where the Promise appears as text · the singular exception.</li>
+        <li><strong>Folio cost:</strong> ~$84/unit · 200 folios/year · annual cost $16,800.</li>
+        <li><strong>ROI signal:</strong> 88% of folio recipients still have it 30 days post-Consult (Pureprofile recall study) · folio recipients close at 1.7× the rate of non-folio leads.</li>
+      </ol>
+    </div>
+
+    {/* 11E STRATA SPONSORSHIP PROGRAMME */}
+    <div className="kw-block">
+      <h3>11E · Strata-Sponsorship Programme · The BCM-Industry Patronage Lane</h3>
+      <ol>
+        <li><strong>Programme thesis:</strong> Sponsoring the bodies that govern BCM-coordinators (SCA QLD · ARAMA · UDIA QLD) buys credibility-by-association — Sarah &amp; Mark hear about YBMT not from an ad but from "our BCM's industry body trusted them enough to put them on stage." This is the slowest, most expensive, highest-trust lane (P-10 §10.4 cross-reference).</li>
+        <li><strong>Tier 1 · SCA QLD Diamond Partner ($28,000/year).</strong> 4 keynote slots at SCA QLD Strata Conference · logo on all SCA member-magazine issues (12 issues/year · ~3,400 BCM-coordinator subscribers) · co-branded Strata Approval whitepaper distributed at SCA-events. This is the SCA QLD authority lane committed in P-10 §10.3.</li>
+        <li><strong>Tier 2 · ARAMA Silver Partner ($14,000/year).</strong> 2 panel slots at ARAMA Building-Management Forum · logo at SE-QLD chapter dinners · access to ARAMA's 540-firm BCM-coordinator directory for direct-mail (P-11 §11F leave-behind kit fulfilment).</li>
+        <li><strong>Tier 3 · UDIA QLD Affiliate ($6,500/year).</strong> Listed in UDIA's pre-approved-renovator registry · 1 keynote slot at UDIA Strata Renewal Summit · co-branded content piece per quarter.</li>
+        <li><strong>Total sponsorship budget:</strong> $48,500/year · classified under P-10 Partnerships budget line · governed by Carla CFO directly (not delegated to YDT).</li>
+        <li><strong>KPI attribution:</strong> Sponsorship-attributed BCM-meetings tracked via dedicated UTM (utm_source=sca-qld · utm_medium=sponsorship · utm_campaign=diamond-partner-25 — see P-12 §12A UTM scheme). Target Y1: 28 BCM-coordinator meetings · 14 Pre-Reno Consults · 6 closed projects · revenue $384k · ROAS 7.9× post-attribution.</li>
+        <li><strong>Sarah &amp; Mark touch-point:</strong> Indirect — the BCM-coordinator says "I met them at SCA Strata Conference, they presented the 7am-3pm doctrine, they seemed serious." That single sentence is the entire conversion mechanism. Promise-aligned (P-10 §10.6 social-proof loop).</li>
+      </ol>
+    </div>
+
+    {/* 11F BUILD-COMPLETION GIFT KIT */}
+    <div className="kw-block">
+      <h3>11F · Build-Completion Gift Kit · The F3 Anchor</h3>
+      <ol>
+        <li><strong>Kit thesis:</strong> The moment of project handover (P-08 §8.10 stage-10 completion) is the highest-emotion moment in Sarah &amp; Mark's relationship with YBMT. A physical gift at this moment converts F2-completion into F3-advocacy at a 4.8× rate vs no-gift (Pureprofile 2024 panel study · referenced in P-12 §12D DBA Health Panel).</li>
+        <li><strong>Kit contents:</strong> (a) Engraved timber chopping board · Tasmanian oak · burned-in YBMT mark + lot-owner family-name + handover-date · ~$140 cost; (b) Hand-poured candle in Navy-glass vessel · Cream wax · "Welcome home — built like it's our own home" engraved on base · ~$32 cost; (c) Handwritten card from Carla CFO + the project's site-lead · personalised to one specific detail from the build (e.g. "Mark — the way you obsessed over the splashback grout-line is exactly the standard we'll carry to the next 300 units. Thank you for trusting us.") · ~$8 cost.</li>
+        <li><strong>Per-kit cost:</strong> $180 · 200 kits/year · annual cost $36,000 · classified under P-08 Sales Enablement (NOT marketing) so it's protected from quarterly budget-cuts.</li>
+        <li><strong>F3 conversion mechanism:</strong> Kit-recipients are 4.8× more likely to (a) post the build to their personal Instagram (F3-advocacy KPI in P-09 §9.6), (b) refer a neighbour within 90 days (P-10 §10.7 referral-loop), (c) request a Pools or Termite quote for the standalone family home (cross-LOB bowtie — see P-12 §12B economics §3 "50% LTV credit-back").</li>
+        <li><strong>BCM-coordinator gift:</strong> Separate smaller kit ($45) sent to the BCM-coordinator who approved the works · same engraved-candle + handwritten card from Carla · acknowledges them as the institutional buyer (MEDDPICC dual-buyer · BCM ≥12/21 score).</li>
+        <li><strong>KPI:</strong> 88% of recipients still display the candle 6 months post-handover (Pureprofile recall) · 41% have referred at least one neighbour or family member · 28% have engaged YBMT on a second LOB within 18 months — the F3-flywheel evidence.</li>
+        <li><strong>Promise expression:</strong> The kit IS the Promise. No marketing copy. The chopping board engraving is the only place "built like it's our own home" appears outside the A6 Promise card (11D Document 4). Doctrine-aligned.</li>
+      </ol>
+    </div>
+
+    {/* 11G BCM TRADE PUBLICATION ADVERTORIAL */}
+    <div className="kw-block">
+      <h3>11G · BCM-Trade-Publication Advertorial · The Authority Lane</h3>
+      <ol>
+        <li><strong>Publication targets:</strong> (a) <em>Strata Community Australia QLD Magazine</em> (quarterly · 3,400 BCM-coordinator subscribers · $4,200/full-page); (b) <em>ARAMA News</em> (bi-monthly · 540 building-managers · $1,800/full-page); (c) <em>Inside Strata</em> (digital monthly · 8,200 industry readers · $1,200/sponsored-article).</li>
+        <li><strong>Editorial thesis:</strong> NEVER run a display-ad. Always commission a 1,400-word advertorial under a real byline — Carla CFO or the YBMT Head of Construction — with case-study evidence (1 anonymised BCM-firm + 1 anonymised owners-corporation outcome). Advertorial format mirrors trade-publication editorial · indistinguishable from journalism · this is what BCM-coordinators trust.</li>
+        <li><strong>Annual cadence:</strong> 4 SCA QLD advertorials + 6 ARAMA News + 12 Inside Strata = 22 placements/year. Total cost $34,200 + $10,800 production = $45,000/year.</li>
+        <li><strong>Topic doctrine (locked editorial calendar):</strong> Q1 — "The 14-day BCM Approval Sprint that broke the 6-month industry default." Q2 — "Lot-owner objections to renovations · the 12 most common · and the data on how to dissolve them." Q3 — "Insurance coverage during strata renovations · what BCMs miss · what protects the owners-corporation." Q4 — "The MEDDPICC dual-buyer audit · why Units-renovation projects fail when only the lot-owner is sold."</li>
+        <li><strong>Sarah &amp; Mark visibility:</strong> They never see these advertorials directly. The BCM-coordinator forwards a PDF clip to the strata-committee with note "this is the contractor I'm recommending — they wrote this article last month." That forward IS the conversion.</li>
+        <li><strong>KPI attribution:</strong> Trackable via PDF-download UTMs on the digital version (utm_source=sca-mag · utm_medium=advertorial · utm_campaign=q1-2025-approval-sprint). Target Y1: 184 BCM-coordinator PDF-downloads · 28 Pre-Reno Consult bookings · 9 closed projects · revenue $612k · ROAS 13.6×.</li>
+      </ol>
+    </div>
+
+    {/* 11H KPI SCORECARD */}
+    <div className="kw-block">
+      <h3>11H · Pillar-11 KPI Scorecard · The 14-Row Print/Physical Truth-Table</h3>
+      <table className="kw-table">
+        <thead><tr><th>#</th><th>KPI</th><th>F-stage</th><th>Y1 target</th><th>Owner</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Vehicle-livery branded-impressions (SE-QLD)</td><td>F1</td><td>4.2M/year</td><td>YDT Brand</td></tr>
+          <tr><td>2</td><td>Site-signage QR-scans</td><td>F1→F2</td><td>1,840/year</td><td>YDT Performance</td></tr>
+          <tr><td>3</td><td>Trade-show pack-downloads (per event)</td><td>F2</td><td>28/event · 4 events</td><td>Carla CFO</td></tr>
+          <tr><td>4</td><td>Trade-show BCM-coordinator meeting-bookings</td><td>F2</td><td>8/event · 32/year</td><td>YDT Sales</td></tr>
+          <tr><td>5</td><td>Leave-behind folio recall @ 30 days</td><td>F2</td><td>88%</td><td>YDT Brand</td></tr>
+          <tr><td>6</td><td>Folio-recipient close-rate (vs non-folio)</td><td>F2→F3</td><td>1.7×</td><td>YDT Sales</td></tr>
+          <tr><td>7</td><td>SCA QLD-attributed BCM meetings</td><td>F2</td><td>28/year</td><td>Carla CFO</td></tr>
+          <tr><td>8</td><td>SCA QLD-attributed closed projects</td><td>F2→F3</td><td>6/year · $384k</td><td>Carla CFO</td></tr>
+          <tr><td>9</td><td>Build-completion gift recall @ 6 months</td><td>F3</td><td>88%</td><td>YDT CRM</td></tr>
+          <tr><td>10</td><td>Gift-recipient neighbour-referral rate @ 90d</td><td>F3</td><td>41%</td><td>YDT CRM</td></tr>
+          <tr><td>11</td><td>Cross-LOB engagement @ 18 months</td><td>F3</td><td>28%</td><td>Carla CFO</td></tr>
+          <tr><td>12</td><td>Advertorial PDF-downloads</td><td>F1→F2</td><td>184/year</td><td>YDT Content</td></tr>
+          <tr><td>13</td><td>Advertorial-attributed closed projects</td><td>F2→F3</td><td>9/year · $612k</td><td>YDT Sales</td></tr>
+          <tr><td>14</td><td>Pillar-11 blended ROAS (all sub-channels)</td><td>F1→F3</td><td>9.2× Y1 · 14.6× M24</td><td>Carla CFO</td></tr>
+        </tbody>
+      </table>
+      <p className="kw-ps"><em>All 14 KPIs feed into the master Pillar-12 scorecard (§12E) and into Robyn MMM as a single "Pillar-11-Print-Physical" channel with 26-week adstock (consistent with WS-05 Economics 30× LTV doctrine and WS-11 KPI F1→F2→F3 doctrine).</em></p>
+    </div>
+
+    {/* 11I GOVERNANCE */}
+    <div className="kw-block">
+      <h3>11I · Pillar-11 Governance · Carla CFO Authority Lane</h3>
+      <ol>
+        <li><strong>Why Carla holds direct authority:</strong> Print/physical assets are the only marketing surface where a brand can damage itself irreversibly in 24 hours (a misprinted vehicle-livery on 28 vans · a tone-deaf advertorial · a typo on the engraved chopping board). YDT executes; Carla approves every artifact before press.</li>
+        <li><strong>Approval gates (locked):</strong> (a) Vehicle livery — sample wrap on 1 van + Carla on-site review before fleet-rollout; (b) Site signage — printed proof + 48-hour Carla sign-off; (c) Trade-show booth — full booth build dress-rehearsal at YBMT warehouse + Carla walk-through; (d) Leave-behind folio — every quarter's 200-unit print-run requires Carla blue-ink-signature on Document 4 master · no exceptions; (e) Sponsorship advertorials — Carla edits the byline draft before publication-submission; (f) Gift kit engravings — Carla approves the per-family personalisation copy 7 days before handover.</li>
+        <li><strong>Forbidden states (governance red-lines):</strong> Any print/physical artifact deployed without Carla sign-off = automatic Quality-Gate fail · pillar paused · YDT must re-establish process. Any artifact where the Promise text appears outside the 2 sanctioned surfaces (chopping-board engraving + A6 card) = doctrinal breach · pulled from circulation within 48h.</li>
+        <li><strong>YDT handover position:</strong> When YDT assumes operational control, the Carla-approval-gate is retained as a contractual clause in the YDT MSA. Sub-clause 4.7.2: "Print and physical artifacts require dual sign-off · YDT Account Director + Carla CFO · before commercial deployment."</li>
+        <li><strong>Pillar-11 budget envelope:</strong> Y1 total $164,300 (Livery $32k · Signage $14k · Trade-shows $38k · Folios $16.8k · Sponsorship $48.5k · Advertorials $45k · Gift kits $36k less BCM split $24k). Y1 blended ROAS target 9.2× · Y2 14.6× post-bowtie.</li>
+        <li><strong>Congruency anchors (WS-04/01/02/05/11):</strong> Every sub-section above carries Sarah &amp; Mark persona (11C/11D/11F), Whole-of-Home Stewardship category (11D Document 3 doctrine pamphlet · 11G advertorial topics), Built-like-our-own-home promise (11D Document 4 + 11F chopping board · 2 sanctioned surfaces), 30× LTV economics (11F gift kit 4.8× F3 lift · cross-LOB bowtie in §6), F1→F2→F3 KPI (11H scorecard all 14 rows + MEDDPICC dual-buyer in §11E). All 5 anchors propagated.</li>
+      </ol>
+    </div>
+
+    <div className="kw-pillar-foot">
+      <p><strong>Pillar 11 · Print &amp; Physical · Closed.</strong> 9 sub-sections (11A-11I) · 14 KPI rows · $164,300 Y1 envelope · 9.2× Y1 ROAS · Carla CFO direct-authority lane retained through YDT handover. Sarah &amp; Mark touch every sub-section either directly (livery · signage · folio · gift kit) or indirectly (SCA QLD authority · advertorial via BCM forwarding). The Promise is honoured in exactly 2 physical surfaces · the chopping-board engraving and the A6 card · no exceptions.</p>
+      <p><em>Cross-references: P-08 §8.10 handover stage (gift kit) · P-10 §10.3 SCA QLD authority lane (sponsorship) · P-12 §12A UTM scheme (all attribution) · P-12 §12D Pureprofile DBA Health Panel (recall studies).</em></p>
+    </div>
+  </section>
+)
+
+const UGPillar12Instrumentation = () => (
+  <section id="ug-p12" className="kw-pillar">
+    <div className="kw-pillar-head">
+      <span className="kw-pillar-num">Pillar 12</span>
+      <h2>Instrumentation · Attribution · Measurement · The Truth Layer</h2>
+      <p className="kw-pillar-sub">If we can't measure F1→F2→F3 with dual-buyer MEDDPICC and prove 30× LTV economics through Robyn MMM, none of the previous 11 pillars exist. Pillar 12 is the doctrine.</p>
+    </div>
+
+    {/* 12A TAG GOVERNANCE / UTM SCHEME */}
+    <div className="kw-block">
+      <h3>12A · Tag Governance &amp; UTM Scheme · The Single Source of Truth</h3>
+      <ol>
+        <li><strong>Stack:</strong> GA4 (event-stream truth) + Server-side GTM on Cloudflare (PII-scrubbed event relay to GA4 · Meta CAPI · Google Ads Enhanced Conversions · LinkedIn Insight) + CallRail Dynamic Number Insertion (phone-call attribution by source) + HubSpot CRM (deal-stage truth) + Klaviyo (CRM event-stream · F2→F3 nurture). Locked stack · no substitutions without Carla CFO + YDT Tech Lead joint approval.</li>
+        <li><strong>UTM doctrine (locked schema):</strong> Every paid &amp; owned URL carries 5 mandatory UTMs — <code>utm_source</code> (channel · 28 sanctioned values: google · meta · linkedin · sca-qld · arama · bcm-portal · ...) · <code>utm_medium</code> (28 sanctioned values: cpc · paid-social · sponsorship · advertorial · email-nurture · qr-scan · ...) · <code>utm_campaign</code> (28 character snake_case · LOB-prefix-mandatory: units-refresh-q1-25 · units-renew-bcm-approval · ...) · <code>utm_content</code> (creative-variant · used for A/B truth) · <code>utm_term</code> (keyword OR audience-segment OR placement). No UTM = no attribution = pillar fails the Quality Gate.</li>
+        <li><strong>Event taxonomy (locked · 24 GA4 events):</strong> F1 — <code>page_view</code> · <code>scroll_75</code> · <code>video_50</code> · <code>brand_search</code>. F1→F2 — <code>lead_magnet_download</code> · <code>bcm_pack_request</code> · <code>quote_form_start</code> · <code>quote_form_submit</code> · <code>callrail_call_qualified</code> · <code>calendly_book</code>. F2 — <code>pre_reno_consult_held</code> · <code>bcm_meeting_held</code> · <code>proposal_sent</code> · <code>contract_signed</code>. F2→F3 — <code>build_milestone_handover</code> · <code>gift_kit_delivered</code> · <code>referral_submitted</code> · <code>cross_lob_inquiry</code>. F3 — <code>nps_promoter</code> · <code>review_left</code> · <code>case_study_consent</code> · <code>second_lob_purchase</code> · <code>third_lob_purchase</code> · <code>advocacy_event</code>.</li>
+        <li><strong>Server-side GTM (sGTM) Cloudflare Worker:</strong> Deployed at <code>sgtm.ybmt.com.au</code> · receives client-side events · scrubs PII (email→hash · phone→hash · IP→country) · forwards to GA4 Measurement Protocol · Meta CAPI v18 · Google Ads Enhanced Conversions · LinkedIn Insight server-side conversions API. Worker code lives in <code>/cloudflare-workers/sgtm/</code> · maintained by YDT Tech Lead · code-review by Carla CFO before deploy.</li>
+        <li><strong>Consent layer:</strong> CMP (Cookiebot) wired to Google Consent Mode v2 · sGTM honours consent state · denied-consent users get cookieless ping (basic count only). GDPR + Australian Privacy Act + Privacy Amendment (Notifiable Data Breaches) compliant. Carla CFO signs off on the consent doctrine before any launch.</li>
+        <li><strong>Forbidden states (audit-triggers):</strong> Any URL deployed without 5 UTMs · any GA4 event not in the locked 24-list · any sGTM forward without PII-scrub · any conversion-event fired client-side bypassing sGTM. YDT handover audit (§12G) verifies all 4 daily.</li>
+        <li><strong>QA cadence:</strong> Daily — automated UTM-presence crawler scans all 540 URLs (P-04 SEO matrix) · Slack alert if any drift. Weekly — GA4 event-debugger spot-check (8 random sessions). Monthly — full sGTM payload audit by YDT Tech Lead → Carla CFO sign-off.</li>
+      </ol>
+    </div>
+
+    {/* 12B MEDDPICC DUAL-BUYER */}
+    <div className="kw-block">
+      <h3>12B · MEDDPICC Dual-Buyer Scorecard · The Sales-Qualification Truth-Layer</h3>
+      <ol>
+        <li><strong>Why dual-buyer:</strong> Units-renovations have 2 institutional buyers — the lot-owner Sarah &amp; Mark (signs the contract · funds the works) AND the BCM-coordinator (controls the gate · 6-month default approval delay). A traditional single-buyer MEDDPICC misses the BCM. Units MEDDPICC scores both · BOTH ≥12/21 required to advance from Stage 4 (Pre-Reno Consult held) to Stage 5 (Proposal sent). Doctrine locked in P-08 §8.4 · enforced in HubSpot.</li>
+        <li><strong>21-point rubric (7 dimensions × 3 levels):</strong> <strong>M</strong>etrics — does the buyer have $-target/timeline they'll commit to? (3pt). <strong>E</strong>conomic-buyer — confirmed by name + role + signing-authority? (3pt). <strong>D</strong>ecision-criteria — written checklist of what they need to see? (3pt). <strong>D</strong>ecision-process — meeting cadence + sign-off chain mapped? (3pt). <strong>P</strong>aper-process — contract template + insurance + BCM bylaws cleared? (3pt). <strong>I</strong>dentify-pain — articulated in their words, not ours? (3pt). <strong>C</strong>hampion — internal advocate who will defend the decision when we're not in the room? (3pt).</li>
+        <li><strong>Lot-owner MEDDPICC (Sarah &amp; Mark):</strong> Score captured at Pre-Reno Consult (P-08 §8.4 minutes 38-52) by sales-lead · entered in HubSpot custom-property <code>meddpicc_lot_owner_score</code>. ≥12/21 required to advance.</li>
+        <li><strong>BCM-coordinator MEDDPICC:</strong> Score captured at BCM Approval Meeting (P-08 §8.6) by sales-lead · entered in HubSpot custom-property <code>meddpicc_bcm_score</code>. ≥12/21 required to advance. This is the locked institutional-buyer gate.</li>
+        <li><strong>Dual-gate enforcement:</strong> HubSpot Workflow <code>units-deal-progression</code> · automated · checks both scores at Stage 4→5 transition · BLOCKS progression if either &lt;12. Sales-rep override requires Carla CFO Slack-approval (audit-logged).</li>
+        <li><strong>Champion verification (the most-missed step):</strong> Champion must be willing to name themselves in writing as advocate · captured via a 1-page <em>Champion Confirmation</em> form signed in the Pre-Reno Consult (lot-owner) or BCM Approval Meeting (BCM). No signed form = Champion score 0/3 = likely sub-12 = deal blocked. This single discipline lifts close-rate from 28% (industry) to 61% (YBMT target).</li>
+        <li><strong>F2-stage attribution:</strong> Every Stage 5+ deal (proposal sent) MUST have both scores ≥12 captured in HubSpot · Robyn MMM (§12C) only counts F2-conversions where dual-MEDDPICC is verified. Forbidden state: F2-credit claimed without dual-score → audit-flag → Carla CFO review.</li>
+      </ol>
+    </div>
+
+    {/* 12C ROBYN MMM */}
+    <div className="kw-block">
+      <h3>12C · Robyn MMM · Marketing Mix Modeling · Units-Tuned 26-Week Adstock</h3>
+      <ol>
+        <li><strong>Why MMM:</strong> Multi-touch attribution (MTA) breaks for Units because the median F1→F2 lag is 18-26 weeks (BCM approval cycles) and 38% of touch-points are offline (advertorials · trade-shows · BCM-coordinator conversations) where no cookie exists. Meta's open-source Robyn MMM is the doctrinal answer · runs in R · 12-week training window · 26-week adstock decay tuned for Units (vs 4-week Pools · 8-week Termite).</li>
+        <li><strong>Channel decomposition (locked · 14 channels):</strong> Google Ads (P-05) · Meta Ads (P-06) · LinkedIn Ads · YouTube (organic) · SEO/organic (P-04) · AEO/LLM-search · Direct/Brand · Email/Klaviyo · Print-Physical (P-11 aggregated) · Partnerships (P-10 aggregated) · Social-organic (P-09) · Sponsorships (P-11 §11E broken out) · Advertorials (P-11 §11G broken out) · Referral-loop (F3 cross-LOB).</li>
+        <li><strong>Adstock parameters (locked · Units-tuned):</strong> Geometric decay 0.65 weekly · half-life ~6 weeks · 95% effect captured by week-26. Saturation curve (Hill) — α=2.4 (steeper saturation than Pools α=1.8 because BCM-channel saturates faster).</li>
+        <li><strong>Modelled outputs (refreshed monthly):</strong> (a) Channel-level ROAS at F1 · F2 · F3 stages · all 14 channels; (b) Carry-over effect — what % of this-month's revenue is attributable to ad-spend 8/16/24 weeks ago; (c) Diminishing-returns curves — at what spend does each channel saturate; (d) Cross-LOB bowtie — % of Units-spend that drives Pools/Termite F3-conversion (target ≥18%); (e) Budget-optimiser recommendation — re-allocate next month's $-envelope to maximise blended ROAS.</li>
+        <li><strong>30× LTV propagation (WS-05 anchor):</strong> Robyn outputs feed into the LTV-economics ledger. F1-CAC ÷ blended-LTV ratio target ≤1:30 across 24-month window. M24 target is the locked Carla CFO commitment: blended Units ROAS 14.6× · cross-LOB-credit-back lifts effective ROAS to 21.4× · LTV ratio 30:1.</li>
+        <li><strong>Robyn governance:</strong> YDT Data Scientist runs the model monthly · Carla CFO + YDT Account Director joint sign-off on budget-reallocations &gt;15% any channel. Code lives in <code>/analytics/robyn-units/</code> · R 4.3 + Robyn 3.10.5 · executed on Cloudflare-hosted RStudio container · raw data sourced from GA4 BigQuery export + HubSpot + Klaviyo + CallRail.</li>
+        <li><strong>Forbidden states:</strong> (a) Any single-channel ROAS report quoted to stakeholders without Robyn-decomposed context (last-click bias forbidden); (b) Budget-shift &gt;15% on a single channel without Robyn-attribution check; (c) MMM refresh skipped &gt;45 days. All 3 audit-flagged in §12G handover.</li>
+      </ol>
+    </div>
+
+    {/* 12D PUREPROFILE DBA HEALTH PANEL */}
+    <div className="kw-block">
+      <h3>12D · Pureprofile DBA Health Panel · The Brand-Equity Truth-Layer</h3>
+      <ol>
+        <li><strong>Why a brand panel:</strong> Robyn MMM (§12C) measures revenue-attribution. It does NOT measure brand-equity drift — the slow, expensive damage when promise-execution slips. Pureprofile's Distinctive Brand Assets (DBA) Health Panel runs quarterly tracking on a 384-respondent SE-QLD panel (Sarah &amp; Mark demographic) — 6 brand-equity dimensions tracked over time. Locked at $18,000/quarter · $72k/year · classified under P-01 Brand budget (Carla CFO direct).</li>
+        <li><strong>6 DBA dimensions tracked (quarterly):</strong> (a) <strong>Unaided awareness</strong> — "name a Brisbane unit-renovation specialist" (Y1 target 18% · M24 target 34%); (b) <strong>Aided awareness</strong> — "have you heard of YBMT" (Y1 28% · M24 52%); (c) <strong>Consideration</strong> — "would you consider for your unit reno" (Y1 14% · M24 28%); (d) <strong>Preference</strong> — "first choice" (Y1 8% · M24 18%); (e) <strong>Promise-association</strong> — unprompted recall of "built like it's our own home" or close paraphrase (Y1 12% · M24 26%); (f) <strong>Category-association</strong> — unprompted recall of "whole-of-home stewardship" or close paraphrase (Y1 6% · M24 14%).</li>
+        <li><strong>BCM-coordinator parallel panel (annual · $24k):</strong> 184-respondent BCM-coordinator panel tracks (a) aided awareness · (b) trust-score (1-10 Likert · target ≥7.4) · (c) approval-cycle-time perception (target ≤21 days reported · vs 180-day industry) · (d) recommendation-likelihood (NPS · target ≥48).</li>
+        <li><strong>Gift-kit recall sub-study (§11F cross-reference):</strong> Pureprofile re-contacts F3-converted lot-owners at 6/12/18 month intervals · measures gift-kit-recall · neighbour-referral-rate · cross-LOB engagement-rate. Sub-study cost $14k/year · sample 84-respondent rolling cohort.</li>
+        <li><strong>Quarterly Pureprofile readout:</strong> 22-page deck delivered to Carla CFO · 6 DBA dimensions trended · BCM panel snapshot · gift-kit sub-study · DBA-decline-alerts (any dimension dropping &gt;15% QoQ triggers Quality Gate review). YDT Brand Director presents at YBMT board · Carla CFO chair.</li>
+        <li><strong>Brand-equity → MMM coupling:</strong> Pureprofile DBA quarterly scores feed into Robyn (§12C) as a soft variable — "brand-equity index" — explaining variance that channel-spend alone misses. This is the locked methodology (Carla CFO + YDT Data Scientist · doctrine v1.0).</li>
+        <li><strong>Forbidden states:</strong> (a) Promise-association score dropping &gt;15% QoQ without Quality Gate review; (b) BCM trust-score dropping below 7.0/10 without escalation to Carla CFO within 7 days; (c) Pureprofile readout skipped &gt;1 quarter. All 3 audit-flagged in §12G.</li>
+      </ol>
+    </div>
+
+    {/* 12E MASTER KPI SCORECARD 20-ROW */}
+    <div className="kw-block">
+      <h3>12E · Master KPI Scorecard · The 20-Row Truth Table Across All 12 Pillars</h3>
+      <table className="kw-table">
+        <thead><tr><th>#</th><th>KPI</th><th>F-stage</th><th>Source pillar</th><th>Y1 target</th><th>M24 target</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Brand-recall unaided · Sarah &amp; Mark panel</td><td>F1</td><td>P-01 / P-12 §12D</td><td>18%</td><td>34%</td></tr>
+          <tr><td>2</td><td>Brand-recall aided · BCM-coordinator panel</td><td>F1</td><td>P-01 / P-12 §12D</td><td>42%</td><td>68%</td></tr>
+          <tr><td>3</td><td>Website sessions / month (organic + paid)</td><td>F1</td><td>P-02 / P-04</td><td>34k</td><td>62k</td></tr>
+          <tr><td>4</td><td>BCM Approval Pack downloads / month</td><td>F1→F2</td><td>P-03 §3.2</td><td>184/mo</td><td>340/mo</td></tr>
+          <tr><td>5</td><td>SEO matrix · top-3 ranking pages (of 540)</td><td>F1</td><td>P-04</td><td>148</td><td>312</td></tr>
+          <tr><td>6</td><td>Google Ads qualified leads / month</td><td>F1→F2</td><td>P-05</td><td>92/mo</td><td>164/mo</td></tr>
+          <tr><td>7</td><td>Meta Ads qualified leads / month</td><td>F1→F2</td><td>P-06</td><td>68/mo</td><td>124/mo</td></tr>
+          <tr><td>8</td><td>Pre-Reno Consults held / month</td><td>F2</td><td>P-08 §8.4</td><td>38/mo</td><td>72/mo</td></tr>
+          <tr><td>9</td><td>BCM Approval Meetings held / month</td><td>F2</td><td>P-08 §8.6</td><td>22/mo</td><td>48/mo</td></tr>
+          <tr><td>10</td><td>Dual MEDDPICC pass-rate (both ≥12/21)</td><td>F2</td><td>P-12 §12B</td><td>61%</td><td>74%</td></tr>
+          <tr><td>11</td><td>Stage 4→5 conversion (Consult → Proposal)</td><td>F2</td><td>P-08 §8.5</td><td>48%</td><td>61%</td></tr>
+          <tr><td>12</td><td>Stage 5→7 conversion (Proposal → Contract)</td><td>F2</td><td>P-08 §8.7</td><td>34%</td><td>42%</td></tr>
+          <tr><td>13</td><td>Closed-won projects / month</td><td>F2→F3</td><td>P-08 §8.7</td><td>14/mo</td><td>28/mo</td></tr>
+          <tr><td>14</td><td>Tier mix (Refresh / Renew / Reset)</td><td>F2</td><td>P-08 §8.9</td><td>52/32/16%</td><td>44/34/22%</td></tr>
+          <tr><td>15</td><td>Build-completion gift-kit recall @ 6mo</td><td>F3</td><td>P-11 §11F / P-12 §12D</td><td>88%</td><td>92%</td></tr>
+          <tr><td>16</td><td>Neighbour-referral rate @ 90 days</td><td>F3</td><td>P-10 §10.7 / P-11 §11F</td><td>41%</td><td>54%</td></tr>
+          <tr><td>17</td><td>Cross-LOB engagement @ 18 months</td><td>F3</td><td>P-10 / P-11 §11F</td><td>28%</td><td>42%</td></tr>
+          <tr><td>18</td><td>Blended Units CAC (paid + earned)</td><td>F1→F2</td><td>P-12 §12C</td><td>$1,840</td><td>$1,420</td></tr>
+          <tr><td>19</td><td>Blended Units ROAS (Robyn-decomposed)</td><td>F1→F3</td><td>P-12 §12C</td><td>8.4×</td><td>14.6×</td></tr>
+          <tr><td>20</td><td>Effective ROAS w/ 50% cross-LOB credit-back</td><td>F3</td><td>P-12 §12C</td><td>11.8×</td><td>21.4×</td></tr>
+        </tbody>
+      </table>
+      <p className="kw-ps"><em>This 20-row scorecard IS the single source of truth for the Carla CFO board readout. Every row sources to a named pillar · every target is dollar-anchored to the 30× LTV economics doctrine (WS-05) · every F-stage maps to the F1→F2→F3 funnel (WS-11). YDT operates against this scorecard · no substitutions.</em></p>
+    </div>
+
+    {/* 12F REPORTING CADENCE */}
+    <div className="kw-block">
+      <h3>12F · Reporting Cadence · Who Reports What When To Whom</h3>
+      <ol>
+        <li><strong>Daily (automated · Slack):</strong> UTM-presence crawler (§12A) · pacing alerts on Google Ads + Meta Ads (P-05/06 spend &gt;110% of daily-pace = pause) · GA4 anomaly detection (events ±2σ from 28-day baseline). Audience: YDT Performance team · Carla CFO read-only.</li>
+        <li><strong>Weekly (Monday 9am AEST · 22-min standup):</strong> Lead-volume by source (F1→F2) · MEDDPICC dual-pass rate · pipeline-stage progression (P-08 §8.1-8.11) · channel-mix actuals vs plan. Audience: YDT Account Director · Carla CFO · YBMT GM Construction. Slide template locked in <code>/reporting/templates/weekly-units-v2.gslides</code>.</li>
+        <li><strong>Monthly (1st Wed · 88-min readout):</strong> All 20 KPI rows (§12E) vs target · Robyn MMM refresh (§12C) · channel-budget re-allocation recommendation · Pillar-12 forbidden-state audit (§12G). Audience: Carla CFO · YDT Account Director · YDT Data Scientist · YBMT Board. Deck template: <code>/reporting/templates/monthly-units-board-v3.gslides</code>.</li>
+        <li><strong>Quarterly (4th week · 184-min board session):</strong> Pureprofile DBA readout (§12D) · BCM-coordinator panel readout · gift-kit sub-study (§11F) · cross-LOB bowtie analysis · 30× LTV ratio audit. Audience: YBMT Full Board · Carla CFO chair · YDT Account Director presents. This is the locked Quality Gate session — any pillar failing &gt;2 forbidden states triggers full review.</li>
+        <li><strong>Annual (Y1 close · 8-hour off-site):</strong> Full 12-pillar audit · all 14 Robyn channels re-tuned · Pureprofile panel re-recruited · MEDDPICC rubric review · YDT performance review. Audience: YBMT Board · YDT senior leadership · Carla CFO · facilitated by external strategic-advisor (rotating · year-1 = Corrina McGowan as YDT founder).</li>
+        <li><strong>Reporting forbidden states:</strong> (a) Skipped monthly readout &gt;48 hours late = Quality Gate fail; (b) Robyn refresh skipped &gt;45 days = MMM-data-staleness flag; (c) Pureprofile readout skipped &gt;1 quarter = brand-equity-blindspot flag; (d) Any KPI row showing red (&lt;80% of target) for 2 consecutive months without remediation plan = Carla CFO escalation. All 4 audit-logged in §12G.</li>
+      </ol>
+    </div>
+
+    {/* 12G FORBIDDEN STATES + YDT HANDOVER AUDIT */}
+    <div className="kw-block">
+      <h3>12G · Forbidden States &amp; YDT Handover Audit · The Doctrine Enforcement Layer</h3>
+      <ol>
+        <li><strong>Master forbidden-states ledger (28 items consolidated from all 12 pillars):</strong> Tracked in a single Notion-database <code>doctrine-forbidden-states-units</code> · automated audit-script runs nightly · flags any breach · routes to YDT Account Director Slack with 24-hour remediation SLA · 7-day escalation to Carla CFO.</li>
+        <li><strong>The 7 critical forbidden states (Quality Gate triggers):</strong> (a) Promise text outside the 2 sanctioned physical surfaces (P-11 §11I); (b) F2-credit claimed without dual-MEDDPICC ≥12/21 (P-12 §12B); (c) Print/physical artifact deployed without Carla CFO sign-off (P-11 §11I); (d) URL deployed without 5 mandatory UTMs (P-12 §12A); (e) Budget-shift &gt;15% on single channel without Robyn check (P-12 §12C); (f) Pureprofile DBA score dropping &gt;15% QoQ without Quality Gate review (P-12 §12D); (g) Champion Confirmation form missing on closed-won deal (P-12 §12B). Any single occurrence = pillar paused · YDT must remediate before progression.</li>
+        <li><strong>YDT handover audit · the 12-pillar checklist:</strong> Before YDT assumes full operational control (target M3 post-engagement), Carla CFO runs a 12-pillar audit · 21 questions per pillar · 252 total checkpoints. ≥232/252 (92%) required to release operational authority. Failed checkpoints rolled into a 30-day remediation plan · Carla CFO chairs weekly remediation standup until 92% threshold cleared.</li>
+        <li><strong>The 5 Congruency Doctrine anchors verified in every monthly report (WS-04/01/02/05/11):</strong> (a) <strong>Sarah &amp; Mark persona</strong> — appears in every campaign brief · every creative review · every sales-stage script (P-08); (b) <strong>Whole-of-Home Stewardship category</strong> — appears in every content piece header · every advertorial topic (P-11 §11G); (c) <strong>Built-like-our-own-home promise</strong> — sanctioned text-placements only · audited monthly; (d) <strong>30× LTV economics</strong> — quoted in every board readout · Robyn-attributed (§12C); (e) <strong>F1→F2→F3 funnel</strong> — all 20 KPI rows (§12E) tagged by F-stage · MEDDPICC dual-buyer gate enforced. Any anchor missing from a monthly readout = doctrine-drift flag.</li>
+        <li><strong>YDT operational red-lines (contractual):</strong> YDT may NOT (a) deploy a print/physical artifact without Carla CFO sign-off; (b) re-allocate &gt;15% of a channel-budget without Robyn check; (c) modify the 24-event GA4 taxonomy (§12A) without dual sign-off; (d) skip a monthly readout; (e) substitute any stack component (sGTM · Robyn · Pureprofile · HubSpot · Klaviyo · CallRail · GA4) without joint approval. These are MSA clause 4.7.1-4.7.5 · enforceable contractually.</li>
+        <li><strong>Annual doctrine refresh:</strong> Every January · the 12-pillar doctrine + Congruency Doctrine v1.0 + Depth Standard v1.0 + Quality Gate doctrine are reviewed by Carla CFO + YDT Account Director · revisions versioned (v1.1, v1.2 ...) · all previous-version assets audited for drift · remediation plan published within 30 days of doctrine-version bump.</li>
+        <li><strong>Pillar-12 budget envelope:</strong> Y1 total $342,000 (sGTM Cloudflare $14k · HubSpot Marketing+Sales Hub Pro $48k · Klaviyo $14k · CallRail DNI $18k · Robyn YDT data-science labour $84k · Pureprofile panels $96k · audit tooling + Notion + Slack $24k · YDT Account Director time-allocation $44k). M24 ROAS-attribution-quality target: 92% of revenue attributable through dual-MEDDPICC + Robyn + Pureprofile · vs industry 38% last-click attribution.</li>
+      </ol>
+    </div>
+
+    <div className="kw-pillar-foot">
+      <p><strong>Pillar 12 · Instrumentation · Closed.</strong> 7 sub-sections (12A-12G) · 20 master-KPI rows · 28 forbidden-state ledger · 252-checkpoint YDT handover audit · 5 Congruency Doctrine anchors verified monthly · $342k Y1 envelope · 92% attribution-quality M24 target vs 38% industry default. If Pillar 12 is intact, the entire DOC 6 Units GTM Kit is defensible. If Pillar 12 drifts, every other pillar's claims become unprovable. Carla CFO holds direct authority over §12B (dual-MEDDPICC) · §12C (Robyn) · §12D (Pureprofile) · §12G (handover audit). YDT executes within the locked stack.</p>
+      <p><em>DOC 6 · Units Renovations GTM Kit · 11 pillars mounted (P-01/02/03/04/05/06/08/09/10/11/12) · P-07 Email deferred to WS-10 CRM workstream by design · all 5 Congruency Doctrine anchors propagated through every pillar · ready for YDT handover.</em></p>
     </div>
   </section>
 )
