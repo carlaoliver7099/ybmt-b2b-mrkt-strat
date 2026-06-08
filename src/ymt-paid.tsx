@@ -31,6 +31,8 @@
    PM-16 Failure modes + hedges
    ============================================================================ */
 
+import { UpstreamAnchor } from './upstream-anchor'
+
 const PMHubBar = () => (
   <div class="dochub-bar">
     <div class="dochub-inner">
@@ -190,6 +192,22 @@ const PMDoctrine = () => (
           <div class="rule-body">Incremental ROAS (lift studies + holdouts) is the truth metric.
           Standard ROAS is the operating metric. Cost-per-lead is the tactical metric. Reporting up
           presents iROAS; reporting in presents CAC and CPL; the three are never confused.</div>
+        </div>
+        <div class="doctrine-rule">
+          <div class="rule-num">Rule 7</div>
+          <div class="rule-title">Every paid creative obeys the five upstream anchors. No exceptions.</div>
+          <div class="rule-body">Before any ad-set launches, the creative passes the five-anchor
+          checklist: <strong>(a)</strong> targets <em>Sarah &amp; Mark · The Established SEQ
+          Homeowner</em> (WS-04) with the trigger language for the right job-to-be-done;
+          <strong>(b)</strong> reinforces the <em>Whole-of-Home Stewardship</em> category frame
+          (WS-01); <strong>(c)</strong> closes or sub-anchors on <em>"Built like it's our own
+          home"</em> (WS-02 promise — non-negotiable headline anchor for brand-layer creative);
+          <strong>(d)</strong> is defensible against the <em>30× cross-LOB LTV</em> economics (WS-05)
+          — paid CAC is justified by 10-year LTV, not first-job revenue alone; <strong>(e)</strong>
+          tagged to F1/F2/F3 funnel stage (WS-11) so the offline conversion import (PM-11) carries
+          MEDDPICC qualification scores back to ad-set optimisation. <strong>All three LOBs
+          covered: Termite Damage Repair (55% of mix), Pools/Outdoor (30%), Unit Renovations
+          (15%) — each LOB has dedicated headlines, audiences, and creative within the matrix.</strong></div>
         </div>
       </div>
     </div>
@@ -1347,6 +1365,7 @@ export const renderYMTpaid = () => (
     <PMNav />
     <PMHero />
     <PMDoctrine />
+    <UpstreamAnchor doc="WS-09 Paid Media" />
     <PMAllocation />
     <PMGoogleAds />
     <PMMeta />

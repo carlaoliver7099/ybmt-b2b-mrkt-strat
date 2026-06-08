@@ -10,6 +10,7 @@
  */
 
 import type { FC } from 'hono/jsx'
+import { UpstreamAnchor } from './upstream-anchor'
 
 const CRHubBar: FC = () => (
   <div class="dochub-bar">
@@ -146,6 +147,29 @@ const CRDoctrine: FC = () => (
               Klaviyo's deliverability scoring penalises high-complaint, low-engagement
               sends within 72 hours. Aggressive suppression is the price of being able to
               email anyone at all.
+            </p>
+          </div>
+        </div>
+        <div class="doctrine-rule">
+          <div class="rule-num">06</div>
+          <div class="rule-body">
+            <h3 class="rule-title">Every flow obeys the five upstream anchors.</h3>
+            <p>
+              CRM lifecycle is the highest-leverage place in the portfolio to live out the
+              upstream contracts. <strong>Persona (WS-04):</strong> every email is written to
+              <em>Sarah &amp; Mark · The Established SEQ Homeowner</em> — never to a generic list.
+              <strong>Category (WS-01):</strong> every nurture email reinforces the
+              <em>Whole-of-Home Stewardship</em> frame and the <em>custodian-not-tradesperson</em>
+              positioning. <strong>Promise (WS-02):</strong> <em>"Built like it's our own home"</em>
+              is the closing line of every Welcome (CR-01a) final email, every Post-Sale Onboarding
+              (CR-01f) handover, and every Review Request (CR-01h). <strong>Economics
+              (WS-05):</strong> the 30× cross-LOB LTV ratio is what justifies the investment in nine
+              named flows for a "small" home-services brand — the second-LOB conversion alone
+              recovers the full CRM build. <strong>KPI (WS-11):</strong> every flow has F1/F2/F3
+              tagging on each send and MEDDPICC scoring updates on each engagement, so the CRM
+              is a measurement engine, not just an email tool. <strong>All three LOBs are explicit:
+              Termite (55% of mix · reactive trigger flows), Pools (30% · longer
+              consideration-cycle flows), Unit Renovations (15% · investor-segment flows).</strong>
             </p>
           </div>
         </div>
@@ -2273,6 +2297,7 @@ export const renderYMTcrm = () => (
     <CRNav />
     <CRHero />
     <CRDoctrine />
+    <UpstreamAnchor doc="WS-10 CRM / Lifecycle / RevOps" />
     <CR01Welcome />
     <CR01BrowseAbandon />
     <CR01LeadNurture />

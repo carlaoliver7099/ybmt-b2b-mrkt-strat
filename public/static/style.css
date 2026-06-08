@@ -7611,3 +7611,110 @@ ul.check-list li::before { content: '\f00c'; font-family: 'Font Awesome 6 Free';
 .pillar-block:not(.pillar-block-rev) .services-table code,
 .pillar-block:not(.pillar-block-rev) .meta-table code,
 .pillar-block:not(.pillar-block-rev) .cta-table code { background:rgba(184,116,61,0.12); color:#B8743D; }
+
+/* ============================================================
+   CONGRUENCY ANCHOR STRIP — Upstream Decision Traceability
+   Injected after each Phase 3/4 Doctrine. Cites WS-01 (category),
+   WS-02 (promise), WS-04 (persona), WS-05 (economics), WS-11 (KPI).
+   Per CONGRUENCY-DOCTRINE-v1.md.
+   ============================================================ */
+.upstream-anchor {
+  background: linear-gradient(135deg, #1B3A5C 0%, #2a4d75 100%);
+  padding: 36px 0;
+  margin: 0;
+  border-top: 4px solid #B8743D;
+  border-bottom: 4px solid #B8743D;
+}
+.upstream-anchor .ua-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+.upstream-anchor .ua-eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #B8743D;
+  margin-bottom: 10px;
+}
+.upstream-anchor .ua-title {
+  font-family: 'Fraunces', serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #F5F1EA;
+  margin: 0 0 14px;
+  line-height: 1.25;
+}
+.upstream-anchor .ua-lede {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: rgba(245, 241, 234, 0.85);
+  line-height: 1.65;
+  margin: 0 0 24px;
+  max-width: 880px;
+}
+.ua-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+@media (max-width: 1000px) {
+  .ua-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .ua-grid { grid-template-columns: 1fr; }
+}
+.ua-card {
+  background: rgba(245, 241, 234, 0.06);
+  border: 1px solid rgba(245, 241, 234, 0.15);
+  border-top: 3px solid #4DB6C7;
+  border-radius: 6px;
+  padding: 16px 16px 18px;
+}
+.ua-card.ua-persona { border-top-color: #4DB6C7; }
+.ua-card.ua-category { border-top-color: #B8743D; }
+.ua-card.ua-promise { border-top-color: #F5F1EA; }
+.ua-card.ua-economics { border-top-color: #B8743D; }
+.ua-card.ua-kpi { border-top-color: #4DB6C7; }
+.ua-card .ua-ws {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #4DB6C7;
+  margin-bottom: 6px;
+}
+.ua-card .ua-h {
+  font-family: 'Fraunces', serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #F5F1EA;
+  margin: 0 0 8px;
+  line-height: 1.3;
+}
+.ua-card .ua-b {
+  font-family: 'Inter', sans-serif;
+  font-size: 12.5px;
+  color: rgba(245, 241, 234, 0.82);
+  line-height: 1.55;
+  margin: 0;
+}
+.ua-card .ua-b strong {
+  color: #F5F1EA;
+  font-weight: 600;
+}
+.ua-card a {
+  display: inline-block;
+  margin-top: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #4DB6C7;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.ua-card a:hover { color: #F5F1EA; }

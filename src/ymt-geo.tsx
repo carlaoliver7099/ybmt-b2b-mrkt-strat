@@ -37,6 +37,8 @@
    GEO-16 Failure modes + hedges
    ============================================================================ */
 
+import { UpstreamAnchor } from './upstream-anchor'
+
 const GEOHubBar = () => (
   <div class="dochub-bar">
     <div class="dochub-inner">
@@ -198,6 +200,22 @@ const GEODoctrine = () => (
           Google AI Overviews, Claude, Gemini. Count citations. Track delta. This is the new
           rank-tracker. Rank #1 with zero LLM citations is worth less than rank #5 with citations in
           three of five engines.</div>
+        </div>
+        <div class="doctrine-rule">
+          <div class="rule-num">Rule 7</div>
+          <div class="rule-title">Every piece of content is written for Sarah &amp; Mark first, the LLM second.</div>
+          <div class="rule-body">The persona contract from WS-04 is binding: every editorial piece,
+          every programmatic page, every FAQ answer must serve <em>Sarah &amp; Mark · The Established
+          SEQ Homeowner</em> first. They are time-poor, research-aware, trust-buying — and they have
+          been burnt before. The category frame is <em>Whole-of-Home Stewardship</em> (WS-01),
+          and every meaningful piece closes with or reinforces <em>"Built like it's our own home"</em>
+          (WS-02). The economics that justify the 80-piece content map and 18 programmatic pages
+          come from the <em>30× cross-LOB LTV</em> ratio (WS-05) — the second-LOB conversion alone
+          pays back the full WS-08 build. The measurement contract is the F1 → F2 → F3 funnel
+          from WS-11: F1 brand-search lift, F1 → F2 MEDDPICC-qualified organic-attributed leads,
+          F2 → F3 closed-won attribution via MMM truth-check. <strong>Three LOBs covered:
+          Termite Damage Repair, Pools/Outdoor Entertainment, Unit Renovations — each gets dedicated
+          editorial pillars + programmatic coverage.</strong></div>
         </div>
       </div>
     </div>
@@ -1570,6 +1588,7 @@ export const renderYMTgeo = () => (
     <GEONav />
     <GEOHero />
     <GEODoctrine />
+    <UpstreamAnchor doc="WS-08 GEO / AEO" />
     <GEOCitation />
     <GEOLlmsTxt />
     <GEOSchema />

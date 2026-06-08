@@ -25,6 +25,8 @@
    CH-12 Failure modes + hedges
    ============================================================================ */
 
+import { UpstreamAnchor } from './upstream-anchor'
+
 const CHHubBar = () => (
   <div class="dochub-bar">
     <div class="dochub-inner">
@@ -166,6 +168,20 @@ const CHDoctrine = () => (
           <div class="rule-body">Every quarter, 10% of media budget goes to channels not yet in the
           active mix. This is not optional. It is the only way to find the next channel before the
           current channels decay.</div>
+        </div>
+        <div class="doctrine-rule">
+          <div class="rule-num">Rule 6</div>
+          <div class="rule-title">Every channel decision must serve Sarah &amp; Mark and obey the five upstream anchors.</div>
+          <div class="rule-body">No channel goes live unless we can answer: <strong>(a)</strong> does it
+          reach <em>Sarah &amp; Mark · The Established SEQ Homeowner</em> (WS-04 persona) where they
+          actually spend attention? <strong>(b)</strong> does the creative reinforce the
+          <em> Whole-of-Home Stewardship</em> category frame (WS-01) and close with <em>"Built like
+          it's our own home"</em> (WS-02 promise)? <strong>(c)</strong> is the spend defensible
+          against the <em>30× cross-LOB LTV</em> economic frame (WS-05 bowtie) over a 10-year
+          horizon? <strong>(d)</strong> does the measurement plug into the F1 → F2 → F3 funnel
+          contract with MEDDPICC-qualified F2 hand-offs (WS-11)? If any answer is "no," the channel
+          does not launch. This rule is non-negotiable and applies equally to all three LOBs:
+          <strong> Termite Damage Repair, Pools/Outdoor Entertainment, and Unit Renovations.</strong></div>
         </div>
       </div>
     </div>
@@ -885,6 +901,7 @@ export const renderYMTchannel = () => (
     <CHNav />
     <CHHero />
     <CHDoctrine />
+    <UpstreamAnchor doc="WS-06 Channel Architecture" />
     <CHMixMatrix />
     <CHBudget />
     <CHHHH />

@@ -18,6 +18,7 @@
  */
 
 import type { FC } from 'hono/jsx'
+import { UpstreamAnchor } from './upstream-anchor'
 
 const TGHubBar: FC = () => (
   <div class="dochub-bar">
@@ -162,6 +163,35 @@ const TGDoctrine: FC = () => (
             </p>
           </div>
         </div>
+        <div class="doctrine-rule">
+          <div class="rule-num">06</div>
+          <div class="rule-body">
+            <h3 class="rule-title">This LOB obeys the five YMT Group upstream anchors.</h3>
+            <p>
+              TDR is the YMT Group revenue engine (55% of mix, 45% GPM, brand role = trust +
+              insurance-grade authority). It is the entry point into the bowtie expansion loop that
+              ultimately delivers the portfolio's 30× cross-LOB LTV economics — a TDR customer is
+              statistically the same persona (<em>Sarah &amp; Mark · The Established SEQ Homeowner
+              </em>, WS-04) who, 2-5 years later, hires YMT for Pools or Unit Renovations. Every
+              asset below is therefore built to <strong>three constraints</strong>:
+              <strong>(a)</strong> reinforce the YMT Group <em>Whole-of-Home Stewardship</em>
+              category frame (WS-01) so the TDR purchase opens the door to Pools and Units;
+              <strong>(b)</strong> close on the portfolio brand promise <em>"Built like it's our
+              own home"</em> (WS-02) — never on a TDR-only tagline that orphans the customer from
+              the parent brand; <strong>(c)</strong> tag the F1 / F2 / F3 funnel stage and update
+              MEDDPICC qualification on every customer interaction (WS-11), so leads handed off to
+              YDT are scored, not just delivered. The 30× LTV economic frame (WS-05) is the reason
+              we invest in long-form Lead Magnets, an Authority Pillar website, and the insurance
+              partnership channel even though they cost more per lead than reactive Google Ads —
+              <strong>first-job revenue is the down-payment, not the prize</strong>. The prize
+              is the cross-LOB lifetime relationship: a TDR customer who 18 months later books
+              a Resort Yards Pools build, or who 4 years later commissions YBMT for a Unit
+              Renovations property refresh. The CRM tagging in P-12 Instrumentation specifically
+              tracks TDR-to-Pools and TDR-to-Unit Renovations cross-LOB conversions as the
+              headline portfolio KPI — not as an afterthought.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -173,6 +203,7 @@ export const renderTermiteGTM = () => (
     <TGNav />
     <TGHero />
     <TGDoctrine />
+    <UpstreamAnchor doc="DOC 4 · Termite Damage Repair GTM Kit" />
     <TGPillar01Brand />
     <TGPillar02Website />
     <TGPillar03LeadMagnet />

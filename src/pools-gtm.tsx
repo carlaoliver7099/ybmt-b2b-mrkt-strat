@@ -22,6 +22,7 @@
  */
 
 import type { FC } from 'hono/jsx'
+import { UpstreamAnchor } from './upstream-anchor'
 
 const PGHubBar: FC = () => (
   <div class="dochub-bar">
@@ -183,6 +184,40 @@ const PGDoctrine: FC = () => (
             </p>
           </div>
         </div>
+        <div class="doctrine-rule">
+          <div class="rule-num">06</div>
+          <div class="rule-body">
+            <h3 class="rule-title">Resort Yards obeys the five YMT Group upstream anchors.</h3>
+            <p>
+              The Resort Yards sub-brand exists to deliver Pools / Outdoor Entertainment as the
+              YMT Group <em>brand prestige</em> LOB (30% of mix, 32% GPM) — but it does not float
+              free of the parent. Every Resort Yards asset reinforces the YMT Group frame:
+              <strong>(a)</strong> persona is <em>Sarah &amp; Mark · The Established SEQ Homeowner
+              </em> (WS-04), specifically the lifestyle-job variant — they are the same customer
+              who hires YMT for Termite and Units, met at a different job-to-be-done;
+              <strong>(b)</strong> category positioning ladders to <em>Whole-of-Home Stewardship
+              </em> (WS-01) — a Resort Yard is not a pool, it is a stewardship investment in the
+              fourth room of the home; <strong>(c)</strong> the closing line on Hero ads,
+              proposals, and post-build handover is the YMT Group promise <em>"Built like it's
+              our own home"</em> (WS-02) — never a Resort-Yards-only tagline that orphans the
+              customer from the parent brand and breaks the cross-LOB referral loop;
+              <strong>(d)</strong> the 30× cross-LOB LTV ratio (WS-05) is why "Beyond the Pool"
+              expansion + cross-LOB Termite/Units cross-sell are the headline economics, not the
+              first build margin alone; <strong>(e)</strong> every lead carries F1/F2/F3 staging
+              and MEDDPICC qualification (WS-11) so the YDT team can pace and prioritise the
+              60-90-day Pools sales cycle correctly. Cross-LOB economics are explicit in the
+              Resort Yards customer file: every record is tagged with pre-Pools YBMT history
+              (Termite Damage Repair customers convert to Pools at materially higher rates than
+              cold leads) AND with post-Pools propensity for Unit Renovations (investor segment
+              particularly — Termite repair history + Pools build is a strong signal for Unit
+              Renovations cross-sell). The bowtie expansion loop is concrete: <strong>Termite →
+              Pools → Unit Renovations</strong> is the headline portfolio LTV path, and Resort
+              Yards is the highest-margin waypoint on it. Termite repair is the entry point;
+              Unit Renovations is the long-tail; Pools sits between them as the brand-prestige
+              anchor that lifts mental availability for both Termite and Unit Renovations.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -194,6 +229,7 @@ export const renderPoolsGTM = () => (
     <PGNav />
     <PGHero />
     <PGDoctrine />
+    <UpstreamAnchor doc="DOC 5 · Pools / Resort Yards GTM Kit" />
     <PGPillar01Brand />
     <PGPillar02Website />
     <PGPillar03LeadMagnets />
