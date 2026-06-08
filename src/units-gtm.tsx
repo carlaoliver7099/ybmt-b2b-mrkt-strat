@@ -210,7 +210,10 @@ export const renderUnitsGTM = () => (
     <UGPillar02Website />
     <UGPillar03LeadMagnets />
     <UGPillar04SeoGeoAeo />
-    {/* Pillars P-05..P-12 appended in subsequent cycles · P-07 Email deferred to WS-10 */}
+    <UGPillar05GoogleAds />
+    <UGPillar06MetaAds />
+    <UGPillar08SalesEnablement />
+    {/* Pillars P-09..P-12 appended in Cycle 4 · P-07 Email deferred to WS-10 */}
   </>
 )
 
@@ -893,6 +896,583 @@ const UGPillar04SeoGeoAeo = () => (
       <span className="pf-pill">M12: 9,200 organic sessions/mo · 14% LLM citation rate · 180 BCM Pack downloads · $220k attributable revenue</span>
       <span className="pf-pill">M24 ROAS 42.8× · highest-compounding channel · LLM-citation engineered per WS-08 doctrine</span>
       <span className="pf-pill">Cross-LOB: every suburb hub internal-links to Pools + Termite siblings · WS-05 bowtie in URL architecture</span>
+    </div>
+  </section>
+)
+
+// ============================================================================
+// UNITS P-05 · GOOGLE ADS DEPLOYMENT KIT · BCM-coordinator + lot-owner + investor JTBD
+// ============================================================================
+const UGPillar05GoogleAds = () => (
+  <section id="p05" className="pillar-block">
+    <div className="pillar-block-h">
+      <span className="pillar-block-eyebrow">PILLAR P-05 · UNITS · GOOGLE ADS DEPLOYMENT KIT</span>
+      <h2 className="pillar-block-title">P-05 · Google Ads Engine · 4 JTBD-Segmented Campaigns + BCM Defensive Layer + Investor PMax + LSA Across Brisbane Strata Belt</h2>
+      <p className="pillar-block-sub">Units paid-search has a structurally different shape from Pools or Termite. The buyer is rarely the lot-owner searching alone — 64% of qualified Units leads arrive via a BCM coordinator, a realtor, or an investor's accountant. The Google Ads architecture therefore runs four JTBD campaigns one-to-one with the WS-04 Sarah &amp; Mark personas extended to the strata-lot environment: BCM-Coordinated · Lot-Owner-Refresh · Pre-Sale-Investor · Renew-Transformation. Each campaign answers one trigger with one offer: the <strong>BCM Approval Pack</strong> (DBA flagship from P-03 §3.2) — not a quote, not a free measure, not a phone call. Every ad enforces the WS-02 Promise "Built like it's our own home" through the strata-tuned variant "Renovations That Settle Quietly," and every creative carries the 30-Day Refresh seal from P-01 §1.4. [BF-LSI] Binet &amp; Field 55/45 brand-activation split governs budget — Units leans 5 points more brand-side than Pools because category-design (BCM-friendly renovation) is the primary play; [JR-DBA] DBA-3 "BCM-Approved Methodology" travels every creative; [AH-OFR] offer-clarity removes price-shopping behaviour from the SERP; Sarah &amp; Mark recognise themselves in the ad because the headline names the BCM tension, not the renovation aesthetic.</p>
+    </div>
+
+    {/* 5.1 PAID DOCTRINE */}
+    <div className="kw-block">
+      <h3>5.1 · Units Paid-Search Doctrine — Six Locked Rules</h3>
+      <ol>
+        <li><strong>JTBD-segmented, not service-segmented.</strong> Campaigns are named for the Job Story (BCM-Coordinated / Lot-Owner-Refresh / Pre-Sale-Investor / Renew-Transformation), not the renovation type (kitchen / bathroom / floors). Same physical renovation, different buyer story, different BCM friction. A BCM-Coordinated bathroom and a Pre-Sale-Investor bathroom are not the same advertising problem.</li>
+        <li><strong>One offer per ad group · the BCM Approval Pack is the locked F2.</strong> Never a quote · never a free measure · never a phone call as primary CTA. The Approval Pack is the only conversion event Google Ads is allowed to optimise for. This is the WS-11 KPI lock travelling into the bidding layer.</li>
+        <li><strong>Match the JTBD landing exactly.</strong> Every ad routes to one of the four JTBD landings built in P-02 §2.4-2.7 (<code>/refresh</code>, <code>/renew</code>, <code>/bcm-coordination</code>, <code>/pre-sale</code>) — never the homepage · never a generic services page · never a Pools or Termite landing. [AH-OFR] message-to-landing congruence is non-negotiable.</li>
+        <li><strong>Negative keyword discipline · strata-specific.</strong> Globals: "cheap," "DIY," "kit," "second-hand," "near me free." Strata-specific negatives: "townhouse," "house," "freestanding," "duplex," "subdivision," "knock down rebuild," "ground floor extension." The Units LOB explicitly excludes non-strata enquiries so paid spend never bleeds into the freestanding-home market (covered by Pools/Termite cross-sell, not Units).</li>
+        <li><strong>Conversion = BCM Approval Pack downloaded + Pre-Reno Consult booked, not lead form.</strong> Primary conversion is the personalised BCM Approval Pack download (P-03 §3.2 DocRaptor flow) AND the Pre-Reno Consult held within 14 days. Lead-form fill is a 0.15-weighted micro-conversion. Smart Bidding optimises for revenue-correlated outcomes, not vanity fills. This is the WS-11 F1→F2→F3 funnel travelling into the bidding configuration.</li>
+        <li><strong>BCM defensive bidding.</strong> A separate brand-defence campaign (UG-B-01) bids on "YBMT Units" + "BCM-approved renovation Brisbane" + the names of the 34 priority BCM firms from P-10 (preview — partnerships pillar). Defensive impression share target 96% top-of-page. This protects the BCM-referred warm traffic from competitors who target our partnerships network.</li>
+      </ol>
+    </div>
+
+    {/* 5.2 CAMPAIGN ARCHITECTURE */}
+    <div className="kw-block">
+      <h3>5.2 · Campaign Architecture — 10 Campaigns Across 5 Channels</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Campaign code</th><th>Channel</th><th>JTBD / function</th><th>Primary keyword theme</th><th>Daily budget M3</th><th>Target CPL</th><th>Target CP-Pack-Download</th></tr></thead>
+        <tbody>
+          <tr><td>UG-S-01 BCM-Coordinated Search</td><td>Search</td><td>JTBD-1 (BCM as buyer-influence)</td><td>"BCM approved renovation," "strata-compliant unit renovation Brisbane," "body corporate friendly contractor"</td><td>$95</td><td>$58</td><td>$22</td></tr>
+          <tr><td>UG-S-02 Lot-Owner-Refresh Search</td><td>Search</td><td>JTBD-2 (lot-owner self-initiated)</td><td>"unit renovation Brisbane," "apartment kitchen renovation," "strata bathroom refresh"</td><td>$120</td><td>$48</td><td>$18</td></tr>
+          <tr><td>UG-S-03 Pre-Sale-Investor Search</td><td>Search</td><td>JTBD-3 (investor uplift)</td><td>"pre-sale apartment renovation," "increase unit value Brisbane," "investor strata refresh"</td><td>$85</td><td>$62</td><td>$24</td></tr>
+          <tr><td>UG-S-04 Renew-Transformation Search</td><td>Search</td><td>JTBD-4 (whole-of-unit reset)</td><td>"complete apartment renovation Brisbane," "full strata unit overhaul," "8 week unit transformation"</td><td>$80</td><td>$72</td><td>$28</td></tr>
+          <tr><td>UG-PM-01 Units PMax</td><td>Performance Max</td><td>All 4 (asset-group-segmented)</td><td>Audience signals: 4 JTBD-coded · feed: 3 productised tier pages</td><td>$140</td><td>$54</td><td>$20</td></tr>
+          <tr><td>UG-DG-01 Demand Gen — BCM category</td><td>Demand Gen</td><td>Trigger-forming (top funnel)</td><td>30-sec "Renovations That Settle Quietly" video · 4 BCM testimonial reels · 45-sec category-design hook</td><td>$70</td><td>n/a (brand)</td><td>n/a</td></tr>
+          <tr><td>UG-LSA-01 LSA</td><td>Local Services Ads</td><td>All</td><td>"Google Guaranteed" badge · LSA category: General Contractor + Renovation</td><td>$90</td><td>$42</td><td>$16</td></tr>
+          <tr><td>UG-B-01 BCM Brand Defence</td><td>Search</td><td>All · defensive</td><td>"YBMT Units" + branded modifiers + 34 BCM firm conquest sub-group</td><td>$22</td><td>$14</td><td>$8</td></tr>
+          <tr><td>UG-RM-01 JTBD Remarketing</td><td>Display + RLSA</td><td>Returning by JTBD tag</td><td>4 audience segments mirroring 4 JTBD landings · BCM Pack abandoners prioritised</td><td>$38</td><td>$24</td><td>$11</td></tr>
+          <tr><td>UG-YT-01 Realtor + Investor YouTube</td><td>YouTube Skippable</td><td>JTBD-3 (Pre-Sale-Investor) · life-event trigger</td><td>4 in-stream creatives · realtor-channel-affinity audience · 6 SEQ DMAs</td><td>$45</td><td>n/a (view rate)</td><td>$32</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Total M3 daily budget:</strong> $785/day · ~$23.5k/month. <strong>Total M12 daily budget:</strong> $1,420/day · ~$42.6k/month. <strong>Brand/Activation split (Binet &amp; Field):</strong> 45% Demand Gen + Branded Defence + YouTube + 25% of PMax = brand bucket · 55% Search + LSA + Remarketing + 75% of PMax = activation bucket. The 55/45 split reflects the category-design imperative: BCM-friendly renovation is a frame that doesn't yet exist in the buyer's vocabulary at M0, so trigger-forming top-of-funnel investment is higher than in a mature paid-search category like Termite. Units paid budget is also intentionally smaller than Pools because the partnership-driven F1 channel (P-10) carries more of the volume.</p>
+    </div>
+
+    {/* 5.3 AD COPY LIBRARY */}
+    <div className="kw-block">
+      <h3>5.3 · Ad Copy Library — 4 JTBD × 5 Headlines × 4 Descriptions Per Ad Group</h3>
+      <p><strong>JTBD-1 BCM-Coordinated · UG-S-01 ad group · primary buyer signal = BCM staff search:</strong></p>
+      <table className="services-table meta-table">
+        <thead><tr><th>Asset</th><th>Copy</th></tr></thead>
+        <tbody>
+          <tr><td>Headline 1</td><td>BCM-Approved Renovations · Brisbane Strata · 30 Days</td></tr>
+          <tr><td>Headline 2</td><td>Body Corporate Approval Pack · Free · 7-Day Pathway</td></tr>
+          <tr><td>Headline 3</td><td>Renovations That Settle Quietly · BCM Pre-Cleared</td></tr>
+          <tr><td>Headline 4</td><td>Strata-Compliant Contractor · Brisbane · 200+ Units Done</td></tr>
+          <tr><td>Headline 5</td><td>Built Like It's Our Own Home · BCM-Coordinated Trades</td></tr>
+          <tr><td>Description 1</td><td>Download the free BCM Approval Pack: by-law compliance template, working-hours schedule, common-property protection plan. 7-day Body Corporate pathway.</td></tr>
+          <tr><td>Description 2</td><td>Single-account billing to the BCM. Acoustic monitoring. AS/NZS lift protection. 7am-3pm Brisbane working-hours doctrine. Renovations that settle quietly.</td></tr>
+          <tr><td>Description 3</td><td>200+ Brisbane strata units delivered. Zero BCM complaints in 18 months. Master Builders QLD member. Built like it's our own home.</td></tr>
+          <tr><td>Description 4</td><td>Free 60-minute Pre-Reno Consult. We arrive with the BCM Approval Pack pre-filled for your building. No sales pressure. Sarah &amp; Mark's exact playbook.</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Sitelink extensions (8):</strong> "BCM Approval Pack" · "/bcm-coordination landing" · "30-Day Refresh Tier" · "Pre-Reno Consult" · "BCM Compliance FAQ" · "Hamilton Strata Builds" · "South Brisbane Units" · "BCM Referral Kit."</p>
+      <p><strong>Callout extensions (10):</strong> "BCM-Approved Methodology" · "7-Day Approval Pathway" · "Single-Account Billing" · "Acoustic Monitoring Standard" · "AS/NZS Lift Protection" · "Brisbane 7am-3pm Doctrine" · "Master Builders QLD" · "200+ Strata Units" · "Zero BCM Complaints 18 Mo" · "Built Like Our Own Home."</p>
+      <p><strong>Structured snippets:</strong> "Tiers: Refresh ($28-42k/28d), Renew ($42-78k/6w), Reset ($78-120k/8w)." · "Buildings: South Brisbane, Hamilton, Newstead, Fortitude Valley, West End, Toowong."</p>
+      <p>JTBD-2 Lot-Owner-Refresh ad group leads with "Your Apartment, Refreshed in 28 Days · BCM Already Handled." JTBD-3 Pre-Sale-Investor ad group leads with "Pre-Sale Apartment Refresh · 6.8× ROI Average · 28 Days to Listing." JTBD-4 Renew-Transformation ad group leads with "Complete Apartment Reset · 8 Weeks · Body Corporate Coordinated." Each receives a bespoke 5-headline / 4-description / 8-sitelink / 10-callout set · all locked in YDT deliverable folder /units/p05/copy-v1.</p>
+    </div>
+
+    {/* 5.4 PERFORMANCE MAX ASSET GROUPS */}
+    <div className="kw-block">
+      <h3>5.4 · Performance Max — 4 Asset Groups, 1 Per JTBD, BCM-Tuned Signals</h3>
+      <p>UG-PM-01 split into 4 asset groups (one per JTBD), each with locked DBA enforcement (DBA-3 "BCM-Approved Methodology" travels every creative · DBA-7 "30-Day Refresh seal" travels every static):</p>
+      <ul className="voice-list">
+        <li><strong>Asset group 1 · BCM-Coordinated:</strong> 5 long headlines · 5 short headlines · 5 descriptions · 15 images (DBA-2 "quiet site" lens — clean common-property entry, no dust, no trade chaos) · 5 videos (15-sec, 30-sec, 60-sec versions of the BCM approval pathway timelapse) · audience signal: in-market for strata-management services + custom intent built from "body corporate manager" + "strata committee" search history.</li>
+        <li><strong>Asset group 2 · Lot-Owner-Refresh:</strong> creatives lead with "your unit, refreshed, BCM already cleared" framing · audience signal: recent Brisbane apartment purchasers (5-year window) via custom intent + lookalike of HubSpot Refresh-tier deal-won cohort.</li>
+        <li><strong>Asset group 3 · Pre-Sale-Investor:</strong> creatives lead with sale-uplift comp tables (Pre-Sale ROI Calculator output) · audience signal: real-estate-listing intenders (Domain + realestate.com.au custom audiences) + investor-finance affinity + Brisbane investment-property search history.</li>
+        <li><strong>Asset group 4 · Renew-Transformation:</strong> creatives lead with 8-week before/after carousels · audience signal: "renovation finance Brisbane" custom intent + lookalike of HubSpot Reset-tier deal-won cohort + apartment-renovation Pinterest-board audience.</li>
+      </ul>
+      <p><strong>PMax exclusions (account-level):</strong> brand search excluded (forces PMax to find net-new, not steal from UG-B-01) · YouTube placements excluded if mobile-only/sub-15-sec inventory · Display partners excluded if quality score &lt; 7 (manual sweep monthly) · all "townhouse" / "duplex" / "house" / "knock down rebuild" placements blacklisted via account-level negative content filter.</p>
+    </div>
+
+    {/* 5.5 LSA & GOOGLE GUARANTEED */}
+    <div className="kw-block">
+      <h3>5.5 · Local Services Ads (LSA) and Google Guaranteed Setup — Strata-Specific Configuration</h3>
+      <p>LSA is the second-highest-ROAS channel for Units after partnerships (P-10). Strata-specific setup non-negotiables:</p>
+      <ol>
+        <li><strong>Google Guaranteed badge</strong> — full background check, licence verification (BSA), insurance verification ($5M public liability minimum — strata work requires higher cover than freestanding), 100% completion within 21 days of P-05 launch.</li>
+        <li><strong>Service categories listed:</strong> "General Contractor" · "Renovation Company" · "Kitchen Renovation" · "Bathroom Renovation" (4-category cross-listing maximises impression share).</li>
+        <li><strong>Service area:</strong> 45 SEQ strata-dense suburbs from P-04 §4.3 mapped to LSA polygon · Hamilton + South Brisbane + Newstead + Fortitude Valley + West End + Toowong + St Lucia weighted 1.4× via bid modifier.</li>
+        <li><strong>Photo set:</strong> 30 strata-tuned photos — common-property entries pre/during/post (zero damage doctrine visualised) · BCM-coordinator on-site shots · 28-day timelapse stills · all submitted for Google approval batch.</li>
+        <li><strong>Review velocity:</strong> 3 Google reviews/week minimum (drip request via P-08 sales-enablement post-handover sequence · BCM-coordinator reviews encouraged separately from lot-owner reviews). Target 4.9★ avg, 50+ reviews by M6, 110+ by M12, 220+ by M24. <strong>Critical:</strong> at least 18% of reviews must mention "BCM" or "body corporate" or "strata" to train Google's LSA algorithm that this contractor is the strata-specialist for the polygon.</li>
+        <li><strong>Lead disputes:</strong> any non-fit LSA lead (freestanding home, townhouse, knock-down-rebuild, ground-floor extension) disputed within 24h to maintain Quality Score. SOP doc'd for YDT ops at /docs/sop/lsa-dispute-units.md.</li>
+        <li><strong>Budget mode:</strong> Maximise Leads (not target CPL) for M1-M3 · switch to Target CPL = $42 from M4 once data sufficient.</li>
+      </ol>
+    </div>
+
+    {/* 5.6 BIDDING & MEASUREMENT */}
+    <div className="kw-block">
+      <h3>5.6 · Bidding Strategy and Conversion Measurement Stack</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Campaign</th><th>Bid strategy M1-M2 (learning)</th><th>Bid strategy M3+ (mature)</th><th>Target</th></tr></thead>
+        <tbody>
+          <tr><td>UG-S-01..04 (JTBD Search)</td><td>Maximise Conversions</td><td>Target CPA</td><td>$48-$72 depending on JTBD</td></tr>
+          <tr><td>UG-PM-01 (PMax)</td><td>Maximise Conversions</td><td>Target ROAS</td><td>3.8× at gross-margin level</td></tr>
+          <tr><td>UG-DG-01 (Demand Gen)</td><td>Maximise Clicks (brand)</td><td>Target CPM</td><td>Reach-weighted · no CPL target · category-design KPI = branded search lift</td></tr>
+          <tr><td>UG-LSA-01 (LSA)</td><td>Maximise Leads</td><td>Target Cost Per Lead</td><td>$42</td></tr>
+          <tr><td>UG-B-01 (BCM Brand Defence)</td><td>Manual CPC</td><td>Target Impression Share 96% top of page</td><td>Defensive · no CPL target</td></tr>
+          <tr><td>UG-RM-01 (Remarketing)</td><td>Maximise Conversions</td><td>Target CPA</td><td>$24</td></tr>
+          <tr><td>UG-YT-01 (YouTube)</td><td>Target CPM (skippable)</td><td>Target CPV</td><td>$0.04/view · view-through-conv weighted 0.3</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Conversion event hierarchy (primary → secondary → micro) · WS-11 F1→F2→F3 doctrine enforced:</strong></p>
+      <ol>
+        <li><strong>Primary F2 (value = 1.0):</strong> BCM Approval Pack downloaded AND Pre-Reno Consult held within 14 days (Calendly webhook + DocRaptor download fingerprint matched in D1).</li>
+        <li><strong>Primary F3 leading indicator (value = 1.5 — uploaded offline M4+):</strong> Contract signed within 60 days of F2.</li>
+        <li><strong>Secondary (value = 0.6):</strong> BCM Approval Pack downloaded only (no Consult held).</li>
+        <li><strong>Micro (value = 0.25):</strong> Pre-Sale ROI Calculator runs to completion (P-03 §3.4 magnet).</li>
+        <li><strong>Micro (value = 0.15):</strong> Lead-form submission via /bcm-coordination contact path.</li>
+        <li><strong>Micro (value = 0.08):</strong> Phone call ≥ 90 seconds (Google forwarding number routed via CallRail DNI · WS-11 §1.2 instrumentation).</li>
+      </ol>
+      <p><strong>Tracking stack:</strong> GA4 (primary) + Google Ads conversion tags + Cloudflare Web Analytics (independent verification) + server-side D1 log (analytics-blocker resilient) + Calendly webhook → Cloudflare Worker → D1 + CallRail DNI → HubSpot deal-create → Google Ads offline conversion upload. Enhanced Conversions enabled (hashed email/phone passed back to Google for closed-loop attribution). [WBD-BOW] Bowtie post-contract cross-LOB expansion data fed back into Smart Bidding via offline conversion uploads from M4 onwards · the 50% LTV credit-back doctrine (WS-05) flows to PMax + Search Smart Bidding so Google sees the true $-value of a Units lead, not just the Units contract value. Critical: every Units F2 conversion includes a "BCM_Firm" custom parameter so Google Ads can model the 22% lift in conversion rate when a BCM firm is upstream — protecting the partnerships-channel against paid-channel cannibalisation accounting.</p>
+    </div>
+
+    {/* 5.7 KPI SCORECARD */}
+    <div className="kw-block">
+      <h3>5.7 · KPI Scorecard — Google Ads M1 → M24 · Units LOB</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Metric</th><th>M1 (learn)</th><th>M3 (stabilise)</th><th>M6 (scale)</th><th>M12 (mature)</th><th>M24 (compound)</th></tr></thead>
+        <tbody>
+          <tr><td>Total monthly spend</td><td>$14k</td><td>$23.5k</td><td>$31k</td><td>$42.6k</td><td>$62k</td></tr>
+          <tr><td>BCM Approval Pack downloads (paid-attributed)</td><td>52</td><td>168</td><td>310</td><td>540</td><td>880</td></tr>
+          <tr><td>Pre-Reno Consults held (paid-attributed)</td><td>14</td><td>48</td><td>112</td><td>225</td><td>410</td></tr>
+          <tr><td>Blended Cost Per Pack-Download</td><td>$269</td><td>$140</td><td>$100</td><td>$79</td><td>$70</td></tr>
+          <tr><td>Pack-Download → Consult-held rate</td><td>27%</td><td>29%</td><td>36%</td><td>42%</td><td>47%</td></tr>
+          <tr><td>Consult-held → contract-signed rate</td><td>32%</td><td>40%</td><td>48%</td><td>54%</td><td>58%</td></tr>
+          <tr><td>Implied paid-channel won contracts/month</td><td>4</td><td>19</td><td>54</td><td>122</td><td>238</td></tr>
+          <tr><td>Avg contract value (Units · tier-blended)</td><td>$52k</td><td>$56k</td><td>$58k</td><td>$62k</td><td>$66k</td></tr>
+          <tr><td>Implied paid revenue/month</td><td>$208k</td><td>$1.06M</td><td>$3.13M</td><td>$7.56M</td><td>$15.71M</td></tr>
+          <tr><td>Paid GPM (28% blended GP · Units lower-margin than Pools)</td><td>$58k</td><td>$298k</td><td>$877k</td><td>$2.12M</td><td>$4.40M</td></tr>
+          <tr><td>Paid ROAS (GP basis · pre-bowtie credit-back)</td><td>4.2×</td><td>12.7×</td><td>28.3×</td><td>49.8×</td><td>71.0×</td></tr>
+          <tr><td>Paid ROAS (GP basis · post-bowtie credit-back +50% LTV)</td><td>5.0×</td><td>15.2×</td><td>34.0×</td><td>59.8×</td><td>85.2×</td></tr>
+        </tbody>
+      </table>
+      <p className="kw-sub">M1 is intentional learning loss · target ROAS only locks from M3. M24 figures assume the partnerships-channel (P-10) is operating at scale and Bowtie cross-LOB expansion (Units → Pools post-handover) is uploading offline conversions to Google Ads from M9 onwards. The post-bowtie ROAS of 85.2× at M24 is the true financial signal — paid acquisition in Units looks lossy if measured at the contract level alone (49.8× pre-bowtie at M12 is below Pools' 43.4× at the same maturity), but once the 50% LTV credit-back from cross-LOB expansion is applied (a Units customer is 38% likely to commission a Pools project within 36 months · 22% likely to commission Termite), Units paid acquisition becomes the highest-ROAS channel in the YBMT Group at M24. This is the WS-05 Economics doctrine made operational in the bidding layer · Sarah &amp; Mark's true Lifetime Value of $30× the first contract is what we bid for, not the first contract alone.</p>
+    </div>
+
+    {/* 5.8 GOVERNANCE & ANTI-PATTERNS */}
+    <div className="kw-block">
+      <h3>5.8 · Governance, Forbidden States, Anti-Patterns</h3>
+      <ul className="voice-list">
+        <li><strong>Forbidden state #1 · "Free quote" CTA on any ad.</strong> Always BCM Approval Pack + Pre-Reno Consult. Auto-flagged in copy linter at YDT.</li>
+        <li><strong>Forbidden state #2 · Landing-page = homepage on a JTBD campaign.</strong> Each JTBD campaign routes to its JTBD landing (P-02 §2.4-2.7). No exceptions. CI check fails the deploy if any UG-S-* ad URL doesn't match the canonical landing for its JTBD code.</li>
+        <li><strong>Forbidden state #3 · Mixing JTBDs in one ad group.</strong> A BCM-Coordinated keyword + Pre-Sale-Investor keyword in same ad group = restructure. JTBD coherence is the discipline because Sarah &amp; Mark's pain language is different at each JTBD.</li>
+        <li><strong>Forbidden state #4 · Bidding on BCM firm names without partnerships consent.</strong> The 34 BCM firms in UG-B-01 conquest are only included with written partnership consent (P-10 governs) — bidding on a partnership-channel BCM without consent risks the entire P-10 relationship for short-term paid lift.</li>
+        <li><strong>Forbidden state #5 · Smart Bidding optimising on lead-form fills.</strong> Primary conversion must be BCM Approval Pack + Pre-Reno Consult held. Quality control reviewed weekly. If lead-form fills exceed 30% of conversions in any campaign for 2 weeks, the conversion configuration is broken.</li>
+        <li><strong>Forbidden state #6 · No Brisbane-strata-suburb modifier in geo-targeting.</strong> 45 SEQ strata-dense suburbs from P-04 are the locked geo-target set. Townhouse-heavy outer suburbs (Springfield, Ipswich greenfield, Logan greenfield) explicitly excluded.</li>
+        <li><strong>Forbidden state #7 · Renovation-aesthetic creatives instead of BCM-tension creatives.</strong> A "beautiful kitchen reveal" creative without the BCM compliance frame breaks Sarah &amp; Mark recognition. All creatives must visibly cue the strata environment (door-frame protection, lift padding, BCM coordinator on site) in at least 1 of 3 above-fold visual moments.</li>
+        <li><strong>Forbidden state #8 · Cross-LOB cannibalisation in remarketing.</strong> A Pools-LOB visitor cannot be retargeted by Units remarketing within 90 days of their Pools Inspection booking · prevents Sarah &amp; Mark feeling spam-marketed by the Group. WS-04 persona-care doctrine enforced at the audience-list level.</li>
+        <li><strong>Weekly cadence:</strong> Mon search-terms-report + n-gram analysis + negative-keyword update (strata-specific list reviewed separately) · Wed creative-fatigue check (CTR decay &gt;15% week-over-week = rotate) · Fri budget reallocation by JTBD CP-Pack-Download performance + BCM-firm referral attribution check.</li>
+        <li><strong>Monthly cadence:</strong> Bid-strategy review · audience-signal refresh on PMax · LSA review velocity + strata-keyword saturation audit · branded SOV report · BCM-firm conquest audit (any partnership-consent changes since last review).</li>
+        <li><strong>Quarterly cadence:</strong> Full account restructure check · negative keyword list audit · landing-page CR audit (paired with P-02 changes if needed) · 55/45 brand/activation budget review · Pureprofile SEQ panel question audit (WS-11 §6.4 — Sarah &amp; Mark BCM-pain-recall measured every quarter, paid creative tuned to recall data).</li>
+      </ul>
+    </div>
+
+    <div className="pillar-foot">
+      <span className="pf-pill">P-05 · 10 campaigns across Search · PMax · Demand Gen · LSA · Brand Defence · Remarketing · YouTube</span>
+      <span className="pf-pill">$42.6k/mo M12 spend · CP-Pack-Download $79 · 540 Packs/mo · 122 contracts/mo paid-attributed</span>
+      <span className="pf-pill">JTBD-segmented · BCM Approval Pack = locked F2 · Enhanced Conversions · offline upload from bowtie LTV credit-back</span>
+      <span className="pf-pill">M24 post-bowtie ROAS 85.2× — highest in YBMT Group · because Units F2 fans into Pools + Termite F1 inside 36 months</span>
+    </div>
+  </section>
+)
+
+// ============================================================================
+// UNITS P-06 · META ADS DEPLOYMENT KIT · Category-design top funnel + BCM-credibility middle + JTBD activation
+// ============================================================================
+const UGPillar06MetaAds = () => (
+  <section id="p06" className="pillar-block">
+    <div className="pillar-block-h">
+      <span className="pillar-block-eyebrow">PILLAR P-06 · UNITS · META ADS DEPLOYMENT KIT</span>
+      <h2 className="pillar-block-title">P-06 · Meta Ads Engine · 3-Layer Funnel Across Facebook · Instagram · WhatsApp · BCM Authority Layer + JTBD Activation + Bowtie Cross-LOB Re-Engagement</h2>
+      <p className="pillar-block-sub">Meta is structurally different from Google for Units. Google captures buyers already searching the BCM-renovation problem — a small intent pool. Meta is where the category gets <em>designed</em>: where Sarah &amp; Mark first encounter the idea that "BCM-friendly renovation" exists as a discrete service category, where they form the trigger language before they ever type a search. The architecture runs a 3-layer funnel (Category Design top · BCM Authority middle · JTBD Activation bottom) with a cross-LOB bowtie re-engagement layer that captures the Pools and Termite alumni who never knew Units existed. Every creative carries WS-02 Promise "Built like it's our own home" through the strata-tuned variant "Renovations That Settle Quietly," every creative cues Sarah &amp; Mark recognition in the first 2 seconds, and every offer remains the locked WS-11 F2: the <strong>BCM Approval Pack</strong>. [BF-LSI] 60/40 brand-activation split on Meta (5 points more brand than the Group default of 55/45 · because Meta is the primary category-design surface) · [JR-DBA] DBA-2 "quiet site" visual cue + DBA-3 "BCM-Approved Methodology" badge travels every static · [AH-OFR] one offer per audience · never multiple CTAs in a single ad.</p>
+    </div>
+
+    {/* 6.1 META DOCTRINE */}
+    <div className="kw-block">
+      <h3>6.1 · Units Meta Doctrine — Seven Locked Rules</h3>
+      <ol>
+        <li><strong>3-layer funnel discipline · no layer-skipping.</strong> Category Design (top) feeds BCM Authority (middle) feeds JTBD Activation (bottom) feeds Bowtie Cross-LOB (lateral). No campaign attempts to do two layers' work. A category-design video does not have a "Get BCM Pack" CTA — it has a "Learn how" CTA that routes to a long-form article. Sarah &amp; Mark are not ready for the Pack at first impression — the category must be designed first.</li>
+        <li><strong>Cue Sarah &amp; Mark in 2 seconds.</strong> Every video creative's first 2 seconds must show one of three recognition cues: (a) a BCM-coordinated trade entry through a unit building lobby (clean, quiet, padded) · (b) a 30-something/40-something couple consulting a body-corporate document at a kitchen bench · (c) a unit-block exterior with a "trade vehicle parked discreetly · 7:02am" caption. No generic renovation b-roll without strata context.</li>
+        <li><strong>BCM voice in 23% of creatives minimum.</strong> Sarah &amp; Mark trust BCM voices more than contractor voices for strata-compliance claims. A minimum 23% of all paid Meta creative inventory must feature a real BCM coordinator (with permission) speaking on camera. This breaks the contractor-self-praise pattern and trains the algorithm that BCM-credibility is the unit-renovation buyer's primary trust signal.</li>
+        <li><strong>One offer per audience.</strong> Top-funnel audiences get the BCM-resources content hub (no form fill). Middle-funnel audiences get the BCM Approval Pack download. Bottom-funnel audiences get the Pre-Reno Consult booking. Cross-LOB bowtie audiences get a "your Pools/Termite project unlocks a Units consult at $0" specific offer. Mixing offers in a single audience is the most common Meta-failure mode and explicitly forbidden.</li>
+        <li><strong>Conversion API + Enhanced CAPI signal pass-back.</strong> Meta Pixel + Conversion API both fire on the same events. WS-11 §1.4 server-side GTM proxies Pixel events through Cloudflare Worker → Meta CAPI for iOS 14.5+ resilience. Match quality target ≥ 7.8/10. Hashed PII (email + phone + name) passed back from HubSpot for all F2/F3 events so Meta sees the complete funnel including the contract-signed F3 event invisible to the pixel.</li>
+        <li><strong>Bowtie cross-LOB whitelist · explicit consent.</strong> Pools and Termite customers retargeted into Units campaigns only after the 90-day cool-down (WS-04 persona-care) AND only if their HubSpot record has the bowtie-consent flag = TRUE (set at handover survey, P-08 §8.6). Without explicit consent, the customer is excluded from Units retargeting via Meta custom audience exclusion. This protects the Group's long-term trust capital.</li>
+        <li><strong>Forbidden creative category · "renovation glamour shots."</strong> The category is BCM-Friendly Renovation, not Apartment Aesthetic Renovation. Beautiful kitchen reveals without the strata-tension cue (door-frame protection, lift padding, BCM coordinator, building manager signage) are explicitly forbidden creative templates. Aesthetic content lives in P-09 organic — paid Meta is for category design + BCM credibility + JTBD activation only.</li>
+      </ol>
+    </div>
+
+    {/* 6.2 CAMPAIGN ARCHITECTURE */}
+    <div className="kw-block">
+      <h3>6.2 · Campaign Architecture — 12 Campaigns Across 4 Layers</h3>
+      <p><strong>Layer 1 · Category Design (top funnel · 25% budget · brand-bucket KPIs):</strong></p>
+      <table className="services-table meta-table">
+        <thead><tr><th>Campaign code</th><th>Objective</th><th>Audience</th><th>Creative format</th><th>Daily budget M3</th><th>Primary KPI</th></tr></thead>
+        <tbody>
+          <tr><td>UG-M-CD-01 "What Settles Quietly Means"</td><td>Reach</td><td>Brisbane apartment owners + 1° lookalike of BCM-coordinated HubSpot deals · age 32-58 · interest: home renovation, body corporate, strata</td><td>4 in-feed videos · 30 / 60 / 90 / 180 sec · Sarah &amp; Mark testimonial-style narratives</td><td>$45</td><td>3-second video view rate</td></tr>
+          <tr><td>UG-M-CD-02 "The 7am-3pm Doctrine"</td><td>Video views (Thruplay)</td><td>Brisbane apartment owners · 1% lookalike of BCM Approval Pack downloaders</td><td>6 in-feed reels · 22-45 sec · single-day-in-the-life trade narrative</td><td>$35</td><td>Thruplay completion rate &gt; 32%</td></tr>
+          <tr><td>UG-M-CD-03 BCM Voice Testimonial Series</td><td>Brand awareness</td><td>Brisbane strata-density polygon · interest: real estate investing + body corporate</td><td>6 testimonial reels · real BCM coordinators · 45-90 sec each</td><td>$40</td><td>Branded recall lift study (Meta-native)</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Layer 2 · BCM Authority (middle funnel · 30% budget · F2-bucket KPIs):</strong></p>
+      <table className="services-table meta-table">
+        <thead><tr><th>Campaign code</th><th>Objective</th><th>Audience</th><th>Creative format</th><th>Daily budget M3</th><th>Primary KPI</th></tr></thead>
+        <tbody>
+          <tr><td>UG-M-BA-01 BCM Approval Pack Lead-Gen</td><td>Conversions (lead)</td><td>1° lookalike of /bcm-coordination landing + 3-second video viewers from CD-01/02</td><td>5 carousels · BCM Pack contents preview · 3 reels · 2 statics with "what's in the Pack" overlay</td><td>$85</td><td>Cost per Pack-download &lt; $34</td></tr>
+          <tr><td>UG-M-BA-02 BCM Resources Authority Content</td><td>Traffic + Engagement</td><td>Brisbane apartment owners + 2° lookalike of Pack downloaders + interest: strata law, body corporate AGM</td><td>8 link-cards · each linking to a /bcm-resources cornerstone page (P-04 §4.4)</td><td>$45</td><td>Time-on-page &gt; 4:20 + Pack-download conv rate &gt; 6.4%</td></tr>
+          <tr><td>UG-M-BA-03 Realtor + Investor Authority</td><td>Conversions (Pre-Sale Calculator)</td><td>Brisbane investment-property owners · realtor-adjacent affinity · age 38-65 · 1° lookalike of Pre-Sale ROI Calculator completers</td><td>4 carousels · case-study format · 3 statics with ROI uplift charts · 2 reels · realtor testimonial</td><td>$45</td><td>Cost per Calculator completion &lt; $22</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Layer 3 · JTBD Activation (bottom funnel · 30% budget · F3 leading-indicator KPIs):</strong></p>
+      <table className="services-table meta-table">
+        <thead><tr><th>Campaign code</th><th>Objective</th><th>Audience</th><th>Creative format</th><th>Daily budget M3</th><th>Primary KPI</th></tr></thead>
+        <tbody>
+          <tr><td>UG-M-JA-01 BCM-Coordinated JTBD-1 Conv</td><td>Conversions (Consult)</td><td>Pack downloaders + BCM-coordination landing visitors · 14-day window · BCM-tag = TRUE</td><td>2 in-feed videos · 3 carousels · Sarah-Mark recognition-cue first 2s</td><td>$45</td><td>Consult-booking cost &lt; $58</td></tr>
+          <tr><td>UG-M-JA-02 Lot-Owner-Refresh JTBD-2 Conv</td><td>Conversions (Consult)</td><td>Pack downloaders + /refresh landing visitors · 14-day · BCM-tag = FALSE</td><td>2 in-feed videos · 3 carousels · self-initiated narrative · pricing transparency badge</td><td>$45</td><td>Consult-booking cost &lt; $52</td></tr>
+          <tr><td>UG-M-JA-03 Pre-Sale-Investor JTBD-3 Conv</td><td>Conversions (Calculator OR Consult)</td><td>Calculator completers + Domain/realestate.com.au lookalike · investor + realtor-affinity</td><td>3 carousels with ROI comp tables · 2 reels with 6.8× ROI hook · realtor testimonial</td><td>$45</td><td>Calculator OR Consult cost &lt; $62</td></tr>
+          <tr><td>UG-M-JA-04 Renew-Transformation JTBD-4 Conv</td><td>Conversions (Consult)</td><td>Pack downloaders + /renew landing visitors · 14-day · saved-listings + Pinterest-board affinity</td><td>4 reels · 8-week before/after carousels · finance-friendly framing</td><td>$45</td><td>Consult-booking cost &lt; $72</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Layer 4 · Bowtie Cross-LOB Re-Engagement (lateral · 15% budget · 50% LTV credit-back KPIs · WS-05 economics in action):</strong></p>
+      <table className="services-table meta-table">
+        <thead><tr><th>Campaign code</th><th>Objective</th><th>Audience</th><th>Creative format</th><th>Daily budget M3</th><th>Primary KPI</th></tr></thead>
+        <tbody>
+          <tr><td>UG-M-BT-01 Pools Alumni → Units</td><td>Conversions (Consult)</td><td>Pools customers · bowtie-consent flag = TRUE · 90+ days post-handover · own a Brisbane apartment as 2nd property</td><td>4 in-feed videos · "you trusted us with your Resort Yard · here's what we do for your investment unit" narrative · same craft-team voice as Pools P-09</td><td>$25</td><td>Bowtie-attributed Consult cost &lt; $42</td></tr>
+          <tr><td>UG-M-BT-02 Termite Alumni → Units (investor cohort)</td><td>Conversions (Calculator)</td><td>Termite Damage Repair customers · bowtie-consent flag = TRUE · 60+ days post-handover · investor-segment in HubSpot</td><td>3 carousels · "the building you saved · what's next" narrative · Pre-Sale Calculator as primary CTA</td><td>$15</td><td>Calculator completion cost &lt; $32</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Total M3 daily budget:</strong> $670/day · ~$20k/month. <strong>Total M12 daily budget:</strong> $1,180/day · ~$35.4k/month. <strong>Brand/Activation split (Binet &amp; Field):</strong> 25% Category Design + 35% BCM Authority brand-leaning = 60% brand · 30% JTBD + 10% Bowtie = 40% activation. The 60/40 weighting reflects Meta's primary purpose for Units: category design, not last-click conversion (that's Google's job in this LOB).</p>
+    </div>
+
+    {/* 6.3 CREATIVE LIBRARY */}
+    <div className="kw-block">
+      <h3>6.3 · Creative Library — 48 Production-Ready Concepts Across 4 Layers</h3>
+      <p><strong>Layer 1 · Category Design — 12 video concepts:</strong></p>
+      <ol>
+        <li>"Day 1 of your renovation should not announce itself." — quiet trade entry · BCM coordinator nod · 30 sec.</li>
+        <li>"Your neighbour's kettle should still work at 7:02am." — building corridor · soft-shoe trades · 22 sec reel.</li>
+        <li>"There is a way to renovate without becoming the building's villain." — montage of 4 BCM coordinators speaking · 60 sec.</li>
+        <li>"The 28-day BCM approval pathway, in plain English." — animated explainer · cornerstone-page link · 45 sec.</li>
+        <li>"What 'BCM-Approved Methodology' actually means." — voiceover with on-screen BCM checklist · 38 sec.</li>
+        <li>"Sarah &amp; Mark didn't lose a friend in the building. Here's why." — couple testimonial (composite) · 90 sec.</li>
+        <li>"The lift padding video that 14 BCMs asked for." — 60-second methodology demo · 60 sec.</li>
+        <li>"Why we end work at 3pm." — trade voice · school-pickup framing · 25 sec reel.</li>
+        <li>"The building manager's 12-item daily tidy checklist." — animated checklist · 48 sec.</li>
+        <li>"Why we don't sub-let common-property cleaning." — single-take trade narrative · 35 sec.</li>
+        <li>"Brisbane unit renovation in 2026: what's changed." — category-design think-piece · 180 sec long-form.</li>
+        <li>"The 7am-3pm doctrine in 90 seconds." — methodology hero · 90 sec.</li>
+      </ol>
+      <p><strong>Layer 2 · BCM Authority — 18 concepts (mix of carousels · reels · statics):</strong> 6 "Inside the BCM Approval Pack" carousels (1 per page · screenshot + value claim) · 4 BCM-coordinator testimonial reels (real names with permission) · 4 "BCM-resources hub deep-dive" link-cards (1 per cornerstone page) · 2 "single-account billing explainer" statics · 2 "acoustic monitoring SOP" reels.</p>
+      <p><strong>Layer 3 · JTBD Activation — 12 concepts (3 per JTBD):</strong> each JTBD gets 1 hero video · 1 carousel · 1 reel · all locked to /refresh /renew /bcm-coordination /pre-sale landings respectively. All carry the WS-02 Promise variant and the 30-Day Refresh seal.</p>
+      <p><strong>Layer 4 · Bowtie Cross-LOB — 6 concepts:</strong> 4 Pools-alumni narratives (1 per Pools JTBD origin) · 2 Termite-alumni narratives (investor cohort focus).</p>
+      <p>All 48 concepts production-locked in /units/p06/creative-v1 deliverable folder · production cadence 12 new + 12 refresh per quarter to combat CTR decay · creative refresh KPI = no concept exceeds 18 days at &gt; 1.5 frequency without rotation.</p>
+    </div>
+
+    {/* 6.4 AUDIENCE STRATEGY */}
+    <div className="kw-block">
+      <h3>6.4 · Audience Strategy — 18 Custom + Lookalike + Interest Audiences</h3>
+      <ul className="voice-list">
+        <li><strong>Custom audience 1 · Brisbane Strata Lot-Owners:</strong> built from CRM list of opt-in homeowners + matched LinkedIn job-title "Lot Owner / Investor" + custom intent from "body corporate manager" search-string crawl.</li>
+        <li><strong>Custom audience 2 · BCM-Resources Engagers:</strong> visited /bcm-resources/* in past 90 days · time-on-page &gt; 2:30 · excluded from CD-01/02 (already category-formed) · included in BA-01/02 only.</li>
+        <li><strong>Custom audience 3 · Pack Downloaders:</strong> high-intent · the gold-standard middle-funnel audience · primary remarketing seed.</li>
+        <li><strong>Custom audience 4 · Calculator Completers:</strong> investor-segment specific · highest 30-day conversion rate in the account.</li>
+        <li><strong>Custom audience 5 · JTBD-Tagged Landing Visitors:</strong> 4 separate audiences (one per JTBD landing) for surgical JTBD activation remarketing.</li>
+        <li><strong>Custom audience 6 · Pools Alumni Bowtie-Consenting:</strong> HubSpot bowtie-flag = TRUE + 90+ days post-Pools-handover · bowtie-only.</li>
+        <li><strong>Custom audience 7 · Termite Alumni Bowtie-Consenting:</strong> HubSpot bowtie-flag = TRUE + 60+ days post-Termite-handover · investor-segment filter.</li>
+        <li><strong>Lookalike 1 (1%):</strong> Pack Downloaders (12-month window) · used in BA-01.</li>
+        <li><strong>Lookalike 2 (1%):</strong> Closed-won Refresh-tier contracts · used in JA-02.</li>
+        <li><strong>Lookalike 3 (1%):</strong> Closed-won Pre-Sale-tier contracts · used in JA-03.</li>
+        <li><strong>Lookalike 4 (1%):</strong> BCM-coordinated closed-wons · used in JA-01.</li>
+        <li><strong>Lookalike 5 (2%):</strong> 30-second video viewers of CD-03 (BCM testimonials) · used in BA-02 + BA-03.</li>
+        <li><strong>Interest audience 1:</strong> "Body Corporate" + "Strata Title" + "Apartment Investing" + "Real Estate Investment Trust" · narrowed to Brisbane DMA · used in CD-01/02/03.</li>
+        <li><strong>Interest audience 2:</strong> "Home Renovation" + "Interior Design" + age 32-58 + Brisbane apartment-density geo-poly · used in BA-02/03.</li>
+        <li><strong>Interest audience 3:</strong> "Real Estate Listing" + "Selling a Home" + life-event "Recently Listed" · used in JA-03 + BT-02.</li>
+        <li><strong>Audience exclusion 1:</strong> All Units F2 conversions (Pack downloaders + Calculator completers) excluded from all CD-* campaigns — never show category-design content to already-category-formed buyers.</li>
+        <li><strong>Audience exclusion 2:</strong> All Pools or Termite active-project households (deal stage 4-9 in HubSpot) excluded from all Units campaigns — Sarah &amp; Mark's persona-care doctrine.</li>
+        <li><strong>Audience exclusion 3:</strong> Townhouse-density polygons excluded from all campaigns — strata-only LOB.</li>
+      </ul>
+    </div>
+
+    {/* 6.5 MEASUREMENT & ATTRIBUTION */}
+    <div className="kw-block">
+      <h3>6.5 · Measurement Stack and Attribution Model</h3>
+      <p><strong>Meta Pixel + Conversion API dual-tracking · all events fire both client-side and server-side via Cloudflare Worker proxy (WS-11 §1.4 sGTM-equivalent for iOS resilience):</strong></p>
+      <ol>
+        <li><strong>F2 primary (value $58 = avg margin × 0.18 attribution credit):</strong> Pack download + Consult booked (composite event).</li>
+        <li><strong>F2 secondary (value $24):</strong> Pack download only.</li>
+        <li><strong>F2 micro (value $18):</strong> Pre-Sale Calculator completion.</li>
+        <li><strong>F3 leading (value $2,800 = avg margin × 0.45 attribution credit · uploaded offline from HubSpot M4+):</strong> Contract signed within 90 days of last Meta-touch.</li>
+        <li><strong>F3 confirmed (value $5,600 · uploaded offline from HubSpot M6+):</strong> Project delivered + Pureprofile NPS &gt; 75.</li>
+        <li><strong>Bowtie F3 (value $8,400 · uploaded offline from HubSpot M9+):</strong> Cross-LOB expansion event (Pools/Termite contract signed within 36 months of Units project) · 50% LTV credit-back to the original Meta touchpoint that drove the Units F1.</li>
+        <li><strong>Match quality target:</strong> ≥ 7.8/10 (Meta-native quality score) · hashed email + phone + first/last name + zip passed back via CAPI for every F2/F3.</li>
+      </ol>
+      <p><strong>Attribution windows:</strong> 7-day click + 1-day view (Meta default) for Pixel-side · 28-day click + 7-day view (server-side via Robyn MMM weekly batch). The Robyn MMM model (WS-09 §7.3 · Units-tuned 26-week adstock with 0.18 decay for high-consideration purchase) is the source-of-truth for paid-Meta ROI · Meta Ads Manager numbers are operational only. [WBD-BOW] The 50% LTV credit-back from cross-LOB expansion lifts Meta's apparent ROAS by 1.4× at M24 — without this credit-back, Meta would be misallocated as a "soft" channel and starved of budget; with it, Meta is the highest-strategic-leverage channel in the LOB.</p>
+    </div>
+
+    {/* 6.6 KPI SCORECARD */}
+    <div className="kw-block">
+      <h3>6.6 · KPI Scorecard — Meta M1 → M24 · Units LOB</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Metric</th><th>M1 (learn)</th><th>M3 (stabilise)</th><th>M6 (scale)</th><th>M12 (mature)</th><th>M24 (compound)</th></tr></thead>
+        <tbody>
+          <tr><td>Total monthly spend</td><td>$11k</td><td>$20k</td><td>$26k</td><td>$35.4k</td><td>$48k</td></tr>
+          <tr><td>Reach (unique users · Brisbane apartment-owner cohort)</td><td>180k</td><td>280k</td><td>340k</td><td>420k</td><td>520k</td></tr>
+          <tr><td>Frequency (weekly average · capped 1.8)</td><td>1.2</td><td>1.5</td><td>1.6</td><td>1.7</td><td>1.7</td></tr>
+          <tr><td>Branded search lift (Google Trends Brisbane proxy)</td><td>—</td><td>+12%</td><td>+34%</td><td>+78%</td><td>+220%</td></tr>
+          <tr><td>BCM Approval Pack downloads (Meta-attributed)</td><td>62</td><td>184</td><td>340</td><td>610</td><td>980</td></tr>
+          <tr><td>Pre-Reno Consults held (Meta-attributed)</td><td>11</td><td>42</td><td>104</td><td>220</td><td>415</td></tr>
+          <tr><td>Cost per Pack-download (blended)</td><td>$177</td><td>$109</td><td>$76</td><td>$58</td><td>$49</td></tr>
+          <tr><td>Cost per Consult-held (blended)</td><td>$1,000</td><td>$476</td><td>$250</td><td>$161</td><td>$116</td></tr>
+          <tr><td>Implied Meta-attributed contracts/month</td><td>3</td><td>16</td><td>49</td><td>118</td><td>238</td></tr>
+          <tr><td>Implied Meta-attributed revenue/month</td><td>$156k</td><td>$896k</td><td>$2.84M</td><td>$7.32M</td><td>$15.71M</td></tr>
+          <tr><td>Meta GPM (28% blended GP)</td><td>$44k</td><td>$251k</td><td>$795k</td><td>$2.05M</td><td>$4.40M</td></tr>
+          <tr><td>Meta ROAS (GP basis · pre-bowtie)</td><td>4.0×</td><td>12.6×</td><td>30.6×</td><td>57.9×</td><td>91.7×</td></tr>
+          <tr><td>Meta ROAS (GP basis · post-bowtie 50% LTV credit-back)</td><td>4.8×</td><td>15.1×</td><td>36.7×</td><td>69.5×</td><td>110.0×</td></tr>
+          <tr><td>Category-design KPI · branded search lift (Brisbane "BCM renovation" SOV)</td><td>—</td><td>4.2%</td><td>11.8%</td><td>28%</td><td>52%</td></tr>
+        </tbody>
+      </table>
+      <p className="kw-sub">Meta is the highest-compounding paid channel in the YBMT Group · branded search lift of +220% by M24 means Meta is doing category-design work that re-shapes Google Ads economics: every Meta dollar spent at M0 creates a Google Ads CPC reduction at M18-M24 by lifting Quality Scores via branded-search proxy signals. The post-bowtie ROAS of 110× at M24 is the financial signature of category-design economics — Sarah &amp; Mark recognise the YBMT Units brand 2 years before they ever search, and when they do search, the conversion rate is 3.4× a cold-search lead's rate. This is the WS-01 Category doctrine and WS-05 Economics doctrine working in alignment.</p>
+    </div>
+
+    {/* 6.7 GOVERNANCE & ANTI-PATTERNS */}
+    <div className="kw-block">
+      <h3>6.7 · Governance, Forbidden States, Quality Gates</h3>
+      <ul className="voice-list">
+        <li><strong>Forbidden state #1 · Aesthetic-only renovation creative.</strong> Every Meta creative must visibly cue strata context (door-frame protection / lift padding / BCM coordinator / building manager signage) in at least 1 of the first 3 above-fold seconds. Aesthetic-only creative is for P-09 organic, never paid.</li>
+        <li><strong>Forbidden state #2 · CD-* campaigns running with a Pack-download CTA.</strong> Category Design is a "learn how" funnel rung. The Pack-download CTA appears only in BA-* and JA-* campaigns. CI-equivalent linter at YDT auto-flags mis-tagged creatives.</li>
+        <li><strong>Forbidden state #3 · Bowtie campaign without explicit consent flag.</strong> A Pools or Termite customer is excluded from BT-01/02 unless HubSpot bowtie-consent = TRUE. Audit reviewed weekly · any leak rolls back to immediate audience-rebuild + apology email to leaked customer.</li>
+        <li><strong>Forbidden state #4 · Frequency &gt; 1.8 weekly.</strong> Sarah &amp; Mark's WS-04 persona-care doctrine: a 5-touch-week is intrusion, not awareness. Frequency cap at 1.8 enforced at audience level. Auto-pause if any audience exceeds 2.0 for &gt; 7 days.</li>
+        <li><strong>Forbidden state #5 · Pools or Termite active-project households retargeted.</strong> Audience exclusion 2 (deal stage 4-9 in HubSpot) blocks Units retargeting until handover complete + 60-day cool-down. Persona-care over short-term efficiency.</li>
+        <li><strong>Forbidden state #6 · Townhouse-density polygons.</strong> Springfield, Ipswich greenfield, Logan greenfield, Pine Rivers excluded at account level. Strata-only LOB.</li>
+        <li><strong>Forbidden state #7 · Generic "renovation" interest audiences without Brisbane geo + strata narrowing.</strong> All interest-based audiences must AND with apartment-density geo-poly + min 1 strata-related interest. Pure interest-only targeting is forbidden — wastes 38% of spend on non-strata in test data.</li>
+        <li><strong>Forbidden state #8 · Lookalike audiences not refreshed quarterly.</strong> Lookalikes decay; quarterly rebuild from current 12-month CRM seed is the discipline.</li>
+        <li><strong>Weekly cadence:</strong> Mon creative-fatigue audit (CTR decay &gt;12% week-over-week = rotate) · Wed audience-overlap report + frequency-cap check · Fri budget reallocation by layer-level ROAS + bowtie attribution audit.</li>
+        <li><strong>Monthly cadence:</strong> Full creative refresh batch (12 new + 12 refresh per quarter cadence operationalised monthly) · audience rebuild · CAPI match-quality review · creative-layer-ratio review (25/30/30/15 maintained or adjusted within 5pp).</li>
+        <li><strong>Quarterly cadence:</strong> Robyn MMM Units-tuned re-run · lookalike full rebuild · Pureprofile SEQ panel question audit (Sarah &amp; Mark BCM-pain recall measured against Meta-creative-recall · creative tuned to recall data).</li>
+      </ul>
+    </div>
+
+    <div className="pillar-foot">
+      <span className="pf-pill">P-06 · 12 campaigns across 4 layers · Category Design · BCM Authority · JTBD Activation · Bowtie Cross-LOB</span>
+      <span className="pf-pill">$35.4k/mo M12 spend · Cost-per-Pack $58 · 610 Packs/mo · 118 contracts/mo Meta-attributed</span>
+      <span className="pf-pill">CAPI + sGTM proxy · 7.8/10 match quality · Robyn MMM source-of-truth · 50% LTV credit-back</span>
+      <span className="pf-pill">M24 post-bowtie ROAS 110× · branded search lift +220% — the category-design engine of the Group</span>
+    </div>
+  </section>
+)
+
+// ============================================================================
+// UNITS P-08 · SALES ENABLEMENT KIT · BCM-coordinated sales process + MEDDPICC ≥12/21 gate
+// ============================================================================
+const UGPillar08SalesEnablement = () => (
+  <section id="p08" className="pillar-block">
+    <div className="pillar-block-h">
+      <span className="pillar-block-eyebrow">PILLAR P-08 · UNITS · SALES ENABLEMENT KIT</span>
+      <h2 className="pillar-block-title">P-08 · Sales Enablement Engine · BCM-Coordinated 12-Stage HubSpot Pipeline · MEDDPICC ≥12/21 Gate · Pre-Reno Consult Playbook · Bowtie Handover Discipline</h2>
+      <p className="pillar-block-sub">Units sales is a two-buyer process: the lot-owner is the economic buyer (signs the cheque) but the BCM coordinator is the gatekeeper (vetoes the trade or accelerates the approval). The MEDDPICC scorecard (WS-11 §2.3) must score ≥12/21 across <strong>both</strong> buyer profiles before a quote is issued — no exceptions. This is the single most non-negotiable rule in the LOB because issuing a quote to an unqualified BCM-buyer-set burns the partnership channel (P-10) for that BCM firm for 24 months. The sales process is built around a single F2 offer: the 60-minute <strong>Pre-Reno Consult</strong> (held on-site in the unit + 15 minutes in the building manager's office) — never a free quote · never a phone call alone · never a remote video meeting for first contact. Every stage of the 12-stage HubSpot pipeline maps to a MEDDPICC component, a Sarah &amp; Mark WS-04 persona-care check, a Promise-tested moment ("Built like it's our own home" experienced not just stated), and a bowtie disclosure point (where cross-LOB Pools/Termite history is surfaced if applicable). The pipeline does not optimise for close-rate · it optimises for <em>fit-rate</em> — a 38% lower close-rate than industry average is deliberate because every Units deal we win must be a customer we can also serve in Pools or Termite at month 24-36 (WS-05 economics). Bad-fit Units customers cost the Group 4.2× the deal margin in BCM-relationship damage and cross-LOB cannibalisation.</p>
+    </div>
+
+    {/* 8.1 SALES DOCTRINE */}
+    <div className="kw-block">
+      <h3>8.1 · Units Sales Doctrine — Eight Locked Rules</h3>
+      <ol>
+        <li><strong>Two-buyer qualification · MEDDPICC scored against both.</strong> The lot-owner MEDDPICC scorecard runs in parallel to the BCM MEDDPICC scorecard. Both must reach ≥12/21 before quote issuance. A 19/21 lot-owner with an 8/21 BCM is a no-quote — the BCM is the blocker and quoting without their alignment burns the channel.</li>
+        <li><strong>Pre-Reno Consult is the only first-contact F2.</strong> 60 minutes on-site (45 in the unit · 15 in the BCM office where possible) · Sales rep arrives with the BCM Approval Pack pre-filled for that specific building · no slide deck · no laptop · structured-conversation script doc'd at /units/p08/consult-script-v1. The Pack-pre-fill is the trust signal that compounds in WS-04 persona recognition. Sarah &amp; Mark feel seen because we did our homework on their building before we walked through the door.</li>
+        <li><strong>"Built like it's our own home" is experienced, not stated.</strong> The phrase appears once in the Consult — at minute 38, after the rep has demonstrated 6 specific moments where they treated the unit as their own home (shoes off · drop-cloth deployed before any tool touched a surface · neighbour's mat straightened on the way in · BCM coordinator addressed by name · acoustic-decibel meter taken out and shown · timeline drawn by hand on a notepad, not a printed brochure). The Promise is felt before it's spoken — WS-02 doctrine made operational.</li>
+        <li><strong>Sarah &amp; Mark persona-check at every stage gate.</strong> Each of the 12 pipeline stages has a Sarah &amp; Mark check question (e.g., Stage 4: "Has the BCM coordinator's first name been used by the rep in the last interaction?") — if the answer is no, the stage cannot advance. This is the WS-04 anchor made into a pipeline control rather than a poster on the wall.</li>
+        <li><strong>Bowtie disclosure at Stage 6.</strong> At Stage 6 (Solution Designed), the rep discloses if the prospect has a Pools or Termite project in the Group's history (or not). The 50% LTV credit-back (WS-05) is then transparently calculated and presented on the proposal at Stage 8 — Sarah &amp; Mark see that being a returning customer earns them measurable economics, not vague loyalty. This converts cross-LOB churn into cross-LOB compounding.</li>
+        <li><strong>No quote at first Consult.</strong> The Consult delivers a Scope Confirmation Document (not a quote) at the end · the quote follows 5-7 business days later after BCM by-law cross-check + acoustic-monitoring SOP fit-test + insurance verification + tier-recommendation modelling. This 5-7-day discipline is the trust-compounding feature, not a delay — it visibly distinguishes YBMT Units from the contractor-who-quotes-on-the-spot whose subsequent revisions burn BCM goodwill.</li>
+        <li><strong>F3 = signed contract · F3+ = first 5 days delivered without incident.</strong> WS-11 KPI doctrine: contract signature alone is not F3 — F3 includes the first 5 days of execution where any BCM complaint or trade dispute would have surfaced. Sales rep compensation is structured 60% at F3 (signature) + 40% at F3+ (5-day-clean execution) · this aligns sales with delivery and prevents the "close-and-flick" anti-pattern that destroys partnerships.</li>
+        <li><strong>BCM single-account billing — fee for BCM service disclosed at Stage 5.</strong> The BCM single-account billing service (P-01 §1.6) costs the lot-owner $1,200-$2,800 fee depending on tier · this is disclosed at Stage 5 (Pricing Discussion) not buried in the contract · transparent fee structure is the BCM-coordination authority signal Sarah &amp; Mark trust.</li>
+      </ol>
+    </div>
+
+    {/* 8.2 12-STAGE PIPELINE */}
+    <div className="kw-block">
+      <h3>8.2 · 12-Stage HubSpot Pipeline · Stage Definitions, Required MEDDPICC Score, Exit Criteria</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Stage</th><th>Name</th><th>Required MEDDPICC (lot-owner)</th><th>Required MEDDPICC (BCM)</th><th>Sarah &amp; Mark check</th><th>Avg duration</th><th>Conv to next</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Lead Captured</td><td>—</td><td>—</td><td>Source-channel WS-04-tagged · JTBD-coded</td><td>Same day</td><td>62%</td></tr>
+          <tr><td>2</td><td>Pack Downloaded</td><td>1/21</td><td>0/21</td><td>Pack personalisation tier matched to building?</td><td>2 days</td><td>54%</td></tr>
+          <tr><td>3</td><td>Consult Booked</td><td>3/21</td><td>1/21</td><td>BCM coordinator notified + invited?</td><td>3 days</td><td>78%</td></tr>
+          <tr><td>4</td><td>Consult Held</td><td>7/21</td><td>5/21</td><td>BCM coordinator first-name used in last interaction?</td><td>5 days</td><td>74%</td></tr>
+          <tr><td>5</td><td>Pricing Discussion</td><td>9/21</td><td>7/21</td><td>Single-account-billing fee disclosed in writing?</td><td>4 days</td><td>68%</td></tr>
+          <tr><td>6</td><td>Solution Designed (Scope Confirmed)</td><td>12/21 ✓ gate</td><td>9/21</td><td>Bowtie disclosure made? Pools/Termite history shared?</td><td>5 days</td><td>72%</td></tr>
+          <tr><td>7</td><td>BCM By-Law Cross-Check</td><td>12/21</td><td>12/21 ✓ gate</td><td>BCM coordinator signed off on by-law fit?</td><td>4 days</td><td>92%</td></tr>
+          <tr><td>8</td><td>Proposal Issued</td><td>14/21</td><td>13/21</td><td>50% LTV credit-back visible on proposal if applicable?</td><td>2 days</td><td>64%</td></tr>
+          <tr><td>9</td><td>Proposal Reviewed (&lt;1 of 3 revisions allowed)</td><td>15/21</td><td>14/21</td><td>BCM coordinator copied on revisions?</td><td>7 days</td><td>78%</td></tr>
+          <tr><td>10</td><td>Contract Signed (F3)</td><td>17/21</td><td>15/21</td><td>Welcome-call within 24h booked?</td><td>3 days</td><td>96%</td></tr>
+          <tr><td>11</td><td>Site Setup Day 0-1</td><td>17/21</td><td>16/21</td><td>BCM coordinator on-site for setup walk-through?</td><td>2 days</td><td>100%</td></tr>
+          <tr><td>12</td><td>Day 5 Clean-Execution Confirmed (F3+)</td><td>—</td><td>—</td><td>Zero BCM complaints? Acoustic-monitoring log clean?</td><td>5 days</td><td>—</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Stage 6 and Stage 7 are the dual MEDDPICC gates.</strong> Stage 6 = lot-owner ≥12/21 minimum · Stage 7 = BCM ≥12/21 minimum. A deal that reaches Stage 6 with lot-owner 14/21 but BCM 8/21 is held at Stage 7 until the BCM gap closes — never advanced. <strong>Total median pipeline duration M0-F3:</strong> 42 days (Stages 1-10) · 49 days inc. F3+ confirmation. <strong>Blended close-rate M0→F3:</strong> 8.4% of lead-captured (intentionally lower than Pools 11.2% or Termite 14.8% because fit-rate over close-rate is the discipline).</p>
+    </div>
+
+    {/* 8.3 MEDDPICC SCORECARDS */}
+    <div className="kw-block">
+      <h3>8.3 · MEDDPICC Scorecard — Lot-Owner and BCM (Both Required ≥12/21)</h3>
+      <p><strong>Lot-Owner MEDDPICC (21 points across 7 components · 3 points each):</strong></p>
+      <table className="services-table meta-table">
+        <thead><tr><th>Component</th><th>3 (verified)</th><th>2 (stated)</th><th>1 (implied)</th><th>0 (unknown)</th></tr></thead>
+        <tbody>
+          <tr><td>Metrics</td><td>ROI target named in $ (e.g., $42k pre-sale uplift) · validated by Calculator</td><td>"Increase value" stated without $</td><td>"Make it nicer" mentioned</td><td>No outcome named</td></tr>
+          <tr><td>Economic Buyer</td><td>Cheque-signer in the Consult · ID verified</td><td>Cheque-signer named · not yet met</td><td>"My partner decides"</td><td>Unknown</td></tr>
+          <tr><td>Decision Criteria</td><td>3 criteria named in writing · BCM-compliance #1</td><td>2 criteria named verbally</td><td>"Price + quality"</td><td>None</td></tr>
+          <tr><td>Decision Process</td><td>BCM meeting calendar-confirmed · sign-off doc'd</td><td>BCM aware but not scheduled</td><td>"I'll tell them later"</td><td>Process unknown</td></tr>
+          <tr><td>Identify Pain</td><td>Specific pain named with date (e.g., "lift broken from 2019 reno · sold for $48k below comp in 2022")</td><td>Pain named vaguely</td><td>"Old kitchen"</td><td>No pain stated</td></tr>
+          <tr><td>Champion</td><td>BCM coordinator or partner is named champion · introduced</td><td>Champion named · not yet engaged</td><td>"Someone in the building likes you"</td><td>No champion</td></tr>
+          <tr><td>Competition</td><td>2-3 named alt-contractors with quotes · we've seen them</td><td>1 named competitor · no quote seen</td><td>"Other quotes"</td><td>Unknown</td></tr>
+        </tbody>
+      </table>
+      <p><strong>BCM MEDDPICC (21 points across 7 components · 3 points each):</strong></p>
+      <table className="services-table meta-table">
+        <thead><tr><th>Component</th><th>3 (verified)</th><th>2 (stated)</th><th>1 (implied)</th><th>0 (unknown)</th></tr></thead>
+        <tbody>
+          <tr><td>Metrics (BCM-facing)</td><td>BCM names 2+ KPIs we'll help with (complaint reduction, levy stability)</td><td>1 BCM KPI named</td><td>"Make my life easier"</td><td>None</td></tr>
+          <tr><td>Economic Buyer</td><td>BCM committee approval pathway named · meeting scheduled</td><td>Pathway named · not scheduled</td><td>"We'll work it out"</td><td>Unknown</td></tr>
+          <tr><td>Decision Criteria</td><td>BCM by-law clauses we must satisfy named with §-numbers</td><td>By-laws mentioned generally</td><td>"By-laws"</td><td>None</td></tr>
+          <tr><td>Decision Process</td><td>BCM approval doc'd timeline within 7 days · committee chair informed</td><td>Approval doc'd · no timeline</td><td>"BCM will sign off"</td><td>Process unknown</td></tr>
+          <tr><td>Identify Pain (BCM's pain)</td><td>BCM names a previous bad-contractor experience that defines their criteria</td><td>BCM expresses generic concern</td><td>"Trades are hard"</td><td>No BCM pain</td></tr>
+          <tr><td>Champion (in BCM committee)</td><td>BCM committee chair or treasurer named · pre-aligned</td><td>Committee member identified</td><td>"Someone on the committee"</td><td>None</td></tr>
+          <tr><td>Competition (other contractors)</td><td>BCM has previously approved/rejected named competitors · we know which</td><td>Other contractors mentioned vaguely</td><td>"Other quotes"</td><td>Unknown</td></tr>
+        </tbody>
+      </table>
+      <p className="kw-sub">A 12/21 score is not "barely qualified" — it's the floor of "this deal is real." The discipline is to stop selling at 11/21 and start qualifying — a 23-minute structured BCM call typically lifts a BCM score from 8 to 14 if the relationship is real. If 30 minutes of qualifying effort cannot move the score above 12, the deal is not real and should be passed back to nurture (P-09 + email · WS-10).</p>
+    </div>
+
+    {/* 8.4 PRE-RENO CONSULT PLAYBOOK */}
+    <div className="kw-block">
+      <h3>8.4 · Pre-Reno Consult Playbook — The 60-Minute Trust-Compounding Conversation</h3>
+      <p><strong>Pre-Consult preparation (24 hours before · doc'd at /units/p08/preconsult-checklist):</strong></p>
+      <ol>
+        <li>Building dossier pulled: BCM firm name + coordinator first name + committee chair name + 3 most recent BCM-approved renovations in the building (public record).</li>
+        <li>By-law document accessed via SCA QLD or BCM firm portal · cross-reference of the 8 most-cited clauses for the renovation type proposed.</li>
+        <li>BCM Approval Pack pre-filled for that specific building (by-law clauses inserted · working-hours schedule auto-built · common-property protection plan diagrammed).</li>
+        <li>Past Sarah &amp; Mark behaviour pattern reviewed in HubSpot if returning customer (Pools/Termite history surfaced · bowtie credit pre-calculated).</li>
+        <li>Acoustic-monitoring decibel meter + drop-cloth + lift-padding sample + lot-owner Welcome Card (handwritten name · ready to deliver).</li>
+      </ol>
+      <p><strong>Consult execution (60 minutes · doc'd at /units/p08/consult-script-v1):</strong></p>
+      <ol>
+        <li><strong>Minute 0-5 · Arrival ritual.</strong> Trade vehicle parked discreetly (P-11 doctrine preview) · shoes off at door · acoustic meter visible · BCM coordinator addressed by first name on entry · partner offered tea/coffee from supplies they have, not brought-in.</li>
+        <li><strong>Minute 5-15 · Tour the unit + 4 listening questions.</strong> Listen 80% · ask 4 questions: "Walk me through the morning routine here." · "Where do you sit when you're tired?" · "What broke in the last reno you can think of?" · "What does the BCM coordinator wish trades would do?" These 4 questions surface 80% of MEDDPICC data.</li>
+        <li><strong>Minute 15-30 · Tour the building (with BCM coordinator if available).</strong> Identify common-property pinch-points · agree the trade-entry pathway · meet 1-2 neighbours if possible · acoustically test 1 wall.</li>
+        <li><strong>Minute 30-38 · BCM Approval Pack walkthrough.</strong> Pack opened on kitchen bench · 6 sections walked through with the lot-owner · BCM-clauses-cross-checked named · 7-day approval pathway visualised.</li>
+        <li><strong>Minute 38-45 · The Promise is spoken (once, after demonstration).</strong> Single sentence: "We build this like it's our own home — and you'll see exactly what that means before the contract." Promise spoken once. Not repeated. Sarah &amp; Mark register the discipline.</li>
+        <li><strong>Minute 45-55 · Tier match + budget conversation.</strong> 3 tiers laid out (Refresh / Renew / Reset) · tier recommended based on Listening data · range given · single-account-billing fee disclosed in writing.</li>
+        <li><strong>Minute 55-60 · Scope Confirmation Document signed.</strong> Not a quote · a scope agreement · "we agree this is the work · the quote follows in 5-7 days after BCM cross-check." Welcome Card delivered. Photo of BCM coordinator + couple (with permission) for the project file.</li>
+      </ol>
+      <p><strong>Post-Consult discipline (within 24h):</strong> handwritten thank-you note posted · HubSpot record updated with both MEDDPICC scores · Scope Confirmation Doc sent · BCM cross-check workflow auto-initiated · WS-04 persona-care follow-up auto-scheduled.</p>
+    </div>
+
+    {/* 8.5 PROPOSAL PACK */}
+    <div className="kw-block">
+      <h3>8.5 · Proposal Pack — The 12-Page Document That Quotes</h3>
+      <p>The proposal is not a one-page price list · it is a 12-page Pack that visibly reflects every MEDDPICC point gathered. Structure (each page locked in YDT proposal template /units/p08/proposal-template-v1):</p>
+      <ol>
+        <li><strong>Cover · Sarah &amp; Mark recognition page.</strong> Couple first names + building name + BCM firm name + project label (e.g., "The Hamilton Refresh"). No stock photography · only photo from the Consult (with permission). Sarah &amp; Mark see themselves on page 1, not the contractor's brand.</li>
+        <li><strong>The Promise page.</strong> "Built like it's our own home" + the 6 demonstrated moments from the Consult listed by name. Promise made specific, not generic.</li>
+        <li><strong>BCM compliance map.</strong> 8 most-relevant by-law clauses with our specific compliance approach per clause. BCM coordinator sees the by-law numbers they live with referenced by §-number.</li>
+        <li><strong>Scope of work · plain English.</strong> Detailed but jargon-free · written for a non-trade reader · 1 photo per scope item from past comparable build (with permission).</li>
+        <li><strong>Project timeline · day-by-day for first 14 days · weekly for the rest.</strong> BCM coordinator + working-hours schedule + acoustic-monitoring checkpoints visible on the timeline.</li>
+        <li><strong>3-tier comparison · Refresh / Renew / Reset.</strong> Why we recommend the tier · what the other tiers would deliver · price ranges per tier · clear "this tier was chosen because..." reasoning. Sarah &amp; Mark understand the choice, they don't feel sold a tier.</li>
+        <li><strong>Single-account billing breakdown.</strong> BCM admin fee disclosed + what's included + 12-month invoice schedule template · transparency over surprise.</li>
+        <li><strong>Bowtie credit page (if applicable).</strong> "You completed a Pools project with us in 2024 · here is your 50% LTV credit-back of $X · here is how it's applied to this contract." Returning-customer economics made visible.</li>
+        <li><strong>Insurance + warranty + licence page.</strong> $5M public liability cert · BSA licence number · Master Builders QLD membership · 25-year structural / 7-year finish warranty terms · post-handover support process.</li>
+        <li><strong>What we ask of you · in writing.</strong> The 5 things Sarah &amp; Mark commit to (e.g., emergency-contact response within 4h on weekdays · BCM coordinator copied on any change request) · symmetry of commitment is a trust signal.</li>
+        <li><strong>Testimonials · 3 specific to building type + BCM firm.</strong> Not generic 5-star quotes · 3 mini case-studies from comparable buildings with comparable BCM firms · with BCM coordinator names (with permission).</li>
+        <li><strong>Acceptance page · signatures + counter-signature line for BCM coordinator (optional but offered).</strong> The BCM coordinator can co-sign as a witness if they choose · this small gesture lifts BCM partnership compounding 38%.</li>
+      </ol>
+      <p className="kw-sub">Proposal Pack delivered 5-7 days after the Consult · printed and posted (not just emailed) · email follow-up sends a digital copy 48h after physical Pack arrives. Tactile delivery distinguishes YBMT from email-only competitors.</p>
+    </div>
+
+    {/* 8.6 BOWTIE HANDOVER */}
+    <div className="kw-block">
+      <h3>8.6 · Bowtie Handover Discipline — What Sales Does at F3+ for the Cross-LOB Engine</h3>
+      <p>Closing the Units contract is not the end of sales activity · F3 (signature) is followed by F3+ (Day-5 clean execution) and then the <strong>Bowtie Handover Ritual</strong> at Day 30 that seeds 38% cross-LOB expansion within 36 months. The ritual:</p>
+      <ol>
+        <li><strong>Day 5 · Clean Execution survey.</strong> 4-question SMS to Sarah &amp; Mark + 3-question SMS to BCM coordinator · responses logged in HubSpot. Sales rep commission unlocks 40% balance only if both NPS &gt; 70.</li>
+        <li><strong>Day 14 · Project Photo Album delivered.</strong> Physical printed album (16 photos · before/during/after) · gift-wrapped · hand-delivered by sales rep, not posted. Cost $180 per album · ROI 7.2× via referral lift.</li>
+        <li><strong>Day 28 · Handover Day Ritual.</strong> Final walk-through with Sarah &amp; Mark + BCM coordinator + project manager + sales rep. 4 specific moments orchestrated: (a) hand keys back · (b) deliver the 25-year structural warranty document in a leather folder · (c) the Promise re-stated for the second and final time · (d) BCM coordinator presented with a $200 voucher to the BCM-firm preferred cafe (if appropriate · partnership-aligned).</li>
+        <li><strong>Day 30 · Bowtie Consent Conversation.</strong> Structured 12-minute conversation with Sarah &amp; Mark: "Now that you've experienced this · would you like to know what else we do?" · Pools + Termite LOBs introduced as <em>options, not pitches</em> · bowtie-consent flag set in HubSpot based on the conversation outcome. <strong>Critical:</strong> if Sarah &amp; Mark say no, the flag stays false and zero marketing outreach for those LOBs occurs · WS-04 persona-care doctrine. ~62% set flag to TRUE post-Units · the 38% who don't are equally valued · their referrals (P-10) typically arrive within 18 months anyway.</li>
+        <li><strong>Day 60 · Cross-LOB nurture begins (only if consent = TRUE).</strong> Email cadence (WS-10) introduces Pools or Termite via Sarah &amp; Mark's specific 2nd-property situation · no generic blast · individually-curated.</li>
+        <li><strong>Day 90 · BCM coordinator review meeting.</strong> Sales rep + BCM coordinator coffee · 30 minutes · "what worked · what didn't · would you refer us?" · this is the P-10 partnerships engine in motion · each conversation generates an average 1.8 BCM-coordinator-introductions to other buildings in the firm's portfolio.</li>
+      </ol>
+    </div>
+
+    {/* 8.7 SALES OPS & CADENCE */}
+    <div className="kw-block">
+      <h3>8.7 · Sales Operations · Team Structure · Compensation · Cadence</h3>
+      <p><strong>Team structure (Units sales) · M0-M12:</strong></p>
+      <ul className="voice-list">
+        <li><strong>1 × Sales Lead (Carla-reported during transition):</strong> books all Pre-Reno Consults personally for M0-M3 · holds MEDDPICC accountability · runs Friday pipeline review.</li>
+        <li><strong>2 × Sales Reps (BCM-fluent · trained in strata environment):</strong> each carries 18-22 deals in active pipeline · 12-stage HubSpot pipeline managed nightly.</li>
+        <li><strong>1 × Sales Operations Coordinator (shared with Pools/Termite · 0.4 FTE for Units):</strong> handles Pack pre-fills + Proposal Pack production + bowtie credit calculations + HubSpot hygiene.</li>
+        <li><strong>1 × BCM Liaison (shared with P-10 · 0.6 FTE for Units sales):</strong> attends BCM coordinator meetings + cross-checks by-laws + maintains the 34 BCM firm relationship register.</li>
+      </ul>
+      <p><strong>Compensation structure (Sales Reps):</strong> base $95k + commission. Commission structure: 60% paid at F3 (contract signed) + 40% paid at F3+ (Day-5 clean execution + both NPS &gt; 70). Bowtie expansion bonus: +25% commission uplift on the Pools/Termite F3 if that contract is signed within 24 months of the Units F3 + traceable to the original Units rep's bowtie-consent conversation. This aligns sales with the WS-05 economics doctrine — the rep is incentivised on lifetime value, not first-contract value.</p>
+      <p><strong>Sales rep KPI scorecard (monthly):</strong></p>
+      <table className="services-table meta-table">
+        <thead><tr><th>KPI</th><th>Target M3</th><th>Target M12</th><th>Floor (action if below)</th></tr></thead>
+        <tbody>
+          <tr><td>Consults held / month</td><td>8</td><td>14</td><td>&lt; 5: PIP triggered</td></tr>
+          <tr><td>MEDDPICC ≥12/21 dual-pass rate</td><td>62%</td><td>78%</td><td>&lt; 50%: training intervention</td></tr>
+          <tr><td>Proposal → Contract close rate</td><td>40%</td><td>54%</td><td>&lt; 30%: full deal review</td></tr>
+          <tr><td>Day-5 clean execution rate</td><td>88%</td><td>96%</td><td>&lt; 75%: delivery-team alignment</td></tr>
+          <tr><td>Bowtie-consent conversion rate (Day 30)</td><td>58%</td><td>68%</td><td>&lt; 45%: persona-care training</td></tr>
+          <tr><td>BCM coordinator NPS (post-project)</td><td>72</td><td>82</td><td>&lt; 60: partnership-channel risk</td></tr>
+          <tr><td>Sarah &amp; Mark check-question compliance</td><td>92%</td><td>98%</td><td>&lt; 85%: stage-gate audit</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Cadence:</strong> Daily pipeline-hygiene check 8:30am (15 min · MEDDPICC scores updated before stand-up) · Weekly pipeline review Friday 2:00pm (90 min · all deals at Stage 5+ reviewed) · Monthly bowtie attribution + cross-LOB performance review last Tuesday (60 min · Carla + Sales Lead + Channels Lead) · Quarterly Pureprofile SEQ-panel-recall-review (sales-process language tested against persona-recall data · scripts refined).</p>
+    </div>
+
+    {/* 8.8 KPI SCORECARD */}
+    <div className="kw-block">
+      <h3>8.8 · KPI Scorecard — Sales Enablement M1 → M24 · Units LOB</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Metric</th><th>M1 (learn)</th><th>M3 (stabilise)</th><th>M6 (scale)</th><th>M12 (mature)</th><th>M24 (compound)</th></tr></thead>
+        <tbody>
+          <tr><td>Pre-Reno Consults held / month</td><td>14</td><td>32</td><td>62</td><td>118</td><td>205</td></tr>
+          <tr><td>Dual MEDDPICC ≥12/21 pass rate</td><td>42%</td><td>62%</td><td>72%</td><td>78%</td><td>82%</td></tr>
+          <tr><td>Proposals issued / month</td><td>6</td><td>20</td><td>45</td><td>92</td><td>168</td></tr>
+          <tr><td>Contracts signed (F3) / month</td><td>2</td><td>8</td><td>22</td><td>50</td><td>92</td></tr>
+          <tr><td>Day-5 clean execution rate (F3+)</td><td>72%</td><td>86%</td><td>92%</td><td>96%</td><td>98%</td></tr>
+          <tr><td>Avg contract value (tier-blended)</td><td>$52k</td><td>$56k</td><td>$58k</td><td>$62k</td><td>$66k</td></tr>
+          <tr><td>Total contracted revenue / month</td><td>$104k</td><td>$448k</td><td>$1.28M</td><td>$3.10M</td><td>$6.07M</td></tr>
+          <tr><td>Bowtie-consent rate (Day 30)</td><td>—</td><td>54%</td><td>62%</td><td>68%</td><td>72%</td></tr>
+          <tr><td>Bowtie-attributed Pools/Termite contracts (lagging 12-month)</td><td>—</td><td>—</td><td>2</td><td>14</td><td>42</td></tr>
+          <tr><td>BCM-coordinator NPS (post-project)</td><td>62</td><td>74</td><td>80</td><td>84</td><td>88</td></tr>
+          <tr><td>Sales cost / contract (loaded)</td><td>$8,400</td><td>$5,200</td><td>$3,800</td><td>$2,400</td><td>$1,800</td></tr>
+          <tr><td>Sales-loaded margin contribution</td><td>$4.2k/contract</td><td>$10.4k</td><td>$13.6k</td><td>$15.2k</td><td>$16.7k</td></tr>
+        </tbody>
+      </table>
+      <p className="kw-sub">Bowtie compounding becomes the structural advantage from M12 onward · 14 cross-LOB contracts at M12 represents ~$840k incremental Pools/Termite revenue that would not exist without the Units bowtie engine · scaling to 42 cross-LOB contracts ($2.52M incremental) by M24. By M36 (off-page), the bowtie engine is projected to contribute 28% of all Pools and Termite new revenue · the WS-05 30× LTV doctrine made visible in cash terms.</p>
+    </div>
+
+    {/* 8.9 GOVERNANCE & FORBIDDEN STATES */}
+    <div className="kw-block">
+      <h3>8.9 · Governance, Forbidden States, Anti-Patterns</h3>
+      <ul className="voice-list">
+        <li><strong>Forbidden state #1 · Quote issued before Stage 7 BCM gate.</strong> Sales rep cannot issue a quote until BCM MEDDPICC ≥12/21. HubSpot workflow blocks proposal generation if the gate is unmet. Auto-flag to Sales Lead.</li>
+        <li><strong>Forbidden state #2 · Single-buyer sales process.</strong> A Units deal with no BCM contact named in HubSpot is a "ghost deal" — auto-paused at Stage 3 until BCM is identified · zero-tolerance rule.</li>
+        <li><strong>Forbidden state #3 · Promise spoken without demonstration.</strong> "Built like it's our own home" is a forbidden string in any email or pre-Consult comms · it appears only at Minute 38 of the Consult after the 6 demonstrated moments. Compliance audited via call-recording sampling.</li>
+        <li><strong>Forbidden state #4 · Bowtie expansion outreach without consent flag.</strong> No Pools or Termite email · ad · or call may touch a Units customer with bowtie-consent = FALSE. HubSpot suppression list enforced. Breach = immediate sales-rep PIP + apology email + Group review.</li>
+        <li><strong>Forbidden state #5 · BCM coordinator left off proposal revisions.</strong> Stage 9 mandates BCM-cc on all proposal revisions. CI-equivalent HubSpot rule blocks proposal-sent status if BCM email field is null.</li>
+        <li><strong>Forbidden state #6 · Consult run remotely for first contact.</strong> First-contact Consult must be on-site. Remote video allowed only for follow-up Stage 5+. Sales-Lead override only.</li>
+        <li><strong>Forbidden state #7 · Same rep on both Units F3 and Pools F1 within 6 months.</strong> Rotation rule: the rep who closed Sarah &amp; Mark's Units deal cannot be the rep who pitches them Pools within 6 months · prevents pressure-perception · supports WS-04 persona-care. Sales-Ops auto-routes the cross-LOB lead to a different rep.</li>
+        <li><strong>Forbidden state #8 · MEDDPICC scores not updated nightly.</strong> Sales reps must update MEDDPICC scores in HubSpot before end-of-day each working day · auto-locked deal records flag at 9pm.</li>
+        <li><strong>Forbidden state #9 · Proposal Pack delivered by email only.</strong> Physical-then-email delivery is the discipline. Email-only Pack flagged as a process violation.</li>
+        <li><strong>Forbidden state #10 · Bowtie-consent conversation skipped.</strong> Day-30 Bowtie Consent Conversation is non-negotiable · if the conversation cannot be scheduled within 45 days, sales rep records a written explanation in HubSpot for Group review.</li>
+        <li><strong>Weekly cadence:</strong> Pipeline review Friday 2pm · MEDDPICC delta report · stuck-deal-at-Stage-7 review · BCM-firm performance audit.</li>
+        <li><strong>Monthly cadence:</strong> Bowtie attribution review · cross-LOB performance · sales rep KPI scorecard against table 8.7 · Pureprofile SEQ-panel question audit.</li>
+        <li><strong>Quarterly cadence:</strong> Full MEDDPICC framework review · stage-gate definition audit · BCM-firm-relationship-register refresh · Robyn MMM sales-channel adstock model re-run.</li>
+      </ul>
+    </div>
+
+    <div className="pillar-foot">
+      <span className="pf-pill">P-08 · 12-stage HubSpot pipeline · dual MEDDPICC ≥12/21 gate · BCM-coordinated · F3 + F3+ + bowtie</span>
+      <span className="pf-pill">M12: 118 Consults/mo · 50 contracts signed · $3.10M contracted revenue · 68% bowtie-consent</span>
+      <span className="pf-pill">Sales rep comp aligned to lifetime value · 60% F3 + 40% F3+ + 25% bowtie expansion uplift</span>
+      <span className="pf-pill">Day 30 Bowtie Consent Conversation seeds 38% cross-LOB expansion within 36 months · WS-05 economics in motion</span>
     </div>
   </section>
 )
