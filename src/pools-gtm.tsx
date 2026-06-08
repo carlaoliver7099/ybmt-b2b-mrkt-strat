@@ -1602,3 +1602,357 @@ const PGPillar08SalesEnablement = () => (
     </div>
   </section>
 )
+
+// ============================================================================
+// POE P-09 · SOCIAL CONTENT ENGINE · Instagram-led · DBA-saturated · Bowtie-fed
+// ============================================================================
+const PGPillar09Social = () => (
+  <section id="p09" className="pillar-block">
+    <div className="pillar-block-h">
+      <span className="pillar-block-eyebrow">PILLAR P-09 · POE · SOCIAL CONTENT ENGINE</span>
+      <h2 className="pillar-block-title">P-09 · Social Content Engine · Instagram-Led · DBA-Saturated · Category-Design Through Persistent Aesthetic Repetition</h2>
+      <p className="pillar-block-sub">POOLS-GAP-ANALYSIS-v1 Layer-9 (Brand/Content) baseline 5.5/10 → 9/10 target. Social is the engine that makes the Resort Yard category visible to non-buyers — the future buyers whose trigger hasn't fired yet. [JR-DBA] Romaniuk: distinctive brand assets must be encountered 7-12 times before they become memory-encoded. [BS-HBG] Sharp: mental availability is built through aesthetic repetition. Social does this work at near-zero cost compared to Meta paid. Instagram is the primary surface, TikTok secondary, LinkedIn tertiary, YouTube reserved for evergreen film-grade content.</p>
+    </div>
+
+    {/* 9.1 SOCIAL DOCTRINE */}
+    <div className="kw-block">
+      <h3>9.1 · POE Social Doctrine — Six Locked Rules</h3>
+      <ol>
+        <li><strong>Aesthetic discipline before posting velocity.</strong> Every post passes the 7-DBA visual checklist before publish. Better to post 4× per week with DBA fidelity than 14× per week with drift.</li>
+        <li><strong>Resort Yard category is the protagonist, not YBMT.</strong> Posts educate buyers on the category (what is a Resort Yard, why 30 days, why 7 zones), then YBMT appears as the proof. [PB-CAT] category-design discipline.</li>
+        <li><strong>Customer-built proof &gt; agency-built proof.</strong> 60% of posts feature actual completed YBMT builds with the customer's name + suburb. 40% are category-frame educational + behind-build content.</li>
+        <li><strong>No price content. Ever.</strong> Pricing belongs in P-08 Proposal. Social is for trigger formation, not bottom-funnel.</li>
+        <li><strong>Comments are sales conversations.</strong> Every comment answered within 2 working hours, weekdays 6am-8pm AEST. DMs answered within 30 minutes 9am-5pm. Social media manager owns SLA.</li>
+        <li><strong>Cross-LOB seed in long-form only.</strong> TDR pest content and UR unit content stays on YBMT Group parent handle, not on Resort Yards. Resort Yards is a focused sub-brand handle and category visibility is its only job.</li>
+      </ol>
+    </div>
+
+    {/* 9.2 PLATFORM ARCHITECTURE */}
+    <div className="kw-block">
+      <h3>9.2 · Platform Architecture — 4 Surfaces with Locked Roles</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Platform</th><th>Handle</th><th>Role</th><th>Post cadence</th><th>Primary KPI</th></tr></thead>
+        <tbody>
+          <tr><td>Instagram</td><td>@ybmtresortyards</td><td>Primary · category visibility · Reels-led mental availability</td><td>5 Reels/wk · 3 carousels/wk · 14 Stories/wk · 1 Live/mo</td><td>Followers + Reach + Saves + DM-to-Inspection</td></tr>
+          <tr><td>TikTok</td><td>@ybmtresortyards</td><td>Secondary · younger-demographic reach + viral surface</td><td>5 vertical videos/wk · 1 trend-based/wk</td><td>Views + Shares + Profile clicks</td></tr>
+          <tr><td>LinkedIn</td><td>YBMT Resort Yards (Company Page) + Carla Oliver (personal)</td><td>Tertiary · partnerships (P-10) seeding · architect/landscape-designer reach · B2B credibility</td><td>2 company posts/wk · 3 Carla personal posts/wk</td><td>Partner-relevant impressions · partnership inbound</td></tr>
+          <tr><td>YouTube</td><td>YBMT Resort Yards channel</td><td>Quaternary · long-form film-grade evergreen · 30-day build timelapses + case-study films + "Resort Yard Manifesto" series</td><td>1 long-form/mo · 2 Shorts/wk</td><td>Watch time · subscriber count · Inspection bookings from YouTube traffic</td></tr>
+          <tr><td>Pinterest</td><td>YBMT Resort Yards</td><td>Optional/passive · evergreen image-search surface for design-seeking buyers</td><td>10 pins/wk auto-syndicated from IG · zero original creative</td><td>Outbound clicks to JTBD landings</td></tr>
+        </tbody>
+      </table>
+      <p>Total publishing surface: 5 platforms · ~28 unique creative outputs per week · 2 platforms (Pinterest + LinkedIn-cross) auto-syndicated · 3 platforms requiring native creative (IG + TikTok + YouTube + LinkedIn-original). Social media manager + part-time editor = ~1.5 FTE.</p>
+    </div>
+
+    {/* 9.3 CONTENT PILLARS */}
+    <div className="kw-block">
+      <h3>9.3 · Content Pillars — 6 Repeating Buckets That Compound Aesthetic Memory</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Pillar</th><th>Weekly slot</th><th>Format</th><th>Job</th></tr></thead>
+        <tbody>
+          <tr><td>1 · Reveal Day (30-day build → final shot)</td><td>2× / week</td><td>Reel · 45-sec · drone-led · DBA-2 lens-flare golden-hour final</td><td>DBA-3 "30 Days" proof + DBA-2 visual encoding</td></tr>
+          <tr><td>2 · The 7 Zones (educational series)</td><td>1× / week</td><td>Carousel · 6-slide · DBA-4 typography-led</td><td>Category definition · what is a Resort Yard</td></tr>
+          <tr><td>3 · Build Diary (behind-the-build)</td><td>2× / week · Stories</td><td>Stories sequence · 8-frame · raw footage</td><td>Process transparency · trust transfer · team visibility</td></tr>
+          <tr><td>4 · Resort Yard Recipe (design tip)</td><td>1× / week</td><td>Reel · 30-sec · DBA-1 lockup intro · split-screen design feature</td><td>Design authority · "this is how we do it"</td></tr>
+          <tr><td>5 · Customer Story (case-study Reel)</td><td>1× / week</td><td>Reel · 60-sec · customer-spoken testimonial + before/after</td><td>[BS-HBG] social proof · suburb-specific mental availability</td></tr>
+          <tr><td>6 · Manifesto Moment (category leadership)</td><td>1× / fortnight</td><td>Reel · 45-sec · Carla on camera + DBA-4 typography lower-third</td><td>[PB-CAT] category leadership voice · "the Resort Yards POV"</td></tr>
+        </tbody>
+      </table>
+      <p>Total weekly creative output: ~8 native pieces + Stories + auto-syndicated. Every piece passes the 7-DBA visual checklist. Manifesto Moment cadence increases to weekly from M6 once Carla's video bank is healthy.</p>
+    </div>
+
+    {/* 9.4 DBA ENFORCEMENT CHECKLIST */}
+    <div className="kw-block">
+      <h3>9.4 · DBA Enforcement Checklist — 7 Boxes Every Post Must Tick</h3>
+      <ol>
+        <li><strong>DBA-1 Resort Yard frame:</strong> the phrase "Resort Yard" appears in the post's caption first 100 chars OR on-screen in first 1 sec.</li>
+        <li><strong>DBA-2 lens-flare golden-hour shot:</strong> hero visual is shot in golden-hour aesthetic with lens flare characteristic OR is build-diary raw (only build-diary slot exempt).</li>
+        <li><strong>DBA-3 "Built in 30 Days" seal:</strong> seal graphic appears in post OR "30 days" appears in caption (90%+ of posts hit one of these · build-diary slot exempt).</li>
+        <li><strong>DBA-4 Fraunces+Inter:</strong> on-screen typography uses Fraunces Italic for display and Inter for body. No system fonts. No drift to Arial/Helvetica.</li>
+        <li><strong>DBA-5 50/25/12/8/5 palette:</strong> dominant color ratio respected: navy 50% · timber 25% · aqua 12% · cream 8% · charcoal 5%.</li>
+        <li><strong>DBA-6 Sonic mnemonic:</strong> all Reels with audio under YBMT's control use the 1.5-second sonic mnemonic as outro (~0:02 before end).</li>
+        <li><strong>DBA-7 Inspection ritual referenced:</strong> at least 30% of posts mention "Resort Yard Inspection" in caption or visible CTA (Stories CTA sticker counts).</li>
+      </ol>
+      <p>Linter rule: any post missing &gt;2 DBA checks is auto-blocked from scheduler. Social media manager reviews exceptions with Carla weekly.</p>
+    </div>
+
+    {/* 9.5 INSTAGRAM PROFILE ARCHITECTURE */}
+    <div className="kw-block">
+      <h3>9.5 · Instagram Profile Architecture — The 0-Click Storefront</h3>
+      <ul className="voice-list">
+        <li><strong>Bio (150 chars):</strong> "YBMT Resort Yards · Brisbane outdoor entertainment specialist · Built in 30 days · 25yr structural warranty · Book your Resort Yard Inspection ↓"</li>
+        <li><strong>Link-in-bio:</strong> Single link (not Linktree) → /pools-gtm landing hub OR custom Hono-built link-in-bio at <code>/links</code> with 6 CTAs: Resort Yard Inspection · 4 JTBD landings · Lookbook download.</li>
+        <li><strong>Profile photo:</strong> DBA-1 Resort Yards logo lockup on navy field.</li>
+        <li><strong>Highlights (8 covers, custom-designed):</strong> "Reveal Day" · "The 7 Zones" · "Behind The Build" · "Resort Yard Recipes" · "Customer Stories" · "Manifesto" · "FAQ" · "Inspection."</li>
+        <li><strong>Pinned grid (3 top posts):</strong> 1 manifesto Reel · 1 best-performing Reveal Day · 1 7-Zones carousel. Refreshed monthly.</li>
+        <li><strong>Grid aesthetic:</strong> 3-3-3 rhythm — every third post is a Resort Yard reveal hero, every center is a category-education carousel, every right-column is a customer story. Visible from grid view as a rhythmic visual stack.</li>
+      </ul>
+    </div>
+
+    {/* 9.6 COMMUNITY OPS & DM PLAYBOOK */}
+    <div className="kw-block">
+      <h3>9.6 · Community Operations and DM Playbook — Comments Are Sales Conversations</h3>
+      <p>Most agency-managed accounts treat comments and DMs as noise. We treat them as the top of the Resort Yard Inspection funnel. The playbook:</p>
+      <table className="services-table meta-table">
+        <thead><tr><th>Trigger</th><th>Response template (humanised)</th><th>Outcome</th></tr></thead>
+        <tbody>
+          <tr><td>"Beautiful! How much?"</td><td>"Thank you — that build in Hamilton came in around the middle of our range, between \$60-80k for the scope shown (pool deck, paving, landscape, lighting). Every Resort Yard is custom — would you like to book a 90-min Resort Yard Inspection so we can give you a real number on yours? [link]"</td><td>Re-anchors to value range (not exact \$) · converts price-curiosity to Inspection invite</td></tr>
+          <tr><td>"How long did this take?"</td><td>"30 days from contract sign · that's the YBMT guarantee. Day 1 we demolish, Day 30 we hand over keys + 25yr structural warranty. Want to see how the 30 days work? [link to Fast-Track Planner PDF]"</td><td>Re-anchors to DBA-3 promise · routes to P-03 lead magnet</td></tr>
+          <tr><td>"Do you work in [suburb]?"</td><td>"Yes — we're regularly in [suburb]. We've delivered Resort Yards in [nearest case-study suburb] just recently. Want to book a Resort Yard Inspection? Free, 90 minutes, on site at your home. [link]"</td><td>Local proof + Inspection invite</td></tr>
+          <tr><td>Trolling/negative comment</td><td>Respond once politely. If continued, ignore. Never delete (deletion signals fragility). DBA tone: confident, not defensive.</td><td>Brand-equity preservation</td></tr>
+          <tr><td>DM "Just looking"</td><td>"All good — most clients spend 3-6 months looking before they book an Inspection. We're happy to be in your research. Want our 30-Day Fast-Track Resort Yard Planner? [link]"</td><td>Captures lead-magnet opt-in · long-term nurture</td></tr>
+          <tr><td>DM with photo of buyer's yard</td><td>"Thanks for sharing! That's a great starting point — looks like the [orientation/size/feature] would work well for [archetype]. Want me to ping our team and get a 90-min Resort Yard Inspection on the calendar? Free, no pressure. [calendly]"</td><td>Highest-intent inbound · direct to Inspection</td></tr>
+        </tbody>
+      </table>
+      <p>DM SLA: 30 min response 9am-5pm AEST · 2 hr response 5pm-9pm · 12 hr response overnight. Owned by social media manager during business hours · escalated to sales for high-intent DMs.</p>
+    </div>
+
+    {/* 9.7 USER-GENERATED CONTENT PROGRAM */}
+    <div className="kw-block">
+      <h3>9.7 · User-Generated Content (UGC) Program — Every Customer Becomes a Creator</h3>
+      <p>The handover ritual (P-08 §8.8 Day 30) includes a written customer agreement: "We'd love to feature your Resort Yard. In return, we'll send you a $500 hosting voucher (Brisbane restaurant of your choice) when we publish."</p>
+      <ul className="voice-list">
+        <li><strong>UGC capture system:</strong> private WhatsApp group per customer · sales rep + creative pod added · customer can drop photos and short videos as they enjoy the yard.</li>
+        <li><strong>UGC weekly review:</strong> creative pod reviews UGC inbox each Monday · selects 4-6 pieces · light-edits in CapCut · adds DBA-1 lockup end-card · publishes as Customer Story Reels (Content Pillar 5).</li>
+        <li><strong>UGC tagging policy:</strong> customer tagged with consent · customer's suburb in caption · DBA frame "@CustomerName's Resort Yard · Built in [days] · [Suburb]."</li>
+        <li><strong>UGC reciprocity:</strong> the $500 voucher is delivered hand-written by sales rep at next contact · doubles as Bowtie-touch-point and referral-priming moment.</li>
+        <li><strong>UGC volume target:</strong> by M12, 60% of all Reels feature UGC (raw or lightly edited). This collapses production cost per Reel from ~$400 to ~$80 while raising authenticity-signal that algorithms reward.</li>
+      </ul>
+    </div>
+
+    {/* 9.8 INFLUENCER & CREATOR PARTNERSHIPS */}
+    <div className="kw-block">
+      <h3>9.8 · Influencer and Creator Partnerships — Surgical, Local, Aligned</h3>
+      <p>Generic influencer campaigns are wasted spend in residential trades. We pursue surgical partnerships with three creator archetypes:</p>
+      <ol>
+        <li><strong>Brisbane lifestyle creators (5-25k followers, hyper-local).</strong> Target: 6 paid collabs per year. Each creator visits a completed Resort Yard with the customer's consent, films a 90-sec Reel "I just walked through a Resort Yard in [Suburb]." Cost: $500-$1,200 per collab. Tracked via UTM-tagged bio-link.</li>
+        <li><strong>Brisbane real-estate agents (Top 50 by GCI).</strong> Target: 12 cross-published case studies per year. Agent posts before/after Resort Yard of a property they sold post-upgrade — they get the listing credit + 3-5% uplift story, we get the Pre-Sale Investor JTBD-4 social proof. Zero cash · pure barter.</li>
+        <li><strong>Architect + landscape-designer voices (referral partners from P-10).</strong> Target: 8 co-created Reels per year. The architect explains the design brief, we show the build, customer shares the joy. Aligned with P-10 partnerships engine.</li>
+      </ol>
+      <p>Total annual influencer budget: ~$15k cash · ~$45k in barter-equivalent. Tracked separately from P-05/P-06 paid spend.</p>
+    </div>
+
+    {/* 9.9 KPI SCORECARD */}
+    <div className="kw-block">
+      <h3>9.9 · KPI Scorecard — Social M1 → M24</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Metric</th><th>M1</th><th>M3</th><th>M6</th><th>M12</th><th>M24</th></tr></thead>
+        <tbody>
+          <tr><td>Instagram followers (@ybmtresortyards)</td><td>800</td><td>3,200</td><td>8,400</td><td>22,000</td><td>48,000</td></tr>
+          <tr><td>Instagram monthly reach (unique)</td><td>18k</td><td>62k</td><td>140k</td><td>320k</td><td>620k</td></tr>
+          <tr><td>Avg Saves per post</td><td>45</td><td>120</td><td>240</td><td>480</td><td>720</td></tr>
+          <tr><td>TikTok followers</td><td>200</td><td>1,500</td><td>5,200</td><td>14,000</td><td>32,000</td></tr>
+          <tr><td>TikTok views/month</td><td>40k</td><td>180k</td><td>420k</td><td>1.1M</td><td>2.4M</td></tr>
+          <tr><td>YouTube subscribers</td><td>50</td><td>280</td><td>900</td><td>2,800</td><td>8,200</td></tr>
+          <tr><td>DM-to-Inspection bookings/mo (social-direct)</td><td>4</td><td>16</td><td>38</td><td>82</td><td>148</td></tr>
+          <tr><td>DM-to-Inspection conversion rate</td><td>12%</td><td>18%</td><td>24%</td><td>30%</td><td>34%</td></tr>
+          <tr><td>UGC pieces published/month</td><td>2</td><td>8</td><td>16</td><td>24</td><td>32</td></tr>
+          <tr><td>Inspections influenced (post-purchase survey: "where did you first hear about us?")</td><td>10%</td><td>18%</td><td>26%</td><td>34%</td><td>40%</td></tr>
+        </tbody>
+      </table>
+      <p className="kw-sub">"Inspections influenced" measures social's true category-design value: even when paid Google captures the click, social often did the trigger-formation work in the months prior. Tracked via mandatory post-purchase 1-question survey ("Before you booked your Inspection, where had you seen YBMT Resort Yards?"). Multi-select. Data fed back to /kpi F1 attribution overlay.</p>
+    </div>
+
+    {/* 9.10 GOVERNANCE */}
+    <div className="kw-block">
+      <h3>9.10 · Governance, Forbidden States, Crisis Protocol</h3>
+      <ul className="voice-list">
+        <li><strong>Forbidden state #1 · Posts that drift from DBA aesthetic.</strong> 7-DBA check is non-negotiable. Linter blocks scheduler.</li>
+        <li><strong>Forbidden state #2 · "Like and share to win" engagement-bait.</strong> Algorithm down-weights these and brand quality is signalled cheap. Never.</li>
+        <li><strong>Forbidden state #3 · Replying to competitor mentions.</strong> Ignore. Never engage. [PB-CAT] dignity preservation.</li>
+        <li><strong>Forbidden state #4 · Pricing in captions.</strong> Even ranges. Always route to Inspection. P-08 owns price.</li>
+        <li><strong>Forbidden state #5 · Reposting non-YBMT Resort Yards content as inspiration.</strong> Even with credit. Only YBMT builds appear on YBMT Resort Yards channels — except for the influencer collab program §9.8.</li>
+        <li><strong>Crisis protocol:</strong> any negative review, complaint, or PR risk surfacing on social → social media manager flags to Carla within 30 minutes · responds publicly within 2 hours acknowledging + moving to DM · resolves in DM · returns publicly only when resolution is mutual.</li>
+        <li><strong>Weekly cadence:</strong> Mon content calendar review · Wed DBA audit · Fri analytics review (best/worst-performing post + lessons).</li>
+        <li><strong>Monthly cadence:</strong> 30-day content audit · UGC harvest review · influencer collab pipeline review · brand-lift signal review.</li>
+        <li><strong>Quarterly cadence:</strong> Aesthetic refresh check (DBA fidelity not drifting) · platform-allocation review (is TikTok delivering vs IG?) · content-pillar performance ranking · UGC program incentive review.</li>
+      </ul>
+    </div>
+
+    <div className="pillar-foot">
+      <span className="pf-pill">P-09 · 5 platforms · 6 content pillars · 28 weekly creatives · 7-DBA linter · UGC program · 17 influencer collabs/yr</span>
+      <span className="pf-pill">M12: 22k IG followers · 320k reach/mo · 82 DM-to-Inspections/mo · 34% of Inspections "first heard via social"</span>
+      <span className="pf-pill">Category-design through aesthetic repetition · Bowtie-fed customer storytelling · ~1.5 FTE social ops cost</span>
+    </div>
+  </section>
+)
+
+// ============================================================================
+// POE P-10 · PARTNERSHIPS & REFERRAL ENGINE · Pool builders · Architects · Agents
+// ============================================================================
+const PGPillar10Partnerships = () => (
+  <section id="p10" className="pillar-block">
+    <div className="pillar-block-h">
+      <span className="pillar-block-eyebrow">PILLAR P-10 · POE · PARTNERSHIPS &amp; REFERRAL ENGINE</span>
+      <h2 className="pillar-block-title">P-10 · Partnerships and Referral Engine · Pool Builders · Architects · Landscape Designers · Real-Estate Agents · The 4-Channel Trust Transfer Network</h2>
+      <p className="pillar-block-sub">POOLS-GAP-ANALYSIS-v1 Layer-10 (Channel Diversity) baseline 5.0/10 → 9/10 target. The partnership engine is the most underbuilt opportunity in the POE category. A single pool builder or architect can refer 8-20 Resort Yard Inspections per year if the partnership is structured right · 30 active partners = a referral channel worth ~\$3-5M ARR by M24 without any paid spend. [BS-HBG] Sharp + [JR-DBA] Romaniuk: partners extend mental availability into adjacent buyer journeys YBMT cannot reach directly.</p>
+    </div>
+
+    {/* 10.1 PARTNERSHIP DOCTRINE */}
+    <div className="kw-block">
+      <h3>10.1 · POE Partnership Doctrine — Seven Locked Rules</h3>
+      <ol>
+        <li><strong>Partners are not lead-broker relationships. They are co-located buyer journeys.</strong> A pool builder isn't selling our service, they're completing their own customer's journey by introducing us as the next step. Trust transfer, not lead trading.</li>
+        <li><strong>Mutual value, documented.</strong> Every partnership has a written Partner Agreement specifying what each side delivers + measures. Verbal partnerships drift.</li>
+        <li><strong>Referrer pays nothing. Referrer receives value.</strong> No cash for leads (regulator risk + commoditises the relationship). Partner receives: branded marketing collateral · co-published case studies · introductions to our customer base · invitation to Resort Yard Showcase events · annual Partner Award.</li>
+        <li><strong>One named relationship owner per partner.</strong> Either Carla (top-20 strategic) or sales rep (top-50). No "anonymous lead from a partner" — every inbound is attributable to a human relationship.</li>
+        <li><strong>30-day-build is the unique offer to partners.</strong> Partners refer to us because we deliver their customer's timeline. DBA-3 "Built in 30 Days" is the partner-side hook, not the consumer-side hook.</li>
+        <li><strong>No exclusivity demands either way.</strong> Architects work with multiple builders. Pool builders refer multiple deck contractors. Demanding exclusivity insults the partner. We win on relationship quality + execution + customer outcomes.</li>
+        <li><strong>Quarterly partner business reviews (QBRs).</strong> Top-20 partners get a 60-min QBR each quarter with Carla — review referred Inspections, won deals, customer satisfaction, joint marketing pipeline. Treats partnerships as a managed account, not a passive list.</li>
+      </ol>
+    </div>
+
+    {/* 10.2 4 PARTNER CHANNELS */}
+    <div className="kw-block">
+      <h3>10.2 · The 4 Partner Channels — Roles, Volume, Trust Economics</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Channel</th><th>Target partner count M12</th><th>Avg referrals/partner/yr</th><th>Primary JTBD fed</th><th>Trust-transfer mechanism</th></tr></thead>
+        <tbody>
+          <tr><td>1 · Brisbane Pool Builders</td><td>20</td><td>8-12</td><td>JTBD-2 Pool-Completion</td><td>"Your customer's pool is in. Here's who finishes the rest in 30 days."</td></tr>
+          <tr><td>2 · Architects (residential + landscape)</td><td>15</td><td>3-6</td><td>JTBD-1 Fast-Track · JTBD-3 Replacement</td><td>Architect designs · YBMT delivers to spec · 25yr structural warranty backs the architect's drawing</td></tr>
+          <tr><td>3 · Landscape Designers</td><td>12</td><td>4-7</td><td>JTBD-1 · JTBD-2</td><td>Designer owns softscape · YBMT delivers hardscape in 30 days · designer's reputation intact</td></tr>
+          <tr><td>4 · Brisbane Real-Estate Agents (Top 50 GCI)</td><td>25</td><td>2-4</td><td>JTBD-4 Pre-Sale Investor</td><td>Agent's listing presentation includes Resort Yard ROI uplift · seller buys · agent sells higher · YBMT books Inspection</td></tr>
+        </tbody>
+      </table>
+      <p>Total active partners M12 target: 72. Conservative referrals: 72 × ~5 avg = ~360 partner-sourced Inspections/year (~30/month) by M12. By M24, 110 active partners producing ~660 Inspections/year (~55/month).</p>
+    </div>
+
+    {/* 10.3 CHANNEL 1 · POOL BUILDERS */}
+    <div className="kw-block">
+      <h3>10.3 · Channel 1 — Brisbane Pool Builders · The "Completion Continuation" Partnership</h3>
+      <p>Pool builders install pools but rarely complete surrounds beyond a minimal coping. Their customer is left with an installed pool and a barren yard. The handover gap is the partnership opportunity.</p>
+      <p><strong>Target pool builder profile:</strong> Brisbane-based · 30-80 pools/yr installed · BSA-licensed · customer satisfaction track record (Google rating 4.7+). Top-20 by volume targeted by Carla personally; broader 40 via sales rep outreach.</p>
+      <p><strong>The Partner Offer to pool builders:</strong></p>
+      <ul className="voice-list">
+        <li><strong>Co-branded "Pool-Completion" lookbook</strong> — 24-page hardcover · pool builder's brand + YBMT Resort Yards · 12 case studies · 12 design archetype features · 100 copies/year supplied to each top-20 partner.</li>
+        <li><strong>"Resort Yard Inspection" handover sticker</strong> — small (50mm × 50mm) DBA-1 sticker placed on the pool's equipment-pad cover when builder hands over. QR routes to <code>/pool-completion</code> JTBD landing.</li>
+        <li><strong>Joint customer thank-you ritual</strong> — when pool builder hands over keys, they hand the customer a YBMT Resort Yards welcome card pre-printed with a personalised note. ~1k cards/yr per top-20 partner.</li>
+        <li><strong>Quarterly co-promotion email</strong> — pool builder's customer database (with consent) receives 4 emails/yr that are 80% pool-builder content + 20% Resort Yard educational. Drives Inspection bookings.</li>
+        <li><strong>Resort Yard Showcase event invites</strong> — top-20 partners invited to quarterly Resort Yard Showcase (an open-day at a completed build · architects + landscape designers + pool builders + media + select customers · ~80 attendees · catered · YBMT brand-experience event).</li>
+        <li><strong>Annual Partner Award</strong> — "Brisbane Resort Yard Partner of the Year" · social-promoted · partner's marketing team uses for their own marketing.</li>
+      </ul>
+      <p><strong>What YBMT does NOT offer pool builders:</strong> cash for leads · exclusive territories · backdoor pricing · margin-share on jobs · branded-content with their own copy approvals. Boundaries protect brand equity.</p>
+    </div>
+
+    {/* 10.4 CHANNEL 2 · ARCHITECTS */}
+    <div className="kw-block">
+      <h3>10.4 · Channel 2 — Architects (Residential and Landscape) · The "Spec Builder" Partnership</h3>
+      <p>Architects design Resort Yards but most struggle to find builders who deliver to spec on time. We are the build arm of their drawing.</p>
+      <p><strong>Target architect profile:</strong> Brisbane + Gold Coast · firms with 4-15 staff · residential focus or hybrid · published portfolio of indoor-outdoor flow projects · annual revenue \$1-8M.</p>
+      <p><strong>The Partner Offer to architects:</strong></p>
+      <ul className="voice-list">
+        <li><strong>Spec-Build Pricing Indication tool</strong> — architects access a private dashboard where they upload their drawing pack and receive an indicative cost band within 48h. Lets architects scope realistic budgets for their clients without a full Proposal cycle.</li>
+        <li><strong>25-Year Structural Warranty back-up</strong> — when YBMT builds to architect's spec, the architect's drawing carries our warranty. Reduces architect's professional indemnity exposure.</li>
+        <li><strong>Joint case-study program</strong> — every completed architect-collaborated Resort Yard becomes a published case study · architect credited prominently · co-published on both websites · feature shoot included.</li>
+        <li><strong>30-day build guarantee with architect-direct daily reporting</strong> — architects receive a daily build-progress photo + 60-sec video for the 30 days. Demonstrates respect for their professional brand.</li>
+        <li><strong>"Resort Yard Architects' Lunch" quarterly</strong> — Carla hosts 12 architects per quarter at a long lunch · case-study presentation · open Q&amp;A on what's hard about specifying outdoor work · pure relationship investment.</li>
+        <li><strong>Spec library access</strong> — architects can request the YBMT detail library (250+ detail drawings — coping junctions · waterline finishes · drainage falls · expansion joints · paving substrates) for use in their own drawings. Time-saver for the architect; ensures buildability when they spec.</li>
+      </ul>
+    </div>
+
+    {/* 10.5 CHANNEL 3 · LANDSCAPE DESIGNERS */}
+    <div className="kw-block">
+      <h3>10.5 · Channel 3 — Landscape Designers · The "Hardscape Backbone" Partnership</h3>
+      <p>Landscape designers own softscape (plants, irrigation, lighting) but most do not deliver hardscape themselves (paving, decking, pool surrounds, retaining). We become their hardscape backbone.</p>
+      <p><strong>Target designer profile:</strong> Brisbane + Gold Coast · 1-5 designers · residential focus · portfolio includes pool-adjacent jobs · ~$300k-$2M annual fees.</p>
+      <p><strong>The Partner Offer to landscape designers:</strong></p>
+      <ul className="voice-list">
+        <li><strong>Joint scope discipline tool</strong> — clear written scope-split between designer (softscape design + planting + irrigation + finishing) and YBMT (hardscape demo + structure + paving + lighting infrastructure). Customer signs single contract per side · no overlap.</li>
+        <li><strong>Designer-margin protection</strong> — when YBMT is sub-engaged by a designer, we do not market direct to that customer for 12 months. Designer's relationship preserved.</li>
+        <li><strong>Co-published "Resort Yard with [Designer Name]" Reels</strong> — joint social content where designer narrates the planting brief and YBMT shows the substrate. 1-2 collabs/yr per active designer partner. P-09 §9.8 integrated.</li>
+        <li><strong>Annual "Outdoor Living Together" half-day workshop</strong> — Carla invites all 12 partner designers to a half-day workshop on what's coming next in Brisbane outdoor design + case-study panels + Q&amp;A. Pure relationship investment.</li>
+        <li><strong>Designer's customer thank-you ritual</strong> — when a designer-referred Resort Yard hands over, the customer receives a thank-you card naming the designer explicitly · referral attribution preserved · designer credited.</li>
+      </ul>
+    </div>
+
+    {/* 10.6 CHANNEL 4 · REAL-ESTATE AGENTS */}
+    <div className="kw-block">
+      <h3>10.6 · Channel 4 — Real-Estate Agents (Top 50 GCI) · The "Pre-Sale ROI" Partnership</h3>
+      <p>Top-tier Brisbane agents (~Top 50 by gross commission income) routinely advise sellers to invest \$30-80k in outdoor upgrades pre-listing for 3-5% sale-price uplift. They need a builder they can trust to deliver in tight pre-listing windows. We are it.</p>
+      <p><strong>Target agent profile:</strong> Top 50 GCI Brisbane · personal brand-driven (not just franchise) · listing avg \$1.4M+ · active social presence · LinkedIn pinned content includes "pre-sale upgrades" themes.</p>
+      <p><strong>The Partner Offer to agents:</strong></p>
+      <ul className="voice-list">
+        <li><strong>30-Day Pre-Sale Build Guarantee</strong> — when an agent refers a seller, we guarantee build completion 7 days before agent's marketing photo-shoot day. Written guarantee. \$500/day late penalty.</li>
+        <li><strong>"Pre-Sale Outdoor ROI Worksheet" co-branded version</strong> — the lead magnet from P-03 §3.5 is co-branded with the agent's headshot + contact. Agent uses this in listing presentations · YBMT logo visible · agent gets the win.</li>
+        <li><strong>3-5% Uplift Case-Study library</strong> — 6 specific Brisbane suburb case studies tracking pre-Resort-Yard sale-price comp vs post-Resort-Yard actual sale price. Agent can use as social proof in listing pitches.</li>
+        <li><strong>Agent's photographer coordination</strong> — YBMT coordinates directly with the agent's listing photographer to ensure the Resort Yard is photographed within the 7-day post-completion DBA-2 lens-flare window for maximum visual impact.</li>
+        <li><strong>Joint LinkedIn case-study posts</strong> — agent + Carla co-post the sale-completion case studies. Agent's brand authority + YBMT category visibility. P-09 §9.8 integrated.</li>
+        <li><strong>Annual "Brisbane Sale-Price Outdoor Index" report</strong> — YBMT publishes an annual data-led report on outdoor upgrade ROI in Brisbane suburbs · top-20 agents quoted in report · agent's annual marketing seeded.</li>
+      </ul>
+    </div>
+
+    {/* 10.7 PARTNER RECRUITMENT FUNNEL */}
+    <div className="kw-block">
+      <h3>10.7 · Partner Recruitment Funnel — From Cold Outreach to Active Partner</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Stage</th><th>Activity</th><th>Owner</th><th>Conversion target</th></tr></thead>
+        <tbody>
+          <tr><td>1 · Target list build</td><td>Carla + sales mgr compile 200 Brisbane targets across 4 channels per year</td><td>Carla</td><td>200 target list</td></tr>
+          <tr><td>2 · Warm intro path identified</td><td>LinkedIn 2nd-degree connections · customer base referrals · industry events</td><td>Carla</td><td>120/200 warm intros possible</td></tr>
+          <tr><td>3 · Initial outreach</td><td>Personalised LinkedIn message + case-study attachment · NO ASK · pure value-share</td><td>Carla</td><td>40% response rate (~48 responses)</td></tr>
+          <tr><td>4 · Resort Yard Showcase invite</td><td>Quarterly Showcase event · 80 attendees · 60-min program + 90-min networking</td><td>Carla + events</td><td>50% attend at least once (~24)</td></tr>
+          <tr><td>5 · 1:1 partnership conversation</td><td>60-min call or coffee · review Partner Offer · scope mutual fit</td><td>Carla</td><td>70% progress (~17 partners)</td></tr>
+          <tr><td>6 · Partner Agreement signed</td><td>Written agreement · measurable deliverables · 12-month term</td><td>Carla + legal</td><td>~14 signed/year</td></tr>
+          <tr><td>7 · Onboarding</td><td>Partner co-branded collateral produced · sales rep introduction · first referral pipeline call within 30 days of sign</td><td>YDT ops + sales rep</td><td>~14 onboarded/year</td></tr>
+          <tr><td>8 · QBR cadence</td><td>Quarterly 60-min review · referrals tracked · case studies refreshed · adjustments made</td><td>Carla or sales rep</td><td>4 QBRs/year per partner</td></tr>
+        </tbody>
+      </table>
+      <p>Annual partner-growth target: ~14 net new signed partners/yr. Combined with retention (10% attrition assumed), the active partner pool grows ~12/yr — reaches 72 active partners by M12 (M0 starting at 0) and 110 by M24.</p>
+    </div>
+
+    {/* 10.8 ATTRIBUTION & TECHNOLOGY */}
+    <div className="kw-block">
+      <h3>10.8 · Attribution and Technology — Tracking Who Referred Whom</h3>
+      <ul className="voice-list">
+        <li><strong>Unique partner referral URLs:</strong> each active partner receives a unique URL slug (e.g. <code>/inspection?p=acme-pools</code>) which auto-attributes referred Inspection bookings to the partner in HubSpot.</li>
+        <li><strong>Partner-branded QR code stickers</strong> distributed to top-20 partners — physical-to-digital attribution.</li>
+        <li><strong>"How did you hear about us?" mandatory question on Inspection booking form</strong> — with partner names listed as multi-select (top-50 partners shown by suburb relevance). Belt-and-braces alongside URL tracking.</li>
+        <li><strong>Partner dashboard</strong> (Hono SSR + D1) at <code>/partner-portal</code> · authenticated · shows: Inspections referred YTD · won deals · revenue attributed · case studies published · next QBR date.</li>
+        <li><strong>HubSpot deal tagging:</strong> every deal carries a <code>partner_attribution</code> field. Reports run monthly. Joint marketing decisions data-led.</li>
+        <li><strong>Quarterly partner reports</strong> — every active partner receives a 1-page report showing their referrals + outcomes. Strengthens commitment + retention.</li>
+      </ul>
+    </div>
+
+    {/* 10.9 KPI SCORECARD */}
+    <div className="kw-block">
+      <h3>10.9 · KPI Scorecard — Partnerships M1 → M24</h3>
+      <table className="services-table meta-table">
+        <thead><tr><th>Metric</th><th>M3</th><th>M6</th><th>M12</th><th>M24</th></tr></thead>
+        <tbody>
+          <tr><td>Active partners (all 4 channels)</td><td>18</td><td>42</td><td>72</td><td>110</td></tr>
+          <tr><td>Resort Yard Showcase events held</td><td>1</td><td>2</td><td>4</td><td>8</td></tr>
+          <tr><td>Showcase total attendees</td><td>60</td><td>140</td><td>320</td><td>720</td></tr>
+          <tr><td>Inspections referred by partners / month</td><td>5</td><td>14</td><td>30</td><td>55</td></tr>
+          <tr><td>Partner-referred Proposal-sent rate</td><td>96%</td><td>97%</td><td>98%</td><td>98%</td></tr>
+          <tr><td>Partner-referred Proposal-to-Won rate</td><td>45%</td><td>52%</td><td>58%</td><td>62%</td></tr>
+          <tr><td>Won deals from partners / month</td><td>2</td><td>7</td><td>17</td><td>34</td></tr>
+          <tr><td>Avg deal value partner-referred</td><td>$58k</td><td>$62k</td><td>$68k</td><td>$74k</td></tr>
+          <tr><td>Partner-attributed revenue / month</td><td>$116k</td><td>$434k</td><td>$1.16M</td><td>$2.51M</td></tr>
+          <tr><td>Partner-attributed GP @ 32% / month</td><td>$37k</td><td>$139k</td><td>$371k</td><td>$804k</td></tr>
+          <tr><td>Cost-per-Inspection (partner channel)</td><td>$240</td><td>$120</td><td>$78</td><td>$52</td></tr>
+        </tbody>
+      </table>
+      <p className="kw-sub">Partner-referred Proposal-to-Won rate is materially higher (~58% vs ~40% blended) because partner-referred buyers arrive with trust pre-transferred. This is the channel-economics moat: lower CPI + higher win rate + larger deal size = the most profitable per-dollar acquisition channel in the POE mix. Costs reported above include partner-collateral printing + Showcase event production + QBR time-cost · do not include cash-for-leads (zero).</p>
+    </div>
+
+    {/* 10.10 GOVERNANCE */}
+    <div className="kw-block">
+      <h3>10.10 · Governance, Forbidden States, Anti-Patterns</h3>
+      <ul className="voice-list">
+        <li><strong>Forbidden state #1 · Paying cash for leads.</strong> Never. Erodes professional partnerships into broker relationships and triggers BSA conduct-of-business risks.</li>
+        <li><strong>Forbidden state #2 · Marketing direct to a partner's customer base without partner consent.</strong> Trust violation. Partnership dissolves. Carla audits Meta + Google audience overlap quarterly.</li>
+        <li><strong>Forbidden state #3 · Exclusivity demands.</strong> "You must only refer to us" insults the partner and limits their professional flexibility. We win on quality, not lock-in.</li>
+        <li><strong>Forbidden state #4 · Anonymous "partner inbound" leads.</strong> Every partner-referred Inspection must be traceable to a named relationship-owner. HubSpot field mandatory.</li>
+        <li><strong>Forbidden state #5 · Showcase events that pitch.</strong> Showcases are 80% education + 20% experience. No pitch decks. No sales pressure. The build speaks. The customer speaks. We don't.</li>
+        <li><strong>Annual partner attrition target:</strong> &lt; 12%. If exceeded, partner-experience review triggered.</li>
+        <li><strong>Quarterly Partner Voice survey:</strong> 5-question NPS-style survey to all active partners · target Partner NPS &gt; 60 · acted on within 30 days of receipt.</li>
+        <li><strong>Bi-annual partner award:</strong> "Brisbane Resort Yard Partner of the Year" awarded H1 + H2 · broadcast on LinkedIn + IG + LinkedIn case-study post · physical award delivered to partner office.</li>
+      </ul>
+    </div>
+
+    <div className="pillar-foot">
+      <span className="pf-pill">P-10 · 4 channels · 72 active partners M12 · 110 partners M24 · zero cash-for-leads · 8 Showcase events/yr by M24</span>
+      <span className="pf-pill">M12: 30 partner-Inspections/mo · 17 won deals/mo · $1.16M revenue/mo · $78 CPI vs $132 paid CPI · 58% close rate</span>
+      <span className="pf-pill">Trust transfer + JTBD coverage: Pool Builders → JTBD-2 · Architects → JTBD-1/3 · Designers → JTBD-1/2 · Agents → JTBD-4</span>
+    </div>
+  </section>
+)
