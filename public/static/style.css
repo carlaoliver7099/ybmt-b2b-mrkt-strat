@@ -8046,3 +8046,276 @@ ul.check-list li::before { content: '\f00c'; font-family: 'Font Awesome 6 Free';
   .dochub-bar .dochub-label { font-size: 12px; }
   .dochub-links { flex-wrap: wrap; gap: 6px; }
 }
+
+/* ============================================================================
+   Units GTM — DOC 6 page styles
+   Carla feedback: "not easily readable — improve please"
+   Fixes:
+   - Pillar nav: spaces between links + labels
+   - Hero meta cards: label on its own line, value below (not run-together)
+   - Doctrine list: max-w-65ch, generous spacing, dark body text
+   - Low-contrast italics replaced with readable charcoal
+   - Mobile-responsive throughout
+   ============================================================================ */
+
+/* --- Sticky pillar jump-nav (top strip with PILLARS · P-01 · P-02 ...) --- */
+.pillar-nav {
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  background: #122740;
+  border-bottom: 2px solid #4DB6C7;
+  padding: 12px var(--pad-x);
+}
+.pillar-nav-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+}
+.pillar-nav-label {
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #7FCDD9;
+  padding-right: 10px;
+  border-right: 1px solid rgba(127, 205, 217, 0.35);
+  margin-right: 2px;
+}
+.pillar-nav-inner a {
+  font-family: var(--sans);
+  font-size: 12.5px;
+  font-weight: 500;
+  color: rgba(245, 241, 234, 0.82);
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.pillar-nav-inner a:hover,
+.pillar-nav-inner a:focus-visible {
+  color: #FFFFFF;
+  background: rgba(127, 205, 217, 0.15);
+  outline: none;
+}
+@media (max-width: 720px) {
+  .pillar-nav { padding: 10px 16px; }
+  .pillar-nav-inner {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 4px;
+  }
+  .pillar-nav-inner::-webkit-scrollbar { display: none; }
+  .pillar-nav-label { flex-shrink: 0; border-right: 0; padding-right: 14px; }
+  .pillar-nav-inner a { font-size: 12px; padding: 5px 9px; flex-shrink: 0; }
+}
+
+/* --- Pillar hero (Units page top section) -------------------------------- */
+.pillar-hero {
+  background: var(--cream);
+  padding: clamp(48px, 6vw, 88px) var(--pad-x);
+  border-bottom: 1px solid var(--cream-deep);
+}
+.pillar-hero-inner {
+  max-width: 960px;       /* constrained for readability — NOT full viewport */
+  margin: 0 auto;
+}
+.pillar-hero .hero-eyebrow {
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--timber);
+  margin: 0 0 18px;
+}
+.pillar-hero .hero-title {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: clamp(2rem, 4.5vw, 3.6rem);
+  line-height: 1.15;
+  color: var(--navy-deep);
+  margin: 0 0 24px;
+  letter-spacing: -0.015em;
+}
+.pillar-hero .hero-title .hero-italic {
+  font-style: italic;
+  color: var(--timber);
+  font-weight: 400;
+}
+.pillar-hero .hero-sub {
+  font-family: var(--sans);
+  font-size: clamp(15px, 1.4vw, 17px);
+  line-height: 1.7;
+  color: var(--charcoal);
+  max-width: 68ch;           /* CRITICAL: caps line length at ~68 characters */
+  margin: 0 0 36px;
+}
+.pillar-hero .hero-sub strong {
+  color: var(--navy-deep);
+  font-weight: 600;
+}
+
+/* --- Hero meta cards (LOB SCOPE · BUILD WINDOW · AOV BAND · PERSONA) ---- */
+.pillar-hero .hero-meta {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 24px;
+}
+@media (min-width: 640px) {
+  .pillar-hero .hero-meta { grid-template-columns: repeat(2, 1fr); gap: 18px; }
+}
+@media (min-width: 1020px) {
+  .pillar-hero .hero-meta { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+}
+.hero-meta-card {
+  display: block;            /* FIX: was inline → label and value were running together */
+  background: #FFFFFF;
+  border: 1px solid var(--cream-deep);
+  border-left: 4px solid var(--timber);
+  border-radius: 8px;
+  padding: 16px 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+.hero-meta-card .hmc-label {
+  display: block;            /* FIX: forces label on its own line */
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #8A5429;            /* AAA-contrast darker timber */
+  margin: 0 0 8px;           /* FIX: separates label from value */
+}
+.hero-meta-card .hmc-val {
+  display: block;            /* FIX: forces value to its own line below */
+  font-family: var(--sans);
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--charcoal);
+  font-weight: 500;
+}
+
+/* --- Doctrine block (8 rules · ordered list) ----------------------------- */
+.doctrine-block {
+  background: #FFFFFF;
+  padding: clamp(48px, 6vw, 88px) var(--pad-x);
+  border-bottom: 1px solid var(--cream-deep);
+}
+.doctrine-inner {
+  max-width: 880px;          /* CRITICAL: caps the line-length on doctrine */
+  margin: 0 auto;
+}
+.doctrine-title {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.75rem, 3vw, 2.4rem);
+  color: var(--navy-deep);
+  margin: 0 0 32px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--timber);
+}
+.doctrine-list {
+  list-style: none;
+  counter-reset: doctrine;
+  padding: 0;
+  margin: 0;
+}
+.doctrine-list > li {
+  counter-increment: doctrine;
+  position: relative;
+  padding: 24px 0 24px 64px;
+  border-bottom: 1px solid var(--cream-deep);
+  font-family: var(--sans);
+  font-size: 15.5px;
+  line-height: 1.72;
+  color: var(--charcoal);
+  max-width: 68ch;           /* readable line length */
+}
+.doctrine-list > li:last-child { border-bottom: 0; }
+.doctrine-list > li::before {
+  content: counter(doctrine, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 22px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--navy-deep);
+  color: var(--cream);
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -0.02em;
+}
+.doctrine-list > li strong {
+  color: var(--navy-deep);
+  font-weight: 700;
+  display: inline;            /* keep inline so the rule title flows with prose */
+}
+.doctrine-list > li em {
+  /* FIX: italics like "No BCM pack = no quote" were light orange on grey — unreadable.
+     Now: charcoal italic, with a subtle timber left-rule for emphasis. */
+  font-style: italic;
+  color: var(--navy-deep);
+  font-weight: 500;
+  background: linear-gradient(transparent 60%, rgba(184, 116, 61, 0.18) 60%);
+  padding: 0 2px;
+}
+.doctrine-list > li code {
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 13px;
+  background: var(--cream);
+  padding: 1px 6px;
+  border-radius: 3px;
+  color: var(--navy-deep);
+}
+
+@media (max-width: 640px) {
+  .doctrine-block { padding: 48px 18px; }
+  .doctrine-list > li {
+    padding: 20px 0 20px 52px;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .doctrine-list > li::before {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+    top: 20px;
+  }
+  .pillar-hero { padding: 48px 18px; }
+  .hero-meta-card { padding: 14px 16px; }
+}
+
+/* ============================================================================
+   Universal readability guards · catch any wide-screen text on /units-gtm
+   (and any other LOB doc whose body text wasn't capped)
+   ============================================================================ */
+.pillar-hero .hero-sub,
+.doctrine-list > li,
+.doctrine-inner > p,
+.doctrine-inner > ul > li,
+.doctrine-inner > ol > li {
+  max-width: 68ch;
+}
+
+/* Bottom-of-page safety: every LOB section gets generous bottom padding */
+.pillar-hero,
+.doctrine-block,
+section.band {
+  padding-bottom: clamp(48px, 6vw, 96px);
+}
