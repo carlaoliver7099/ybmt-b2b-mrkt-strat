@@ -362,6 +362,7 @@ import { renderYMTpaid } from './ymt-paid'
 import { renderYMTcrm } from './ymt-crm'
 import { renderTermiteGTM } from './termite-gtm'
 import { renderPoolsGTM } from './pools-gtm'
+import { renderUnitsGTM } from './units-gtm'
 
 // /3-funnels — the 3-Funnel ROI Productivity strategy document
 app.get('/3-funnels', (c) => {
@@ -436,6 +437,11 @@ app.get('/termite-gtm', (c) => {
 // /pools-gtm — DOC 5 · Phase 4 · LOB 2 of 3 · POOLS & OUTDOOR ENTERTAINMENT GTM Operating Paper (12-pillar Definition of Done)
 app.get('/pools-gtm', (c) => {
   return c.render(renderPoolsGTM())
+})
+
+// /units-gtm — DOC 6 · Phase 4 · LOB 3 of 3 · UNITS RENOVATIONS GTM Operating Paper (12-pillar Definition of Done)
+app.get('/units-gtm', (c) => {
+  return c.render(renderUnitsGTM())
 })
 
 app.get('/', (c) => {
