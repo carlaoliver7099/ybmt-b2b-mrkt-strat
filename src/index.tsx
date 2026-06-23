@@ -2,12 +2,14 @@ import { Hono } from 'hono'
 import { renderer } from './renderer'
 import { TopNav } from './nav'
 import { ValueChainPage } from './value-chain'
+import { FunnelPage } from './funnel'
 
 const app = new Hono()
 
 app.use(renderer)
 
 app.get('/value-chain', (c) => c.render(<ValueChainPage />))
+app.get('/funnel', (c) => c.render(<FunnelPage />))
 
 app.get('/', (c) => {
   return c.render(
