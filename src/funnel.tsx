@@ -242,11 +242,13 @@ export const FunnelPage = () => (
         <span class="text-xs uppercase tracking-wider text-[var(--ink-fade)] font-semibold">The Stuff Online</span>
       </div>
       <p class="text-[var(--ink-soft)] mb-10 max-w-3xl">
-        Three traffic sources push prospects into the funnel from above. Each has its own content,
-        its own cost structure, and its own role in the chain.
+        Four moving parts make the digital layer work: two <strong>traffic sources</strong> (Paid + Organic) push clicks
+        into <strong>Landing Pages</strong> — the destination layer that converts those clicks into
+        either a <strong>Buyer's Guide download</strong> (named lead) or a <strong>direct RFQ</strong> (hot lead). No
+        landing pages = no measurement, no A/B test, no conversion. They're the hinge.
       </p>
 
-      <div class="grid lg:grid-cols-3 gap-5">
+      <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-5">
         {/* PAID */}
         <DigitalCard
           colour="orange"
@@ -265,7 +267,7 @@ export const FunnelPage = () => (
             'meta-ad-video-16x9.mp4',
             'meta-ad-video-9x16.mp4',
             'Google Search ad templates (× 9 — 3 service lines × 3 regions)',
-            'Landing pages /decks/{region}',
+            'UTM-tagged tracking links (per ad × per LP)',
           ]}
           economics="Pay-per-click. Cost per RFQ: ~$45–$120 in Y1, declining as creative + targeting matures."
         />
@@ -290,8 +292,34 @@ export const FunnelPage = () => (
             'GBP profile × 3 regions (pending)',
             'Schema-marked FAQ snippets (pending)',
             'Social content calendar (pending)',
+            'UTM-tagged social bio + post links',
           ]}
           economics="Compounds over 6–18 months. Cost per RFQ approaches near-zero at maturity. Highest-ROI long-term."
+        />
+
+        {/* LANDING PAGES — the destination layer */}
+        <DigitalCard
+          colour="violet"
+          icon="bullseye"
+          label="Landing Pages"
+          tagline="Convert the click"
+          stage="Awareness → Consideration → RFQ"
+          intro="Where every paid and organic click LANDS. This is the destination layer — the hinge between traffic and conversion. UTM tags on every inbound link tell us exactly which ad / post / channel sent the visitor, so every dollar and every hour is attributable."
+          channels={[
+            { name: '9 × Service-Region LPs (the 3×3 grid)', detail: '/decks/brisbane · /decks/gold-coast · /decks/sunshine-coast (and same for Renovations, Termite Repairs). Each LP localised: regional photos, regional QBCC reference, regional postcode in copy, regional testimonials. Same conversion structure, different proof.' },
+            { name: 'Campaign-specific LPs (paid traffic)', detail: '/lp/pool-decking-bne, /lp/composite-decks-gc — narrow-promise pages with one CTA. Used for Meta + Google Ads. Match the ad creative word-for-word (message match → higher Quality Score → lower CPC).' },
+            { name: 'UTM-tag schema (every inbound link)', detail: 'utm_source (meta · google · gbp · email · social · referral) · utm_medium (cpc · organic · social · email · referral) · utm_campaign (decks-bne-pool · termite-gc-q2) · utm_content (ad variant A/B/C) · utm_term (keyword). Captured in GA4 + CRM lead record.' },
+            { name: 'On-page conversion mechanics', detail: 'Above-the-fold: regional hook + 1 hero image + 2 CTAs (Get Quote · Download Buyer\'s Guide). Social proof block (Google reviews + QBCC licence + insurance badges). FAQ accordion. Trust footer.' },
+            { name: 'Page-speed + Core Web Vitals', detail: 'LCP <2.5s, CLS <0.1, mobile-first. Every 1s of LP load delay = ~7% drop in conversion (Akamai/Portent benchmarks). Non-negotiable.' },
+          ]}
+          assetExamples={[
+            'lp-decks-{region}.html × 3 (status: PENDING — must be built)',
+            'lp-pool-decking-campaign.html (paid match)',
+            'utm-builder.xlsx (Gerry + agency reference)',
+            'GA4 + GTM container + conversion events',
+            'A/B test register (hero copy · CTA · proof block)',
+          ]}
+          economics="Build once + iterate. A +0.5% LP→RFQ lift on 600 visits/wk = +3 RFQs/wk = ~$35K extra quotes/wk. Cheapest lever on the board."
         />
 
         {/* LEAD MAGNET */}
@@ -319,16 +347,143 @@ export const FunnelPage = () => (
       {/* SUMMARY ROW */}
       <div class="mt-6 grid md:grid-cols-3 gap-4 text-sm">
         <div class="p-4 bg-white border border-[var(--line)] rounded-lg">
-          <div class="text-xs uppercase tracking-wider text-[var(--ink-fade)] font-semibold mb-1">Year 1 mix</div>
-          <p class="text-[var(--ink-soft)]"><strong>Paid 65% · Organic 25% · Lead magnet 10%.</strong> Heavy on paid because organic hasn't compounded yet.</p>
+          <div class="text-xs uppercase tracking-wider text-[var(--ink-fade)] font-semibold mb-1">Year 1 traffic mix</div>
+          <p class="text-[var(--ink-soft)]"><strong>Paid 65% · Organic 25% · Lead magnet 10%.</strong> Heavy on paid because organic hasn't compounded yet. All traffic — paid + organic — lands on the same LP grid.</p>
         </div>
         <div class="p-4 bg-white border border-[var(--line)] rounded-lg">
-          <div class="text-xs uppercase tracking-wider text-[var(--ink-fade)] font-semibold mb-1">Year 3 mix</div>
+          <div class="text-xs uppercase tracking-wider text-[var(--ink-fade)] font-semibold mb-1">Year 3 traffic mix</div>
           <p class="text-[var(--ink-soft)]"><strong>Paid 35% · Organic 50% · Lead magnet 15%.</strong> Compounding organic does the heavy lifting; paid becomes a sharpener, not a crutch.</p>
         </div>
         <div class="p-4 bg-white border border-[var(--line)] rounded-lg">
           <div class="text-xs uppercase tracking-wider text-[var(--ink-fade)] font-semibold mb-1">What it all funnels into</div>
-          <p class="text-[var(--ink-soft)]">Every digital touch ends at one of two destinations: <strong>Buyer's Guide download</strong> (named lead) or <strong>RFQ form</strong> (hot lead). No dead ends.</p>
+          <p class="text-[var(--ink-soft)]">Traffic → <strong>UTM-tagged Landing Page</strong> → one of two destinations: <strong>Buyer's Guide download</strong> (named lead) or <strong>RFQ form</strong> (hot lead). No dead ends, no untracked clicks.</p>
+        </div>
+      </div>
+
+      {/* ===== UTM + LP ARCHITECTURE DEEP-DIVE ===== */}
+      <div class="mt-8 bg-white border border-[var(--line)] rounded-2xl p-6 lg:p-8 shadow-sm">
+        <div class="flex items-baseline justify-between mb-4">
+          <h3 class="display text-2xl font-bold text-[var(--ybmt-navy)]">
+            <i class="fas fa-tags text-[#7e57c2] mr-2"></i>
+            UTM + Landing Page architecture
+          </h3>
+          <span class="text-xs uppercase tracking-wider text-[var(--ink-fade)] font-semibold">How attribution actually works</span>
+        </div>
+        <p class="text-sm text-[var(--ink-soft)] mb-6 leading-relaxed max-w-3xl">
+          A UTM tag is a string appended to a URL that tells Google Analytics + the CRM <em>where the click came from</em>.
+          Without UTMs, every visitor looks like "direct / unknown" and we can't tell whether $1 spent on Meta beats $1 spent
+          on Google — or whether Gerry's LinkedIn post drove more RFQs than the Friday Facebook ad. With UTMs, every cent is attributable.
+        </p>
+
+        {/* UTM schema */}
+        <div class="mb-7">
+          <div class="text-[10px] uppercase tracking-wider text-[var(--ink-fade)] font-semibold mb-2">The schema — every inbound link uses these 5 fields</div>
+          <div class="overflow-x-auto">
+            <table class="min-w-full text-sm border border-[var(--line)] rounded-lg overflow-hidden">
+              <thead class="bg-[var(--paper-warm)] text-[var(--ink)]">
+                <tr>
+                  <th class="text-left px-3 py-2 font-semibold">Parameter</th>
+                  <th class="text-left px-3 py-2 font-semibold">Means</th>
+                  <th class="text-left px-3 py-2 font-semibold">Example values (YBMT Decks)</th>
+                </tr>
+              </thead>
+              <tbody class="text-[var(--ink-soft)]">
+                <tr class="border-t border-[var(--line)]">
+                  <td class="px-3 py-2"><code class="text-[12px] bg-[var(--paper-warm)] px-1.5 py-0.5 rounded">utm_source</code></td>
+                  <td class="px-3 py-2">The platform / referrer</td>
+                  <td class="px-3 py-2"><code class="text-[11px]">meta</code> · <code class="text-[11px]">google</code> · <code class="text-[11px]">gbp</code> · <code class="text-[11px]">linkedin</code> · <code class="text-[11px]">referral-partner</code></td>
+                </tr>
+                <tr class="border-t border-[var(--line)]">
+                  <td class="px-3 py-2"><code class="text-[12px] bg-[var(--paper-warm)] px-1.5 py-0.5 rounded">utm_medium</code></td>
+                  <td class="px-3 py-2">The marketing type</td>
+                  <td class="px-3 py-2"><code class="text-[11px]">cpc</code> · <code class="text-[11px]">organic</code> · <code class="text-[11px]">social</code> · <code class="text-[11px]">email</code> · <code class="text-[11px]">referral</code></td>
+                </tr>
+                <tr class="border-t border-[var(--line)]">
+                  <td class="px-3 py-2"><code class="text-[12px] bg-[var(--paper-warm)] px-1.5 py-0.5 rounded">utm_campaign</code></td>
+                  <td class="px-3 py-2">The campaign name (LOB-region-theme)</td>
+                  <td class="px-3 py-2"><code class="text-[11px]">decks-bne-pool-q1</code> · <code class="text-[11px]">termite-gc-warranty</code></td>
+                </tr>
+                <tr class="border-t border-[var(--line)]">
+                  <td class="px-3 py-2"><code class="text-[12px] bg-[var(--paper-warm)] px-1.5 py-0.5 rounded">utm_content</code></td>
+                  <td class="px-3 py-2">Which creative / variant</td>
+                  <td class="px-3 py-2"><code class="text-[11px]">video-16x9-A</code> · <code class="text-[11px]">hero-pool-deck</code> · <code class="text-[11px]">cta-quote-orange</code></td>
+                </tr>
+                <tr class="border-t border-[var(--line)]">
+                  <td class="px-3 py-2"><code class="text-[12px] bg-[var(--paper-warm)] px-1.5 py-0.5 rounded">utm_term</code></td>
+                  <td class="px-3 py-2">Keyword (search ads) or audience tag</td>
+                  <td class="px-3 py-2"><code class="text-[11px]">pool+deck+builder</code> · <code class="text-[11px]">renovators-30km</code></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {/* Worked example */}
+        <div class="mb-7 p-4 rounded-lg bg-[var(--paper-warm)] border-l-4 border-[#7e57c2]">
+          <div class="text-[10px] uppercase tracking-wider text-[var(--ink-fade)] font-semibold mb-2">Worked example — one tagged Meta ad click</div>
+          <code class="text-xs text-[var(--ink)] break-all leading-relaxed">
+            https://ybmt.com.au/decks/brisbane?<strong class="text-[#7e57c2]">utm_source=meta</strong>&<strong class="text-[#7e57c2]">utm_medium=cpc</strong>&<strong class="text-[#7e57c2]">utm_campaign=decks-bne-pool-q1</strong>&<strong class="text-[#7e57c2]">utm_content=video-16x9-A</strong>&<strong class="text-[#7e57c2]">utm_term=renovators-30km</strong>
+          </code>
+          <p class="text-xs text-[var(--ink-soft)] mt-3">
+            When that visitor submits an RFQ, the CRM lead record stores all 5 UTM values plus the LP they landed on.
+            We can now answer: <em>"Of our Y1 revenue, what % was sourced from Meta video-A vs Google branded search vs GBP organic?"</em>
+          </p>
+        </div>
+
+        {/* The 3x3 LP grid */}
+        <div class="mb-3">
+          <div class="text-[10px] uppercase tracking-wider text-[var(--ink-fade)] font-semibold mb-3">The 3 × 3 Landing Page grid — 9 evergreen destinations</div>
+          <div class="overflow-x-auto">
+            <table class="min-w-full text-xs border border-[var(--line)] rounded-lg overflow-hidden">
+              <thead class="bg-[var(--ybmt-navy)] text-white">
+                <tr>
+                  <th class="text-left px-3 py-2 font-semibold">Service line ↓ / Region →</th>
+                  <th class="text-left px-3 py-2 font-semibold">Brisbane</th>
+                  <th class="text-left px-3 py-2 font-semibold">Gold Coast</th>
+                  <th class="text-left px-3 py-2 font-semibold">Sunshine Coast</th>
+                </tr>
+              </thead>
+              <tbody class="text-[var(--ink-soft)]">
+                <tr class="border-t border-[var(--line)]">
+                  <td class="px-3 py-2 font-semibold text-[var(--ybmt-navy)]">YBMT Decks</td>
+                  <td class="px-3 py-2"><code class="text-[11px]">/decks/brisbane</code></td>
+                  <td class="px-3 py-2"><code class="text-[11px]">/decks/gold-coast</code></td>
+                  <td class="px-3 py-2"><code class="text-[11px]">/decks/sunshine-coast</code></td>
+                </tr>
+                <tr class="border-t border-[var(--line)] bg-[var(--paper-warm)]/50">
+                  <td class="px-3 py-2 font-semibold text-[var(--ybmt-navy)]">YBMT Renovations</td>
+                  <td class="px-3 py-2"><code class="text-[11px]">/renovations/brisbane</code></td>
+                  <td class="px-3 py-2"><code class="text-[11px]">/renovations/gold-coast</code></td>
+                  <td class="px-3 py-2"><code class="text-[11px]">/renovations/sunshine-coast</code></td>
+                </tr>
+                <tr class="border-t border-[var(--line)]">
+                  <td class="px-3 py-2 font-semibold text-[var(--ybmt-navy)]">YBMT Termite Repairs</td>
+                  <td class="px-3 py-2"><code class="text-[11px]">/termite-repairs/brisbane</code></td>
+                  <td class="px-3 py-2"><code class="text-[11px]">/termite-repairs/gold-coast</code></td>
+                  <td class="px-3 py-2"><code class="text-[11px]">/termite-repairs/sunshine-coast</code></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-xs text-[var(--ink-soft)] mt-3">
+            Plus <strong>campaign-specific LPs</strong> for short-lived paid promos (<code class="text-[11px]">/lp/pool-decking-bne-summer</code>) which message-match the ad creative for higher Quality Score and lower CPC.
+          </p>
+        </div>
+
+        {/* Why this matters */}
+        <div class="mt-6 grid md:grid-cols-3 gap-3 text-xs">
+          <div class="p-3 rounded-lg bg-white border border-[var(--line)]">
+            <div class="text-[10px] uppercase tracking-wider text-[var(--ink-fade)] font-semibold mb-1">Attribution</div>
+            <p class="text-[var(--ink-soft)]">Every signed contract can be traced back to the exact ad, post, or referral that started the journey.</p>
+          </div>
+          <div class="p-3 rounded-lg bg-white border border-[var(--line)]">
+            <div class="text-[10px] uppercase tracking-wider text-[var(--ink-fade)] font-semibold mb-1">A/B testing</div>
+            <p class="text-[var(--ink-soft)]">Two ad variants, same LP → CTR + conversion compared. Or same ad, two LPs → message-match impact measured.</p>
+          </div>
+          <div class="p-3 rounded-lg bg-white border border-[var(--line)]">
+            <div class="text-[10px] uppercase tracking-wider text-[var(--ink-fade)] font-semibold mb-1">Budget allocation</div>
+            <p class="text-[var(--ink-soft)]">Stop guessing. The channel with the lowest cost-per-RFQ and highest LP→RFQ rate gets next month's budget lift.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -517,7 +672,8 @@ export const FunnelPage = () => (
 
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
         <ScoreCard label="Reach / week" value="~25,000" sub="Paid + Organic combined" tone="navy" />
-        <ScoreCard label="Site visits / week" value="~600" sub="From all sources, decks landing pages" tone="navy" />
+        <ScoreCard label="Site visits / week" value="~600" sub="UTM-tracked LP loads (Decks)" tone="navy" />
+        <ScoreCard label="LP → RFQ rate" value=">1.5%" sub="Direct LP form submits" tone="orange" />
         <ScoreCard label="Buyer's Guide DLs / week" value="~24" sub="4% of unique visitors" tone="emerald" />
         <ScoreCard label="RFQs / week" value="~9" sub="1.5% of visits · 12% of guide DLs" tone="orange" />
         <ScoreCard label="Quotes issued / week" value="$200K" sub="From RFQs converted to formal quotes" tone="navy" />
@@ -749,7 +905,7 @@ const StageDeepDive = ({ id, stage, title, tagline, icon, jobToBeDone, buyerStat
 // Digital media card
 type Channel = { name: string; detail: string }
 type DigitalCardProps = {
-  colour: 'orange' | 'navy' | 'emerald'
+  colour: 'orange' | 'navy' | 'emerald' | 'violet'
   icon: string
   label: string
   tagline: string
@@ -765,6 +921,8 @@ const DigitalCard = ({ colour, icon, label, tagline, stage, intro, channels, ass
     ? 'bg-gradient-to-br from-[var(--ybmt-orange)] to-[var(--ybmt-orange-soft)] text-white'
     : colour === 'navy'
     ? 'bg-gradient-to-br from-[var(--ybmt-navy)] to-[var(--ybmt-navy-soft)] text-white'
+    : colour === 'violet'
+    ? 'bg-gradient-to-br from-[#5b3a8a] to-[#7e57c2] text-white'
     : 'bg-gradient-to-br from-[var(--emerald)] to-[#3a8f70] text-white'
 
   return (
