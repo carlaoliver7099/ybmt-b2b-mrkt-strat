@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YBMT Pool Decks - Brochure</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,600;1,9..144,700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --navy: #1b3a5c;
+        --timber: #b8743d;
+        --aqua: #4db6c7;
+        --cream: #f5f1ea;
+        --charcoal: #2b2b2b;
+        --white: #ffffff;
+        --font-display: 'Fraunces', serif;
+        --font-body: 'Inter', sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      body {
+        font-family: var(--font-body);
+        color: var(--charcoal);
+        background: #e5e5e5;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .print-btn {
+        background: var(--navy);
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: var(--font-body);
+        border-radius: 6px;
+        cursor: pointer;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        transition: background 0.2s;
+      }
+
+      .print-btn:hover {
+        background: var(--timber);
+      }
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      .page {
+        width: 210mm;
+        height: 297mm;
+        background: var(--white);
+        position: relative;
+        overflow: hidden;
+        page-break-after: always;
+        margin: 0 auto 30px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+      }
+
+      @media print {
+        body {
+          background: white;
+          padding: 0;
+          display: block;
+        }
+        .screen-only {
+          display: none !important;
+        }
+        .page {
+          margin: 0;
+          box-shadow: none;
+          page-break-after: always;
+        }
+      }
+
+      /* FRONT PAGE */
+      .hero {
+        height: 42%;
+        background-image:
+          linear-gradient(to bottom, rgba(27, 58, 92, 0.6), rgba(27, 58, 92, 0.3), rgba(27, 58, 92, 0.8)),
+          url('https://www.genspark.ai/api/files/s/m5CipECC?cache_control=3600');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .hero-logo img {
+        width: 160px;
+        filter: brightness(0) invert(1);
+      }
+
+      .hero-content {
+        color: var(--white);
+      }
+
+      .hero-content h1 {
+        font-family: var(--font-display);
+        font-style: italic;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 1.1;
+        margin-bottom: 12px;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .hero-content p {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 16px;
+      }
+
+      .location-pills {
+        display: inline-block;
+        background: rgba(77, 182, 199, 0.9);
+        color: var(--white);
+        padding: 6px 16px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+
+      .middle-section {
+        height: 25%;
+        background: var(--cream);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 30px;
+        gap: 20px;
+      }
+
+      .icon-card {
+        flex: 1;
+        text-align: center;
+        padding: 10px;
+      }
+
+      .icon-circle {
+        width: 64px;
+        height: 64px;
+        background: var(--navy);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 16px;
+      }
+
+      .icon-circle svg {
+        width: 32px;
+        height: 32px;
+        fill: var(--white);
+      }
+
+      .icon-card h3 {
+        font-size: 15px;
+        font-weight: 700;
+        color: var(--navy);
+        margin-bottom: 6px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .icon-card p {
+        font-size: 13px;
+        color: var(--charcoal);
+        line-height: 1.4;
+      }
+
+      .bottom-section {
+        height: 33%;
+        background: var(--navy);
+        color: var(--white);
+        padding: 40px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .bottom-section h2 {
+        font-family: var(--font-display);
+        font-style: italic;
+        font-weight: 600;
+        font-size: 32px;
+        margin-bottom: 24px;
+        color: var(--white);
+      }
+
+      .benefits-list {
+        list-style: none;
+        margin-bottom: 30px;
+      }
+
+      .benefits-list li {
+        font-size: 16px;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+      }
+
+      .benefits-list svg {
+        width: 20px;
+        height: 20px;
+        fill: var(--aqua);
+        margin-right: 12px;
+      }
+
+      .cta-button {
+        display: inline-block;
+        background: var(--aqua);
+        color: var(--white);
+        font-size: 22px;
+        font-weight: 700;
+        padding: 14px 32px;
+        border-radius: 8px;
+        text-decoration: none;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        margin-bottom: 8px;
+        width: max-content;
+      }
+
+      .cta-subtext {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.8);
+        padding-left: 4px;
+      }
+
+      .qr-box {
+        position: absolute;
+        bottom: 30px;
+        right: 40px;
+        text-align: center;
+        background: var(--cream);
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      .qr-box img {
+        width: 90px;
+        height: 90px;
+        display: block;
+        margin-bottom: 6px;
+      }
+
+      .qr-box span {
+        font-size: 10px;
+        font-weight: 700;
+        color: var(--navy);
+        display: block;
+      }
+
+      /* BACK PAGE */
+      .back-header {
+        padding: 30px 40px 15px;
+        text-align: center;
+        background: var(--white);
+      }
+
+      .back-header h2 {
+        font-family: var(--font-display);
+        font-style: italic;
+        font-size: 32px;
+        color: var(--navy);
+        margin-bottom: 4px;
+      }
+
+      .back-header p {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--timber);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .quadrant-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        flex: 1;
+        padding: 0 40px 20px;
+        gap: 20px;
+      }
+
+      .quadrant {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .quadrant img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 6px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .quadrant-content {
+        flex: 1;
+      }
+
+      .quadrant h3 {
+        font-size: 15px;
+        color: var(--navy);
+        font-weight: 700;
+        margin-bottom: 6px;
+        line-height: 1.2;
+      }
+
+      .quadrant p {
+        font-size: 12px;
+        color: var(--charcoal);
+        line-height: 1.4;
+      }
+
+      .investment-band {
+        background: var(--cream);
+        padding: 25px 40px;
+      }
+
+      .investment-header {
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--navy);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      .pricing-tiers {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 12px;
+      }
+
+      .tier {
+        flex: 1;
+        border: 2px solid var(--navy);
+        background: var(--white);
+        padding: 15px;
+        border-radius: 6px;
+        text-align: center;
+        position: relative;
+      }
+
+      .tier.highlight {
+        background: var(--timber);
+        border-color: var(--timber);
+        color: var(--white);
+      }
+
+      .tier.highlight h4,
+      .tier.highlight p {
+        color: var(--white);
+      }
+
+      .tier-badge {
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--navy);
+        color: var(--white);
+        font-size: 9px;
+        font-weight: 700;
+        padding: 2px 8px;
+        border-radius: 10px;
+        white-space: nowrap;
+      }
+
+      .tier h4 {
+        font-size: 13px;
+        color: var(--navy);
+        margin-bottom: 4px;
+        font-weight: 700;
+      }
+
+      .tier .price {
+        font-family: var(--font-display);
+        font-style: italic;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      .tier p {
+        font-size: 11px;
+        line-height: 1.3;
+        color: var(--charcoal);
+      }
+
+      .investment-caption {
+        text-align: center;
+        font-size: 11px;
+        color: var(--charcoal);
+        font-style: italic;
+      }
+
+      .testimonial-band {
+        background: var(--navy);
+        color: var(--white);
+        padding: 25px 50px;
+        text-align: center;
+        position: relative;
+      }
+
+      .quote-mark {
+        font-family: var(--font-display);
+        font-size: 60px;
+        color: var(--aqua);
+        position: absolute;
+        top: -10px;
+        left: 30px;
+        opacity: 0.3;
+      }
+
+      .testimonial-band p {
+        font-family: var(--font-display);
+        font-style: italic;
+        font-size: 18px;
+        line-height: 1.4;
+        margin-bottom: 12px;
+        position: relative;
+        z-index: 2;
+      }
+
+      .stars {
+        color: var(--aqua);
+        font-size: 16px;
+        margin-bottom: 4px;
+        letter-spacing: 2px;
+      }
+
+      .attribution {
+        font-size: 13px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .contact-block {
+        display: flex;
+        padding: 25px 40px;
+        background: var(--cream);
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .contact-info {
+        flex: 1;
+      }
+
+      .contact-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      .contact-row:last-child {
+        margin-bottom: 0;
+      }
+
+      .contact-row svg {
+        width: 18px;
+        height: 18px;
+        fill: var(--timber);
+        margin-right: 12px;
+      }
+
+      .contact-phone {
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--navy);
+      }
+
+      .contact-detail {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--charcoal);
+      }
+
+      .contact-qr {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      .contact-qr img.logo {
+        width: 120px;
+        margin-bottom: 12px;
+      }
+
+      .contact-qr .qr-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .contact-qr img.qr {
+        width: 70px;
+        height: 70px;
+      }
+
+      .contact-qr p {
+        font-size: 11px;
+        font-weight: 600;
+        color: var(--navy);
+        text-align: right;
+        max-width: 90px;
+        line-height: 1.3;
+      }
+
+      .footer-strip {
+        background: var(--navy);
+        color: rgba(255, 255, 255, 0.7);
+        text-align: center;
+        padding: 8px;
+        font-size: 10px;
+        letter-spacing: 0.5px;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="print-btn screen-only" onclick="window.print()">Print This Brochure</button>
+
+    <!-- PAGE 1: FRONT -->
+    <div class="page">
+      <div class="hero">
+        <div class="hero-logo">
+          <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="YBMT Pool Decks" />
+        </div>
+        <div class="hero-content">
+          <h1>Stunning Pool Decks,<br />Built Around Your Lifestyle.</h1>
+          <p>South East Queensland's pool deck specialists.</p>
+          <div class="location-pills">Brisbane • Gold Coast • Sunshine Coast</div>
+        </div>
+      </div>
+
+      <div class="middle-section">
+        <div class="icon-card">
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+          </div>
+          <h3>QBCC Licensed</h3>
+          <p>50+ years experience, fully insured</p>
+        </div>
+        <div class="icon-card">
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"
+              />
+            </svg>
+          </div>
+          <h3>Compliance Handled</h3>
+          <p>QLD pool safety guaranteed</p>
+        </div>
+        <div class="icon-card">
+          <div class="icon-circle">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"
+              />
+            </svg>
+          </div>
+          <h3>Fast Quotes</h3>
+          <p>Free consultation, 48-hour turnaround</p>
+        </div>
+      </div>
+
+      <div class="bottom-section">
+        <h2>Your Free Pool Deck Consultation</h2>
+        <ul class="benefits-list">
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" /></svg>
+            On-site design consultation (we come to you)
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" /></svg>
+            Custom design + line-item quote within 48 hours
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" /></svg>
+            Zero obligation, zero pressure
+          </li>
+        </ul>
+        <div style="margin-top: 10px">
+          <a href="#" class="cta-button">CALL 1300 448 784</a>
+          <div class="cta-subtext">ybmt.com.au/pool-decks</div>
+        </div>
+
+        <div class="qr-box">
+          <img
+            src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://ybmt.com.au/pool-decks&color=1B3A5C&bgcolor=F5F1EA"
+            alt="QR Code"
+          />
+          <span>SCAN FOR<br />FREE QUOTE</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 2: BACK -->
+    <div class="page">
+      <div class="back-header">
+        <h2>Why Homeowners Choose Us</h2>
+        <p>Brisbane • Gold Coast • Sunshine Coast</p>
+      </div>
+
+      <div class="quadrant-grid">
+        <div class="quadrant">
+          <img src="https://www.genspark.ai/api/files/s/9r3MlDWL?cache_control=3600" alt="Craftsmanship detail" />
+          <div class="quadrant-content">
+            <h3>Craftsmanship You'll Notice For Decades</h3>
+            <p>
+              Hidden fasteners, perfect mitres, concealed drainage, marine-grade fixings. The details 90% of builders
+              ignore.
+            </p>
+          </div>
+        </div>
+        <div class="quadrant">
+          <img
+            src="https://www.genspark.ai/api/files/s/I1g4JOGk?cache_control=3600"
+            alt="Before and After transformation"
+          />
+          <div class="quadrant-content">
+            <h3>From Tired to Transformative</h3>
+            <p>We don't build patios or pergolas. Pool decks are all we do — and we do them exceptionally well.</p>
+          </div>
+        </div>
+        <div class="quadrant">
+          <img src="https://www.genspark.ai/api/files/s/K7WzSINy?cache_control=3600" alt="Family lifestyle" />
+          <div class="quadrant-content">
+            <h3>Built For The Way You Live</h3>
+            <p>
+              Family lifestyle. Entertaining. Quiet evenings. Every deck designed around how you actually use your home.
+            </p>
+          </div>
+        </div>
+        <div class="quadrant">
+          <img src="https://www.genspark.ai/api/files/s/bCdXUOb8?cache_control=3600" alt="Night-time ambiance" />
+          <div class="quadrant-content">
+            <h3>Worthy of Your Home</h3>
+            <p>
+              Magazine-quality finishes. Architect-grade materials. The kind of pool deck that elevates your entire
+              property.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="investment-band">
+        <div class="investment-header">Typical Investment</div>
+        <div class="pricing-tiers">
+          <div class="tier">
+            <h4>SIGNATURE</h4>
+            <div class="price">From $50,000</div>
+            <p>Premium deck, glass fence, lighting</p>
+          </div>
+          <div class="tier highlight">
+            <div class="tier-badge">MOST POPULAR</div>
+            <h4>PREMIER</h4>
+            <div class="price">From $75,000</div>
+            <p>Mixed materials, custom features, integrated landscaping</p>
+          </div>
+          <div class="tier">
+            <h4>BESPOKE</h4>
+            <div class="price">From $120,000+</div>
+            <p>Full architectural custom, multi-zone, premium everything</p>
+          </div>
+        </div>
+        <div class="investment-caption">
+          Most projects fall in our Premier tier. Your free quote includes an exact figure tailored to your home.
+        </div>
+      </div>
+
+      <div class="testimonial-band">
+        <div class="quote-mark">"</div>
+        <div class="stars">★★★★★</div>
+        <p>
+          YBMT transformed our pool area into a five-star resort. Compliance handled, finish is flawless. Cannot
+          recommend them enough.
+        </p>
+        <div class="attribution">— Sarah & James, Buderim</div>
+      </div>
+
+      <div class="contact-block">
+        <div class="contact-info">
+          <div class="contact-row">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"
+              />
+            </svg>
+            <span class="contact-phone">1300 448 784</span>
+          </div>
+          <div class="contact-row">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+              />
+            </svg>
+            <span class="contact-detail">ybmt.com.au/pool-decks</span>
+          </div>
+          <div class="contact-row">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+              />
+            </svg>
+            <span class="contact-detail"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d4bcb1b8b8bb94adb6b9a0fab7bbb9fab5a1">[email&#160;protected]</a></span>
+          </div>
+          <div class="contact-row">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+              />
+            </svg>
+            <span class="contact-detail">Brisbane • Gold Coast • Sunshine Coast</span>
+          </div>
+        </div>
+        <div class="contact-qr">
+          <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="YBMT Pool Decks Logo" class="logo" />
+          <div class="qr-wrapper">
+            <p>Scan to get your free quote</p>
+            <img
+              src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ybmt.com.au/pool-decks&color=1B3A5C&bgcolor=F5F1EA"
+              alt="QR Code"
+              class="qr"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-strip">
+        Your Building & Maintenance Team Pty Ltd | QBCC Licensed | Fully Insured | 7-Year Workmanship Warranty
+      </div>
+    </div>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>

@@ -1,0 +1,1728 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YBMT Pool Decks — SEO Blog Content Kit (5 Articles)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,600&family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary-navy: #1b3a5c;
+        --warm-timber: #b8743d;
+        --pool-aqua: #4db6c7;
+        --off-white: #f5f1ea;
+        --charcoal: #2b2b2b;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        color: var(--charcoal);
+        background-color: var(--off-white);
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 32px 80px;
+        position: relative;
+        box-sizing: border-box;
+        font-size: 16px;
+        line-height: 1.7;
+      }
+      h1,
+      .fraunces {
+        font-family: 'Fraunces', serif;
+        font-style: italic;
+        color: var(--primary-navy);
+      }
+      .sticky-header {
+        position: sticky;
+        top: 0;
+        background-color: var(--off-white);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+        border-bottom: 1px solid #ddd;
+        z-margin-bottom: 40px;
+        z-index: 100;
+      }
+      .sticky-header img {
+        height: 40px;
+        width: auto;
+      }
+      .sticky-header-text {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--primary-navy);
+      }
+      .cover-section {
+        text-align: center;
+        margin: 60px 0;
+      }
+      .cover-section img {
+        max-width: 280px;
+        margin-bottom: 24px;
+      }
+      .cover-section h1 {
+        font-size: 42px;
+        margin-bottom: 8px;
+      }
+      .cover-subtitle {
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--charcoal);
+        margin-bottom: 16px;
+      }
+      .tag-pill {
+        display: inline-block;
+        background-color: var(--pool-aqua);
+        color: #fff;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+      }
+      .intro-paragraph {
+        font-size: 16px;
+        max-width: 600px;
+        margin: 0 auto;
+        color: var(--charcoal);
+      }
+
+      .legend-box {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 24px;
+        margin-bottom: 40px;
+      }
+      .legend-box h3 {
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        color: var(--primary-navy);
+        margin-top: 0;
+      }
+      .legend-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 24px 0;
+      }
+      .legend-list li {
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+      }
+      .toc {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 24px;
+      }
+      .toc a {
+        color: var(--primary-navy);
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .toc a:hover {
+        text-decoration: underline;
+      }
+
+      .article-divider {
+        background-color: var(--primary-navy);
+        padding: 40px;
+        margin: 60px 0 40px 0;
+        border-bottom: 4px solid var(--pool-aqua);
+      }
+      .article-divider .article-number {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--pool-aqua);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+      }
+      .article-divider h2 {
+        font-family: 'Fraunces', serif;
+        font-style: italic;
+        color: #fff;
+        font-size: 32px;
+        margin: 0;
+      }
+
+      h2.article-h2 {
+        color: var(--primary-navy);
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 16px;
+      }
+      h2.article-h2::before {
+        content: '';
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background-color: var(--warm-timber);
+        margin-right: 12px;
+      }
+      h3.article-h3 {
+        color: var(--warm-timber);
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        margin-top: 24px;
+        margin-bottom: 12px;
+      }
+
+      .callout {
+        padding: 16px 24px;
+        margin-bottom: 24px;
+        font-size: 15px;
+      }
+      .seo-box {
+        border-left: 4px solid var(--pool-aqua);
+        background-color: rgba(77, 182, 199, 0.1);
+      }
+      .seo-box strong {
+        color: var(--primary-navy);
+      }
+
+      .img-box {
+        border-left: 4px solid var(--warm-timber);
+        background-color: rgba(184, 116, 61, 0.1);
+        font-weight: 600;
+        color: var(--warm-timber);
+      }
+
+      .link-box {
+        border-left: 4px solid var(--primary-navy);
+        background-color: rgba(27, 58, 92, 0.05);
+        font-weight: 600;
+        color: var(--primary-navy);
+      }
+
+      .cta-box {
+        border-left: 4px solid #2e7d32;
+        background-color: #eaf5ec;
+        color: #1b5e20;
+      }
+      .cta-box strong {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 8px;
+      }
+      .cta-btn {
+        display: inline-block;
+        margin-top: 12px;
+        font-weight: bold;
+        color: #2e7d32;
+        text-decoration: none;
+      }
+
+      .faq-box {
+        background-color: #eaeaea;
+        border-radius: 8px;
+        padding: 24px;
+        margin-bottom: 40px;
+      }
+      .faq-box h3 {
+        margin-top: 0;
+        color: var(--charcoal);
+      }
+      .faq-item {
+        margin-bottom: 16px;
+      }
+      .faq-item strong {
+        color: var(--primary-navy);
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 24px;
+        background-color: #fff;
+      }
+      th {
+        background-color: var(--primary-navy);
+        color: #fff;
+        font-weight: 600;
+        padding: 12px 16px;
+        text-align: left;
+      }
+      td {
+        padding: 12px 16px;
+        border-bottom: 1px solid #ddd;
+      }
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+
+      .checklist {
+        list-style: none;
+        padding: 0;
+      }
+      .checklist li {
+        margin-bottom: 12px;
+        font-size: 16px;
+      }
+      .checklist input {
+        margin-right: 12px;
+      }
+
+      hr.subtle-divider {
+        border: 0;
+        height: 1px;
+        background-color: rgba(77, 182, 199, 0.3);
+        margin: 40px 0;
+      }
+
+      .back-to-top {
+        display: inline-block;
+        margin-top: 24px;
+        font-size: 14px;
+        color: var(--pool-aqua);
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .back-to-top:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        margin-top: 80px;
+        padding-top: 40px;
+        border-top: 1px solid #ddd;
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+      }
+      .footer img {
+        height: 30px;
+        margin-bottom: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sticky-header">
+      <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="YBMT Pool Decks Logo" />
+      <div class="sticky-header-text">SEO Blog Content Kit · 5 Articles · 2026</div>
+    </div>
+
+    <div class="cover-section">
+      <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="YBMT Pool Decks Logo" />
+      <h1 class="fraunces">SEO Blog Content Kit</h1>
+      <div class="cover-subtitle">5 Ready-to-Publish Articles for Brisbane · Gold Coast · Sunshine Coast</div>
+      <div class="tag-pill">v1.0 · 2026 Edition</div>
+      <p class="intro-paragraph">
+        This kit contains 5 fully-written, SEO-optimised blog posts ready to publish on ybmt.com.au/pool-decks/blog/.
+        Each post is engineered to rank for high-intent Queensland pool deck search terms and to convert readers into
+        free-quote enquiries.
+      </p>
+    </div>
+
+    <div class="legend-box">
+      <h3>How to Use This Kit</h3>
+      <ul class="legend-list">
+        <li>
+          <span
+            style="
+              display: inline-block;
+              width: 16px;
+              height: 16px;
+              background-color: rgba(77, 182, 199, 0.2);
+              border-left: 2px solid var(--pool-aqua);
+              margin-right: 8px;
+            "
+          ></span>
+          🔍 Aqua callout boxes = SEO metadata (title tag, meta description, URL slug, keywords)
+        </li>
+        <li>
+          <span
+            style="
+              display: inline-block;
+              width: 16px;
+              height: 16px;
+              background-color: rgba(184, 116, 61, 0.2);
+              border-left: 2px solid var(--warm-timber);
+              margin-right: 8px;
+            "
+          ></span>
+          🖼️ Timber callout boxes = Image placement suggestions
+        </li>
+        <li>
+          <span
+            style="
+              display: inline-block;
+              width: 16px;
+              height: 16px;
+              background-color: rgba(27, 58, 92, 0.1);
+              border-left: 2px solid var(--primary-navy);
+              margin-right: 8px;
+            "
+          ></span>
+          🔗 Navy callout boxes = Internal linking opportunities
+        </li>
+        <li>
+          <span
+            style="
+              display: inline-block;
+              width: 16px;
+              height: 16px;
+              background-color: #eaf5ec;
+              border-left: 2px solid #2e7d32;
+              margin-right: 8px;
+            "
+          ></span>
+          ✅ Green-tinted boxes = Calls to Action (CTAs)
+        </li>
+        <li>
+          <span
+            style="display: inline-block; width: 16px; height: 16px; background-color: #eaeaea; margin-right: 8px"
+          ></span>
+          📚 Light grey boxes = FAQ blocks
+        </li>
+      </ul>
+
+      <div class="toc">
+        <h3>Table of Contents</h3>
+        <ol>
+          <li><a href="#art1">How Much Does a Pool Deck Cost in Brisbane? [2026 Pricing Guide]</a></li>
+          <li><a href="#art2">Composite vs Hardwood Pool Decking: Which is Best for Queensland Pools?</a></li>
+          <li><a href="#art3">QLD Pool Fence Compliance: The Decking Mistakes That Cost Homeowners Thousands</a></li>
+          <li><a href="#art4">Sunshine Coast Pool Deck Inspiration: 7 Stunning Design Ideas for 2026</a></li>
+          <li><a href="#art5">Building a Deck Around an Existing Pool: Complete Homeowner's Guide</a></li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- ARTICLE 1 -->
+    <div id="art1" class="article-divider">
+      <div class="article-number">Article 01 of 05</div>
+      <h2>How Much Does a Pool Deck Cost in Brisbane? [2026 Pricing Guide]</h2>
+    </div>
+
+    <div class="callout seo-box">
+      <strong>🔍 SEO Metadata:</strong><br />
+      <strong>Title Tag:</strong> How Much Does a Pool Deck Cost in Brisbane? 2026 Guide<br />
+      <strong>Meta Description:</strong> Real Brisbane pool deck pricing for 2026. Composite, hardwood, travertine.
+      Honest cost ranges, drivers, and what to budget. By QBCC-licensed specialists.<br />
+      <strong>URL Slug:</strong> /pool-decks/blog/pool-deck-cost-brisbane-2026<br />
+      <strong>Primary Keyword:</strong> pool deck cost brisbane<br />
+      <strong>Secondary Keywords:</strong> composite pool decking brisbane price, hardwood pool deck cost, pool deck
+      price 2026, brisbane deck builder cost
+    </div>
+
+    <h1 class="fraunces">How Much Does a Pool Deck Cost in Brisbane? [2026 Pricing Guide]</h1>
+
+    <p>
+      Most Brisbane homeowners overpay or underspec on pool decks because pricing in this industry is notoriously
+      opaque. Some builders quote $200/m², while others quote $800/m². The reality is that both can be telling the truth
+      depending entirely on what's underneath the surface. This guide gives you the honest 2026 numbers, what drives
+      them, and how to know if a quote you're holding is fair and comprehensive. We build custom pool decks across
+      Brisbane every single week, so the figures broken down below are based on real jobs and local market rates—not
+      generic internet averages.
+    </p>
+
+    <div class="callout img-box">
+      🖼️ [IMAGE: Hero shot of a luxury Brisbane pool deck at golden hour — composite or spotted gum boards meeting a
+      turquoise pool]
+    </div>
+
+    <h2 class="article-h2">Quick Answer — What a Brisbane Pool Deck Really Costs in 2026</h2>
+    <p>
+      Pool decks in Brisbane typically cost between <strong>$5,000 and $120,000+</strong> depending heavily on the size,
+      material choice, site complexity, and finishes required. The average mid-range project we construct sits
+      comfortably in the <strong>$25,000–$60,000 range</strong>. Below we break down exactly what drives those numbers,
+      from substructure framing to local council permits, so you can plan your backyard project with complete
+      confidence.
+    </p>
+
+    <h2 class="article-h2">Pool Deck Cost by Size</h2>
+    <p>
+      The total square meterage of your deck is the foundation of your budget. Here is a realistic look at total project
+      costs based on footprint:
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Project Size</th>
+          <th>Square Metres</th>
+          <th>Typical Cost (2026)</th>
+          <th>Suits</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Small</td>
+          <td>15–25 m²</td>
+          <td>$5,000–$15,000</td>
+          <td>Plunge pool surrounds, small terrace decks</td>
+        </tr>
+        <tr>
+          <td>Medium</td>
+          <td>30–50 m²</td>
+          <td>$12,000–$35,000</td>
+          <td>Standard family pool wraparound</td>
+        </tr>
+        <tr>
+          <td>Large</td>
+          <td>60–100 m²</td>
+          <td>$25,000–$60,000</td>
+          <td>Entertainer's pool deck with lounge zones</td>
+        </tr>
+        <tr>
+          <td>Premium</td>
+          <td>100 m²+</td>
+          <td>$50,000–$120,000+</td>
+          <td>Multi-level, mixed-material luxury builds</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      <em
+        >Note: These figures are total project costs including labour, materials, structural framing, fixings and
+        standard finishing — not 'per m² material only' pricing some builders use to hook clients.</em
+      >
+    </p>
+
+    <h2 class="article-h2">Pool Deck Cost by Material (per m² supplied & installed)</h2>
+    <p>
+      Once the size is established, the decking board material dictates the final rate. Here is a breakdown of the four
+      main materials with honest per-m² ranges for supplied and installed products:
+    </p>
+    <ul>
+      <li>
+        <strong>Composite Decking — $350–$420/m²</strong> — Capped composite boards (such as Ezy Decking, Trex, or
+        NewTechWood) installed over a treated hardwood or steel framing. This offers a low-maintenance lifestyle, up to
+        a 20-year structural warranty, and excellent wet slip ratings around pools.
+        <div class="callout link-box">
+          🔗 [INTERNAL LINK: Read our composite vs hardwood breakdown →
+          /pool-decks/blog/composite-vs-hardwood-pool-decking-queensland]
+        </div>
+      </li>
+      <li>
+        <strong>Spotted Gum Hardwood — $320–$380/m²</strong> — A premium Australian hardwood option. It offers a
+        stunning natural grain, is naturally durable, and delivers a high-end architectural aesthetic. However, it
+        requires re-oiling every 12–18 months.
+      </li>
+      <li>
+        <strong>Merbau Hardwood — $240–$310/m²</strong> — A budget-friendly hardwood alternative. It provides an
+        affordable entry point for real timber but is darker, leaches tannins initially, and demands more frequent
+        oiling than spotted gum.
+      </li>
+      <li>
+        <strong>Travertine Pavers — $400+/m²</strong> — A premium stone option. While technically not "decking", it is
+        frequently combined with timber or composite perimeters. It remains cool underfoot, exudes a luxury aesthetic,
+        and requires minimal maintenance once sealed.
+      </li>
+    </ul>
+    <p>
+      <em
+        >Note: Material-only pricing found online is highly misleading. Installed pricing includes the necessary skilled
+        labour, stainless fixings, sub-frame structural timber, and waste removal—which is what you actually pay for a
+        finished job.</em
+      >
+    </p>
+
+    <h2 class="article-h2">8 Factors That Drive Brisbane Pool Deck Costs</h2>
+    <p>
+      No two backyards are the same. Beyond size and materials, these eight variables heavily influence your final
+      quote:
+    </p>
+    <ol>
+      <li>
+        <strong>Material choice:</strong> The single biggest variable. Upgrading to premium composite typically adds
+        +20% over standard hardwood.
+      </li>
+      <li>
+        <strong>Site access:</strong> Narrow wheelbarrow access down a side path costs more in labour hours compared to
+        a site with direct crane or machinery access.
+      </li>
+      <li>
+        <strong>Sub-frame complexity:</strong> A flat suburban block in Carindale is far cheaper to build on than a
+        steep, sloping hinterland block requiring complex engineering.
+      </li>
+      <li>
+        <strong>Deck elevation:</strong> Ground-level decks are straightforward. Elevated decks require structural
+        posts, balustrades, engineering, and fall-protection compliance.
+      </li>
+      <li>
+        <strong>Drainage solutions:</strong> Pool decks need proper subsurface drainage to last and prevent rot.
+        Installing proper drainage often adds $1,500–$4,500 to a project.
+      </li>
+      <li>
+        <strong>Pool fence integration:</strong> Upgrading to frameless glass and integrating it seamlessly into the
+        deck structure adds $3,000–$8,000.
+      </li>
+      <li>
+        <strong>Features:</strong> Built-in bench seating, custom planter boxes, hidden LED step lighting, or outdoor
+        showers quickly elevate the budget.
+      </li>
+      <li>
+        <strong>Council approvals & engineering:</strong> Necessary for elevated decks or decks forming part of a pool
+        barrier, sometimes costing $1,200–$3,500 in fees.
+      </li>
+    </ol>
+
+    <h2 class="article-h2">Three Real Brisbane Project Examples</h2>
+    <p>To help visualize what these numbers look like in reality, here are three recent case studies:</p>
+
+    <h3 class="article-h3">Project 1 — Bulimba Family Wraparound Deck</h3>
+    <div class="callout img-box">🖼️ [IMAGE: Wraparound composite pool deck at a Brisbane Queenslander]</div>
+    <ul>
+      <li><strong>Size:</strong> 42 m²</li>
+      <li><strong>Material:</strong> Composite (warm timber colour)</li>
+      <li><strong>Features:</strong> Frameless glass fence integration, hidden LED lighting</li>
+      <li><strong>Total Investment:</strong> <strong>$28,400</strong></li>
+      <li><strong>Build time:</strong> 11 days</li>
+    </ul>
+
+    <h3 class="article-h3">Project 2 — New Farm Modern Terrace</h3>
+    <div class="callout img-box">🖼️ [IMAGE: Modern dark composite deck at New Farm townhouse]</div>
+    <ul>
+      <li><strong>Size:</strong> 28 m²</li>
+      <li><strong>Material:</strong> Composite (espresso) + travertine inlay</li>
+      <li><strong>Features:</strong> Built-in bench, architectural planter wall</li>
+      <li><strong>Total Investment:</strong> <strong>$22,800</strong></li>
+      <li><strong>Build time:</strong> 9 days</li>
+    </ul>
+
+    <h3 class="article-h3">Project 3 — Pullenvale Luxury Entertainer</h3>
+    <div class="callout img-box">🖼️ [IMAGE: Large spotted gum pool deck at Pullenvale acreage]</div>
+    <ul>
+      <li><strong>Size:</strong> 86 m²</li>
+      <li><strong>Material:</strong> Premium Spotted Gum hardwood</li>
+      <li><strong>Features:</strong> Multi-level deck, outdoor kitchen footing, frameless glass barrier</li>
+      <li><strong>Total Investment:</strong> <strong>$74,500</strong></li>
+      <li><strong>Build time:</strong> 21 days</li>
+    </ul>
+
+    <h2 class="article-h2">How to Save Money Without Sacrificing Quality</h2>
+    <p>If you're looking to optimize your budget, here are five honest tips from our estimating team:</p>
+    <ol>
+      <li>
+        <strong>Choose composite for low-maintenance value:</strong> While slightly more expensive upfront, it saves
+        $4,000+ over 20 years versus hardwood by eliminating annual sanding and re-oiling costs.
+      </li>
+      <li>
+        <strong>Don't over-spec the size:</strong> Most people only utilize 60% of an oversized deck. Smart,
+        proportionate sizing is cheaper and creates a more intimate, useful space.
+      </li>
+      <li>
+        <strong>Combine materials strategically:</strong> Use highly durable composite for the high-traffic, wet pool
+        edge, and more affordable materials or travertine for the extended lounge zones.
+      </li>
+      <li>
+        <strong>Plan drainage from day one:</strong> Retrofitting a drainage solution after a deck floods costs 3× more
+        than building it properly into the sub-frame initially.
+      </li>
+      <li>
+        <strong>Get compliance built in, not bolted on:</strong> Designing the deck with pool safety rules in mind
+        prevents non-compliant fence retrofits that can easily add $2,000–$15,000 in unexpected fixes.
+      </li>
+    </ol>
+
+    <h2 class="article-h2">Hidden Costs to Watch For</h2>
+    <p>
+      When planning a Brisbane build, keep an eye out for these region-specific hidden costs that budget builders often
+      leave out of their initial quotes:
+    </p>
+    <ul>
+      <li><strong>Brisbane City Council approval</strong> ($600–$1,800 for elevated or attached decks)</li>
+      <li><strong>Engineering certificates</strong> for raised structures ($800–$2,500)</li>
+      <li>
+        <strong>Pool Safety Certificate re-inspection</strong> (~$300–$450, often legally required after deck work near
+        a barrier)
+      </li>
+      <li><strong>Tree removal or root management</strong> if mature suburban trees are near the build zone</li>
+      <li><strong>Asbestos surveying</strong> for pre-1990 homes if attaching ledgers to existing structures</li>
+    </ul>
+
+    <div class="callout link-box">
+      🔗 [INTERNAL LINK: Learn more about QLD pool fence compliance →
+      /pool-decks/blog/qld-pool-fence-compliance-deck-mistakes]
+    </div>
+
+    <div class="callout cta-box">
+      <strong>Want a real Brisbane pool deck quote in 48 hours?</strong>
+      We're QBCC-licensed pool deck specialists serving Brisbane, Gold Coast and Sunshine Coast. Get a free on-site
+      consultation with transparent, line-item pricing and no obligation.
+      <a href="/pool-decks/free-quote" class="cta-btn">Get My Free Quote →</a>
+    </div>
+
+    <div class="faq-box">
+      <h3>Frequently Asked Questions</h3>
+      <div class="faq-item">
+        <strong>What's the cheapest pool deck material in Brisbane?</strong>
+        Merbau hardwood at $240–$310/m² installed. But factor in re-oiling every 12 months — composite often works out
+        cheaper over a 10-year span due to zero maintenance costs.
+      </div>
+      <div class="faq-item">
+        <strong>How much more does a pool deck cost vs plain concrete?</strong>
+        A custom timber or composite deck typically costs 30–60% more than stamped concrete, but it adds 3–5× more
+        property value, is safer underfoot, and looks dramatically better.
+      </div>
+      <div class="faq-item">
+        <strong>How much does it cost to add a deck around an existing pool?</strong>
+        Most retrofits in Brisbane sit between $15,000 and $80,000. We rarely need to drain the pool to achieve an
+        incredible transformation. <br />
+        <span class="callout link-box" style="display: inline-block; padding: 8px; margin-top: 8px"
+          >🔗 [INTERNAL LINK: Full retrofit guide → /pool-decks/blog/deck-around-existing-pool-guide]</span
+        >
+      </div>
+      <div class="faq-item">
+        <strong>What factors increase the cost most?</strong>
+        Elevation (anything raised over 600mm), site access difficulty (requiring manual material hauling), and feature
+        additions like outdoor kitchens, integrated spa baths, or fire pits.
+      </div>
+      <div class="faq-item">
+        <strong>Do I need a permit for a pool deck in Brisbane?</strong>
+        Decks under 600mm in elevation usually don't require a permit. However, anything elevated, attached directly to
+        the house, or forming part of the pool fencing compliance barrier needs Brisbane City Council approval.
+      </div>
+    </div>
+    <a href="#" class="back-to-top">↑ Back to Top</a>
+
+    <!-- ARTICLE 2 -->
+    <div id="art2" class="article-divider">
+      <div class="article-number">Article 02 of 05</div>
+      <h2>Composite vs Hardwood Pool Decking: Which is Best for Queensland Pools?</h2>
+    </div>
+
+    <div class="callout seo-box">
+      <strong>🔍 SEO Metadata:</strong><br />
+      <strong>Title Tag:</strong> Composite vs Hardwood Pool Decking QLD: Complete Comparison<br />
+      <strong>Meta Description:</strong> Composite vs hardwood pool deck — which wins for Queensland? Cost, durability,
+      maintenance, slip safety compared. Expert advice from QBCC-licensed specialists.<br />
+      <strong>URL Slug:</strong> /pool-decks/blog/composite-vs-hardwood-pool-decking-queensland<br />
+      <strong>Primary Keyword:</strong> composite vs hardwood pool decking<br />
+      <strong>Secondary Keywords:</strong> best pool deck material queensland, composite decking pool, spotted gum pool
+      deck, pool deck material comparison
+    </div>
+
+    <h1 class="fraunces">Composite vs Hardwood Pool Decking: Which is Best for Queensland Pools?</h1>
+
+    <p>
+      The composite vs hardwood debate is the number one question Queensland pool owners ask our team. After 50 years of
+      combined building experience and hundreds of pool decks delivered across the state, we have a clear, honest answer
+      — and it entirely depends on what you value most. This article walks through the real-world performance of both
+      materials around Queensland pools. We'll look at how they handle intense chlorine, salt air, relentless UV rays,
+      high humidity, and kids running in bare feet, so you can choose your decking material with total confidence.
+    </p>
+
+    <div class="callout img-box">
+      🖼️ [IMAGE: Side-by-side comparison — composite deck on left, spotted gum hardwood on right, both around a pool]
+    </div>
+
+    <h2 class="article-h2">The Short Answer</h2>
+    <p>
+      For the <strong>lowest maintenance</strong> lifestyle, composite wins easily. For
+      <strong>premium natural aesthetics</strong> and architectural warmth, hardwood wins. For the
+      <strong>lowest upfront budget</strong>, merbau hardwood takes the prize. Below we'll show exactly how each
+      performs across the seven critical criteria that actually matter when building around a demanding Queensland pool
+      environment.
+    </p>
+
+    <h2 class="article-h2">Composite Decking — Pros & Cons</h2>
+    <p>
+      Composite decking is engineered from a blend of wood fibres and recycled plastics, wrapped in a protective
+      capping. <br /><br />
+      <strong>Pros:</strong> No oiling, no sanding, and absolutely no splinters. Premium brands offer 20–25 year
+      structural warranties. It boasts an excellent slip rating when wet, is highly resistant to chlorine and salt
+      water, offers consistent colour matching, and utilizes recycled materials for a sustainability win. Crucially, it
+      won't warp or rot under heavy moisture.<br /><br />
+      <strong>Cons:</strong> It carries a higher upfront cost ($350–$420/m² installed). It can get hot in direct QLD
+      sun, especially if you choose dark charcoal or espresso colours. For purists, it can have a slightly "plastic"
+      feel underfoot. Cheaper, uncapped composites can fade over time, and unlike timber, you cannot sand it back to
+      change its color down the track.
+    </p>
+
+    <h2 class="article-h2">Spotted Gum Hardwood — Pros & Cons</h2>
+    <p>
+      Spotted Gum is a premium, highly dense Australian native hardwood beloved by architects.<br /><br />
+      <strong>Pros:</strong> It offers a stunning, natural Australian grain that composite simply cannot perfectly
+      replicate. It remains cooler underfoot even in the peak of summer, delivers a true premium feel, and has a high
+      natural slip rating when wet. It ages beautifully if maintained, is sustainably forested, and can be completely
+      sanded and refinished to look brand new decades later.<br /><br />
+      <strong>Cons:</strong> It demands strict maintenance, requiring re-oiling every 12–18 months ($800–$1,500 per
+      professional service). It can splinter as it ages or dries out. Minor warping or cupping is possible without
+      proper ventilation and installation. The color will inevitably change (silvering off) with UV exposure.
+      Ultimately, it is more expensive than composite over a 20-year period if you are paying for professional
+      maintenance.
+    </p>
+
+    <h2 class="article-h2">Head-to-Head Comparison Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Criteria</th>
+          <th>Composite</th>
+          <th>Spotted Gum Hardwood</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Upfront cost (per m²)</td>
+          <td>$350–$420</td>
+          <td>$320–$380</td>
+        </tr>
+        <tr>
+          <td>20-year total cost</td>
+          <td>$$$</td>
+          <td>$$$$</td>
+        </tr>
+        <tr>
+          <td>Lifespan</td>
+          <td>25–30 yrs</td>
+          <td>20–25 yrs (with dedicated care)</td>
+        </tr>
+        <tr>
+          <td>Maintenance</td>
+          <td>Annual hose/rinse only</td>
+          <td>Re-oil every 12–18 months</td>
+        </tr>
+        <tr>
+          <td>Slip rating wet</td>
+          <td>Excellent (R11+)</td>
+          <td>Very good (R10)</td>
+        </tr>
+        <tr>
+          <td>Heat retention</td>
+          <td>Higher (warmer underfoot)</td>
+          <td>Lower (cooler underfoot)</td>
+        </tr>
+        <tr>
+          <td>Aesthetic</td>
+          <td>Modern, uniform, clean</td>
+          <td>Premium, natural, varied</td>
+        </tr>
+        <tr>
+          <td>Sustainability</td>
+          <td>Recycled plastic/wood content</td>
+          <td>Sustainably forested native</td>
+        </tr>
+        <tr>
+          <td>Warranty</td>
+          <td>20–25 years (manufacturer)</td>
+          <td>None (natural timber product)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 class="article-h2">Which Wins for the Queensland Climate?</h2>
+    <p>
+      Queensland presents a unique set of harsh environmental challenges. Here is a detailed look at four QLD-specific
+      stresses:
+    </p>
+    <ul>
+      <li>
+        <strong>Chlorine exposure:</strong> Composite shrugs it off entirely. Hardwood requires diligent, proper sealing
+        to prevent chemical degradation.
+      </li>
+      <li>
+        <strong>UV intensity:</strong> High-quality composite holds its color much better than untreated hardwood.
+        However, both will experience slight fading under the harsh QLD sun.
+      </li>
+      <li>
+        <strong>Salt air (coastal SEQ):</strong> Composite has the distinct edge here. Hardwood needs much more frequent
+        maintenance near coastal areas like the Gold Coast or Sunshine Coast to prevent drying and splitting.
+      </li>
+      <li>
+        <strong>Humidity & monsoon rain:</strong> Composite doesn't swell or absorb moisture. Hardwood needs impeccable
+        drainage and sub-frame ventilation to avoid cupping and warping during the wet season.
+      </li>
+    </ul>
+    <p>
+      <strong>The Verdict:</strong> For high-exposure coastal sites (oceanfront Gold Coast, Sunshine Beach, Coolum),
+      composite is the overwhelmingly practical choice. For inland sites with dappled shade (hinterland, leafy Brisbane
+      suburbs), hardwood thrives beautifully.
+    </p>
+
+    <h2 class="article-h2">Slip Safety Around Pools — The Wet Foot Test</h2>
+    <p>
+      Pool decks get wet daily, making slip ratings paramount. Standards Australia tests deck surfaces using the
+      R-rating system:
+    </p>
+    <ul>
+      <li><strong>R9:</strong> The minimum safe rating for residential decking.</li>
+      <li><strong>R10:</strong> Achieved by natural hardwood with good grain texture.</li>
+      <li><strong>R11+:</strong> Achieved by most quality composite boards due to engineered texturing.</li>
+    </ul>
+    <p>
+      Important note: composite often <em>looks</em> smoother to the naked eye, but it is engineered with micro-textures
+      specifically designed for wet slip resistance. Conversely, highly polished hardwood without grain orientation can
+      be dangerously slick. Both are perfectly safe if specified and installed correctly by a specialist.
+    </p>
+
+    <h2 class="article-h2">Maintenance Reality Check — What Hardwood Oiling Actually Involves</h2>
+    <p>If you choose hardwood, you must be prepared for the maintenance reality. Here is what annual oiling entails:</p>
+    <ol>
+      <li>Cleaning and chemically stripping the old finish (takes half a day for a 50m² deck).</li>
+      <li>A light sanding back to bare, healthy timber.</li>
+      <li>Re-oiling with a premium decking oil (e.g., Cutek or Sikkens) requiring at least 2 coats.</li>
+      <li>A 24-hour cure time where there can be no pool use, no foot traffic, and hopefully no rain.</li>
+      <li>
+        <strong>Cost:</strong> $800–$1,500 if outsourced to professionals, or roughly $200 in materials plus a full
+        weekend of hard DIY labor.
+      </li>
+    </ol>
+    <p>
+      This is the necessary trade-off for that premium, natural look. If you skip it, your hardwood deck will quickly
+      grey out, dry, split, and eventually fail.
+    </p>
+
+    <h2 class="article-h2">Our Honest Recommendation by Home Style</h2>
+    <p>Still torn? The easiest way to choose is to match the material to your home's architectural style:</p>
+    <ul>
+      <li>
+        <strong>Modern coastal / contemporary architecture</strong> → Composite (espresso or warm grey tones). Provides
+        a sleek, modern feel suited to a low-maintenance lifestyle.
+      </li>
+      <li>
+        <strong>Hamptons / classic coastal</strong> → Composite in white or pale grey. Achieves the pristine Hamptons
+        aesthetic without the nightmare of white-painted timber upkeep.
+      </li>
+      <li>
+        <strong>Queenslander / heritage</strong> → Spotted Gum hardwood. Perfectly matches the original timber
+        craftsmanship and era of the home.
+      </li>
+      <li>
+        <strong>Premium modern / architectural feature home</strong> → Mixed materials. Use Spotted Gum for the covered
+        lounge zones, and durable composite for the high-traffic, splash-heavy pool edge.
+      </li>
+    </ul>
+
+    <div class="callout link-box">
+      🔗 [INTERNAL LINK: See pricing for both materials → /pool-decks/blog/pool-deck-cost-brisbane-2026]<br />
+      🔗 [INTERNAL LINK: See Sunshine Coast design inspiration → /pool-decks/blog/sunshine-coast-pool-deck-design-ideas]
+    </div>
+
+    <div class="callout cta-box">
+      <strong>Not sure which is right for your home?</strong>
+      Book a free design consultation. We'll bring samples of both materials, assess your site, and tell you straight
+      which performs better for your specific home and lifestyle.
+      <a href="/pool-decks/free-quote" class="cta-btn">Book My Free Consultation →</a>
+    </div>
+
+    <div class="faq-box">
+      <h3>Frequently Asked Questions</h3>
+      <div class="faq-item">
+        <strong>Does composite decking get hot in the Queensland sun?</strong>
+        Yes, especially dark colours. Light and warm-timber composites stay 10–15°C cooler underfoot. We always
+        recommend lighter shades for fully exposed Queensland pool decks.
+      </div>
+      <div class="faq-item">
+        <strong>What warranty comes with composite decking?</strong>
+        Premium brands (like Ezy Decking, Trex, NewTechWood) carry 20–25 year structural warranties. Labour warranty
+        depends on the builder — YBMT offers an ironclad 7 years on workmanship.
+      </div>
+      <div class="faq-item">
+        <strong>Does hardwood splinter near a pool?</strong>
+        Properly installed, sealed and maintained hardwood is completely safe for bare feet. Splintering only happens
+        when routine oiling is skipped, or if a low-grade timber was used initially.
+      </div>
+      <div class="faq-item">
+        <strong>Over 20 years, which is actually cheaper?</strong>
+        Composite is significantly cheaper. It works out roughly $4,000–$6,000 cheaper over a 20-year span for a 50m²
+        deck when you factor in the cumulative costs of professional re-oiling.
+      </div>
+    </div>
+    <a href="#" class="back-to-top">↑ Back to Top</a>
+
+    <!-- ARTICLE 3 -->
+    <div id="art3" class="article-divider">
+      <div class="article-number">Article 03 of 05</div>
+      <h2>QLD Pool Fence Compliance: The Decking Mistakes That Cost Homeowners Thousands</h2>
+    </div>
+
+    <div class="callout seo-box">
+      <strong>🔍 SEO Metadata:</strong><br />
+      <strong>Title Tag:</strong> QLD Pool Fence Compliance: Deck Mistakes to Avoid in 2026<br />
+      <strong>Meta Description:</strong> QLD pool fencing & deck compliance explained. Avoid expensive retrofits. QDC MP
+      3.4, 1.2m rules, deck-as-fence. By QBCC pool deck specialists.<br />
+      <strong>URL Slug:</strong> /pool-decks/blog/qld-pool-fence-compliance-deck-mistakes<br />
+      <strong>Primary Keyword:</strong> qld pool fence compliance<br />
+      <strong>Secondary Keywords:</strong> pool deck compliance queensland, pool barrier rules QLD, deck pool safety
+      certificate, qdc mp 3.4
+    </div>
+
+    <h1 class="fraunces">QLD Pool Fence Compliance: The Decking Mistakes That Cost Homeowners Thousands</h1>
+
+    <p>
+      Every year, Queensland homeowners spend between <strong>$5,000 and $25,000</strong> on pool deck compliance
+      retrofits — and the tragedy is that almost all of these costs are entirely avoidable. The Queensland Development
+      Code MP 3.4 (the regulation governing pool barriers) is incredibly strict, regularly inspected, and completely
+      unforgiving. When a beautiful new deck is built without these rules in mind, the bill to fix it later is brutal.
+      This guide explains the rules in plain English and shows you the five most common (and expensive) compliance
+      mistakes we see Queensland homeowners pay for.
+    </p>
+
+    <div class="callout img-box">🖼️ [IMAGE: Diagram or photo showing a compliant pool fence with deck integration]</div>
+
+    <h2 class="article-h2">Quick Compliance Facts (Save This Section)</h2>
+    <div style="background-color: #fff; border-left: 4px solid var(--pool-aqua); padding: 16px; margin-bottom: 24px">
+      <ul style="margin: 0; padding-left: 20px">
+        <li><strong>Minimum fence height:</strong> 1.2 metres from finished surface</li>
+        <li><strong>No-climb zone:</strong> 900mm radius from any climbable object to the fence</li>
+        <li><strong>Maximum gap under fence:</strong> 100mm</li>
+        <li><strong>Gate:</strong> Self-closing, self-latching, opening outward away from pool</li>
+        <li><strong>Latch height:</strong> Minimum 1.5m from finished surface</li>
+        <li><strong>Standard:</strong> Queensland Development Code MP 3.4</li>
+      </ul>
+    </div>
+
+    <h2 class="article-h2">Understanding QDC MP 3.4 — In Plain English</h2>
+    <p>
+      The QDC MP 3.4 is the overarching code every single Queensland pool barrier must meet. It exists for one
+      non-negotiable reason: child drowning prevention. The code strictly defines the physical barrier (whether that's a
+      glass fence, a boundary wall, or a deck-as-barrier design) between your house and your pool. It dictates exact
+      heights, allowable gap sizes, gate behavior, and crucially — what can and cannot sit anywhere near the fence.
+    </p>
+    <p>
+      Inspections happen during pool installation, during deck construction, at property sale, and upon any major
+      renovation. Failed inspections require immediate rectification and an additional re-inspection fee. Surprisingly,
+      most pool deck compliance failures don't come from the fence itself — they come from what is built
+      <em>around</em> it.
+    </p>
+
+    <h2 class="article-h2">The 1.2m Fence Rule Explained</h2>
+    <p>
+      By law, the fence must be a continuous minimum of 1.2m high. However, this is
+      <strong>measured from the finished surface to the top of the fence</strong>. The critical phrase here is "finished
+      surface."
+    </p>
+    <p>
+      If a builder constructs a new deck that raises the ground level near an existing fence, the effective fence height
+      instantly drops below 1.2m, rendering the entire barrier non-compliant. A common scenario: a new deck is installed
+      200mm above an old paver level. The existing 1.2m fence now effectively measures 1.0m from the new deck level.
+      This results in an instant fail and is the #1 most expensive mistake on retrofit jobs.
+    </p>
+
+    <h2 class="article-h2">The 900mm Non-Climbable Zone — What Counts as Climbable</h2>
+    <p>
+      The 900mm rule dictates that
+      <strong>no climbable object can sit within 900mm of the inside face of the pool fence</strong>. The list of
+      "climbable objects" that Queensland Pool Safety Inspectors look for includes:
+    </p>
+    <ul>
+      <li>Garden planters and pots (even small, seemingly harmless ones)</li>
+      <li>BBQs, outdoor heaters, side tables, and garden taps</li>
+      <li>Built-in deck seating, daybeds, or bench tops</li>
+      <li>Stacked firewood, pool equipment boxes, ladders</li>
+      <li>Tree branches, stumps, or large sturdy shrubs</li>
+      <li>Lattice screens and sleeper retaining walls</li>
+      <li>Pool covers and storage boxes</li>
+    </ul>
+    <p>
+      If your deck design places <strong>any of these</strong> within 900mm of the fence, the deck actively contributes
+      to non-compliance. Smart design moves these elements well over 1m from the fence line from day one.
+    </p>
+
+    <h2 class="article-h2">When Your Deck IS the Fence</h2>
+    <p>
+      Some premium, modern pool deck designs use the deck structure itself as part of the pool barrier (e.g., a raised
+      deck perched above a retaining wall, or a frameless glass balustrade integrated directly into the deck framing).
+      These "deck-as-fence" designs are stunning and perfectly legal, but they require specialized engineering and
+      certification:
+    </p>
+    <ul>
+      <li>A structural engineer's certificate</li>
+      <li>Specific timber grading and fixing specifications</li>
+      <li>Frameless glass installed to AS 1288 standard</li>
+      <li>Independent Pool Safety Inspector sign-off at stages</li>
+      <li>Often: formal building approval from the local council</li>
+    </ul>
+    <p>
+      We frequently see DIY enthusiasts or non-specialist builders attempt deck-as-fence integration without proper
+      engineering — and the tragic result is that the entire deck has to be ripped up and rebuilt to gain compliance.
+      Always use a licensed specialist for these intricate designs.
+    </p>
+
+    <div class="callout link-box">
+      🔗 [INTERNAL LINK: See Sunshine Coast luxury deck-as-fence designs →
+      /pool-decks/blog/sunshine-coast-pool-deck-design-ideas]
+    </div>
+
+    <h2 class="article-h2">The 5 Compliance Mistakes We See Most Often</h2>
+    <ol>
+      <li>
+        <strong>Decks that raise floor level near the fence (height drops below 1.2m)</strong> — The most common issue.
+        Fix: Re-grade the surrounding area or install a costly fence-extension. Cost to retrofit:
+        <strong>$2,500–$6,000</strong>.
+      </li>
+      <li>
+        <strong>Furniture or planters placed within 900mm of fence</strong> — Very common during homeowner setup
+        post-build. Fix: Relocate loose items (free) or redesign and rebuild the deck layout ($1,500–$4,000 if elements
+        are built-in).
+      </li>
+      <li>
+        <strong>Wrong gate placement</strong> — The gate opens inward toward the pool area, or fails to self-close from
+        any position. Fix: Complete gate replacement and re-hang. Cost: <strong>$700–$1,800</strong>.
+      </li>
+      <li>
+        <strong>Climbable elements added after compliance pass</strong> — A homeowner installs a heavy BBQ, permanent
+        planter, or trellis within the 900mm zone after the initial inspection. Fix: Relocate immediately. This is a
+        massive <strong>property sale failure risk.</strong>
+      </li>
+      <li>
+        <strong>No Pool Safety Certificate on handover</strong> — A careless builder didn't engage a Pool Safety
+        Inspector after deck completion. Fix: Book a retrospective inspection. Cost: <strong>$300–$450</strong> — plus
+        the cost of any retrofits if it fails.
+      </li>
+    </ol>
+
+    <h2 class="article-h2">How Pool Safety Inspectors Assess Decks</h2>
+    <p>When an inspector arrives, they check the barrier system methodically:</p>
+    <ol>
+      <li>Height of the fence at every point (taking multiple measurements along the deck)</li>
+      <li>Non-climbable zone audit (visual check plus a tape measure)</li>
+      <li>Gate function (must be self-closing, self-latching, and swing outward)</li>
+      <li>Gaps under and through the fence (must not exceed 100mm)</li>
+      <li>Structural integrity of the deck if it forms part of the barrier</li>
+      <li>Documentation review (engineering, certificates, council approvals)</li>
+    </ol>
+    <p>
+      A typical inspection takes 30–45 minutes. Any fail results in a formal non-compliance notice accompanied by a
+      strict 28-day rectification period.
+    </p>
+
+    <h2 class="article-h2">How to Get a Compliant Deck From Day One</h2>
+    <p>Avoid the stress and the massive retrofit bills with these best practices:</p>
+    <ul>
+      <li>Hire a dedicated pool deck specialist (not a general handyman) who knows QDC MP 3.4 inside and out.</li>
+      <li>Have the deck design reviewed by a Pool Safety Inspector <strong>before</strong> any construction starts.</li>
+      <li>Build the 900mm rule into the architectural deck layout (ensure no fixed elements near the fence).</li>
+      <li>Always document fence heights prior to and post-deck-completion.</li>
+      <li>Ensure you receive a valid Pool Safety Certificate as a mandatory part of project handover.</li>
+    </ul>
+    <p>
+      At YBMT, we <strong>never</strong> hand over a pool deck job without providing a current Pool Safety Certificate.
+      It is baked into every single quote we provide.
+    </p>
+
+    <div class="callout cta-box">
+      <strong>Worried your deck plans aren't compliant?</strong>
+      We offer a free 20-minute compliance pre-check on every quote. We'll review your proposed design against the
+      strict QDC MP 3.4 guidelines before you spend a single cent.
+      <a href="/pool-decks/free-quote" class="cta-btn">Get Free Compliance Check →</a>
+    </div>
+
+    <div class="faq-box">
+      <h3>Frequently Asked Questions</h3>
+      <div class="faq-item">
+        <strong>How much does it cost to bring a non-compliant deck up to code?</strong>
+        It ranges anywhere from $2,500 (for a simple re-grade) up to $25,000 (for a full deck-and-fence teardown and
+        rebuild). Most common fixes sit around the $4,000–$8,000 mark.
+      </div>
+      <div class="faq-item">
+        <strong>What are the penalties for non-compliance in QLD?</strong>
+        Local councils can issue fines up to $2,757 per offence. Furthermore, you face the inability to legally sell,
+        rent, or ensure the property until the barrier is fully rectified.
+      </div>
+      <div class="faq-item">
+        <strong>How long is a Pool Safety Certificate valid?</strong>
+        For residential properties, it is valid for two years from the issue date. It is legally required to be current
+        when selling or renting out a property.
+      </div>
+      <div class="faq-item">
+        <strong>Can I sell my home with a non-compliant deck?</strong>
+        No — you cannot legally settle on a property sale in QLD without a current, valid Pool Safety Certificate. Many
+        property sales dramatically fall over at the 11th hour because of non-compliant deck additions.
+      </div>
+    </div>
+    <a href="#" class="back-to-top">↑ Back to Top</a>
+
+    <!-- ARTICLE 4 -->
+    <div id="art4" class="article-divider">
+      <div class="article-number">Article 04 of 05</div>
+      <h2>Sunshine Coast Pool Deck Inspiration: 7 Stunning Design Ideas for 2026</h2>
+    </div>
+
+    <div class="callout seo-box">
+      <strong>🔍 SEO Metadata:</strong><br />
+      <strong>Title Tag:</strong> Sunshine Coast Pool Deck Design Ideas 2026 | 7 Stunning Examples<br />
+      <strong>Meta Description:</strong> 7 luxury pool deck design ideas for Sunshine Coast homes. Noosa, Buderim,
+      Mooloolaba inspiration. Composite, hardwood, travertine. By local QBCC specialists.<br />
+      <strong>URL Slug:</strong> /pool-decks/blog/sunshine-coast-pool-deck-design-ideas<br />
+      <strong>Primary Keyword:</strong> sunshine coast pool deck design<br />
+      <strong>Secondary Keywords:</strong> noosa pool deck, buderim pool deck, luxury pool deck sunshine coast,
+      mooloolaba pool deck, pool deck ideas queensland
+    </div>
+
+    <h1 class="fraunces">Sunshine Coast Pool Deck Inspiration: 7 Stunning Design Ideas for 2026</h1>
+
+    <p>
+      The Sunshine Coast pool deck aesthetic has evolved incredibly fast. Five years ago, the default approach was a
+      basic square hardwood deck accompanied by a standard glass fence and a Weber BBQ pushed into the corner. Fast
+      forward to 2026, and Sunshine Coast pool decks are sophisticated, mixed-material, indoor-outdoor extensions of the
+      home — expertly designed to blur the line between the living room and the landscape. This guide walks you through
+      the seven design directions we are building most often this year across Noosa, Sunshine Beach, Buderim,
+      Mooloolaba, Coolum and the hinterland, complete with typical investment ranges for each style.
+    </p>
+
+    <div class="callout img-box">🖼️ [IMAGE: Aerial drone shot of a luxury Sunshine Coast pool deck at golden hour]</div>
+
+    <h2 class="article-h2">What Defines Sunshine Coast Pool Deck Style</h2>
+    <p>The contemporary Sunshine Coast pool deck design is easily recognizable by four distinct hallmarks:</p>
+    <ul>
+      <li>
+        <strong>Relaxed luxury:</strong> A clear Hamptons influence, but grounded with Australian native restraint and
+        robust materials.
+      </li>
+      <li>
+        <strong>Indoor-outdoor flow:</strong> The pool deck reads visually as a seamless extension of the interior
+        living area, rather than a disconnected, separate backyard zone.
+      </li>
+      <li>
+        <strong>Subtropical landscape integration:</strong> Design that makes room for pandanus, native frangipani, bird
+        of paradise, and architectural dragon trees.
+      </li>
+      <li>
+        <strong>Coastal or hinterland context:</strong> The very best designs respond directly to the site, whether
+        that's framing sweeping ocean views or sinking into a lush rainforest acreage.
+      </li>
+    </ul>
+    <p>
+      Smart Sunshine Coast pool deck design rejects the "overbuilt" trend. It chooses fewer, higher-quality materials,
+      and lets the spectacular surrounding environment do the visual heavy lifting.
+    </p>
+
+    <h2 class="article-h2">Design Idea 1 — Wraparound Spotted Gum Deck (Noosa Heads style)</h2>
+    <div class="callout img-box">
+      🖼️ [IMAGE: Wraparound spotted gum deck around an infinity pool with Noosa hinterland backdrop]
+    </div>
+    <p>
+      This remains the most-requested style in Noosa. Wide-plank spotted gum hardwood wraps the entire perimeter of the
+      pool, transitioning completely seamlessly from interior floors out to the outdoor entertaining space. Frameless
+      glass fencing ensures views to the hinterland or ocean remain pristine. Subtropical plants strategically placed in
+      raised timber beds soften the structural edges.
+    </p>
+    <ul>
+      <li><strong>Ideal materials:</strong> Spotted gum hardwood (140mm wide planks), premium frameless glass.</li>
+      <li>
+        <strong>Why it works:</strong> Remains cool underfoot, offers a true premium aesthetic, and aligns perfectly
+        with high Noosa property valuations.
+      </li>
+      <li><strong>Typical investment:</strong> $55,000–$110,000 (depending on total size and elevation).</li>
+    </ul>
+
+    <h2 class="article-h2">Design Idea 2 — Composite + Travertine Mixed Materials (Sunshine Beach)</h2>
+    <div class="callout img-box">🖼️ [IMAGE: Mixed material composite and travertine pool deck at Sunshine Beach]</div>
+    <p>
+      This is a clever and highly requested 2026 trend. It uses modern composite decking around the immediate pool edge
+      (for low maintenance, high slip resistance, and chlorine safety) which then blends into honed travertine paving
+      for the extended lounge and dining zone (providing a cool, luxury feel). This visually defines different
+      entertaining zones without the need for restrictive walls.
+    </p>
+    <ul>
+      <li><strong>Ideal materials:</strong> Warm-grey capped composite + honed natural travertine.</li>
+      <li>
+        <strong>Why it works:</strong> The absolute best of both worlds — ultimate pool edge durability paired with
+        lounge zone luxury.
+      </li>
+      <li><strong>Typical investment:</strong> $65,000–$130,000.</li>
+    </ul>
+
+    <h2 class="article-h2">Design Idea 3 — Elevated Hinterland Deck (Maleny / Montville)</h2>
+    <div class="callout img-box">
+      🖼️ [IMAGE: Elevated hardwood deck on a sloping hinterland block with rainforest views]
+    </div>
+    <p>
+      Steep hinterland sites absolutely demand elevated engineering solutions. These decks are built upon heavily
+      engineered steel sub-frames to confidently handle the slope, finished with rich tropical timber to provide warmth
+      against the cool, green rainforest backdrop. High-end glass balustrades preserve those sweeping valley views.
+    </p>
+    <ul>
+      <li>
+        <strong>Ideal materials:</strong> Spotted gum or high-end composite, supported by hot-dipped galvanised steel
+        framing.
+      </li>
+      <li>
+        <strong>Why it works:</strong> Maximises otherwise unusable sloped space and brilliantly captures hinterland
+        vistas.
+      </li>
+      <li><strong>Typical investment:</strong> $80,000–$160,000+.</li>
+    </ul>
+
+    <h2 class="article-h2">Design Idea 4 — Frameless Glass + Infinity Pool Deck (Coolum / Peregian)</h2>
+    <div class="callout img-box">🖼️ [IMAGE: Frameless glass-fenced infinity pool deck with ocean horizon]</div>
+    <p>
+      For high-end coastal sites where the blue ocean view is the undisputed hero. Frameless 12mm toughened glass
+      replaces all traditional, view-blocking fencing. The deck itself is engineered to sit perfectly flush with the
+      pool's wet edge to dramatically enhance the infinity-pool illusion.
+    </p>
+    <ul>
+      <li>
+        <strong>Ideal materials:</strong> Light-colored composite (highly heat-resistant), premium frameless glass.
+      </li>
+      <li>
+        <strong>Why it works:</strong> Provides completely uninterrupted ocean views and an ultra-contemporary
+        architectural fit.
+      </li>
+      <li><strong>Typical investment:</strong> $75,000–$150,000.</li>
+    </ul>
+
+    <h2 class="article-h2">Design Idea 5 — Multi-Level Entertaining Deck (Buderim)</h2>
+    <div class="callout img-box">
+      🖼️ [IMAGE: Multi-level pool deck with separate lounge, dining, and pool zones at Buderim]
+    </div>
+    <p>
+      Buderim's classic elevated, sloping suburbs heavily favour expansive decks that step gracefully down or up across
+      multiple levels. This approach effectively separates cooking, lounging, dining, and splashing zones without
+      erecting walls. Clever cantilevered sections can even create the striking appearance of decks floating
+      effortlessly above the landscape.
+    </p>
+    <ul>
+      <li>
+        <strong>Ideal materials:</strong> Composite (ensuring low maintenance for busy families), engineered steel
+        substructure.
+      </li>
+      <li>
+        <strong>Why it works:</strong> Creates perfectly defined entertaining zones, ideal for families with children in
+        varying age groups.
+      </li>
+      <li><strong>Typical investment:</strong> $70,000–$140,000.</li>
+    </ul>
+
+    <h2 class="article-h2">Design Idea 6 — Resort-Style Lounge Deck (Mooloolaba)</h2>
+    <div class="callout img-box">
+      🖼️ [IMAGE: Resort-style pool deck with sunken lounge, fire feature, and palms at Mooloolaba]
+    </div>
+    <p>
+      The "permanent holiday" aesthetic. Sunken lounge zones, integrated fire features, outdoor showers, and palm-heavy
+      landscaping combine to create a genuine five-star resort feel right in your own backyard. The chosen materials
+      lean deliberately warm and textured to enhance the relaxed coastal vibe.
+    </p>
+    <ul>
+      <li><strong>Ideal materials:</strong> Warm-toned composite + textured travertine accents.</li>
+      <li>
+        <strong>Why it works:</strong> Maximises the lifestyle return on a high-value coastal investment property and
+        delivers a daily holiday feeling.
+      </li>
+      <li><strong>Typical investment:</strong> $90,000–$180,000.</li>
+    </ul>
+
+    <h2 class="article-h2">Design Idea 7 — Hidden Pool Cover Deck (Caloundra)</h2>
+    <div class="callout img-box">
+      🖼️ [IMAGE: Pool with retractable/hidden cover deck system at Caloundra family home]
+    </div>
+    <p>
+      A clever 2026 engineering innovation we're seeing more demand for. A retractable or sliding section of the deck
+      covers the pool entirely when it is not in use, effectively doubling the available living space and dramatically
+      improving safety for young families. From above, it reads as a single beautiful timber deck — until it elegantly
+      slides aside to reveal the pool below.
+    </p>
+    <ul>
+      <li>
+        <strong>Ideal materials:</strong> Lightweight composite (light enough for the sliding mechanism), premium
+        aluminium track system.
+      </li>
+      <li>
+        <strong>Why it works:</strong> Perfect for small-lot maximisation, young-family safety, and showcasing modern
+        engineering.
+      </li>
+      <li><strong>Typical investment:</strong> $95,000–$200,000.</li>
+    </ul>
+
+    <h2 class="article-h2">How to Choose the Right Design for Your Home</h2>
+    <p>Use this quick decision framework based on your priorities and site characteristics:</p>
+    <ul>
+      <li><strong>Site has a view?</strong> → Lean towards frameless glass + infinity deck (Idea 4).</li>
+      <li><strong>Family with young kids?</strong> → Hidden cover deck (Idea 7) or wraparound (Idea 1).</li>
+      <li><strong>Slope on your block?</strong> → Elevated multi-level (Idea 3 or 5).</li>
+      <li><strong>Entertainer who hosts often?</strong> → Resort-style lounge deck (Idea 6).</li>
+      <li><strong>Premium aesthetic priority?</strong> → Mixed materials (Idea 2).</li>
+      <li><strong>Traditional or Queenslander home?</strong> → Wraparound spotted gum (Idea 1).</li>
+    </ul>
+
+    <div class="callout link-box">
+      🔗 <strong>Internal Link:</strong> Composite or hardwood for your design? →
+      /pool-decks/blog/composite-vs-hardwood-pool-decking-queensland
+    </div>
+    <div class="callout link-box">
+      🔗 <strong>Internal Link:</strong> See full Sunshine Coast region service page → /pool-decks/sunshine-coast
+    </div>
+
+    <div class="callout cta-box">
+      <strong>Found a design that speaks to you?</strong>
+      We design and build all seven of these signature styles right across the Sunshine Coast. Free on-site design
+      consultation, with a custom 3D visualisation included in every proposal.
+      <a href="/pool-decks/free-quote" class="cta-btn">Book Free Design Consultation →</a>
+    </div>
+
+    <div class="faq-box">
+      <h3>Frequently Asked Questions</h3>
+      <div class="faq-item">
+        <strong>Do hinterland and coastal Sunshine Coast pool decks need different specs?</strong>
+        Yes, very much so. Coastal sites require marine-grade stainless steel fixings and significantly higher UV/salt
+        tolerance. Hinterland sites need heavily engineered sub-frames designed for sloping ground and humidity-tolerant
+        timber species.
+      </div>
+      <div class="faq-item">
+        <strong>What's the best material for a Noosa pool deck?</strong>
+        Either spotted gum hardwood or premium capped composite. Both materials perform extremely well, but Noosa's high
+        property values often justify investment in the premium hardwood aesthetic.
+      </div>
+      <div class="faq-item">
+        <strong>What are council approval timeframes on the Sunshine Coast?</strong>
+        Sunshine Coast Regional Council typically processes domestic deck applications within 3–6 weeks. Smaller decks
+        under 600mm of elevation are often exempt from formal approvals.
+      </div>
+    </div>
+    <a href="#" class="back-to-top">↑ Back to Top</a>
+
+    <!-- ARTICLE 5 -->
+    <div id="art5" class="article-divider">
+      <div class="article-number">Article 05 of 05</div>
+      <h2>Building a Deck Around an Existing Pool: The Complete Homeowner's Guide</h2>
+    </div>
+
+    <div class="callout seo-box">
+      <strong>🔍 SEO Metadata:</strong><br />
+      <strong>Title Tag:</strong> Building a Deck Around Existing Pool: Complete Guide [2026]<br />
+      <strong>Meta Description:</strong> Everything you need to know about building a pool deck around an existing pool
+      in Queensland. Process, cost, compliance, timeline. Expert guide.<br />
+      <strong>URL Slug:</strong> /pool-decks/blog/deck-around-existing-pool-guide<br />
+      <strong>Primary Keyword:</strong> deck around existing pool<br />
+      <strong>Secondary Keywords:</strong> pool deck retrofit, decking around concrete pool, pool surround replacement,
+      retrofit pool deck queensland
+    </div>
+
+    <h1 class="fraunces">Building a Deck Around an Existing Pool: The Complete Homeowner's Guide</h1>
+
+    <p>
+      Around <strong>70% of the pool deck work we do</strong> at YBMT is actually building decks around existing,
+      already-installed pools — not brand new installations. Most homeowners are surprised to learn that retrofit
+      projects are actually quite straightforward if you go in with the right plan and the right specialist team. The
+      end result transforms a tired, cracked concrete-surround pool into the absolute centrepiece of your home, all for
+      a fraction of what most people expect. This complete guide walks you through everything — the process, cost,
+      timeline, compliance requirements, and the critical questions you need to ask any builder before committing.
+    </p>
+
+    <div class="callout img-box">
+      🖼️ [IMAGE: Before/after — concrete pool surround transformed with new timber deck]
+    </div>
+
+    <h2 class="article-h2">Why Add a Deck to an Existing Pool?</h2>
+    <p>There are six honest, compelling reasons our clients commit to a retrofit:</p>
+    <ol>
+      <li>
+        <strong>Aesthetic transformation:</strong> Cracked, stained concrete becomes a luxury timber or composite
+        surround that instantly elevates the whole backyard.
+      </li>
+      <li>
+        <strong>Safety upgrade:</strong> Modern slip-rated materials dramatically reduce the risk of wet-foot accidents
+        on the pool edge.
+      </li>
+      <li>
+        <strong>Comfort underfoot:</strong> Quality timber and composite are significantly cooler than bare concrete on
+        bare feet in the Queensland summer.
+      </li>
+      <li>
+        <strong>Hide dated surrounds:</strong> Cover up old paving, ugly tiles, or cracked concrete cleanly without
+        having to demolish anything.
+      </li>
+      <li>
+        <strong>Increase property value:</strong> Pool decks add an average of <strong>$25K–$80K of valuation</strong>
+        — frequently more than the actual cost of the build itself.
+      </li>
+      <li>
+        <strong>Reclaim outdoor lifestyle:</strong> Many older pools sit unused simply because the surround is
+        unwelcoming. A new deck changes everything overnight.
+      </li>
+    </ol>
+
+    <h2 class="article-h2">Can You Build a Deck Around Any Pool?</h2>
+    <p>Almost always yes — but there are some important exceptions:</p>
+    <ul>
+      <li>
+        <strong>In-ground concrete pools (most common):</strong> Easy. Decks either bridge over the existing surround or
+        completely replace it.
+      </li>
+      <li>
+        <strong>Fibreglass pools:</strong> Easy. Decks are built to meet the coping edge with the correct expansion
+        gaps.
+      </li>
+      <li>
+        <strong>Above-ground pools:</strong> Yes — decks build around the perimeter and elegantly integrate the access
+        steps.
+      </li>
+      <li>
+        <strong>Spas and plunge pools:</strong> Yes, often constructed with elevated decks to incorporate them
+        seamlessly.
+      </li>
+    </ul>
+    <p>Exceptions where retrofits become significantly harder:</p>
+    <ul>
+      <li>Pools with severe structural cracking (the pool itself must be fixed first).</li>
+      <li>Sites with extreme access restrictions (e.g., no side gate, no rear lane access at all).</li>
+      <li>
+        Pools sitting too close to property boundaries (introducing compliance complications with neighbour boundaries).
+      </li>
+    </ul>
+    <p>We assess all of this during the free on-site consultation, typically in about 20 minutes.</p>
+
+    <h2 class="article-h2">How the Retrofit Process Works — Step by Step</h2>
+    <p>Here is the complete 10-step process you can expect from the YBMT Pool Decks team:</p>
+    <ol>
+      <li><strong>Free consultation</strong> (30–60 min on-site) — we assess the pool, fence, site access and drainage.</li>
+      <li><strong>Concept design</strong> — a 2D plan plus material recommendations (delivered within 7 days).</li>
+      <li><strong>Fixed-price quote</strong> — line-item, transparent, no surprises (within 14 days of consult).</li>
+      <li><strong>Compliance pre-check</strong> — a Pool Safety Inspector reviews the proposed design.</li>
+      <li><strong>Council approval if required</strong> — typically only needed for elevated retrofits.</li>
+      <li><strong>Materials ordered</strong> — usually a 1–3 week lead time depending on stock.</li>
+      <li><strong>Site prep</strong> (1–2 days) — old surrounds removed if required, and sub-frame measurements taken.</li>
+      <li>
+        <strong>Sub-frame construction</strong> (2–4 days) — hardwood or galvanised steel frame built to engineering
+        spec.
+      </li>
+      <li>
+        <strong>Decking installation</strong> (3–7 days) — boards laid, hidden fixings installed, edge finishing
+        completed.
+      </li>
+      <li>
+        <strong>Finishing &amp; handover</strong> (1–2 days) — fence integration check, Pool Safety Certificate issued,
+        cleaning and final photos.
+      </li>
+    </ol>
+
+    <div class="callout link-box">
+      🔗 <strong>Internal Link:</strong> See real Brisbane retrofit project costs →
+      /pool-decks/blog/pool-deck-cost-brisbane-2026
+    </div>
+
+    <h2 class="article-h2">How Long Does the Whole Project Take?</h2>
+    <p>Set realistic timeline expectations from day one:</p>
+    <ul>
+      <li><strong>Design &amp; quote phase:</strong> 1–2 weeks.</li>
+      <li><strong>Approvals (if required):</strong> 2–4 weeks.</li>
+      <li><strong>Materials order:</strong> 1–3 weeks (lead time runs in parallel with approvals).</li>
+      <li><strong>On-site build:</strong> 10–21 days for most standard retrofits.</li>
+    </ul>
+    <p>
+      <strong>Total from first call to finished deck:</strong> Typically 6–10 weeks. If you want the deck ready for
+      Christmas, start the conversation in early September. If you want it ready for summer (December), start in late
+      October.
+    </p>
+
+    <h2 class="article-h2">How Much Does a Retrofit Cost?</h2>
+    <p>
+      Most existing-pool retrofits across SEQ cost between <strong>$15,000 and $80,000</strong>, with the average
+      sitting comfortably around the $25,000–$45,000 mark. The cost variables are:
+    </p>
+    <ul>
+      <li>Total deck size (40m² runs around $25K, 80m² around $55K typical).</li>
+      <li>Choice of decking material (composite vs hardwood).</li>
+      <li>Whether the old surround needs to be removed and disposed of.</li>
+      <li>Drainage and sub-frame complexity (sloped vs flat sites).</li>
+      <li>Fence integration and any required compliance retrofits.</li>
+    </ul>
+    <p>
+      Compared to a completely new pool plus deck installation (which runs $60K–$200K+), a retrofit delivers a fraction
+      of the cost for an equivalent lifestyle impact.
+    </p>
+
+    <div class="callout link-box">
+      🔗 <strong>Internal Link:</strong> Full Brisbane pricing guide → /pool-decks/blog/pool-deck-cost-brisbane-2026
+    </div>
+
+    <h2 class="article-h2">Will We Need to Drain the Pool?</h2>
+    <p>
+      Almost never. In about 95% of retrofits, the pool remains full and continues to be usable through the majority of
+      the build. Brief pool closures (1–2 days) only occur if:
+    </p>
+    <ul>
+      <li>The pool coping needs to be replaced.</li>
+      <li>Heavy lifting equipment must work directly over the water.</li>
+      <li>Tiling at the immediate pool edge requires water-free conditions.</li>
+    </ul>
+    <p>We confirm any required pool closures upfront in your quote so you can plan family swims accordingly.</p>
+
+    <h2 class="article-h2">What About the Existing Pool Fence?</h2>
+    <p>
+      This is a critical retrofit moment. The new deck changes the "finished surface" level, which can compromise the
+      compliance of your existing pool fence. Our process for handling this is:
+    </p>
+    <ol>
+      <li>Measure all existing fence heights pre-build.</li>
+      <li>Calculate the projected post-deck finished surface level.</li>
+      <li>If the fence drops below 1.2m, the quote includes a fence raise or full replacement.</li>
+      <li>The Pool Safety Inspector then confirms final compliance on handover day.</li>
+    </ol>
+    <p>
+      Never trust a builder who fails to address this issue upfront. Fence non-compliance discovered on handover is the
+      #1 reason retrofit budgets blow out.
+    </p>
+
+    <div class="callout link-box">
+      🔗 <strong>Internal Link:</strong> Full QLD pool fence compliance guide →
+      /pool-decks/blog/qld-pool-fence-compliance-deck-mistakes
+    </div>
+
+    <h2 class="article-h2">Common Concerns Answered</h2>
+    <ul>
+      <li>
+        <strong>Will the work disrupt our family?</strong> Most build days are 7am–4pm, weekdays only. The pool remains
+        usable in the evenings and on weekends.
+      </li>
+      <li>
+        <strong>Can we still swim during the build?</strong> Yes — except for the 1–2 brief closure days noted above.
+      </li>
+      <li>
+        <strong>What about the neighbours?</strong> We pre-notify them, schedule deliveries to minimise impact, and
+        clean the site daily.
+      </li>
+      <li>
+        <strong>How much dust and noise?</strong> Sub-frame days are the noisiest. Decking installation is comparatively
+        quiet. We use dust-extracted tools throughout.
+      </li>
+      <li>
+        <strong>What if I change my mind mid-build?</strong> Any variations are documented in writing with a fixed-price
+        update — never surprise invoices.
+      </li>
+    </ul>
+
+    <h2 class="article-h2">What to Have Ready Before Calling a Builder</h2>
+    <p>Five things that will significantly speed up your free quote:</p>
+    <ol>
+      <li><strong>Pool dimensions</strong> — length, width, and depth (the original install paperwork is gold).</li>
+      <li><strong>Photos</strong> — all four sides of the pool, the existing surround, and the current fence.</li>
+      <li><strong>Council approval paperwork</strong> from the original pool installation.</li>
+      <li><strong>Current Pool Safety Certificate</strong> (or its expiry date).</li>
+      <li><strong>Site plan or property survey</strong> if you have one.</li>
+    </ol>
+    <p>If you don't have all of these — no stress at all. We collect everything needed during the free consultation.</p>
+
+    <div class="callout cta-box">
+      <strong>Ready to transform your existing pool?</strong>
+      Free on-site assessment, fixed-price quote within 14 days, no obligation. We build expert retrofits right across
+      Brisbane, the Gold Coast, and the Sunshine Coast.
+      <a href="/pool-decks/free-quote" class="cta-btn">Book Free Assessment →</a>
+    </div>
+
+    <div class="faq-box">
+      <h3>Frequently Asked Questions</h3>
+      <div class="faq-item">
+        <strong>Can you build a deck over an existing concrete pool surround?</strong>
+        Yes — most retrofits build a low-profile sub-frame directly over the existing concrete. The new deck sits
+        80–120mm proud of the old surface, which is rarely a problem for entries or door clearances.
+      </div>
+      <div class="faq-item">
+        <strong>Do I need a council permit for a pool deck retrofit?</strong>
+        Decks under 600mm of elevation that don't form part of the pool fence usually don't require a permit. Elevated
+        retrofits or any deck-as-fence designs always require council approval.
+      </div>
+      <div class="faq-item">
+        <strong>What's the best material for a retrofit project?</strong>
+        Composite — for the lowest maintenance and longest service life around chlorine. Choose spotted gum if the
+        natural aesthetic strongly outranks maintenance priorities for you.
+      </div>
+      <div class="faq-item">
+        <strong>Can the new deck attach directly to the pool coping?</strong>
+        Yes, but only with proper expansion gaps (8–12mm) to handle daily thermal movement. Direct attachment without
+        the correct gaps will cause long-term failure of both the deck and the coping.
+      </div>
+    </div>
+    <a href="#" class="back-to-top">↑ Back to Top</a>
+
+    <!-- CONTENT KIT SUMMARY TABLE -->
+    <hr class="subtle-divider" />
+    <h2 class="article-h2" style="font-size: 28px">Content Kit Summary</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Article Title</th>
+          <th>Primary Keyword</th>
+          <th>Words</th>
+          <th>URL Slug</th>
+          <th>Internal Links</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>01</td>
+          <td>How Much Does a Pool Deck Cost in Brisbane? [2026 Pricing Guide]</td>
+          <td>pool deck cost brisbane</td>
+          <td>~1,550</td>
+          <td>/pool-decks/blog/pool-deck-cost-brisbane-2026</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>02</td>
+          <td>Composite vs Hardwood Pool Decking: Which is Best for Queensland?</td>
+          <td>composite vs hardwood pool decking</td>
+          <td>~1,500</td>
+          <td>/pool-decks/blog/composite-vs-hardwood-pool-decking-queensland</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>03</td>
+          <td>QLD Pool Fence Compliance: The Decking Mistakes That Cost Homeowners Thousands</td>
+          <td>qld pool fence compliance</td>
+          <td>~1,550</td>
+          <td>/pool-decks/blog/qld-pool-fence-compliance-deck-mistakes</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>04</td>
+          <td>Sunshine Coast Pool Deck Inspiration: 7 Stunning Design Ideas for 2026</td>
+          <td>sunshine coast pool deck design</td>
+          <td>~1,500</td>
+          <td>/pool-decks/blog/sunshine-coast-pool-deck-design-ideas</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>05</td>
+          <td>Building a Deck Around an Existing Pool: Complete Homeowner's Guide</td>
+          <td>deck around existing pool</td>
+          <td>~1,650</td>
+          <td>/pool-decks/blog/deck-around-existing-pool-guide</td>
+          <td>3</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size: 14px; color: #666">
+      Total kit: ~7,750 words · 10 internal cross-links · 23 image placements suggested · 20 FAQ Q&amp;As (Featured
+      Snippet ready)
+    </p>
+
+    <!-- PUBLISHING CHECKLIST -->
+    <hr class="subtle-divider" />
+    <h2 class="article-h2" style="font-size: 28px">Publishing Checklist</h2>
+    <p>For your content manager or web developer — work through this checklist for each article:</p>
+    <ul class="checklist">
+      <li><input type="checkbox" /> Upload each article to /pool-decks/blog/[slug]</li>
+      <li><input type="checkbox" /> Set SEO title tag and meta description per article</li>
+      <li>
+        <input type="checkbox" /> Source hero image for each post (use kit-suggested placements or YBMT photography
+        library)
+      </li>
+      <li><input type="checkbox" /> Configure all internal links as marked in each post</li>
+      <li><input type="checkbox" /> Add author bio at end (e.g., "Written by the YBMT Pool Decks team")</li>
+      <li><input type="checkbox" /> Add Schema markup (Article + LocalBusiness JSON-LD)</li>
+      <li><input type="checkbox" /> Submit URL to Google Search Console after publishing</li>
+      <li><input type="checkbox" /> Share each post once on Facebook + Instagram + LinkedIn</li>
+      <li><input type="checkbox" /> Email blast to existing lead list with each new post</li>
+      <li><input type="checkbox" /> Internal link from main /pool-decks/ hub to all 5 posts</li>
+      <li><input type="checkbox" /> Refresh content every 12 months (especially pricing in Article 1)</li>
+    </ul>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="YBMT Pool Decks" />
+      <div>SEO Blog Content Kit · v1.0 · 2026 · © YBMT Pool Decks</div>
+      <div>Phone: 1300 448 784 · ybmt.com.au</div>
+    </div>
+  </body>
+</html>

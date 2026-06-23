@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Quote | YBMT Pool Decks</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Pico CSS for baseline styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+
+    <style>
+      :root {
+        --primary: #1b3a5c;
+        --secondary: #b8743d;
+        --accent: #4db6c7;
+        --bg: #f5f1ea;
+        --text: #2b2b2b;
+        --font-body: 'Inter', sans-serif;
+        --font-heading: 'Fraunces', serif;
+      }
+
+      body {
+        font-family: var(--font-body);
+        color: var(--text);
+        background-color: var(--bg);
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: var(--font-heading);
+        color: var(--primary);
+        margin-top: 0;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+      .text-primary {
+        color: var(--primary);
+      }
+      .text-secondary {
+        color: var(--secondary);
+      }
+      .bg-white {
+        background-color: #ffffff;
+      }
+      .bg-navy {
+        background-color: var(--primary);
+        color: #ffffff;
+      }
+      .bg-navy h2,
+      .bg-navy h3,
+      .bg-navy p {
+        color: #ffffff;
+      }
+
+      .container-custom {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 80px 20px;
+      }
+
+      /* Buttons */
+      .btn-primary {
+        background-color: var(--secondary);
+        color: #ffffff;
+        border: none;
+        padding: 16px 32px;
+        border-radius: 4px;
+        font-family: var(--font-body);
+        font-weight: 600;
+        font-size: 1.1rem;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+      }
+      .btn-primary:hover {
+        background-color: #9c6030;
+        color: #ffffff;
+      }
+
+      .btn-outline {
+        background-color: transparent;
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        padding: 14px 32px;
+        border-radius: 4px;
+        font-family: var(--font-body);
+        font-weight: 600;
+        font-size: 1.1rem;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+      }
+
+      /* Header */
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: #ffffff;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 15px 20px;
+      }
+      .header-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .header-logo {
+        height: 45px;
+      }
+      .header-contact {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+      }
+      .phone-link {
+        color: var(--primary);
+        font-weight: 700;
+        font-size: 1.1rem;
+        text-decoration: none;
+      }
+
+      /* Video logic */
+      .video-wrapper {
+        max-width: 900px;
+        margin: 0 auto 40px;
+        border-radius: 8px;
+        overflow: hidden;
+        background: #000;
+      }
+      .video-mobile {
+        display: none;
+        width: 100%;
+      }
+      .video-desktop {
+        display: block;
+        width: 100%;
+      }
+
+      /* Grids */
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+      }
+      .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+      }
+      .grid-4 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
+
+      /* Cards */
+      .card {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 6px;
+        border: 1px solid #e5e5e5;
+      }
+      .card-navy {
+        background: var(--primary);
+        color: white;
+        padding: 30px;
+        border-radius: 6px;
+      }
+      .card-navy h3 {
+        color: white;
+      }
+
+      /* Form */
+      .form-container {
+        background: #ffffff;
+        padding: 40px;
+        border-radius: 8px;
+        border: 1px solid #e5e5e5;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: var(--primary);
+      }
+      .form-control {
+        width: 100%;
+        padding: 12px 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-family: var(--font-body);
+        font-size: 1rem;
+        background-color: #fafafa;
+      }
+      .form-control:focus {
+        border-color: var(--accent);
+        outline: none;
+        background-color: #ffffff;
+      }
+
+      /* Lists */
+      .check-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .check-list li {
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 15px;
+        font-weight: 500;
+      }
+      .check-list li::before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        color: var(--accent);
+        font-weight: bold;
+      }
+
+      /* Process Steps */
+      .process-grid {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        margin-top: 40px;
+      }
+      .process-step {
+        flex: 1;
+        text-align: center;
+      }
+      .step-number {
+        width: 50px;
+        height: 50px;
+        background-color: var(--primary);
+        color: #ffffff;
+        border: 3px solid var(--secondary);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 0 auto 15px;
+        font-family: var(--font-heading);
+      }
+
+      /* FAQ */
+      details {
+        background: #ffffff;
+        margin-bottom: 15px;
+        border: 1px solid #e5e5e5;
+        border-radius: 4px;
+      }
+      summary {
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: var(--primary);
+        padding: 20px;
+        cursor: pointer;
+      }
+      details[open] summary {
+        border-bottom: 1px solid #e5e5e5;
+      }
+      .faq-answer {
+        padding: 20px;
+        color: var(--text);
+      }
+
+      /* Final CTA */
+      .final-cta {
+        background-image:
+          linear-gradient(rgba(27, 58, 92, 0.85), rgba(27, 58, 92, 0.85)),
+          url('https://www.genspark.ai/api/files/s/bCdXUOb8?cache_control=3600');
+        background-size: cover;
+        background-position: center;
+        color: #ffffff;
+        text-align: center;
+      }
+
+      @media (max-width: 768px) {
+        .header-contact .phone-link {
+          display: none;
+        }
+        .grid-2,
+        .grid-3,
+        .grid-4 {
+          grid-template-columns: 1fr;
+        }
+        h1 {
+          font-size: 2.5rem !important;
+        }
+        .video-mobile {
+          display: block;
+        }
+        .video-desktop {
+          display: none;
+        }
+        .process-grid {
+          flex-direction: column;
+        }
+        .process-step {
+          margin-bottom: 30px;
+        }
+        .container-custom {
+          padding: 50px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1. STICKY HEADER -->
+    <header class="site-header">
+      <div class="header-inner">
+        <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="YBMT Pool Decks Logo" class="header-logo" />
+        <div class="header-contact">
+          <a href="tel:1300448784" class="phone-link">1300 448 784</a>
+          <a href="#quote-form" class="btn-primary" style="padding: 10px 20px; font-size: 1rem">Get Free Quote</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2. HERO SECTION -->
+    <section class="text-center">
+      <div class="container-custom">
+        <h1 style="font-size: 4rem; font-style: italic; margin-bottom: 20px">Your Backyard. Your Resort.</h1>
+        <p style="font-size: 1.25rem; max-width: 800px; margin: 0 auto 40px">
+          South East Queensland's pool deck specialists. Custom-built around your home, your pool, and your lifestyle.
+        </p>
+
+        <div class="video-wrapper">
+          <video class="video-desktop" controls autoplay muted loop playsinline>
+            <source src="https://www.genspark.ai/api/files/s/Hjz4hNAi" type="video/mp4" />
+          </video>
+          <video class="video-mobile" controls autoplay muted loop playsinline>
+            <source src="https://www.genspark.ai/api/files/s/kF2PS6JY" type="video/mp4" />
+          </video>
+        </div>
+
+        <a href="#quote-form" class="btn-primary" style="font-size: 1.25rem; padding: 18px 40px; margin-bottom: 20px"
+          >Get My Free Pool Deck Quote → 48hr Turnaround</a
+        >
+        <p style="font-weight: 600; color: var(--primary); font-size: 1.1rem; margin-top: 10px">
+          ✓ QBCC Licensed &nbsp;&nbsp; ✓ 50+ Years Experience &nbsp;&nbsp; ✓ Fully Insured &nbsp;&nbsp; ✓ No Obligation
+        </p>
+      </div>
+    </section>
+
+    <!-- 3. THE OFFER -->
+    <section class="bg-white text-center">
+      <div class="container-custom">
+        <h2 style="font-size: 2.5rem; margin-bottom: 50px">What You Get — Completely Free</h2>
+        <div class="grid-4" style="text-align: left">
+          <div class="card bg-navy">
+            <h3 style="font-size: 1.2rem; margin-bottom: 15px">Free On-Site Consultation</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 0">
+              We visit your home, measure, and listen to your vision. <br /><em style="color: var(--accent)"
+                >($350 value)</em
+              >
+            </p>
+          </div>
+          <div class="card bg-navy">
+            <h3 style="font-size: 1.2rem; margin-bottom: 15px">Custom Design Concept</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 0">
+              Tailored specifically to your home, pool, and budget. <br /><em style="color: var(--accent)"
+                >($800 value)</em
+              >
+            </p>
+          </div>
+          <div class="card bg-navy">
+            <h3 style="font-size: 1.2rem; margin-bottom: 15px">Transparent Line-Item Quote</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 0">
+              Complete clarity. No surprises, no hidden costs. <br /><em style="color: var(--accent)">($250 value)</em>
+            </p>
+          </div>
+          <div class="card bg-navy">
+            <h3 style="font-size: 1.2rem; margin-bottom: 15px">Compliance Pre-Check</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 0">
+              We identify any QLD pool fencing requirements upfront. <br /><em style="color: var(--accent)"
+                >($200 value)</em
+              >
+            </p>
+          </div>
+        </div>
+        <div style="margin-top: 40px">
+          <p style="font-size: 1.2rem; font-weight: 600; margin-bottom: 25px">
+            Total value: $1,400 — Yours free, no obligation, 48-hour turnaround
+          </p>
+          <a href="#quote-form" class="btn-primary">Claim My Free Consultation</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROBLEM/AGITATE -->
+    <section>
+      <div class="container-custom text-center">
+        <h2 style="font-size: 2.5rem; margin-bottom: 20px">Why Most Pool Decks Fail Within 5 Years</h2>
+        <p style="font-size: 1.1rem; margin-bottom: 50px">
+          We've built our entire business around fixing what generalists get wrong.
+        </p>
+
+        <div class="grid-3" style="text-align: left">
+          <div class="card">
+            <h3 style="color: #d32f2f; font-size: 1.4rem">Bad Materials</h3>
+            <p>
+              Generalist builders spec materials that simply cannot handle QLD pool chemicals, intense UV exposure, and
+              constant humidity.
+            </p>
+          </div>
+          <div class="card">
+            <h3 style="color: #d32f2f; font-size: 1.4rem">Compliance Traps</h3>
+            <p>
+              Decks that don't meet the strict QLD Pool Safety Code MP 3.4 guidelines trigger expensive tear-downs and
+              mandatory retrofits.
+            </p>
+          </div>
+          <div class="card">
+            <h3 style="color: #d32f2f; font-size: 1.4rem">Poor Drainage</h3>
+            <p>
+              Water pooling under decks rots the substructure within years. Proper concealed drainage is critical for
+              longevity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. SOLUTION — WHY YBMT -->
+    <section class="bg-white">
+      <div class="container-custom">
+        <div class="grid-2">
+          <div>
+            <img
+              src="https://www.genspark.ai/api/files/s/9r3MlDWL?cache_control=3600"
+              alt="Premium Pool Deck Craftsmanship"
+              style="border-radius: 8px; width: 100%; display: block; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1)"
+            />
+          </div>
+          <div>
+            <h2 style="font-size: 2.5rem; margin-bottom: 20px">Built Around Pools. Built to Last.</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 30px">
+              YBMT Pool Decks is the only construction company in South East Queensland that specialises exclusively in
+              pool deck design and construction. Every deck we build is engineered for the QLD pool environment —
+              chlorine-resistant materials, marine-grade fixings, concealed drainage, and full pool safety compliance.
+              We don't take shortcuts because pool decks are our entire business.
+            </p>
+
+            <ul class="check-list" style="font-size: 1.1rem">
+              <li><strong>SPECIALISATION</strong> — We only build pool decks.</li>
+              <li><strong>COMPLIANCE MASTERY</strong> — QLD pool safety expertise built-in.</li>
+              <li><strong>CLIMATE ENGINEERING</strong> — Materials that outlast the QLD sun.</li>
+              <li><strong>7-YEAR WORKMANSHIP WARRANTY</strong> — Written, on every project.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. TRANSFORMATION SHOWCASE -->
+    <section class="text-center">
+      <div class="container-custom">
+        <h2 style="font-size: 2.5rem; margin-bottom: 15px">From Tired Concrete to Five-Star Resort</h2>
+        <p style="font-size: 1.1rem; margin-bottom: 40px">
+          See how a custom pool deck transforms the most important space in your backyard.
+        </p>
+
+        <img
+          src="https://www.genspark.ai/api/files/s/I1g4JOGk?cache_control=3600"
+          alt="Pool Deck Transformation Before and After"
+          style="
+            width: 100%;
+            max-width: 1000px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+          "
+        />
+
+        <p style="font-style: italic; color: #555; max-width: 800px; margin: 0 auto">
+          Sunshine Coast Project: Complete transformation using premium wide-plank composite decking. Seamless
+          integration over existing concrete, finished in 14 days.
+        </p>
+      </div>
+    </section>
+
+    <!-- 7. SERVICE AREAS -->
+    <section class="bg-white text-center">
+      <div class="container-custom">
+        <h2 style="font-size: 2.5rem; margin-bottom: 50px">Serving All of South East Queensland</h2>
+
+        <div class="grid-3" style="text-align: left; margin-bottom: 50px">
+          <div class="card">
+            <h3 style="font-size: 1.5rem; margin-bottom: 15px">🏙️ Brisbane</h3>
+            <p>
+              From New Farm to Hamilton to Paddington — we build pool decks for Brisbane homes from heritage
+              Queenslanders to modern riverfront properties.
+            </p>
+          </div>
+          <div class="card">
+            <h3 style="font-size: 1.5rem; margin-bottom: 15px">🌊 Gold Coast</h3>
+            <p>
+              From Mermaid Beach to Hope Island — coastal pool decks engineered for salt air, sun, and the
+              indoor-outdoor Gold Coast lifestyle.
+            </p>
+          </div>
+          <div class="card">
+            <h3 style="font-size: 1.5rem; margin-bottom: 15px">🌴 Sunshine Coast</h3>
+            <p>
+              From Noosa to Caloundra — luxury pool decks that match the relaxed luxury of Sunshine Coast living,
+              hinterland or coastal.
+            </p>
+          </div>
+        </div>
+
+        <a href="#quote-form" class="btn-primary">Get Free Quote — We Come To You</a>
+      </div>
+    </section>
+
+    <!-- 8. TESTIMONIALS -->
+    <section class="bg-navy text-center">
+      <div class="container-custom">
+        <h2 style="font-size: 2.5rem; margin-bottom: 50px">What Our Clients Say</h2>
+
+        <div class="grid-3" style="text-align: left">
+          <div class="card" style="color: var(--text)">
+            <div style="color: var(--secondary); font-size: 1.5rem; margin-bottom: 15px">★★★★★</div>
+            <p style="font-style: italic; margin-bottom: 20px">
+              "YBMT transformed our pool area into a five-star resort. Compliance handled, finish is flawless. Cannot
+              recommend them enough."
+            </p>
+            <p style="font-weight: 600; margin-bottom: 0">— Sarah & James, Buderim</p>
+          </div>
+          <div class="card" style="color: var(--text)">
+            <div style="color: var(--secondary); font-size: 1.5rem; margin-bottom: 15px">★★★★★</div>
+            <p style="font-style: italic; margin-bottom: 20px">
+              "The attention to detail is staggering. Every board is perfectly aligned, every drainage channel
+              concealed. It's the most beautiful element of our entire home."
+            </p>
+            <p style="font-weight: 600; margin-bottom: 0">— Architect-Owner, Noosa Heads</p>
+          </div>
+          <div class="card" style="color: var(--text)">
+            <div style="color: var(--secondary); font-size: 1.5rem; margin-bottom: 15px">★★★★★</div>
+            <p style="font-style: italic; margin-bottom: 20px">
+              "We've worked with many builders over 20 years. YBMT is in a different league. They handled compliance,
+              engineering, and the trades flawlessly."
+            </p>
+            <p style="font-weight: 600; margin-bottom: 0">— Property Developer, Hamilton</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. PROCESS -->
+    <section class="bg-white text-center">
+      <div class="container-custom">
+        <h2 style="font-size: 2.5rem; margin-bottom: 40px">Your Path to a Pool Deck You'll Love</h2>
+
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <h3 style="font-size: 1.2rem">REQUEST</h3>
+            <p style="font-size: 0.9rem">Submit the form, we call within 24 hours.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <h3 style="font-size: 1.2rem">VISIT</h3>
+            <p style="font-size: 0.9rem">Free on-site consultation at your home.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <h3 style="font-size: 1.2rem">DESIGN</h3>
+            <p style="font-size: 0.9rem">Custom design & transparent quote in 48 hrs.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">4</div>
+            <h3 style="font-size: 1.2rem">BUILD</h3>
+            <p style="font-size: 0.9rem">Typical 10-21 day build, daily updates.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">5</div>
+            <h3 style="font-size: 1.2rem">ENJOY</h3>
+            <p style="font-size: 0.9rem">Compliance certificate, warranty, lifetime support.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. PRICING -->
+    <section class="text-center">
+      <div class="container-custom">
+        <h2 style="font-size: 2.5rem; margin-bottom: 15px">What Does a Premium Pool Deck Cost?</h2>
+        <p style="font-size: 1.1rem; margin-bottom: 50px">
+          Honest pricing — because you deserve to know before we visit.
+        </p>
+
+        <div class="grid-3" style="text-align: left; margin-bottom: 40px">
+          <div class="card bg-white" style="border-top: 5px solid var(--primary)">
+            <h3 style="font-size: 1.5rem; margin-bottom: 5px">SIGNATURE</h3>
+            <p style="font-size: 1.2rem; font-weight: bold; color: var(--secondary); margin-bottom: 20px">
+              From $50,000
+            </p>
+            <p>Hardwood or composite deck, frameless glass fence, beautifully built foundations.</p>
+          </div>
+          <div
+            class="card bg-white"
+            style="
+              border-top: 5px solid var(--secondary);
+              transform: scale(1.03);
+              box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            "
+          >
+            <h3 style="font-size: 1.5rem; margin-bottom: 5px">PREMIER</h3>
+            <p style="font-size: 1.2rem; font-weight: bold; color: var(--secondary); margin-bottom: 20px">
+              From $75,000
+            </p>
+            <p>Mixed materials, custom drainage, integrated lighting, planter beds.</p>
+          </div>
+          <div class="card bg-white" style="border-top: 5px solid var(--primary)">
+            <h3 style="font-size: 1.5rem; margin-bottom: 5px">BESPOKE</h3>
+            <p style="font-size: 1.2rem; font-weight: bold; color: var(--secondary); margin-bottom: 20px">
+              From $120,000
+            </p>
+            <p>Full custom architectural design, multi-zone, premium everything.</p>
+          </div>
+        </div>
+
+        <p style="font-style: italic; max-width: 700px; margin: 0 auto; color: #555">
+          Most of our projects fall between $50K and $120K. Your free consultation includes an exact quote tailored to
+          your project.
+        </p>
+      </div>
+    </section>
+
+    <!-- 11. FREE QUOTE FORM -->
+    <section id="quote-form" class="bg-white">
+      <div class="container-custom">
+        <div class="text-center" style="margin-bottom: 40px">
+          <h2 style="font-size: 2.5rem; margin-bottom: 10px">Get Your Free Pool Deck Design & Quote</h2>
+          <p style="font-size: 1.2rem">We come to you. 48-hour turnaround. No obligation.</p>
+        </div>
+
+        <div class="grid-2">
+          <!-- Form -->
+          <div class="form-container">
+            <form action="#" method="POST">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" class="form-control" required />
+              </div>
+              <div class="grid-2" style="gap: 20px">
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" name="email" class="form-control" required />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone *</label>
+                  <input type="tel" id="phone" name="phone" class="form-control" required />
+                </div>
+              </div>
+              <div class="grid-2" style="gap: 20px">
+                <div class="form-group">
+                  <label for="location">Suburb / Postcode *</label>
+                  <input type="text" id="location" name="location" class="form-control" required />
+                </div>
+                <div class="form-group">
+                  <label for="project-type">Project Type *</label>
+                  <select id="project-type" name="project-type" class="form-control" required>
+                    <option value="" disabled selected>Select an option...</option>
+                    <option value="existing">I have an existing pool</option>
+                    <option value="planning">I'm planning a pool</option>
+                    <option value="both">I need both pool and deck</option>
+                    <option value="exploring">Just exploring</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="description">Tell us about your project (optional)</label>
+                <textarea id="description" name="description" class="form-control" rows="4"></textarea>
+              </div>
+              <button type="submit" class="btn-primary" style="width: 100%; font-size: 1.2rem; padding: 18px">
+                Send Me My Free Quote
+              </button>
+            </form>
+          </div>
+
+          <!-- Trust Signals -->
+          <div style="padding: 20px">
+            <ul class="check-list" style="font-size: 1.2rem; line-height: 2.2">
+              <li>QBCC Licensed Construction Company</li>
+              <li>50+ Years Combined Experience</li>
+              <li>Free On-Site Consultation</li>
+              <li>48-Hour Quote Turnaround</li>
+              <li>Workmanship Warranty In Writing</li>
+              <li>Your Data Is 100% Secure</li>
+            </ul>
+            <div style="margin-top: 40px; text-align: center">
+              <img
+                src="https://www.genspark.ai/api/files/s/nvT30S4F"
+                alt="YBMT Pool Decks Logo"
+                style="max-width: 200px; opacity: 0.8"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. FAQ ACCORDION -->
+    <section>
+      <div class="container-custom" style="max-width: 900px">
+        <h2 class="text-center" style="font-size: 2.5rem; margin-bottom: 40px">Questions Our Clients Ask</h2>
+
+        <details>
+          <summary>How much does a pool deck cost in SEQ?</summary>
+          <div class="faq-answer">
+            Most projects fall between $50,000 and $120,000 depending on size, materials, and complexity. Smaller
+            projects start from $25,000. Your free consultation includes an exact quote tailored to your home.
+          </div>
+        </details>
+
+        <details>
+          <summary>How long does a pool deck take to build?</summary>
+          <div class="faq-answer">
+            A typical pool deck takes 10-21 days to build, with design and approvals adding another 2-4 weeks
+            beforehand. We provide a detailed timeline with every quote.
+          </div>
+        </details>
+
+        <details>
+          <summary>Do you handle council approvals and pool fence compliance?</summary>
+          <div class="faq-answer">
+            Yes — completely. Council approvals, engineering certifications, pool fencing compliance under QDC MP 3.4,
+            and the final Pool Safety Certificate are all handled by us. You don't lift a finger on paperwork.
+          </div>
+        </details>
+
+        <details>
+          <summary>What's the best material for a pool deck in QLD?</summary>
+          <div class="faq-answer">
+            There's no single right answer — it depends on your home, lifestyle, and budget. We work with composite,
+            spotted gum, merbau, and travertine. Your consultation includes guidance on which is right for you.
+          </div>
+        </details>
+
+        <details>
+          <summary>Can you build a deck around an existing pool?</summary>
+          <div class="faq-answer">
+            Absolutely — that's about 70% of our work. We design new decks that integrate seamlessly with existing pool
+            structures and fencing.
+          </div>
+        </details>
+
+        <details>
+          <summary>Do you build decks before a pool is installed?</summary>
+          <div class="faq-answer">
+            Yes — and pre-pool deck planning is one of the smartest things you can do. We coordinate with your pool
+            builder to ensure substructure, drainage, and compliance are built in from day one.
+          </div>
+        </details>
+
+        <details>
+          <summary>What warranty do you offer?</summary>
+          <div class="faq-answer">
+            Every project comes with a written 7-year workmanship warranty. Material warranties (up to 25 years for
+            composite) are passed directly to you.
+          </div>
+        </details>
+
+        <details>
+          <summary>What areas do you service?</summary>
+          <div class="faq-answer">
+            All of South East Queensland — Brisbane (and surrounds), the Gold Coast, and the Sunshine Coast. From Noosa
+            to Coolangatta and everywhere in between.
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 13. FINAL CTA BLOCK -->
+    <section class="final-cta">
+      <div class="container-custom" style="padding-top: 100px; padding-bottom: 100px">
+        <h2 style="font-size: 3rem; color: #ffffff; margin-bottom: 15px">Ready to Transform Your Pool Area?</h2>
+        <p style="font-size: 1.25rem; margin-bottom: 40px; color: #f0f0f0">
+          Free consultation. 48-hour quote. No obligation.
+        </p>
+
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap">
+          <a href="#quote-form" class="btn-primary" style="font-size: 1.2rem; padding: 18px 40px">Get Free Quote</a>
+          <a href="tel:1300448784" class="btn-outline" style="font-size: 1.2rem; padding: 18px 40px"
+            >Call 1300 448 784</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- 14. FOOTER -->
+    <footer style="background-color: var(--text); color: #ffffff; padding: 60px 20px 30px">
+      <div class="container-custom" style="padding: 0">
+        <div class="grid-3" style="margin-bottom: 40px; align-items: start">
+          <div>
+            <img
+              src="https://www.genspark.ai/api/files/s/nvT30S4F"
+              alt="YBMT Pool Decks Logo"
+              style="height: 50px; margin-bottom: 20px; filter: brightness(0) invert(1)"
+            />
+            <p style="color: #bbb">
+              South East Queensland's dedicated pool deck specialists. Built around your lifestyle.
+            </p>
+          </div>
+          <div>
+            <h4 style="color: #ffffff; margin-bottom: 20px">Contact Us</h4>
+            <p style="color: #bbb; margin-bottom: 10px">Phone: 1300 448 784</p>
+            <p style="color: #bbb; margin-bottom: 10px">Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a2cac7cececde2dbc0cfd68cc1cdcf8cc3d7">[email&#160;protected]</a></p>
+            <p style="color: #bbb; margin-bottom: 0">Service Areas: Brisbane, Gold Coast, Sunshine Coast</p>
+          </div>
+          <div>
+            <h4 style="color: #ffffff; margin-bottom: 20px">Our Guarantees</h4>
+            <ul style="color: #bbb; list-style: none; padding: 0; margin: 0; line-height: 2">
+              <li>✓ QBCC Licensed</li>
+              <li>✓ 7-Year Workmanship Warranty</li>
+              <li>✓ Fully Insured ($20M Public Liability)</li>
+              <li>✓ Full Compliance Handled</li>
+            </ul>
+          </div>
+        </div>
+        <div style="border-top: 1px solid #444; padding-top: 30px; text-align: center; color: #888; font-size: 0.9rem">
+          <p>
+            &copy; 2026 YBMT Pool Decks. All Rights Reserved.
+            <a href="#" style="color: #bbb; text-decoration: underline; margin-left: 15px">Privacy Policy</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>

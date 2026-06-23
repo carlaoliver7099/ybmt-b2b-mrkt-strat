@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your 30-Day Pool Deck Launch Calendar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Base Document Styles */
+      body {
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 32px 80px;
+        position: relative;
+        box-sizing: border-box;
+        background-color: #f5f1ea;
+        color: #2b2b2b;
+        font-family: 'Inter', sans-serif;
+        line-height: 1.6;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin-top: 0;
+      }
+
+      .fraunces-italic {
+        font-family: 'Fraunces', serif;
+        font-style: italic;
+        font-weight: 600;
+      }
+
+      .fraunces-regular {
+        font-family: 'Fraunces', serif;
+        font-weight: 600;
+      }
+
+      /* Branding Colors */
+      .color-navy {
+        color: #1b3a5c;
+      }
+      .color-timber {
+        color: #b8743d;
+      }
+      .bg-navy {
+        background-color: #1b3a5c;
+        color: #ffffff;
+      }
+      .bg-timber {
+        background-color: #b8743d;
+        color: #ffffff;
+      }
+      .bg-green {
+        background-color: #5fb369;
+        color: #ffffff;
+      }
+      .bg-coral {
+        background-color: #d85a4a;
+        color: #ffffff;
+      }
+      .bg-grey {
+        background-color: #e8e4dd;
+        color: #2b2b2b;
+      }
+
+      /* Print Button */
+      .print-btn {
+        display: block;
+        margin: 0 auto 40px auto;
+        padding: 12px 24px;
+        background-color: #1b3a5c;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        text-align: center;
+      }
+
+      /* Page Structure */
+      .page-break {
+        page-break-after: always;
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid transparent;
+      }
+
+      .header-logo {
+        display: block;
+        max-width: 200px;
+        margin: 0 auto 40px auto;
+      }
+
+      /* Cover Page */
+      .cover-title {
+        font-size: 48px;
+        color: #1b3a5c;
+        text-align: center;
+        line-height: 1.1;
+        margin-bottom: 16px;
+      }
+
+      .cover-subtitle {
+        font-size: 24px;
+        color: #b8743d;
+        text-align: center;
+        margin-bottom: 40px;
+        font-weight: 600;
+      }
+
+      .cover-intro {
+        font-size: 16px;
+        text-align: justify;
+        margin-bottom: 40px;
+      }
+
+      .legend-box {
+        margin-bottom: 40px;
+      }
+
+      .legend-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        font-weight: 600;
+      }
+
+      .legend-dot {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        margin-right: 12px;
+      }
+
+      .metrics-box {
+        background-color: #1b3a5c;
+        color: #ffffff;
+        padding: 32px;
+        border-radius: 8px;
+        margin-bottom: 40px;
+      }
+
+      .metrics-box h3 {
+        margin-bottom: 16px;
+        font-size: 20px;
+      }
+
+      .metrics-box ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      .metrics-box li {
+        margin-bottom: 8px;
+        font-size: 16px;
+      }
+
+      .cover-quote {
+        text-align: center;
+        font-size: 24px;
+        color: #1b3a5c;
+        margin-top: 60px;
+      }
+
+      /* Week Headers */
+      .week-header {
+        border-bottom: 4px solid #1b3a5c;
+        padding-bottom: 16px;
+        margin-bottom: 32px;
+      }
+
+      .week-title {
+        font-size: 32px;
+        color: #1b3a5c;
+        margin-bottom: 4px;
+      }
+
+      .week-theme {
+        font-size: 18px;
+        color: #b8743d;
+        font-weight: 600;
+        margin: 0;
+      }
+
+      /* Day Cards */
+      .day-card {
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 24px;
+        margin-bottom: 24px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        page-break-inside: avoid;
+      }
+
+      .day-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 16px;
+      }
+
+      .day-number {
+        font-size: 18px;
+        font-weight: 700;
+        color: #1b3a5c;
+        text-transform: uppercase;
+      }
+
+      .tickbox {
+        width: 32px;
+        height: 32px;
+        border: 3px solid #1b3a5c;
+        border-radius: 4px;
+        background-color: #ffffff;
+      }
+
+      .day-tag {
+        display: inline-block;
+        padding: 4px 12px;
+        border-radius: 16px;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 12px;
+      }
+
+      .day-task {
+        font-size: 18px;
+        color: #2b2b2b;
+        margin-bottom: 12px;
+        line-height: 1.4;
+      }
+
+      .time-badge {
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 600;
+        color: #2b2b2b;
+        background-color: #f5f1ea;
+        padding: 4px 8px;
+        border-radius: 4px;
+        margin-bottom: 8px;
+      }
+
+      .why-text {
+        font-size: 14px;
+        color: #2b2b2b;
+        margin: 0;
+      }
+
+      .why-text strong {
+        color: #b8743d;
+        font-style: italic;
+      }
+
+      .script-text {
+        font-size: 13px;
+        background-color: #f5f1ea;
+        padding: 8px 12px;
+        border-left: 3px solid #d85a4a;
+        margin-top: 12px;
+        font-family: monospace;
+      }
+
+      /* Metrics Scorecard */
+      .scorecard-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 40px;
+        background-color: #ffffff;
+      }
+
+      .scorecard-table th,
+      .scorecard-table td {
+        border: 2px solid #1b3a5c;
+        padding: 16px;
+        text-align: left;
+      }
+
+      .scorecard-table th {
+        background-color: #1b3a5c;
+        color: #ffffff;
+        font-family: 'Fraunces', serif;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .scorecard-table td {
+        height: 60px; /* Space for handwriting */
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .scorecard-table tr td:first-child {
+        background-color: #f5f1ea;
+        width: 30%;
+      }
+
+      /* Reference Page */
+      .ref-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin-bottom: 40px;
+      }
+
+      .ref-section h3 {
+        font-family: 'Fraunces', serif;
+        color: #1b3a5c;
+        font-size: 22px;
+        margin-bottom: 16px;
+        border-bottom: 2px solid #b8743d;
+        padding-bottom: 8px;
+      }
+
+      .ref-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .ref-list li {
+        margin-bottom: 12px;
+        font-size: 14px;
+      }
+
+      .ref-list strong {
+        display: block;
+        color: #1b3a5c;
+      }
+
+      .ref-list span {
+        color: #b8743d;
+        word-break: break-all;
+      }
+
+      .closing-quote {
+        text-align: center;
+        font-size: 28px;
+        color: #1b3a5c;
+        margin-top: 60px;
+        padding-top: 40px;
+        border-top: 1px solid #1b3a5c;
+      }
+
+      /* Print Styles */
+      @media print {
+        body {
+          padding: 0;
+          background-color: #f5f1ea !important;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+        .print-btn {
+          display: none;
+        }
+        .page-break {
+          margin-bottom: 0;
+          padding-bottom: 0;
+          border-bottom: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="window.print()" class="print-btn">Print This Calendar</button>
+
+    <!-- PAGE 1: COVER / OVERVIEW -->
+    <div class="page-break">
+      <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="YBMT Pool Decks Logo" class="header-logo" />
+
+      <h1 class="cover-title fraunces-italic">Your 30-Day Pool Deck Launch Calendar</h1>
+      <p class="cover-subtitle">From plan to first leads — one day at a time.</p>
+
+      <p class="cover-intro">
+        You've got the strategy. You've got the assets. Now it's time to launch. This calendar gives you 30 focused days
+        of action — from getting your brochures into print to landing your first qualified leads. Tick off each day as
+        you go. By Day 30, you'll have a live marketing engine generating real enquiries across Brisbane, Gold Coast and
+        the Sunshine Coast.
+      </p>
+
+      <div class="legend-box">
+        <div class="legend-item">
+          <div class="legend-dot bg-navy"></div>
+          ADMIN & SETUP
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot bg-timber"></div>
+          MARKETING ASSETS LIVE
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot bg-green"></div>
+          SALES & CALLS
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot bg-coral"></div>
+          PARTNERSHIPS & OUTREACH
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot bg-grey"></div>
+          WEEKEND / FLEX DAY
+        </div>
+      </div>
+
+      <div class="metrics-box">
+        <h3 class="fraunces-italic">Key Launch Targets</h3>
+        <ul>
+          <li><strong>Target leads in 30 days:</strong> 8-15 qualified enquiries</li>
+          <li><strong>Target consultations booked:</strong> 5-10</li>
+          <li><strong>Target ad spend:</strong> ~$1,500-$2,000</li>
+          <li><strong>Target time commitment:</strong> 1-3 hours/day (most days)</li>
+        </ul>
+      </div>
+
+      <p class="cover-quote fraunces-italic">"Discipline equals freedom."</p>
+    </div>
+
+    <!-- PAGE 2: WEEK 1 -->
+    <div class="page-break">
+      <img
+        src="https://www.genspark.ai/api/files/s/nvT30S4F"
+        alt="YBMT Pool Decks Logo"
+        class="header-logo"
+        style="max-width: 120px"
+      />
+      <div class="week-header">
+        <h2 class="week-title fraunces-italic">WEEK 1 — FOUNDATION</h2>
+        <p class="week-theme">Get your house in order</p>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 01 / MONDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-navy">ADMIN</div>
+        <h3 class="day-task">Review all 17 marketing assets in your launch kit</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 2 hours</span>
+          <p class="why-text">
+            <strong>Why:</strong> You can't deploy what you haven't seen. Skim each link, note any tweaks needed.
+          </p>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 02 / TUESDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-navy">ADMIN</div>
+        <h3 class="day-task">Email your web developer with the website copy + landing page</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 30 mins</span>
+          <p class="why-text">
+            <strong>Why:</strong> Web build takes 2-3 weeks — start it NOW so it's live for Week 4.
+          </p>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 03 / WEDNESDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-timber">MARKETING</div>
+        <h3 class="day-task">Print 250 brochures at Officeworks (350gsm gloss, double-sided color)</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 1 hour + 24hr turnaround (~$120-150)</span>
+          <p class="why-text">
+            <strong>Why:</strong> This is your physical sales weapon — needed for partner outreach from Day 8.
+          </p>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 04 / THURSDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-navy">ADMIN</div>
+        <h3 class="day-task">Set up Google Business Profile for BRISBANE (use hero images)</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 45 mins</span>
+          <p class="why-text"><strong>Why:</strong> Free local SEO + Google Maps presence = instant credibility.</p>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 05 / FRIDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-navy">ADMIN</div>
+        <h3 class="day-task">Set up Google Business Profiles for GOLD COAST + SUNSHINE COAST</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 1.5 hours</span>
+          <p class="why-text"><strong>Why:</strong> Three regional profiles = 3x the local search exposure.</p>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 06 / SATURDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-grey">FLEX</div>
+        <h3 class="day-task">Fix typo on /decks-built ("creatinine" → "creating") + add "Pool Decks" to your nav</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 15 mins</span>
+          <p class="why-text">
+            <strong>Why:</strong> Quick win — fixes credibility issue, surfaces your new specialty.
+          </p>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 07 / SUNDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-grey">REST</div>
+        <h3 class="day-task">REST — Plan Week 2 calendar in the evening (15 mins)</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 15 mins</span>
+          <p class="why-text"><strong>Why:</strong> Recharge. Even contractors need Sundays.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 3: WEEK 2 -->
+    <div class="page-break">
+      <img
+        src="https://www.genspark.ai/api/files/s/nvT30S4F"
+        alt="YBMT Pool Decks Logo"
+        class="header-logo"
+        style="max-width: 120px"
+      />
+      <div class="week-header">
+        <h2 class="week-title fraunces-italic">WEEK 2 — GO-TO-MARKET</h2>
+        <p class="week-theme">Get visible</p>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 08 / MONDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-coral">PARTNERSHIPS</div>
+        <h3 class="day-task">Pick up your printed brochures from Officeworks</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 30 mins</span>
+          <p class="why-text"><strong>Why:</strong> Today they go to work. Carry 30 with you everywhere.</p>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 09 / TUESDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-coral">PARTNERSHIPS</div>
+        <h3 class="day-task">Visit 5 real estate offices — leave 5 brochures + a card at each reception</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 2 hours</span>
+          <p class="why-text">
+            <strong>Why:</strong> Real estate agents see homes needing pool deck upgrades EVERY day.
+          </p>
+          <div class="script-text">
+            SCRIPT: "Hi, we're YBMT Pool Decks — SEQ's pool deck specialists. Mind if I leave a few brochures at
+            reception?"
+          </div>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 10 / WEDNESDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-navy">ADMIN</div>
+        <h3 class="day-task">Sign up for Mailchimp (free) + paste in your 5-email nurture sequence</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 1.5 hours</span>
+          <p class="why-text">
+            <strong>Why:</strong> Once leads start coming in, this works automatically — no manual follow-up.
+          </p>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 11 / THURSDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-timber">MARKETING</div>
+        <h3 class="day-task">Schedule your first 5 Instagram posts using Meta Business Suite (free)</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 1 hour</span>
+          <p class="why-text"><strong>Why:</strong> 3 posts per week minimum to build social presence.</p>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 12 / FRIDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-coral">PARTNERSHIPS</div>
+        <h3 class="day-task">Visit 5 pool shops/showrooms — leave brochures + introduce yourself</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 2 hours</span>
+          <p class="why-text">
+            <strong>Why:</strong> Pool shops talk to people about to buy pools — exactly your ideal customer.
+          </p>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 13 / SATURDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-grey">FLEX</div>
+        <h3 class="day-task">Brochure drop in ONE affluent suburb (Buderim, Noosa, or Hamilton — pick one)</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 2-3 hours OR $0.20/letterbox via service</span>
+          <p class="why-text"><strong>Why:</strong> 500 letterboxes = ~5-10 enquiries for a premium niche.</p>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 14 / SUNDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-grey">REST</div>
+        <h3 class="day-task">REST — Light review of partner contacts made</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 15 mins</span>
+          <p class="why-text"><strong>Why:</strong> Recharge.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 4: WEEK 3 -->
+    <div class="page-break">
+      <img
+        src="https://www.genspark.ai/api/files/s/nvT30S4F"
+        alt="YBMT Pool Decks Logo"
+        class="header-logo"
+        style="max-width: 120px"
+      />
+      <div class="week-header">
+        <h2 class="week-title fraunces-italic">WEEK 3 — ACTIVATE PAID + ORGANIC</h2>
+        <p class="week-theme">Turn on the lead engine</p>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 15 / MONDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-navy">ADMIN</div>
+        <h3 class="day-task">Open a Meta Ads Manager account (business.facebook.com — free)</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 1 hour</span>
+          <p class="why-text"><strong>Why:</strong> This is where your paid ads will run.</p>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 16 / TUESDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-timber">MARKETING</div>
+        <h3 class="day-task">Set up 3 Meta ads: Ad 02, Ad 05, Ad 07 — $75/day each</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 2 hours</span>
+          <p class="why-text">
+            <strong>Why:</strong> BUDGET: $1,575 over 7 days. First test — find best performer before scaling.
+          </p>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 17 / WEDNESDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-timber">MARKETING</div>
+        <h3 class="day-task">Publish Blog Post 1 ("Brisbane Pool Deck Cost") with developer</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 30 mins</span>
+          <p class="why-text"><strong>Why:</strong> SEO compound effect — every post = traffic for years.</p>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 18 / THURSDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-timber">MARKETING</div>
+        <h3 class="day-task">Post Instagram Post 1 + Story tease about new pool deck specialization</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 20 mins</span>
+          <p class="why-text"><strong>Why:</strong> Announce the pivot to your existing audience.</p>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 19 / FRIDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-timber">MARKETING</div>
+        <h3 class="day-task">Check Meta Ads — track Cost Per Lead (CPL) for each ad. Note which is winning.</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 30 mins</span>
+          <p class="why-text"><strong>Why:</strong> Daily monitoring catches problems early.</p>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 20 / SATURDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-grey">FLEX</div>
+        <h3 class="day-task">Visit 3 more real estate offices in a different suburb cluster</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 1.5 hours</span>
+          <p class="why-text"><strong>Why:</strong> Saturday open homes = agents in the office.</p>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 21 / SUNDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-grey">REST</div>
+        <h3 class="day-task">REST — Review the week's lead enquiries (if any)</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 20 mins</span>
+          <p class="why-text"><strong>Why:</strong> Celebrate small wins.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 5: WEEK 4 -->
+    <div class="page-break">
+      <img
+        src="https://www.genspark.ai/api/files/s/nvT30S4F"
+        alt="YBMT Pool Decks Logo"
+        class="header-logo"
+        style="max-width: 120px"
+      />
+      <div class="week-header">
+        <h2 class="week-title fraunces-italic">WEEK 4 — OPTIMIZE + REFER</h2>
+        <p class="week-theme">Refine and scale</p>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 22 / MONDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-timber">MARKETING</div>
+        <h3 class="day-task">Kill underperforming Meta ads. Scale the winner by 30% ($75 → $98/day)</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 30 mins</span>
+          <p class="why-text"><strong>Why:</strong> Stop wasting on losers. Pour fuel on winners.</p>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 23 / TUESDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-coral">PARTNERSHIPS</div>
+        <h3 class="day-task">Build your "30 Target Partner" hit list (10 architects, 10 pool builders, 10 agents)</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 2 hours</span>
+          <p class="why-text">
+            <strong>Why:</strong> Architects → Houzz. Pool builders → SPASA QLD. Real estate → REIQ top producers.
+          </p>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 24 / WEDNESDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-coral">PARTNERSHIPS</div>
+        <h3 class="day-task">Email 10 architects with the Referral Partner Kit + intro script</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 2 hours</span>
+          <p class="why-text"><strong>Why:</strong> Architects send the highest-value projects.</p>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 25 / THURSDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-timber">MARKETING</div>
+        <h3 class="day-task">Publish Blog Post 2 (Composite vs Hardwood) + share to LinkedIn</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 30 mins</span>
+          <p class="why-text"><strong>Why:</strong> Compound SEO + position yourself as the expert.</p>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 26 / FRIDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-timber">MARKETING</div>
+        <h3 class="day-task">Post Instagram Post 4 (Materials Comparison Infographic) + Story carousel</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 30 mins</span>
+          <p class="why-text"><strong>Why:</strong> Educational content = saves + shares = more reach.</p>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 27 / SATURDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-grey">FLEX</div>
+        <h3 class="day-task">Brochure refill at any real estate offices running low</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 1 hour</span>
+          <p class="why-text"><strong>Why:</strong> Keep your physical presence active.</p>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 28 / SUNDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-grey">REST</div>
+        <h3 class="day-task">REST</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 0 mins</span>
+          <p class="why-text"><strong>Why:</strong> You've earned it.</p>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 29 / MONDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-green">SALES</div>
+        <h3 class="day-task">Follow up any leads that didn't immediately book consultations</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 1 hour</span>
+          <p class="why-text"><strong>Why:</strong> Most sales happen after the 3rd follow-up. Use the sales script.</p>
+        </div>
+      </div>
+
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-number">DAY 30 / TUESDAY</span>
+          <div class="tickbox"></div>
+        </div>
+        <div class="day-tag bg-navy">ADMIN</div>
+        <h3 class="day-task">🎉 LAUNCH COMPLETE — Review 30-day metrics. Plan the next 30 days.</h3>
+        <div class="day-meta">
+          <span class="time-badge">⏱ 1.5 hours</span>
+          <p class="why-text">
+            <strong>Why:</strong> TRACK: leads, CPL, consultations, quotes, projects, revenue pipeline.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE 6: METRICS DASHBOARD -->
+    <div class="page-break">
+      <img
+        src="https://www.genspark.ai/api/files/s/nvT30S4F"
+        alt="YBMT Pool Decks Logo"
+        class="header-logo"
+        style="max-width: 120px"
+      />
+      <h2 class="cover-title fraunces-italic" style="text-align: left; font-size: 36px; margin-bottom: 32px">
+        30-Day Metrics Scorecard
+      </h2>
+
+      <table class="scorecard-table">
+        <thead>
+          <tr>
+            <th>Metric</th>
+            <th>Week 1</th>
+            <th>Week 2</th>
+            <th>Week 3</th>
+            <th>Week 4</th>
+            <th>TOTAL</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Leads received</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Consultations booked</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Quotes sent</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Projects closed</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Revenue pipeline ($)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Ad spend ($)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Cost per lead ($)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Partner contacts made</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="cover-quote fraunces-italic" style="margin-top: 40px; font-size: 20px">
+        "What gets measured, gets managed." — Peter Drucker
+      </p>
+    </div>
+
+    <!-- PAGE 7: QUICK REFERENCE RESOURCES -->
+    <div>
+      <img
+        src="https://www.genspark.ai/api/files/s/nvT30S4F"
+        alt="YBMT Pool Decks Logo"
+        class="header-logo"
+        style="max-width: 120px"
+      />
+      <h2 class="cover-title fraunces-italic" style="text-align: left; font-size: 36px; margin-bottom: 32px">
+        Quick Reference Resources
+      </h2>
+
+      <div class="ref-grid">
+        <div class="ref-section">
+          <h3>Your Assets</h3>
+          <ul class="ref-list">
+            <li><strong>Brochure (for printing)</strong> <span>https://www.genspark.ai/api/files/s/9iBnUw9p</span></li>
+            <li>
+              <strong>Website Copy Doc</strong>
+              <span>https://www.genspark.ai/doc_agent?id=17db2f06-ebfa-44e6-9573-7f15ed16df4f</span>
+            </li>
+            <li><strong>Landing Page</strong> <span>https://www.genspark.ai/api/files/s/G57Kmp4U</span></li>
+            <li><strong>Buyer's Guide PDF</strong> <span>https://www.genspark.ai/api/files/s/gqRxDrQR</span></li>
+            <li><strong>5-Email Nurture Sequence</strong> <span>https://www.genspark.ai/api/files/s/Zg5j08Mj</span></li>
+            <li><strong>10 Meta Ad Variants</strong> <span>https://www.genspark.ai/api/files/s/TtKcpKGK</span></li>
+            <li><strong>5 SEO Blog Posts</strong> <span>https://www.genspark.ai/api/files/s/TY97PXXr</span></li>
+            <li><strong>Referral Partner Kit</strong> <span>https://www.genspark.ai/api/files/s/kZlLp2EI</span></li>
+            <li><strong>Sales Phone Script</strong> <span>https://www.genspark.ai/api/files/s/6YRMW1z4</span></li>
+            <li>
+              <strong>24-Slide Pitch Deck</strong>
+              <span>https://www.genspark.ai/agents?id=d0f55804-43ce-4d19-92cc-092994f5a1d3</span>
+            </li>
+            <li>
+              <strong>10-Slide Pitch Deck</strong>
+              <span>https://www.genspark.ai/agents?id=f184574d-fe4a-4586-a8d8-9e4cbddcc868</span>
+            </li>
+            <li><strong>Logo</strong> <span>https://www.genspark.ai/api/files/s/nvT30S4F</span></li>
+          </ul>
+        </div>
+
+        <div class="ref-section">
+          <h3>Key Platforms</h3>
+          <ul class="ref-list">
+            <li><strong>Google Business Profile</strong> <span>google.com/business</span></li>
+            <li><strong>Meta Business Suite</strong> <span>business.facebook.com</span></li>
+            <li><strong>Mailchimp (free tier)</strong> <span>mailchimp.com</span></li>
+            <li><strong>Houzz (for architects)</strong> <span>houzz.com.au</span></li>
+          </ul>
+
+          <h3 style="margin-top: 40px">Key Contacts</h3>
+          <ul class="ref-list">
+            <li><strong>Officeworks (printing)</strong> <span>officeworks.com.au</span></li>
+            <li><strong>SPASA QLD (pool builders)</strong> <span>spasaqld.com.au</span></li>
+            <li><strong>QBCC verification</strong> <span>qbcc.qld.gov.au</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="closing-quote fraunces-italic">"You won't finish what you don't start. Day 1 is today."</p>
+    </div>
+  </body>
+</html>

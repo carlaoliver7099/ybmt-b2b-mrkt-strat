@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YBMT Pool Decks — 5-Email Nurture Sequence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f5f1ea;
+        color: #2b2b2b;
+        line-height: 1.6;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #1b3a5c;
+        margin-top: 0;
+      }
+      .display-heading {
+        font-family: 'Fraunces', serif;
+        font-style: italic;
+        font-weight: 600;
+      }
+      p {
+        margin-bottom: 16px;
+      }
+      .aqua-line {
+        border: 0;
+        height: 2px;
+        background-color: #4db6c7;
+        margin: 24px 0;
+      }
+      .page-break {
+        break-before: page;
+        page-break-before: always;
+        margin-top: 60px;
+      }
+      .intro-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 24px 0;
+      }
+      .intro-table td {
+        width: 50%;
+        border: 1px solid #e5dfd2;
+        padding: 16px;
+        background-color: #ffffff;
+        vertical-align: top;
+      }
+      .intro-table strong {
+        color: #1b3a5c;
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 4px;
+      }
+      .email-section {
+        margin-bottom: 40px;
+      }
+      .email-header-strip {
+        background-color: #1b3a5c;
+        color: #ffffff;
+        padding: 12px 20px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .email-meta {
+        padding: 20px 0;
+      }
+      .subject-pill {
+        display: inline-block;
+        border: 1px solid #4db6c7;
+        color: #1b3a5c;
+        padding: 2px 8px;
+        font-size: 12px;
+        font-weight: bold;
+        margin-right: 8px;
+        background-color: #ffffff;
+      }
+      .email-card {
+        background: #ffffff;
+        border: 1px solid #e5dfd2;
+        margin: 20px 0;
+        max-width: 640px;
+      }
+      .email-card-header {
+        background: #fafafa;
+        border-bottom: 1px solid #e5dfd2;
+        padding: 12px 20px;
+        font-size: 13px;
+        color: #666;
+      }
+      .email-card-body {
+        padding: 32px 32px 40px 32px;
+      }
+      .cta-primary {
+        display: inline-block;
+        background-color: #1b3a5c;
+        color: #ffffff;
+        padding: 12px 24px;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+        margin-right: 12px;
+        margin-bottom: 12px;
+      }
+      .cta-secondary {
+        display: inline-block;
+        border: 2px solid #b8743d;
+        color: #b8743d;
+        padding: 10px 24px;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+        margin-bottom: 12px;
+      }
+      .ps-block {
+        border-left: 3px solid #4db6c7;
+        padding-left: 16px;
+        margin-top: 32px;
+        font-style: italic;
+        color: #2b2b2b;
+      }
+      .sig-block {
+        margin-top: 32px;
+        font-size: 14px;
+        color: #666;
+        line-height: 1.5;
+      }
+      .automation-section {
+        background-color: #ffffff;
+        border: 1px solid #e5dfd2;
+        padding: 24px;
+        margin-bottom: 24px;
+      }
+      .automation-section h4 {
+        font-size: 13px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        color: #b8743d;
+      }
+      .token-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .token-table th,
+      .token-table td {
+        text-align: left;
+        padding: 10px;
+        border-bottom: 1px solid #e5dfd2;
+      }
+      .token-table th {
+        font-weight: 600;
+        color: #1b3a5c;
+      }
+      .code-block {
+        background-color: #fafafa;
+        padding: 2px 6px;
+        border: 1px solid #e5dfd2;
+        font-family: monospace;
+        color: #1b3a5c;
+      }
+    </style>
+  </head>
+  <body style="max-width: 880px; margin: 0 auto; padding: 32px 80px; position: relative; box-sizing: border-box">
+    <!-- COVER / HEADER SECTION -->
+    <div style="margin-bottom: 40px">
+      <img
+        src="https://www.genspark.ai/api/files/s/nvT30S4F"
+        alt="YBMT Pool Decks Logo"
+        style="width: 120px; margin-bottom: 24px; display: block"
+      />
+      <p style="font-size: 12px; color: #666; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px">
+        Internal Playbook · v1.0 · 2026
+      </p>
+      <h1 class="display-heading" style="font-size: 42px; margin-bottom: 8px; line-height: 1.1">
+        The 14-Day Nurture Sequence
+      </h1>
+      <h2 style="font-size: 18px; font-weight: 400; color: #2b2b2b; margin-bottom: 24px">
+        5 emails. Built to convert hesitant leads into booked consultations.
+      </h2>
+      <hr class="aqua-line" />
+    </div>
+
+    <!-- HOW TO USE THIS SEQUENCE -->
+    <div style="margin-bottom: 60px">
+      <h3 class="display-heading" style="font-size: 24px">§ I. How to Use This Sequence</h3>
+      <p>
+        This automated sequence is designed to build trust over 14 days, demonstrate our deep regional expertise, and
+        convert hesitant homeowners into booked consultations without applying aggressive sales pressure.
+      </p>
+
+      <table class="intro-table">
+        <tr>
+          <td>
+            <strong>Trigger</strong>
+            Buyer's Guide download or free quote form submission.
+          </td>
+          <td>
+            <strong>Duration</strong>
+            14 Days (5 total touchpoints).
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Tone</strong>
+            Warm, expert, consultative, no hype.
+          </td>
+          <td>
+            <strong>Primary Goal</strong>
+            Book a free on-site consultation.
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- EMAIL 1 -->
+    <div class="page-break"></div>
+    <div class="email-section">
+      <h3 class="display-heading" style="font-size: 24px; margin-bottom: 16px">§ II. The Sequence</h3>
+
+      <div
+        style="
+          background-color: #1b3a5c;
+          color: #ffffff;
+          padding: 12px 20px;
+          font-weight: bold;
+          letter-spacing: 1px;
+          font-size: 14px;
+        "
+      >
+        EMAIL 1 · DAY 0
+        <span style="float: right; color: #4db6c7">IMMEDIATE WELCOME</span>
+      </div>
+
+      <div class="email-meta">
+        <p style="margin-bottom: 8px"><strong>SUBJECT LINE OPTIONS (A/B Test):</strong></p>
+        <p style="margin-bottom: 4px"><span class="subject-pill">A</span> Your YBMT Pool Decks Guide — open inside</p>
+        <p style="margin-bottom: 4px">
+          <span class="subject-pill">B</span> [First Name] — here's your free Pool Deck Buyer's Guide
+        </p>
+        <p style="margin-bottom: 16px"><span class="subject-pill">C</span> A note from Gerry at YBMT Pool Decks</p>
+        <p>
+          <strong>PREHEADER:</strong>
+          <span style="color: #b8743d; font-style: italic">Plus what to expect from us over the next 2 weeks.</span>
+        </p>
+      </div>
+
+      <div class="email-card">
+        <div class="email-card-header">
+          <strong>From:</strong> Gerry McGuire &lt;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e08785929299a099828d94ce838f8dce8195">[email&#160;protected]</a>&gt;<br />
+          <strong>To:</strong> [First Name]
+        </div>
+        <div class="email-card-body">
+          <p>Hi [First Name],</p>
+          <p>
+            Thanks for grabbing a copy of our 2026 SEQ Pool Deck Buyer's Guide. You'll find the PDF attached to this
+            email, or you can [download it again here].
+          </p>
+          <p>
+            A quick word about who we are: YBMT has been building across South East Queensland for over 50 years
+            combined. A few years ago we narrowed our focus — instead of being generalists, we now specialise in one
+            thing: pool decks for Brisbane, Gold Coast and Sunshine Coast homes. It turns out that's the work we love
+            most, and where our craftsmanship makes the biggest difference.
+          </p>
+          <p>
+            Over the next 2 weeks I'll send you a few short emails — actually useful ones — covering materials, pricing,
+            compliance, and the decisions most homeowners get wrong. No sales pressure. Just expert advice from a team
+            that's spent half a century building things in Queensland.
+          </p>
+          <p>
+            If you've got an urgent question or you're ready to talk, my team is on 1300 448 784 — or just hit reply to
+            this email.
+          </p>
+          <p>Talk soon,</p>
+
+          <div style="margin: 24px 0">
+            <span class="cta-primary">Book Your Free Consultation</span>
+            <span class="cta-secondary">Call 1300 448 784</span>
+          </div>
+
+          <div class="sig-block">
+            <strong>Gerry McGuire</strong> | Director | YBMT Pool Decks<br />
+            1300 448 784 | ybmt.com.au
+          </div>
+
+          <div class="ps-block">
+            <p style="margin: 0">
+              P.S. If you only read one page of the Guide today, make it Chapter 4 — QLD Pool Safety Compliance. It's
+              the part that catches most homeowners off-guard, and it's where cheap builders quietly cut corners.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EMAIL 2 -->
+    <div class="page-break"></div>
+    <div class="email-section">
+      <div
+        style="
+          background-color: #1b3a5c;
+          color: #ffffff;
+          padding: 12px 20px;
+          font-weight: bold;
+          letter-spacing: 1px;
+          font-size: 14px;
+        "
+      >
+        EMAIL 2 · DAY 3
+        <span style="float: right; color: #4db6c7">VALUE / EDUCATION</span>
+      </div>
+
+      <div class="email-meta">
+        <p style="margin-bottom: 8px"><strong>SUBJECT LINE OPTIONS (A/B Test):</strong></p>
+        <p style="margin-bottom: 4px">
+          <span class="subject-pill">A</span> The 5 mistakes that cost pool deck owners $25,000
+        </p>
+        <p style="margin-bottom: 4px"><span class="subject-pill">B</span> Don't let your builder make this mistake</p>
+        <p style="margin-bottom: 16px"><span class="subject-pill">C</span> The hidden cost of a cheap pool deck</p>
+        <p>
+          <strong>PREHEADER:</strong>
+          <span style="color: #b8743d; font-style: italic">Most pool decks fail by year 5. Here's why.</span>
+        </p>
+      </div>
+
+      <div class="email-card">
+        <div class="email-card-header">
+          <strong>From:</strong> Gerry McGuire &lt;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c9aeacbbbbb089b0aba4bde7aaa6a4e7a8bc">[email&#160;protected]</a>&gt;<br />
+          <strong>To:</strong> [First Name]
+        </div>
+        <div class="email-card-body">
+          <p>Hi [First Name],</p>
+          <p>
+            Two months ago we visited a Buderim home where the owner had paid $42,000 for a pool deck just three years
+            earlier. The boards still looked fine on the surface.
+          </p>
+          <p>Underneath, the substructure was rotted to ribbons. Replacement cost? $58,000.</p>
+          <p>It's a story we hear too often — so here are the five mistakes that destroy pool decks early:</p>
+
+          <ol style="margin-bottom: 16px; padding-left: 20px">
+            <li style="margin-bottom: 8px">
+              <strong>Poor drainage</strong> — water trapped between deck and pool concrete is the #1 killer.
+            </li>
+            <li style="margin-bottom: 8px">
+              <strong>Wrong material for the climate</strong> — not all 'composite' is QLD-rated.
+            </li>
+            <li style="margin-bottom: 8px">
+              <strong>No expansion gaps</strong> — Queensland heat moves timber more than most builders allow for.
+            </li>
+            <li style="margin-bottom: 8px">
+              <strong>Cheap substructure</strong> — galvanised steel saves $3K upfront and costs $30K later.
+            </li>
+            <li style="margin-bottom: 8px">
+              <strong>Compliance retrofits</strong> — building a non-compliant deck and fixing it later is brutal.
+            </li>
+          </ol>
+
+          <p>
+            We get all five of these right, every time. It's not optional. It's why our builds are still beautiful at
+            year 15 — not year 5.
+          </p>
+          <p>Read the full breakdown below 👇</p>
+
+          <div style="margin: 24px 0">
+            <span class="cta-primary">Read the Full Breakdown</span>
+            <span class="cta-secondary">Book a Free Assessment</span>
+          </div>
+
+          <div class="sig-block">
+            <strong>Gerry McGuire</strong> | Director | YBMT Pool Decks<br />
+            1300 448 784 | ybmt.com.au
+          </div>
+
+          <div class="ps-block">
+            <p style="margin: 0">
+              P.S. If you've already got a deck and you're wondering whether it's been built right, we offer free
+              assessments — we'll come out, take a look, and tell you honestly. No pitch. No pressure.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EMAIL 3 -->
+    <div class="page-break"></div>
+    <div class="email-section">
+      <div
+        style="
+          background-color: #1b3a5c;
+          color: #ffffff;
+          padding: 12px 20px;
+          font-weight: bold;
+          letter-spacing: 1px;
+          font-size: 14px;
+        "
+      >
+        EMAIL 3 · DAY 6
+        <span style="float: right; color: #4db6c7">PROOF / CASE STUDY</span>
+      </div>
+
+      <div class="email-meta">
+        <p style="margin-bottom: 8px"><strong>SUBJECT LINE OPTIONS (A/B Test):</strong></p>
+        <p style="margin-bottom: 4px"><span class="subject-pill">A</span> Inside a $98,000 Hamilton pool deck</p>
+        <p style="margin-bottom: 4px">
+          <span class="subject-pill">B</span> What does a luxury pool deck actually look like?
+        </p>
+        <p style="margin-bottom: 16px">
+          <span class="subject-pill">C</span> Case study: A Sunshine Beach transformation
+        </p>
+        <p>
+          <strong>PREHEADER:</strong>
+          <span style="color: #b8743d; font-style: italic">Real project. Real numbers. Real outcome.</span>
+        </p>
+      </div>
+
+      <div class="email-card">
+        <div class="email-card-header">
+          <strong>From:</strong> Gerry McGuire &lt;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3156544343487148535c451f525e5c1f5044">[email&#160;protected]</a>&gt;<br />
+          <strong>To:</strong> [First Name]
+        </div>
+        <div class="email-card-body">
+          <p>Hi [First Name],</p>
+          <p>
+            Last quarter we built a 95m² elevated cantilevered pool deck in Hamilton, Brisbane. Here's what went into
+            it:
+          </p>
+
+          <ul style="list-style-type: square; margin-bottom: 16px; padding-left: 20px">
+            <li><strong>Scope:</strong> 95m² elevated deck with cantilevered overhang</li>
+            <li><strong>Material:</strong> Premium composite (charcoal) + travertine coping</li>
+            <li><strong>Engineering:</strong> Full structural design + BCC compliance</li>
+            <li><strong>Timeline:</strong> 6 weeks, on schedule</li>
+            <li><strong>Investment:</strong> $98,000</li>
+          </ul>
+
+          <p>
+            The owner's words after handover:
+            <em
+              >'The detail is something else. You can tell when something has been built by people who actually
+              care.'</em
+            >
+          </p>
+          <p>
+            Here's the thing — every deck we build follows the same standard, regardless of budget. Whether you're
+            investing $40K or $140K, the engineering principles are identical. The materials and finishes scale. The
+            craft doesn't.
+          </p>
+          <p>That's the YBMT difference.</p>
+
+          <div style="margin: 24px 0">
+            <span class="cta-primary">See More Projects</span>
+            <span class="cta-secondary">Start Your Design</span>
+          </div>
+
+          <div class="sig-block">
+            <strong>Gerry McGuire</strong> | Director | YBMT Pool Decks<br />
+            1300 448 784 | ybmt.com.au
+          </div>
+
+          <div class="ps-block">
+            <p style="margin: 0">
+              P.S. Quick note on timing — we're currently booking consultations 2-3 weeks out for Brisbane and Gold
+              Coast, slightly longer for Sunshine Coast. If you're thinking late 2026 or early 2027, now is a good time
+              to start the conversation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EMAIL 4 -->
+    <div class="page-break"></div>
+    <div class="email-section">
+      <div
+        style="
+          background-color: #1b3a5c;
+          color: #ffffff;
+          padding: 12px 20px;
+          font-weight: bold;
+          letter-spacing: 1px;
+          font-size: 14px;
+        "
+      >
+        EMAIL 4 · DAY 10
+        <span style="float: right; color: #4db6c7">OBJECTION HANDLING</span>
+      </div>
+
+      <div class="email-meta">
+        <p style="margin-bottom: 8px"><strong>SUBJECT LINE OPTIONS (A/B Test):</strong></p>
+        <p style="margin-bottom: 4px">
+          <span class="subject-pill">A</span> I'm not ready yet — should I still call you?
+        </p>
+        <p style="margin-bottom: 4px">
+          <span class="subject-pill">B</span> The biggest myth about hiring a pool deck builder
+        </p>
+        <p style="margin-bottom: 16px"><span class="subject-pill">C</span> When IS the right time to start planning?</p>
+        <p>
+          <strong>PREHEADER:</strong>
+          <span style="color: #b8743d; font-style: italic">The honest answer about consultation timing.</span>
+        </p>
+      </div>
+
+      <div class="email-card">
+        <div class="email-card-header">
+          <strong>From:</strong> Gerry McGuire &lt;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="17707265656e576e757a633974787a397662">[email&#160;protected]</a>&gt;<br />
+          <strong>To:</strong> [First Name]
+        </div>
+        <div class="email-card-body">
+          <p>Hi [First Name],</p>
+          <p>
+            Lots of people who download our Guide don't book a consultation right away. That's completely normal — and
+            actually smart. But there's one thing I want to clear up, because it costs people money.
+          </p>
+          <p>
+            Most homeowners think they need to be 'ready' before talking to a builder — budget locked, design decided,
+            timeline set.
+          </p>
+          <p>
+            <strong>The truth is the opposite.</strong> Talking to us EARLY usually saves money and prevents mistakes.
+          </p>
+          <p>
+            Our free consultation is genuinely no-obligation. We come, we look, we talk, we leave. Many of our
+            consultations don't turn into projects for 6-12 months — and that's completely fine. We'd rather be there
+            for the planning than show up after expensive mistakes have been made.
+          </p>
+          <p>Three reasons to talk to us early:</p>
+
+          <ol style="margin-bottom: 16px; padding-left: 20px">
+            <li style="margin-bottom: 8px">
+              Honest material &amp; budget guidance before you've spec'd the wrong product.
+            </li>
+            <li style="margin-bottom: 8px">
+              A compliance pre-check before you've spent money on plans that won't pass.
+            </li>
+            <li style="margin-bottom: 8px">
+              A realistic timeline for your area and season (we know what councils approve fastest).
+            </li>
+          </ol>
+
+          <p>So if you're sitting on this thinking 'I'm not ready' — that's the perfect time to call.</p>
+
+          <div style="margin: 24px 0">
+            <span class="cta-primary">Book a No-Obligation Chat</span>
+            <span class="cta-secondary">Reply With a Question</span>
+          </div>
+
+          <div class="sig-block">
+            <strong>Gerry McGuire</strong> | Director | YBMT Pool Decks<br />
+            1300 448 784 | ybmt.com.au
+          </div>
+
+          <div class="ps-block">
+            <p style="margin: 0">
+              P.S. Even if you're 12 months out, I'd rather you call us today than waste $20K on the wrong build later.
+              — Gerry
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EMAIL 5 -->
+    <div class="page-break"></div>
+    <div class="email-section">
+      <div
+        style="
+          background-color: #1b3a5c;
+          color: #ffffff;
+          padding: 12px 20px;
+          font-weight: bold;
+          letter-spacing: 1px;
+          font-size: 14px;
+        "
+      >
+        EMAIL 5 · DAY 14
+        <span style="float: right; color: #4db6c7">DIRECT INVITATION</span>
+      </div>
+
+      <div class="email-meta">
+        <p style="margin-bottom: 8px"><strong>SUBJECT LINE OPTIONS (A/B Test):</strong></p>
+        <p style="margin-bottom: 4px"><span class="subject-pill">A</span> Quick question, [First Name]</p>
+        <p style="margin-bottom: 4px"><span class="subject-pill">B</span> Is now a good time?</p>
+        <p style="margin-bottom: 16px"><span class="subject-pill">C</span> Worth a quick chat?</p>
+        <p>
+          <strong>PREHEADER:</strong> <span style="color: #b8743d; font-style: italic">5 minutes, no obligation.</span>
+        </p>
+      </div>
+
+      <div class="email-card">
+        <div class="email-card-header">
+          <strong>From:</strong> Gerry McGuire &lt;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2c4b495e5e556c554e4158024f4341024d59">[email&#160;protected]</a>&gt;<br />
+          <strong>To:</strong> [First Name]
+        </div>
+        <div class="email-card-body">
+          <p>Hi [First Name],</p>
+          <p>I'll keep this short.</p>
+          <p>
+            You downloaded our Buyer's Guide a couple of weeks ago, and we haven't heard back. There are usually three
+            reasons:
+          </p>
+
+          <ol style="margin-bottom: 16px; padding-left: 20px">
+            <li style="margin-bottom: 8px">
+              <strong>You've decided not to proceed.</strong> Totally fine — no offence taken. Just hit reply with 'not
+              now' and we'll stop emailing.
+            </li>
+            <li style="margin-bottom: 8px">
+              <strong>You're still planning.</strong> We'd love to be a resource. Even a 15-minute phone call could save
+              you weeks of research.
+            </li>
+            <li style="margin-bottom: 8px">
+              <strong>You're ready to talk.</strong> We have consultation slots opening next week — happy to lock one
+              in.
+            </li>
+          </ol>
+
+          <p>Reply to this email or call 1300 448 784 — happy to help either way.</p>
+          <p>Either way, thank you for considering us. We genuinely appreciate it.</p>
+
+          <div style="margin: 24px 0">
+            <span class="cta-primary">Book a 15-Minute Call</span>
+            <span class="cta-secondary">Reply 'Not Now'</span>
+          </div>
+
+          <div class="sig-block">
+            <strong>Gerry McGuire</strong> | Director | YBMT Pool Decks<br />
+            1300 448 784 | ybmt.com.au
+          </div>
+
+          <div class="ps-block">
+            <p style="margin: 0">
+              P.S. If now isn't the right time, just reply with the month or year you think you'll be ready, and I'll
+              set a reminder to check in then. No pressure, no follow-ups in between.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AUTOMATION SETUP GUIDE -->
+    <div class="page-break"></div>
+    <div style="margin-bottom: 60px">
+      <h3 class="display-heading" style="font-size: 24px; margin-bottom: 24px">§ III. Automation Setup Guide</h3>
+
+      <div class="automation-section">
+        <h4>A. Recommended ESPs (Email Service Providers)</h4>
+        <table class="intro-table" style="margin-top: 0">
+          <tr>
+            <td><strong>Mailchimp</strong><br />Excellent starting point, free up to 500 contacts.</td>
+            <td><strong>ConvertKit</strong><br />Creator-friendly, outstanding text-based email deliverability.</td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <strong>ActiveCampaign</strong><br />Most powerful automation branching for scaling agencies.
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="automation-section">
+        <h4>B. Trigger Configuration</h4>
+        <p>
+          Ensure the nurture sequence triggers immediately upon either of the following events.
+          <em>Note: Both should add the lead to the exact same sequence to avoid duplication.</em>
+        </p>
+        <ul style="padding-left: 20px">
+          <li><strong>Trigger 1:</strong> Form Submit (Buyer's Guide PDF download)</li>
+          <li><strong>Trigger 2:</strong> Form Submit (Free quote request form)</li>
+        </ul>
+      </div>
+
+      <div class="automation-section">
+        <h4>C. Personalization Tokens</h4>
+        <table class="token-table">
+          <tr>
+            <th>Token Name</th>
+            <th>Usage / Fallback</th>
+          </tr>
+          <tr>
+            <td><span class="code-block">[First Name]</span></td>
+            <td>Required in all emails. Fallback: "there" (e.g., "Hi there,")</td>
+          </tr>
+          <tr>
+            <td><span class="code-block">[Region]</span></td>
+            <td>Capture if possible: Brisbane / Gold Coast / Sunshine Coast</td>
+          </tr>
+          <tr>
+            <td><span class="code-block">[Lead Source]</span></td>
+            <td>PDF Guide or Quote Form</td>
+          </tr>
+          <tr>
+            <td><span class="code-block">[Timeline]</span></td>
+            <td>Capture timeframe (Now, 3-6mo, 12mo+)</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="automation-section">
+        <h4>D. Tags to Apply</h4>
+        <p>List the tags every lead should receive upon entering the sequence:</p>
+        <ul style="padding-left: 20px">
+          <li>
+            <span class="code-block">Lead-Source-PDF</span> or <span class="code-block">Lead-Source-Quote-Form</span>
+          </li>
+          <li>
+            <span class="code-block">Region-Brisbane</span> / <span class="code-block">Region-Gold-Coast</span> /
+            <span class="code-block">Region-Sunshine-Coast</span>
+          </li>
+          <li>
+            <span class="code-block">Timeline-Now</span> / <span class="code-block">Timeline-3-6mo</span> /
+            <span class="code-block">Timeline-6-12mo</span>
+          </li>
+          <li><span class="code-block">Nurture-Active</span></li>
+        </ul>
+      </div>
+
+      <div class="automation-section">
+        <h4>E. Branching Logic</h4>
+        <div style="background-color: #fafafa; border-left: 4px solid #4db6c7; padding: 16px; margin-bottom: 16px">
+          <strong>Goal Achieved:</strong> If lead books consultation at any point &rarr; Remove from nurture sequence
+          immediately + Add to <span class="code-block">Consultation-Booked</span> tag.
+        </div>
+        <div style="background-color: #fafafa; border-left: 4px solid #b8743d; padding: 16px">
+          <strong>Gentle Decline:</strong> If lead replies "not now" &rarr; Pause sequence + Add to
+          <span class="code-block">Long-Term-Nurture</span> tag (schedule 90-day check-in).
+        </div>
+      </div>
+
+      <div class="automation-section" style="border-left: 4px solid #1b3a5c">
+        <h4>F. Reply Handling Protocol</h4>
+        <p style="margin: 0">
+          <strong>CRITICAL:</strong> All replies must route to a real human within 2 business hours during operating
+          times. Set up the reply-to field as a monitored inbox (e.g., <em><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8eebe0fffbe7fce7ebfdcef7ece3faa0ede1e3a0effb">[email&#160;protected]</a></em>).
+          <strong>Do not use a no-reply address.</strong>
+        </p>
+      </div>
+
+      <div class="automation-section">
+        <h4>G. Tracking Metrics</h4>
+        <ul style="padding-left: 20px; margin: 0">
+          <li><strong>Open Rates:</strong> Target 35%+</li>
+          <li><strong>Click-Through Rates (CTR):</strong> Target 5%+</li>
+          <li><strong>Consultation Bookings:</strong> Target 8-15 booked per 100 leads</li>
+        </ul>
+      </div>
+
+      <div class="automation-section">
+        <h4>H. Spam Avoidance Tips</h4>
+        <ul style="padding-left: 20px; margin: 0">
+          <li style="margin-bottom: 8px">Avoid ALL CAPS subject lines.</li>
+          <li style="margin-bottom: 8px">Avoid spammy words ('FREE', 'GUARANTEED', '$$$') repeated excessively.</li>
+          <li style="margin-bottom: 8px">Always include a physical business address in the email footer.</li>
+          <li style="margin-bottom: 8px">
+            Use a real sender name (e.g., "Gerry at YBMT") rather than generic aliases.
+          </li>
+          <li style="margin-bottom: 8px">
+            Maintain a healthy text-to-image ratio (don't rely entirely on image-heavy emails).
+          </li>
+          <li>Authenticate your domain fully with SPF, DKIM, and DMARC records.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <hr class="aqua-line" />
+    <div style="text-align: center; margin-top: 40px; color: #666; font-size: 13px">
+      <img
+        src="https://www.genspark.ai/api/files/s/nvT30S4F"
+        alt="YBMT Pool Decks Logo"
+        style="width: 100px; margin-bottom: 16px"
+      />
+      <p style="margin-bottom: 4px">Brisbane • Gold Coast • Sunshine Coast</p>
+      <p>Copyright &copy; 2026 YBMT Pool Decks. All rights reserved.</p>
+    </div>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>

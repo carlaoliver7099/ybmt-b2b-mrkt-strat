@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The 2026 SEQ Pool Deck Buyer's Guide</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,300;1,9..144,400;1,9..144,600&family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --navy: #1b3a5c;
+        --timber: #b8743d;
+        --aqua: #4db6c7;
+        --bg: #f5f1ea;
+        --text: #2b2b2b;
+      }
+      @page {
+        size: A4;
+        margin: 0;
+      }
+      body {
+        background-color: #e0e0e0;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        font-family: 'Inter', sans-serif;
+        color: var(--text);
+      }
+      .page {
+        width: 210mm;
+        height: 297mm;
+        background-color: var(--bg);
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        page-break-after: always;
+        padding: 18mm;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      }
+      @media print {
+        body {
+          background: white;
+          padding: 0;
+          gap: 0;
+        }
+        .page {
+          box-shadow: none;
+          margin: 0;
+        }
+      }
+      .page-cover {
+        padding: 0;
+        background-image:
+          linear-gradient(rgba(27, 58, 92, 0.55), rgba(27, 58, 92, 0.85)),
+          url('https://www.genspark.ai/api/files/s/m5CipECC?cache_control=3600');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      h1,
+      h2,
+      h3,
+      .serif-italic {
+        font-family: 'Fraunces', serif;
+        font-style: italic;
+        font-weight: 400;
+        margin: 0;
+      }
+      .eyebrow {
+        color: var(--aqua);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 10pt;
+        font-weight: 600;
+        margin-bottom: 10px;
+        display: block;
+      }
+      .header-logo {
+        position: absolute;
+        top: 18mm;
+        left: 18mm;
+        height: 24px;
+      }
+      .page-num {
+        position: absolute;
+        bottom: 18mm;
+        right: 18mm;
+        color: var(--navy);
+        font-weight: 600;
+      }
+      .footer-text {
+        position: absolute;
+        bottom: 18mm;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 9pt;
+        color: var(--text);
+        opacity: 0.7;
+      }
+      .content-area {
+        margin-top: 40px;
+      }
+      .two-col {
+        display: flex;
+        gap: 30px;
+        margin-top: 30px;
+      }
+      .col {
+        flex: 1;
+        font-size: 11pt;
+        line-height: 1.6;
+      }
+      .toc-list {
+        list-style: none;
+        padding: 0;
+        margin-top: 40px;
+      }
+      .toc-item {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 20px;
+        font-size: 12pt;
+      }
+      .toc-num {
+        font-family: 'Fraunces', serif;
+        font-style: italic;
+        color: var(--timber);
+        font-size: 18pt;
+        margin-right: 15px;
+      }
+      .toc-title {
+        color: var(--navy);
+        font-weight: 600;
+      }
+      .toc-dots {
+        flex-grow: 1;
+        border-bottom: 2px dotted #ccc;
+        margin: 0 10px;
+      }
+      .banner-img {
+        width: calc(100% + 36mm);
+        margin-left: -18mm;
+        margin-top: -18mm;
+        height: 120mm;
+        object-fit: cover;
+        display: block;
+      }
+      .banner-narrow {
+        height: 60mm;
+      }
+      .chapter-num-overlay {
+        position: absolute;
+        top: 20mm;
+        right: 20mm;
+        font-family: 'Fraunces', serif;
+        font-style: italic;
+        color: var(--timber);
+        font-size: 80pt;
+        line-height: 1;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+      .material-card {
+        background: white;
+        border-top: 4px solid var(--navy);
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      .material-card h3 {
+        color: var(--navy);
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14pt;
+        margin-bottom: 15px;
+      }
+      ul.custom-list {
+        list-style: none;
+        padding: 0;
+      }
+      ul.custom-list li {
+        margin-bottom: 15px;
+        padding-left: 30px;
+        position: relative;
+        font-size: 11pt;
+        line-height: 1.5;
+      }
+      ul.custom-list li::before {
+        content: '✓';
+        color: var(--aqua);
+        position: absolute;
+        left: 0;
+        font-weight: bold;
+      }
+      .pull-quote {
+        background-color: var(--aqua);
+        color: white;
+        padding: 30px;
+        margin-top: 30px;
+        font-family: 'Fraunces', serif;
+        font-style: italic;
+        font-size: 16pt;
+        line-height: 1.4;
+        text-align: center;
+      }
+      .accent-line {
+        width: 50px;
+        height: 2px;
+        background-color: var(--aqua);
+        margin: 20px 0;
+      }
+      .cta-block {
+        background-color: var(--navy);
+        color: white;
+        padding: 40px;
+        text-align: center;
+        margin-top: 40px;
+      }
+      .btn {
+        display: inline-block;
+        background-color: var(--aqua);
+        color: white;
+        padding: 15px 30px;
+        text-decoration: none;
+        font-weight: 600;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- PAGE 1: COVER -->
+    <div class="page page-cover">
+      <div style="padding: 18mm">
+        <div
+          style="
+            background: var(--aqua);
+            color: white;
+            padding: 5px 15px;
+            display: inline-block;
+            font-size: 10pt;
+            font-weight: 600;
+            border-radius: 20px;
+          "
+        >
+          2026 EDITION
+        </div>
+      </div>
+      <div style="padding: 18mm; text-align: left">
+        <h1 style="font-size: 64pt; line-height: 1.1; margin-bottom: 20px">
+          The 2026 SEQ<br />Pool Deck<br />Buyer's Guide
+        </h1>
+        <div style="font-weight: 300; font-size: 16pt; margin-bottom: 20px">
+          Materials, Costs, Compliance & Common Mistakes
+        </div>
+        <div style="width: 60px; height: 2px; background: var(--timber); margin-bottom: 20px"></div>
+        <div style="font-weight: 300; font-size: 12pt; max-width: 80%">
+          Everything Brisbane, Gold Coast & Sunshine Coast homeowners need to know before building their pool deck.
+        </div>
+      </div>
+      <div style="padding: 18mm; display: flex; justify-content: space-between; align-items: flex-end">
+        <img
+          src="https://www.genspark.ai/api/files/s/nvT30S4F"
+          alt="YBMT Logo"
+          style="height: 80px; filter: brightness(0) invert(1)"
+        />
+        <div style="font-size: 10pt; font-weight: 300">ybmt.com.au &nbsp;|&nbsp; 1300 448 784</div>
+      </div>
+    </div>
+
+    <!-- PAGE 2: WELCOME -->
+    <div class="page">
+      <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="Logo" class="header-logo" />
+      <div class="content-area">
+        <span class="eyebrow">WELCOME</span>
+        <h2 style="font-size: 32pt; color: var(--navy)">A note from YBMT Pool Decks.</h2>
+        <div class="accent-line"></div>
+        <div class="two-col">
+          <div class="col">
+            <p>
+              Building a pool deck isn't like building a standard patio. The environment is harsh—chlorine, salt water,
+              constant UV exposure, and heavy foot traffic. Furthermore, the compliance landscape in Queensland is
+              incredibly strict when it comes to pool safety fencing and integration.
+            </p>
+            <p>
+              Over our 50 years of combined experience in the construction industry, we've seen too many pool decks fail
+              prematurely because of cheap materials, inexperienced builders, or ignored compliance regulations. That's
+              why we created this guide.
+            </p>
+          </div>
+          <div class="col">
+            <p>
+              As QBCC-licensed specialists serving Brisbane, the Gold Coast, and the Sunshine Coast, our mission is to
+              help you make informed decisions. We want to ensure your investment adds value to your property and
+              provides a safe, resort-quality lifestyle for your family.
+            </p>
+            <p>
+              Read through this guide before you sign any quotes. It could save you tens of thousands of dollars in
+              retrofit costs and maintenance headaches.
+            </p>
+            <div style="margin-top: 40px">
+              <div style="width: 40px; height: 1px; background: var(--timber); margin-bottom: 10px"></div>
+              <div class="serif-italic" style="color: var(--navy); font-size: 16pt">Gerry McGuire</div>
+              <div
+                style="
+                  font-size: 9pt;
+                  color: var(--timber);
+                  font-weight: 600;
+                  text-transform: uppercase;
+                  margin-top: 5px;
+                "
+              >
+                CEO, YBMT Pool Decks
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-text">The 2026 SEQ Pool Deck Buyer's Guide</div>
+      <div class="page-num">02</div>
+    </div>
+
+    <!-- PAGE 3: TOC -->
+    <div class="page">
+      <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="Logo" class="header-logo" />
+      <div class="content-area">
+        <span class="eyebrow">CONTENTS</span>
+        <h2 style="font-size: 32pt; color: var(--navy)">What's inside.</h2>
+        <div class="accent-line"></div>
+
+        <ul class="toc-list">
+          <li class="toc-item">
+            <span class="toc-num">01</span><span class="toc-title">Why Your Pool Needs a Proper Deck</span>
+            <div class="toc-dots"></div>
+            04
+          </li>
+          <li class="toc-item">
+            <span class="toc-num">02</span
+            ><span class="toc-title">Materials Decoded — Composite vs Hardwood vs Travertine</span>
+            <div class="toc-dots"></div>
+            05
+          </li>
+          <li class="toc-item">
+            <span class="toc-num">03</span><span class="toc-title">Real Cost Ranges for SEQ in 2026</span>
+            <div class="toc-dots"></div>
+            07
+          </li>
+          <li class="toc-item">
+            <span class="toc-num">04</span><span class="toc-title">QLD Pool Safety Compliance Simplified</span>
+            <div class="toc-dots"></div>
+            09
+          </li>
+          <li class="toc-item">
+            <span class="toc-num">05</span><span class="toc-title">The 5 Most Common Pool Deck Mistakes</span>
+            <div class="toc-dots"></div>
+            11
+          </li>
+          <li class="toc-item">
+            <span class="toc-num">06</span><span class="toc-title">What to Look For in a Pool Deck Builder</span>
+            <div class="toc-dots"></div>
+            12
+          </li>
+          <li class="toc-item">
+            <span class="toc-num">07</span><span class="toc-title">Our 5-Step Build Process</span>
+            <div class="toc-dots"></div>
+            13
+          </li>
+          <li class="toc-item">
+            <span class="toc-num">08</span><span class="toc-title">Free Quote Checklist & Next Steps</span>
+            <div class="toc-dots"></div>
+            14
+          </li>
+        </ul>
+      </div>
+      <div class="footer-text">The 2026 SEQ Pool Deck Buyer's Guide</div>
+      <div class="page-num">03</div>
+    </div>
+
+    <!-- PAGE 4: CHAPTER 1 -->
+    <div class="page">
+      <img src="https://www.genspark.ai/api/files/s/K7WzSINy?cache_control=3600" class="banner-img" />
+      <div class="chapter-num-overlay">01</div>
+      <div class="content-area" style="margin-top: 20px">
+        <span class="eyebrow">CHAPTER 01</span>
+        <h2 style="font-size: 28pt; color: var(--navy)">Why your pool needs a proper deck.</h2>
+        <p style="font-size: 11pt; line-height: 1.6">
+          A pool without a quality deck is an unfinished space. Here are the five things a properly built pool deck
+          delivers:
+        </p>
+
+        <ul class="custom-list">
+          <li>
+            <strong>SAFETY</strong> — slip-rated surfaces around water reduce risk of serious injury, especially with
+            children and aging family members.
+          </li>
+          <li>
+            <strong>COMPLIANCE</strong> — a properly engineered deck integrates seamlessly with QLD pool fencing
+            requirements (more on this in Chapter 4).
+          </li>
+          <li>
+            <strong>LIFESTYLE</strong> — transforms an ordinary backyard into a resort-quality entertaining space you'll
+            actually use.
+          </li>
+          <li>
+            <strong>PROPERTY VALUE</strong> — pool decks add measurable resale value, especially in premium SEQ markets
+            like Noosa, Mermaid Beach and Bulimba.
+          </li>
+          <li>
+            <strong>LONGEVITY</strong> — protects the pool surround from weather, foot traffic and chemical splash,
+            extending the life of your pool investment.
+          </li>
+        </ul>
+
+        <div class="pull-quote">
+          "Australia builds more pools per capita than any country in the world — and Brisbane leads the nation with 19%
+          of households owning a pool."<br />
+          <span style="font-size: 10pt; font-family: 'Inter', sans-serif; font-style: normal"
+            >— Roy Morgan Research</span
+          >
+        </div>
+      </div>
+      <div class="footer-text">The 2026 SEQ Pool Deck Buyer's Guide</div>
+      <div class="page-num">04</div>
+    </div>
+
+    <!-- PAGE 5: CHAPTER 2 -->
+    <div class="page">
+      <img src="https://www.genspark.ai/api/files/s/9r3MlDWL?cache_control=3600" class="banner-img banner-narrow" />
+      <div class="chapter-num-overlay" style="top: 10mm">02</div>
+      <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="Logo" class="header-logo" style="top: 10mm" />
+
+      <div class="content-area" style="margin-top: 20px">
+        <span class="eyebrow">CHAPTER 02</span>
+        <h2 style="font-size: 28pt; color: var(--navy)">Materials decoded.</h2>
+        <p style="font-size: 11pt">
+          The single biggest decision you'll make is what to build with. Each material has trade-offs. Here's the honest
+          breakdown.
+        </p>
+
+        <div class="material-card">
+          <h3>COMPOSITE DECKING (Trex, Ezy Decking, NewTechWood)</h3>
+          <ul style="font-size: 10pt; line-height: 1.5; padding-left: 20px">
+            <li><strong>Price:</strong> $350–$420/m² installed in SEQ</li>
+            <li><strong>Lifespan:</strong> 25–30+ years</li>
+            <li><strong>Maintenance:</strong> Minimal — occasional wash</li>
+            <li><strong>Slip rating:</strong> Excellent (textured surface)</li>
+            <li>
+              <strong>Pros:</strong> Won't warp/splinter, chlorine-resistant, 20-yr warranty common, modern aesthetic
+            </li>
+            <li><strong>Cons:</strong> Higher upfront cost, can heat up in direct QLD sun (choose lighter tones)</li>
+            <li><strong>Best for:</strong> Busy families wanting low maintenance, modern coastal homes</li>
+          </ul>
+        </div>
+
+        <div class="material-card">
+          <h3>SPOTTED GUM HARDWOOD</h3>
+          <ul style="font-size: 10pt; line-height: 1.5; padding-left: 20px">
+            <li><strong>Price:</strong> $320–$380/m² installed</li>
+            <li><strong>Lifespan:</strong> 25+ years with maintenance</li>
+            <li><strong>Maintenance:</strong> Annual oiling required</li>
+            <li><strong>Slip rating:</strong> Good when properly textured</li>
+            <li><strong>Pros:</strong> Premium Australian aesthetic, beautiful grain, ages gracefully, sustainable</li>
+            <li><strong>Cons:</strong> Requires upkeep, can splinter if neglected</li>
+            <li><strong>Best for:</strong> Premium architectural homes, Hamptons/coastal styles</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-text">The 2026 SEQ Pool Deck Buyer's Guide</div>
+      <div class="page-num">05</div>
+    </div>
+
+    <!-- PAGE 6: CHAPTER 2 CONT -->
+    <div class="page">
+      <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="Logo" class="header-logo" />
+      <div class="content-area">
+        <h2 style="font-size: 24pt; color: var(--navy); margin-bottom: 20px">Materials decoded — continued.</h2>
+
+        <div class="material-card">
+          <h3>MERBAU HARDWOOD</h3>
+          <ul style="font-size: 10pt; line-height: 1.5; padding-left: 20px">
+            <li><strong>Price:</strong> $240–$310/m² installed</li>
+            <li><strong>Lifespan:</strong> 20+ years with maintenance</li>
+            <li><strong>Maintenance:</strong> Annual oiling required</li>
+            <li><strong>Slip rating:</strong> Good</li>
+            <li><strong>Pros:</strong> Warm rich tone, cost-effective hardwood option, classic look</li>
+            <li>
+              <strong>Cons:</strong> Tannin bleeding initially, sourcing concerns (always choose certified sustainable)
+            </li>
+            <li><strong>Best for:</strong> Budget-conscious homeowners wanting a premium look</li>
+          </ul>
+        </div>
+
+        <div class="material-card">
+          <h3>TRAVERTINE PAVERS</h3>
+          <ul style="font-size: 10pt; line-height: 1.5; padding-left: 20px">
+            <li><strong>Price:</strong> $400–$500+/m² installed</li>
+            <li><strong>Lifespan:</strong> 50+ years</li>
+            <li><strong>Maintenance:</strong> Sealing every few years</li>
+            <li><strong>Slip rating:</strong> Excellent (naturally porous, cool underfoot)</li>
+            <li><strong>Pros:</strong> Luxury aesthetic, stays cool, doesn't fade, premium feel</li>
+            <li><strong>Cons:</strong> Higher cost, requires proper sub-base, can stain if unsealed</li>
+            <li><strong>Best for:</strong> High-end luxury homes, Mediterranean/resort styles</li>
+          </ul>
+        </div>
+
+        <div style="background: var(--timber); color: white; padding: 20px; margin-top: 30px; border-radius: 4px">
+          <strong>YBMT TIP:</strong> Mixed materials are the 2026 trend — pair composite decking with a travertine pool
+          coping for a five-star resort look.
+        </div>
+      </div>
+      <div class="footer-text">The 2026 SEQ Pool Deck Buyer's Guide</div>
+      <div class="page-num">06</div>
+    </div>
+
+    <!-- PAGE 7: CHAPTER 3 -->
+    <div class="page">
+      <img src="https://www.genspark.ai/api/files/s/wiLXXtA1?cache_control=3600" class="banner-img banner-narrow" />
+      <div class="chapter-num-overlay" style="top: 10mm">03</div>
+      <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="Logo" class="header-logo" style="top: 10mm" />
+
+      <div class="content-area" style="margin-top: 20px">
+        <span class="eyebrow">CHAPTER 03</span>
+        <h2 style="font-size: 28pt; color: var(--navy)">Real cost ranges for SEQ in 2026.</h2>
+        <p style="font-size: 11pt; line-height: 1.6">
+          Pricing transparency builds trust. Here's what pool decks actually cost in Brisbane, Gold Coast and Sunshine
+          Coast right now — based on real projects we've quoted in 2026.
+        </p>
+
+        <div style="margin-top: 25px">
+          <div style="border-left: 4px solid var(--aqua); background: white; padding: 18px 20px; margin-bottom: 12px">
+            <div style="display: flex; justify-content: space-between; align-items: baseline">
+              <div>
+                <span class="serif-italic" style="color: var(--timber); font-size: 16pt">Small</span>
+                <span style="color: var(--navy); font-weight: 600; margin-left: 12px">15–25 m²</span>
+              </div>
+              <div style="color: var(--navy); font-weight: 600; font-size: 13pt">$5,000 – $15,000</div>
+            </div>
+            <div style="font-size: 10pt; color: var(--text); opacity: 0.8; margin-top: 4px">
+              Small pool perimeter walkway
+            </div>
+          </div>
+
+          <div style="border-left: 4px solid var(--aqua); background: white; padding: 18px 20px; margin-bottom: 12px">
+            <div style="display: flex; justify-content: space-between; align-items: baseline">
+              <div>
+                <span class="serif-italic" style="color: var(--timber); font-size: 16pt">Medium</span>
+                <span style="color: var(--navy); font-weight: 600; margin-left: 12px">30–50 m²</span>
+              </div>
+              <div style="color: var(--navy); font-weight: 600; font-size: 13pt">$12,000 – $35,000</div>
+            </div>
+            <div style="font-size: 10pt; color: var(--text); opacity: 0.8; margin-top: 4px">
+              Standard pool surround with seating area
+            </div>
+          </div>
+
+          <div style="border-left: 4px solid var(--aqua); background: white; padding: 18px 20px; margin-bottom: 12px">
+            <div style="display: flex; justify-content: space-between; align-items: baseline">
+              <div>
+                <span class="serif-italic" style="color: var(--timber); font-size: 16pt">Large</span>
+                <span style="color: var(--navy); font-weight: 600; margin-left: 12px">60–100 m²</span>
+              </div>
+              <div style="color: var(--navy); font-weight: 600; font-size: 13pt">$25,000 – $60,000</div>
+            </div>
+            <div style="font-size: 10pt; color: var(--text); opacity: 0.8; margin-top: 4px">
+              Wraparound deck with entertaining zones
+            </div>
+          </div>
+
+          <div style="border-left: 4px solid var(--timber); background: white; padding: 18px 20px; margin-bottom: 12px">
+            <div style="display: flex; justify-content: space-between; align-items: baseline">
+              <div>
+                <span class="serif-italic" style="color: var(--timber); font-size: 16pt">Premium</span>
+                <span style="color: var(--navy); font-weight: 600; margin-left: 12px">100 m²+</span>
+              </div>
+              <div style="color: var(--navy); font-weight: 600; font-size: 13pt">$50,000 – $120,000+</div>
+            </div>
+            <div style="font-size: 10pt; color: var(--text); opacity: 0.8; margin-top: 4px">
+              Multi-level, premium materials, integrated features
+            </div>
+          </div>
+        </div>
+
+        <p style="font-size: 9pt; color: var(--text); opacity: 0.7; margin-top: 20px; font-style: italic">
+          Prices reflect SEQ market rates as of 2026. Site conditions and material selection can shift these ranges.
+        </p>
+      </div>
+      <div class="footer-text">The 2026 SEQ Pool Deck Buyer's Guide</div>
+      <div class="page-num">07</div>
+    </div>
+
+    <!-- PAGE 8: CHAPTER 3 CONTINUED -->
+    <div class="page">
+      <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="Logo" class="header-logo" />
+      <div class="content-area">
+        <h2 style="font-size: 24pt; color: var(--navy); margin-bottom: 20px">What drives the cost.</h2>
+        <div class="accent-line"></div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px 30px; margin-top: 25px">
+          <div style="display: flex; gap: 12px">
+            <div
+              style="
+                background: var(--timber);
+                color: white;
+                width: 26px;
+                height: 26px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 11pt;
+                font-weight: 600;
+                flex-shrink: 0;
+              "
+            >
+              1
+            </div>
+            <div style="font-size: 10pt; line-height: 1.5">
+              <strong style="color: var(--navy)">MATERIAL CHOICE</strong><br />The biggest single factor (see Chapter 2).
+            </div>
+          </div>
+          <div style="display: flex; gap: 12px">
+            <div
+              style="
+                background: var(--timber);
+                color: white;
+                width: 26px;
+                height: 26px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 11pt;
+                font-weight: 600;
+                flex-shrink: 0;
+              "
+            >
+              2
+            </div>
+            <div style="font-size: 10pt; line-height: 1.5">
+              <strong style="color: var(--navy)">SITE ACCESS</strong><br />Steep sites, narrow lanes, hill positions add
+              labour cost.
+            </div>
+          </div>
+          <div style="display: flex; gap: 12px">
+            <div
+              style="
+                background: var(--timber);
+                color: white;
+                width: 26px;
+                height: 26px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 11pt;
+                font-weight: 600;
+                flex-shrink: 0;
+              "
+            >
+              3
+            </div>
+            <div style="font-size: 10pt; line-height: 1.5">
+              <strong style="color: var(--navy)">SUB-FRAME REQUIREMENTS</strong><br />Concrete vs steel vs treated timber
+              substructure.
+            </div>
+          </div>
+          <div style="display: flex; gap: 12px">
+            <div
+              style="
+                background: var(--timber);
+                color: white;
+                width: 26px;
+                height: 26px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 11pt;
+                font-weight: 600;
+                flex-shrink: 0;
+              "
+            >
+              4
+            </div>
+            <div style="font-size: 10pt; line-height: 1.5">
+              <strong style="color: var(--navy)">ELEVATION ABOVE GROUND</strong><br />Raised decks need engineered
+              footings and bracing.
+            </div>
+          </div>
+          <div style="display: flex; gap: 12px">
+            <div
+              style="
+                background: var(--timber);
+                color: white;
+                width: 26px;
+                height: 26px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 11pt;
+                font-weight: 600;
+                flex-shrink: 0;
+              "
+            >
+              5
+            </div>
+            <div style="font-size: 10pt; line-height: 1.5">
+              <strong style="color: var(--navy)">DRAINAGE COMPLEXITY</strong><br />Poolside grading and water
+              management.
+            </div>
+          </div>
+          <div style="display: flex; gap: 12px">
+            <div
+              style="
+                background: var(--timber);
+                color: white;
+                width: 26px;
+                height: 26px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 11pt;
+                font-weight: 600;
+                flex-shrink: 0;
+              "
+            >
+              6
+            </div>
+            <div style="font-size: 10pt; line-height: 1.5">
+              <strong style="color: var(--navy)">POOL FENCING INTEGRATION</strong><br />Especially deck-as-fence designs
+              (highly specialized).
+            </div>
+          </div>
+          <div style="display: flex; gap: 12px">
+            <div
+              style="
+                background: var(--timber);
+                color: white;
+                width: 26px;
+                height: 26px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 11pt;
+                font-weight: 600;
+                flex-shrink: 0;
+              "
+            >
+              7
+            </div>
+            <div style="font-size: 10pt; line-height: 1.5">
+              <strong style="color: var(--navy)">FEATURES</strong><br />Built-in seating, planters, fire features, deck
+              lighting.
+            </div>
+          </div>
+          <div style="display: flex; gap: 12px">
+            <div
+              style="
+                background: var(--timber);
+                color: white;
+                width: 26px;
+                height: 26px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 11pt;
+                font-weight: 600;
+                flex-shrink: 0;
+              "
+            >
+              8
+            </div>
+            <div style="font-size: 10pt; line-height: 1.5">
+              <strong style="color: var(--navy)">APPROVALS & ENGINEERING</strong><br />Variable across BCC, GCCC and
+              Sunshine Coast Council.
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 30px">
+          <div style="color: var(--navy); font-weight: 600; font-size: 11pt; margin-bottom: 12px">
+            Three recent SEQ projects:
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px">
+            <div style="background: white; border-top: 3px solid var(--navy)">
+              <img
+                src="https://www.genspark.ai/api/files/s/I1g4JOGk?cache_control=3600"
+                style="width: 100%; height: 70px; object-fit: cover; display: block"
+              />
+              <div style="padding: 10px">
+                <div style="font-weight: 600; color: var(--navy); font-size: 10pt">Bulimba</div>
+                <div style="font-size: 9pt; color: var(--text); opacity: 0.8">38m² Spotted Gum</div>
+                <div style="font-size: 10pt; color: var(--timber); font-weight: 600; margin-top: 4px">$24,500</div>
+              </div>
+            </div>
+            <div style="background: white; border-top: 3px solid var(--navy)">
+              <img
+                src="https://www.genspark.ai/api/files/s/bCdXUOb8?cache_control=3600"
+                style="width: 100%; height: 70px; object-fit: cover; display: block"
+              />
+              <div style="padding: 10px">
+                <div style="font-weight: 600; color: var(--navy); font-size: 10pt">Mermaid Beach</div>
+                <div style="font-size: 9pt; color: var(--text); opacity: 0.8">62m² Composite</div>
+                <div style="font-size: 10pt; color: var(--timber); font-weight: 600; margin-top: 4px">$41,800</div>
+              </div>
+            </div>
+            <div style="background: white; border-top: 3px solid var(--navy)">
+              <img
+                src="https://www.genspark.ai/api/files/s/m5CipECC?cache_control=3600"
+                style="width: 100%; height: 70px; object-fit: cover; display: block"
+              />
+              <div style="padding: 10px">
+                <div style="font-weight: 600; color: var(--navy); font-size: 10pt">Noosa Heads</div>
+                <div style="font-size: 9pt; color: var(--text); opacity: 0.8">95m² Composite + Travertine</div>
+                <div style="font-size: 10pt; color: var(--timber); font-weight: 600; margin-top: 4px">$78,200</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-text">The 2026 SEQ Pool Deck Buyer's Guide</div>
+      <div class="page-num">08</div>
+    </div>
+
+    <!-- PAGE 9: CHAPTER 4 -->
+    <div class="page">
+      <img src="https://www.genspark.ai/api/files/s/bCdXUOb8?cache_control=3600" class="banner-img banner-narrow" />
+      <div class="chapter-num-overlay" style="top: 10mm; color: white">04</div>
+      <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="Logo" class="header-logo" style="top: 10mm; filter: brightness(0) invert(1)" />
+
+      <div class="content-area" style="margin-top: 20px">
+        <span class="eyebrow">CHAPTER 04</span>
+        <h2 style="font-size: 28pt; color: var(--navy)">QLD pool safety compliance, simplified.</h2>
+        <p style="font-size: 11pt; line-height: 1.6">
+          This chapter alone could save you tens of thousands in retrofit costs. The Queensland Development Code MP 3.4
+          sets strict rules — most homeowners (and many builders) get them wrong.
+        </p>
+
+        <div style="margin-top: 20px">
+          <div style="display: flex; gap: 12px; margin-bottom: 14px; align-items: flex-start">
+            <span style="color: var(--aqua); font-weight: bold; font-size: 14pt; flex-shrink: 0">✓</span>
+            <div style="font-size: 10.5pt; line-height: 1.5">
+              <strong style="color: var(--navy)">FENCE HEIGHT</strong> — minimum 1.2m (1200mm) measured from ground
+              level on the outside of the barrier.
+            </div>
+          </div>
+          <div style="display: flex; gap: 12px; margin-bottom: 14px; align-items: flex-start">
+            <span style="color: var(--aqua); font-weight: bold; font-size: 14pt; flex-shrink: 0">✓</span>
+            <div style="font-size: 10.5pt; line-height: 1.5">
+              <strong style="color: var(--navy)">NON-CLIMBABLE ZONE</strong> — no climbable objects (furniture,
+              planters, deck balustrades) within 900mm of the outside of the fence.
+            </div>
+          </div>
+          <div style="display: flex; gap: 12px; margin-bottom: 14px; align-items: flex-start">
+            <span style="color: var(--aqua); font-weight: bold; font-size: 14pt; flex-shrink: 0">✓</span>
+            <div style="font-size: 10.5pt; line-height: 1.5">
+              <strong style="color: var(--navy)">FENCE GAPS</strong> — no gaps in the barrier greater than 100mm.
+            </div>
+          </div>
+          <div style="display: flex; gap: 12px; margin-bottom: 14px; align-items: flex-start">
+            <span style="color: var(--aqua); font-weight: bold; font-size: 14pt; flex-shrink: 0">✓</span>
+            <div style="font-size: 10.5pt; line-height: 1.5">
+              <strong style="color: var(--navy)">GATES</strong> — self-closing, self-latching only, opening AWAY from
+              the pool.
+            </div>
+          </div>
+          <div style="display: flex; gap: 12px; margin-bottom: 14px; align-items: flex-start">
+            <span style="color: var(--aqua); font-weight: bold; font-size: 14pt; flex-shrink: 0">✓</span>
+            <div style="font-size: 10.5pt; line-height: 1.5">
+              <strong style="color: var(--navy)">DECK HEIGHT RULE</strong> — if a deck sits less than 1800mm above
+              ground AND provides direct access to the pool area, special compliance requirements apply.
+            </div>
+          </div>
+          <div style="display: flex; gap: 12px; margin-bottom: 14px; align-items: flex-start">
+            <span style="color: var(--aqua); font-weight: bold; font-size: 14pt; flex-shrink: 0">✓</span>
+            <div style="font-size: 10.5pt; line-height: 1.5">
+              <strong style="color: var(--navy)">DECK-AS-FENCE</strong> — if your deck edge forms part of the pool
+              barrier, that edge must comply with fence height and non-climb rules.
+            </div>
+          </div>
+          <div style="display: flex; gap: 12px; margin-bottom: 14px; align-items: flex-start">
+            <span style="color: var(--aqua); font-weight: bold; font-size: 14pt; flex-shrink: 0">✓</span>
+            <div style="font-size: 10.5pt; line-height: 1.5">
+              <strong style="color: var(--navy)">POOL SAFETY CERTIFICATE</strong> — required to verify compliance (and
+              required at sale of property).
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-text">The 2026 SEQ Pool Deck Buyer's Guide</div>
+      <div class="page-num">09</div>
+    </div>
+
+    <!-- PAGE 10: CHAPTER 4 CONTINUED -->
+    <div class="page">
+      <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="Logo" class="header-logo" />
+      <div class="content-area">
+        <h2 style="font-size: 24pt; color: var(--navy); margin-bottom: 10px">Common compliance traps.</h2>
+        <div class="accent-line"></div>
+
+        <div style="margin-top: 25px">
+          <div style="display: flex; gap: 18px; margin-bottom: 22px">
+            <div class="serif-italic" style="color: var(--timber); font-size: 28pt; line-height: 1; flex-shrink: 0">
+              01
+            </div>
+            <div>
+              <div style="color: var(--navy); font-weight: 600; font-size: 11pt; margin-bottom: 4px">
+                The furniture trap
+              </div>
+              <div style="font-size: 10.5pt; line-height: 1.5">
+                Placing outdoor lounges, BBQs or pot plants within 900mm of the pool fence — automatic climbable object
+                violation at inspection.
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; gap: 18px; margin-bottom: 22px">
+            <div class="serif-italic" style="color: var(--timber); font-size: 28pt; line-height: 1; flex-shrink: 0">
+              02
+            </div>
+            <div>
+              <div style="color: var(--navy); font-weight: 600; font-size: 11pt; margin-bottom: 4px">
+                The planter trap
+              </div>
+              <div style="font-size: 10.5pt; line-height: 1.5">
+                Large pots or built-in planters near fence lines automatically fail inspection — they're seen as climb
+                aids for small children.
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; gap: 18px; margin-bottom: 22px">
+            <div class="serif-italic" style="color: var(--timber); font-size: 28pt; line-height: 1; flex-shrink: 0">
+              03
+            </div>
+            <div>
+              <div style="color: var(--navy); font-weight: 600; font-size: 11pt; margin-bottom: 4px">
+                The retrofit trap
+              </div>
+              <div style="font-size: 10.5pt; line-height: 1.5">
+                Building the deck first and trying to retrofit fencing later is typically 3–4× the cost — and often
+                requires partial demolition.
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; gap: 18px; margin-bottom: 22px">
+            <div class="serif-italic" style="color: var(--timber); font-size: 28pt; line-height: 1; flex-shrink: 0">
+              04
+            </div>
+            <div>
+              <div style="color: var(--navy); font-weight: 600; font-size: 11pt; margin-bottom: 4px">
+                The handover trap
+              </div>
+              <div style="font-size: 10.5pt; line-height: 1.5">
+                Buying or selling a property without a current Pool Safety Certificate — a contract-breaking issue at
+                settlement.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="background: var(--navy); color: white; padding: 25px 28px; margin-top: 15px">
+          <div class="serif-italic" style="font-size: 18pt; margin-bottom: 10px">How YBMT handles compliance.</div>
+          <div style="font-size: 10.5pt; line-height: 1.6">
+            We design every pool deck with compliance baked in from day one — not as an afterthought. We coordinate
+            directly with licensed pool safety inspectors and handle all council approvals across Brisbane City Council,
+            Gold Coast City Council and Sunshine Coast Council.
+          </div>
+        </div>
+      </div>
+      <div class="footer-text">The 2026 SEQ Pool Deck Buyer's Guide</div>
+      <div class="page-num">10</div>
+    </div>
+
+    <!-- PAGE 11: CHAPTER 5 -->
+    <div class="page">
+      <img src="https://www.genspark.ai/api/files/s/I1g4JOGk?cache_control=3600" class="banner-img banner-narrow" />
+      <div class="chapter-num-overlay" style="top: 10mm">05</div>
+      <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="Logo" class="header-logo" style="top: 10mm" />
+
+      <div class="content-area" style="margin-top: 20px">
+        <span class="eyebrow">CHAPTER 05</span>
+        <h2 style="font-size: 28pt; color: var(--navy)">The 5 most common pool deck mistakes.</h2>
+
+        <div style="margin-top: 25px">
+          <div style="display: flex; gap: 20px; margin-bottom: 18px; align-items: flex-start">
+            <div class="serif-italic" style="color: var(--timber); font-size: 38pt; line-height: 1; flex-shrink: 0">
+              01
+            </div>
+            <div>
+              <div style="color: var(--navy); font-weight: 600; font-size: 12pt; margin-bottom: 4px">
+                Ignoring drainage
+              </div>
+              <div style="font-size: 10.5pt; line-height: 1.5">
+                Water pooling under the deck means a rotted substructure within 3–5 years.
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; gap: 20px; margin-bottom: 18px; align-items: flex-start">
+            <div class="serif-italic" style="color: var(--timber); font-size: 38pt; line-height: 1; flex-shrink: 0">
+              02
+            </div>
+            <div>
+              <div style="color: var(--navy); font-weight: 600; font-size: 12pt; margin-bottom: 4px">
+                Wrong material for the environment
+              </div>
+              <div style="font-size: 10.5pt; line-height: 1.5">
+                Chlorine, salt and UV will destroy poorly-specified materials within a single Queensland summer.
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; gap: 20px; margin-bottom: 18px; align-items: flex-start">
+            <div class="serif-italic" style="color: var(--timber); font-size: 38pt; line-height: 1; flex-shrink: 0">
+              03
+            </div>
+            <div>
+              <div style="color: var(--navy); font-weight: 600; font-size: 12pt; margin-bottom: 4px">
+                Compliance retrofits
+              </div>
+              <div style="font-size: 10.5pt; line-height: 1.5">
+                Building first and fixing fencing compliance later is one of the most expensive mistakes a homeowner can
+                make.
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; gap: 20px; margin-bottom: 18px; align-items: flex-start">
+            <div class="serif-italic" style="color: var(--timber); font-size: 38pt; line-height: 1; flex-shrink: 0">
+              04
+            </div>
+            <div>
+              <div style="color: var(--navy); font-weight: 600; font-size: 12pt; margin-bottom: 4px">
+                No expansion gaps
+              </div>
+              <div style="font-size: 10.5pt; line-height: 1.5">
+                The Queensland heat causes movement — tight installs warp, buckle and split within two seasons.
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; gap: 20px; margin-bottom: 18px; align-items: flex-start">
+            <div class="serif-italic" style="color: var(--timber); font-size: 38pt; line-height: 1; flex-shrink: 0">
+              05
+            </div>
+            <div>
+              <div style="color: var(--navy); font-weight: 600; font-size: 12pt; margin-bottom: 4px">
+                Cheap substructure
+              </div>
+              <div style="font-size: 10.5pt; line-height: 1.5">
+                Gorgeous boards on bad bones = early failure. The frame matters more than the finish.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-text">The 2026 SEQ Pool Deck Buyer's Guide</div>
+      <div class="page-num">11</div>
+    </div>
+
+    <!-- PAGE 12: CHAPTER 6 -->
+    <div class="page">
+      <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="Logo" class="header-logo" />
+      <div class="content-area">
+        <span class="eyebrow">CHAPTER 06</span>
+        <h2 style="font-size: 28pt; color: var(--navy)">What to look for in a pool deck builder.</h2>
+        <div class="accent-line"></div>
+        <p style="font-size: 11pt; line-height: 1.6">
+          Before signing anything, run your shortlist through this 10-point checklist. If they can't tick every box,
+          keep looking.
+        </p>
+
+        <div style="display: flex; gap: 25px; margin-top: 20px">
+          <div style="flex: 2">
+            <ul class="custom-list" style="font-size: 10.5pt">
+              <li>
+                <strong>QBCC licence</strong> — verify online at qbcc.qld.gov.au (non-negotiable).
+              </li>
+              <li>
+                <strong>Public liability insurance</strong> — $20M+ minimum.
+              </li>
+              <li>
+                <strong>Specialization in pool decks</strong> — not just general carpentry.
+              </li>
+              <li>
+                <strong>Demonstrated experience</strong> with pool fence compliance.
+              </li>
+              <li>
+                <strong>Written workmanship warranty</strong> — in their contract, not verbal.
+              </li>
+              <li>
+                <strong>Material warranties</strong> passed through to you in writing.
+              </li>
+              <li>
+                <strong>Detailed written quote</strong> with line-item breakdown.
+              </li>
+              <li>
+                <strong>Project timeline</strong> committed in writing.
+              </li>
+              <li>
+                <strong>Recent references</strong> in your area (and willingness to share them).
+              </li>
+              <li>
+                <strong>Permits and council approvals</strong> handled by them, not you.
+              </li>
+            </ul>
+          </div>
+          <div style="flex: 1">
+            <img
+              src="https://www.genspark.ai/api/files/s/9r3MlDWL?cache_control=3600"
+              style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 15px"
+            />
+            <div style="background: var(--navy); color: white; padding: 18px; text-align: center">
+              <div class="serif-italic" style="font-size: 18pt; line-height: 1.2">YBMT ticks all 10.</div>
+              <div style="font-size: 10pt; margin-top: 6px; opacity: 0.9">Every time.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-text">The 2026 SEQ Pool Deck Buyer's Guide</div>
+      <div class="page-num">12</div>
+    </div>
+
+    <!-- PAGE 13: CHAPTER 7 -->
+    <div class="page">
+      <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="Logo" class="header-logo" />
+      <div class="content-area">
+        <span class="eyebrow">CHAPTER 07</span>
+        <h2 style="font-size: 28pt; color: var(--navy)">Our 5-step build process.</h2>
+        <div class="accent-line"></div>
+
+        <div style="margin-top: 30px; position: relative">
+          <div
+            style="
+              position: absolute;
+              left: 19px;
+              top: 20px;
+              bottom: 20px;
+              width: 2px;
+              background: var(--aqua);
+              z-index: 0;
+            "
+          ></div>
+
+          <div style="display: flex; gap: 22px; margin-bottom: 22px; position: relative; z-index: 1">
+            <div
+              style="
+                background: var(--aqua);
+                color: white;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 600;
+                flex-shrink: 0;
+                font-size: 11pt;
+              "
+            >
+              01
+            </div>
+            <div>
+              <div style="color: var(--navy); font-weight: 600; font-size: 12pt; margin-bottom: 3px">
+                CONSULTATION <span style="color: var(--timber); font-size: 10pt; font-weight: 400">(Free, on-site)</span>
+              </div>
+              <div style="font-size: 10.5pt; line-height: 1.5">
+                We visit, measure, discuss your vision, and identify compliance considerations and pool integration
+                challenges.
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 22px; margin-bottom: 22px; position: relative; z-index: 1">
+            <div
+              style="
+                background: var(--aqua);
+                color: white;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 600;
+                flex-shrink: 0;
+                font-size: 11pt;
+              "
+            >
+              02
+            </div>
+            <div>
+              <div style="color: var(--navy); font-weight: 600; font-size: 12pt; margin-bottom: 3px">
+                DESIGN & QUOTE
+                <span style="color: var(--timber); font-size: 10pt; font-weight: 400">(Within 48 hours)</span>
+              </div>
+              <div style="font-size: 10.5pt; line-height: 1.5">
+                You receive a detailed design concept and a transparent, line-item quote — no surprises, no hidden
+                extras.
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 22px; margin-bottom: 22px; position: relative; z-index: 1">
+            <div
+              style="
+                background: var(--aqua);
+                color: white;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 600;
+                flex-shrink: 0;
+                font-size: 11pt;
+              "
+            >
+              03
+            </div>
+            <div>
+              <div style="color: var(--navy); font-weight: 600; font-size: 12pt; margin-bottom: 3px">APPROVALS & PREP</div>
+              <div style="font-size: 10.5pt; line-height: 1.5">
+                We handle all council approvals, engineering certifications and scheduling. You don't lift a finger.
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 22px; margin-bottom: 22px; position: relative; z-index: 1">
+            <div
+              style="
+                background: var(--aqua);
+                color: white;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 600;
+                flex-shrink: 0;
+                font-size: 11pt;
+              "
+            >
+              04
+            </div>
+            <div>
+              <div style="color: var(--navy); font-weight: 600; font-size: 12pt; margin-bottom: 3px">BUILD</div>
+              <div style="font-size: 10.5pt; line-height: 1.5">
+                Typical 10–21 days depending on size. Daily progress updates, site kept clean, neighbours respected.
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 22px; position: relative; z-index: 1">
+            <div
+              style="
+                background: var(--timber);
+                color: white;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 600;
+                flex-shrink: 0;
+                font-size: 11pt;
+              "
+            >
+              05
+            </div>
+            <div>
+              <div style="color: var(--navy); font-weight: 600; font-size: 12pt; margin-bottom: 3px">
+                HANDOVER & WARRANTY
+              </div>
+              <div style="font-size: 10.5pt; line-height: 1.5">
+                Final pool safety compliance certificate, full warranty documentation, and an aftercare guide for your
+                new deck.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-text">The 2026 SEQ Pool Deck Buyer's Guide</div>
+      <div class="page-num">13</div>
+    </div>
+
+    <!-- PAGE 14: CHAPTER 8 -->
+    <div class="page">
+      <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="Logo" class="header-logo" />
+      <div class="content-area">
+        <span class="eyebrow">CHAPTER 08</span>
+        <h2 style="font-size: 28pt; color: var(--navy)">Ready for your free quote?</h2>
+        <div class="accent-line"></div>
+        <p style="font-size: 11pt; line-height: 1.6; margin-bottom: 10px">
+          Here's what to have ready so we can give you the most accurate estimate.
+        </p>
+
+        <ul class="custom-list" style="font-size: 10.5pt; margin-top: 18px">
+          <li>Pool dimensions (existing or planned).</li>
+          <li>Existing site photos (a few angles).</li>
+          <li>Rough idea of the size you want (m²).</li>
+          <li>Budget range — helps us recommend the right materials.</li>
+          <li>Material preference — or "not sure, advise me".</li>
+          <li>Ideal project timeline.</li>
+          <li>Any council/HOA restrictions you're aware of.</li>
+        </ul>
+
+        <div class="cta-block">
+          <div
+            style="
+              color: var(--aqua);
+              text-transform: uppercase;
+              letter-spacing: 2px;
+              font-size: 10pt;
+              font-weight: 600;
+              margin-bottom: 12px;
+            "
+          >
+            FREE POOL DECK QUOTE
+          </div>
+          <div class="serif-italic" style="font-size: 26pt; margin-bottom: 18px; line-height: 1.2">
+            48-hour turnaround. SEQ-wide.
+          </div>
+          <div style="font-size: 28pt; font-weight: 600; margin-bottom: 8px">1300 448 784</div>
+          <div style="font-size: 12pt; opacity: 0.9; margin-bottom: 18px">ybmt.com.au/pool-decks</div>
+          <div style="font-size: 10pt; opacity: 0.9; margin-bottom: 18px">
+            Brisbane &nbsp;•&nbsp; Gold Coast &nbsp;•&nbsp; Sunshine Coast
+          </div>
+          <a href="#" class="btn">BOOK FREE CONSULTATION →</a>
+        </div>
+      </div>
+      <div class="footer-text">The 2026 SEQ Pool Deck Buyer's Guide</div>
+      <div class="page-num">14</div>
+    </div>
+
+    <!-- PAGE 15: BACK COVER -->
+    <div class="page page-cover">
+      <div style="padding: 18mm; text-align: center; margin-top: auto; margin-bottom: auto">
+        <h2 style="font-size: 42pt; line-height: 1.2; margin-bottom: 20px">
+          Your dream pool deck<br />is closer than you think.
+        </h2>
+        <div style="font-weight: 300; font-size: 14pt; margin-bottom: 40px">
+          Talk to South East Queensland's pool deck specialists today.
+        </div>
+
+        <img
+          src="https://www.genspark.ai/api/files/s/nvT30S4F"
+          alt="YBMT Logo"
+          style="height: 60px; filter: brightness(0) invert(1); margin-bottom: 30px"
+        />
+
+        <div style="font-size: 12pt; line-height: 2">
+          1300 448 784<br />
+          ybmt.com.au<br />
+          Brisbane &nbsp;•&nbsp; Gold Coast &nbsp;•&nbsp; Sunshine Coast<br />
+          QBCC Licensed &nbsp;•&nbsp; Fully Insured &nbsp;•&nbsp; Workmanship Guaranteed
+        </div>
+      </div>
+      <div style="padding: 18mm; text-align: center; font-size: 8pt; opacity: 0.6">
+        © 2026 Your Building & Maintenance Team Pty Ltd. QBCC Licensed.
+      </div>
+    </div>
+  </body>
+</html>

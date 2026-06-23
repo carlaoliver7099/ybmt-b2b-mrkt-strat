@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Premium Enquiry Playbook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,600&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 32px 80px;
+        position: relative;
+        box-sizing: border-box;
+        background-color: #f5f1ea;
+        color: #2b2b2b;
+        font-family: 'Inter', sans-serif;
+        line-height: 1.6;
+        font-size: 11pt;
+      }
+
+      @page {
+        size: A4 portrait;
+        margin: 20mm;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: 'Fraunces', serif;
+        color: #1b3a5c;
+        font-weight: 400;
+        margin-top: 2em;
+        margin-bottom: 0.8em;
+        line-height: 1.3;
+      }
+
+      h1 {
+        font-size: 32pt;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 0.2em;
+      }
+
+      h2 {
+        font-size: 20pt;
+        border-bottom: 1px solid #1b3a5c;
+        padding-bottom: 8px;
+      }
+
+      h3 {
+        font-size: 14pt;
+        color: #b8743d;
+      }
+
+      p {
+        margin-bottom: 1.2em;
+      }
+
+      ul,
+      ol {
+        margin-bottom: 1.5em;
+        padding-left: 24px;
+      }
+
+      li {
+        margin-bottom: 0.8em;
+      }
+
+      /* Utility Classes */
+      .page-break {
+        page-break-before: always;
+        break-before: page;
+        padding-top: 40px;
+      }
+
+      .avoid-break {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+      .italic {
+        font-style: italic;
+        font-family: 'Fraunces', serif;
+      }
+      .navy {
+        color: #1b3a5c;
+      }
+      .timber {
+        color: #b8743d;
+      }
+
+      /* Header / Logo */
+      .doc-header {
+        text-align: left;
+        margin-bottom: 40px;
+      }
+
+      .doc-header img {
+        max-width: 180px;
+        height: auto;
+      }
+
+      /* Cover Page Elements */
+      .cover-page {
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+
+      .cover-subtitle {
+        font-family: 'Inter', sans-serif;
+        font-size: 12pt;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #2b2b2b;
+        margin-bottom: 40px;
+      }
+
+      .cover-meta {
+        font-size: 10pt;
+        color: #b8743d;
+        margin-top: 60px;
+        font-weight: 500;
+      }
+
+      .color-block-divider {
+        display: flex;
+        height: 8px;
+        width: 100px;
+        margin: 40px auto;
+      }
+
+      .color-block-divider div:first-child {
+        width: 60%;
+        background-color: #1b3a5c;
+      }
+      .color-block-divider div:last-child {
+        width: 40%;
+        background-color: #b8743d;
+      }
+
+      /* Script Blocks */
+      .script-box {
+        background-color: #ffffff;
+        border-left: 4px solid #4db6c7;
+        padding: 16px 24px;
+        margin: 20px 0;
+        font-family: 'Fraunces', serif;
+        font-style: italic;
+        font-size: 12pt;
+        color: #1b3a5c;
+      }
+
+      .script-box::before {
+        content: 'WHAT TO SAY';
+        display: block;
+        font-family: 'Inter', sans-serif;
+        font-size: 8pt;
+        font-style: normal;
+        font-weight: 600;
+        color: #4db6c7;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+      }
+
+      .tip-box {
+        background-color: #ffffff;
+        border-left: 4px solid #b8743d;
+        padding: 16px 24px;
+        margin: 20px 0;
+      }
+
+      .tip-box::before {
+        content: 'TIP';
+        display: block;
+        font-family: 'Inter', sans-serif;
+        font-size: 8pt;
+        font-weight: 600;
+        color: #b8743d;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+      }
+
+      .why-it-works {
+        font-variant: small-caps;
+        color: #1b3a5c;
+        font-weight: 600;
+        font-size: 10pt;
+        display: block;
+        margin-top: 8px;
+      }
+
+      /* Numbered Lists */
+      .elegant-list {
+        list-style: none;
+        counter-reset: custom-counter;
+        padding-left: 0;
+      }
+
+      .elegant-list > li {
+        position: relative;
+        padding-left: 40px;
+        margin-bottom: 16px;
+      }
+
+      .elegant-list > li::before {
+        counter-increment: custom-counter;
+        content: counter(custom-counter) '.';
+        position: absolute;
+        left: 0;
+        font-family: 'Fraunces', serif;
+        color: #b8743d;
+        font-size: 12pt;
+        font-weight: 600;
+      }
+
+      /* Checklists */
+      .checklist {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .checklist li {
+        position: relative;
+        padding-left: 32px;
+        margin-bottom: 12px;
+      }
+
+      .checklist li::before {
+        content: '☐';
+        position: absolute;
+        left: 0;
+        color: #1b3a5c;
+        font-size: 14pt;
+        line-height: 1;
+      }
+
+      /* Pull Quotes */
+      .pull-quote {
+        text-align: center;
+        font-family: 'Fraunces', serif;
+        font-style: italic;
+        font-size: 18pt;
+        color: #1b3a5c;
+        padding: 40px 60px;
+        position: relative;
+        margin: 40px 0;
+      }
+
+      .pull-quote::before,
+      .pull-quote::after {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 2px;
+        background-color: #b8743d;
+        margin: 16px auto;
+      }
+
+      /* Cards Layout */
+      .card-grid {
+        display: flex;
+        gap: 16px;
+        margin: 32px 0;
+      }
+
+      .tier-card {
+        flex: 1;
+        background-color: #ffffff;
+        border: 1px solid #1b3a5c;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .tier-card h4 {
+        margin-top: 0;
+        color: #b8743d;
+        font-size: 14pt;
+        font-style: italic;
+        border-bottom: 1px solid #eeeeee;
+        padding-bottom: 12px;
+      }
+
+      .tier-card .price {
+        font-family: 'Inter', sans-serif;
+        font-size: 12pt;
+        font-weight: 600;
+        color: #1b3a5c;
+        margin: 16px 0;
+      }
+
+      .tier-card p {
+        font-size: 9.5pt;
+        margin-bottom: 0;
+      }
+
+      /* Objection Blocks */
+      .objection-block {
+        margin-bottom: 24px;
+        background-color: #ffffff;
+        border: 1px solid #dddddd;
+        padding: 20px;
+      }
+
+      .objection-title {
+        font-family: 'Fraunces', serif;
+        font-weight: 600;
+        color: #1b3a5c;
+        margin-bottom: 8px;
+        font-size: 11pt;
+      }
+
+      .objection-response {
+        font-family: 'Inter', sans-serif;
+        font-size: 10.5pt;
+        color: #2b2b2b;
+      }
+
+      /* Quick Reference Card */
+      .ref-card {
+        border: 2px solid #1b3a5c;
+        padding: 32px;
+        background-color: #ffffff;
+      }
+
+      .ref-card h2 {
+        text-align: center;
+        border-bottom: none;
+        margin-top: 0;
+      }
+
+      .ref-footer {
+        text-align: center;
+        font-size: 9pt;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #b8743d;
+        margin-top: 32px;
+        border-top: 1px solid #eeeeee;
+        padding-top: 16px;
+      }
+
+      .contact-box {
+        background-color: #f5f1ea;
+        padding: 16px;
+        text-align: center;
+        border: 1px solid #b8743d;
+        margin-top: 24px;
+        font-size: 10pt;
+      }
+
+      /* Section Ornament */
+      .section-num {
+        color: #b8743d;
+        font-style: italic;
+        margin-right: 8px;
+        font-weight: 300;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- COVER PAGE -->
+    <div class="doc-header text-center">
+      <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="YBMT Pool Decks Logo" />
+    </div>
+
+    <div class="cover-page avoid-break">
+      <h1>The Premium Enquiry Playbook</h1>
+      <div class="color-block-divider">
+        <div></div>
+        <div></div>
+      </div>
+      <div class="cover-subtitle">A Phone Consultation Script for High-End Pool Deck Enquiries</div>
+
+      <div class="cover-meta">
+        Internal Use — YBMT Pool Decks Team<br />
+        v1.0 — 2026 Edition
+      </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <!-- REPEATED HEADER SIMULATION FOR PRINT -->
+    <div class="doc-header">
+      <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="YBMT Pool Decks Logo" style="max-width: 120px" />
+    </div>
+
+    <!-- SECTION 1 -->
+    <div class="avoid-break">
+      <h2><span class="section-num">§ I</span> HOW TO USE THIS SCRIPT</h2>
+      <p>
+        This document is your roadmap for handling inbound enquiries from affluent homeowners across the Sunshine Coast,
+        Brisbane, and Gold Coast. These clients expect a premium, consultative experience.
+      </p>
+
+      <ul>
+        <li>
+          <strong>The Goal of the Call:</strong> NOT to close a sale on the phone. The goal is to (a) qualify the lead,
+          (b) book the free on-site consultation, and (c) plant trust and authority.
+        </li>
+        <li><strong>Tone:</strong> Calm, expert, unhurried. Speak slowly. Ask more than you tell.</li>
+        <li>
+          <strong>Mindset:</strong> You're a specialist consultant, not a salesperson. Behave like a luxury architect,
+          not a tradie chasing a job.
+        </li>
+        <li><strong>Time Target:</strong> 12–18 minutes for a qualified high-end enquiry call.</li>
+      </ul>
+
+      <div class="pull-quote">"You're not selling a deck. You're earning the right to walk their property."</div>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="avoid-break">
+      <h2><span class="section-num">§ II</span> PRE-CALL CHECKLIST (60 SECONDS BEFORE ANSWERING)</h2>
+      <ul class="checklist">
+        <li>Have notepad / CRM open and ready to document details.</li>
+        <li>Know which region they're calling from (if visible from caller ID).</li>
+        <li>Take 3 deep breaths — energy carries on the phone.</li>
+        <li>Smile before answering — they can hear it.</li>
+      </ul>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="doc-header">
+      <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="YBMT Pool Decks Logo" style="max-width: 120px" />
+    </div>
+
+    <!-- SECTION 3 -->
+    <h2><span class="section-num">§ III</span> THE CALL STRUCTURE: 7 PHASES</h2>
+
+    <!-- Phase 1 -->
+    <div class="avoid-break">
+      <h3>PHASE 1 — OPENING (30 seconds)</h3>
+      <div class="script-box">
+        "Good morning/afternoon, you've reached YBMT Pool Decks, this is [Name] speaking. How can I help you?"
+      </div>
+      <p><em>[Wait — let them speak]</em></p>
+      <div class="script-box">
+        "Thanks so much for reaching out — pool decks are all we do, so you've come to exactly the right place."
+      </div>
+    </div>
+
+    <!-- Phase 2 -->
+    <div class="avoid-break">
+      <h3>PHASE 2 — DISCOVERY (5–7 minutes)</h3>
+      <p>
+        This is the most important phase. Lead with questions, not pitches. Uncover their vision before you offer
+        solutions.
+      </p>
+
+      <ol class="elegant-list">
+        <li>
+          "Tell me a little about the project — are you building a new pool, do you have an existing pool, or are you
+          looking at both?"
+        </li>
+        <li>"Where are you located? Is the home in Brisbane, the Gold Coast, or the Sunshine Coast?"</li>
+        <li>"Is this home you live in now, or one you're building/renovating?"</li>
+        <li>"How would you describe the home itself? Modern? Coastal? Hamptons? Architecturally designed?"</li>
+        <li>
+          "What size pool deck are you imagining — just the pool surround, or are you looking at a larger entertaining
+          area too?"
+        </li>
+        <li>"Have you thought about materials yet, or are you completely open?"</li>
+        <li>"Is there a particular timeline you're working toward? Is there a date you'd love this finished by?"</li>
+        <li>
+          "Have you spoken to any other builders or pool deck companies yet?" <br /><span class="why-it-works"
+            >LISTEN CAREFULLY — WHAT DIDN'T THEY LIKE?</span
+          >
+        </li>
+        <li>
+          "And finally — do you have a budget range in mind, or would it help if I gave you typical ranges for projects
+          like this?"
+        </li>
+      </ol>
+
+      <div class="tip-box">
+        <ul style="margin-bottom: 0">
+          <li>Pause 2 seconds after each answer to show you are listening.</li>
+          <li>Mirror their language (e.g., if they say "outdoor entertaining area," do not say "pool deck").</li>
+          <li>Take meticulous notes — you will need them for the consultation.</li>
+          <li>If they don't share a budget, that's completely fine. Don't push.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="page-break"></div>
+    <div class="doc-header">
+      <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="YBMT Pool Decks Logo" style="max-width: 120px" />
+    </div>
+
+    <!-- Phase 3 -->
+    <div class="avoid-break">
+      <h3>PHASE 3 — POSITIONING (2–3 minutes)</h3>
+      <p>Once you understand the project, position YBMT confidently but not arrogantly.</p>
+      <div class="script-box">
+        "Based on what you've shared, this sounds like exactly the kind of project we love. Let me tell you briefly how
+        we work, and then I'll suggest what I think the right next step is."
+      </div>
+
+      <p>Key positioning points to weave in (use what is relevant; do not recite as a memorised speech):</p>
+      <div class="script-box">
+        "YBMT Pool Decks is the luxury division of Your Building & Maintenance Team. We're a QBCC-licensed Queensland
+        construction company, fully insured, with over 50 years of combined experience."
+      </div>
+      <div class="script-box">
+        "What makes us different from a general builder is that pool decks are all we do. So when we walk into your
+        home, we already know the Queensland compliance regulations, we already know which materials hold up in your
+        microclimate, and we already know how to integrate decks with pool fencing in ways most builders don't."
+      </div>
+      <div class="script-box">
+        "Every project we take on includes a written 7-year workmanship warranty, full council approvals handled by us,
+        and engineering certifications done in-house."
+      </div>
+    </div>
+
+    <!-- Phase 4 -->
+    <div class="avoid-break">
+      <h3>PHASE 4 — INDICATIVE INVESTMENT (if they ask)</h3>
+      <p><strong>Rule:</strong> Never quote a single number. Provide ranges.</p>
+
+      <div class="card-grid">
+        <div class="tier-card">
+          <h4>Signature Tier</h4>
+          <div class="price">$50,000 – $75,000</div>
+          <p>Premium hardwood or composite, frameless glass fence, beautifully built.</p>
+        </div>
+        <div class="tier-card">
+          <h4>Premier Tier</h4>
+          <div class="price">$75,000 – $120,000</div>
+          <p>Mixed materials, custom features, integrated lighting and drainage.</p>
+        </div>
+        <div class="tier-card">
+          <h4>Bespoke Tier</h4>
+          <div class="price">$120,000+</div>
+          <p>Full architectural custom design, multi-zone, premium everything.</p>
+        </div>
+      </div>
+
+      <div class="script-box">
+        "Most projects we do for homes like yours land in the Premier tier — but until we visit and measure, those are
+        just rough ranges."
+      </div>
+      <span class="why-it-works">IMMEDIATELY PIVOT TO NEXT STEP TO MAINTAIN CONTROL OF THE CALL.</span>
+    </div>
+
+    <div class="page-break"></div>
+    <div class="doc-header">
+      <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="YBMT Pool Decks Logo" style="max-width: 120px" />
+    </div>
+
+    <!-- Phase 5 -->
+    <div class="avoid-break">
+      <h3>PHASE 5 — THE CONSULTATION OFFER (The Close)</h3>
+      <div class="script-box">
+        "Here's what I'd suggest as a next step. We offer a free on-site consultation — I'd send our Project Manager,
+        Darcy Coombs, out to walk the site with you. He'll take measurements, talk through your vision, identify any
+        compliance considerations, and then within 48 hours of that visit you'll have a detailed design concept and a
+        transparent line-item quote in your inbox. There's no charge, no obligation, and you'll know exactly what you're
+        working with."<br /><br />
+        [Pause — let them respond]<br /><br />
+        "Would that be useful for you?"
+      </div>
+    </div>
+
+    <!-- Phase 6 -->
+    <div class="avoid-break">
+      <h3>PHASE 6 — BOOKING THE CONSULTATION</h3>
+      <div class="script-box">
+        "Wonderful. Let me find a time that works. Darcy generally has availability [list 2–3 specific time slots].
+        Which of those works best for you?"
+      </div>
+      <p><em>Lock in the time, then say:</em></p>
+      <div class="script-box">
+        "Perfect. I'll send you a calendar invite and an email confirming. Darcy will text you the morning of the visit
+        just to confirm. Anything else you'd like to bring up before we wrap?"
+      </div>
+    </div>
+
+    <!-- Phase 7 -->
+    <div class="avoid-break">
+      <h3>PHASE 7 — POST-CALL FOLLOWUP (Within 60 minutes)</h3>
+      <p>Send an email containing the following details:</p>
+      <ul class="checklist">
+        <li>Calendar invite for the consultation.</li>
+        <li>The YBMT Pool Decks Buyer's Guide PDF (attached or link).</li>
+        <li>Link to website gallery / case studies.</li>
+        <li>Darcy's direct mobile number.</li>
+        <li>
+          One-line personal note referencing something they mentioned (example: "Loved hearing about your Noosaville
+          renovation — looking forward to walking the site Tuesday.")
+        </li>
+      </ul>
+    </div>
+
+    <div class="page-break"></div>
+    <div class="doc-header">
+      <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="YBMT Pool Decks Logo" style="max-width: 120px" />
+    </div>
+
+    <!-- SECTION 4 -->
+    <h2><span class="section-num">§ IV</span> OBJECTION HANDLING</h2>
+    <p>Common pushbacks and the elegant responses designed to educate and establish authority.</p>
+
+    <div class="objection-block avoid-break">
+      <div class="objection-title">OBJECTION: "Why are you more expensive than other quotes I've had?"</div>
+      <div class="objection-response">
+        "That's a fair question. The honest answer is that we engineer pool decks to last 25+ years, not 7–10. Most of
+        the cost difference is in the substructure, drainage, and fixings — the things you don't see on day one but
+        determine whether your deck is still beautiful in 2040. We're happy to walk you through exactly where the
+        dollars go when we send the quote."
+      </div>
+    </div>
+
+    <div class="objection-block avoid-break">
+      <div class="objection-title">OBJECTION: "Can you just give me a rough price over the phone?"</div>
+      <div class="objection-response">
+        "I'd love to, but I'd be doing you a disservice. The biggest cost drivers — site access, substructure
+        requirements, drainage complexity, compliance integration — none of those can be assessed without seeing the
+        site. What I can tell you is that for the size you're describing, projects in our portfolio typically land
+        between [X] and [Y]. The consultation is free and there's no obligation — we'd rather give you an accurate quote
+        than a guess that wastes both our time."
+      </div>
+    </div>
+
+    <div class="objection-block avoid-break">
+      <div class="objection-title">OBJECTION: "We're getting three quotes."</div>
+      <div class="objection-response">
+        "Smart approach — I always recommend that. When you compare, I'd suggest checking three things on each quote:
+        QBCC license number, written workmanship warranty length, and whether they include all compliance and council
+        approval work. Those three details separate the specialists from the generalists. We're happy to be one of your
+        three."
+      </div>
+    </div>
+
+    <div class="objection-block avoid-break">
+      <div class="objection-title">OBJECTION: "We're not ready yet — we're still in planning mode."</div>
+      <div class="objection-response">
+        "Completely understand. Most of our best projects start exactly there. Would it help if I sent you our Buyer's
+        Guide? It walks through materials, costs, compliance, and the questions to ask. No pressure — just so you've got
+        expert information while you're planning. And when you're ready, we'll still be here."
+      </div>
+    </div>
+
+    <div class="objection-block avoid-break">
+      <div class="objection-title">OBJECTION: "Can you do it cheaper if we go with [material/option]?"</div>
+      <div class="objection-response">
+        "Yes — and there's a good honest conversation to have about it. Some material trade-offs save real money without
+        sacrificing quality. Others save money upfront and cost more in 5 years through maintenance and replacement.
+        When Darcy visits, he'll walk you through where you can save and where it's not worth it."
+      </div>
+    </div>
+
+    <div class="objection-block avoid-break">
+      <div class="objection-title">OBJECTION: "Are you insured / licensed?"</div>
+      <div class="objection-response">
+        "Yes — QBCC licensed [insert license number], $20 million public liability, and full Home Warranty Insurance
+        through QBCC on every project over $3,300. I'll send the license details with the consultation confirmation so
+        you can verify directly with QBCC."
+      </div>
+    </div>
+
+    <div class="page-break"></div>
+    <div class="doc-header">
+      <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="YBMT Pool Decks Logo" style="max-width: 120px" />
+    </div>
+
+    <!-- SECTION 5 -->
+    <div class="avoid-break">
+      <h2><span class="section-num">§ V</span> RED FLAGS: WHEN TO POLITELY DECLINE</h2>
+      <p>
+        Not every enquiry is a fit. Protect the team's time by politely qualifying out if any of the following apply:
+      </p>
+
+      <ul>
+        <li>Budget under $30K with premium materials in mind (recommend a generalist deck builder).</li>
+        <li>Outside the SEQ service area.</li>
+        <li>Shopping purely on price, with zero interest in compliance or long-term quality.</li>
+        <li>Work that is not actually a pool deck (refer back to general YBMT for renovations/maintenance).</li>
+      </ul>
+
+      <div class="script-box">
+        "It sounds like your project might be a better fit for [recommendation]. We specialise specifically in [X], and
+        I'd hate to take you down a path that's not the best use of your time. Happy to recommend a few good builders
+        who do exactly what you need."
+      </div>
+    </div>
+
+    <!-- SECTION 6 -->
+    <div class="avoid-break">
+      <h2><span class="section-num">§ VI</span> VOICEMAIL & MISSED CALL PROTOCOLS</h2>
+
+      <h3>Voicemail Return Call</h3>
+      <div class="script-box">
+        "Hi [Name], this is [Name] from YBMT Pool Decks returning your call — thanks for reaching out. Is now a good
+        time, or would you prefer I call back later?"
+      </div>
+
+      <h3>Missed Call (No Voicemail)</h3>
+      <p>Call back within 1 business hour. If no answer, send an SMS follow-up:</p>
+      <div class="script-box" style="border-left-color: #b8743d">
+        "Hi [Name] — [Your name] from YBMT Pool Decks here. Just tried calling back. Happy to chat when you've got 5
+        minutes — or text me a good time and I'll call then."
+      </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <!-- SECTION 7: QUICK REFERENCE CARD -->
+    <div class="ref-card avoid-break">
+      <div class="text-center" style="margin-bottom: 20px">
+        <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="YBMT Pool Decks Logo" style="max-width: 140px" />
+      </div>
+      <h2 class="italic">Quick Reference — Premium Enquiry Call</h2>
+
+      <h3 style="margin-top: 0">1. Discovery (The 9 Questions)</h3>
+      <ol style="font-size: 10pt; padding-left: 20px">
+        <li>New pool, existing, or both?</li>
+        <li>Location? (Brisbane / GC / SC)</li>
+        <li>Living there now, or building/renovating?</li>
+        <li>Describe the home style?</li>
+        <li>Size? (Surround only or larger area?)</li>
+        <li>Material preferences?</li>
+        <li>Timeline/Deadline?</li>
+        <li>Other builders spoken to?</li>
+        <li>Budget range in mind?</li>
+      </ol>
+
+      <h3>2. Indicative Tiers</h3>
+      <div style="display: flex; gap: 10px; font-size: 9.5pt; text-align: center; margin-bottom: 16px">
+        <div style="flex: 1; border: 1px solid #ddd; padding: 10px"><strong>Signature</strong><br />$50k–$75k</div>
+        <div style="flex: 1; border: 1px solid #ddd; padding: 10px"><strong>Premier</strong><br />$75k–$120k</div>
+        <div style="flex: 1; border: 1px solid #ddd; padding: 10px"><strong>Bespoke</strong><br />$120k+</div>
+      </div>
+
+      <h3>3. Objection Cheatsheet</h3>
+      <table style="width: 100%; font-size: 9.5pt; border-collapse: collapse">
+        <tr>
+          <td style="padding: 6px; border-bottom: 1px solid #eee; font-weight: 600; width: 35%; color: #1b3a5c">
+            More expensive?
+          </td>
+          <td style="padding: 6px; border-bottom: 1px solid #eee">
+            We engineer for 25+ yrs, not 7-10. Focus is substructure & drainage.
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 6px; border-bottom: 1px solid #eee; font-weight: 600; color: #1b3a5c">
+            Rough price now?
+          </td>
+          <td style="padding: 6px; border-bottom: 1px solid #eee">
+            Can't assess site access/compliance blindly. Free site visit ensures accuracy.
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 6px; border-bottom: 1px solid #eee; font-weight: 600; color: #1b3a5c">
+            Getting 3 quotes?
+          </td>
+          <td style="padding: 6px; border-bottom: 1px solid #eee">
+            Smart. Compare QBCC license, warranty length, and compliance inclusions.
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 6px; border-bottom: 1px solid #eee; font-weight: 600; color: #1b3a5c">Not ready yet?</td>
+          <td style="padding: 6px; border-bottom: 1px solid #eee">
+            Understandable. Send Buyer's Guide. "When you're ready, we're here."
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 6px; border-bottom: 1px solid #eee; font-weight: 600; color: #1b3a5c">
+            Cheaper materials?
+          </td>
+          <td style="padding: 6px; border-bottom: 1px solid #eee">
+            Yes, we can discuss trade-offs (upfront savings vs long-term maintenance).
+          </td>
+        </tr>
+      </table>
+
+      <h3>4. The Booking Close</h3>
+      <p style="font-size: 10pt; font-style: italic; color: #b8743d; margin-bottom: 8px">
+        "We offer a free on-site consultation... Darcy will walk the site, measure, and send a detailed design &
+        line-item quote in 48 hours. Would that be useful for you?"
+      </p>
+
+      <div class="contact-box">
+        <strong>PROJECT MANAGER:</strong> Darcy Coombs — [Mobile Placeholder]<br />
+        <strong>MAIN OFFICE:</strong> [YBMT Phone Placeholder]<br />
+        <strong>QBCC LIC:</strong> [License Placeholder]
+      </div>
+
+      <div class="ref-footer">YBMT Pool Decks — South East Queensland's Pool Deck Specialists</div>
+    </div>
+  </body>
+</html>

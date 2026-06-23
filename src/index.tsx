@@ -3,6 +3,7 @@ import { renderer } from './renderer'
 import { TopNav } from './nav'
 import { ValueChainPage } from './value-chain'
 import { FunnelPage } from './funnel'
+import { MarketingMixPage } from './marketing-mix'
 
 const app = new Hono()
 
@@ -10,6 +11,7 @@ app.use(renderer)
 
 app.get('/value-chain', (c) => c.render(<ValueChainPage />))
 app.get('/funnel', (c) => c.render(<FunnelPage />))
+app.get('/marketing-mix', (c) => c.render(<MarketingMixPage />))
 
 app.get('/', (c) => {
   return c.render(
@@ -594,6 +596,31 @@ app.get('/', (c) => {
             </p>
           </div>
         </div>
+      </section>
+
+      {/* ============== READY-TO-SEE CTA TILE ============== */}
+      <section class="max-w-[1100px] mx-auto px-6 lg:px-10 mb-16">
+        <a href="/marketing-mix" class="group block bg-gradient-to-br from-[var(--ybmt-orange)] to-[var(--ybmt-orange-soft)] text-white rounded-2xl p-8 lg:p-10 shadow-md hover:shadow-lg transition-shadow">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <div class="flex-1">
+              <div class="text-xs uppercase tracking-wider text-white/70 font-semibold mb-2">
+                <i class="fas fa-folder-open mr-1.5"></i> Marketing Mix Inventory
+              </div>
+              <h2 class="display text-3xl lg:text-4xl font-bold leading-tight">
+                Ready to see the new <span class="italic">marketing materials</span> for the 3 × 3 strategy?
+              </h2>
+              <p class="text-white/85 mt-3 max-w-2xl">
+                22 launch-ready assets across 10 categories — brand · capability statements · website · lead magnet ·
+                sales · paid ads · email · print · partnerships · execution. One cell of the 3 × 3 grid is finished.
+              </p>
+            </div>
+            <div class="shrink-0">
+              <span class="inline-flex items-center gap-2 bg-white text-[var(--ybmt-orange)] font-semibold px-5 py-3 rounded-lg group-hover:bg-[var(--paper-warm)] transition-colors">
+                Open the inventory <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+              </span>
+            </div>
+          </div>
+        </a>
       </section>
 
       {/* ============== FOOTER / META ============== */}

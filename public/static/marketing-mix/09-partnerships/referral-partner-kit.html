@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The YBMT Pool Decks Referral Partner Program</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,600&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --navy: #1b3a5c;
+        --timber: #b8743d;
+        --aqua: #4db6c7;
+        --off-white: #f5f1ea;
+        --charcoal: #2b2b2b;
+        --cream: #fffdf9;
+        --gold: #d4af37;
+      }
+
+      body {
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 32px 80px;
+        position: relative;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+        color: var(--charcoal);
+        background-color: var(--off-white);
+        line-height: 1.6;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      .fraunces {
+        font-family: 'Fraunces', serif;
+        color: var(--navy);
+      }
+
+      .italic {
+        font-style: italic;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+      .text-navy {
+        color: var(--navy);
+      }
+      .text-timber {
+        color: var(--timber);
+      }
+      .text-aqua {
+        color: var(--aqua);
+      }
+
+      .bg-navy {
+        background-color: var(--navy);
+        color: #fff;
+      }
+      .bg-timber {
+        background-color: var(--timber);
+        color: #fff;
+      }
+      .bg-aqua {
+        background-color: var(--aqua);
+        color: var(--navy);
+      }
+      .bg-white {
+        background-color: #ffffff;
+      }
+
+      .page-break {
+        page-break-before: always;
+        break-before: page;
+        margin-top: 40px;
+        padding-top: 40px;
+        border-top: 1px solid #e0e0e0;
+      }
+
+      .cover-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 800px;
+        padding: 40px 0;
+      }
+
+      .logo {
+        height: 50px;
+        margin-bottom: 20px;
+      }
+
+      .cover-title {
+        font-size: 3.5rem;
+        line-height: 1.1;
+        margin: 40px 0 20px;
+        color: var(--navy);
+      }
+
+      .cover-subtitle {
+        font-size: 1.25rem;
+        color: var(--charcoal);
+        max-width: 600px;
+        margin-bottom: 40px;
+      }
+
+      .pill-container {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+      }
+
+      .pill {
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding: 6px 16px;
+        border: 1px solid var(--navy);
+        color: var(--navy);
+        border-radius: 20px;
+      }
+
+      .cover-footer {
+        margin-top: auto;
+        font-size: 0.85rem;
+        color: var(--charcoal);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .running-header {
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: var(--navy);
+        border-bottom: 1px solid var(--timber);
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .running-header img {
+        height: 24px;
+      }
+
+      .section-title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        color: var(--navy);
+        border-bottom: 2px solid var(--aqua);
+        padding-bottom: 10px;
+        display: inline-block;
+      }
+
+      .lead-text {
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: var(--navy);
+        margin-bottom: 2rem;
+      }
+
+      /* Grids */
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1px 1fr;
+        gap: 30px;
+        margin-bottom: 2rem;
+      }
+
+      .grid-2 > div {
+        padding: 20px;
+        background-color: #fff;
+        border-top: 3px solid var(--timber);
+      }
+
+      .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-bottom: 2rem;
+      }
+
+      /* Cards */
+      .card {
+        background: #ffffff;
+        padding: 24px;
+        border-left: 4px solid var(--navy);
+      }
+
+      .card-title {
+        font-family: 'Fraunces', serif;
+        font-size: 1.25rem;
+        color: var(--navy);
+        margin-bottom: 10px;
+      }
+
+      .card-text {
+        font-size: 0.9rem;
+        color: var(--charcoal);
+      }
+
+      /* Thematic Sections */
+      .theme-architects {
+        border-left: 6px solid var(--navy);
+        padding-left: 30px;
+        background-image:
+          linear-gradient(var(--aqua) 1px, transparent 1px), linear-gradient(90deg, var(--aqua) 1px, transparent 1px);
+        background-size: 40px 40px;
+        background-color: rgba(255, 255, 255, 0.95);
+        background-blend-mode: overlay;
+      }
+
+      .theme-builders {
+        border-left: 6px solid var(--aqua);
+        padding-left: 30px;
+        background-color: #ffffff;
+      }
+
+      .theme-realestate {
+        border-left: 6px solid var(--timber);
+        padding-left: 30px;
+        background-color: var(--cream);
+      }
+
+      .audience-badge {
+        display: inline-block;
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding: 4px 12px;
+        margin-bottom: 15px;
+      }
+
+      .badge-architects {
+        background: var(--navy);
+        color: #fff;
+      }
+      .badge-builders {
+        background: var(--aqua);
+        color: var(--navy);
+      }
+      .badge-realestate {
+        background: var(--timber);
+        color: #fff;
+      }
+
+      .pull-quote {
+        font-size: 1.5rem;
+        color: var(--timber);
+        margin: 40px 0;
+        padding: 20px 40px;
+        border-top: 1px solid var(--timber);
+        border-bottom: 1px solid var(--timber);
+        text-align: center;
+      }
+
+      .cta-box {
+        background-color: var(--navy);
+        color: #fff;
+        padding: 20px 30px;
+        text-align: center;
+        font-weight: 500;
+        margin-top: 30px;
+      }
+
+      .cta-box a {
+        color: var(--aqua);
+        text-decoration: none;
+      }
+
+      ul.elegant-list {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      ul.elegant-list li {
+        position: relative;
+        padding-left: 24px;
+        margin-bottom: 12px;
+      }
+
+      ul.elegant-list li::before {
+        content: '•';
+        position: absolute;
+        left: 0;
+        color: var(--timber);
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+
+      ol.elegant-numbered {
+        counter-reset: custom-counter;
+        list-style: none;
+        padding-left: 0;
+      }
+
+      ol.elegant-numbered > li {
+        position: relative;
+        padding-left: 40px;
+        margin-bottom: 20px;
+      }
+
+      ol.elegant-numbered > li::before {
+        counter-increment: custom-counter;
+        content: counter(custom-counter) '.';
+        position: absolute;
+        left: 0;
+        font-family: 'Fraunces', serif;
+        font-style: italic;
+        color: var(--timber);
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+
+      .faq-item {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 15px;
+      }
+
+      .faq-q {
+        font-weight: 600;
+        color: var(--navy);
+        margin-bottom: 5px;
+      }
+
+      .faq-a {
+        color: var(--charcoal);
+        font-size: 0.95rem;
+      }
+
+      @page {
+        size: A4;
+        margin: 20mm;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- SECTION 1: COVER PAGE -->
+    <div class="cover-page">
+      <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="YBMT Pool Decks Logo" class="logo" />
+      <h1 class="fraunces italic cover-title">The YBMT Pool Decks<br />Referral Partner Program</h1>
+      <p class="cover-subtitle">
+        A premium partnership for the professionals who shape South East Queensland's most beautiful homes.
+      </p>
+
+      <div class="pill-container">
+        <span class="pill">ARCHITECTS</span>
+        <span class="pill">POOL BUILDERS</span>
+        <span class="pill">REAL ESTATE AGENTS</span>
+      </div>
+
+      <div class="cover-footer">
+        Brisbane · Gold Coast · Sunshine Coast<br /><br />
+        v1.0 · 2026
+      </div>
+    </div>
+
+    <!-- SECTION 2: INTRODUCTION -->
+    <div class="page-break">
+      <div class="running-header">
+        <span>YBMT Pool Decks Referral Partner Program</span>
+        <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="Logo" />
+      </div>
+
+      <h2 class="fraunces italic section-title">§ I — An Invitation</h2>
+      <p class="lead-text">
+        We've built our business around one thing — luxury pool decks across Brisbane, the Gold Coast, and the Sunshine
+        Coast. We don't build pools. We don't design homes. We don't list properties. We do one thing exceptionally well
+        — which is why we work so well alongside the professionals who do those other things. This document is an
+        invitation to partner with us.
+      </p>
+    </div>
+
+    <!-- SECTION 3: WHY PARTNER WITH YBMT POOL DECKS -->
+    <div class="page-break">
+      <div class="running-header">
+        <span>YBMT Pool Decks Referral Partner Program</span>
+        <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="Logo" />
+      </div>
+
+      <h2 class="fraunces italic section-title">§ II — Why Partner With Us</h2>
+
+      <div class="grid-2">
+        <div>
+          <h3 class="card-title">1. SPECIALISATION</h3>
+          <p class="card-text">Your clients get a pool deck specialist, not a generalist sub-contracted out.</p>
+        </div>
+        <div></div>
+        <!-- Spacer for grid layout to simulate 2x2 with borders -->
+        <div>
+          <h3 class="card-title">2. COMPLIANCE HANDLED</h3>
+          <p class="card-text">QBCC licensed, fully insured, $20M PL, 7-year warranty in writing.</p>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div>
+          <h3 class="card-title">3. WHITE-GLOVE SERVICE</h3>
+          <p class="card-text">We work with your client on YOUR terms, on YOUR timelines.</p>
+        </div>
+        <div></div>
+        <div>
+          <h3 class="card-title">4. GENEROUS PARTNERSHIP</h3>
+          <p class="card-text">Clear, transparent referral structure (detailed in next sections).</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 4: WHAT MAKES US WORTH RECOMMENDING -->
+    <div class="page-break">
+      <div class="running-header">
+        <span>YBMT Pool Decks Referral Partner Program</span>
+        <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="Logo" />
+      </div>
+
+      <h2 class="fraunces italic section-title">§ III — What Makes Us Worth Recommending</h2>
+
+      <ul class="elegant-list" style="margin-bottom: 40px">
+        <li>50+ years combined experience (QBCC licensed Queensland construction company)</li>
+        <li>Specialise exclusively in pool decks across SEQ</li>
+        <li>Magazine-quality finishes — every project portfolio-worthy</li>
+        <li>Free design consultation + 48-hour quote turnaround</li>
+        <li>All council approvals, engineering certifications, pool safety compliance handled</li>
+        <li>Clean job sites, daily client updates, post-build follow-up at 12 months</li>
+      </ul>
+
+      <div class="pull-quote fraunces italic">
+        "We answer the phone. We turn up when we say we will. We finish when we say we will."
+      </div>
+    </div>
+
+    <!-- SECTION 5: FOR ARCHITECTS & DESIGNERS -->
+    <div class="page-break">
+      <div class="running-header">
+        <span>YBMT Pool Decks Referral Partner Program</span>
+        <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="Logo" />
+      </div>
+
+      <div class="theme-architects">
+        <span class="audience-badge badge-architects">FOR ARCHITECTS & DESIGNERS</span>
+        <h2 class="fraunces italic section-title">§ IV — Designed To Be Built Exactly</h2>
+        <p class="lead-text">
+          When you design a pool, you design the deck around it. When you partner with us, you get a specialist who
+          builds your design exactly — not 'close enough.'
+        </p>
+
+        <h4 class="fraunces text-navy">What We Offer Architects:</h4>
+        <ul class="elegant-list">
+          <li>
+            Specification consultation — we'll work with you on materials, substructure, drainage during design phase
+          </li>
+          <li>CAD-friendly collaboration — we work from your drawings directly</li>
+          <li>Compliance pre-check — we'll review your design for QDC MP 3.4 compliance before lodgement</li>
+          <li>Project management of the deck scope so you don't have to coordinate trades</li>
+          <li>
+            Photography rights — we'll professionally photograph completed projects and share with you for your
+            portfolio
+          </li>
+          <li>Builder's reference letter on request for your client</li>
+        </ul>
+
+        <h4 class="fraunces text-navy" style="margin-top: 30px">Partnership Structure</h4>
+        <div class="grid-3">
+          <div class="card" style="border-left-color: var(--navy)">
+            <h5 class="card-title">Option A</h5>
+            <p class="card-text"><strong>Referral Fee:</strong> 5% of project value paid on completion</p>
+          </div>
+          <div class="card" style="border-left-color: var(--navy)">
+            <h5 class="card-title">Option B</h5>
+            <p class="card-text">
+              <strong>Reciprocal:</strong> Cross-referral, no fees, mutual website acknowledgement
+            </p>
+          </div>
+          <div class="card" style="border-left-color: var(--navy)">
+            <h5 class="card-title">Option C</h5>
+            <p class="card-text">
+              <strong>White Label:</strong> We build under your design supervision, named credit to you on every
+              photograph
+            </p>
+          </div>
+        </div>
+
+        <h4 class="fraunces text-navy">How It Works</h4>
+        <ol class="elegant-numbered">
+          <li>You introduce us to your client during the design phase</li>
+          <li>We do a complimentary design consultation alongside your team</li>
+          <li>We submit a quote through you or directly (your choice)</li>
+          <li>We deliver — under your design vision, on your timeline</li>
+          <li>You get a portfolio-worthy project. Your client gets a deck that matches your home.</li>
+        </ol>
+
+        <div class="cta-box">
+          Email <span style="color: var(--aqua)"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7014110213093009121d045e131f1d5e1105">[email&#160;protected]</a></span> or call 1300 448 784 to set up an introductory
+          coffee.
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 6: FOR POOL BUILDERS & POOL SHOPS -->
+    <div class="page-break">
+      <div class="running-header">
+        <span>YBMT Pool Decks Referral Partner Program</span>
+        <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="Logo" />
+      </div>
+
+      <div class="theme-builders">
+        <span class="audience-badge badge-builders">FOR POOL BUILDERS & POOL SHOPS</span>
+        <h2 class="fraunces italic section-title" style="border-color: var(--timber)">
+          § V — Your Trusted Deck Partner
+        </h2>
+        <p class="lead-text">
+          Most pool builders we know hate the deck side of the job. They subcontract it out and lose control. They get
+          blamed when things go wrong with a trade they don't own. We solve that problem.
+        </p>
+
+        <h4 class="fraunces text-navy">What We Offer Pool Builders:</h4>
+        <ul class="elegant-list">
+          <li>We become your trusted deck partner — branded as part of YOUR service or co-branded</li>
+          <li>Joint site visits during the design/pre-build phase</li>
+          <li>Coordinated timelines — we sequence with your pool build, no delays caused by us</li>
+          <li>Compliance integration — pool safety + deck compliance designed together</li>
+          <li>Aftercare alignment — your warranty + our warranty, both honored</li>
+          <li>We do NOT compete on pools, ever — strict territorial respect</li>
+        </ul>
+
+        <h4 class="fraunces text-navy" style="margin-top: 30px">Partnership Structure</h4>
+        <div class="grid-3">
+          <div class="card" style="border-left-color: var(--aqua)">
+            <h5 class="card-title">Option A</h5>
+            <p class="card-text"><strong>Referral Fee:</strong> 5% of deck project value</p>
+          </div>
+          <div class="card" style="border-left-color: var(--aqua)">
+            <h5 class="card-title">Option B</h5>
+            <p class="card-text"><strong>Cross-referral:</strong> Free, mutual lead exchange</p>
+          </div>
+          <div class="card" style="border-left-color: var(--aqua)">
+            <h5 class="card-title">Option C</h5>
+            <p class="card-text">
+              <strong>Bundled Offering:</strong> We white-label as your "deck division" — clients see one team, we
+              handle the deck end
+            </p>
+          </div>
+        </div>
+
+        <h4 class="fraunces text-navy">How It Works</h4>
+        <ol class="elegant-numbered">
+          <li>You complete the pool design or sale</li>
+          <li>You introduce us to the client (or bring us in earlier during design)</li>
+          <li>We provide a complimentary deck consultation + quote</li>
+          <li>We sequence our build with yours — no double-handling, no delays</li>
+          <li>
+            Your client gets a complete, beautiful pool + deck project. You get a happy client and a clean handover.
+          </li>
+        </ol>
+
+        <div
+          style="
+            background-color: var(--off-white);
+            padding: 20px;
+            border-left: 4px solid var(--timber);
+            margin-bottom: 20px;
+          "
+        >
+          <h5 class="fraunces text-timber" style="margin-top: 0">Practical Value to Pool Builders:</h5>
+          <ul class="elegant-list" style="margin-bottom: 0">
+            <li>Increases your average customer transaction value</li>
+            <li>Reduces the "who's responsible?" headache when deck issues arise</li>
+            <li>Improves client satisfaction (one specialist team for each element)</li>
+            <li>We never poach your pool work or undercut your service</li>
+          </ul>
+        </div>
+
+        <div class="cta-box">
+          Set up a 30-minute discovery call — email <span style="color: var(--aqua)"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7f1b1e0d1c063f061d120b511c1012511e0a">[email&#160;protected]</a></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 7: FOR REAL ESTATE AGENTS -->
+    <div class="page-break">
+      <div class="running-header">
+        <span>YBMT Pool Decks Referral Partner Program</span>
+        <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="Logo" />
+      </div>
+
+      <div class="theme-realestate">
+        <span class="audience-badge badge-realestate">FOR REAL ESTATE AGENTS</span>
+        <h2 class="fraunces italic section-title" style="border-color: var(--gold)">
+          § VI — Add $80K–$150K To Your Listings
+        </h2>
+        <p class="lead-text">
+          When you list a luxury home with a pool, the pool area can add or subtract $50,000+ from the sale price. We
+          make the difference.
+        </p>
+
+        <h4 class="fraunces text-timber">Three Ways Real Estate Agents Use Us</h4>
+        <div class="grid-3">
+          <div class="card" style="border-left-color: var(--timber); background-color: #fff">
+            <h5 class="card-title">1. Pre-Listing Upgrade</h5>
+            <p class="card-text">
+              Sellers add a custom pool deck before listing. Investment $30K-$80K. ROI: typically $80K-$150K added to
+              sale price.
+            </p>
+          </div>
+          <div class="card" style="border-left-color: var(--timber); background-color: #fff">
+            <h5 class="card-title">2. Post-Inspection</h5>
+            <p class="card-text">
+              If a buyer's pool safety inspection reveals issues, we can quote and quickly remediate.
+            </p>
+          </div>
+          <div class="card" style="border-left-color: var(--timber); background-color: #fff">
+            <h5 class="card-title">3. Buyer Referral</h5>
+            <p class="card-text">
+              New buyers of homes with tired pool surrounds want to upgrade — refer them to us and we look after them.
+            </p>
+          </div>
+        </div>
+
+        <h4 class="fraunces text-timber">What We Offer Agents:</h4>
+        <ul class="elegant-list">
+          <li>48-hour turnaround quotes for sellers and buyers</li>
+          <li>Magazine-quality work that photographs beautifully (your listings look better)</li>
+          <li>Trusted local team for SEQ — no risk to your reputation</li>
+          <li>Real-time updates so you can keep clients informed</li>
+          <li>Co-branded marketing materials if helpful (your logo + ours)</li>
+        </ul>
+
+        <h4 class="fraunces text-timber" style="margin-top: 30px">Partnership Structure</h4>
+        <div class="grid-3">
+          <div class="card" style="border-left-color: var(--gold); background-color: #fff">
+            <h5 class="card-title">Option A</h5>
+            <p class="card-text"><strong>Referral Fee:</strong> 3% of project value paid on completion</p>
+          </div>
+          <div class="card" style="border-left-color: var(--gold); background-color: #fff">
+            <h5 class="card-title">Option B</h5>
+            <p class="card-text"><strong>Reciprocal Marketing:</strong> Featured listings, co-branded social content</p>
+          </div>
+          <div class="card" style="border-left-color: var(--gold); background-color: #fff">
+            <h5 class="card-title">Option C</h5>
+            <p class="card-text">
+              <strong>Vendor Program:</strong> Become our preferred referral agent for a specific suburb/area
+            </p>
+          </div>
+        </div>
+
+        <h4 class="fraunces text-timber">How It Works</h4>
+        <ol class="elegant-numbered">
+          <li>You identify a home (listing or purchase) where a pool deck upgrade or remediation would add value</li>
+          <li>You introduce us to your client</li>
+          <li>We provide a free consultation + 48-hour quote</li>
+          <li>The work gets done. You look like a hero. You collect your referral fee.</li>
+        </ol>
+
+        <div class="cta-box" style="background-color: var(--timber)">
+          Let's chat — coffee or 30-minute Zoom. Email <span style="color: var(--cream)"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b1d5d0c3d2c8f1c8d3dcc59fd2dedc9fd0c4">[email&#160;protected]</a></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 8: PARTNERSHIP DETAILS & FAQs -->
+    <div class="page-break">
+      <div class="running-header">
+        <span>YBMT Pool Decks Referral Partner Program</span>
+        <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="Logo" />
+      </div>
+
+      <h2 class="fraunces italic section-title">§ VII — Partnership Details & FAQs</h2>
+
+      <div class="faq-item">
+        <div class="faq-q">1. How are referral fees paid?</div>
+        <div class="faq-a">
+          Paid by EFT within 14 days of final project payment received from client. We pay on completion, not on quote.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">2. Is there a minimum project size?</div>
+        <div class="faq-a">
+          Referral fees apply on projects $20,000+. Smaller projects we still happily quote, but no fees apply.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">3. Do you guarantee my referrals are protected?</div>
+        <div class="faq-a">
+          Yes. We track every referral in our CRM and never pursue a referred client outside of your introduction.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">4. Can I refer multiple times?</div>
+        <div class="faq-a">Absolutely. Most of our partners refer 3-8 projects per year.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">5. What if my client decides not to proceed?</div>
+        <div class="faq-a">
+          No problem and no obligation. We never pressure your client. Your relationship with them matters more than one
+          job.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">6. How do I track my referrals?</div>
+        <div class="faq-a">
+          We send you a monthly summary of any referrals made in your name and their status. Plus we notify you in real
+          time when a referral converts.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">7. Can my brand be co-credited on the project?</div>
+        <div class="faq-a">
+          Yes — co-branded marketing, joint photoshoots, social mentions, website features all available.
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 9: THE COMMITMENT WE MAKE TO YOU -->
+    <div class="page-break">
+      <div class="running-header">
+        <span>YBMT Pool Decks Referral Partner Program</span>
+        <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="Logo" />
+      </div>
+
+      <h2 class="fraunces italic section-title">§ VIII — Our Commitment To You</h2>
+
+      <ol class="elegant-numbered" style="font-size: 1.1rem; line-height: 1.8">
+        <li><strong>We always answer your calls</strong> — within 4 business hours, guaranteed.</li>
+        <li>
+          <strong>We never undercut your client relationship</strong> — you stay the primary contact unless you choose
+          otherwise.
+        </li>
+        <li><strong>We deliver on time, every time</strong> — or we eat the cost of delays we caused.</li>
+        <li><strong>Your clients become our most-protected</strong> — we never solicit them for unrelated work.</li>
+        <li><strong>We share our portfolio with you</strong> — your reputation rises with ours.</li>
+      </ol>
+    </div>
+
+    <!-- SECTION 10: NEXT STEPS / GETTING STARTED -->
+    <div class="page-break">
+      <div class="running-header">
+        <span>YBMT Pool Decks Referral Partner Program</span>
+        <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="Logo" />
+      </div>
+
+      <h2 class="fraunces italic section-title">§ IX — Getting Started</h2>
+
+      <div class="grid-3" style="margin-top: 30px">
+        <div class="card" style="border-left-color: var(--timber)">
+          <h5 class="card-title">1. Schedule an Intro Call</h5>
+          <p class="card-text">Coffee, Zoom, or phone. Whichever suits you.</p>
+        </div>
+        <div class="card" style="border-left-color: var(--timber)">
+          <h5 class="card-title">2. Receive Welcome Pack</h5>
+          <p class="card-text">Marketing materials, our portfolio, contact list.</p>
+        </div>
+        <div class="card" style="border-left-color: var(--timber)">
+          <h5 class="card-title">3. Start Referring</h5>
+          <p class="card-text">We'll track every introduction and update you in real time.</p>
+        </div>
+      </div>
+
+      <div style="background-color: var(--navy); color: #fff; padding: 40px; text-align: center; margin-top: 40px">
+        <h3 class="fraunces" style="color: #fff; margin-bottom: 20px">Contact</h3>
+        <p style="font-size: 1.1rem; margin-bottom: 5px">
+          <strong>Darcy Coombs</strong> — Project Manager & Partnerships Lead
+        </p>
+        <p style="margin-bottom: 5px">Phone: 1300 448 784</p>
+        <p style="margin-bottom: 5px">Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a5c1c4d7c6dce5dcc7c8d18bc6cac88bc4d0">[email&#160;protected]</a></p>
+        <p style="margin-bottom: 0">Web: ybmt.com.au/pool-decks/partners</p>
+      </div>
+    </div>
+
+    <!-- SECTION 11 (APPENDIX): Marketing Materials -->
+    <div class="page-break">
+      <div class="running-header">
+        <span>YBMT Pool Decks Referral Partner Program</span>
+        <img src="https://www.genspark.ai/api/files/s/nvT30S4F" alt="Logo" />
+      </div>
+
+      <h2 class="fraunces italic section-title">§ X — Marketing Materials Available To Partners</h2>
+
+      <ul class="elegant-list" style="font-size: 1.1rem">
+        <li>Co-branded brochure templates</li>
+        <li>Digital portfolio (link to our gallery)</li>
+        <li>Buyer's Guide PDF (you can share with your clients)</li>
+        <li>Social media kit (graphics, captions you can post)</li>
+        <li>Email templates introducing us to your clients</li>
+      </ul>
+    </div>
+
+    <!-- BACK COVER -->
+    <div class="page-break cover-page" style="background-color: var(--off-white); border-top: none">
+      <img
+        src="https://www.genspark.ai/api/files/s/nvT30S4F"
+        alt="YBMT Pool Decks Logo"
+        class="logo"
+        style="height: 60px; margin-bottom: 40px"
+      />
+
+      <h2 class="fraunces italic text-navy" style="font-size: 2rem; max-width: 500px; line-height: 1.3">
+        "Built around the professionals who shape South East Queensland's finest homes."
+      </h2>
+
+      <div class="cover-footer" style="margin-top: 80px">ybmt.com.au · 1300 448 784 · <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8befeaf9e8f2cbf2e9e6ffa5e8e4e6a5eafe">[email&#160;protected]</a></div>
+    </div>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
