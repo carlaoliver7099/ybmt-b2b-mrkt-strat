@@ -1,1 +1,90 @@
-h1 { font-family: Arial, Helvetica, sans-serif; }
+/* YBMT x CoSai Joint Venture Intranet — Notion-inspired design system */
+
+:root {
+  --ybmt-navy: #0b2545;
+  --ybmt-navy-soft: #13315c;
+  --ybmt-orange: #e87722;
+  --ybmt-orange-soft: #f5a05f;
+  --ybmt-white: #ffffff;
+  --ink: #37352f;
+  --ink-soft: #6b6b6b;
+  --ink-fade: #9b9a97;
+  --paper: #fbfaf8;
+  --paper-warm: #f7f6f3;
+  --line: #e9e7e1;
+  --line-strong: #d9d6cf;
+  --emerald: #2d7a5f;
+  --amber: #c87f0a;
+  --crimson: #b03a48;
+}
+
+* { -webkit-font-smoothing: antialiased; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+}
+
+h1, h2, h3, .display { font-family: 'Fraunces', Georgia, serif; letter-spacing: -0.015em; }
+
+.notion-block { transition: background-color 0.12s ease; }
+.notion-block:hover { background-color: rgba(55, 53, 47, 0.03); }
+
+.callout {
+  border-left: 3px solid var(--ybmt-orange);
+  background: linear-gradient(to right, rgba(232, 119, 34, 0.06), rgba(232, 119, 34, 0.01));
+  border-radius: 4px;
+}
+
+.toc-link { transition: color 0.15s, border-color 0.15s; border-left: 2px solid transparent; }
+.toc-link:hover { color: var(--ybmt-orange); border-left-color: var(--ybmt-orange); }
+.toc-link.active { color: var(--ybmt-navy); font-weight: 600; border-left-color: var(--ybmt-orange); }
+
+/* Grid cell hover */
+.grid-cell { transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease; }
+.grid-cell:hover { transform: translateY(-2px); box-shadow: 0 8px 24px -8px rgba(11, 37, 69, 0.18); border-color: var(--ybmt-orange); }
+
+/* Funnel SVG container */
+.funnel-stage { transition: opacity 0.2s; }
+.funnel-stage:hover { opacity: 0.85; }
+
+/* Year card progressive scaling */
+.year-card { transition: all 0.22s ease; }
+.year-card:hover { transform: translateY(-3px); }
+
+/* Triangle margin breakdown */
+.margin-layer { transition: transform 0.15s; }
+.margin-layer:hover { transform: scale(1.015); }
+
+/* Tag chip */
+.chip {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  padding: 0.18rem 0.55rem; border-radius: 999px;
+  font-size: 0.7rem; font-weight: 600;
+  letter-spacing: 0.02em; text-transform: uppercase;
+}
+
+/* Status dots */
+.dot { width: 8px; height: 8px; border-radius: 999px; display: inline-block; }
+
+/* Print-friendly */
+@media print {
+  .no-print { display: none !important; }
+  body { background: white; }
+  .grid-cell { box-shadow: none !important; }
+}
+
+/* Smooth scroll for in-page anchors */
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+/* Subtle dotted bg accent */
+.dotted-bg {
+  background-image: radial-gradient(circle, rgba(11, 37, 69, 0.06) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* KPI strikethrough fix */
+.metric-num { font-variant-numeric: tabular-nums; }
+
+/* Active reading mark */
+.read-section { scroll-margin-top: 96px; }
