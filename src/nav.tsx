@@ -19,6 +19,9 @@ export const TopNav = ({ active = 'home' }: NavProps) => {
           <a href="/" class={`${linkBase} ${active === 'home' ? activeCls : ''}`}>
             <i class="fas fa-house mr-1.5 text-[10px]"></i> Charter
           </a>
+          <a href="/matrix" class={`${linkBase} ${active === 'matrix' ? activeCls : ''}`}>
+            <i class="fas fa-table-cells-large mr-1.5 text-[10px]"></i> 3×3 Matrix
+          </a>
           <a href="/funnel" class={`${linkBase} ${active === 'funnel' ? activeCls : ''}`}>
             <i class="fas fa-filter mr-1.5 text-[10px]"></i> Marketing Funnel
           </a>

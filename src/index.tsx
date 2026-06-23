@@ -4,6 +4,7 @@ import { TopNav } from './nav'
 import { ValueChainPage } from './value-chain'
 import { FunnelPage } from './funnel'
 import { MarketingMixPage } from './marketing-mix'
+import { MatrixPage } from './matrix'
 
 const app = new Hono()
 
@@ -12,6 +13,7 @@ app.use(renderer)
 app.get('/value-chain', (c) => c.render(<ValueChainPage />))
 app.get('/funnel', (c) => c.render(<FunnelPage />))
 app.get('/marketing-mix', (c) => c.render(<MarketingMixPage />))
+app.get('/matrix', (c) => c.render(<MatrixPage />))
 
 app.get('/', (c) => {
   return c.render(
@@ -71,6 +73,33 @@ app.get('/', (c) => {
           </div>
         </div>
       </header>
+
+      {/* ============== NEW: 3x3 MATRIX BANNER ============== */}
+      <section class="max-w-[1100px] mx-auto px-6 lg:px-10 mb-10">
+        <a href="/matrix" class="block group">
+          <div class="bg-gradient-to-br from-[var(--ybmt-navy)] to-[#0d2236] text-white rounded-xl p-6 hover:shadow-lg transition-all">
+            <div class="flex items-center gap-5">
+              <div class="w-16 h-16 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-table-cells-large text-3xl text-[var(--ybmt-orange)]"></i>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center gap-2 mb-1">
+                  <span class="chip bg-[var(--ybmt-orange)]/20 text-[var(--ybmt-orange)] text-[10px]">NEW · v1.0</span>
+                  <span class="text-[11px] uppercase tracking-wider text-white/60 font-semibold">Engagement scoreboard</span>
+                </div>
+                <h2 class="display text-2xl font-bold leading-tight mb-1">Where are we, exactly?</h2>
+                <p class="text-sm text-white/80">
+                  The 3 × 3 Build Status Matrix — nine cells, three streams (Strategy · Assets · Story), scored honestly.
+                  Answers <em>"what's done, what's partial, what's empty, and what do we build next?"</em>
+                </p>
+              </div>
+              <div class="hidden md:flex items-center text-white/60 group-hover:text-[var(--ybmt-orange)] transition-colors">
+                <i class="fas fa-arrow-right text-xl"></i>
+              </div>
+            </div>
+          </div>
+        </a>
+      </section>
 
       {/* ============== CALLOUT: WHAT THIS IS ============== */}
       <section class="max-w-[1100px] mx-auto px-6 lg:px-10 mb-16">
