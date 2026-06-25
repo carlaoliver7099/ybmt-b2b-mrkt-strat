@@ -5,6 +5,13 @@ import { ValueChainPage } from './value-chain'
 import { FunnelPage } from './funnel'
 import { MarketingMixPage } from './marketing-mix'
 import { MatrixPage } from './matrix'
+import {
+  ResortYardsHubPage,
+  FastTrackHostPage,
+  PoolCompletionPage,
+  DeckReplacementPage,
+  PreSaleInvestorPage,
+} from './resort-yards'
 
 const app = new Hono()
 
@@ -14,6 +21,13 @@ app.get('/value-chain', (c) => c.render(<ValueChainPage />))
 app.get('/funnel', (c) => c.render(<FunnelPage />))
 app.get('/marketing-mix', (c) => c.render(<MarketingMixPage />))
 app.get('/matrix', (c) => c.render(<MatrixPage />))
+
+// Resort Yards (Pool LOB) prototype — built 100% to locked strategy spec
+app.get('/pools', (c) => c.render(<ResortYardsHubPage />))
+app.get('/pools/fast-track-host', (c) => c.render(<FastTrackHostPage />))
+app.get('/pools/pool-completion', (c) => c.render(<PoolCompletionPage />))
+app.get('/pools/deck-replacement', (c) => c.render(<DeckReplacementPage />))
+app.get('/pools/pre-sale-investor', (c) => c.render(<PreSaleInvestorPage />))
 
 app.get('/', (c) => {
   return c.render(

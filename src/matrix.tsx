@@ -41,7 +41,7 @@ const CELLS: Cell[] = [
     strategy: { status: 'done', pct: 90, evidence: '4,085-line GTM · 68 Brisbane refs · all 12 pillars covered · pillar/cluster pages mapped', link: 'https://github.com/carlaoliver7099/ybmt-b2b-mrkt-strat/blob/main/src/termite-gtm.tsx' },
     assets:   { status: 'empty',   pct: 10, evidence: 'Cap statement (Brisbane generic) exists · no termite-specific creative built', link: '/marketing-mix#02-capability-statements' },
     story:    { status: 'partial', pct: 40, evidence: 'In funnel + LP grid · no dedicated termite-Brisbane story page', link: '/funnel' },
-    nextAction: 'Build deployable termite-Brisbane asset kit (clone Pool Decks structure) — highest revenue cell',
+    nextAction: 'Build deployable termite-Brisbane asset kit (clone Resort Yards structure) — highest revenue cell',
   },
   {
     lob: 'termite', region: 'gold-coast', revenueY2Pct: 15,
@@ -60,10 +60,10 @@ const CELLS: Cell[] = [
   // ===== POOLS ROW (30% of Y2 revenue) =====
   {
     lob: 'pools', region: 'brisbane', revenueY2Pct: 18,
-    strategy: { status: 'done', pct: 85, evidence: '2,454-line pools GTM + 338-line gap analysis · 73 Brisbane refs', link: 'https://github.com/carlaoliver7099/ybmt-b2b-mrkt-strat/blob/main/src/pools-gtm.tsx' },
-    assets:   { status: 'partial', pct: 70, evidence: '22-asset Pool Decks kit (6 heros, buyer guide, 10 ad variants, 2 videos, 5 emails, brochure, scripts) · region-agnostic but Brisbane-fittable', link: '/marketing-mix' },
-    story:    { status: 'done', pct: 80, evidence: 'Full /marketing-mix page · funnel + LP grid · CTA tile on homepage', link: '/marketing-mix' },
-    nextAction: 'Tag existing assets as Pool-Brisbane explicitly · gap analysis says 6.4/10 — close gaps',
+    strategy: { status: 'done', pct: 90, evidence: '2,454-line pools GTM + 338-line gap analysis + Resort Yards rebrand executed · 7 DBAs codified · 4 JTBDs locked', link: 'https://github.com/carlaoliver7099/ybmt-b2b-mrkt-strat/blob/main/src/pools-gtm.tsx' },
+    assets:   { status: 'done', pct: 85, evidence: 'Resort Yards rebuild: DBA-3 seal + 3 archetype heroes (Tropical/Coastal/Mediterranean) + 5 doctrine-compliant pages · zero "Free Quote" violations', link: '/pools' },
+    story:    { status: 'done', pct: 90, evidence: `Live hub + 4 JTBD landing pages at /pools · category-defining frame · "Built like it's our own home" closing · Resort Yard Inspection ritual`, link: '/pools' },
+    nextAction: 'Add Pool-Brisbane capability statement page · wire lead-magnet downloads · build sonic mnemonic (DBA-6)',
   },
   {
     lob: 'pools', region: 'gold-coast', revenueY2Pct: 7,
@@ -107,7 +107,7 @@ const CELLS: Cell[] = [
 
 const lobMeta = {
   termite:  { label: 'Termite Damage Repair', short: 'Termite', icon: 'fa-shield-halved', accent: '#b8421a', rowShare: 55 },
-  pools:    { label: 'Pool Decks',            short: 'Pool Decks', icon: 'fa-water',        accent: '#1d6f8a', rowShare: 30 },
+  pools:    { label: 'Resort Yards',          short: 'Resort Yards', icon: 'fa-water',        accent: '#1d6f8a', rowShare: 30 },
   units:    { label: 'Unit Renovations',      short: 'Units',     icon: 'fa-building',     accent: '#5b7a3a', rowShare: 15 },
 } as const
 
@@ -303,7 +303,7 @@ export const MatrixPage = () => {
               <i class="fas fa-box-archive text-[10px] mr-1"></i> Stream B · Assets
             </div>
             <div class="metric-num display text-4xl font-bold text-[var(--ybmt-navy)] mb-1">{streamB}<span class="text-xl text-[var(--ink-fade)]">/100</span></div>
-            <div class="text-xs text-[var(--ink-soft)]">Deployable marketing kit · 22 artefacts · Pool Decks prototype</div>
+            <div class="text-xs text-[var(--ink-soft)]">Deployable marketing kit · 22 artefacts · Resort Yards prototype</div>
           </div>
           <div class="bg-white border border-[var(--line)] rounded-lg p-6">
             <div class="text-[10px] uppercase tracking-wider text-[var(--ink-fade)] font-semibold mb-2">
@@ -325,9 +325,9 @@ export const MatrixPage = () => {
               <p class="text-[var(--ink)] leading-relaxed mb-3">
                 We have <strong>deep Top-4-tier strategy</strong> covering all three service lines (especially Termite at 4,085 lines), but it's
                 <strong> Brisbane-heavy</strong> and the regional variants for Gold Coast and Sunshine Coast are 25–35% complete.
-                We have <strong>one fully built deployable kit</strong> (Pool Decks · 22 assets, region-agnostic but Brisbane-fittable) which is the
+                We have <strong>one fully built deployable kit</strong> (Resort Yards · 22 assets, region-agnostic but Brisbane-fittable) which is the
                 <em> prototype that proves the strategy is real</em>. The other 8 of 9 cells need their own kits — but most are
-                <strong>variants of the Pool Decks template</strong>, not full rebuilds from zero.
+                <strong>variants of the Resort Yards template</strong>, not full rebuilds from zero.
               </p>
               <p class="text-[var(--ink)] leading-relaxed">
                 The honest read: <strong>we're not behind</strong>. We're 1.5 of 9 cells into the build — exactly where a real engagement
@@ -387,7 +387,7 @@ export const MatrixPage = () => {
             <li class="flex gap-4 pb-4 border-b border-stone-100">
               <div class="w-8 h-8 rounded-full bg-green-100 text-green-700 flex items-center justify-center font-bold text-sm flex-shrink-0">1</div>
               <div>
-                <div class="font-semibold text-[var(--ink)]">Lock the Pool Decks · Brisbane prototype</div>
+                <div class="font-semibold text-[var(--ink)]">Lock the Resort Yards · Brisbane prototype</div>
                 <p class="text-sm text-[var(--ink-soft)] mt-1">Close the gaps from POOLS-GAP-ANALYSIS-v1 (6.4/10 → 9/10). Tag the 22-asset kit explicitly as <em>Pool-Brisbane</em>. This becomes the template.</p>
                 <div class="text-[11px] text-[var(--ink-fade)] mt-2"><i class="fas fa-clock mr-1"></i> ~2 weeks · ~7% of remaining work</div>
               </div>
@@ -396,7 +396,7 @@ export const MatrixPage = () => {
               <div class="w-8 h-8 rounded-full bg-orange-100 text-orange-700 flex items-center justify-center font-bold text-sm flex-shrink-0">2</div>
               <div>
                 <div class="font-semibold text-[var(--ink)]">Build Termite · Brisbane deployable kit</div>
-                <p class="text-sm text-[var(--ink-soft)] mt-1">Highest revenue contribution (25% of Y2). Clone the Pool Decks structure — 10 sections, 22 artefacts — swap the photography, copy, and case studies. Strategy is already 90% complete.</p>
+                <p class="text-sm text-[var(--ink-soft)] mt-1">Highest revenue contribution (25% of Y2). Clone the Resort Yards structure — 10 sections, 22 artefacts — swap the photography, copy, and case studies. Strategy is already 90% complete.</p>
                 <div class="text-[11px] text-[var(--ink-fade)] mt-2"><i class="fas fa-clock mr-1"></i> ~3–4 weeks · ~25% of remaining work</div>
               </div>
             </li>
@@ -483,7 +483,7 @@ export const MatrixPage = () => {
               The Tuesday-morning deployable kit. The <em>what gets sent and shown</em>. Lives in <code class="text-xs bg-stone-100 px-1 rounded">/marketing-mix</code>.
             </p>
             <ul class="text-xs text-[var(--ink-soft)] space-y-1 mb-4">
-              <li><i class="fas fa-check text-green-600 mr-1.5"></i> 22 finished artefacts (Pool Decks prototype)</li>
+              <li><i class="fas fa-check text-green-600 mr-1.5"></i> 22 finished artefacts (Resort Yards prototype)</li>
               <li><i class="fas fa-check text-green-600 mr-1.5"></i> 6 hero photos + logo</li>
               <li><i class="fas fa-check text-green-600 mr-1.5"></i> Buyer guide, landing page, 5 emails, 10 ads, 2 videos</li>
               <li><i class="fas fa-check text-green-600 mr-1.5"></i> 3 capability statements (Brisbane, Pool-SC, Termite-SC)</li>
