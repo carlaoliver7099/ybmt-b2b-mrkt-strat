@@ -11,6 +11,7 @@ import {
   PoolCompletionPage,
   DeckReplacementPage,
   PreSaleInvestorPage,
+  CapabilityStatementBrisbanePage,
 } from './resort-yards'
 
 const app = new Hono()
@@ -28,6 +29,7 @@ app.get('/pools/fast-track-host', (c) => c.render(<FastTrackHostPage />))
 app.get('/pools/pool-completion', (c) => c.render(<PoolCompletionPage />))
 app.get('/pools/deck-replacement', (c) => c.render(<DeckReplacementPage />))
 app.get('/pools/pre-sale-investor', (c) => c.render(<PreSaleInvestorPage />))
+app.get('/pools/capability-statement-brisbane', (c) => c.render(<CapabilityStatementBrisbanePage />))
 
 app.get('/', (c) => {
   return c.render(

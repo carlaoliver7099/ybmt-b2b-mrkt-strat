@@ -22,10 +22,12 @@ Built 100% to the locked GitHub strategy spec (`pools-gtm.tsx`, 2,454 lines):
 - `/pools/pool-completion` — Pool-Completion Buyer JTBD landing page
 - `/pools/deck-replacement` — Replacement Buyer JTBD landing page
 - `/pools/pre-sale-investor` — Pre-Sale Investor JTBD landing page
+- `/pools/capability-statement-brisbane` — **NEW** 4-page printable capability statement (cover · channel-buyer · end-buyer JTBD ladder · evidence)
 
 **DBA assets generated and embedded:**
 - DBA-3 "Built in 30 Days · Guaranteed" seal (AI-generated, validated legible)
 - 3 archetype heroes — Tropical / Coastal / Mediterranean (2752×1536 each)
+- DBA-6 sonic mnemonic — 2-second timber + brass acoustic sting (wired into every page footer as "Hear the brand" button)
 
 **Doctrine compliance:**
 - 0 "Free Quote / Free Consultation / No Obligation" CTAs (forbidden language enforced)
@@ -56,6 +58,7 @@ Built 100% to the locked GitHub strategy spec (`pools-gtm.tsx`, 2,454 lines):
 | `/pools/pool-completion` | JTBD landing page |
 | `/pools/deck-replacement` | JTBD landing page |
 | `/pools/pre-sale-investor` | JTBD landing page |
+| `/pools/capability-statement-brisbane` | 4-page printable capability statement |
 
 ## Data Architecture
 
@@ -65,9 +68,7 @@ Built 100% to the locked GitHub strategy spec (`pools-gtm.tsx`, 2,454 lines):
 
 ## Features Not Yet Implemented
 
-- Pool-Brisbane capability statement page (the missing artefact from the 22-asset kit)
 - Lead-magnet PDF downloads (forms render but submit endpoints not wired)
-- DBA-6 sonic mnemonic (1.5s audio asset — deferred)
 - Regional variants: Pool-Gold-Coast, Pool-Sunshine-Coast (templates ready to clone)
 - Termite LOB build (highest revenue cell — 25% of Y2)
 - Units LOB build
@@ -75,11 +76,11 @@ Built 100% to the locked GitHub strategy spec (`pools-gtm.tsx`, 2,454 lines):
 
 ## Recommended Next Steps for Development
 
-1. **Phase 3** — Build Pool-Brisbane capability statement page (close the 22-asset kit)
-2. **Phase 4 follow-on** — Wire form submissions to capture lead-magnet emails (Cloudflare KV or third-party)
-3. **Clone the playbook** — apply Resort Yards structure to Termite-Brisbane (highest revenue cell)
-4. **Cloudflare deployment** — pick deployment path (own CF account vs Genspark-hosted) and ship to production
-5. **Custom domain** — `cosaiybmtpool.org`
+1. **Cloudflare deployment** — pick deployment path (own CF account vs Genspark-hosted) and ship to production
+2. **Wire form submissions** — capture lead-magnet emails via Cloudflare KV or third-party (Resend, SendGrid)
+3. **Clone the playbook** — apply Resort Yards structure to Termite-Brisbane (highest revenue cell — 25% of Y2)
+4. **Custom domain** — `cosaiybmtpool.org`
+5. **Regional variants** — Pool-Gold-Coast and Pool-Sunshine-Coast (clone from Brisbane template)
 
 ## User Guide
 
@@ -98,4 +99,4 @@ This intranet is the strategy-execution scoreboard for the YBMT × CoSai JV.
 - **Fonts (DBA-4)**: Inter (body) + Fraunces (display, italic)
 - **Brand Palette (DBA-5)**: Navy `#1b3a5c` · Timber `#b8743d` · Aqua `#4db6c7` · Cream `#f5f1ea` · Charcoal `#2b2b2b`
 - **Last Updated**: 2026-06-25
-- **Last Commit**: `23119cc` Add YBMT Resort Yards (Pool LOB) — 100% to locked strategy spec
+- **Last Commit**: Resort Yards build + capability statement + DBA-6 sonic mnemonic

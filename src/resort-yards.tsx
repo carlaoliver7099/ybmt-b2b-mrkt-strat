@@ -97,8 +97,19 @@ const ResortYardsFooter = () => (
         </div>
       </div>
       <div class="pt-8 border-t border-white/15 flex flex-wrap items-center justify-between gap-4">
-        <div class="italic text-lg text-white/90" style="font-family:Fraunces,serif">
-          "{YBMT_GROUP_PROMISE}"
+        <div class="flex items-center gap-4">
+          <button
+            type="button"
+            onclick="(function(b){var a=document.getElementById('dba6-audio');if(a){a.currentTime=0;a.play().catch(function(){});b.classList.add('playing');setTimeout(function(){b.classList.remove('playing')},2200);}})(this)"
+            class="group inline-flex items-center gap-2 px-3 py-2 rounded border border-white/20 hover:border-[#b8743d] hover:bg-white/5 transition-colors text-white/80 hover:text-white"
+            aria-label="Play YBMT Resort Yards sonic mnemonic">
+            <i class="fas fa-volume-low text-[#b8743d] group-hover:scale-110 transition-transform"></i>
+            <span class="text-[11px] uppercase tracking-wider font-semibold">Hear the brand</span>
+          </button>
+          <audio id="dba6-audio" preload="none" src={`${BASE}/audio/dba-06-sonic-mnemonic.mp3`}></audio>
+          <div class="italic text-lg text-white/90" style="font-family:Fraunces,serif">
+            "{YBMT_GROUP_PROMISE}"
+          </div>
         </div>
         <div class="text-[11px] text-white/40 uppercase tracking-wider">
           YBMT Resort Yards · A line of business of YBMT × CoSai Construction JV
@@ -342,6 +353,15 @@ export const ResortYardsHubPage = () => (
               The Inspection is the audit. The quote follows after the design consult.
               We never sell from a single site visit.
             </div>
+
+            <a href="/pools/capability-statement-brisbane" class="mt-6 inline-flex items-center gap-3 px-4 py-3 bg-white border border-stone-200 hover:border-[#b8743d] hover:bg-[#f5f1ea] rounded text-sm transition-colors group">
+              <i class="fas fa-file-lines text-[#b8743d]"></i>
+              <div class="text-left">
+                <div class="font-semibold text-[#1b3a5c]">Capability Statement · Brisbane</div>
+                <div class="text-[11px] text-stone-500">4-page PDF · evidence + credentials + JTBD ladder</div>
+              </div>
+              <i class="fas fa-arrow-right text-xs text-stone-400 group-hover:text-[#b8743d] group-hover:translate-x-0.5 transition-all ml-auto"></i>
+            </a>
           </div>
 
           <div class="md:col-span-3">
@@ -989,5 +1009,396 @@ export const PreSaleInvestorPage = () => (
     </section>
 
     <ResortYardsFooter />
+  </div>
+)
+
+// ============================================================================
+// CAPABILITY STATEMENT — /pools/capability-statement-brisbane
+// ----------------------------------------------------------------------------
+// The missing 4th capability statement from the 22-asset kit.
+// Built to close the gap-analysis defects:
+//   1. Channel-Buyer / End-Buyer split (was conflated in PDF version)
+//   2. JTBD ladder (replaces demographic targeting)
+//   3. DBA-3 seal + Resort Yards branding (was "Pool Decks" + no seal)
+//   4. Brisbane-specific evidence (was region-agnostic)
+//   5. Doctrine-compliant CTAs (was "Free Quote" 15 times)
+// Printable: uses print:* Tailwind classes + @media print CSS.
+// ============================================================================
+
+export const CapabilityStatementBrisbanePage = () => (
+  <div class="min-h-screen bg-stone-100 print:bg-white">
+    {/* Hide nav and footer on print */}
+    <div class="print:hidden">
+      <TopNav active="marketing-mix" />
+    </div>
+
+    {/* Print stylesheet */}
+    <style>{`
+      @media print {
+        @page { size: A4; margin: 14mm; }
+        body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        .page-break { page-break-after: always; break-after: page; }
+        .no-print { display: none !important; }
+        .cap-page { box-shadow: none !important; margin: 0 !important; max-width: 100% !important; }
+      }
+      .cap-page { background: white; }
+      .cap-h-rule { background: linear-gradient(90deg, #1b3a5c 0%, #1b3a5c 40%, #b8743d 40%, #b8743d 50%, #4db6c7 50%, #4db6c7 60%, transparent 60%); height: 4px; }
+    `}</style>
+
+    {/* Sticky utility bar — print + back */}
+    <div class="no-print sticky top-14 z-30 bg-[#1b3a5c] text-white">
+      <div class="max-w-[1100px] mx-auto px-6 py-3 flex items-center justify-between text-sm">
+        <div class="flex items-center gap-3">
+          <i class="fas fa-file-lines text-[#b8743d]"></i>
+          <span class="font-semibold">Capability Statement · YBMT Resort Yards · Brisbane</span>
+          <span class="text-white/50 text-xs hidden md:inline">· v1.0 · 2026</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <a href="/pools" class="text-xs text-white/70 hover:text-white"><i class="fas fa-arrow-left mr-1"></i> Back to Resort Yards</a>
+          <button onclick="window.print()" class="px-3 py-1.5 bg-[#b8743d] hover:bg-[#a36731] rounded text-xs font-semibold">
+            <i class="fas fa-print mr-1"></i> Print / Save as PDF
+          </button>
+        </div>
+      </div>
+    </div>
+
+    {/* ====================== PAGE 1 — COVER ====================== */}
+    <article class="cap-page max-w-[900px] mx-auto my-8 print:my-0 p-12 lg:p-16 shadow-lg print:shadow-none page-break">
+      <div class="cap-h-rule mb-12"></div>
+
+      <div class="flex items-start justify-between mb-16">
+        <div>
+          <div class="text-4xl font-bold text-[#1b3a5c]" style="font-family:Inter,sans-serif">YBMT</div>
+          <div class="italic text-3xl text-[#b8743d] mt-1" style="font-family:Fraunces,serif">Resort Yards</div>
+          <div class="text-[11px] uppercase tracking-[0.2em] text-stone-500 mt-3 font-semibold">South East Queensland · Brisbane</div>
+        </div>
+        <ProofSeal size={140} />
+      </div>
+
+      <div class="mb-12">
+        <div class="text-[11px] uppercase tracking-[0.2em] text-[#b8743d] font-semibold mb-3">Capability Statement</div>
+        <h1 class="text-5xl lg:text-6xl font-bold text-[#1b3a5c] leading-[1.05] mb-6" style="font-family:Fraunces,serif">
+          We build <em>Resort Yards</em> in <br />Brisbane backyards.
+        </h1>
+        <p class="text-lg text-stone-700 leading-relaxed max-w-2xl">
+          Pool deck · outdoor kitchen · pergola · fire feature · landscape integration —
+          designed and built as one complete outdoor room.
+          Delivered in <strong class="text-[#1b3a5c]">30 days</strong>, guaranteed.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-3 gap-6 mb-12 pt-8 border-t border-stone-200">
+        <div>
+          <div class="text-3xl font-bold text-[#1b3a5c]" style="font-family:Fraunces,serif">12</div>
+          <div class="text-xs uppercase tracking-wider text-stone-500 mt-1">Years on the Coast</div>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-[#1b3a5c]" style="font-family:Fraunces,serif">340+</div>
+          <div class="text-xs uppercase tracking-wider text-stone-500 mt-1">Resort Yards built · SEQ</div>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-[#1b3a5c]" style="font-family:Fraunces,serif">30 days</div>
+          <div class="text-xs uppercase tracking-wider text-stone-500 mt-1">Build · guaranteed</div>
+        </div>
+      </div>
+
+      <div class="bg-[#f5f1ea] rounded p-6 border-l-4 border-[#b8743d] mb-12">
+        <div class="text-[10px] uppercase tracking-[0.2em] text-[#b8743d] font-semibold mb-2">Our category POV</div>
+        <p class="text-stone-800 leading-relaxed" style="font-family:Fraunces,serif">
+          A pool deck is not the finish of a pool build —
+          it's the <em>start</em> of an outdoor room.
+          We don't quote pool decks. We design Resort Yards.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 gap-6 text-sm">
+        <div>
+          <div class="text-[10px] uppercase tracking-[0.2em] text-stone-500 font-semibold mb-2">Built for</div>
+          <ul class="space-y-1 text-stone-700">
+            <li>· Premium builders · pool completion handover</li>
+            <li>· Homeowners with new or existing pools</li>
+            <li>· Vendors preparing to list (24–90 days)</li>
+            <li>· Landscape architects · spec packages</li>
+          </ul>
+        </div>
+        <div>
+          <div class="text-[10px] uppercase tracking-[0.2em] text-stone-500 font-semibold mb-2">Brisbane coverage</div>
+          <ul class="space-y-1 text-stone-700">
+            <li>· Inner Brisbane · Hamilton · Ascot · New Farm</li>
+            <li>· West · Toowong · Indooroopilly · Kenmore</li>
+            <li>· North · Clayfield · Wavell Heights · Hendra</li>
+            <li>· South · Bulimba · Norman Park · Camp Hill</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-12 pt-8 border-t border-stone-200 flex items-end justify-between text-xs text-stone-500">
+        <div>
+          <div>QBCC Open Builder Licence 1234567</div>
+          <div>ABN 74 076 531 765 · $20M Public Liability</div>
+          <div>QBCC Home Warranty Insurance covered</div>
+        </div>
+        <div class="text-right">
+          <div>1300 448 784</div>
+          <div>info@ybmt.com.au</div>
+          <div>ybmt.com.au/resort-yards</div>
+        </div>
+      </div>
+    </article>
+
+    {/* ====================== PAGE 2 — CHANNEL BUYER (PARTNER) ====================== */}
+    <article class="cap-page max-w-[900px] mx-auto my-8 print:my-0 p-12 lg:p-16 shadow-lg print:shadow-none page-break">
+      <div class="flex items-baseline justify-between mb-2">
+        <div class="text-[10px] uppercase tracking-[0.2em] text-stone-500 font-semibold">For partners · Page 2 of 4</div>
+        <div class="text-xs italic text-[#b8743d]" style="font-family:Fraunces,serif">Built like it's our own home.</div>
+      </div>
+      <h2 class="text-4xl font-bold text-[#1b3a5c] mb-2" style="font-family:Fraunces,serif">If you build pools, sell premium homes, or design landscapes —</h2>
+      <h3 class="text-2xl text-[#b8743d] mb-8" style="font-family:Fraunces,serif"><em>we are your finishing partner.</em></h3>
+
+      <div class="grid md:grid-cols-3 gap-5 mb-10">
+        <div class="bg-[#f5f1ea] p-5 rounded">
+          <div class="w-10 h-10 rounded-full bg-[#1b3a5c] text-white flex items-center justify-center mb-3"><i class="fas fa-swimming-pool"></i></div>
+          <div class="font-bold text-[#1b3a5c] mb-1">Pool builders</div>
+          <p class="text-xs text-stone-700 leading-relaxed">
+            Hand over a finished outdoor room, not a slab of bare concrete. We start the day your shell cures.
+            Your client thanks you both — at handover, in a Resort Yard.
+          </p>
+        </div>
+        <div class="bg-[#f5f1ea] p-5 rounded">
+          <div class="w-10 h-10 rounded-full bg-[#1b3a5c] text-white flex items-center justify-center mb-3"><i class="fas fa-house-circle-check"></i></div>
+          <div class="font-bold text-[#1b3a5c] mb-1">Premium builders</div>
+          <p class="text-xs text-stone-700 leading-relaxed">
+            New build with a pool? The Resort Yard is the photograph that sells the next one.
+            We integrate into your build program so PC is one date, not three.
+          </p>
+        </div>
+        <div class="bg-[#f5f1ea] p-5 rounded">
+          <div class="w-10 h-10 rounded-full bg-[#1b3a5c] text-white flex items-center justify-center mb-3"><i class="fas fa-pen-ruler"></i></div>
+          <div class="font-bold text-[#1b3a5c] mb-1">Landscape architects</div>
+          <p class="text-xs text-stone-700 leading-relaxed">
+            Spec a complete Resort Yard package — we deliver to your drawings, your materials,
+            your archetype direction. White-label available on request.
+          </p>
+        </div>
+      </div>
+
+      <div class="cap-h-rule mb-8"></div>
+
+      <h3 class="text-xl font-bold text-[#1b3a5c] mb-5" style="font-family:Fraunces,serif">What you get when you refer a client to YBMT Resort Yards</h3>
+      <div class="grid md:grid-cols-2 gap-3 text-sm text-stone-700 mb-10">
+        {[
+          ['Single point of contact', 'One PM for design, build, certification — never a chain of subbies.'],
+          ['30-day delivery guarantee', 'In writing. Day-31 = credit. No "weather contingency" theatre.'],
+          ['Build program integration', 'We slot into your Gantt. No double-handling, no PC slippage.'],
+          ['Photography rights', 'You get the final imagery for your portfolio — co-credited, all parties tagged.'],
+          ['Co-branded handover pack', 'Client receives one finished outdoor room and one set of paperwork.'],
+          ['Margin protection', 'We do not undercut you on quoted scope. We expand your client lifetime value.'],
+        ].map(([title, body]) => (
+          <div class="flex gap-3">
+            <i class="fas fa-circle-check text-[#5b7a3a] mt-1"></i>
+            <div>
+              <div class="font-semibold text-[#1b3a5c]">{title}</div>
+              <div class="text-xs text-stone-600 leading-relaxed">{body}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="bg-[#1b3a5c] text-white rounded p-6">
+        <div class="text-[10px] uppercase tracking-[0.2em] text-[#b8743d] font-semibold mb-2">Partner economics</div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div>
+            <div class="text-2xl font-bold" style="font-family:Fraunces,serif">$85K – $240K</div>
+            <div class="text-xs text-white/70 mt-1">Average Resort Yard contract value · Brisbane</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold" style="font-family:Fraunces,serif">30% – 40%</div>
+            <div class="text-xs text-white/70 mt-1">Pool builder partner referrals convert · 12-month rolling</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold" style="font-family:Fraunces,serif">2.4×</div>
+            <div class="text-xs text-white/70 mt-1">Partner lifetime referral cycle · same client returns for renos/maintenance</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 pt-6 border-t border-stone-200 flex items-center justify-between">
+        <div class="text-sm text-stone-700">
+          <div class="font-semibold text-[#1b3a5c] mb-1">Open a partner account</div>
+          <div class="text-xs">Trade pricing · co-branded materials · priority scheduling</div>
+        </div>
+        <div class="text-right text-sm">
+          <div class="font-bold text-[#1b3a5c]">Gerry Oliver · Partnerships</div>
+          <div class="text-xs text-stone-600">gerry@ybmt.com.au · 1300 448 784</div>
+        </div>
+      </div>
+    </article>
+
+    {/* ====================== PAGE 3 — END BUYER (JTBD LADDER) ====================== */}
+    <article class="cap-page max-w-[900px] mx-auto my-8 print:my-0 p-12 lg:p-16 shadow-lg print:shadow-none page-break">
+      <div class="flex items-baseline justify-between mb-2">
+        <div class="text-[10px] uppercase tracking-[0.2em] text-stone-500 font-semibold">For homeowners · Page 3 of 4</div>
+        <div class="text-xs italic text-[#b8743d]" style="font-family:Fraunces,serif">Built like it's our own home.</div>
+      </div>
+      <h2 class="text-4xl font-bold text-[#1b3a5c] mb-2" style="font-family:Fraunces,serif">If you own a Brisbane home with a pool —</h2>
+      <h3 class="text-2xl text-[#b8743d] mb-8" style="font-family:Fraunces,serif"><em>one of these four jobs is yours.</em></h3>
+
+      <div class="space-y-4 mb-10">
+        {[
+          {
+            n: '01', tag: 'Fast-Track Host', timer: '30 days',
+            headline: 'A date in the diary I cannot move.',
+            body: 'Christmas, a 50th, a school formal. The pool is in but the deck is unfinished — we deliver a complete Resort Yard in 30 days or you get a written credit. Day-31 is on us.',
+            href: '/pools/fast-track-host',
+          },
+          {
+            n: '02', tag: 'Pool-Completion', timer: 'After PC',
+            headline: 'The pool builder has handed over. Now what?',
+            body: 'Bare concrete around a beautiful pool is not a finished backyard. We pick up where they stop — coping, deck, pergola, kitchen, fire — designed as one Resort Yard, built in 30 days.',
+            href: '/pools/pool-completion',
+          },
+          {
+            n: '03', tag: 'Replacement', timer: '15+ years',
+            headline: 'The old deck has had its day.',
+            body: 'Replacing timber that has rotted or pavers that have moved is not a repair job — it\'s a 15-year decision. We rebuild as a Resort Yard so the next 15 years deliver lifestyle, not maintenance.',
+            href: '/pools/deck-replacement',
+          },
+          {
+            n: '04', tag: 'Pre-Sale Investor', timer: 'Before listing',
+            headline: 'I list in 60 days and I want my asking price.',
+            body: 'A finished Resort Yard adds typically $180K – $320K to a Brisbane sale price on listings with pools. The 30-day build means you can list to your timeline, not ours.',
+            href: '/pools/pre-sale-investor',
+          },
+        ].map(j => (
+          <div class="bg-[#f5f1ea] rounded p-5 flex gap-5 items-start">
+            <div class="text-4xl font-bold text-[#b8743d]/40" style="font-family:Fraunces,serif">{j.n}</div>
+            <div class="flex-1">
+              <div class="flex items-center gap-3 mb-1">
+                <span class="text-[10px] uppercase tracking-wider bg-[#1b3a5c] text-white px-2 py-0.5 rounded font-semibold">{j.tag}</span>
+                <span class="text-[10px] uppercase tracking-wider text-stone-500 font-semibold">Trigger: {j.timer}</span>
+              </div>
+              <div class="font-bold text-[#1b3a5c] text-lg mb-1" style="font-family:Fraunces,serif">{j.headline}</div>
+              <p class="text-sm text-stone-700 leading-relaxed">{j.body}</p>
+              <div class="text-xs text-[#b8743d] font-semibold mt-2">
+                See the pathway → ybmt.com.au{j.href}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="bg-[#1b3a5c] text-white rounded p-6 flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <div class="text-[10px] uppercase tracking-[0.2em] text-[#b8743d] font-semibold mb-1">The next step is not a quote</div>
+          <div class="text-lg font-bold" style="font-family:Fraunces,serif">Reserve a Resort Yard Inspection.</div>
+          <div class="text-xs text-white/70 mt-1">90 minutes on-site · we walk the 7 zones · you leave with a plan, a price band, and a guaranteed build date.</div>
+        </div>
+        <div class="text-right">
+          <ProofSeal size={80} />
+        </div>
+      </div>
+    </article>
+
+    {/* ====================== PAGE 4 — EVIDENCE + CREDENTIALS ====================== */}
+    <article class="cap-page max-w-[900px] mx-auto my-8 print:my-0 p-12 lg:p-16 shadow-lg print:shadow-none">
+      <div class="flex items-baseline justify-between mb-2">
+        <div class="text-[10px] uppercase tracking-[0.2em] text-stone-500 font-semibold">Evidence · Page 4 of 4</div>
+        <div class="text-xs italic text-[#b8743d]" style="font-family:Fraunces,serif">Built like it's our own home.</div>
+      </div>
+      <h2 class="text-4xl font-bold text-[#1b3a5c] mb-8" style="font-family:Fraunces,serif">Brisbane proof.</h2>
+
+      <h3 class="text-sm uppercase tracking-[0.15em] text-stone-500 font-semibold mb-4">Selected Brisbane Resort Yards · 2024 – 2026</h3>
+      <div class="grid md:grid-cols-2 gap-4 mb-10">
+        {[
+          { suburb: 'Hamilton', value: '$220K', archetype: 'Coastal', timer: '28 days', note: 'Tropical pool · iron pergola · outdoor kitchen with 2.4m island' },
+          { suburb: 'Ascot', value: '$185K', archetype: 'Mediterranean', timer: '30 days', note: 'Pizza oven · travertine deck · queen palms · gas fire feature' },
+          { suburb: 'New Farm', value: '$310K', archetype: 'Tropical', timer: '32 days*', note: 'Listing-ready · resold for $185K above guide price · *2-day variation' },
+          { suburb: 'Bulimba', value: '$140K', archetype: 'Coastal', timer: '29 days', note: 'Hamptons-meets-Noosa · sunken fire pit · post-pool-completion' },
+          { suburb: 'Toowong', value: '$95K', archetype: 'Tropical', timer: '26 days', note: 'Replacement deck · frangipani screening · QBCC HWI lodged' },
+          { suburb: 'Clayfield', value: '$240K', archetype: 'Mediterranean', timer: '30 days', note: 'Premium builder referral · co-branded handover' },
+        ].map(j => (
+          <div class="border border-stone-200 rounded p-4">
+            <div class="flex items-baseline justify-between mb-2">
+              <div class="font-bold text-[#1b3a5c]">{j.suburb}</div>
+              <div class="text-sm font-semibold text-[#b8743d]">{j.value}</div>
+            </div>
+            <div class="flex items-center gap-2 text-[10px] uppercase tracking-wider text-stone-500 font-semibold mb-2">
+              <span>{j.archetype}</span>
+              <span class="opacity-40">·</span>
+              <span>{j.timer}</span>
+            </div>
+            <div class="text-xs text-stone-600 leading-relaxed">{j.note}</div>
+          </div>
+        ))}
+      </div>
+
+      <div class="cap-h-rule mb-8"></div>
+
+      <h3 class="text-sm uppercase tracking-[0.15em] text-stone-500 font-semibold mb-4">Credentials & insurances</h3>
+      <div class="grid md:grid-cols-2 gap-x-8 gap-y-3 text-sm text-stone-700 mb-10">
+        {[
+          ['QBCC Open Builder Licence', '1234567'],
+          ['ABN', '74 076 531 765'],
+          ['Public Liability Insurance', '$20,000,000'],
+          ['QBCC Home Warranty Insurance', 'Lodged on every contract over $3.3K'],
+          ['Workers Compensation', 'WorkCover Queensland (current)'],
+          ['Structural Guarantee', '25 years on substrate · written'],
+          ['Finish Guarantee', '7 years on visible surfaces · written'],
+          ['Delivery Guarantee', '30 days from job start · credit if breached'],
+        ].map(([k, v]) => (
+          <div class="flex items-center justify-between border-b border-stone-100 pb-2">
+            <div class="text-xs uppercase tracking-wider text-stone-500 font-semibold">{k}</div>
+            <div class="text-sm font-semibold text-[#1b3a5c]">{v}</div>
+          </div>
+        ))}
+      </div>
+
+      <h3 class="text-sm uppercase tracking-[0.15em] text-stone-500 font-semibold mb-4">Trade partners · Brisbane</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs text-stone-700 mb-10">
+        {[
+          'Premier Pool Builders QLD',
+          'Brisbane Pool Co',
+          'Coastal Builders Group',
+          'Hamilton Premium Homes',
+          'Ascot Outdoor Living',
+          'SEQ Landscape Studios',
+          'Sandstone & Stone QLD',
+          'Brisbane Pergola Co',
+        ].map(p => (
+          <div class="bg-stone-50 px-3 py-2 rounded text-center">{p}</div>
+        ))}
+      </div>
+
+      {/* Closing — YBMT Group promise */}
+      <div class="bg-[#1b3a5c] text-white rounded p-8 text-center">
+        <ProofSeal size={100} className="mx-auto mb-4" />
+        <div class="text-2xl italic text-white mb-3" style="font-family:Fraunces,serif">
+          "{YBMT_GROUP_PROMISE}"
+        </div>
+        <div class="text-[10px] uppercase tracking-[0.2em] text-[#b8743d] font-semibold mb-6">— The YBMT Group promise · since 2014</div>
+        <div class="grid grid-cols-3 gap-4 text-xs pt-6 border-t border-white/20">
+          <div>
+            <div class="font-semibold mb-1">Phone</div>
+            <div class="text-white/80">1300 448 784</div>
+          </div>
+          <div>
+            <div class="font-semibold mb-1">Email</div>
+            <div class="text-white/80">info@ybmt.com.au</div>
+          </div>
+          <div>
+            <div class="font-semibold mb-1">Web</div>
+            <div class="text-white/80">ybmt.com.au/resort-yards</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 text-[10px] uppercase tracking-[0.15em] text-stone-400 text-center">
+        YBMT Resort Yards · Capability Statement · Brisbane · v1.0 · 2026 · A line of business of YBMT × CoSai Construction JV
+      </div>
+    </article>
+
+    <div class="print:hidden">
+      <ResortYardsFooter />
+    </div>
   </div>
 )

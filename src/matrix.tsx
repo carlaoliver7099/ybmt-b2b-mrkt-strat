@@ -60,10 +60,10 @@ const CELLS: Cell[] = [
   // ===== POOLS ROW (30% of Y2 revenue) =====
   {
     lob: 'pools', region: 'brisbane', revenueY2Pct: 18,
-    strategy: { status: 'done', pct: 90, evidence: '2,454-line pools GTM + 338-line gap analysis + Resort Yards rebrand executed · 7 DBAs codified · 4 JTBDs locked', link: 'https://github.com/carlaoliver7099/ybmt-b2b-mrkt-strat/blob/main/src/pools-gtm.tsx' },
-    assets:   { status: 'done', pct: 85, evidence: 'Resort Yards rebuild: DBA-3 seal + 3 archetype heroes (Tropical/Coastal/Mediterranean) + 5 doctrine-compliant pages · zero "Free Quote" violations', link: '/pools' },
-    story:    { status: 'done', pct: 90, evidence: `Live hub + 4 JTBD landing pages at /pools · category-defining frame · "Built like it's our own home" closing · Resort Yard Inspection ritual`, link: '/pools' },
-    nextAction: 'Add Pool-Brisbane capability statement page · wire lead-magnet downloads · build sonic mnemonic (DBA-6)',
+    strategy: { status: 'done', pct: 95, evidence: '2,454-line pools GTM + 338-line gap analysis + Resort Yards rebrand executed · 7 DBAs codified · 4 JTBDs locked', link: 'https://github.com/carlaoliver7099/ybmt-b2b-mrkt-strat/blob/main/src/pools-gtm.tsx' },
+    assets:   { status: 'done', pct: 95, evidence: 'Resort Yards build: DBA-3 seal + 3 archetype heroes + DBA-6 sonic mnemonic + capability statement (Brisbane) · zero "Free Quote" violations', link: '/pools' },
+    story:    { status: 'done', pct: 95, evidence: `Live hub + 4 JTBD landing pages + printable capability statement at /pools · category-defining frame · "Built like it's our own home" closing`, link: '/pools' },
+    nextAction: 'Wire lead-magnet downloads (Cloudflare KV or third-party) · ship to Cloudflare production',
   },
   {
     lob: 'pools', region: 'gold-coast', revenueY2Pct: 7,
