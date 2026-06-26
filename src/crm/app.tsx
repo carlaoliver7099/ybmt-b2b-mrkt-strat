@@ -7,8 +7,9 @@
  *   ✅ Phase 1 — Foundation
  *   ✅ Phase 2 — Schema + seed + /settings/lookups verification
  *   ✅ Phase 3 — Auth: bcrypt + opaque sessions + RBAC
- *   ✅ Phase 4 — Dashboard (this commit): KPIs + funnel matrix + SLA actions
- *   ⏳ Phase 5 — RFQ Intake
+ *   ✅ Phase 4 — Dashboard: KPIs + funnel matrix + SLA actions
+ *   ✅ Phase 5 — RFQ Intake (this commit): /quotes/new + /quotes index + Q-YYYY-NNNN allocator
+ *   ⏳ Phase 6 — Quote detail + contact logger
  *   ⏳ Phase 6 — Quote detail + contact logger
  *   ⏳ Phase 7 — Polish + deploy
  *
@@ -27,6 +28,7 @@ import { CrmLandingPage } from './routes/landing'
 import { LookupsPage } from './routes/lookups'
 import { DashboardPage } from './routes/dashboard'
 import { auth } from './routes/auth'
+import { quotesApp } from './routes/intake'
 import { requireAuth, requireRole, type AuthContext } from './lib/middleware'
 import {
   getLinesOfBusiness,
@@ -75,6 +77,10 @@ crm.use('/settings/*',          requireAuth())
 // Settings is admin-only (both CoSai admin and Sinbau CEO)
 crm.use('/settings',            requireRole('cosai_admin', 'sinbau_ceo'))
 crm.use('/settings/*',          requireRole('cosai_admin', 'sinbau_ceo'))
+
+// ── /quotes/* · Phase 5 RFQ intake + index ─────────────────────────────
+
+crm.route('/quotes', quotesApp)
 
 // ── /dashboard · Phase 4 cockpit ─────────────────────────────────────────
 
@@ -201,8 +207,8 @@ crm.get('/health', async (c) => {
   return c.json({
     ok: true,
     app: 'cosai-crm',
-    phase: 4,
-    phase_title: 'Dashboard',
+    phase: 5,
+    phase_title: 'RFQ Intake',
     db_binding_present: dbBound,
     migrations_applied: migrationsApplied,
     quotes_count: quotesCount,
