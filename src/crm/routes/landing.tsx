@@ -17,18 +17,43 @@ import { PageShell } from '../components/page-shell'
 import { Wordmark } from '../components/wordmark'
 
 const PHASES = [
-  { n: 1, title: 'Foundation', detail: 'Brand · fonts · D1 binding · folder structure',          status: 'current' },
-  { n: 2, title: 'Schema',     detail: '16 tables · GPM generated col · 9 lookup seeds',          status: 'next'    },
-  { n: 3, title: 'Auth',       detail: '4 roles · bcrypt · requireRole() · session mgmt',          status: 'queued'  },
-  { n: 4, title: 'Dashboard',  detail: 'KPI strip · 4×3 funnel matrix · SLA actions · timeline',   status: 'queued'  },
+  { n: 1, title: 'Foundation', detail: 'Brand · fonts · D1 binding · folder structure',          status: 'done'    },
+  { n: 2, title: 'Schema',     detail: '16 tables · GPM generated col · 9 lookup seeds',          status: 'done'    },
+  { n: 3, title: 'Auth',       detail: '4 roles · bcrypt · requireRole() · session mgmt',          status: 'current' },
+  { n: 4, title: 'Dashboard',  detail: 'KPI strip · 4×3 funnel matrix · SLA actions · timeline',   status: 'next'    },
   { n: 5, title: 'RFQ Intake', detail: 'Single-screen form · Q-YYYY-NNNN race-safe allocator',     status: 'queued'  },
   { n: 6, title: 'Quote Detail', detail: 'Contact logger · stage transitions · requote flow',       status: 'queued'  },
   { n: 7, title: 'Polish',     detail: 'Clear-samples · README · final deploy · custom domain',    status: 'queued'  },
 ] as const
 
-export const CrmLandingPage = () => (
-  <PageShell title="Phase 1 — Foundation" active={null} user={null} trainingMode={false}>
+interface CrmLandingPageProps {
+  /** When the landing is shown to an authenticated user (post-login), pass their identity here. */
+  authedUser?: { name: string; role: string } | null
+  /** When true, render a one-shot "Password updated" toast. */
+  pwChanged?: boolean
+}
+
+export const CrmLandingPage = ({ authedUser = null, pwChanged = false }: CrmLandingPageProps = {}) => (
+  <PageShell title="CoSai. × YBMT Quote CRM" active={authedUser ? 'dashboard' : null} user={authedUser} trainingMode={false}>
     <div class="page">
+
+      {pwChanged && (
+        <div
+          role="status"
+          style={{
+            background: 'rgba(74,124,89,0.10)',
+            border: '1px solid rgba(74,124,89,0.35)',
+            color: 'var(--good-green)',
+            borderRadius: '8px',
+            padding: '12px 16px',
+            marginBottom: '24px',
+            fontSize: '13px',
+            fontWeight: 600,
+          }}
+        >
+          Password updated · you're signed in.
+        </div>
+      )}
 
       {/* ── HERO ─────────────────────────────────────────────────── */}
       <section style={{ paddingTop: '32px', paddingBottom: '48px', borderBottom: '1px solid var(--border-soft)' }}>
@@ -44,8 +69,17 @@ export const CrmLandingPage = () => (
           of business and three regions.
         </p>
         <div style={{ display: 'flex', gap: '12px', marginTop: '24px' }}>
-          <a href="/crm/auth/login" class="btn btn-primary">Sign in</a>
-          <a href="/" class="btn btn-secondary">← Back to intranet</a>
+          {authedUser ? (
+            <>
+              <a href="/crm/settings/lookups" class="btn btn-primary">View seed data</a>
+              <a href="/crm/auth/logout" class="btn btn-secondary">Sign out</a>
+            </>
+          ) : (
+            <>
+              <a href="/crm/auth/login" class="btn btn-primary">Sign in</a>
+              <a href="/" class="btn btn-secondary">← Back to intranet</a>
+            </>
+          )}
         </div>
       </section>
 
@@ -81,6 +115,11 @@ export const CrmLandingPage = () => (
                   {p.status === 'next' && (
                     <span style={{ background: 'transparent', color: 'var(--ink-charcoal)', border: '1px solid var(--ink-charcoal)', padding: '1px 6px', borderRadius: '4px', fontSize: '10px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.06em' }}>
                       Next
+                    </span>
+                  )}
+                  {p.status === 'done' && (
+                    <span style={{ background: 'rgba(74,124,89,0.12)', color: 'var(--good-green)', border: '1px solid rgba(74,124,89,0.35)', padding: '1px 6px', borderRadius: '4px', fontSize: '10px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+                      Done
                     </span>
                   )}
                 </div>

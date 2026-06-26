@@ -33,6 +33,8 @@ import type {
 // ── Props ────────────────────────────────────────────────────────────────
 
 export interface LookupsPageProps {
+  /** Authenticated user (required — page is locked behind requireAuth + requireRole). */
+  user: { name: string; role: string }
   linesOfBusiness: LineOfBusiness[]
   regions: Region[]
   scopes: Scope[]
@@ -180,7 +182,7 @@ const tdNumStyle = {
 
 export const LookupsPage = (props: LookupsPageProps) => {
   const {
-    linesOfBusiness, regions, scopes, quoteStages, rejectReasons,
+    user, linesOfBusiness, regions, scopes, quoteStages, rejectReasons,
     contactMethods, leadSources, financialTargets, stageSlas, teamMembers, counts,
   } = props
 
@@ -194,7 +196,7 @@ export const LookupsPage = (props: LookupsPageProps) => {
   for (const l of linesOfBusiness) lobNameById.set(l.id, l.name)
 
   return (
-    <PageShell title="Lookups · Phase 2 verification" active="settings" user={null} trainingMode={trainingMode}>
+    <PageShell title="Lookups · Phase 2 verification" active="settings" user={user} trainingMode={trainingMode}>
       <div class="page">
 
         {/* ── Page header ──────────────────────────────────────── */}

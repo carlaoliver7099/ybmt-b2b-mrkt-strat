@@ -5,17 +5,28 @@
  *
  * Phase status:
  *   ✅ Phase 1 — Foundation
- *   ✅ Phase 2 — Schema + seed + /settings/lookups verification (this commit)
- *   ⏳ Phase 3 — Auth
+ *   ✅ Phase 2 — Schema + seed + /settings/lookups verification
+ *   ✅ Phase 3 — Auth (this commit): bcrypt + opaque sessions + RBAC
  *   ⏳ Phase 4 — Dashboard
  *   ⏳ Phase 5 — RFQ Intake
  *   ⏳ Phase 6 — Quote detail + contact logger
  *   ⏳ Phase 7 — Polish + deploy
+ *
+ * Route map:
+ *   /crm                          → landing (public)
+ *   /crm/auth/login    (GET/POST) → sign in
+ *   /crm/auth/logout   (GET)      → sign out
+ *   /crm/auth/change-password     → forced on first login
+ *   /crm/dashboard                → (auth) — Phase 4 will replace landing
+ *   /crm/settings/lookups         → (auth + cosai_admin/sinbau_ceo)
+ *   /crm/health                   → JSON status (public)
  */
 
 import { Hono } from 'hono'
 import { CrmLandingPage } from './routes/landing'
 import { LookupsPage } from './routes/lookups'
+import { auth } from './routes/auth'
+import { requireAuth, requireRole, type AuthContext } from './lib/middleware'
 import {
   getLinesOfBusiness,
   getRegions,
@@ -32,47 +43,50 @@ import {
   countSampleQuotes,
 } from './lib/db'
 
-// Cloudflare bindings
-type Bindings = {
-  DB: D1Database
-}
+export const crm = new Hono<AuthContext>()
 
-export const crm = new Hono<{ Bindings: Bindings }>()
+// ── Public routes ────────────────────────────────────────────────────────
 
-// ── Root: Phase 1 landing page (brand-proof) ─────────────────────────────
 crm.get('/', (c) => c.html(<CrmLandingPage />))
 
-// Alias that points at the landing page until Phase 4 dashboard lands
-crm.get('/dashboard', (c) => c.html(<CrmLandingPage />))
+// ── Auth sub-app (login/logout/change-password) ──────────────────────────
 
-// ── Phase 2 · /settings/lookups · read-only verification of seed data ──
+crm.route('/auth', auth)
+
+// ── Authenticated routes ────────────────────────────────────────────────
+// Anything below this point requires a valid session.
+
+crm.use('/dashboard',           requireAuth())
+crm.use('/dashboard/*',         requireAuth())
+crm.use('/quotes',              requireAuth())
+crm.use('/quotes/*',            requireAuth())
+crm.use('/settings',            requireAuth())
+crm.use('/settings/*',          requireAuth())
+
+// Settings is admin-only (both CoSai admin and Sinbau CEO)
+crm.use('/settings',            requireRole('cosai_admin', 'sinbau_ceo'))
+crm.use('/settings/*',          requireRole('cosai_admin', 'sinbau_ceo'))
+
+// Temporary placeholder dashboard — Phase 4 will replace this.
+crm.get('/dashboard', (c) => {
+  const user = c.get('user')
+  const pwChanged = c.req.query('pwchanged') === '1'
+  return c.html(
+    <CrmLandingPage authedUser={{ name: user.name, role: user.role }} pwChanged={pwChanged} />
+  )
+})
+
+// ── /settings/lookups · Phase 2 verification page ───────────────────────
+
 crm.get('/settings/lookups', async (c) => {
   const db = c.env.DB
-  if (!db) {
-    return c.html(
-      <CrmLandingPage />,
-      500,
-    )
-  }
+  const user = c.get('user')
 
-  // Fan out reads in parallel — each is a single-table SELECT.
   const [
-    linesOfBusiness,
-    regions,
-    scopes,
-    quoteStages,
-    rejectReasons,
-    contactMethods,
-    leadSources,
-    financialTargets,
-    stageSlas,
-    teamMembers,
-    clientsCount,
-    contactLogCount,
-    stageHistoryCount,
-    usersCount,
-    quotesSample,
-    quotesReal,
+    linesOfBusiness, regions, scopes, quoteStages, rejectReasons,
+    contactMethods, leadSources, financialTargets, stageSlas, teamMembers,
+    clientsCount, contactLogCount, stageHistoryCount, usersCount,
+    quotesSample, quotesReal,
   ] = await Promise.all([
     getLinesOfBusiness(db),
     getRegions(db),
@@ -94,6 +108,7 @@ crm.get('/settings/lookups', async (c) => {
 
   return c.html(
     <LookupsPage
+      user={{ name: user.name, role: user.role }}
       linesOfBusiness={linesOfBusiness}
       regions={regions}
       scopes={scopes}
@@ -116,29 +131,38 @@ crm.get('/settings/lookups', async (c) => {
   )
 })
 
-// ── Health check — confirms D1 binding is wired (used at end of each phase) ─
+// ── Health check ────────────────────────────────────────────────────────
+
 crm.get('/health', async (c) => {
   const dbBound = c.env?.DB ? true : false
   let migrationsApplied: number | null = null
   let quotesCount: number | null = null
+  let usersCount: number | null = null
+  let sessionsCount: number | null = null
   if (dbBound) {
     try {
       const m = await c.env.DB.prepare('SELECT COUNT(*) AS n FROM schema_migrations').first<{ n: number }>()
       migrationsApplied = m?.n ?? 0
       const q = await c.env.DB.prepare('SELECT COUNT(*) AS n FROM quotes').first<{ n: number }>()
       quotesCount = q?.n ?? 0
+      const u = await c.env.DB.prepare('SELECT COUNT(*) AS n FROM users WHERE active = 1').first<{ n: number }>()
+      usersCount = u?.n ?? 0
+      const s = await c.env.DB.prepare('SELECT COUNT(*) AS n FROM sessions').first<{ n: number }>()
+      sessionsCount = s?.n ?? 0
     } catch {
-      // Tables may not exist yet on a fresh DB — leave counters null.
+      // Tables may not exist yet — leave counters null.
     }
   }
   return c.json({
     ok: true,
     app: 'cosai-crm',
-    phase: 2,
-    phase_title: 'Schema + Seed',
+    phase: 3,
+    phase_title: 'Auth + RBAC',
     db_binding_present: dbBound,
     migrations_applied: migrationsApplied,
     quotes_count: quotesCount,
+    users_active: usersCount,
+    sessions_active: sessionsCount,
     timestamp: new Date().toISOString(),
   })
 })
