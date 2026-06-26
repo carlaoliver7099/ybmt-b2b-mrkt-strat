@@ -302,6 +302,10 @@ const LoginPage = ({ next, error = false, email = '' }: LoginPageProps) => (
 
       <p style={{ marginTop: '24px', textAlign: 'center', fontSize: '12px', color: 'var(--muted-stone)' }}>
         Trouble signing in? Contact your administrator.
+        {' · '}
+        <a href="/crm/help" style={{ color: 'var(--muted-stone)', textDecoration: 'underline' }}>
+          First time here?
+        </a>
       </p>
     </div>
   </PageShell>

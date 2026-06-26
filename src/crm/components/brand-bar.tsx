@@ -117,6 +117,20 @@ export const BrandBar = ({ active = null, user = null, trainingMode = false }: B
                 </div>
               </div>
               <a
+                href="/crm/help"
+                title="Team one-pager · how to use the CRM"
+                style={{
+                  color: 'rgba(255,255,255,0.7)',
+                  textDecoration: 'none',
+                  padding: '6px 10px',
+                  border: '1px solid rgba(255,255,255,0.16)',
+                  borderRadius: '6px',
+                  fontSize: '12px',
+                }}
+              >
+                Help
+              </a>
+              <a
                 href="/crm/auth/logout"
                 style={{
                   color: 'rgba(255,255,255,0.7)',

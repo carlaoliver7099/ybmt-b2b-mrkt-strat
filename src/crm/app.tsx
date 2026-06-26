@@ -26,6 +26,7 @@ import { Hono } from 'hono'
 import { CrmLandingPage } from './routes/landing'
 import { LookupsPage } from './routes/lookups'
 import { DashboardPage } from './routes/dashboard'
+import { CrmHelpPage } from './routes/help'
 import { auth } from './routes/auth'
 import { quotesApp } from './routes/intake'
 import { quoteDetailApp } from './routes/quote-detail'
@@ -59,6 +60,16 @@ export const crm = new Hono<AuthContext>()
 // ── Public routes ────────────────────────────────────────────────────────
 
 crm.get('/', (c) => c.html(<CrmLandingPage />))
+
+// Team one-pager — printable / PDF-able. Public so Carla can share the URL
+// without anyone needing to log in.
+crm.get('/help', (c) => {
+  // Auto-detect the live URL from the request so it works on prod (pages.dev),
+  // sandbox, and any future custom domain without code changes.
+  const url = new URL(c.req.url)
+  const liveUrl = `${url.protocol}//${url.host}/crm`
+  return c.html(<CrmHelpPage liveUrl={liveUrl} />)
+})
 
 // ── Auth sub-app (login/logout/change-password) ──────────────────────────
 
