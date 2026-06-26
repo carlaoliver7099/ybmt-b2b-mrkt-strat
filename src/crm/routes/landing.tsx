@@ -22,8 +22,8 @@ const PHASES = [
   { n: 3, title: 'Auth',       detail: '4 roles · bcrypt · requireRole() · session mgmt',          status: 'done'    },
   { n: 4, title: 'Dashboard',  detail: 'KPI strip · 4×3 funnel matrix · SLA actions · timeline',   status: 'done'    },
   { n: 5, title: 'RFQ Intake', detail: 'Single-screen form · Q-YYYY-NNNN race-safe allocator',     status: 'done'    },
-  { n: 6, title: 'Quote Detail', detail: 'Contact logger · stage transitions · requote flow',       status: 'current' },
-  { n: 7, title: 'Polish',     detail: 'Clear-samples · README · final deploy · custom domain',    status: 'queued'  },
+  { n: 6, title: 'Quote Detail', detail: 'Contact logger · stage transitions · requote flow',       status: 'done'    },
+  { n: 7, title: 'Polish',     detail: 'Clear-samples · README · final deploy · custom domain',    status: 'current' },
 ] as const
 
 interface CrmLandingPageProps {

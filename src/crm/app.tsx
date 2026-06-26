@@ -8,9 +8,8 @@
  *   ✅ Phase 2 — Schema + seed + /settings/lookups verification
  *   ✅ Phase 3 — Auth: bcrypt + opaque sessions + RBAC
  *   ✅ Phase 4 — Dashboard: KPIs + funnel matrix + SLA actions
- *   ✅ Phase 5 — RFQ Intake (this commit): /quotes/new + /quotes index + Q-YYYY-NNNN allocator
- *   ⏳ Phase 6 — Quote detail + contact logger
- *   ⏳ Phase 6 — Quote detail + contact logger
+ *   ✅ Phase 5 — RFQ Intake: /quotes/new + /quotes index + Q-YYYY-NNNN allocator
+ *   ✅ Phase 6 — Quote detail (this commit): /quotes/:id + stage transitions + contact logger + requote
  *   ⏳ Phase 7 — Polish + deploy
  *
  * Route map:
@@ -29,6 +28,7 @@ import { LookupsPage } from './routes/lookups'
 import { DashboardPage } from './routes/dashboard'
 import { auth } from './routes/auth'
 import { quotesApp } from './routes/intake'
+import { quoteDetailApp } from './routes/quote-detail'
 import { requireAuth, requireRole, type AuthContext } from './lib/middleware'
 import {
   getLinesOfBusiness,
@@ -78,9 +78,12 @@ crm.use('/settings/*',          requireAuth())
 crm.use('/settings',            requireRole('cosai_admin', 'sinbau_ceo'))
 crm.use('/settings/*',          requireRole('cosai_admin', 'sinbau_ceo'))
 
-// ── /quotes/* · Phase 5 RFQ intake + index ─────────────────────────────
+// ── /quotes/* · Phase 5 RFQ intake + index + Phase 6 detail ────────────
+// Order matters: quotesApp owns /new (literal) and / (index). Mount it first
+// so its routes resolve before quoteDetailApp's /:id pattern.
 
 crm.route('/quotes', quotesApp)
+crm.route('/quotes', quoteDetailApp)
 
 // ── /dashboard · Phase 4 cockpit ─────────────────────────────────────────
 
@@ -207,8 +210,8 @@ crm.get('/health', async (c) => {
   return c.json({
     ok: true,
     app: 'cosai-crm',
-    phase: 5,
-    phase_title: 'RFQ Intake',
+    phase: 6,
+    phase_title: 'Quote Detail + Contact Logger',
     db_binding_present: dbBound,
     migrations_applied: migrationsApplied,
     quotes_count: quotesCount,

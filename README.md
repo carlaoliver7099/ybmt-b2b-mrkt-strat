@@ -46,7 +46,7 @@ Internal Quote CRM for the JV. **Light mode only**, brand-locked (charcoal + bra
 - ✅ **Phase 3 — Auth + RBAC** · bcryptjs · opaque server-side sessions · forced first-login password change · requireAuth + requireRole middleware (`f1e862a`)
 - ✅ **Phase 4 — Dashboard** · KPI strip (5 cards) · 4×3 LoB×Region funnel matrix · pipeline-by-stage · reject reasons (90d, requote-eligible flagged) · SLA-breach actions-needed · unified stage+contact activity feed
 - ✅ **Phase 5 — RFQ Intake** · /crm/quotes/new single-screen 3-section form (client / job / numbers) · race-safe Q-YYYY-NNNN allocator with retry-on-collision · client upsert by email-or-phone · validation gates (NIST-style, server-rendered errors) · /crm/quotes browse index · auto-logs initial stage_history row
-- ⏳ Phase 6 — Quote detail + contact logger + stage transitions + requote
+- ✅ **Phase 6 — Quote Detail** · /crm/quotes/:id full detail page · stage transitions (forward + back + terminal-with-reason) · contact logger writing to contact_log + auto-bumping last_touchpoint_at · requote clone flow (Q-YYYY-NNNNR with parent_quote_id) · editable fields (sales, cost, win%, dates, notes) · stage_history + contact_log timelines on every page · GPM auto-recomputed by GENERATED column on save
 - ⏳ Phase 7 — Polish + Clear-samples + deploy + README
 
 **CRM routes (live):**
@@ -59,6 +59,11 @@ Internal Quote CRM for the JV. **Light mode only**, brand-locked (charcoal + bra
 | `/crm/dashboard` | auth | Operating cockpit · KPIs · funnel matrix · pipeline · rejects · SLA actions · activity |
 | `/crm/quotes` | auth | Browse all quotes · post-create toast · sample/requote badges |
 | `/crm/quotes/new` (GET/POST) | auth | RFQ intake form · race-safe Q-YYYY-NNNN allocator · client upsert |
+| `/crm/quotes/:id` | auth | Quote detail · header · KPI strip · edit panel · stage panel · contact logger · history timelines |
+| `/crm/quotes/:id/edit` (POST) | auth | Patch sales/cost/win%/dates/notes · GPM auto-recomputed |
+| `/crm/quotes/:id/transition` (POST) | auth | Move stage (forward/back/terminal) · writes stage_history audit |
+| `/crm/quotes/:id/log-contact` (POST) | auth | Append contact_log row · bumps last_touchpoint_at + first_response_at |
+| `/crm/quotes/:id/requote` (POST) | auth | Clone rejected requote-eligible quote into new Q-...R at stage 7 |
 | `/crm/settings/lookups` | `cosai_admin` or `sinbau_ceo` only | Read-only verification of all lookup seeds |
 | `/crm/health` | public | JSON: phase, migrations_applied, users_active, sessions_active |
 
@@ -89,8 +94,10 @@ src/crm/
   routes/lookups.tsx       /settings/lookups (admin-only)
   routes/dashboard.tsx     /dashboard (Phase 4: KPIs + matrix + SLA + activity)
   routes/intake.tsx        /quotes + /quotes/new (Phase 5: index + RFQ intake form + POST handler)
+  routes/quote-detail.tsx  /quotes/:id + 4 POST handlers (Phase 6: detail + edit + transition + log + requote)
   lib/dashboard-queries.ts 6 aggregation queries (KPIs, matrix, pipeline, rejects, actions, activity)
   lib/intake.ts            validateIntake() + nextQuoteNumber() + upsertClient() + createQuote()
+  lib/quote-actions.ts     transitionStage() + logContact() + createRequote() + updateQuoteFields() + history readers
   components/page-shell.tsx
   components/brand-bar.tsx
   components/wordmark.tsx
@@ -109,7 +116,7 @@ migrations/crm/
 - **Branches**:
   - `main` — locked Tier-1 work (HEAD: `1a8d681`)
   - `session/intranet-sandbox` — marketing/intranet session work
-  - `session/cosai-crm` — Quote CRM build (Phases 1–5 shipped · Phase 6 next: quote detail + contact logger)
+  - `session/cosai-crm` — Quote CRM build (Phases 1–6 shipped · Phase 7 next: polish + production deploy)
 
 ## Route Summary
 
