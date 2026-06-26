@@ -20,6 +20,55 @@ import {
   TermiteActiveDiscoveryPage,
   TermiteAnnualStewardshipPage,
 } from './termite-brisbane'
+import {
+  TermiteGoldCoastHubPage,
+  TermiteGCPrePurchasePage,
+  TermiteGCPreSalePage,
+  TermiteGCActiveDiscoveryPage,
+  TermiteGCAnnualStewardshipPage,
+} from './termite-gold-coast'
+import {
+  TermiteSunshineCoastHubPage,
+  TermiteSCPrePurchasePage,
+  TermiteSCPreSalePage,
+  TermiteSCActiveDiscoveryPage,
+  TermiteSCAnnualStewardshipPage,
+} from './termite-sunshine-coast'
+import {
+  UnitsBrisbaneHubPage,
+  UnitsRefreshPage,
+  UnitsRenewPage,
+  UnitsBcmCoordinationPage,
+  UnitsPreSalePage,
+} from './units-brisbane'
+import {
+  PoolGoldCoastHubPage,
+  PoolGCFastTrackHostPage,
+  PoolGCPoolCompletionPage,
+  PoolGCDeckReplacementPage,
+  PoolGCPreSaleInvestorPage,
+} from './pool-gold-coast'
+import {
+  PoolSunshineCoastHubPage,
+  PoolSCFastTrackHostPage,
+  PoolSCPoolCompletionPage,
+  PoolSCDeckReplacementPage,
+  PoolSCPreSaleInvestorPage,
+} from './pool-sunshine-coast'
+import {
+  UnitsGoldCoastHubPage,
+  UnitsGCRefreshPage,
+  UnitsGCRenewPage,
+  UnitsGCBcmCoordinationPage,
+  UnitsGCPreSalePage,
+} from './units-gold-coast'
+import {
+  UnitsSunshineCoastHubPage,
+  UnitsSCRefreshPage,
+  UnitsSCRenewPage,
+  UnitsSCBcmCoordinationPage,
+  UnitsSCPreSalePage,
+} from './units-sunshine-coast'
 
 const app = new Hono()
 
@@ -45,6 +94,59 @@ app.get('/termite/pre-purchase', (c) => c.render(<TermitePrePurchasePage />))
 app.get('/termite/pre-sale', (c) => c.render(<TermitePreSalePage />))
 app.get('/termite/active-discovery', (c) => c.render(<TermiteActiveDiscoveryPage />))
 app.get('/termite/annual-stewardship', (c) => c.render(<TermiteAnnualStewardshipPage />))
+
+// ============================================================
+// CELLS 3-9 · Full 3×3 inventory (Termite × Pool × Units across BNE × GC × SC)
+// ============================================================
+
+// Cell 3/9 — Termite × Gold Coast (canal-front · interstate-buyer overlay)
+app.get('/termite-gc', (c) => c.render(<TermiteGoldCoastHubPage />))
+app.get('/termite-gc/pre-purchase', (c) => c.render(<TermiteGCPrePurchasePage />))
+app.get('/termite-gc/pre-sale', (c) => c.render(<TermiteGCPreSalePage />))
+app.get('/termite-gc/active-discovery', (c) => c.render(<TermiteGCActiveDiscoveryPage />))
+app.get('/termite-gc/annual-stewardship', (c) => c.render(<TermiteGCAnnualStewardshipPage />))
+
+// Cell 4/9 — Termite × Sunshine Coast (heritage Queenslander · tree-change buyer overlay)
+app.get('/termite-sc', (c) => c.render(<TermiteSunshineCoastHubPage />))
+app.get('/termite-sc/pre-purchase', (c) => c.render(<TermiteSCPrePurchasePage />))
+app.get('/termite-sc/pre-sale', (c) => c.render(<TermiteSCPreSalePage />))
+app.get('/termite-sc/active-discovery', (c) => c.render(<TermiteSCActiveDiscoveryPage />))
+app.get('/termite-sc/annual-stewardship', (c) => c.render(<TermiteSCAnnualStewardshipPage />))
+
+// Cell 5/9 — Units × Brisbane (NEW LOB · "Renovations That Settle Quietly" · 30-Day · BCM-approved)
+app.get('/units', (c) => c.render(<UnitsBrisbaneHubPage />))
+app.get('/units/refresh', (c) => c.render(<UnitsRefreshPage />))
+app.get('/units/renew', (c) => c.render(<UnitsRenewPage />))
+app.get('/units/bcm-coordination', (c) => c.render(<UnitsBcmCoordinationPage />))
+app.get('/units/pre-sale', (c) => c.render(<UnitsPreSalePage />))
+
+// Cell 6/9 — Pool × Gold Coast (Mediterranean-villa Resort Yard · canal-front salt-air specs)
+app.get('/pools-gc', (c) => c.render(<PoolGoldCoastHubPage />))
+app.get('/pools-gc/fast-track-host', (c) => c.render(<PoolGCFastTrackHostPage />))
+app.get('/pools-gc/pool-completion', (c) => c.render(<PoolGCPoolCompletionPage />))
+app.get('/pools-gc/deck-replacement', (c) => c.render(<PoolGCDeckReplacementPage />))
+app.get('/pools-gc/pre-sale-investor', (c) => c.render(<PoolGCPreSaleInvestorPage />))
+
+// Cell 7/9 — Pool × Sunshine Coast (Hamptons-Noosa coastal-luxe · DA-coordination differentiator)
+app.get('/pools-sc', (c) => c.render(<PoolSunshineCoastHubPage />))
+app.get('/pools-sc/fast-track-host', (c) => c.render(<PoolSCFastTrackHostPage />))
+app.get('/pools-sc/pool-completion', (c) => c.render(<PoolSCPoolCompletionPage />))
+app.get('/pools-sc/deck-replacement', (c) => c.render(<PoolSCDeckReplacementPage />))
+app.get('/pools-sc/pre-sale-investor', (c) => c.render(<PoolSCPreSaleInvestorPage />))
+
+// Cell 8/9 — Units × Gold Coast (high-rise penthouse · goods-lift logistics · $160k Reset cap)
+app.get('/units-gc', (c) => c.render(<UnitsGoldCoastHubPage />))
+app.get('/units-gc/refresh', (c) => c.render(<UnitsGCRefreshPage />))
+app.get('/units-gc/renew', (c) => c.render(<UnitsGCRenewPage />))
+app.get('/units-gc/bcm-coordination', (c) => c.render(<UnitsGCBcmCoordinationPage />))
+app.get('/units-gc/pre-sale', (c) => c.render(<UnitsGCPreSalePage />))
+
+// Cell 9/9 — Units × Sunshine Coast (coastal-luxe restraint · short-stay letting channel)
+app.get('/units-sc', (c) => c.render(<UnitsSunshineCoastHubPage />))
+app.get('/units-sc/refresh', (c) => c.render(<UnitsSCRefreshPage />))
+app.get('/units-sc/renew', (c) => c.render(<UnitsSCRenewPage />))
+app.get('/units-sc/bcm-coordination', (c) => c.render(<UnitsSCBcmCoordinationPage />))
+app.get('/units-sc/pre-sale', (c) => c.render(<UnitsSCPreSalePage />))
 
 app.get('/', (c) => {
   return c.render(
