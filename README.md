@@ -44,7 +44,7 @@ Internal Quote CRM for the JV. **Light mode only**, brand-locked (charcoal + bra
 - ✅ **Phase 1 — Foundation** · brand · fonts · D1 binding · folder structure (`b224595`)
 - ✅ **Phase 2 — Schema + Seed** · 16 tables · GPM as GENERATED column · 9 lookup tables seeded · 9 clients + 30 quotes + requote chain (`903f489`)
 - ✅ **Phase 3 — Auth + RBAC** · bcryptjs · opaque server-side sessions · forced first-login password change · requireAuth + requireRole middleware (`f1e862a`)
-- ⏳ Phase 4 — Dashboard (KPI strip + 4×3 funnel matrix + SLA actions + recent activity)
+- ✅ **Phase 4 — Dashboard** · KPI strip (5 cards) · 4×3 LoB×Region funnel matrix · pipeline-by-stage · reject reasons (90d, requote-eligible flagged) · SLA-breach actions-needed · unified stage+contact activity feed
 - ⏳ Phase 5 — RFQ Intake (single-screen form + Q-YYYY-NNNN allocator)
 - ⏳ Phase 6 — Quote detail + contact logger + stage transitions + requote
 - ⏳ Phase 7 — Polish + Clear-samples + deploy + README
@@ -56,12 +56,12 @@ Internal Quote CRM for the JV. **Light mode only**, brand-locked (charcoal + bra
 | `/crm/auth/login` | public | Sign-in form |
 | `/crm/auth/logout` | any | Destroys session + clears cookie |
 | `/crm/auth/change-password` | auth | Forced on first login; enforces NIST policy |
-| `/crm/dashboard` | auth | Phase 4 will replace landing here |
+| `/crm/dashboard` | auth | Operating cockpit · KPIs · funnel matrix · pipeline · rejects · SLA actions · activity |
 | `/crm/settings/lookups` | `cosai_admin` or `sinbau_ceo` only | Read-only verification of all lookup seeds |
 | `/crm/health` | public | JSON: phase, migrations_applied, users_active, sessions_active |
 
-**4 roles · 5 seed users (must change password on first login):**
-- `cosai_admin` — Carla Olver (`carla@cosai.com.au`)
+**4 roles · 6 seed users (must change password on first login):**
+- `cosai_admin` — Carla Olver (`carla@cosai.com.au`), Corrina Oliver (`corrina@cosai.com.au`)
 - `sinbau_ceo` — Gerry McGuire (`gerry@ybmt.com.au`)
 - `estimator` — Matt Gran (`matt@cosai.com.au`)
 - `project_manager` — Paul Stanborough (`paul@cosai.com.au`), Darcy Coombs (`darcy@cosai.com.au`)
@@ -85,6 +85,8 @@ src/crm/
   routes/landing.tsx       Public landing page
   routes/auth.tsx          login + logout + change-password
   routes/lookups.tsx       /settings/lookups (admin-only)
+  routes/dashboard.tsx     /dashboard (Phase 4: KPIs + matrix + SLA + activity)
+  lib/dashboard-queries.ts 6 aggregation queries (KPIs, matrix, pipeline, rejects, actions, activity)
   components/page-shell.tsx
   components/brand-bar.tsx
   components/wordmark.tsx
@@ -103,7 +105,7 @@ migrations/crm/
 - **Branches**:
   - `main` — locked Tier-1 work (HEAD: `1a8d681`)
   - `session/intranet-sandbox` — marketing/intranet session work
-  - `session/cosai-crm` — Quote CRM build (HEAD: `f1e862a` Phase 3)
+  - `session/cosai-crm` — Quote CRM build (Phase 4 shipped)
 
 ## Route Summary
 

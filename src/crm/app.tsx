@@ -6,8 +6,8 @@
  * Phase status:
  *   ✅ Phase 1 — Foundation
  *   ✅ Phase 2 — Schema + seed + /settings/lookups verification
- *   ✅ Phase 3 — Auth (this commit): bcrypt + opaque sessions + RBAC
- *   ⏳ Phase 4 — Dashboard
+ *   ✅ Phase 3 — Auth: bcrypt + opaque sessions + RBAC
+ *   ✅ Phase 4 — Dashboard (this commit): KPIs + funnel matrix + SLA actions
  *   ⏳ Phase 5 — RFQ Intake
  *   ⏳ Phase 6 — Quote detail + contact logger
  *   ⏳ Phase 7 — Polish + deploy
@@ -25,6 +25,7 @@
 import { Hono } from 'hono'
 import { CrmLandingPage } from './routes/landing'
 import { LookupsPage } from './routes/lookups'
+import { DashboardPage } from './routes/dashboard'
 import { auth } from './routes/auth'
 import { requireAuth, requireRole, type AuthContext } from './lib/middleware'
 import {
@@ -42,6 +43,14 @@ import {
   countRealQuotes,
   countSampleQuotes,
 } from './lib/db'
+import {
+  getDashboardKpis,
+  getFunnelMatrix,
+  getPipelineByStage,
+  getRejectReasonsBreakdown,
+  getActionsNeeded,
+  getRecentActivity,
+} from './lib/dashboard-queries'
 
 export const crm = new Hono<AuthContext>()
 
@@ -67,12 +76,48 @@ crm.use('/settings/*',          requireAuth())
 crm.use('/settings',            requireRole('cosai_admin', 'sinbau_ceo'))
 crm.use('/settings/*',          requireRole('cosai_admin', 'sinbau_ceo'))
 
-// Temporary placeholder dashboard — Phase 4 will replace this.
-crm.get('/dashboard', (c) => {
+// ── /dashboard · Phase 4 cockpit ─────────────────────────────────────────
+
+crm.get('/dashboard', async (c) => {
+  const db = c.env.DB
   const user = c.get('user')
   const pwChanged = c.req.query('pwchanged') === '1'
+  const now = new Date()
+
+  const [
+    kpis,
+    matrix,
+    linesOfBusiness,
+    regions,
+    pipeline,
+    rejectReasons,
+    actionsNeeded,
+    recentActivity,
+  ] = await Promise.all([
+    getDashboardKpis(db, now),
+    getFunnelMatrix(db, now),
+    getLinesOfBusiness(db),
+    getRegions(db),
+    getPipelineByStage(db),
+    getRejectReasonsBreakdown(db, now),
+    getActionsNeeded(db, now, 12),
+    getRecentActivity(db, 12),
+  ])
+
   return c.html(
-    <CrmLandingPage authedUser={{ name: user.name, role: user.role }} pwChanged={pwChanged} />
+    <DashboardPage
+      user={{ name: user.name, role: user.role }}
+      pwChanged={pwChanged}
+      now={now.toISOString()}
+      kpis={kpis}
+      matrix={matrix}
+      linesOfBusiness={linesOfBusiness}
+      regions={regions}
+      pipeline={pipeline}
+      rejectReasons={rejectReasons}
+      actionsNeeded={actionsNeeded}
+      recentActivity={recentActivity}
+    />
   )
 })
 
@@ -156,8 +201,8 @@ crm.get('/health', async (c) => {
   return c.json({
     ok: true,
     app: 'cosai-crm',
-    phase: 3,
-    phase_title: 'Auth + RBAC',
+    phase: 4,
+    phase_title: 'Dashboard',
     db_binding_present: dbBound,
     migrations_applied: migrationsApplied,
     quotes_count: quotesCount,

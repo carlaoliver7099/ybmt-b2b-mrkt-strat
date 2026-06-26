@@ -19,9 +19,9 @@ import { Wordmark } from '../components/wordmark'
 const PHASES = [
   { n: 1, title: 'Foundation', detail: 'Brand · fonts · D1 binding · folder structure',          status: 'done'    },
   { n: 2, title: 'Schema',     detail: '16 tables · GPM generated col · 9 lookup seeds',          status: 'done'    },
-  { n: 3, title: 'Auth',       detail: '4 roles · bcrypt · requireRole() · session mgmt',          status: 'current' },
-  { n: 4, title: 'Dashboard',  detail: 'KPI strip · 4×3 funnel matrix · SLA actions · timeline',   status: 'next'    },
-  { n: 5, title: 'RFQ Intake', detail: 'Single-screen form · Q-YYYY-NNNN race-safe allocator',     status: 'queued'  },
+  { n: 3, title: 'Auth',       detail: '4 roles · bcrypt · requireRole() · session mgmt',          status: 'done'    },
+  { n: 4, title: 'Dashboard',  detail: 'KPI strip · 4×3 funnel matrix · SLA actions · timeline',   status: 'done'    },
+  { n: 5, title: 'RFQ Intake', detail: 'Single-screen form · Q-YYYY-NNNN race-safe allocator',     status: 'current' },
   { n: 6, title: 'Quote Detail', detail: 'Contact logger · stage transitions · requote flow',       status: 'queued'  },
   { n: 7, title: 'Polish',     detail: 'Clear-samples · README · final deploy · custom domain',    status: 'queued'  },
 ] as const
