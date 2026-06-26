@@ -38,10 +38,10 @@ const CELLS: Cell[] = [
   // ===== TERMITE ROW (55% of Y2 revenue) =====
   {
     lob: 'termite', region: 'brisbane', revenueY2Pct: 25,
-    strategy: { status: 'done', pct: 90, evidence: '4,085-line GTM · 68 Brisbane refs · all 12 pillars covered · pillar/cluster pages mapped', link: 'https://github.com/carlaoliver7099/ybmt-b2b-mrkt-strat/blob/main/src/termite-gtm.tsx' },
-    assets:   { status: 'empty',   pct: 10, evidence: 'Cap statement (Brisbane generic) exists · no termite-specific creative built', link: '/marketing-mix#02-capability-statements' },
-    story:    { status: 'partial', pct: 40, evidence: 'In funnel + LP grid · no dedicated termite-Brisbane story page', link: '/funnel' },
-    nextAction: 'Build deployable termite-Brisbane asset kit (clone Resort Yards structure) — highest revenue cell',
+    strategy: { status: 'done', pct: 95, evidence: '4,085-line GTM + 1,387-line JTBD doc · 12 pillars · 4 trigger-led JTBDs locked · 5 personas mapped', link: 'https://github.com/carlaoliver7099/ybmt-b2b-mrkt-strat/blob/main/src/termite-gtm.tsx' },
+    assets:   { status: 'done',   pct: 90, evidence: 'Seedance 2.0 cinematic hero video (8s, 1080p, 10/10 luxury tier) · 48-Hour Scoped Quote seal · 5 doctrine-compliant pages', link: '/termite' },
+    story:    { status: 'done',   pct: 90, evidence: 'Live hub + 4 JTBD landing pages at /termite · anxiety-first doctrine · Insurance-Grade DBA · 48-hour scoped quote frame', link: '/termite' },
+    nextAction: 'Add capability statement (Brisbane) · clone for Gold Coast + Sunshine Coast',
   },
   {
     lob: 'termite', region: 'gold-coast', revenueY2Pct: 15,

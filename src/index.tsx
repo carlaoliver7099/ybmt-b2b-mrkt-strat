@@ -13,6 +13,13 @@ import {
   PreSaleInvestorPage,
   CapabilityStatementBrisbanePage,
 } from './resort-yards'
+import {
+  TermiteHubPage,
+  TermitePrePurchasePage,
+  TermitePreSalePage,
+  TermiteActiveDiscoveryPage,
+  TermiteAnnualStewardshipPage,
+} from './termite-brisbane'
 
 const app = new Hono()
 
@@ -30,6 +37,14 @@ app.get('/pools/pool-completion', (c) => c.render(<PoolCompletionPage />))
 app.get('/pools/deck-replacement', (c) => c.render(<DeckReplacementPage />))
 app.get('/pools/pre-sale-investor', (c) => c.render(<PreSaleInvestorPage />))
 app.get('/pools/capability-statement-brisbane', (c) => c.render(<CapabilityStatementBrisbanePage />))
+
+// Termite Damage Repair (highest-revenue LOB · 55% of Y2 sales mix · 45% GPM)
+// Built 100% to locked GitHub strategy (termite-gtm.tsx 4,085 lines + ymt-jtbd.tsx)
+app.get('/termite', (c) => c.render(<TermiteHubPage />))
+app.get('/termite/pre-purchase', (c) => c.render(<TermitePrePurchasePage />))
+app.get('/termite/pre-sale', (c) => c.render(<TermitePreSalePage />))
+app.get('/termite/active-discovery', (c) => c.render(<TermiteActiveDiscoveryPage />))
+app.get('/termite/annual-stewardship', (c) => c.render(<TermiteAnnualStewardshipPage />))
 
 app.get('/', (c) => {
   return c.render(
