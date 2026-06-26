@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "webapp",
+  "name": "cosai-crm",
   "compatibility_date": "2025-05-03",
   "pages_build_output_dir": "./dist",
   "compatibility_flags": [
@@ -10,7 +10,7 @@
     {
       "binding": "DB",
       "database_name": "cosai-crm-production",
-      "database_id": "local-dev-placeholder"
+      "database_id": "0e9d7829-2568-4293-85fc-aabb4ceb63f9"
     }
   ]
 }
