@@ -569,11 +569,28 @@ const QuotesIndexPage = ({ user, rows, createdQuoteNumber }: QuotesIndexPageProp
             <h1>Quotes</h1>
             <p class="text-muted quotes-sub">
               {rows.length} quote{rows.length === 1 ? '' : 's'} · {moneyCompact(totalValue / 100)} total value
-              {sampleCount > 0 && <> · {sampleCount} sample / {realCount} real</>}
+              {sampleCount > 0 && (
+                <>
+                  {' · '}
+                  <span class="real-tag">{realCount} real</span>
+                  {' / '}
+                  <span class="sample-tag">{sampleCount} sample</span>
+                </>
+              )}
             </p>
           </div>
           <a href="/crm/quotes/new" class="btn btn-primary">+ New RFQ</a>
         </header>
+
+        {sampleCount > 0 && realCount > 0 && (
+          <div class="sample-banner" role="note">
+            <span class="sample-banner-pill">SAMPLE DATA</span>
+            <span>
+              Rows with the dashed <strong>SAMPLE</strong> badge are demo data seeded for training and UI testing.
+              They do NOT represent real customers. Live leads from Meta Ads + manual intake are shown without any badge.
+            </span>
+          </div>
+        )}
 
         {createdQuoteNumber && (
           <div role="status" class="created-toast">
@@ -742,18 +759,68 @@ const quotesIndexCss = `
     white-space: nowrap;
     vertical-align: middle;
   }
-  .row-sample td { background: rgba(245,243,239,0.5); }
+  /* Sample rows get a soft warm-grey wash AND a left border so they're scannable */
+  .row-sample td {
+    background: rgba(245,243,239,0.55);
+    color: var(--muted-stone);
+  }
+  .row-sample td:first-child {
+    border-left: 3px solid rgba(124,122,120,0.5);
+  }
+  .row-sample .quote-title { color: var(--muted-stone); }
   .badge {
     display: inline-block;
     margin-left: 6px;
-    padding: 1px 6px;
+    padding: 2px 7px;
     border-radius: 4px;
     font-family: var(--font-body);
     font-size: 10px;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.06em;
+    vertical-align: middle;
   }
-  .badge-sample { background: rgba(124,122,120,0.15); color: var(--muted-stone); }
+  /* SAMPLE badge — bold dashed border so it's unmistakable as demo data */
+  .badge-sample {
+    background: rgba(124,122,120,0.12);
+    color: var(--muted-stone);
+    border: 1px dashed rgba(124,122,120,0.55);
+  }
   .badge-requote { background: rgba(200,169,106,0.18); color: var(--brass-accent); }
+
+  /* Inline real/sample tags in the header subtitle */
+  .real-tag {
+    font-weight: 600;
+    color: var(--deep-green, #2d5f4f);
+  }
+  .sample-tag {
+    font-weight: 600;
+    color: var(--muted-stone);
+  }
+
+  /* Sample-data informational banner — shown only when mixed data is present */
+  .sample-banner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    margin: 14px 0 18px;
+    border: 1px dashed rgba(124,122,120,0.45);
+    border-radius: 6px;
+    background: rgba(245,243,239,0.6);
+    font-size: 13px;
+    color: var(--ink, #1c1c1c);
+  }
+  .sample-banner-pill {
+    flex: none;
+    padding: 3px 9px;
+    border-radius: 4px;
+    background: rgba(124,122,120,0.18);
+    border: 1px dashed rgba(124,122,120,0.6);
+    color: var(--muted-stone);
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+  }
 `

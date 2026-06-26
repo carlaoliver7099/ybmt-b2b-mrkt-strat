@@ -210,8 +210,8 @@ crm.get('/health', async (c) => {
   return c.json({
     ok: true,
     app: 'cosai-crm',
-    phase: 6,
-    phase_title: 'Quote Detail + Contact Logger',
+    phase: 7,
+    phase_title: 'Real pipeline bootstrap — Meta Ads leads imported from legacy sheet',
     db_binding_present: dbBound,
     migrations_applied: migrationsApplied,
     quotes_count: quotesCount,

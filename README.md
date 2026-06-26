@@ -46,8 +46,14 @@ Internal Quote CRM for the JV. **Light mode only**, brand-locked (charcoal + bra
 - ✅ **Phase 3 — Auth + RBAC** · bcryptjs · opaque server-side sessions · forced first-login password change · requireAuth + requireRole middleware (`f1e862a`)
 - ✅ **Phase 4 — Dashboard** · KPI strip (5 cards) · 4×3 LoB×Region funnel matrix · pipeline-by-stage · reject reasons (90d, requote-eligible flagged) · SLA-breach actions-needed · unified stage+contact activity feed
 - ✅ **Phase 5 — RFQ Intake** · /crm/quotes/new single-screen 3-section form (client / job / numbers) · race-safe Q-YYYY-NNNN allocator with retry-on-collision · client upsert by email-or-phone · validation gates (NIST-style, server-rendered errors) · /crm/quotes browse index · auto-logs initial stage_history row
-- ✅ **Phase 6 — Quote Detail** · /crm/quotes/:id full detail page · stage transitions (forward + back + terminal-with-reason) · contact logger writing to contact_log + auto-bumping last_touchpoint_at · requote clone flow (Q-YYYY-NNNNR with parent_quote_id) · editable fields (sales, cost, win%, dates, notes) · stage_history + contact_log timelines on every page · GPM auto-recomputed by GENERATED column on save
-- ⏳ Phase 7 — Polish + Clear-samples + deploy + README
+- ✅ **Phase 6 — Quote Detail** · /crm/quotes/:id full detail page · stage transitions (forward + back + terminal-with-reason) · contact logger writing to contact_log + auto-bumping last_touchpoint_at · requote clone flow (Q-YYYY-NNNNR with parent_quote_id) · editable fields (sales, cost, win%, dates, notes) · stage_history + contact_log timelines on every page · GPM auto-recomputed by GENERATED column on save (`e5a21ba`)
+- ✅ **Phase 7 — Real Pipeline Bootstrap** · 68 real Meta Ads leads (Facebook + Instagram) imported from Carla's legacy Google-sheet CRM · each lead mapped to its **current real-world stage** (latest Corrina note) · sample data **kept and visibly badged** (`is_sample=1` rows show dashed `SAMPLE` pill + soft wash + left-border on index, and a top-of-page `SAMPLE DATA` banner on detail) · **Corrina Oliver** linked into `team_members` (id=6) so her actions attribute correctly · Brisbane → UTC TZ math applied to all imported timestamps · idempotent SQL import (re-runnable, `WHERE NOT EXISTS` on `legacy-row=N` provenance tag in `quotes.notes`)
+
+**Phase 7 import summary:**
+- **Stage distribution of the 68 real leads**: 27 at Stage 1 (RFQ Received) · 11 at Stage 2 (Site Visit Scheduled) · 1 at Stage 4 (Quote In Preparation — Robert Behan) · 1 at Stage 5 (Quote Sent — William Pua) · 28 at Stage 11 (Lost/Withdrawn — disqualified out of area / non-responsive / not proceeding)
+- **D1 totals**: 98 quotes (30 sample · 68 real) · 77 clients (9 sample · 68 real) · 6 users · stage_history 79 rows
+- **Provenance**: every imported quote carries `legacy-row=N | imported=YYYY-MM-DD | source=meta-ads-2026-sheet` in `notes`; original Corrina notes preserved under `description`
+- **Skipped sheet rows** (intentional): 28 (Diana Maria — duplicate), 37 (internal ad note, not a lead), 66 (Brian Stankovich — duplicate)
 
 **CRM routes (live):**
 | Path | Access | Purpose |
@@ -102,11 +108,17 @@ src/crm/
   components/brand-bar.tsx
   components/wordmark.tsx
 migrations/crm/
-  0001_schema.sql          16 tables + GPM GENERATED column
-  0002_lookups.sql         All canonical reference data
-  0003_sample_data.sql     9 clients + 30 quotes + requote chain
-  0004_sessions.sql        Server-side session store
-  0005_users.sql           5 seed users (must_change_password=1)
+  0001_schema.sql                      16 tables + GPM GENERATED column
+  0002_lookups.sql                     All canonical reference data
+  0003_sample_data.sql                 9 clients + 30 quotes + requote chain
+  0004_sessions.sql                    Server-side session store
+  0005_users.sql                       6 seed users (must_change_password=1)
+  0006_real_pipeline_bootstrap.sql     Corrina → team_members link
+data/
+  meta-ads-leads-2026.json             68 hand-classified real leads + metadata
+scripts/
+  build-import-sql.cjs                 Node generator · Brisbane→UTC TZ math
+  import-meta-ads-leads.sql            Idempotent SQL (re-runnable, WHERE NOT EXISTS)
 ```
 
 ## URLs
@@ -116,7 +128,7 @@ migrations/crm/
 - **Branches**:
   - `main` — locked Tier-1 work (HEAD: `1a8d681`)
   - `session/intranet-sandbox` — marketing/intranet session work
-  - `session/cosai-crm` — Quote CRM build (Phases 1–6 shipped · Phase 7 next: polish + production deploy)
+  - `session/cosai-crm` — Quote CRM build (Phases 1–7 shipped · next: production deploy)
 
 ## Route Summary
 
@@ -176,5 +188,5 @@ This intranet is the strategy-execution scoreboard for the YBMT × CoSai JV.
 - **Tech Stack**: Hono + Vite + TypeScript + Tailwind CDN + Font Awesome 6.4
 - **Fonts (DBA-4)**: Inter (body) + Fraunces (display, italic)
 - **Brand Palette (DBA-5)**: Navy `#1b3a5c` · Timber `#b8743d` · Aqua `#4db6c7` · Cream `#f5f1ea` · Charcoal `#2b2b2b`
-- **Last Updated**: 2026-06-25
-- **Last Commit**: Resort Yards build + capability statement + DBA-6 sonic mnemonic
+- **Last Updated**: 2026-06-26
+- **Last Commit**: Phase 7 — Real Pipeline Bootstrap (68 Meta Ads leads imported · SAMPLE badge UI · Corrina linked to team_members)

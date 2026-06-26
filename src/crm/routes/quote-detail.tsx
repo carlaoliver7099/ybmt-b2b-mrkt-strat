@@ -466,6 +466,16 @@ const QuoteDetailPage = ({
           </div>
         )}
 
+        {quote.is_sample === 1 && (
+          <div role="note" class="sample-banner">
+            <span class="sample-banner-pill">SAMPLE DATA</span>
+            <span>
+              This quote is <strong>demo data</strong> seeded for training and UI testing.
+              It does NOT represent a real customer. Real Meta Ads leads + manually-entered RFQs appear without this banner.
+            </span>
+          </div>
+        )}
+
         {/* ── HEADER ───────────────────────────────────────────────── */}
         <header class="detail-header card">
           <div class="detail-header-main">
@@ -956,14 +966,39 @@ const detailCss = /* css */ `
   font-size: 10px; font-weight: 700; letter-spacing: 0.08em;
 }
 .badge-sample {
-  background: rgba(100, 116, 139, 0.12);
+  background: rgba(124, 122, 120, 0.12);
   color: var(--muted-stone);
-  border: 1px solid rgba(100, 116, 139, 0.3);
+  border: 1px dashed rgba(124, 122, 120, 0.55);
 }
 .badge-requote {
   background: rgba(184, 134, 11, 0.12);
   color: var(--brass);
   border: 1px solid rgba(184, 134, 11, 0.3);
+}
+
+.sample-banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  border: 1px dashed rgba(124, 122, 120, 0.5);
+  border-radius: 6px;
+  background: rgba(245, 243, 239, 0.6);
+  font-size: 13px;
+  color: var(--ink, #1c1c1c);
+}
+.sample-banner-pill {
+  flex: none;
+  padding: 3px 9px;
+  border-radius: 4px;
+  background: rgba(124, 122, 120, 0.18);
+  border: 1px dashed rgba(124, 122, 120, 0.6);
+  color: var(--muted-stone);
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
 }
 
 .brass-glyph { color: var(--brass); font-weight: 600; }

@@ -23,7 +23,7 @@ const PHASES = [
   { n: 4, title: 'Dashboard',  detail: 'KPI strip · 4×3 funnel matrix · SLA actions · timeline',   status: 'done'    },
   { n: 5, title: 'RFQ Intake', detail: 'Single-screen form · Q-YYYY-NNNN race-safe allocator',     status: 'done'    },
   { n: 6, title: 'Quote Detail', detail: 'Contact logger · stage transitions · requote flow',       status: 'done'    },
-  { n: 7, title: 'Polish',     detail: 'Clear-samples · README · final deploy · custom domain',    status: 'current' },
+  { n: 7, title: 'Real Data',  detail: '68 Meta Ads leads imported · SAMPLE badge UI · Corrina linked', status: 'current' },
 ] as const
 
 interface CrmLandingPageProps {
