@@ -36,13 +36,74 @@ Built 100% to the locked GitHub strategy spec (`pools-gtm.tsx`, 2,454 lines):
 - JTBD-led, never demographic-led
 - Lead magnet forms: 4 fields only per spec
 
+### CoSai. × YBMT Quote CRM — `/crm` (in-progress · branch `session/cosai-crm`)
+
+Internal Quote CRM for the JV. **Light mode only**, brand-locked (charcoal + brass period on the CoSai. wordmark).
+
+**Phase status (7-phase delivery plan):**
+- ✅ **Phase 1 — Foundation** · brand · fonts · D1 binding · folder structure (`b224595`)
+- ✅ **Phase 2 — Schema + Seed** · 16 tables · GPM as GENERATED column · 9 lookup tables seeded · 9 clients + 30 quotes + requote chain (`903f489`)
+- ✅ **Phase 3 — Auth + RBAC** · bcryptjs · opaque server-side sessions · forced first-login password change · requireAuth + requireRole middleware (`f1e862a`)
+- ⏳ Phase 4 — Dashboard (KPI strip + 4×3 funnel matrix + SLA actions + recent activity)
+- ⏳ Phase 5 — RFQ Intake (single-screen form + Q-YYYY-NNNN allocator)
+- ⏳ Phase 6 — Quote detail + contact logger + stage transitions + requote
+- ⏳ Phase 7 — Polish + Clear-samples + deploy + README
+
+**CRM routes (live):**
+| Path | Access | Purpose |
+|------|--------|---------|
+| `/crm` | public | Landing page · brand proof + phase progress |
+| `/crm/auth/login` | public | Sign-in form |
+| `/crm/auth/logout` | any | Destroys session + clears cookie |
+| `/crm/auth/change-password` | auth | Forced on first login; enforces NIST policy |
+| `/crm/dashboard` | auth | Phase 4 will replace landing here |
+| `/crm/settings/lookups` | `cosai_admin` or `sinbau_ceo` only | Read-only verification of all lookup seeds |
+| `/crm/health` | public | JSON: phase, migrations_applied, users_active, sessions_active |
+
+**4 roles · 5 seed users (must change password on first login):**
+- `cosai_admin` — Carla Olver (`carla@cosai.com.au`)
+- `sinbau_ceo` — Gerry McGuire (`gerry@ybmt.com.au`)
+- `estimator` — Matt Gran (`matt@cosai.com.au`)
+- `project_manager` — Paul Stanborough (`paul@cosai.com.au`), Darcy Coombs (`darcy@cosai.com.au`)
+- Bootstrap password (shared, must change on first login): **`CoSaiSetup2026!`**
+
+**Tech stack:**
+- Hono (`/crm` sub-app mounted before main intranet's `app.use(renderer)` so it owns its own HTML shell)
+- Cloudflare D1 (5 migrations applied locally: schema · lookups · sample data · sessions · users)
+- bcryptjs (pure-JS, works on Cloudflare Workers — `bcrypt` native bindings do not)
+- Web Crypto API for session token generation + SHA-256
+
+**Source layout:**
+```
+src/crm/
+  app.tsx                  Mount point + route registration
+  lib/auth.ts              bcrypt + session primitives + password policy
+  lib/middleware.tsx       requireAuth + requireRole
+  lib/db.ts                Typed D1 query helpers
+  lib/brand.ts             8-colour palette + typography constants
+  lib/formatters.ts        money/pct/date/time/quote#/phone
+  routes/landing.tsx       Public landing page
+  routes/auth.tsx          login + logout + change-password
+  routes/lookups.tsx       /settings/lookups (admin-only)
+  components/page-shell.tsx
+  components/brand-bar.tsx
+  components/wordmark.tsx
+migrations/crm/
+  0001_schema.sql          16 tables + GPM GENERATED column
+  0002_lookups.sql         All canonical reference data
+  0003_sample_data.sql     9 clients + 30 quotes + requote chain
+  0004_sessions.sql        Server-side session store
+  0005_users.sql           5 seed users (must_change_password=1)
+```
+
 ## URLs
 
 - **Live sandbox**: https://3000-i0ba6dm9wlccxe1cosx0c-3844e1b6.sandbox.novita.ai
 - **GitHub repo**: https://github.com/carlaoliver7099/ybmt-b2b-mrkt-strat
 - **Branches**:
   - `main` — locked Tier-1 work (HEAD: `1a8d681`)
-  - `session/intranet-sandbox` — session work (HEAD: `23119cc` Resort Yards)
+  - `session/intranet-sandbox` — marketing/intranet session work
+  - `session/cosai-crm` — Quote CRM build (HEAD: `f1e862a` Phase 3)
 
 ## Route Summary
 
@@ -59,6 +120,10 @@ Built 100% to the locked GitHub strategy spec (`pools-gtm.tsx`, 2,454 lines):
 | `/pools/deck-replacement` | JTBD landing page |
 | `/pools/pre-sale-investor` | JTBD landing page |
 | `/pools/capability-statement-brisbane` | 4-page printable capability statement |
+| `/crm` | Quote CRM landing (Phase 1+) |
+| `/crm/auth/login` | CRM sign-in |
+| `/crm/settings/lookups` | Lookup verification (admin only) |
+| `/crm/health` | JSON status |
 
 ## Data Architecture
 
