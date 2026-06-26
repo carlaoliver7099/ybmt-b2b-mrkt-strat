@@ -69,8 +69,14 @@ import {
   UnitsSCBcmCoordinationPage,
   UnitsSCPreSalePage,
 } from './units-sunshine-coast'
+import { crm } from './crm/app'
 
 const app = new Hono()
+
+// ─── CoSai. × YBMT Quote CRM ─────────────────────────────────────────────
+// Mounted BEFORE the marketing-site renderer so it can supply its own HTML
+// shell (locked brand spec — Space Grotesk wordmark, brass period, cream paper).
+app.route('/crm', crm)
 
 app.use(renderer)
 
