@@ -70,6 +70,8 @@ import {
   UnitsSCPreSalePage,
 } from './units-sunshine-coast'
 import { crm } from './crm/app'
+import { mbiApi } from './mbi/routes/api'
+import { MarketingBiPage } from './mbi/components/MarketingBiPage'
 
 const app = new Hono()
 
@@ -78,11 +80,17 @@ const app = new Hono()
 // shell (locked brand spec — Space Grotesk wordmark, brass period, cream paper).
 app.route('/crm', crm)
 
+// ─── Marketing Funnel BI · API sub-app ────────────────────────────────────
+// JSON-in/JSON-out routes for ingest, validation, dashboards.
+// Mounted BEFORE the renderer so /mbi/api/* returns raw JSON without HTML shell.
+app.route('/mbi/api', mbiApi)
+
 app.use(renderer)
 
 app.get('/value-chain', (c) => c.render(<ValueChainPage />))
 app.get('/funnel', (c) => c.render(<FunnelPage />))
 app.get('/marketing-mix', (c) => c.render(<MarketingMixPage />))
+app.get('/marketing-bi', (c) => c.render(<MarketingBiPage />))
 app.get('/matrix', (c) => c.render(<MatrixPage />))
 
 // Resort Yards (Pool LOB) prototype — built 100% to locked strategy spec

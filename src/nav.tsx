@@ -1,7 +1,7 @@
 // Shared top nav for the YBMT × CoSai JV intranet.
 // `active` controls which top-level page is highlighted.
 
-type NavProps = { active?: 'home' | 'value-chain' | 'funnel' | 'marketing-mix' | 'matrix' }
+type NavProps = { active?: 'home' | 'value-chain' | 'funnel' | 'marketing-mix' | 'marketing-bi' | 'matrix' }
 
 export const TopNav = ({ active = 'home' }: NavProps) => {
   const linkBase = "px-3 py-1.5 rounded hover:bg-[var(--paper-warm)] transition-colors"
@@ -27,6 +27,9 @@ export const TopNav = ({ active = 'home' }: NavProps) => {
           </a>
           <a href="/marketing-mix" class={`${linkBase} ${active === 'marketing-mix' ? activeCls : ''}`}>
             <i class="fas fa-folder-open mr-1.5 text-[10px]"></i> Marketing Mix
+          </a>
+          <a href="/marketing-bi" class={`${linkBase} ${active === 'marketing-bi' ? activeCls : ''}`}>
+            <i class="fas fa-chart-line mr-1.5 text-[10px]"></i> Marketing BI
           </a>
           <a href="/value-chain" class={`${linkBase} ${active === 'value-chain' ? activeCls : ''}`}>
             <i class="fas fa-diagram-project mr-1.5 text-[10px]"></i> Value Chain
